@@ -26,7 +26,7 @@ def _identity_key(dp: DataPoint) -> tuple:
 
 def upsert_data_points(
     points: list[DataPoint],
-    processed_dir: str | Path = PROCESSED_DIR,
+    processed_dir: str | Path | None = None,
 ) -> dict[str, dict[str, int]]:
     """Merge new DataPoints into processed segment files without duplicating.
 
@@ -41,7 +41,7 @@ def upsert_data_points(
     Returns:
         Per-file summary: {filename: {"added": n, "updated": n, "unchanged": n}}.
     """
-    processed_dir = Path(processed_dir)
+    processed_dir = Path(processed_dir) if processed_dir is not None else PROCESSED_DIR
     grouped: dict[tuple[str, str], list[DataPoint]] = defaultdict(list)
     for dp in points:
         grouped[(dp.geography, dp.segment)].append(dp)
@@ -82,7 +82,7 @@ def upsert_data_points(
     return summary
 
 
-def append_to_sources_csv(points: list[DataPoint], csv_path: str | Path = SOURCES_CSV) -> int:
+def append_to_sources_csv(points: list[DataPoint], csv_path: str | Path | None = None) -> int:
     """Append sources.csv rows for DataPoints not already ledgered (CLAUDE.md rule 2).
 
     Deduplicates on (value, geography, segment, period, value_basis,
@@ -95,7 +95,7 @@ def append_to_sources_csv(points: list[DataPoint], csv_path: str | Path = SOURCE
     Returns:
         Number of rows appended.
     """
-    csv_path = Path(csv_path)
+    csv_path = Path(csv_path) if csv_path is not None else SOURCES_CSV
     existing: set[tuple] = set()
     if csv_path.exists():
         with csv_path.open(encoding="utf-8", newline="") as fh:

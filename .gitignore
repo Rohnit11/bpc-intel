@@ -19,3 +19,5 @@ desktop.ini
 # Original download copies (canonical versions live in BUILD-SPEC.md and data/baseline/)
 bpc-intel-build-spec (1).md
 deep-research-report (1).md
+data/manual/*
+!data/manual/.gitkeep

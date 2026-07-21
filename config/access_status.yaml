@@ -3,7 +3,7 @@
 # Account: log in with HEC SSO yourself — the system cannot authenticate for you.
 hec_email: rohnit.agrawal@hec.edu
 euromonitor_passport: not_checked
-capitaliq_pro: not_checked
+capitaliq_pro: remote_access  # confirmed 2026-07-21, HEC SSO login working
 statista: not_checked
 bmi_research: not_checked
 business_source_complete: not_checked

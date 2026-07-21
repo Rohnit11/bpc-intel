@@ -114,7 +114,7 @@ def to_data_points(raw_records: list[dict]) -> list[DataPoint]:
         )
         points.append(DataPoint(
             geography="KR", segment=segment, metric="export_value",
-            value=round(total_usd / 1e9, 4), unit="usd_bn", currency="USD",
+            value=round(total_usd / 1e9, 6), unit="usd_bn", currency="USD",
             period=str(rec["year"]), period_type="CY", value_basis="EXPORT_FOB",
             source_name="UN Comtrade",
             source_url="https://comtradeplus.un.org",

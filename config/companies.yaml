@@ -1,0 +1,27 @@
+KR:
+  conglomerates:
+    - { name: "AmorePacific", ticker: "090430.KS", type: listed, segments: [skincare, colour_cosmetics, fragrances, hair_care] }
+    - { name: "LG H&H", ticker: "051900.KS", type: listed, segments: [skincare, colour_cosmetics, oral_care, bath_shower] }
+  odm_oem:
+    - { name: "Cosmax", ticker: "192820.KS", type: listed }
+    - { name: "Kolmar Korea", ticker: "161890.KS", type: listed }
+    - { name: "Cosmecca Korea", ticker: "241710.KQ", type: listed }
+  indie_brands:
+    - { name: "APR (Medicube)", ticker: "278470.KQ", type: listed }
+    - { name: "The Founders (Anua)", type: private }
+    - { name: "Gudai Global (Beauty of Joseon)", type: private }
+  retailers:
+    - { name: "CJ Olive Young", parent: "CJ Corp", type: subsidiary_unlisted }
+IN:
+  incumbents:
+    - { name: "Hindustan Unilever", ticker: "HINDUNILVR.NS", type: listed, segments: [skincare, hair_care, colour_cosmetics, deodorants] }
+    - { name: "Godrej Consumer Products", ticker: "GODREJCP.NS", type: listed }
+    - { name: "L'Oréal India", type: subsidiary_unlisted }
+  platforms:
+    - { name: "Nykaa (FSN E-Commerce)", ticker: "NYKAA.NS", type: listed }
+    - { name: "Purplle", type: private, last_valuation: "US$1.1bn" }
+  d2c_brands:
+    - { name: "Honasa Consumer (Mamaearth)", ticker: "HONASA.NS", type: listed }
+    - { name: "Minimalist (Uprising Science)", type: acquired, acquirer: "HUL" }
+    - { name: "SUGAR Cosmetics", type: private }
+    - { name: "Plum", type: private, acquirer: "Unilever (reported)" }

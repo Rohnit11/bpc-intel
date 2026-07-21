@@ -1,0 +1,133 @@
+# config/sources.yaml
+free_sources:
+  # --- KOREA ---
+  korea_mfds:
+    name: "MFDS (Ministry of Food and Drug Safety)"
+    url: "https://www.mfds.go.kr"
+    provides: [production_value, export_value, company_production_rankings]
+    geography: KR
+    access: web_fetch
+    frequency: annual
+    notes: "Primary source for Korea cosmetics production and export data. Published annually, usually Q1 for prior year."
+
+  korea_dart:
+    name: "DART (Data Analysis, Retrieval and Transfer)"
+    url: "https://dart.fss.or.kr"
+    provides: [company_financials, annual_reports]
+    geography: KR
+    access: api  # English API available
+    frequency: quarterly
+    notes: "Korean equivalent of EDGAR. Company filings for AmorePacific, LG H&H, Cosmax, Kolmar, etc."
+
+  korea_customs:
+    name: "Korea Customs Service / KITA TradeStats"
+    url: "https://stat.kita.net"
+    provides: [export_value_by_hs_code, export_by_destination]
+    geography: KR
+    access: web_fetch
+    frequency: monthly
+    notes: "HS codes 3303-3307 cover cosmetics. KITA provides English interface."
+
+  # --- INDIA ---
+  india_screener:
+    name: "Screener.in"
+    url: "https://www.screener.in"
+    provides: [listed_company_financials, adspend_line, 10yr_history]
+    geography: IN
+    access: web_fetch
+    frequency: quarterly
+    notes: "Free 10-year P&L/BS/CF for all BSE/NSE listed companies. Key: HUL, Nykaa (FSN), Honasa, Godrej Consumer."
+
+  india_mca_tofler:
+    name: "Tofler / MCA21"
+    url: "https://www.tofler.in"
+    provides: [private_company_revenue_bands, directors]
+    geography: IN
+    access: web_fetch
+    frequency: annual
+    notes: "Free tier gives revenue bands for private companies (SUGAR, Plum pre-acquisition). Exact P&L paywalled."
+
+  india_tradestat:
+    name: "TradeStat (DGCI&S)"
+    url: "https://tradestat.commerce.gov.in"
+    provides: [import_export_by_hs_code]
+    geography: IN
+    access: web_fetch
+    frequency: monthly
+    notes: "HS 3303-3307 for cosmetics imports into India (including from Korea). Guest access may limit 8-digit granularity."
+
+  # --- CROSS-GEOGRAPHY ---
+  un_comtrade:
+    name: "UN Comtrade"
+    url: "https://comtradeplus.un.org"
+    provides: [bilateral_trade_flows, mirror_data]
+    geography: [KR, IN]
+    access: api
+    frequency: annual
+    api_limit: "100 requests/day free tier"
+    notes: "Use to cross-check Korea→India corridor trade data. HS 3304 (skincare), 3305 (hair), etc."
+
+  google_trends:
+    name: "Google Trends"
+    url: "https://trends.google.com"
+    provides: [demand_seasonality, regional_interest, relative_search_volume]
+    geography: [KR, IN]
+    access: api_unofficial  # pytrends
+    frequency: real_time
+    notes: "Relative index, not absolute volume. Use for directional signals only."
+
+  openalex:
+    name: "OpenAlex"
+    url: "https://openalex.org"
+    provides: [academic_papers, citation_data, research_trends]
+    geography: [KR, IN]
+    access: mcp  # via openalex MCP server
+    frequency: real_time
+    notes: "250M+ papers, free, no API key needed. Use for ingredient trends (PDRN, exosomes, niacinamide) and regulatory science."
+
+  tavily:
+    name: "Tavily"
+    provides: [news_search, web_content]
+    geography: [KR, IN]
+    access: mcp_global  # Already connected, do NOT add to .mcp.json
+    frequency: real_time
+    notes: "Primary tool for structured news fetching. Use for M&A announcements, earnings releases, regulatory updates."
+
+  meta_ad_library:
+    name: "Meta Ad Library"
+    url: "https://www.facebook.com/ads/library"
+    provides: [active_creatives, ad_longevity]
+    geography: [KR, IN]
+    access: web_fetch
+    frequency: real_time
+    notes: "No spend data. Use for creative strategy analysis and brand positioning signals."
+
+# Subscription sources (user configures access_status.yaml)
+subscription_sources:
+  euromonitor_passport:
+    name: "Euromonitor Passport"
+    provides: [market_size_by_segment, brand_shares, forecasts, premium_mass_split]
+    priority: 1  # Most important subscription source
+    ingest_format: csv
+    ingest_handler: lib/ingest/passport_csv.py
+
+  capitaliq_pro:
+    name: "S&P Capital IQ Pro"
+    provides: [company_financials, comparables, deal_data]
+    priority: 2
+    ingest_format: csv
+    ingest_handler: lib/ingest/capitaliq_csv.py
+
+  statista:
+    name: "Statista"
+    provides: [market_overview, consumer_survey_data]
+    priority: 3
+    ingest_format: csv
+    ingest_handler: lib/ingest/statista_csv.py
+
+  bmi_research:
+    name: "BMI Research (Fitch)"
+    provides: [country_risk, industry_forecasts]
+    priority: 4
+    ingest_format: csv
+    ingest_handler: lib/ingest/generic_csv.py

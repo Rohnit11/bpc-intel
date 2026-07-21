@@ -1,0 +1,16 @@
+# config/exchange_rates.yaml
+# Pinned FX rates used by lib/transforms/currency.py
+# Source: frankfurter.dev (ECB reference rates), fetched live
+# Update deliberately; every conversion records the rate + date used.
+
+rates:
+  - base: USD
+    quote: KRW
+    rate: 1478.40
+    date: "2026-07-21"
+    source: "frankfurter.dev (ECB reference rates)"
+  - base: USD
+    quote: INR
+    rate: 96.23
+    date: "2026-07-21"
+    source: "frankfurter.dev (ECB reference rates)"

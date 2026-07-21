@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "pre-commit": {
+      "command": "python -c \"import sys; [sys.exit(1) for line in open(sys.argv[1]) if any(w in line.lower() for w in ['approximately','estimated at','roughly','around','about']) and '[ESTIMATE]' not in line and 'sources.csv' not in sys.argv[1] and line.strip().startswith(('$','₹','₩','KRW','INR','USD','Rs','US$'))]\" %f",
+      "description": "Block unsourced quantitative claims — any line starting with a currency marker that contains hedging language without an [ESTIMATE] tag is rejected"
+    }
+  }
+}

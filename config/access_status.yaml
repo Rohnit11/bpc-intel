@@ -1,0 +1,9 @@
+# Fill in your access status for each HEC database
+# Options: remote_access | on_campus_only | no_access | not_checked
+euromonitor_passport: not_checked
+capitaliq_pro: not_checked
+statista: not_checked
+bmi_research: not_checked
+business_source_complete: not_checked
+orbis: not_checked
+factiva: not_checked

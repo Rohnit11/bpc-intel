@@ -1,0 +1,98 @@
+# config/taxonomy.yaml
+# Beauty & Personal Care — Canonical Sub-Segment Taxonomy
+# Based on Euromonitor Passport BPC category structure
+# DO NOT modify without updating all downstream schemas
+
+version: "1.0"
+geographies:
+  - code: KR
+    name: South Korea
+    currency: KRW
+    fiscal_year: calendar  # Jan-Dec
+  - code: IN
+    name: India
+    currency: INR
+    fiscal_year: april     # Apr-Mar (FY25 = Apr 2024 - Mar 2025)
+
+segments:
+  - id: skincare
+    name: Skincare
+    sub_segments:
+      - facial_moisturisers
+      - facial_cleansers
+      - toners_essences
+      - serums_ampoules
+      - sheet_masks
+      - eye_care
+      - body_care
+      - hand_care
+      - lip_care_non_colour
+
+  - id: sun_care
+    name: Sun Care
+    sub_segments:
+      - sun_protection
+      - self_tanning
+      - after_sun
+
+  - id: colour_cosmetics
+    name: Colour Cosmetics
+    sub_segments:
+      - face_makeup      # foundation, cushion, concealer, powder, blush
+      - eye_makeup
+      - lip_colour
+      - nail
+
+  - id: fragrances
+    name: Fragrances
+    sub_segments:
+      - premium_fragrances
+      - mass_fragrances
+      - niche_artisanal
+
+  - id: hair_care
+    name: Hair Care
+    sub_segments:
+      - shampoo
+      - conditioners_treatments
+      - hair_colorants
+      - styling
+      - salon_professional
+      - scalp_care
+
+  - id: bath_shower
+    name: Bath & Shower
+
+  - id: deodorants
+    name: Deodorants
+
+  - id: oral_care
+    name: Oral Care
+
+  - id: mens_grooming
+    name: "Men's Grooming"
+    sub_segments:
+      - mens_toiletries    # shave, deo
+      - mens_skincare
+      - mens_cosmetics
+
+  - id: baby_child
+    name: Baby & Child
+
+  - id: dermocosmetics
+    name: Dermocosmetics / Clinical Beauty
+
+  - id: emerging_adjacencies
+    name: Emerging Adjacencies
+    sub_segments:
+      - beauty_devices
+      - ingestible_nutricosmetics
+      - halal_certified       # India-relevant
+      - ayurvedic_herbal       # India-relevant
+      - clean_vegan
+      - kbeauty_derivative     # glass skin derivatives etc.
+
+tiers:
+  - premium
+  - masstige
+  - mass

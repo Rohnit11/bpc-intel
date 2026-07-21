@@ -1,5 +1,7 @@
 # Fill in your access status for each HEC database
 # Options: remote_access | on_campus_only | no_access | not_checked
+# Account: log in with HEC SSO yourself — the system cannot authenticate for you.
+hec_email: rohnit.agrawal@hec.edu
 euromonitor_passport: not_checked
 capitaliq_pro: not_checked
 statista: not_checked

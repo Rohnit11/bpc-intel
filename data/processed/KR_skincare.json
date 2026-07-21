@@ -40,6 +40,44 @@
       "confidence": "HIGH",
       "methodology": null,
       "notes": null
+    },
+    {
+      "geography": "KR",
+      "segment": "skincare",
+      "sub_segment": null,
+      "metric": "export_value",
+      "value": 0.0656,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "EXPORT_FOB",
+      "tier": null,
+      "source_name": "UN Comtrade",
+      "source_url": "https://comtradeplus.un.org",
+      "date_accessed": "2026-07-21",
+      "confidence": "HIGH",
+      "methodology": null,
+      "notes": "HS 3304 Korea exports to India (UN Comtrade, FOB USD). HS 3304 includes makeup as well as skincare. [CORRIDOR]"
+    },
+    {
+      "geography": "KR",
+      "segment": "skincare",
+      "sub_segment": null,
+      "metric": "export_value",
+      "value": 8.5666,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "EXPORT_FOB",
+      "tier": null,
+      "source_name": "UN Comtrade",
+      "source_url": "https://comtradeplus.un.org",
+      "date_accessed": "2026-07-21",
+      "confidence": "HIGH",
+      "methodology": null,
+      "notes": "HS 3304 Korea exports to World (UN Comtrade, FOB USD). HS 3304 includes makeup as well as skincare."
     }
   ]
 }

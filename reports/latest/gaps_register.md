@@ -14,18 +14,18 @@
 | KR | fragrances | market_size | segment has ['export_value'] only | euromonitor_passport, statista, tavily |
 | KR | fragrances | growth_yoy | segment has ['export_value'] only | euromonitor_passport, korea_mfds, tavily |
 | KR | fragrances | cagr_forecast | segment has ['export_value'] only | euromonitor_passport, bmi_research, statista |
-| KR | hair_care | market_size | no data | euromonitor_passport, statista, tavily |
-| KR | hair_care | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |
-| KR | hair_care | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
+| KR | hair_care | market_size | segment has ['export_value'] only | euromonitor_passport, statista, tavily |
+| KR | hair_care | growth_yoy | segment has ['export_value'] only | euromonitor_passport, korea_mfds, tavily |
+| KR | hair_care | cagr_forecast | segment has ['export_value'] only | euromonitor_passport, bmi_research, statista |
 | KR | bath_shower | market_size | segment has ['export_value'] only | euromonitor_passport, statista, tavily |
 | KR | bath_shower | growth_yoy | segment has ['export_value'] only | euromonitor_passport, korea_mfds, tavily |
 | KR | bath_shower | cagr_forecast | segment has ['export_value'] only | euromonitor_passport, bmi_research, statista |
 | KR | deodorants | market_size | no data | euromonitor_passport, statista, tavily |
 | KR | deodorants | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |
 | KR | deodorants | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
-| KR | oral_care | market_size | no data | euromonitor_passport, statista, tavily |
-| KR | oral_care | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |
-| KR | oral_care | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
+| KR | oral_care | market_size | segment has ['export_value'] only | euromonitor_passport, statista, tavily |
+| KR | oral_care | growth_yoy | segment has ['export_value'] only | euromonitor_passport, korea_mfds, tavily |
+| KR | oral_care | cagr_forecast | segment has ['export_value'] only | euromonitor_passport, bmi_research, statista |
 | KR | mens_grooming | market_size | no data | euromonitor_passport, statista, tavily |
 | KR | mens_grooming | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |
 | KR | mens_grooming | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |

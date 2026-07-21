@@ -1,0 +1,13 @@
+# Copy to config/api_keys.yaml (gitignored) and fill in.
+#
+# DART (Korean company filings) — free key, register at:
+#   https://opendart.fss.or.kr  (English: https://engdart.fss.or.kr)
+dart: YOUR_DART_KEY_HERE
+
+# UN Comtrade — free tier key (optional; public preview works without it,
+# 500 calls/day, register at https://comtradeplus.un.org):
+comtrade: YOUR_COMTRADE_KEY_HERE
+
+# Tavily — only needed if calling the REST API directly from Python;
+# inside Claude Code the global Tavily MCP is used instead.
+tavily: YOUR_TAVILY_KEY_HERE

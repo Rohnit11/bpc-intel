@@ -1,0 +1,77 @@
+# config/corridor.yaml
+# Korea → India K-beauty corridor — first-class research axis (added 2026-07-21)
+# Seeded from data/baseline/deep-research-report.md §4.1; every entry there is
+# baseline-sourced. New entries require a fetcher run or manual drop.
+#
+# Tagging convention: any DataPoint about K-beauty inside India carries
+# "[CORRIDOR]" in its notes field. Trade-flow data (KR exports, destination
+# India) is geography=KR, value_basis=EXPORT_FOB with destination noted.
+
+corridor:
+  direction: KR_to_IN
+  headline:
+    # Baseline: exports to India rose ~44.7% (H1 2025 basis) off ~US$50m base
+    trade_base: "~US$50m (H1 2025 basis), +44.7% YoY — small base, fast growth"
+    entry_barrier: "CDSCO import registration (Form COS-1 -> COS-2 via SUGAM portal) — pre-clearance before any consignment; key friction and lead-time cost"
+
+  conduits:
+    - name: Nykaa
+      type: platform
+      since: 2016
+      notes: "Primary conduit; decade-long AmorePacific partnership; hosts eight AmorePacific brands"
+      kr_brands_carried:
+        - { brand: Innisfree, owner: AmorePacific, launched: 2016 }
+        - { brand: Laneige, owner: AmorePacific }
+        - { brand: Sulwhasoo, owner: AmorePacific }
+        - { brand: COSRX, owner: AmorePacific }
+        - { brand: Aestura, owner: AmorePacific, segment: dermocosmetics }
+        - { brand: Illiyoon, owner: AmorePacific, segment: dermocosmetics }
+        - { brand: "Mise En Scène", owner: AmorePacific, segment: hair_care, launched: 2025 }
+        - { brand: RYO, owner: AmorePacific, segment: hair_care, launched: 2025 }
+    - name: Tira (Reliance)
+      type: platform
+      kr_brands_carried:
+        - { brand: Mixsoon, launched: 2024-08 }
+    - name: Amazon India
+      type: platform
+      kr_brands_carried:
+        - { brand: Anua, owner: "The Founders" }
+        - { brand: "Some By Mi" }
+        - { brand: Etude, owner: AmorePacific }
+        - { brand: Isntree }
+        - { brand: "Dr.Jart+" }
+        - { brand: "The Face Shop" }
+    - name: q-commerce (Blinkit/Zepto/Instamart)
+      type: channel
+      notes: "Tier 2/3 access rail; masstige-price derma K-beauty via dark stores is the corridor's clearest whitespace per baseline §4.5"
+
+  whitespace:
+    # Baseline §4.1 + §4.5 ranked opportunities relevant to the corridor
+    - "Mid-price derma K-beauty in Tier 2/3 (baseline whitespace #5, highest corridor conviction)"
+    - "Dedicated sunscreens (baseline whitespace #2 — India sun care underpenetrated)"
+    - "Men's K-beauty (baseline whitespace #4 — men's skincare underserved vs toiletries)"
+
+  regulation:
+    india_import: "CDSCO, Drugs & Cosmetics Act 1940 + Cosmetics Rules 2020; Form COS-1 application -> COS-2 Registration Certificate via SUGAM portal; manufacturing site registration required; BIS IS 4707 ingredient standards (Part 2 revised Aug 2025); paper filings not accepted as of 2026"
+    korea_export_support: "MFDS regulatory-diplomacy MOUs to smooth exports"
+
+  monitoring_queries:
+    # These feed lib/fetchers/news_tavily.py and trends_google.py
+    tavily:
+      - "K-beauty India market growth"
+      - "Korean skincare brands India launch"
+      - "Nykaa Korean beauty brands"
+      - "Tira K-beauty Korean cosmetics"
+      - "CDSCO Korean cosmetics import registration"
+      - "Korean sunscreen India quick commerce"
+      - "AmorePacific India expansion"
+      - "Korean beauty Blinkit Zepto India"
+    google_trends:
+      - { keyword: "Korean skincare", geo: IN }
+      - { keyword: "K-beauty", geo: IN }
+      - { keyword: "Korean sunscreen", geo: IN }
+      - { keyword: "glass skin", geo: IN }
+    comtrade:
+      hs_codes: ["3303", "3304", "3305", "3306", "3307"]
+      reporter: KOR
+      partner: IND

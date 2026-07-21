@@ -8,6 +8,16 @@ This system covers Beauty & Personal Care ONLY, across South Korea and India ONL
 The taxonomy is defined in config/taxonomy.yaml. Do not add segments or geographies
 without updating taxonomy.yaml first.
 
+## Corridor focus (added 2026-07-21)
+The Korea → India K-beauty corridor is a first-class research axis, not a footnote.
+Registry: config/corridor.yaml (conduits, brands carried, whitespace, monitoring
+queries). Conventions:
+- Any DataPoint about K-beauty inside India carries "[CORRIDOR]" in notes.
+- KR export flows to India stay geography=KR, value_basis=EXPORT_FOB, destination
+  in notes.
+- Every fetcher that supports queries includes the corridor query set from
+  corridor.yaml, not just the per-geography defaults.
+
 ## Non-negotiable evidence rules
 
 1. NEVER state a market size, share, growth rate, price, or revenue from your own

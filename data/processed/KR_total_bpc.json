@@ -724,6 +724,44 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "Live commerce; 'sizing varies by scope definition'; Naver ~73.6% share; value_basis_uncertain"
+    },
+    {
+      "geography": "KR",
+      "segment": "total_bpc",
+      "sub_segment": null,
+      "metric": "export_value",
+      "value": 0.0025,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "EXPORT_FOB",
+      "tier": null,
+      "source_name": "UN Comtrade",
+      "source_url": "https://comtradeplus.un.org",
+      "date_accessed": "2026-07-21",
+      "confidence": "HIGH",
+      "methodology": null,
+      "notes": "HS 3307 Korea exports to India (UN Comtrade, FOB USD). HS 3307 is mixed shave/deo/bath preparations. [CORRIDOR]"
+    },
+    {
+      "geography": "KR",
+      "segment": "total_bpc",
+      "sub_segment": null,
+      "metric": "export_value",
+      "value": 0.7307,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "EXPORT_FOB",
+      "tier": null,
+      "source_name": "UN Comtrade",
+      "source_url": "https://comtradeplus.un.org",
+      "date_accessed": "2026-07-21",
+      "confidence": "HIGH",
+      "methodology": null,
+      "notes": "HS 3307 Korea exports to World (UN Comtrade, FOB USD). HS 3307 is mixed shave/deo/bath preparations."
     }
   ]
 }

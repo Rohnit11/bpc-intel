@@ -1,0 +1,5 @@
+# q-commerce assortment tracker opt-in.
+# Scraping Blinkit/Zepto is ToS-sensitive. The fetcher refuses to run unless
+# you explicitly set enabled: true, and even then applies 5+ second delays
+# and an identifying user agent.
+enabled: false

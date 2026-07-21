@@ -85,16 +85,23 @@ def taxonomy_segments() -> dict[str, list[str]]:
     }
 
 
+# Aggregate levels that are valid in processed data but are not taxonomy
+# segments: "total_bpc" = the whole BPC market for a geography.
+AGGREGATE_SEGMENTS = {"total_bpc"}
+
+
 def validate_segment(segment_id: str, sub_segment: str | None = None) -> bool:
     """Check a segment (and optional sub-segment) against taxonomy.yaml.
 
     Args:
-        segment_id: Segment id, e.g. "skincare".
+        segment_id: Segment id, e.g. "skincare", or an aggregate ("total_bpc").
         sub_segment: Optional sub-segment id, e.g. "sheet_masks".
 
     Returns:
         True if the segment (and sub-segment, if given) exists in the taxonomy.
     """
+    if segment_id in AGGREGATE_SEGMENTS:
+        return sub_segment is None
     segments = taxonomy_segments()
     if segment_id not in segments:
         return False

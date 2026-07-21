@@ -1,0 +1,45 @@
+{
+  "geography": "IN",
+  "segment": "colour_cosmetics",
+  "last_updated": "2026-07-21",
+  "data_points": [
+    {
+      "geography": "IN",
+      "segment": "colour_cosmetics",
+      "sub_segment": null,
+      "metric": "market_size",
+      "value": 3.46,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "DMI",
+      "source_url": null,
+      "date_accessed": "2026-07-21",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "Forecast CAGR 7.08%"
+    },
+    {
+      "geography": "IN",
+      "segment": "colour_cosmetics",
+      "sub_segment": null,
+      "metric": "market_share",
+      "value": 79.55,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": "mass",
+      "source_name": "Mordor Intelligence",
+      "source_url": null,
+      "date_accessed": "2026-07-21",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "Mass tier share of colour cosmetics"
+    }
+  ]
+}

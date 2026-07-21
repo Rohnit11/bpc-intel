@@ -1,0 +1,26 @@
+{
+  "geography": "KR",
+  "segment": "fragrances",
+  "last_updated": "2026-07-21",
+  "data_points": [
+    {
+      "geography": "KR",
+      "segment": "fragrances",
+      "sub_segment": null,
+      "metric": "export_value",
+      "value": 0.06,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "period_type": "CY",
+      "value_basis": "EXPORT_FOB",
+      "tier": null,
+      "source_name": "MFDS via Yonhap/Korea Herald",
+      "source_url": null,
+      "date_accessed": "2026-07-21",
+      "confidence": "HIGH",
+      "methodology": null,
+      "notes": "+46.2% YoY, small base"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "geography": "KR",
+  "segment": "dermocosmetics",
+  "last_updated": "2026-07-21",
+  "data_points": [
+    {
+      "geography": "KR",
+      "segment": "dermocosmetics",
+      "sub_segment": null,
+      "metric": "growth_yoy",
+      "value": 13.0,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "Euromonitor International",
+      "source_url": null,
+      "date_accessed": "2026-07-21",
+      "confidence": "HIGH",
+      "methodology": null,
+      "notes": "Driven by PDRN, exosomes, peptides"
+    }
+  ]
+}

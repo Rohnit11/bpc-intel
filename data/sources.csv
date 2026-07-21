@@ -1,1 +1,77 @@
 claim,value,unit,currency,geography,segment,period,period_type,value_basis,source_name,url,date_accessed,confidence,notes
+KR total_bpc market_size,13.0,usd_bn,USD,KR,total_bpc,2024,CY,RETAIL,Euromonitor International,,2026-07-21,HIGH,Category-consistent BPC definition; report's highest-weighted total
+KR total_bpc growth_yoy,1.8,percent,USD,KR,total_bpc,2024,CY,RETAIL,Euromonitor International,,2026-07-21,HIGH,Constant value terms
+KR total_bpc market_size,13.66,usd_bn,USD,KR,total_bpc,2025,CY,RETAIL,Mordor Intelligence,,2026-07-21,LOW,Broader 'cosmetics' basket; treat cautiously per baseline; value_basis_uncertain
+KR total_bpc cagr_forecast,6.61,percent,USD,KR,total_bpc,2025-2030,range,RETAIL,Mordor Intelligence,,2026-07-21,LOW,Forecast CAGR to 2030; broader basket
+KR total_bpc market_size,18.39,usd_bn,USD,KR,total_bpc,2025,CY,RETAIL,Expert Market Research,,2026-07-21,LOW,"'Cosmetics' definition, broader than BPC; value_basis_uncertain"
+KR total_bpc per_capita_spend,250.0,usd,USD,KR,total_bpc,2024,CY,RETAIL,Baseline report (derived),,2026-07-21,ESTIMATE,Order-of-magnitude comparison vs India
+KR total_bpc market_size [premium],5.88,usd_bn,USD,KR,total_bpc,2024,CY,RETAIL,Baseline report (source unstated),,2026-07-21,LOW,Aggregate premium value; source not stated in baseline; value_basis_uncertain
+KR total_bpc export_value,11.43,usd_bn,USD,KR,total_bpc,2025,CY,EXPORT_FOB,MFDS / Korea Customs Service,,2026-07-21,HIGH,Record; world #2 cosmetics exporter
+KR total_bpc growth_yoy,12.3,percent,USD,KR,total_bpc,2025,CY,EXPORT_FOB,MFDS / Korea Customs Service,,2026-07-21,HIGH,Export growth
+KR total_bpc export_value,10.2,usd_bn,USD,KR,total_bpc,2024,CY,EXPORT_FOB,MFDS / Korea Customs Service,,2026-07-21,HIGH,+20.3% YoY
+KR skincare export_value,8.54,usd_bn,USD,KR,skincare,2025,CY,EXPORT_FOB,MFDS via Yonhap/Korea Herald,,2026-07-21,HIGH,~75% of total exports
+KR skincare growth_yoy,11.6,percent,USD,KR,skincare,2025,CY,EXPORT_FOB,MFDS via Yonhap/Korea Herald,,2026-07-21,HIGH,
+KR colour_cosmetics export_value,1.51,usd_bn,USD,KR,colour_cosmetics,2025,CY,EXPORT_FOB,MFDS via Yonhap/Korea Herald,,2026-07-21,HIGH,~13% of total exports
+KR colour_cosmetics growth_yoy,12.0,percent,USD,KR,colour_cosmetics,2025,CY,EXPORT_FOB,MFDS via Yonhap/Korea Herald,,2026-07-21,HIGH,
+KR bath_shower export_value,0.59,usd_bn,USD,KR,bath_shower,2025,CY,EXPORT_FOB,MFDS via Yonhap/Korea Herald,,2026-07-21,HIGH,'Body cleansing products' category
+KR fragrances export_value,0.06,usd_bn,USD,KR,fragrances,2025,CY,EXPORT_FOB,MFDS via Yonhap/Korea Herald,,2026-07-21,HIGH,"+46.2% YoY, small base"
+KR total_bpc export_value,2.2,usd_bn,USD,KR,total_bpc,2025,CY,EXPORT_FOB,MFDS / Korea Customs Service,,2026-07-21,HIGH,"Destination: US (#1 destination, +15.1%)"
+KR total_bpc export_value,2.0,usd_bn,USD,KR,total_bpc,2025,CY,EXPORT_FOB,MFDS / Korea Customs Service,,2026-07-21,HIGH,Destination: China (-19.2% YoY)
+KR total_bpc export_value,0.282,usd_bn,USD,KR,total_bpc,2025,CY,EXPORT_FOB,MFDS / Korea Customs Service,,2026-07-21,HIGH,"Destination: Poland, breakout market +111.7%"
+KR total_bpc export_value,0.286,usd_bn,USD,KR,total_bpc,2025,CY,EXPORT_FOB,MFDS / Korea Customs Service,,2026-07-21,HIGH,"Destination: UAE, breakout market +67.2%"
+KR total_bpc export_value,0.05,usd_bn,USD,KR,total_bpc,H1_2025,H1,EXPORT_FOB,MFDS / Korea Customs Service,,2026-07-21,MEDIUM,"Destination: India; ~US$50m base, +44.7% H1 2025 basis"
+KR total_bpc production_value,17.54,krw_tn,KRW,KR,total_bpc,2024,CY,PRODUCTION,MFDS,,2026-07-21,HIGH,Record domestic production value
+KR total_bpc production_value,17.9,krw_tn,KRW,KR,total_bpc,2025,CY,PRODUCTION,MFDS,,2026-07-21,HIGH,
+KR total_bpc production_value,1.61,krw_tn,KRW,KR,total_bpc,2025,CY,PRODUCTION,MFDS,,2026-07-21,HIGH,Company: Cosmax — #1 by production value
+KR total_bpc production_value,1.3,krw_tn,KRW,KR,total_bpc,2025,CY,PRODUCTION,MFDS,,2026-07-21,HIGH,Company: Kolmar Korea — #2 by production value
+KR total_bpc production_value,353.0,krw_bn,KRW,KR,total_bpc,2025,CY,PRODUCTION,MFDS,,2026-07-21,HIGH,Company: Cosmecca Korea — #3 by production value
+KR total_bpc production_value,285.0,krw_bn,KRW,KR,total_bpc,2025,CY,PRODUCTION,MFDS (via Reach24H analysis),,2026-07-21,MEDIUM,"Company: APR (Medicube), +177.8%, rank 21 to 4"
+KR total_bpc production_value,228.5,krw_bn,KRW,KR,total_bpc,2025,CY,PRODUCTION,MFDS (via Reach24H analysis),,2026-07-21,MEDIUM,"Company: The Founders (Anua), +50%"
+KR total_bpc production_value,184.1,krw_bn,KRW,KR,total_bpc,2025,CY,PRODUCTION,MFDS (via Reach24H analysis),,2026-07-21,MEDIUM,"Company: Gudai Global (Beauty of Joseon), +68.6%"
+KR total_bpc production_value,166.2,krw_bn,KRW,KR,total_bpc,2025,CY,PRODUCTION,MFDS (via Reach24H analysis),,2026-07-21,MEDIUM,"Company: Benow, +52.9%"
+KR dermocosmetics growth_yoy,13.0,percent,KRW,KR,dermocosmetics,2024,CY,RETAIL,Euromonitor International,,2026-07-21,HIGH,"Driven by PDRN, exosomes, peptides"
+KR total_bpc market_share [premium],22.0,percent,KRW,KR,total_bpc,2024,CY,RETAIL,Euromonitor International,,2026-07-21,HIGH,Company: AmorePacific share of premium BPC
+KR total_bpc revenue,4.25,krw_tn,KRW,KR,total_bpc,2025,CY,NET_REALISATION,AmorePacific disclosure via trade press,,2026-07-21,MEDIUM,"Company: AmorePacific, +9.5% YoY; OP KRW 335.8bn +52.3%"
+KR total_bpc revenue,6.36,krw_tn,KRW,KR,total_bpc,2025,CY,NET_REALISATION,LG H&H disclosure via trade press,,2026-07-21,MEDIUM,"Company: LG H&H, -6.7% YoY; OP KRW 170.7bn -62.8%; includes non-BPC HDB lines"
+KR total_bpc revenue,2.39,krw_tn,KRW,KR,total_bpc,2025,CY,NET_REALISATION,Korea Product Post,,2026-07-21,MEDIUM,"Company: Cosmax (ODM), record year"
+KR total_bpc revenue,2.16,krw_tn,KRW,KR,total_bpc,2024,CY,NET_REALISATION,Korea Biomedical Review,,2026-07-21,MEDIUM,"Company: Cosmax (ODM), +21.9% YoY"
+KR total_bpc revenue,2.72,krw_tn,KRW,KR,total_bpc,2025,CY,NET_REALISATION,Korea Biomedical Review,,2026-07-21,MEDIUM,Company: Kolmar Korea (ODM); OP KRW 239.6bn; US subsidiary +71%
+KR total_bpc revenue,4.79,krw_tn,KRW,KR,total_bpc,2024,CY,NET_REALISATION,Seoul Economic Daily,,2026-07-21,MEDIUM,"Company: CJ Olive Young (retailer), +~22% YoY"
+KR total_bpc revenue,5.83,krw_tn,KRW,KR,total_bpc,2025,CY,NET_REALISATION,Seoul Economic Daily,,2026-07-21,MEDIUM,"Company: CJ Olive Young (retailer), +21.8% YoY, ~1,350-1,370 stores"
+KR total_bpc revenue,224.6,krw_bn,KRW,KR,total_bpc,FY24,FY,NET_REALISATION,Baseline report (company disclosure),,2026-07-21,MEDIUM,"Company: Innisfree, -18%; down from KRW 768bn peak (2016); road-shop collapse"
+KR total_bpc channel_share,50.0,percent,KRW,KR,total_bpc,2024,CY,RETAIL,Euromonitor International,,2026-07-21,HIGH,E-commerce share of BPC value; reported as '>50%'
+KR total_bpc channel_share,60.8,percent,KRW,KR,total_bpc,2024,CY,RETAIL,Korea Ratings via Korea JoongAng Daily,,2026-07-21,MEDIUM,Cosmetics online penetration; up from 39.1% in 2019
+KR total_bpc market_size,12.5,krw_tn,KRW,KR,total_bpc,2025,CY,RETAIL,Korea Duty Free Shops Association via Seoul Economic Daily,,2026-07-21,MEDIUM,"Duty-free channel, ALL categories (not BPC-only), -11.8% YoY; value_basis_uncertain"
+KR total_bpc market_size,24.8,krw_tn,KRW,KR,total_bpc,2019,CY,RETAIL,Korea Duty Free Shops Association,,2026-07-21,MEDIUM,"Duty-free peak, ALL categories; halved by 2025; value_basis_uncertain"
+KR total_bpc market_size,2.5,krw_tn,KRW,KR,total_bpc,2024,CY,RETAIL,Baseline report (scope varies),,2026-07-21,LOW,Live commerce; 'sizing varies by scope definition'; Naver ~73.6% share; value_basis_uncertain
+IN total_bpc market_size,33.08,usd_bn,USD,IN,total_bpc,2025,CY,RETAIL,Statista (via China Briefing),,2026-07-21,MEDIUM,Statista consumer-market 'revenue' basis; value_basis_uncertain
+IN total_bpc market_size,28.0,usd_bn,USD,IN,total_bpc,2024,CY,RETAIL,Statista (via China Briefing),,2026-07-21,MEDIUM,Lower bound of baseline's US$28-31bn working range; value_basis_uncertain
+IN total_bpc market_size,31.19,usd_bn,USD,IN,total_bpc,2025,CY,RETAIL,IMARC,,2026-07-21,LOW,
+IN total_bpc cagr_forecast,3.48,percent,USD,IN,total_bpc,2025-2030,range,RETAIL,Statista,,2026-07-21,MEDIUM,Conservative vs consensus ~10%
+IN total_bpc growth_yoy,10.0,percent,USD,IN,total_bpc,2024,CY,RETAIL,Baseline consensus (multiple houses),,2026-07-21,LOW,Most houses cluster 10-11%; conservative ones 5-6%
+IN total_bpc per_capita_spend,22.74,usd,USD,IN,total_bpc,2025,CY,RETAIL,Statista,,2026-07-21,MEDIUM,Per-person BPC revenue; order of magnitude below Korea
+IN skincare market_share,35.0,percent,USD,IN,skincare,2025,CY,RETAIL,IMARC,,2026-07-21,LOW,Skincare/sun care share of total BPC
+IN skincare market_share,49.0,percent,USD,IN,skincare,2025,CY,RETAIL,Grand View Research,,2026-07-21,LOW,"Share of narrower 'cosmetics' basket, not full BPC"
+IN colour_cosmetics market_size,3.46,usd_bn,USD,IN,colour_cosmetics,2024,CY,RETAIL,DMI,,2026-07-21,LOW,Forecast CAGR 7.08%
+IN colour_cosmetics market_share [mass],79.55,percent,USD,IN,colour_cosmetics,2025,CY,RETAIL,Mordor Intelligence,,2026-07-21,LOW,Mass tier share of colour cosmetics
+IN mens_grooming market_size,186.3,inr_bn,INR,IN,mens_grooming,2025,CY,RETAIL,Euromonitor International,,2026-07-21,HIGH,+9% growth
+IN mens_grooming growth_yoy,9.0,percent,INR,IN,mens_grooming,2025,CY,RETAIL,Euromonitor International,,2026-07-21,HIGH,
+IN mens_grooming market_size,2.3,usd_bn,USD,IN,mens_grooming,2024,CY,RETAIL,IMARC,,2026-07-21,LOW,Narrower 'male grooming products' basket; 6.8% forecast CAGR
+IN total_bpc channel_share,9.4,percent,USD,IN,total_bpc,2025,CY,RETAIL,"Baseline report (projection, source unstated)",,2026-07-21,LOW,Digital channels share of BPC revenue
+IN total_bpc channel_share,13.4,percent,INR,IN,total_bpc,2025,CY,RETAIL,Unicommerce,,2026-07-21,MEDIUM,BPC share of Blinkit daily sales — q-commerce channel signal
+IN total_bpc market_size,5.5,usd_bn,USD,IN,total_bpc,2025,CY,RETAIL,Baseline report (q-commerce sizing),,2026-07-21,LOW,Indian q-commerce market ALL categories (not BPC-only); Blinkit >50% share; value_basis_uncertain
+IN total_bpc revenue,10022.0,inr_cr,INR,IN,total_bpc,FY25,FY,NET_REALISATION,Nykaa (FSN E-Commerce) disclosure,,2026-07-21,MEDIUM,"Company: Nykaa; 265 stores, ~4,200 brands, ~40m beauty customers"
+IN total_bpc revenue,2067.0,inr_cr,INR,IN,total_bpc,FY25,FY,NET_REALISATION,Honasa Consumer disclosure,,2026-07-21,MEDIUM,"Company: Honasa (Mamaearth); PAT Rs 73 cr -32%, Project Neev reset"
+IN skincare revenue,347.0,inr_cr,INR,IN,skincare,FY24,FY,NET_REALISATION,Entrackr,,2026-07-21,MEDIUM,Company: Minimalist (Uprising Science); up from Rs 184 cr FY23
+"HUL acquired 90.5% of Uprising Science (Minimalist) for Rs 2,706.44 crore",2706.44,inr_cr,INR,IN,skincare,FY25,FY,N/A (deal value),"Business Standard (Apr 22, 2025)",,2026-07-21,MEDIUM,Completed acquisition; primary infusion + secondary purchase
+"Minimalist pre-money EV in HUL deal: Rs 2,955 crore (~US$350m)",2955,inr_cr,INR,IN,skincare,FY25,FY,N/A (deal value),Entrackr,,2026-07-21,MEDIUM,Signed Jan 2025; remaining 9.5% in ~2 years
+AmorePacific acquired COSRX to 93.2% for ~US$560m (KRW 755bn),0.56,usd_bn,USD,KR,skincare,2024,CY,N/A (deal value),Baseline report (Oct 2024 deal),,2026-07-21,MEDIUM,
+Korea beauty-sector M&A totalled US$2.32bn Jan-Sep 2025,2.32,usd_bn,USD,KR,total_bpc,2025,CY,N/A (deal value),"McKinsey via The Korea Herald (Nov 3, 2025)",,2026-07-21,MEDIUM,ION Analytics separately counted 26 deals ~US$1.8bn
+Gudai Global bought Skinfood + Serin for ~KRW 750bn (US$521m),750,krw_bn,KRW,KR,total_bpc,2025,CY,N/A (deal value),Baseline report,,2026-07-21,MEDIUM,
+KKR acquired Samhwa (cosmetics packaging) for KRW 733bn,733,krw_bn,KRW,KR,total_bpc,2025,CY,N/A (deal value),Baseline report (Sept 2025),,2026-07-21,MEDIUM,
+Blackstone acquired Juno Hair for KRW 800bn,800,krw_bn,KRW,KR,hair_care,2025,CY,N/A (deal value),Baseline report (Sept 2025),,2026-07-21,MEDIUM,
+Unilever reportedly acquired majority of Plum for ~US$180m,0.18,usd_bn,USD,IN,skincare,2025,CY,N/A (deal value),"Baseline report (reported, unconfirmed)",,2026-07-21,LOW,Single-source; verify terms
+L'Oréal reportedly took ~30% of Kama Ayurveda for ~US$100m,0.10,usd_bn,USD,IN,total_bpc,2024,CY,N/A (deal value),"Baseline report (reported, unconfirmed)",,2026-07-21,LOW,Single-source; verify terms
+SUGAR Cosmetics raised Series D US$50m (L Catterton-backed),0.05,usd_bn,USD,IN,colour_cosmetics,2024,CY,N/A (deal value),Baseline report,,2026-07-21,MEDIUM,
+Purplle raised ADIA-led US$120m at ~US$1.1bn valuation,0.12,usd_bn,USD,IN,total_bpc,2024,CY,N/A (deal value),Baseline report,,2026-07-21,MEDIUM,
+L'Oréal/Medik8 deal US$1.1bn at ~13x 2024 sales (reference multiple),1.1,usd_bn,USD,KR,dermocosmetics,2024,CY,N/A (deal value),Baseline report,,2026-07-21,MEDIUM,Global reference multiple for science-backed skincare

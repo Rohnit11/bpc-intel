@@ -97,12 +97,68 @@ def ingest(
     }
 
 
+def ingest_folder(
+    folder: str | Path = PROJECT_ROOT / "data" / "manual",
+    pattern: str = "*.csv",
+) -> dict:
+    """Ingest every matching file in a folder (batch drop-and-go).
+
+    Handler is auto-detected per file from its name prefix. Files that fail
+    to parse are logged and skipped so one bad file never blocks the rest.
+
+    Args:
+        folder: Directory to scan (default data/manual/).
+        pattern: Glob pattern (default "*.csv").
+
+    Returns:
+        Summary: {files_processed, total_points, total_added, total_updated,
+        gaps, per_file: {name: result-or-error}}.
+    """
+    folder = Path(folder)
+    results: dict[str, object] = {}
+    total_points = total_added = total_updated = 0
+    last_gaps: int | None = None
+
+    for path in sorted(folder.glob(pattern)):
+        if path.name == ".gitkeep":
+            continue
+        try:
+            res = ingest(path)
+        except (ValueError, KeyError) as exc:
+            logger.error("Failed to ingest %s: %s", path.name, exc)
+            results[path.name] = {"error": str(exc)}
+            continue
+        results[path.name] = res
+        total_points += res["points"]
+        total_added += res.get("added", 0)
+        total_updated += res.get("updated", 0)
+        last_gaps = res.get("gaps", last_gaps)
+
+    logger.info("Batch ingest: %d files, %d points (%d new, %d updated)",
+                len(results), total_points, total_added, total_updated)
+    return {
+        "files_processed": len(results),
+        "total_points": total_points,
+        "total_added": total_added,
+        "total_updated": total_updated,
+        "gaps": last_gaps,
+        "per_file": results,
+    }
+
+
 if __name__ == "__main__":
     import json
     import sys
 
-    if len(sys.argv) < 2:
-        print("Usage: python -m lib.ingest.ingest <filepath> [handler]")
+    args = sys.argv[1:]
+    if args and args[0] == "--folder":
+        target = args[1] if len(args) > 1 else str(PROJECT_ROOT / "data" / "manual")
+        print(json.dumps(ingest_folder(target), indent=2))
+    elif args:
+        forced = args[1] if len(args) > 1 else None
+        print(json.dumps(ingest(args[0], handler=forced), indent=2))
+    else:
+        print("Usage:\n"
+              "  python -m lib.ingest.ingest <filepath> [handler]\n"
+              "  python -m lib.ingest.ingest --folder [dir]   # batch all CSVs")
         raise SystemExit(1)
-    forced = sys.argv[2] if len(sys.argv) > 2 else None
-    print(json.dumps(ingest(sys.argv[1], handler=forced), indent=2))

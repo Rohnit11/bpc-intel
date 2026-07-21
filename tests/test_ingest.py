@@ -4,7 +4,7 @@ from __future__ import annotations
 import pytest
 
 from lib.ingest import capitaliq_csv, generic_csv, passport_csv, statista_csv
-from lib.ingest.ingest import detect_handler, ingest
+from lib.ingest.ingest import detect_handler, ingest, ingest_folder
 
 
 class TestHandlerDetection:
@@ -169,3 +169,36 @@ class TestOrchestratorEndToEnd:
         # Idempotent: second run adds nothing
         result2 = ingest(csv)
         assert result2["added"] == 0
+
+    def test_ingest_folder_batches_and_skips_bad(self, tmp_path, monkeypatch):
+        processed = tmp_path / "processed"
+        processed.mkdir()
+        sources = tmp_path / "sources.csv"
+        sources.write_text(
+            "claim,value,unit,currency,geography,segment,period,period_type,"
+            "value_basis,source_name,url,date_accessed,confidence,notes\n",
+            encoding="utf-8",
+        )
+        import lib.analysis.gaps as gaps_mod
+        import lib.ingest.ingest as orch
+        import lib.transforms.merge as merge_mod
+        monkeypatch.setattr(merge_mod, "PROCESSED_DIR", processed)
+        monkeypatch.setattr(merge_mod, "SOURCES_CSV", sources)
+        monkeypatch.setattr(orch, "GAPS_REGISTER", tmp_path / "gaps.md")
+        orig_scan = gaps_mod.scan_gaps
+        monkeypatch.setattr(orch, "scan_gaps", lambda: orig_scan(processed_dir=processed))
+
+        manual = tmp_path / "manual"
+        manual.mkdir()
+        (manual / ".gitkeep").write_text("", encoding="utf-8")
+        (manual / "capitaliq_good.csv").write_text(
+            "Company,Geography,Metric,Currency,Unit,FY2024\n"
+            "Nykaa,India,Total Revenue,INR,cr,10022\n", encoding="utf-8")
+        (manual / "capitaliq_bad.csv").write_text(
+            "Company,Revenue\nX,1\n", encoding="utf-8")  # missing columns -> skipped
+
+        summary = ingest_folder(manual)
+        assert summary["files_processed"] == 2
+        assert summary["total_added"] == 1
+        assert "error" in summary["per_file"]["capitaliq_bad.csv"]
+        assert summary["per_file"]["capitaliq_good.csv"]["added"] == 1

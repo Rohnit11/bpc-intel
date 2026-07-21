@@ -14,6 +14,12 @@ Or from a terminal:
 python -m lib.ingest.ingest data/manual/<file>.csv [handler]
 ```
 
+Batch mode — drop several exports in `data/manual/` and process them all at
+once (handler auto-detected per file; bad files are skipped, not fatal):
+```
+python -m lib.ingest.ingest --folder
+```
+
 ## Handler selection
 
 Handler is chosen by filename prefix; force it with a second argument or the

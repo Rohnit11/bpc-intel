@@ -1,0 +1,37 @@
+# K-beauty Corridor Brief — Korea → India
+*Generated {{ ctx.generated }} · K-beauty inside India is a first-class research axis (config/corridor.yaml)*
+
+## The corridor in one line
+{{ corridor.headline.trade_base }}
+
+**Entry barrier:** {{ corridor.headline.entry_barrier }}
+
+## Market sizing — K-beauty in India
+| Segment | Value | Period | Basis | Confidence | Source |
+|---|---|---|---|---|---|
+{% for s in corridor.sizing -%}
+| {{ s.segment }} | {{ s.value }} {{ s.unit }} | {{ s.period }} | {{ s.value_basis }} | {{ s.confidence }} | {{ s.source }} |
+{% endfor %}
+
+## Trade flows — Korea → India cosmetics exports (UN Comtrade)
+| Segment | Exports | Period | Confidence | Source |
+|---|---|---|---|---|
+{% for t in corridor.trade -%}
+| {{ t.segment }} | {{ t.value }} {{ t.unit }} | {{ t.period }} | {{ t.confidence }} | {{ t.source }} |
+{% endfor %}
+
+## Conduits — how K-beauty reaches Indian consumers
+{% for c in corridor.conduits -%}
+### {{ c.name }} ({{ c.type }})
+{% if c.notes %}{{ c.notes }}{% endif %}
+{% if c.kr_brands_carried %}Brands: {{ c.kr_brands_carried|map(attribute='brand')|join(', ') }}{% endif %}
+{% endfor %}
+
+## Whitespace (ranked)
+{% for w in corridor.whitespace -%}
+{{ loop.index }}. {{ w }}
+{% endfor %}
+
+## Regulation
+- **India import:** {{ corridor.regulation.india_import }}
+- **Korea export support:** {{ corridor.regulation.korea_export_support }}

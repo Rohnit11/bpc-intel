@@ -140,7 +140,9 @@ class TestShares:
         ])
         res = share.compute_shares("IN", "total_bpc")
         assert sum(s["share_pct"] for s in res["shares"]) == pytest.approx(100.0, abs=0.2)
-        assert res["shares"][0]["company"] == "Nykaa (FSN E-Commerce)"  # highest, canonicalized
+        # Nykaa is a retailer/platform -> excluded from BRAND shares; HUL leads.
+        assert res["shares"][0]["company"] == "Hindustan Unilever"
+        assert "Nykaa (FSN E-Commerce)" in res["qualifier"]
         assert "unorganised" in res["qualifier"]
 
 

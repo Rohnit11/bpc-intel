@@ -21,3 +21,6 @@ bpc-intel-build-spec (1).md
 deep-research-report (1).md
 data/manual/*
 !data/manual/.gitkeep
+
+# Report archives — regenerable dev churn
+reports/archive/

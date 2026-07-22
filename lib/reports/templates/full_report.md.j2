@@ -1,0 +1,99 @@
+{%- macro fig(f) -%}
+{%- if f -%}{{ f.value }} {{ f.unit }} ({{ f.value_basis }}, {{ f.period }}, {{ f.confidence }}; {{ f.source }}){%- else -%}—{%- endif -%}
+{%- endmacro -%}
+# BPC Market Intelligence Snapshot — South Korea × India
+*Generated {{ ctx.generated }} · every figure traces to data/sources.csv · basis and confidence shown inline*
+
+---
+
+## 1. Headline
+
+| | South Korea | India |
+|---|---|---|
+| Total BPC market size | {{ fig(ctx.korea.headline.market_size) }} | {{ fig(ctx.india.headline.market_size) }} |
+| YoY growth | {{ fig(ctx.korea.headline.growth_yoy) }} | {{ fig(ctx.india.headline.growth_yoy) }} |
+| Forecast CAGR | {{ fig(ctx.korea.headline.cagr_forecast) }} | {{ fig(ctx.india.headline.cagr_forecast) }} |
+| Per-capita spend | {{ fig(ctx.korea.headline.per_capita_spend) }} | {{ fig(ctx.india.headline.per_capita_spend) }} |
+| Total exports (FOB) | {{ fig(ctx.korea.headline.total_export) }} | {{ fig(ctx.india.headline.total_export) }} |
+
+> **Value-basis reminder:** Korea's domestic retail, export FOB, and production value are three different measures — never summed. India retail is MRP-inclusive; company revenue is net realisation.
+
+---
+
+## 2. South Korea — segments
+
+| Segment | Market size | YoY | Fcst CAGR | Exports (FOB) |
+|---|---|---|---|---|
+{% for r in ctx.korea.segments -%}
+| {{ r.segment.replace('_',' ') }} | {{ fig(r.size) }} | {{ fig(r.growth) }} | {{ fig(r.cagr) }} | {{ fig(r.export) }} |
+{% endfor %}
+### Korea — listed-player revenue shares
+{{ ctx.korea.shares.qualifier }}
+
+| Company | Revenue | Share |
+|---|---|---|
+{% for s in ctx.korea.shares.shares[:8] -%}
+| {{ s.company }} | {{ s.revenue }} {{ ctx.korea.shares.unit }} | {{ s.share_pct }}% |
+{% endfor %}
+---
+
+## 3. India — segments
+
+| Segment | Market size | YoY | Fcst CAGR |
+|---|---|---|---|
+{% for r in ctx.india.segments -%}
+| {{ r.segment.replace('_',' ') }} | {{ fig(r.size) }} | {{ fig(r.growth) }} | {{ fig(r.cagr) }} |
+{% endfor %}
+### India — sizing reconciliation (top-down vs bottom-up)
+{% set rec = ctx.india.reconciliation -%}
+- **Top-down:** {% if rec.top_down %}{{ rec.top_down.value }} {{ rec.top_down.unit }} ({{ rec.top_down.value_basis }}, {{ rec.top_down.source }}){% else %}—{% endif %}
+- **Bottom-up:** {% if rec.bottom_up %}{{ rec.bottom_up.value }} {{ rec.bottom_up.unit }} from {{ rec.bottom_up.companies.keys()|list|join(', ') }}{% else %}—{% endif %}
+- **Gap:** {{ rec.gap_pct if rec.gap_pct is not none else 'not computed (bases not comparable)' }} · **Publishable:** {{ rec.publishable }}
+{% for m in rec.mismatches %}  - {{ m }}
+{% endfor %}
+### India — listed-player revenue shares
+{{ ctx.india.shares.qualifier }}
+
+| Company | Revenue | Share |
+|---|---|---|
+{% for s in ctx.india.shares.shares[:8] -%}
+| {{ s.company }} | {{ s.revenue }} {{ ctx.india.shares.unit }} | {{ s.share_pct }}% |
+{% endfor %}
+---
+
+## 4. K-beauty corridor (Korea → India)
+
+**Trade base:** {{ ctx.corridor.headline.trade_base }}
+**Entry barrier:** {{ ctx.corridor.headline.entry_barrier }}
+
+### Corridor sizing (K-beauty in India)
+| Segment | Value | Period | Basis | Confidence | Source |
+|---|---|---|---|---|---|
+{% for s in ctx.corridor.sizing -%}
+| {{ s.segment }} | {{ s.value }} {{ s.unit }} | {{ s.period }} | {{ s.value_basis }} | {{ s.confidence }} | {{ s.source }} |
+{% endfor %}
+### Corridor trade flows (Korea → India, UN Comtrade)
+| Segment | Exports | Period | Source |
+|---|---|---|---|
+{% for t in ctx.corridor.trade -%}
+| {{ t.segment }} | {{ t.value }} {{ t.unit }} | {{ t.period }} | {{ t.source }} |
+{% endfor %}
+### Conduits
+{% for c in ctx.corridor.conduits -%}
+- **{{ c.name }}** ({{ c.type }}){% if c.kr_brands_carried %} — {{ c.kr_brands_carried|map(attribute='brand')|join(', ') }}{% endif %}
+{% endfor %}
+### Whitespace (ranked)
+{% for w in ctx.corridor.whitespace -%}
+{{ loop.index }}. {{ w }}
+{% endfor %}
+---
+
+## 5. Charts
+{% for c in charts %}
+![{{ c }}](charts/{{ c }})
+{% endfor %}
+---
+
+## 6. Gaps register (appendix)
+
+{{ ctx.gaps_md }}

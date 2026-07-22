@@ -12,7 +12,7 @@ logger = logging.getLogger("bpc_intel.analysis")
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 
-_COMPANY_RE = re.compile(r"Company:\s*([^—;()]+?)(?:\s*[—;(]|$)")
+_COMPANY_RE = re.compile(r"Company:\s*([^—;(,]+?)(?:\s*[—;(,]|$)")
 
 # Canonical company names — collapse cross-source variants to one entity.
 _COMPANY_ALIASES = {
@@ -34,6 +34,42 @@ _COMPANY_ALIASES = {
 def canonical_company(name: str) -> str:
     """Map a raw company name to its canonical form (variant-collapsing)."""
     return _COMPANY_ALIASES.get(name.strip().lower(), name.strip())
+
+
+# Value-chain role per company — brand owners, ODM/OEM manufacturers, and
+# retailers operate at DIFFERENT levels; their revenues are not comparable as
+# "market share". Sourced from config/companies.yaml groupings.
+_ROLE_BY_GROUP = {
+    "conglomerates": "brand", "incumbents": "brand", "indie_brands": "brand",
+    "d2c_brands": "brand", "platforms": "retailer", "retailers": "retailer",
+    "odm_oem": "odm",
+}
+
+
+def _load_company_roles() -> dict[str, str]:
+    """Map canonical company name -> role from config/companies.yaml."""
+    import yaml
+    path = PROJECT_ROOT / "config" / "companies.yaml"
+    with path.open(encoding="utf-8") as fh:
+        cfg = yaml.safe_load(fh)
+    roles: dict[str, str] = {}
+    for geo in cfg.values():
+        for group, members in geo.items():
+            role = _ROLE_BY_GROUP.get(group, "brand")
+            for m in members:
+                # Strip parenthetical then canonicalize, matching how names are
+                # extracted from DataPoint notes.
+                stripped = re.sub(r"\s*\(.*\)", "", m["name"])
+                roles[canonical_company(stripped)] = role
+    return roles
+
+
+_COMPANY_ROLES = _load_company_roles()
+
+
+def company_role(name: str) -> str:
+    """Value-chain role for a (canonical) company: brand, odm, retailer, or unknown."""
+    return _COMPANY_ROLES.get(canonical_company(name), "unknown")
 
 # Period ordering: newer periods sort higher. Extracts the end year.
 _YEAR_RE = re.compile(r"(\d{4})|FY(\d{2})")
@@ -90,6 +126,7 @@ def latest_company_revenues(points: list[DataPoint]) -> dict[str, DataPoint]:
         {company_name: latest revenue DataPoint}. Only revenue metrics with a
         parseable company name are included.
     """
+    conf_rank = {"HIGH": 3, "MEDIUM": 2, "LOW": 1, "ESTIMATE": 0}
     best: dict[str, DataPoint] = {}
     for dp in points:
         if dp.metric != "revenue":
@@ -97,12 +134,19 @@ def latest_company_revenues(points: list[DataPoint]) -> dict[str, DataPoint]:
         name = company_name(dp)
         if name is None:
             continue
-        if name not in best or period_end_year(dp.period) > period_end_year(best[name].period):
+        cur = best.get(name)
+        if cur is None:
+            best[name] = dp
+            continue
+        # Prefer the most recent period; on a tie, prefer higher confidence.
+        new_key = (period_end_year(dp.period), conf_rank.get(dp.confidence, 0))
+        cur_key = (period_end_year(cur.period), conf_rank.get(cur.confidence, 0))
+        if new_key > cur_key:
             best[name] = dp
     return best
 
 
 __all__ = [
-    "load_points", "period_end_year", "company_name",
-    "latest_company_revenues", "PROCESSED_DIR",
+    "load_points", "period_end_year", "company_name", "company_role",
+    "canonical_company", "latest_company_revenues", "PROCESSED_DIR",
 ]

@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import logging
 
-from lib.analysis._load import latest_company_revenues, load_points
+from lib.analysis._load import company_role, latest_company_revenues, load_points
 
 logger = logging.getLogger("bpc_intel.share")
 
@@ -31,11 +31,20 @@ def compute_shares(geography: str, segment: str = "total_bpc") -> dict:
         return {"geography": geography, "segment": segment, "shares": [],
                 "qualifier": "No company revenues available."}
 
+    # Brand market share compares BRAND OWNERS only. ODM manufacturers and
+    # retailers operate at different value-chain levels — their revenue is not
+    # a brand share, so exclude and name them.
+    non_brand = {n: company_role(n) for n in revs if company_role(n) in ("odm", "retailer")}
+    brand_revs = {n: dp for n, dp in revs.items() if n not in non_brand}
+    if not brand_revs:
+        return {"geography": geography, "segment": segment, "shares": [],
+                "qualifier": f"No brand-owner revenues (only {', '.join(non_brand)})."}
+
     from collections import Counter
-    combos = Counter((dp.currency, dp.unit) for dp in revs.values())
+    combos = Counter((dp.currency, dp.unit) for dp in brand_revs.values())
     (currency, unit), _ = combos.most_common(1)[0]
-    included = {n: dp for n, dp in revs.items() if (dp.currency, dp.unit) == (currency, unit)}
-    excluded = sorted(n for n, dp in revs.items() if (dp.currency, dp.unit) != (currency, unit))
+    included = {n: dp for n, dp in brand_revs.items() if (dp.currency, dp.unit) == (currency, unit)}
+    excluded = sorted(n for n, dp in brand_revs.items() if (dp.currency, dp.unit) != (currency, unit))
 
     base = sum(dp.value for dp in included.values())
     shares = sorted(
@@ -50,7 +59,7 @@ def compute_shares(geography: str, segment: str = "total_bpc") -> dict:
         (1 - len([1 for n in included if n in _NON_PURE_PLAY]) / len(included)) * 100, 0
     ) if included else 0
     qualifier = (
-        f"Shares of summed revenue for {len(included)} listed players "
+        f"Shares of summed revenue for {len(included)} listed BRAND OWNERS "
         f"({currency} {unit}, NET_REALISATION). Does NOT include "
         "unorganised/unlisted players. "
     )
@@ -58,6 +67,11 @@ def compute_shares(geography: str, segment: str = "total_bpc") -> dict:
         qualifier += (
             "Conglomerate members (HUL/Godrej/LG H&H) carry non-BPC revenue, "
             "so their shares overstate BPC position. "
+        )
+    if non_brand:
+        roles = ', '.join(f"{n} ({r})" for n, r in sorted(non_brand.items()))
+        qualifier += (
+            f"Excluded as different value-chain levels (not brand shares): {roles}. "
         )
     if excluded:
         qualifier += f"Excluded (different currency/unit): {', '.join(excluded)}. "

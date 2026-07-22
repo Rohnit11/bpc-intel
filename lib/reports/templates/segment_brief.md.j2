@@ -1,0 +1,15 @@
+{%- macro row(f) -%}
+{{ f.value }} {{ f.unit }} ({{ f.value_basis }}, {{ f.period }}, {{ f.confidence }}) — {{ f.source }}{% if f.url %} [{{ f.url }}]{% endif %}
+{%- endmacro -%}
+# Segment Brief — {{ geography }} / {{ segment.replace('_',' ')|title }}
+*Generated {{ generated }} · every figure traces to data/sources.csv*
+
+{% if points %}
+| Metric | Figure |
+|---|---|
+{% for p in points -%}
+| {{ p.metric }} | {{ row(p) }} |
+{% endfor %}
+{% else %}
+_No data yet for {{ geography }}/{{ segment }}. See the gaps register for suggested sources._
+{% endif %}

@@ -1,0 +1,14 @@
+{%- macro fig(f) -%}
+{%- if f -%}{{ f.value }} {{ f.unit }} ({{ f.value_basis }}, {{ f.period }}){%- else -%}—{%- endif -%}
+{%- endmacro -%}
+# Korea vs India — {{ metric.replace('_',' ')|title }} Comparison
+*Generated {{ generated }}*
+
+| Segment | South Korea | India |
+|---|---|---|
+{% for seg in segments -%}
+| {{ seg.name.replace('_',' ') }} | {{ fig(seg.kr) }} | {{ fig(seg.in_) }} |
+{% endfor %}
+
+> Korea and India are not period-aligned (Korea CY, India FY) and value bases differ;
+> comparisons are directional. See data/sources.csv for provenance of each figure.

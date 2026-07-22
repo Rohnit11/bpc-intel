@@ -64,7 +64,7 @@ CLAIMS: list[dict] = [
        unit="usd_bn", currency="USD", period="2025", period_type="CY",
        value_basis="RETAIL", source_name="Mordor Intelligence",
        confidence="LOW", notes="Broader 'cosmetics' basket; treat cautiously per baseline; " + VB_UNCERTAIN),
-    _c("US$13.66bn (2025)",
+    _c("growing at 6.61% to 2030",
        geography="KR", segment="total_bpc", metric="cagr_forecast", value=6.61,
        unit="percent", currency="USD", period="2025-2030", period_type="range",
        value_basis="RETAIL", source_name="Mordor Intelligence",
@@ -153,11 +153,11 @@ CLAIMS: list[dict] = [
        unit="usd_bn", currency="USD", period="2025", period_type="CY",
        value_basis="EXPORT_FOB", source_name="MFDS / Korea Customs Service",
        confidence="HIGH", notes="Destination: UAE, breakout market +67.2%"),
-    _c("rose ~44.7%",
+    _c("off a small base (~US$50m)",
        geography="KR", segment="total_bpc", metric="export_value", value=0.05,
        unit="usd_bn", currency="USD", period="H1_2025", period_type="H1",
        value_basis="EXPORT_FOB", source_name="MFDS / Korea Customs Service",
-       confidence="MEDIUM", notes="Destination: India; ~US$50m base, +44.7% H1 2025 basis"),
+       confidence="MEDIUM", notes="Destination: India; ~US$50m base (0.05 usd_bn), +44.7% H1 2025 basis"),
 
     # === KOREA — production (MFDS, PRODUCTION) ===
     _c("KRW 17.54 trillion (2024)",

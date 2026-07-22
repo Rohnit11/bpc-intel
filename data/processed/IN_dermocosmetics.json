@@ -1,0 +1,26 @@
+{
+  "geography": "IN",
+  "segment": "dermocosmetics",
+  "last_updated": "2026-07-22",
+  "data_points": [
+    {
+      "geography": "IN",
+      "segment": "dermocosmetics",
+      "sub_segment": null,
+      "metric": "market_size",
+      "value": 0.2803,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "P&S Market Research",
+      "source_url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
+      "date_accessed": "2026-07-22",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "India skincare dermacosmetics; 2030 forecast US$0.505bn"
+    }
+  ]
+}

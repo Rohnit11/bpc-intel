@@ -89,13 +89,13 @@ def fetch() -> list[dict]:
     known = _known_urls()
     records: list[dict] = []
     sess = session()
+    sess.headers.update({"Authorization": f"Bearer {api_key}"})
     for item in queries():
         try:
             resp = sess.post(
                 TAVILY_ENDPOINT,
-                json={"api_key": api_key, "query": item["query"],
-                      "search_depth": "advanced", "max_results": 5,
-                      "include_answer": False},
+                json={"query": item["query"], "search_depth": "advanced",
+                      "max_results": 5, "include_answer": False},
                 timeout=DEFAULT_TIMEOUT,
             )
             resp.raise_for_status()

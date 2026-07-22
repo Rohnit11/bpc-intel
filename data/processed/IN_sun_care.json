@@ -1,0 +1,45 @@
+{
+  "geography": "IN",
+  "segment": "sun_care",
+  "last_updated": "2026-07-22",
+  "data_points": [
+    {
+      "geography": "IN",
+      "segment": "sun_care",
+      "sub_segment": null,
+      "metric": "market_size",
+      "value": 0.89312,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "TechSci Research",
+      "source_url": "https://www.techsciresearch.com/report/india-sunscreen-market/26904.html",
+      "date_accessed": "2026-07-22",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "India sunscreen market; among fastest q-commerce risers"
+    },
+    {
+      "geography": "IN",
+      "segment": "sun_care",
+      "sub_segment": null,
+      "metric": "cagr_forecast",
+      "value": 6.8,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2024-2030",
+      "period_type": "range",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "TechSci Research",
+      "source_url": "https://www.techsciresearch.com/report/india-sunscreen-market/26904.html",
+      "date_accessed": "2026-07-22",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "India sunscreen forecast CAGR to 2030"
+    }
+  ]
+}

@@ -32,6 +32,18 @@ corridor:
       type: platform
       kr_brands_carried:
         - { brand: Mixsoon, launched: 2024-08 }
+    - name: Flipkart
+      type: platform
+      notes: "Launched international K-beauty portfolio (source: Flipkart, 2025)"
+      kr_brands_carried:
+        - { brand: "The Face Shop" }
+        - { brand: TirTir }
+        - { brand: "Beauty of Joseon" }
+        - { brand: "rom&nd" }
+        - { brand: "Thank You Farmer" }
+        - { brand: "K Glo" }
+        - { brand: Soyaang }
+        - { brand: "K Riot" }
     - name: Amazon India
       type: platform
       kr_brands_carried:

@@ -1,7 +1,7 @@
 {
   "geography": "KR",
   "segment": "skincare",
-  "last_updated": "2026-07-21",
+  "last_updated": "2026-07-22",
   "data_points": [
     {
       "geography": "KR",
@@ -78,6 +78,44 @@
       "confidence": "HIGH",
       "methodology": null,
       "notes": "HS 3304 Korea exports to World (UN Comtrade, FOB USD). HS 3304 includes makeup as well as skincare."
+    },
+    {
+      "geography": "KR",
+      "segment": "skincare",
+      "sub_segment": null,
+      "metric": "market_size",
+      "value": 7.653,
+      "unit": "krw_tn",
+      "currency": "KRW",
+      "period": "2025",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "Euromonitor International (via marketresearch.com)",
+      "source_url": "https://www.marketresearch.com/seek/Skin-Care-South-Korea/1554/1229/1.html",
+      "date_accessed": "2026-07-22",
+      "confidence": "HIGH",
+      "methodology": null,
+      "notes": "Domestic retail value; +1% YoY; population 51.7m cited"
+    },
+    {
+      "geography": "KR",
+      "segment": "skincare",
+      "sub_segment": null,
+      "metric": "growth_yoy",
+      "value": 1.0,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2025",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "Euromonitor International (via marketresearch.com)",
+      "source_url": "https://www.marketresearch.com/seek/Skin-Care-South-Korea/1554/1229/1.html",
+      "date_accessed": "2026-07-22",
+      "confidence": "HIGH",
+      "methodology": null,
+      "notes": "Korea skincare domestic retail growth"
     }
   ]
 }

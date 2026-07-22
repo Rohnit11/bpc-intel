@@ -1,7 +1,7 @@
 {
   "geography": "IN",
   "segment": "mens_grooming",
-  "last_updated": "2026-07-21",
+  "last_updated": "2026-07-22",
   "data_points": [
     {
       "geography": "IN",
@@ -59,6 +59,44 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "Narrower 'male grooming products' basket; 6.8% forecast CAGR"
+    },
+    {
+      "geography": "IN",
+      "segment": "mens_grooming",
+      "sub_segment": null,
+      "metric": "market_size",
+      "value": 2.45,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "IMARC Group",
+      "source_url": "https://www.imarcgroup.com/india-male-grooming-products-market",
+      "date_accessed": "2026-07-22",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "India male grooming; corroborates baseline US$2.3bn (2024); CAGR 6.66%"
+    },
+    {
+      "geography": "IN",
+      "segment": "mens_grooming",
+      "sub_segment": null,
+      "metric": "cagr_forecast",
+      "value": 12.2,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025-2035",
+      "period_type": "range",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "Future Market Insights",
+      "source_url": "https://www.futuremarketinsights.com/reports/mens-skincare-products-market",
+      "date_accessed": "2026-07-22",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "India MEN'S SKINCARE (sub-slice) CAGR; faster than overall grooming"
     }
   ]
 }

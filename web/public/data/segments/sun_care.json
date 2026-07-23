@@ -1,0 +1,123 @@
+{
+  "segment": "sun_care",
+  "KR": {
+    "segment": "sun_care",
+    "size": null,
+    "growth": null,
+    "cagr": null,
+    "export": null,
+    "points": []
+  },
+  "IN": {
+    "segment": "sun_care",
+    "size": {
+      "value": 0.5766,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "IMARC Group",
+      "url": "https://www.imarcgroup.com/india-sunscreen-market",
+      "notes": "India sunscreen; cf TechSci US$0.893bn (2024) — definitional spread; CAGR 6.07%",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 0.5766,
+      "fx_note": "identity (no conversion)"
+    },
+    "growth": {
+      "value": 170.0,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "1digitalstack / quick-commerce report",
+      "url": "https://www.linkedin.com/posts/samiran-mathur_1ds-sunscreen-qcom-report-apr26-activity-7458503608859250688-2W9u",
+      "notes": "Sunscreen on q-commerce projected ~2.7x (i.e. ~+170%) 2026 vs 2025; Tier 2/3 surge",
+      "metric": "growth_yoy",
+      "tier": null
+    },
+    "cagr": {
+      "value": 6.8,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2024-2030",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "TechSci Research",
+      "url": "https://www.techsciresearch.com/report/india-sunscreen-market/26904.html",
+      "notes": "India sunscreen forecast CAGR to 2030",
+      "metric": "cagr_forecast",
+      "tier": null
+    },
+    "export": null,
+    "points": [
+      {
+        "value": 0.89312,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "TechSci Research",
+        "url": "https://www.techsciresearch.com/report/india-sunscreen-market/26904.html",
+        "notes": "India sunscreen market; among fastest q-commerce risers",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 6.8,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2030",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "TechSci Research",
+        "url": "https://www.techsciresearch.com/report/india-sunscreen-market/26904.html",
+        "notes": "India sunscreen forecast CAGR to 2030",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": 0.5766,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-sunscreen-market",
+        "notes": "India sunscreen; cf TechSci US$0.893bn (2024) — definitional spread; CAGR 6.07%",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 170.0,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "1digitalstack / quick-commerce report",
+        "url": "https://www.linkedin.com/posts/samiran-mathur_1ds-sunscreen-qcom-report-apr26-activity-7458503608859250688-2W9u",
+        "notes": "Sunscreen on q-commerce projected ~2.7x (i.e. ~+170%) 2026 vs 2025; Tier 2/3 surge",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      {
+        "value": 1570.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Nykaa (retailer listing)",
+        "url": "https://www.nykaa.com/brands/beauty-of-joseon/c/26410",
+        "notes": "[CORRIDOR] Beauty of Joseon Relief Sunscreen SPF50+; MRP Rs1570, Nykaa sale Rs1256 (20% off) as of 2026-07-23; category bestseller; promo-dependent",
+        "metric": "retail_price",
+        "tier": null
+      }
+    ]
+  }
+}

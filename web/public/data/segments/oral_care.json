@@ -1,0 +1,86 @@
+{
+  "segment": "oral_care",
+  "KR": {
+    "segment": "oral_care",
+    "size": null,
+    "growth": null,
+    "cagr": null,
+    "export": null,
+    "points": [
+      {
+        "value": 0.000251,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3306 Korea exports to India (UN Comtrade, FOB USD). [CORRIDOR]",
+        "metric": "export_value",
+        "tier": null
+      },
+      {
+        "value": 0.079986,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3306 Korea exports to World (UN Comtrade, FOB USD).",
+        "metric": "export_value",
+        "tier": null
+      }
+    ]
+  },
+  "IN": {
+    "segment": "oral_care",
+    "size": null,
+    "growth": null,
+    "cagr": null,
+    "export": null,
+    "points": [
+      {
+        "value": 0.01974,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3306 India imports from World (UN Comtrade, CIF USD).",
+        "metric": "import_value",
+        "tier": null
+      },
+      {
+        "value": 0.000485,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3306 India imports from Korea (UN Comtrade, CIF USD). [CORRIDOR]",
+        "metric": "import_value",
+        "tier": null
+      },
+      {
+        "value": 0.001595,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3306 India imports from China (UN Comtrade, CIF USD).",
+        "metric": "import_value",
+        "tier": null
+      }
+    ]
+  }
+}

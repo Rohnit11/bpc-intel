@@ -33,14 +33,13 @@ def _ensure_dir(charts_dir: Path) -> Path:
     return charts_dir
 
 
-def korea_export_by_segment(charts_dir: str | Path = CHARTS_DIR) -> str | None:
-    """Bar chart of Korea export values (EXPORT_FOB) by segment, latest year.
+def _korea_export_data() -> dict[str, "DataPoint"]:
+    """Best export_value DataPoint (usd_bn) per Korea segment, for charting.
 
-    Returns:
-        Path to the saved PNG, or None if no export data.
+    Shared by the PNG chart below and lib/web_export.py's chart JSON, so both
+    surfaces plot exactly the same picked figures.
     """
-    charts_dir = _ensure_dir(Path(charts_dir))
-    data: dict[str, float] = {}
+    data: dict[str, "DataPoint"] = {}
     for seg in _SEGMENTS:
         exports = [
             dp for dp in load_points("KR", seg)
@@ -52,14 +51,24 @@ def korea_export_by_segment(charts_dir: str | Path = CHARTS_DIR) -> str | None:
             exports = [dp for dp in load_points("KR", seg)
                        if dp.metric == "export_value" and dp.unit == "usd_bn"]
         if exports:
-            best = max(exports, key=lambda d: d.value)
-            data[seg] = best.value
+            data[seg] = max(exports, key=lambda d: d.value)
+    return data
+
+
+def korea_export_by_segment(charts_dir: str | Path = CHARTS_DIR) -> str | None:
+    """Bar chart of Korea export values (EXPORT_FOB) by segment, latest year.
+
+    Returns:
+        Path to the saved PNG, or None if no export data.
+    """
+    charts_dir = _ensure_dir(Path(charts_dir))
+    data = _korea_export_data()
     if not data:
         return None
 
-    items = sorted(data.items(), key=lambda kv: kv[1], reverse=True)
+    items = sorted(data.items(), key=lambda kv: kv[1].value, reverse=True)
     labels = [k.replace("_", " ") for k, _ in items]
-    values = [v for _, v in items]
+    values = [dp.value for _, dp in items]
 
     fig, ax = plt.subplots(figsize=(8, 4.5))
     ax.barh(labels, values, color="#2b6cb0")
@@ -106,6 +115,24 @@ def india_listed_player_shares(charts_dir: str | Path = CHARTS_DIR) -> str | Non
     return str(out)
 
 
+def _corridor_trade_data() -> dict[str, dict]:
+    """Summed [CORRIDOR] Korea->India export value (US$ mn) per segment.
+
+    Returns {segment: {"value_mn": float, "points": [DataPoint, ...]}} so
+    callers can both plot the total and cite every contributing DataPoint.
+    Shared by the PNG chart below and lib/web_export.py's chart JSON.
+    """
+    data: dict[str, dict] = {}
+    for seg in _SEGMENTS + ["total_bpc"]:
+        for dp in load_points("KR", seg):
+            if (dp.metric == "export_value" and dp.notes
+                    and "[CORRIDOR]" in dp.notes and "India" in dp.notes):
+                bucket = data.setdefault(seg, {"value_mn": 0.0, "points": []})
+                bucket["value_mn"] += dp.value * 1000  # bn -> mn
+                bucket["points"].append(dp)
+    return {k: v for k, v in data.items() if k != "total_bpc" and v["value_mn"] > 0}
+
+
 def corridor_trade_by_hs(charts_dir: str | Path = CHARTS_DIR) -> str | None:
     """Bar chart of Korea->India cosmetics exports by segment (corridor).
 
@@ -113,19 +140,13 @@ def corridor_trade_by_hs(charts_dir: str | Path = CHARTS_DIR) -> str | None:
         Path to the saved PNG, or None if no corridor trade data.
     """
     charts_dir = _ensure_dir(Path(charts_dir))
-    data: dict[str, float] = {}
-    for seg in _SEGMENTS + ["total_bpc"]:
-        for dp in load_points("KR", seg):
-            if (dp.metric == "export_value" and dp.notes
-                    and "[CORRIDOR]" in dp.notes and "India" in dp.notes):
-                data[seg] = data.get(seg, 0.0) + dp.value * 1000  # bn -> mn
-    data = {k: v for k, v in data.items() if k != "total_bpc" and v > 0}
+    data = _corridor_trade_data()
     if not data:
         return None
 
-    items = sorted(data.items(), key=lambda kv: kv[1], reverse=True)
+    items = sorted(data.items(), key=lambda kv: kv[1]["value_mn"], reverse=True)
     labels = [k.replace("_", " ") for k, _ in items]
-    values = [v for _, v in items]
+    values = [v["value_mn"] for _, v in items]
 
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.barh(labels, values, color="#6b46c1")

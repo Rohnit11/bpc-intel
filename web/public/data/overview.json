@@ -1,0 +1,1232 @@
+{
+  "generated": "2026-07-23",
+  "korea": {
+    "headline": {
+      "geography": "KR",
+      "market_size": {
+        "value": 13.0,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Euromonitor International",
+        "url": null,
+        "notes": "Category-consistent BPC definition; report's highest-weighted total",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 13.0,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth_yoy": {
+        "value": 1.8,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Euromonitor International",
+        "url": null,
+        "notes": "Constant value terms",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr_forecast": {
+        "value": 6.61,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025-2030",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Mordor Intelligence",
+        "url": null,
+        "notes": "Forecast CAGR to 2030; broader basket",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "per_capita_spend": {
+        "value": 250.0,
+        "unit": "usd",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "ESTIMATE",
+        "source": "Baseline report (derived)",
+        "url": null,
+        "notes": "Order-of-magnitude comparison vs India",
+        "metric": "per_capita_spend",
+        "tier": null
+      },
+      "total_export": {
+        "value": 11.43,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS / Korea Customs Service",
+        "url": null,
+        "notes": "Record; world #2 cosmetics exporter",
+        "metric": "export_value",
+        "tier": null
+      }
+    },
+    "segments": [
+      {
+        "segment": "skincare",
+        "size": {
+          "value": 7.653,
+          "unit": "krw_tn",
+          "currency": "KRW",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "HIGH",
+          "source": "Euromonitor International (via marketresearch.com)",
+          "url": "https://www.marketresearch.com/seek/Skin-Care-South-Korea/1554/1229/1.html",
+          "notes": "Domestic retail value; +1% YoY; population 51.7m cited",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 5.1765,
+          "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
+        },
+        "growth": {
+          "value": 1.0,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "HIGH",
+          "source": "Euromonitor International (via marketresearch.com)",
+          "url": "https://www.marketresearch.com/seek/Skin-Care-South-Korea/1554/1229/1.html",
+          "notes": "Korea skincare domestic retail growth",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": null,
+        "export": {
+          "value": 8.54,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "EXPORT_FOB",
+          "confidence": "HIGH",
+          "source": "MFDS via Yonhap/Korea Herald",
+          "url": null,
+          "notes": "~75% of total exports",
+          "metric": "export_value",
+          "tier": null
+        }
+      },
+      {
+        "segment": "colour_cosmetics",
+        "size": null,
+        "growth": {
+          "value": 12.0,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "EXPORT_FOB",
+          "confidence": "HIGH",
+          "source": "MFDS via Yonhap/Korea Herald",
+          "url": null,
+          "notes": null,
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": null,
+        "export": {
+          "value": 1.51,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "EXPORT_FOB",
+          "confidence": "HIGH",
+          "source": "MFDS via Yonhap/Korea Herald",
+          "url": null,
+          "notes": "~13% of total exports",
+          "metric": "export_value",
+          "tier": null
+        }
+      },
+      {
+        "segment": "fragrances",
+        "size": null,
+        "growth": null,
+        "cagr": null,
+        "export": {
+          "value": 0.06,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "EXPORT_FOB",
+          "confidence": "HIGH",
+          "source": "MFDS via Yonhap/Korea Herald",
+          "url": null,
+          "notes": "+46.2% YoY, small base",
+          "metric": "export_value",
+          "tier": null
+        }
+      },
+      {
+        "segment": "bath_shower",
+        "size": null,
+        "growth": null,
+        "cagr": null,
+        "export": {
+          "value": 0.59,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "EXPORT_FOB",
+          "confidence": "HIGH",
+          "source": "MFDS via Yonhap/Korea Herald",
+          "url": null,
+          "notes": "'Body cleansing products' category",
+          "metric": "export_value",
+          "tier": null
+        }
+      },
+      {
+        "segment": "dermocosmetics",
+        "size": null,
+        "growth": {
+          "value": 13.0,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2024",
+          "value_basis": "RETAIL",
+          "confidence": "HIGH",
+          "source": "Euromonitor International",
+          "url": null,
+          "notes": "Driven by PDRN, exosomes, peptides",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": null,
+        "export": null
+      }
+    ],
+    "shares": {
+      "geography": "KR",
+      "segment": "total_bpc",
+      "currency": "KRW",
+      "unit": "krw_tn",
+      "base": 10.608,
+      "shares": [
+        {
+          "company": "LG H&H",
+          "revenue": 6.355,
+          "period": "2025",
+          "share_pct": 59.9,
+          "non_pure_play": true
+        },
+        {
+          "company": "AmorePacific",
+          "revenue": 4.253,
+          "period": "2025",
+          "share_pct": 40.1,
+          "non_pure_play": false
+        }
+      ],
+      "qualifier": "Shares of summed revenue for 2 listed BRAND OWNERS (KRW krw_tn, NET_REALISATION). Does NOT include unorganised/unlisted players. Conglomerate members (HUL/Godrej/LG H&H) carry non-BPC revenue, so their shares overstate BPC position. Excluded as different value-chain levels (not brand shares): CJ Olive Young (retailer), Cosmax (odm), Kolmar Korea (odm). Excluded (different currency/unit): Innisfree."
+    },
+    "reconciliation": {
+      "top_down": {
+        "value": 13.0,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "period": "2024",
+        "source": "Euromonitor International"
+      },
+      "bottom_up": {
+        "geography": "KR",
+        "segment": "total_bpc",
+        "value": 10.608,
+        "currency": "KRW",
+        "unit": "krw_tn",
+        "value_basis": "NET_REALISATION",
+        "companies": {
+          "AmorePacific": 4.253,
+          "LG H&H": 6.355
+        },
+        "non_pure_play": [
+          "LG H&H"
+        ],
+        "excluded_value_chain": {
+          "Cosmax": "odm",
+          "Kolmar Korea": "odm",
+          "CJ Olive Young": "retailer"
+        },
+        "qualifier": "Sum of latest reported revenue for 2 listed players (KRW krw_tn), NET_REALISATION basis. Coverage excludes unorganised/unlisted competitors. NOT a market size: LG H&H report revenue well beyond BPC (conglomerate/total-company figures). Excluded as different value-chain levels (not brand owners): CJ Olive Young (retailer), Cosmax (odm), Kolmar Korea (odm). Excluded (different currency/unit): Innisfree."
+      },
+      "gap_pct": null,
+      "publishable": false,
+      "mismatches": [
+        "Unit/currency differ (top-down USD usd_bn vs bottom-up KRW krw_tn) - convert before comparing.",
+        "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
+        "Bottom-up base is inflated by non-pure-play conglomerates (LG H&H) reporting non-BPC revenue."
+      ],
+      "date": "2026-07-23",
+      "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
+    }
+  },
+  "india": {
+    "headline": {
+      "geography": "IN",
+      "market_size": {
+        "value": 33.08,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Statista (via China Briefing)",
+        "url": null,
+        "notes": "Statista consumer-market 'revenue' basis; value_basis_uncertain",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 33.08,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth_yoy": {
+        "value": 10.0,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Baseline consensus (multiple houses)",
+        "url": null,
+        "notes": "Most houses cluster 10-11%; conservative ones 5-6%",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr_forecast": {
+        "value": 3.48,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025-2030",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Statista",
+        "url": null,
+        "notes": "Conservative vs consensus ~10%",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "per_capita_spend": {
+        "value": 22.74,
+        "unit": "usd",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Statista",
+        "url": null,
+        "notes": "Per-person BPC revenue; order of magnitude below Korea",
+        "metric": "per_capita_spend",
+        "tier": null
+      },
+      "total_export": null
+    },
+    "segments": [
+      {
+        "segment": "skincare",
+        "size": {
+          "value": 9.06,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-skincare-market",
+          "notes": "India skincare total; facial care leads; to US$18.38bn by 2034 (CAGR 7.49%)",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 9.06,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": null,
+        "cagr": null,
+        "export": null
+      },
+      {
+        "segment": "sun_care",
+        "size": {
+          "value": 0.5766,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-sunscreen-market",
+          "notes": "India sunscreen; cf TechSci US$0.893bn (2024) — definitional spread; CAGR 6.07%",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 0.5766,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": {
+          "value": 170.0,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "1digitalstack / quick-commerce report",
+          "url": "https://www.linkedin.com/posts/samiran-mathur_1ds-sunscreen-qcom-report-apr26-activity-7458503608859250688-2W9u",
+          "notes": "Sunscreen on q-commerce projected ~2.7x (i.e. ~+170%) 2026 vs 2025; Tier 2/3 surge",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 6.8,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2024-2030",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "TechSci Research",
+          "url": "https://www.techsciresearch.com/report/india-sunscreen-market/26904.html",
+          "notes": "India sunscreen forecast CAGR to 2030",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
+        "segment": "colour_cosmetics",
+        "size": {
+          "value": 3.46,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "DMI",
+          "url": null,
+          "notes": "Forecast CAGR 7.08%",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 3.46,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": null,
+        "cagr": null,
+        "export": null
+      },
+      {
+        "segment": "fragrances",
+        "size": {
+          "value": 2.6,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "Industry (FMCG analysis via LinkedIn)",
+          "url": "https://www.linkedin.com/posts/vishekpratap_fmcg-indianmarket-fragrance-activity-7359092677608419328-Pnhv",
+          "notes": "India perfume+DEODORANT combined; CAGR ~11.1% to US$6.7bn by 2033; broader than perfume-only",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 2.6,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": null,
+        "cagr": null,
+        "export": null
+      },
+      {
+        "segment": "hair_care",
+        "size": {
+          "value": 4.1,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2026",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "Mordor Intelligence",
+          "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+          "notes": "India hair care; 'skinification' shift to actives/serums",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 4.1,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": null,
+        "cagr": {
+          "value": 4.73,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2031",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Mordor Intelligence",
+          "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+          "notes": "India hair care forecast CAGR",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
+        "segment": "mens_grooming",
+        "size": {
+          "value": 186.3,
+          "unit": "inr_bn",
+          "currency": "INR",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "HIGH",
+          "source": "Euromonitor International",
+          "url": null,
+          "notes": "+9% growth",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 1.936,
+          "fx_note": "inverse of USD/INR=96.23 (2026-07-21)"
+        },
+        "growth": {
+          "value": 9.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "HIGH",
+          "source": "Euromonitor International",
+          "url": null,
+          "notes": null,
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 12.2,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2035",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "Future Market Insights",
+          "url": "https://www.futuremarketinsights.com/reports/mens-skincare-products-market",
+          "notes": "India MEN'S SKINCARE (sub-slice) CAGR; faster than overall grooming",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
+        "segment": "dermocosmetics",
+        "size": {
+          "value": 0.2803,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "P&S Market Research",
+          "url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
+          "notes": "India skincare dermacosmetics; 2030 forecast US$0.505bn",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 0.2803,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": null,
+        "cagr": null,
+        "export": null
+      }
+    ],
+    "shares": {
+      "geography": "IN",
+      "segment": "total_bpc",
+      "currency": "INR",
+      "unit": "inr_cr",
+      "base": 82038.0,
+      "shares": [
+        {
+          "company": "Hindustan Unilever",
+          "revenue": 64468.0,
+          "period": "FY26",
+          "share_pct": 78.6,
+          "non_pure_play": true
+        },
+        {
+          "company": "Godrej Consumer Products",
+          "revenue": 15178.0,
+          "period": "FY26",
+          "share_pct": 18.5,
+          "non_pure_play": true
+        },
+        {
+          "company": "Honasa Consumer",
+          "revenue": 2392.0,
+          "period": "FY26",
+          "share_pct": 2.9,
+          "non_pure_play": false
+        }
+      ],
+      "qualifier": "Shares of summed revenue for 3 listed BRAND OWNERS (INR inr_cr, NET_REALISATION). Does NOT include unorganised/unlisted players. Conglomerate members (HUL/Godrej/LG H&H) carry non-BPC revenue, so their shares overstate BPC position. Excluded as different value-chain levels (not brand shares): Nykaa (FSN E-Commerce) (retailer)."
+    },
+    "reconciliation": {
+      "top_down": {
+        "value": 33.08,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "period": "2025",
+        "source": "Statista (via China Briefing)"
+      },
+      "bottom_up": {
+        "geography": "IN",
+        "segment": "total_bpc",
+        "value": 82038.0,
+        "currency": "INR",
+        "unit": "inr_cr",
+        "value_basis": "NET_REALISATION",
+        "companies": {
+          "Honasa Consumer": 2392.0,
+          "Hindustan Unilever": 64468.0,
+          "Godrej Consumer Products": 15178.0
+        },
+        "non_pure_play": [
+          "Godrej Consumer Products",
+          "Hindustan Unilever"
+        ],
+        "excluded_value_chain": {
+          "Nykaa (FSN E-Commerce)": "retailer"
+        },
+        "qualifier": "Sum of latest reported revenue for 3 listed players (INR inr_cr), NET_REALISATION basis. Coverage excludes unorganised/unlisted competitors. NOT a market size: Godrej Consumer Products, Hindustan Unilever report revenue well beyond BPC (conglomerate/total-company figures). Excluded as different value-chain levels (not brand owners): Nykaa (FSN E-Commerce) (retailer)."
+      },
+      "gap_pct": null,
+      "publishable": false,
+      "mismatches": [
+        "Unit/currency differ (top-down USD usd_bn vs bottom-up INR inr_cr) - convert before comparing.",
+        "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
+        "Bottom-up base is inflated by non-pure-play conglomerates (Godrej Consumer Products, Hindustan Unilever) reporting non-BPC revenue."
+      ],
+      "date": "2026-07-23",
+      "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
+    }
+  },
+  "corridor": {
+    "headline": {
+      "trade_base": "~US$50m (H1 2025 basis), +44.7% YoY — small base, fast growth",
+      "entry_barrier": "CDSCO import registration (Form COS-1 -> COS-2 via SUGAM portal) — pre-clearance before any consignment; key friction and lead-time cost",
+      "momentum": "K-beauty is accelerating its India entry to offset SWANA-region volatility (Personal Care Insights, Apr 2026). 2026 launches: APR's Medicube (Nykaa + Tira), AmorePacific's Illiyoon (Nykaa exclusive), TirTir (Nykaa, Jun 2026), Tira's Hince (Jan) and Dr. Melaxin (Jul). India K-beauty ~INR 3,139cr (2025) forecast ~26% CAGR to ~INR 32,424cr by 2035 (Expert Market Research). AmorePacific is scaling India via platforms/imports, NOT local manufacturing — no India plant announced."
+    },
+    "conduits": [
+      {
+        "name": "Nykaa",
+        "type": "platform",
+        "since": 2016,
+        "notes": "Primary conduit; 10-year AmorePacific partnership (2016-2026), India's largest Korean portfolio (skincare/derma/haircare). Illiyoon newest exclusive (2026). Now also carries non-AmorePacific K-brands (TirTir, Medicube).",
+        "kr_brands_carried": [
+          {
+            "brand": "Innisfree",
+            "owner": "AmorePacific",
+            "launched": 2016
+          },
+          {
+            "brand": "Laneige",
+            "owner": "AmorePacific"
+          },
+          {
+            "brand": "Sulwhasoo",
+            "owner": "AmorePacific"
+          },
+          {
+            "brand": "COSRX",
+            "owner": "AmorePacific"
+          },
+          {
+            "brand": "Aestura",
+            "owner": "AmorePacific",
+            "segment": "dermocosmetics"
+          },
+          {
+            "brand": "Illiyoon",
+            "owner": "AmorePacific",
+            "segment": "dermocosmetics",
+            "launched": 2026
+          },
+          {
+            "brand": "Mise En Scène",
+            "owner": "AmorePacific",
+            "segment": "hair_care",
+            "launched": 2025
+          },
+          {
+            "brand": "RYO",
+            "owner": "AmorePacific",
+            "segment": "hair_care",
+            "launched": 2025
+          },
+          {
+            "brand": "TirTir",
+            "owner": "TirTir",
+            "launched": "2026-06",
+            "notes": "Mask Fit Red Cushion; independent K-brand, not AmorePacific"
+          },
+          {
+            "brand": "Medicube",
+            "owner": "APR Corporation",
+            "segment": "dermocosmetics",
+            "launched": 2026
+          }
+        ]
+      },
+      {
+        "name": "Tira (Reliance)",
+        "type": "platform",
+        "notes": "Reliance Retail omnichannel beauty platform; aggressive 2026 K-beauty sprint with exclusive launches (online + select stores)",
+        "kr_brands_carried": [
+          {
+            "brand": "Mixsoon",
+            "launched": "2024-08"
+          },
+          {
+            "brand": "Hince",
+            "segment": "colour_cosmetics",
+            "launched": "2026-01"
+          },
+          {
+            "brand": "Medicube",
+            "owner": "APR Corporation",
+            "segment": "dermocosmetics",
+            "launched": "2026-02"
+          },
+          {
+            "brand": "Dr. Melaxin",
+            "segment": "dermocosmetics",
+            "launched": "2026-07",
+            "notes": "exclusive to Tira"
+          }
+        ]
+      },
+      {
+        "name": "Flipkart",
+        "type": "platform",
+        "notes": "Launched international K-beauty portfolio (source: Flipkart, 2025)",
+        "kr_brands_carried": [
+          {
+            "brand": "The Face Shop"
+          },
+          {
+            "brand": "TirTir"
+          },
+          {
+            "brand": "Beauty of Joseon"
+          },
+          {
+            "brand": "rom&nd"
+          },
+          {
+            "brand": "Thank You Farmer"
+          },
+          {
+            "brand": "K Glo"
+          },
+          {
+            "brand": "Soyaang"
+          },
+          {
+            "brand": "K Riot"
+          }
+        ]
+      },
+      {
+        "name": "Amazon India",
+        "type": "platform",
+        "kr_brands_carried": [
+          {
+            "brand": "Anua",
+            "owner": "The Founders"
+          },
+          {
+            "brand": "Some By Mi"
+          },
+          {
+            "brand": "Etude",
+            "owner": "AmorePacific"
+          },
+          {
+            "brand": "Isntree"
+          },
+          {
+            "brand": "Dr.Jart+"
+          },
+          {
+            "brand": "The Face Shop"
+          }
+        ]
+      },
+      {
+        "name": "q-commerce (Blinkit/Zepto/Instamart)",
+        "type": "channel",
+        "notes": "Tier 2/3 access rail; masstige-price derma K-beauty via dark stores is the corridor's clearest whitespace per baseline §4.5"
+      }
+    ],
+    "india_side_players": {
+      "dynamic": "Platform land-grab (Nykaa's 10-yr AmorePacific tie-up vs Reliance Tira's 2026 sprint) plus Indian D2C brands going Korean. The competitive line runs incumbent Korean majors (AmorePacific) vs indie K-beauty vs Indian challengers.",
+      "indian_brands": [
+        {
+          "name": "Pilgrim",
+          "type": "indian_d2c",
+          "angle": "Korean Rice Water range (new launch); markets Korean/global rituals, made-in-India, vegan",
+          "source_url": "https://discoverpilgrim.com"
+        },
+        {
+          "name": "Limese",
+          "type": "indian_d2c",
+          "angle": "K-beauty formulations manufactured IN KOREA, tuned for Indian skin (snail mucin, cica, rice, collagen)",
+          "source_url": "https://t2online.in/goodlife/fashion-beauty/five-indian-skincare-brands-offering-k-beauty-inspired-products-at-affordable-prices/2000109"
+        },
+        {
+          "name": "Foxtale (Hula Hoop)",
+          "type": "indian_d2c",
+          "angle": "Foxtale pivoting D2C -> house of brands; launched Hula Hoop amid Korean-inspired demand",
+          "source_url": "https://ww.fashionnetwork.com/news/India-s-foxtale-announces-shift-from-d2c-label-to-house-of-brands,1790682.html"
+        }
+      ]
+    },
+    "qcommerce": {
+      "source": "Blinkit (headless-browser snapshot), 2026-07-23",
+      "insight": "Conglomerate-owned K-brands (AmorePacific, LG H&H) have mature India supply chains and are deeply stocked on q-commerce; the viral indie/derma brands driving the K-beauty narrative (COSRX, Anua, Some By Mi) are out-of-stock, 'coming soon', or absent. The real Tier 2/3 whitespace is getting indie derma K-beauty onto the q-commerce rail, not the conglomerate brands already there.",
+      "stocked_deep": [
+        {
+          "brand": "The Face Shop",
+          "owner": "LG H&H",
+          "skus_seen": 21,
+          "note": "deepest K-brand on Blinkit; Rice Water line; sheet masks from Rs90 to cleansers/kits Rs1349; all in stock"
+        },
+        {
+          "brand": "Laneige",
+          "owner": "AmorePacific",
+          "skus_seen": 16,
+          "note": "lip masks/tints + sleeping masks; Rs540-1300; in stock"
+        },
+        {
+          "brand": "Etude",
+          "owner": "AmorePacific",
+          "skus_seen": 10,
+          "note": "colour/lip tints Rs195-980 + SoonJung derma skincare Rs1013-1200; in stock"
+        },
+        {
+          "brand": "Innisfree",
+          "owner": "AmorePacific",
+          "skus_seen": 9,
+          "note": "serum/masks/pact; Rs130-935; in stock"
+        },
+        {
+          "brand": "Beauty of Joseon",
+          "skus_seen": 4,
+          "note": "premium skincare only Rs1400-1570; in stock; ownership independent (Gudai Global)"
+        }
+      ],
+      "thin_or_absent": [
+        {
+          "brand": "COSRX",
+          "owner": "AmorePacific",
+          "status": "out_of_stock",
+          "note": "1 SKU listed (toner Rs1890), out of stock"
+        },
+        {
+          "brand": "Anua",
+          "owner": "The Founders",
+          "status": "coming_soon",
+          "note": "3 SKUs listed (Rs1650-2000), all 'Coming Soon'"
+        },
+        {
+          "brand": "Some By Mi / Isntree / Mixsoon",
+          "status": "absent",
+          "note": "no listings surfaced on Blinkit"
+        }
+      ]
+    },
+    "whitespace": [
+      "Mid-price derma K-beauty in Tier 2/3 (baseline whitespace #5, highest corridor conviction)",
+      "Dedicated sunscreens (baseline whitespace #2 — India sun care underpenetrated)",
+      "Men's K-beauty (baseline whitespace #4 — men's skincare underserved vs toiletries)"
+    ],
+    "regulation": {
+      "india_import": "CDSCO, Drugs & Cosmetics Act 1940 + Cosmetics Rules 2020; Form COS-1 application -> COS-2 Registration Certificate via SUGAM portal; manufacturing site registration required; BIS IS 4707 ingredient standards (Part 2 revised Aug 2025); paper filings not accepted as of 2026",
+      "korea_export_support": "MFDS regulatory-diplomacy MOUs to smooth exports"
+    },
+    "sizing": [
+      {
+        "value": 0.14006,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3304 India imports from Korea (UN Comtrade, CIF USD). Includes makeup as well as skincare. [CORRIDOR]",
+        "metric": "import_value",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 0.000135,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3303 India imports from Korea (UN Comtrade, CIF USD). [CORRIDOR]",
+        "metric": "import_value",
+        "tier": null,
+        "segment": "fragrances"
+      },
+      {
+        "value": 0.000485,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3306 India imports from Korea (UN Comtrade, CIF USD). [CORRIDOR]",
+        "metric": "import_value",
+        "tier": null,
+        "segment": "oral_care"
+      },
+      {
+        "value": 0.4,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Economic Times Retail (consulting estimate)",
+        "url": "https://retail.economictimes.indiatimes.com/news/health-and-beauty/indias-k-beauty-market-forecast-15-billion-by-2030/123190386",
+        "notes": "[CORRIDOR] Korean-beauty market IN India; fastest-growing BPC segment",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 0.002055,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3307 India imports from Korea (UN Comtrade, CIF USD). [CORRIDOR]",
+        "metric": "import_value",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 25.9,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2030",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Economic Times Retail (consulting estimate)",
+        "url": "https://retail.economictimes.indiatimes.com/news/health-and-beauty/indias-k-beauty-market-forecast-15-billion-by-2030/123190386",
+        "notes": "[CORRIDOR] K-beauty in India forecast CAGR 2024-2030",
+        "metric": "cagr_forecast",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 3139.31,
+        "unit": "inr_cr",
+        "currency": "INR",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Expert Market Research",
+        "url": "https://www.expertmarketresearch.com/reports/india-k-beauty-products-market",
+        "notes": "[CORRIDOR] Alt K-beauty India estimate (~US$0.33bn); CAGR ~26.3% 2026-2035",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 0.335,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2026",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "The Report Cubes",
+        "url": "https://www.thereportcubes.com/report-store/k-beauty-products-market-india",
+        "notes": "[CORRIDOR] K-beauty in India; CAGR 19.17% to US$1.36bn by 2034; cf Economic Times 25.9% CAGR",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 26.3,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "2026-2035",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Expert Market Research",
+        "url": "https://www.expertmarketresearch.com/reports/india-k-beauty-products-market",
+        "notes": "[CORRIDOR] India K-beauty products market forecast CAGR 2026-2035; fastest-growing beauty sub-trend, K-pop/K-drama pull",
+        "metric": "cagr_forecast",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 1.5,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2030",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Economic Times Retail (consulting estimate)",
+        "url": "https://retail.economictimes.indiatimes.com/news/health-and-beauty/indias-k-beauty-market-forecast-15-billion-by-2030/123190386",
+        "notes": "[CORRIDOR] K-beauty in India, 2030 forecast",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 32424.0,
+        "unit": "inr_cr",
+        "currency": "INR",
+        "period": "2035",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Expert Market Research",
+        "url": "https://www.expertmarketresearch.com/reports/india-k-beauty-products-market",
+        "notes": "[CORRIDOR] K-beauty in India 2035 forecast; from INR 3139.31cr (2025) base at ~26.3% CAGR",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "total_bpc"
+      }
+    ],
+    "pricing": [
+      {
+        "value": 2200.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Nykaa (retailer listing)",
+        "url": "https://www.nykaa.com/dp/innisfree-serum",
+        "notes": "[CORRIDOR] Innisfree Green Tea Seed Serum; MRP Rs2200, Nykaa/Amazon sale Rs1650 (25% off) as of 2026-07-23",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 2050.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Nykaa (retailer listing)",
+        "url": "https://www.nykaa.com/anua-heartleaf-77percent-soothing-toner/p/20736553",
+        "notes": "[CORRIDOR] Anua Heartleaf 77% Soothing Toner 250ml; Nykaa list Rs2050 (sale Rs1743); Amazon MRP Rs2999/buy Rs1999 as of 2026-07-23; MRP varies by platform",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 1600.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Blinkit (q-commerce snapshot)",
+        "url": "https://blinkit.com/s/?q=etude",
+        "notes": "[CORRIDOR] Etude SoonJung Hydro Barrier Face Cream 75ml (derma); MRP Rs1600, Blinkit Rs1200 as of 2026-07-23",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 1570.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Nykaa (retailer listing)",
+        "url": "https://www.nykaa.com/brands/beauty-of-joseon/c/26410",
+        "notes": "[CORRIDOR] Beauty of Joseon Relief Sunscreen SPF50+; MRP Rs1570, Nykaa sale Rs1256 (20% off) as of 2026-07-23; category bestseller; promo-dependent",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "sun_care"
+      },
+      {
+        "value": 1500.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Blinkit (q-commerce snapshot)",
+        "url": "https://blinkit.com/s/?q=beauty%20of%20joseon",
+        "notes": "[CORRIDOR] Beauty of Joseon Ginseng Skin Essence Water 150ml; Blinkit Rs1500 in stock as of 2026-07-23",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 1490.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Nykaa (retailer listing)",
+        "url": "https://www.nykaa.com/cosrx-advanced-snail-96-mucin-power-essence/p/757628",
+        "notes": "[CORRIDOR] COSRX Advanced Snail 96 Mucin Power Essence 100ml; MRP Rs1490, Nykaa sale Rs969 (35% off), Amazon ~Rs949 as of 2026-07-23; hero SKU; promo-dependent",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 850.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Blinkit (q-commerce snapshot)",
+        "url": "https://blinkit.com/s/?q=laneige",
+        "notes": "[CORRIDOR] Laneige Water Sleeping Mask 25ml; MRP Rs850, Blinkit Rs765 as of 2026-07-23",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 850.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Blinkit (q-commerce snapshot)",
+        "url": "https://blinkit.com/s/?q=innisfree",
+        "notes": "[CORRIDOR] Innisfree Green Tea Seed Hyaluronic Face Serum 30ml; MRP Rs850, Blinkit Rs680 as of 2026-07-23 (distinct from the larger Green Tea Seed Serum ~Rs2200)",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 625.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Blinkit (q-commerce snapshot)",
+        "url": "https://blinkit.com/s/?q=the%20face%20shop",
+        "notes": "[CORRIDOR] The Face Shop Rice Water Bright Foaming Cleanser 100ml; Blinkit Rs625 in stock as of 2026-07-23; entry-price K-beauty on the q-commerce rail",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 600.0,
+        "unit": "inr",
+        "currency": "INR",
+        "period": "2026",
+        "value_basis": "MRP",
+        "confidence": "MEDIUM",
+        "source": "Nykaa (retailer listing)",
+        "url": "https://www.nykaa.com/laneige-lip-sleeping-mask-berry/p/15227410",
+        "notes": "[CORRIDOR] Laneige Lip Sleeping Mask Berry 8g; MRP Rs600, Nykaa sale Rs510 (15% off); 20g Rs1136 as of 2026-07-23",
+        "metric": "retail_price",
+        "tier": null,
+        "segment": "skincare"
+      }
+    ],
+    "trade": [
+      {
+        "value": 0.065624,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3304 Korea exports to India (UN Comtrade, FOB USD). HS 3304 includes makeup as well as skincare. [CORRIDOR]",
+        "metric": "export_value",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
+        "value": 0.003277,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3305 Korea exports to India (UN Comtrade, FOB USD). [CORRIDOR]",
+        "metric": "export_value",
+        "tier": null,
+        "segment": "hair_care"
+      },
+      {
+        "value": 0.002497,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3307 Korea exports to India (UN Comtrade, FOB USD). HS 3307 is mixed shave/deo/bath preparations. [CORRIDOR]",
+        "metric": "export_value",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 0.000251,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3306 Korea exports to India (UN Comtrade, FOB USD). [CORRIDOR]",
+        "metric": "export_value",
+        "tier": null,
+        "segment": "oral_care"
+      },
+      {
+        "value": 6e-06,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3303 Korea exports to India (UN Comtrade, FOB USD). [CORRIDOR]",
+        "metric": "export_value",
+        "tier": null,
+        "segment": "fragrances"
+      }
+    ]
+  },
+  "gaps_md": "# Gaps Register\n\n56 missing segment × geography × metric combinations.\n\n| Geography | Segment | Metric | Status | Suggested source |\n|---|---|---|---|---|\n| KR | skincare | cagr_forecast | segment has ['export_value', 'growth_yoy', 'market_size'] only | euromonitor_passport, bmi_research, statista |\n| KR | sun_care | market_size | no data | euromonitor_passport, statista, tavily |\n| KR | sun_care | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |\n| KR | sun_care | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |\n| KR | colour_cosmetics | market_size | segment has ['export_value', 'growth_yoy'] only | euromonitor_passport, statista, tavily |\n| KR | colour_cosmetics | cagr_forecast | segment has ['export_value', 'growth_yoy'] only | euromonitor_passport, bmi_research, statista |\n| KR | fragrances | market_size | segment has ['export_value'] only | euromonitor_passport, statista, tavily |\n| KR | fragrances | growth_yoy | segment has ['export_value'] only | euromonitor_passport, korea_mfds, tavily |\n| KR | fragrances | cagr_forecast | segment has ['export_value'] only | euromonitor_passport, bmi_research, statista |\n| KR | hair_care | market_size | segment has ['export_value'] only | euromonitor_passport, statista, tavily |\n| KR | hair_care | growth_yoy | segment has ['export_value'] only | euromonitor_passport, korea_mfds, tavily |\n| KR | hair_care | cagr_forecast | segment has ['export_value'] only | euromonitor_passport, bmi_research, statista |\n| KR | bath_shower | market_size | segment has ['export_value'] only | euromonitor_passport, statista, tavily |\n| KR | bath_shower | growth_yoy | segment has ['export_value'] only | euromonitor_passport, korea_mfds, tavily |\n| KR | bath_shower | cagr_forecast | segment has ['export_value'] only | euromonitor_passport, bmi_research, statista |\n| KR | deodorants | market_size | no data | euromonitor_passport, statista, tavily |\n| KR | deodorants | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |\n| KR | deodorants | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |\n| KR | oral_care | market_size | segment has ['export_value'] only | euromonitor_passport, statista, tavily |\n| KR | oral_care | growth_yoy | segment has ['export_value'] only | euromonitor_passport, korea_mfds, tavily |\n| KR | oral_care | cagr_forecast | segment has ['export_value'] only | euromonitor_passport, bmi_research, statista |\n| KR | mens_grooming | market_size | no data | euromonitor_passport, statista, tavily |\n| KR | mens_grooming | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |\n| KR | mens_grooming | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |\n| KR | baby_child | market_size | no data | euromonitor_passport, statista, tavily |\n| KR | baby_child | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |\n| KR | baby_child | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |\n| KR | dermocosmetics | market_size | segment has ['growth_yoy'] only | euromonitor_passport, statista, tavily |\n| KR | dermocosmetics | cagr_forecast | segment has ['growth_yoy'] only | euromonitor_passport, bmi_research, statista |\n| KR | emerging_adjacencies | market_size | no data | euromonitor_passport, statista, tavily |\n| KR | emerging_adjacencies | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |\n| KR | emerging_adjacencies | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |\n| IN | skincare | growth_yoy | segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only | euromonitor_passport, tavily |\n| IN | skincare | cagr_forecast | segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only | euromonitor_passport, bmi_research, statista |\n| IN | colour_cosmetics | growth_yoy | segment has ['market_share', 'market_size'] only | euromonitor_passport, tavily |\n| IN | colour_cosmetics | cagr_forecast | segment has ['market_share', 'market_size'] only | euromonitor_passport, bmi_research, statista |\n| IN | fragrances | growth_yoy | segment has ['import_dependence', 'import_value', 'market_size', 'revenue'] only | euromonitor_passport, tavily |\n| IN | fragrances | cagr_forecast | segment has ['import_dependence', 'import_value', 'market_size', 'revenue'] only | euromonitor_passport, bmi_research, statista |\n| IN | hair_care | growth_yoy | segment has ['cagr_forecast', 'import_value', 'market_size'] only | euromonitor_passport, tavily |\n| IN | bath_shower | market_size | no data | euromonitor_passport, statista, tavily |\n| IN | bath_shower | growth_yoy | no data | euromonitor_passport, tavily |\n| IN | bath_shower | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |\n| IN | deodorants | market_size | no data | euromonitor_passport, statista, tavily |\n| IN | deodorants | growth_yoy | no data | euromonitor_passport, tavily |\n| IN | deodorants | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |\n| IN | oral_care | market_size | segment has ['import_value'] only | euromonitor_passport, statista, tavily |\n| IN | oral_care | growth_yoy | segment has ['import_value'] only | euromonitor_passport, tavily |\n| IN | oral_care | cagr_forecast | segment has ['import_value'] only | euromonitor_passport, bmi_research, statista |\n| IN | baby_child | market_size | no data | euromonitor_passport, statista, tavily |\n| IN | baby_child | growth_yoy | no data | euromonitor_passport, tavily |\n| IN | baby_child | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |\n| IN | dermocosmetics | growth_yoy | segment has ['market_size'] only | euromonitor_passport, tavily |\n| IN | dermocosmetics | cagr_forecast | segment has ['market_size'] only | euromonitor_passport, bmi_research, statista |\n| IN | emerging_adjacencies | market_size | no data | euromonitor_passport, statista, tavily |\n| IN | emerging_adjacencies | growth_yoy | no data | euromonitor_passport, tavily |\n| IN | emerging_adjacencies | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |\n"
+}

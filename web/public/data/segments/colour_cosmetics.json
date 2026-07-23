@@ -1,0 +1,111 @@
+{
+  "segment": "colour_cosmetics",
+  "KR": {
+    "segment": "colour_cosmetics",
+    "size": null,
+    "growth": {
+      "value": 12.0,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "EXPORT_FOB",
+      "confidence": "HIGH",
+      "source": "MFDS via Yonhap/Korea Herald",
+      "url": null,
+      "notes": null,
+      "metric": "growth_yoy",
+      "tier": null
+    },
+    "cagr": null,
+    "export": {
+      "value": 1.51,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "EXPORT_FOB",
+      "confidence": "HIGH",
+      "source": "MFDS via Yonhap/Korea Herald",
+      "url": null,
+      "notes": "~13% of total exports",
+      "metric": "export_value",
+      "tier": null
+    },
+    "points": [
+      {
+        "value": 1.51,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS via Yonhap/Korea Herald",
+        "url": null,
+        "notes": "~13% of total exports",
+        "metric": "export_value",
+        "tier": null
+      },
+      {
+        "value": 12.0,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS via Yonhap/Korea Herald",
+        "url": null,
+        "notes": null,
+        "metric": "growth_yoy",
+        "tier": null
+      }
+    ]
+  },
+  "IN": {
+    "segment": "colour_cosmetics",
+    "size": {
+      "value": 3.46,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "DMI",
+      "url": null,
+      "notes": "Forecast CAGR 7.08%",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 3.46,
+      "fx_note": "identity (no conversion)"
+    },
+    "growth": null,
+    "cagr": null,
+    "export": null,
+    "points": [
+      {
+        "value": 3.46,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "DMI",
+        "url": null,
+        "notes": "Forecast CAGR 7.08%",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 79.55,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Mordor Intelligence",
+        "url": null,
+        "notes": "Mass tier share of colour cosmetics",
+        "metric": "market_share",
+        "tier": "mass"
+      }
+    ]
+  }
+}

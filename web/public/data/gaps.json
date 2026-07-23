@@ -1,0 +1,394 @@
+[
+  {
+    "geography": "KR",
+    "segment": "skincare",
+    "metric": "cagr_forecast",
+    "status": "segment has ['export_value', 'growth_yoy', 'market_size'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "sun_care",
+    "metric": "market_size",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "sun_care",
+    "metric": "growth_yoy",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "sun_care",
+    "metric": "cagr_forecast",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "colour_cosmetics",
+    "metric": "market_size",
+    "status": "segment has ['export_value', 'growth_yoy'] only",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "colour_cosmetics",
+    "metric": "cagr_forecast",
+    "status": "segment has ['export_value', 'growth_yoy'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "fragrances",
+    "metric": "market_size",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "fragrances",
+    "metric": "growth_yoy",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "fragrances",
+    "metric": "cagr_forecast",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "hair_care",
+    "metric": "market_size",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "hair_care",
+    "metric": "growth_yoy",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "hair_care",
+    "metric": "cagr_forecast",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "bath_shower",
+    "metric": "market_size",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "bath_shower",
+    "metric": "growth_yoy",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "bath_shower",
+    "metric": "cagr_forecast",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "deodorants",
+    "metric": "market_size",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "deodorants",
+    "metric": "growth_yoy",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "deodorants",
+    "metric": "cagr_forecast",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "oral_care",
+    "metric": "market_size",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "oral_care",
+    "metric": "growth_yoy",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "oral_care",
+    "metric": "cagr_forecast",
+    "status": "segment has ['export_value'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "mens_grooming",
+    "metric": "market_size",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "mens_grooming",
+    "metric": "growth_yoy",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "mens_grooming",
+    "metric": "cagr_forecast",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "baby_child",
+    "metric": "market_size",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "baby_child",
+    "metric": "growth_yoy",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "baby_child",
+    "metric": "cagr_forecast",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "dermocosmetics",
+    "metric": "market_size",
+    "status": "segment has ['growth_yoy'] only",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "dermocosmetics",
+    "metric": "cagr_forecast",
+    "status": "segment has ['growth_yoy'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "KR",
+    "segment": "emerging_adjacencies",
+    "metric": "market_size",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "emerging_adjacencies",
+    "metric": "growth_yoy",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
+  },
+  {
+    "geography": "KR",
+    "segment": "emerging_adjacencies",
+    "metric": "cagr_forecast",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "IN",
+    "segment": "skincare",
+    "metric": "growth_yoy",
+    "status": "segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "skincare",
+    "metric": "cagr_forecast",
+    "status": "segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "IN",
+    "segment": "colour_cosmetics",
+    "metric": "growth_yoy",
+    "status": "segment has ['market_share', 'market_size'] only",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "colour_cosmetics",
+    "metric": "cagr_forecast",
+    "status": "segment has ['market_share', 'market_size'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "IN",
+    "segment": "fragrances",
+    "metric": "growth_yoy",
+    "status": "segment has ['import_dependence', 'import_value', 'market_size', 'revenue'] only",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "fragrances",
+    "metric": "cagr_forecast",
+    "status": "segment has ['import_dependence', 'import_value', 'market_size', 'revenue'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "IN",
+    "segment": "hair_care",
+    "metric": "growth_yoy",
+    "status": "segment has ['cagr_forecast', 'import_value', 'market_size'] only",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "bath_shower",
+    "metric": "market_size",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "bath_shower",
+    "metric": "growth_yoy",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "bath_shower",
+    "metric": "cagr_forecast",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "IN",
+    "segment": "deodorants",
+    "metric": "market_size",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "deodorants",
+    "metric": "growth_yoy",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "deodorants",
+    "metric": "cagr_forecast",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "IN",
+    "segment": "oral_care",
+    "metric": "market_size",
+    "status": "segment has ['import_value'] only",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "oral_care",
+    "metric": "growth_yoy",
+    "status": "segment has ['import_value'] only",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "oral_care",
+    "metric": "cagr_forecast",
+    "status": "segment has ['import_value'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "IN",
+    "segment": "baby_child",
+    "metric": "market_size",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "baby_child",
+    "metric": "growth_yoy",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "baby_child",
+    "metric": "cagr_forecast",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "IN",
+    "segment": "dermocosmetics",
+    "metric": "growth_yoy",
+    "status": "segment has ['market_size'] only",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "dermocosmetics",
+    "metric": "cagr_forecast",
+    "status": "segment has ['market_size'] only",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  },
+  {
+    "geography": "IN",
+    "segment": "emerging_adjacencies",
+    "metric": "market_size",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, statista, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "emerging_adjacencies",
+    "metric": "growth_yoy",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, tavily"
+  },
+  {
+    "geography": "IN",
+    "segment": "emerging_adjacencies",
+    "metric": "cagr_forecast",
+    "status": "no data",
+    "suggested_source": "euromonitor_passport, bmi_research, statista"
+  }
+]

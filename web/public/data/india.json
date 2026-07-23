@@ -1,0 +1,342 @@
+{
+  "geography": "IN",
+  "headline": {
+    "geography": "IN",
+    "market_size": {
+      "value": 33.08,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "RETAIL",
+      "confidence": "MEDIUM",
+      "source": "Statista (via China Briefing)",
+      "url": null,
+      "notes": "Statista consumer-market 'revenue' basis; value_basis_uncertain",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 33.08,
+      "fx_note": "identity (no conversion)"
+    },
+    "growth_yoy": {
+      "value": 10.0,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2024",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "Baseline consensus (multiple houses)",
+      "url": null,
+      "notes": "Most houses cluster 10-11%; conservative ones 5-6%",
+      "metric": "growth_yoy",
+      "tier": null
+    },
+    "cagr_forecast": {
+      "value": 3.48,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025-2030",
+      "value_basis": "RETAIL",
+      "confidence": "MEDIUM",
+      "source": "Statista",
+      "url": null,
+      "notes": "Conservative vs consensus ~10%",
+      "metric": "cagr_forecast",
+      "tier": null
+    },
+    "per_capita_spend": {
+      "value": 22.74,
+      "unit": "usd",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "RETAIL",
+      "confidence": "MEDIUM",
+      "source": "Statista",
+      "url": null,
+      "notes": "Per-person BPC revenue; order of magnitude below Korea",
+      "metric": "per_capita_spend",
+      "tier": null
+    },
+    "total_export": null
+  },
+  "segments": [
+    {
+      "segment": "skincare",
+      "size": {
+        "value": 9.06,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-skincare-market",
+        "notes": "India skincare total; facial care leads; to US$18.38bn by 2034 (CAGR 7.49%)",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 9.06,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": null,
+      "cagr": null,
+      "export": null
+    },
+    {
+      "segment": "sun_care",
+      "size": {
+        "value": 0.5766,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-sunscreen-market",
+        "notes": "India sunscreen; cf TechSci US$0.893bn (2024) — definitional spread; CAGR 6.07%",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 0.5766,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": {
+        "value": 170.0,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "1digitalstack / quick-commerce report",
+        "url": "https://www.linkedin.com/posts/samiran-mathur_1ds-sunscreen-qcom-report-apr26-activity-7458503608859250688-2W9u",
+        "notes": "Sunscreen on q-commerce projected ~2.7x (i.e. ~+170%) 2026 vs 2025; Tier 2/3 surge",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 6.8,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2030",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "TechSci Research",
+        "url": "https://www.techsciresearch.com/report/india-sunscreen-market/26904.html",
+        "notes": "India sunscreen forecast CAGR to 2030",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
+      "segment": "colour_cosmetics",
+      "size": {
+        "value": 3.46,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "DMI",
+        "url": null,
+        "notes": "Forecast CAGR 7.08%",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 3.46,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": null,
+      "cagr": null,
+      "export": null
+    },
+    {
+      "segment": "fragrances",
+      "size": {
+        "value": 2.6,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Industry (FMCG analysis via LinkedIn)",
+        "url": "https://www.linkedin.com/posts/vishekpratap_fmcg-indianmarket-fragrance-activity-7359092677608419328-Pnhv",
+        "notes": "India perfume+DEODORANT combined; CAGR ~11.1% to US$6.7bn by 2033; broader than perfume-only",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 2.6,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": null,
+      "cagr": null,
+      "export": null
+    },
+    {
+      "segment": "hair_care",
+      "size": {
+        "value": 4.1,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2026",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Mordor Intelligence",
+        "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+        "notes": "India hair care; 'skinification' shift to actives/serums",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 4.1,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": null,
+      "cagr": {
+        "value": 4.73,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2031",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Mordor Intelligence",
+        "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+        "notes": "India hair care forecast CAGR",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
+      "segment": "mens_grooming",
+      "size": {
+        "value": 186.3,
+        "unit": "inr_bn",
+        "currency": "INR",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Euromonitor International",
+        "url": null,
+        "notes": "+9% growth",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 1.936,
+        "fx_note": "inverse of USD/INR=96.23 (2026-07-21)"
+      },
+      "growth": {
+        "value": 9.0,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Euromonitor International",
+        "url": null,
+        "notes": null,
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 12.2,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025-2035",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Future Market Insights",
+        "url": "https://www.futuremarketinsights.com/reports/mens-skincare-products-market",
+        "notes": "India MEN'S SKINCARE (sub-slice) CAGR; faster than overall grooming",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
+      "segment": "dermocosmetics",
+      "size": {
+        "value": 0.2803,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "P&S Market Research",
+        "url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
+        "notes": "India skincare dermacosmetics; 2030 forecast US$0.505bn",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 0.2803,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": null,
+      "cagr": null,
+      "export": null
+    }
+  ],
+  "shares": {
+    "geography": "IN",
+    "segment": "total_bpc",
+    "currency": "INR",
+    "unit": "inr_cr",
+    "base": 82038.0,
+    "shares": [
+      {
+        "company": "Hindustan Unilever",
+        "revenue": 64468.0,
+        "period": "FY26",
+        "share_pct": 78.6,
+        "non_pure_play": true
+      },
+      {
+        "company": "Godrej Consumer Products",
+        "revenue": 15178.0,
+        "period": "FY26",
+        "share_pct": 18.5,
+        "non_pure_play": true
+      },
+      {
+        "company": "Honasa Consumer",
+        "revenue": 2392.0,
+        "period": "FY26",
+        "share_pct": 2.9,
+        "non_pure_play": false
+      }
+    ],
+    "qualifier": "Shares of summed revenue for 3 listed BRAND OWNERS (INR inr_cr, NET_REALISATION). Does NOT include unorganised/unlisted players. Conglomerate members (HUL/Godrej/LG H&H) carry non-BPC revenue, so their shares overstate BPC position. Excluded as different value-chain levels (not brand shares): Nykaa (FSN E-Commerce) (retailer)."
+  },
+  "reconciliation": {
+    "top_down": {
+      "value": 33.08,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "value_basis": "RETAIL",
+      "confidence": "MEDIUM",
+      "period": "2025",
+      "source": "Statista (via China Briefing)"
+    },
+    "bottom_up": {
+      "geography": "IN",
+      "segment": "total_bpc",
+      "value": 82038.0,
+      "currency": "INR",
+      "unit": "inr_cr",
+      "value_basis": "NET_REALISATION",
+      "companies": {
+        "Honasa Consumer": 2392.0,
+        "Hindustan Unilever": 64468.0,
+        "Godrej Consumer Products": 15178.0
+      },
+      "non_pure_play": [
+        "Godrej Consumer Products",
+        "Hindustan Unilever"
+      ],
+      "excluded_value_chain": {
+        "Nykaa (FSN E-Commerce)": "retailer"
+      },
+      "qualifier": "Sum of latest reported revenue for 3 listed players (INR inr_cr), NET_REALISATION basis. Coverage excludes unorganised/unlisted competitors. NOT a market size: Godrej Consumer Products, Hindustan Unilever report revenue well beyond BPC (conglomerate/total-company figures). Excluded as different value-chain levels (not brand owners): Nykaa (FSN E-Commerce) (retailer)."
+    },
+    "gap_pct": null,
+    "publishable": false,
+    "mismatches": [
+      "Unit/currency differ (top-down USD usd_bn vs bottom-up INR inr_cr) - convert before comparing.",
+      "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
+      "Bottom-up base is inflated by non-pure-play conglomerates (Godrej Consumer Products, Hindustan Unilever) reporting non-BPC revenue."
+    ],
+    "date": "2026-07-23",
+    "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
+  }
+}

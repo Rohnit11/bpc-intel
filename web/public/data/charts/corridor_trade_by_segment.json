@@ -1,0 +1,38 @@
+[
+  {
+    "label": "skincare",
+    "segment": "skincare",
+    "value_usd_mn": 65.624,
+    "n_sources": 1,
+    "sources": [
+      "UN Comtrade"
+    ]
+  },
+  {
+    "label": "hair care",
+    "segment": "hair_care",
+    "value_usd_mn": 3.277,
+    "n_sources": 1,
+    "sources": [
+      "UN Comtrade"
+    ]
+  },
+  {
+    "label": "oral care",
+    "segment": "oral_care",
+    "value_usd_mn": 0.251,
+    "n_sources": 1,
+    "sources": [
+      "UN Comtrade"
+    ]
+  },
+  {
+    "label": "fragrances",
+    "segment": "fragrances",
+    "value_usd_mn": 0.006,
+    "n_sources": 1,
+    "sources": [
+      "UN Comtrade"
+    ]
+  }
+]

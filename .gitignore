@@ -24,3 +24,9 @@ data/manual/*
 
 # Report archives — regenerable dev churn
 reports/archive/
+
+# Web dashboard (web/public/data/*.json bundle and web/types/*.ts ARE
+# committed — they are the deploy input / generated types, not build output)
+web/node_modules/
+web/.next/
+web/scripts/_generated-schema.json

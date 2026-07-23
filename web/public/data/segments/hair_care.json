@@ -1,0 +1,125 @@
+{
+  "segment": "hair_care",
+  "KR": {
+    "segment": "hair_care",
+    "size": null,
+    "growth": null,
+    "cagr": null,
+    "export": null,
+    "points": [
+      {
+        "value": 0.003277,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3305 Korea exports to India (UN Comtrade, FOB USD). [CORRIDOR]",
+        "metric": "export_value",
+        "tier": null
+      },
+      {
+        "value": 0.413075,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3305 Korea exports to World (UN Comtrade, FOB USD).",
+        "metric": "export_value",
+        "tier": null
+      }
+    ]
+  },
+  "IN": {
+    "segment": "hair_care",
+    "size": {
+      "value": 4.1,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2026",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "Mordor Intelligence",
+      "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+      "notes": "India hair care; 'skinification' shift to actives/serums",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 4.1,
+      "fx_note": "identity (no conversion)"
+    },
+    "growth": null,
+    "cagr": {
+      "value": 4.73,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026-2031",
+      "value_basis": "NA",
+      "confidence": "LOW",
+      "source": "Mordor Intelligence",
+      "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+      "notes": "India hair care forecast CAGR",
+      "metric": "cagr_forecast",
+      "tier": null
+    },
+    "export": null,
+    "points": [
+      {
+        "value": 0.198534,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3305 India imports from World (UN Comtrade, CIF USD).",
+        "metric": "import_value",
+        "tier": null
+      },
+      {
+        "value": 0.031111,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3305 India imports from China (UN Comtrade, CIF USD).",
+        "metric": "import_value",
+        "tier": null
+      },
+      {
+        "value": 4.1,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2026",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Mordor Intelligence",
+        "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+        "notes": "India hair care; 'skinification' shift to actives/serums",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 4.73,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2031",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Mordor Intelligence",
+        "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+        "notes": "India hair care forecast CAGR",
+        "metric": "cagr_forecast",
+        "tier": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "segment": "fragrances",
+  "KR": {
+    "segment": "fragrances",
+    "size": null,
+    "growth": null,
+    "cagr": null,
+    "export": {
+      "value": 0.06,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "EXPORT_FOB",
+      "confidence": "HIGH",
+      "source": "MFDS via Yonhap/Korea Herald",
+      "url": null,
+      "notes": "+46.2% YoY, small base",
+      "metric": "export_value",
+      "tier": null
+    },
+    "points": [
+      {
+        "value": 0.06,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS via Yonhap/Korea Herald",
+        "url": null,
+        "notes": "+46.2% YoY, small base",
+        "metric": "export_value",
+        "tier": null
+      },
+      {
+        "value": 6e-06,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3303 Korea exports to India (UN Comtrade, FOB USD). [CORRIDOR]",
+        "metric": "export_value",
+        "tier": null
+      },
+      {
+        "value": 0.039471,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3303 Korea exports to World (UN Comtrade, FOB USD).",
+        "metric": "export_value",
+        "tier": null
+      }
+    ]
+  },
+  "IN": {
+    "segment": "fragrances",
+    "size": {
+      "value": 2.6,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "Industry (FMCG analysis via LinkedIn)",
+      "url": "https://www.linkedin.com/posts/vishekpratap_fmcg-indianmarket-fragrance-activity-7359092677608419328-Pnhv",
+      "notes": "India perfume+DEODORANT combined; CAGR ~11.1% to US$6.7bn by 2033; broader than perfume-only",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 2.6,
+      "fx_note": "identity (no conversion)"
+    },
+    "growth": null,
+    "cagr": null,
+    "export": null,
+    "points": [
+      {
+        "value": 0.331681,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3303 India imports from World (UN Comtrade, CIF USD).",
+        "metric": "import_value",
+        "tier": null
+      },
+      {
+        "value": 0.000135,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3303 India imports from Korea (UN Comtrade, CIF USD). [CORRIDOR]",
+        "metric": "import_value",
+        "tier": null
+      },
+      {
+        "value": 0.000249,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "IMPORT_CIF",
+        "confidence": "HIGH",
+        "source": "UN Comtrade",
+        "url": "https://comtradeplus.un.org",
+        "notes": "HS 3303 India imports from China (UN Comtrade, CIF USD).",
+        "metric": "import_value",
+        "tier": null
+      },
+      {
+        "value": 2.6,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Industry (FMCG analysis via LinkedIn)",
+        "url": "https://www.linkedin.com/posts/vishekpratap_fmcg-indianmarket-fragrance-activity-7359092677608419328-Pnhv",
+        "notes": "India perfume+DEODORANT combined; CAGR ~11.1% to US$6.7bn by 2033; broader than perfume-only",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 0.281,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "FY24",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Markets and Data",
+        "url": "https://www.marketsandata.com/industry-reports/india-perfume-market",
+        "notes": "India PERFUME-ONLY (narrower); CAGR 15.23% to US$0.873bn FY2032",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 12.8,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Derived (UN Comtrade / industry)",
+        "url": null,
+        "notes": "Import-vs-make: premium fragrance import-reliant, mass domestic",
+        "metric": "import_dependence",
+        "tier": null
+      },
+      {
+        "value": 1200.0,
+        "unit": "inr_cr",
+        "currency": "INR",
+        "period": "FY25",
+        "value_basis": "NET_REALISATION",
+        "confidence": "MEDIUM",
+        "source": "Economic Times (startups)",
+        "url": "https://m.economictimes.com/tech/startups/investors-catch-a-big-whiff-of-money-in-d2c-fragrance-firms/articleshow/128079803.cms",
+        "notes": "Company: Vini Cosmetics (Fogg) — FY25 operating revenue; KKR owns 54% (US$625m, 2021, US$1.2bn valuation)",
+        "metric": "revenue",
+        "tier": null
+      }
+    ]
+  }
+}

@@ -1,5 +1,15 @@
 # q-commerce assortment tracker opt-in.
-# Scraping Blinkit/Zepto is ToS-sensitive. The fetcher refuses to run unless
-# you explicitly set enabled: true, and even then applies 5+ second delays
-# and an identifying user agent.
+# Scraping Blinkit is ToS-sensitive. The fetcher refuses to run unless you set
+# enabled: true, and even then renders with headless Chromium, applies 5+ second
+# delays between searches, and uses an identifying user agent.
+#
+# The fetcher (lib/fetchers/qcommerce_tracker.py) renders Blinkit's JavaScript
+# SPA with Playwright — a plain HTTP GET returns only the app shell (no
+# products). One-time setup:
+#   pip install playwright && python -m playwright install chromium
+# A default store's catalogue is served without setting a pincode. It searches
+# the K-brand watchlist + Korean-category terms and parses each card's name,
+# pack, selling price, MRP, discount, and stock status.
+#
+# Disabled by default (per-use opt-in). Flip to true to run a sweep, then back.
 enabled: false

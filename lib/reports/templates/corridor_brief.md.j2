@@ -5,6 +5,9 @@
 {{ corridor.headline.trade_base }}
 
 **Entry barrier:** {{ corridor.headline.entry_barrier }}
+{% if corridor.headline.momentum %}
+**Momentum:** {{ corridor.headline.momentum }}
+{% endif %}
 
 ## Market sizing — K-beauty in India
 | Segment | Value | Period | Basis | Confidence | Source |
@@ -20,11 +23,46 @@
 | {{ t.segment }} | {{ t.value }} {{ t.unit }} | {{ t.period }} | {{ t.confidence }} | {{ t.source }} |
 {% endfor %}
 
-## Conduits — how K-beauty reaches Indian consumers
-{% for c in corridor.conduits -%}
-### {{ c.name }} ({{ c.type }})
-{% if c.notes %}{{ c.notes }}{% endif %}
-{% if c.kr_brands_carried %}Brands: {{ c.kr_brands_carried|map(attribute='brand')|join(', ') }}{% endif %}
+## Conduits — how Korean brands reach Indian consumers
+{% for c in corridor.conduits %}
+- **{{ c.name }}** ({{ c.type }}){% if c.notes %} — {{ c.notes }}{% endif %}{% if c.kr_brands_carried %} · _Brands:_ {{ c.kr_brands_carried|map(attribute='brand')|join(', ') }}{% endif %}{{ '' }}
+{% endfor %}
+
+## India-side players in the K-beauty segment
+{% if corridor.india_side_players.dynamic %}{{ corridor.india_side_players.dynamic }}
+{% endif %}
+{% if corridor.india_side_players.indian_brands %}
+Indian D2C brands riding the Korean wave:
+
+| Brand | Type | Angle |
+|---|---|---|
+{% for b in corridor.india_side_players.indian_brands -%}
+| {{ b.name }} | {{ b.type }} | {{ b.angle }} |
+{% endfor %}
+{% endif %}
+
+## q-commerce assortment — live Blinkit snapshot
+{% if corridor.qcommerce.insight %}{{ corridor.qcommerce.insight }}
+
+_Source: {{ corridor.qcommerce.source }}_
+{% endif %}
+{% if corridor.qcommerce.stocked_deep %}
+**Deeply stocked (conglomerate-owned, in stock):**
+{% for b in corridor.qcommerce.stocked_deep %}
+- **{{ b.brand }}**{% if b.owner %} ({{ b.owner }}){% endif %} — ~{{ b.skus_seen }} SKUs · {{ b.note }}{{ '' }}
+{% endfor %}
+
+**Thin or absent (viral indie/derma):**
+{% for b in corridor.qcommerce.thin_or_absent %}
+- **{{ b.brand }}** — {{ b.status }}: {{ b.note }}{{ '' }}
+{% endfor %}
+{% endif %}
+
+## Hero-SKU shelf prices in India (MRP)
+| Segment | Product & note | Price | Basis | Confidence | Source |
+|---|---|---|---|---|---|
+{% for p in corridor.pricing -%}
+| {{ p.segment }} | {{ p.notes|replace('[CORRIDOR] ','') }} | {{ p.value }} {{ p.unit }} | {{ p.value_basis }} | {{ p.confidence }} | {{ p.source }} |
 {% endfor %}
 
 ## Whitespace (ranked)

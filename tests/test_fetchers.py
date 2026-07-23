@@ -42,7 +42,7 @@ class TestGracefulDegradation:
         assert news_tavily.fetch() == []
 
     def test_dart_no_key_returns_empty(self, monkeypatch):
-        monkeypatch.setattr(korea_dart, "load_api_key", lambda _: None)
+        monkeypatch.setattr(korea_dart, "load_api_keys", lambda _: [])
         assert korea_dart.fetch() == []
 
     def test_qcommerce_disabled_returns_empty(self, monkeypatch):
@@ -54,6 +54,74 @@ class TestGracefulDegradation:
         assert trends_google.to_data_points([{}]) == []
         assert academic_openalex.to_data_points([{}]) == []
         assert qcommerce_tracker.to_data_points([{}]) == []
+
+
+class _FakeResp:
+    """Minimal stand-in for a requests.Response with a fixed JSON payload."""
+
+    def __init__(self, payload: dict):
+        self._payload = payload
+
+    def raise_for_status(self) -> None:
+        return None
+
+    def json(self) -> dict:
+        return self._payload
+
+
+class _FakeSession:
+    """Session whose .get returns a canned payload keyed by the DART crtfc_key."""
+
+    def __init__(self, by_key: dict):
+        self._by_key = by_key
+        self.calls: list[str] = []
+
+    def get(self, url, params=None, timeout=None):
+        key = params["crtfc_key"]
+        self.calls.append(key)
+        return _FakeResp(self._by_key[key])
+
+
+class TestDartFailover:
+    _OK = {"status": "000", "list": [{
+        "account_id": "ifrs-full_Revenue", "sj_div": "CIS",
+        "thstrm_amount": "4,250,000,000,000",
+    }]}
+
+    def test_fetch_fails_over_when_primary_rate_limited(self, monkeypatch):
+        primary, fallback = "PRIMARY", "FALLBACK"
+        fake = _FakeSession({
+            primary: {"status": "020", "message": "limit exceeded"},  # daily cap
+            fallback: self._OK,
+        })
+        monkeypatch.setattr(korea_dart, "load_api_keys", lambda _: [primary, fallback])
+        monkeypatch.setattr(korea_dart, "session", lambda: fake)
+
+        records = korea_dart.fetch(year=2025)
+
+        assert records and all(r["rows"] for r in records)
+        # Each target tried the primary first, then the fallback.
+        assert fake.calls.count(primary) == len(korea_dart.TARGETS)
+        assert fake.calls.count(fallback) == len(korea_dart.TARGETS)
+
+    def test_no_failover_on_key_agnostic_status(self):
+        # 013 (no data) is not a key problem: return it, never try the fallback.
+        primary, fallback = "P", "F"
+        fake = _FakeSession({primary: {"status": "013", "message": "no data"},
+                             fallback: self._OK})
+        result = korea_dart._request_financials(fake, "00000000", 2025, [primary, fallback])
+        assert result["status"] == "013"
+        assert fake.calls == [primary]
+
+    def test_returns_none_when_all_keys_error(self):
+        import requests
+
+        class _BoomSession:
+            def get(self, *args, **kwargs):
+                raise requests.RequestException("boom")
+
+        result = korea_dart._request_financials(_BoomSession(), "00000000", 2025, ["k1", "k2"])
+        assert result is None
 
 
 class TestQueryManifests:
@@ -117,6 +185,23 @@ class TestConverters:
         assert points[0].value == pytest.approx(4.25)
         assert points[0].unit == "krw_tn"
         assert points[0].confidence == "HIGH"
+
+    def test_dart_extracts_revenue_from_income_statement(self):
+        # LG H&H reports revenue under sj_div="IS", not "CIS" — the extractor
+        # must accept both, else its figure is silently dropped.
+        raw = [{
+            "company": "LG H&H", "year": 2025,
+            "rows": [
+                {"account_id": "ifrs-full_CostOfSales", "sj_div": "IS",
+                 "thstrm_amount": "3,000,000,000,000"},
+                {"account_id": "ifrs-full_Revenue", "sj_div": "IS",
+                 "thstrm_amount": "6,355,000,000,000"},
+            ],
+        }]
+        points = korea_dart.to_data_points(raw)
+        assert len(points) == 1
+        assert points[0].value == pytest.approx(6.355)
+        assert "LG H&H" in points[0].notes
 
     def test_screener_to_data_points(self):
         pl_csv = ",Mar 2023,Mar 2024\nSales +,\"1,000\",\"1,200\"\nExpenses,900,950\n"

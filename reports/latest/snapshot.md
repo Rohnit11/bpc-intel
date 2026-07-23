@@ -31,8 +31,8 @@ Shares of summed revenue for 2 listed BRAND OWNERS (KRW krw_tn, NET_REALISATION)
 
 | Company | Revenue | Share |
 |---|---|---|
-| LG H&H | 6.36 krw_tn | 59.9% |
-| AmorePacific | 4.25 krw_tn | 40.1% |
+| LG H&H | 6.355 krw_tn | 59.9% |
+| AmorePacific | 4.253 krw_tn | 40.1% |
 ---
 
 ## 3. India — segments
@@ -47,7 +47,7 @@ Shares of summed revenue for 2 listed BRAND OWNERS (KRW krw_tn, NET_REALISATION)
 | mens grooming | 186.3 inr_bn (RETAIL, 2025, HIGH; Euromonitor International) | 9.0 percent (RETAIL, 2025, HIGH; Euromonitor International) | 12.2 percent (RETAIL, 2025-2035, LOW; Future Market Insights) |
 | dermocosmetics | 0.2803 usd_bn (RETAIL, 2024, LOW; P&S Market Research) | — | — |
 ### India — sizing reconciliation (top-down vs bottom-up)
-- **Top-down:** 33.08 usd_bn (RETAIL, Statista (via China Briefing))- **Bottom-up:** 92060.0 inr_cr from Nykaa (FSN E-Commerce), Honasa Consumer, Hindustan Unilever, Godrej Consumer Products- **Gap:** not computed (bases not comparable) · **Publishable:** False
+- **Top-down:** 33.08 usd_bn (RETAIL, Statista (via China Briefing))- **Bottom-up:** 82038.0 inr_cr from Honasa Consumer, Hindustan Unilever, Godrej Consumer Products- **Gap:** not computed (bases not comparable) · **Publishable:** False
   - Unit/currency differ (top-down USD usd_bn vs bottom-up INR inr_cr) - convert before comparing.
   - Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).
   - Bottom-up base is inflated by non-pure-play conglomerates (Godrej Consumer Products, Hindustan Unilever) reporting non-BPC revenue.
@@ -77,7 +77,9 @@ Shares of summed revenue for 3 listed BRAND OWNERS (INR inr_cr, NET_REALISATION)
 | total_bpc | 25.9 percent | 2024-2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
 | total_bpc | 3139.31 inr_cr | 2025 | RETAIL | LOW | Expert Market Research |
 | total_bpc | 0.335 usd_bn | 2026 | RETAIL | LOW | The Report Cubes |
+| total_bpc | 26.3 percent | 2026-2035 | RETAIL | LOW | Expert Market Research |
 | total_bpc | 1.5 usd_bn | 2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
+| total_bpc | 32424.0 inr_cr | 2035 | RETAIL | LOW | Expert Market Research |
 ### Corridor trade flows (Korea → India, UN Comtrade)
 | Segment | Exports | Period | Source |
 |---|---|---|---|
@@ -87,7 +89,7 @@ Shares of summed revenue for 3 listed BRAND OWNERS (INR inr_cr, NET_REALISATION)
 | oral_care | 0.000251 usd_bn | 2024 | UN Comtrade |
 | fragrances | 6e-06 usd_bn | 2024 | UN Comtrade |
 ### Conduits
-- **Nykaa** (platform) — Innisfree, Laneige, Sulwhasoo, COSRX, Aestura, Illiyoon, Mise En Scène, RYO- **Tira (Reliance)** (platform) — Mixsoon- **Flipkart** (platform) — The Face Shop, TirTir, Beauty of Joseon, rom&nd, Thank You Farmer, K Glo, Soyaang, K Riot- **Amazon India** (platform) — Anua, Some By Mi, Etude, Isntree, Dr.Jart+, The Face Shop- **q-commerce (Blinkit/Zepto/Instamart)** (channel)### Whitespace (ranked)
+- **Nykaa** (platform) — Innisfree, Laneige, Sulwhasoo, COSRX, Aestura, Illiyoon, Mise En Scène, RYO, TirTir, Medicube- **Tira (Reliance)** (platform) — Mixsoon, Hince, Medicube, Dr. Melaxin- **Flipkart** (platform) — The Face Shop, TirTir, Beauty of Joseon, rom&nd, Thank You Farmer, K Glo, Soyaang, K Riot- **Amazon India** (platform) — Anua, Some By Mi, Etude, Isntree, Dr.Jart+, The Face Shop- **q-commerce (Blinkit/Zepto/Instamart)** (channel)### Whitespace (ranked)
 1. Mid-price derma K-beauty in Tier 2/3 (baseline whitespace #5, highest corridor conviction)
 2. Dedicated sunscreens (baseline whitespace #2 — India sun care underpenetrated)
 3. Men's K-beauty (baseline whitespace #4 — men's skincare underserved vs toiletries)

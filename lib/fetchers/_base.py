@@ -63,23 +63,54 @@ def load_yaml(name: str) -> dict:
         return yaml.safe_load(fh) or {}
 
 
+def _read_key_file() -> dict:
+    """Parse config/api_keys.yaml (empty dict if absent)."""
+    path = CONFIG_DIR / "api_keys.yaml"
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8") as fh:
+        return yaml.safe_load(fh) or {}
+
+
+def _clean_key(value: object) -> str | None:
+    """A usable key string, or None if unset or still a `YOUR_...` placeholder."""
+    return str(value) if value and not str(value).startswith("YOUR_") else None
+
+
 def load_api_key(key_name: str) -> str | None:
-    """Read an API key from config/api_keys.yaml if it exists.
+    """Read a single API key from config/api_keys.yaml if it exists.
 
     Args:
         key_name: Key within the YAML, e.g. "dart".
 
     Returns:
-        The key string, or None if unconfigured.
+        The key string, or None if unconfigured or placeholder.
     """
-    path = CONFIG_DIR / "api_keys.yaml"
-    if not path.exists():
-        return None
-    with path.open(encoding="utf-8") as fh:
-        keys = yaml.safe_load(fh) or {}
-    value = keys.get(key_name)
-    return value if value and not str(value).startswith("YOUR_") else None
+    return _clean_key(_read_key_file().get(key_name))
 
 
-__all__ = ["session", "save_raw", "load_yaml", "load_api_key",
+def load_api_keys(key_name: str) -> list[str]:
+    """Read a primary key plus an optional fallback, in priority order.
+
+    Looks up ``<key_name>`` then ``<key_name>_fallback`` in
+    config/api_keys.yaml, dropping any unset or placeholder value. Used by
+    fetchers that fail over to a second key when the first is rate-limited or
+    deactivated (e.g. DART, whose free tier caps daily calls per key).
+
+    Args:
+        key_name: Base key name, e.g. "dart" (also reads "dart_fallback").
+
+    Returns:
+        Configured keys, primary first. Empty list if none are set.
+    """
+    keys = _read_key_file()
+    ordered: list[str] = []
+    for name in (key_name, f"{key_name}_fallback"):
+        cleaned = _clean_key(keys.get(name))
+        if cleaned:
+            ordered.append(cleaned)
+    return ordered
+
+
+__all__ = ["session", "save_raw", "load_yaml", "load_api_key", "load_api_keys",
            "DEFAULT_TIMEOUT", "PROJECT_ROOT", "RAW_DIR"]

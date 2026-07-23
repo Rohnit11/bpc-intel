@@ -13,25 +13,32 @@ corridor:
     # Baseline: exports to India rose ~44.7% (H1 2025 basis) off ~US$50m base
     trade_base: "~US$50m (H1 2025 basis), +44.7% YoY — small base, fast growth"
     entry_barrier: "CDSCO import registration (Form COS-1 -> COS-2 via SUGAM portal) — pre-clearance before any consignment; key friction and lead-time cost"
+    momentum: "K-beauty is accelerating its India entry to offset SWANA-region volatility (Personal Care Insights, Apr 2026). 2026 launches: APR's Medicube (Nykaa + Tira), AmorePacific's Illiyoon (Nykaa exclusive), TirTir (Nykaa, Jun 2026), Tira's Hince (Jan) and Dr. Melaxin (Jul). India K-beauty ~INR 3,139cr (2025) forecast ~26% CAGR to ~INR 32,424cr by 2035 (Expert Market Research). AmorePacific is scaling India via platforms/imports, NOT local manufacturing — no India plant announced."
 
   conduits:
     - name: Nykaa
       type: platform
       since: 2016
-      notes: "Primary conduit; decade-long AmorePacific partnership; hosts eight AmorePacific brands"
+      notes: "Primary conduit; 10-year AmorePacific partnership (2016-2026), India's largest Korean portfolio (skincare/derma/haircare). Illiyoon newest exclusive (2026). Now also carries non-AmorePacific K-brands (TirTir, Medicube)."
       kr_brands_carried:
         - { brand: Innisfree, owner: AmorePacific, launched: 2016 }
         - { brand: Laneige, owner: AmorePacific }
         - { brand: Sulwhasoo, owner: AmorePacific }
         - { brand: COSRX, owner: AmorePacific }
         - { brand: Aestura, owner: AmorePacific, segment: dermocosmetics }
-        - { brand: Illiyoon, owner: AmorePacific, segment: dermocosmetics }
+        - { brand: Illiyoon, owner: AmorePacific, segment: dermocosmetics, launched: 2026 }
         - { brand: "Mise En Scène", owner: AmorePacific, segment: hair_care, launched: 2025 }
         - { brand: RYO, owner: AmorePacific, segment: hair_care, launched: 2025 }
+        - { brand: TirTir, owner: TirTir, launched: 2026-06, notes: "Mask Fit Red Cushion; independent K-brand, not AmorePacific" }
+        - { brand: Medicube, owner: "APR Corporation", segment: dermocosmetics, launched: 2026 }
     - name: Tira (Reliance)
       type: platform
+      notes: "Reliance Retail omnichannel beauty platform; aggressive 2026 K-beauty sprint with exclusive launches (online + select stores)"
       kr_brands_carried:
         - { brand: Mixsoon, launched: 2024-08 }
+        - { brand: Hince, segment: colour_cosmetics, launched: 2026-01 }
+        - { brand: Medicube, owner: "APR Corporation", segment: dermocosmetics, launched: 2026-02 }
+        - { brand: "Dr. Melaxin", segment: dermocosmetics, launched: 2026-07, notes: "exclusive to Tira" }
     - name: Flipkart
       type: platform
       notes: "Launched international K-beauty portfolio (source: Flipkart, 2025)"
@@ -62,6 +69,44 @@ corridor:
     - "Mid-price derma K-beauty in Tier 2/3 (baseline whitespace #5, highest corridor conviction)"
     - "Dedicated sunscreens (baseline whitespace #2 — India sun care underpenetrated)"
     - "Men's K-beauty (baseline whitespace #4 — men's skincare underserved vs toiletries)"
+
+  india_side_players:
+    # Indian companies operating in the K-beauty segment (the India side of the
+    # corridor). Two responses to the Korean wave: (1) platforms racing to
+    # curate Korean portfolios (see conduits above), and (2) Indian D2C brands
+    # launching Korean-ingredient / "made-in-Korea" lines to win glass-skin
+    # demand at local price points.
+    dynamic: "Platform land-grab (Nykaa's 10-yr AmorePacific tie-up vs Reliance Tira's 2026 sprint) plus Indian D2C brands going Korean. The competitive line runs incumbent Korean majors (AmorePacific) vs indie K-beauty vs Indian challengers."
+    indian_brands:
+      - name: Pilgrim
+        type: indian_d2c
+        angle: "Korean Rice Water range (new launch); markets Korean/global rituals, made-in-India, vegan"
+        source_url: "https://discoverpilgrim.com"
+      - name: Limese
+        type: indian_d2c
+        angle: "K-beauty formulations manufactured IN KOREA, tuned for Indian skin (snail mucin, cica, rice, collagen)"
+        source_url: "https://t2online.in/goodlife/fashion-beauty/five-indian-skincare-brands-offering-k-beauty-inspired-products-at-affordable-prices/2000109"
+      - name: "Foxtale (Hula Hoop)"
+        type: indian_d2c
+        angle: "Foxtale pivoting D2C -> house of brands; launched Hula Hoop amid Korean-inspired demand"
+        source_url: "https://ww.fashionnetwork.com/news/India-s-foxtale-announces-shift-from-d2c-label-to-house-of-brands,1790682.html"
+
+  qcommerce_assortment:
+    # Live Blinkit capture via lib/fetchers/qcommerce_tracker.py (headless
+    # Chromium), 2026-07-23: 63 unique K-brand SKUs across the watchlist. The
+    # q-commerce rail is real but UNEVEN and splits by ownership.
+    source: "Blinkit (headless-browser snapshot), 2026-07-23"
+    insight: "Conglomerate-owned K-brands (AmorePacific, LG H&H) have mature India supply chains and are deeply stocked on q-commerce; the viral indie/derma brands driving the K-beauty narrative (COSRX, Anua, Some By Mi) are out-of-stock, 'coming soon', or absent. The real Tier 2/3 whitespace is getting indie derma K-beauty onto the q-commerce rail, not the conglomerate brands already there."
+    stocked_deep:
+      - { brand: "The Face Shop", owner: "LG H&H", skus_seen: 21, note: "deepest K-brand on Blinkit; Rice Water line; sheet masks from Rs90 to cleansers/kits Rs1349; all in stock" }
+      - { brand: Laneige, owner: AmorePacific, skus_seen: 16, note: "lip masks/tints + sleeping masks; Rs540-1300; in stock" }
+      - { brand: Etude, owner: AmorePacific, skus_seen: 10, note: "colour/lip tints Rs195-980 + SoonJung derma skincare Rs1013-1200; in stock" }
+      - { brand: Innisfree, owner: AmorePacific, skus_seen: 9, note: "serum/masks/pact; Rs130-935; in stock" }
+      - { brand: "Beauty of Joseon", skus_seen: 4, note: "premium skincare only Rs1400-1570; in stock; ownership independent (Gudai Global)" }
+    thin_or_absent:
+      - { brand: COSRX, owner: AmorePacific, status: out_of_stock, note: "1 SKU listed (toner Rs1890), out of stock" }
+      - { brand: Anua, owner: "The Founders", status: coming_soon, note: "3 SKUs listed (Rs1650-2000), all 'Coming Soon'" }
+      - { brand: "Some By Mi / Isntree / Mixsoon", status: absent, note: "no listings surfaced on Blinkit" }
 
   regulation:
     india_import: "CDSCO, Drugs & Cosmetics Act 1940 + Cosmetics Rules 2020; Form COS-1 application -> COS-2 Registration Certificate via SUGAM portal; manufacturing site registration required; BIS IS 4707 ingredient standards (Part 2 revised Aug 2025); paper filings not accepted as of 2026"

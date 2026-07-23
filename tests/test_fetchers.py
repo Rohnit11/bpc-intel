@@ -82,6 +82,17 @@ class TestConverters:
         assert dp.value_basis == "EXPORT_FOB"
         assert "[CORRIDOR]" in dp.notes
 
+    def test_india_imports_to_data_points(self):
+        raw = [{"hs": "3304", "partner": "Korea", "year": 2024, "flow": "import",
+                "rows": [{"primaryValue": 140_060_000.0}]}]
+        pts = trade_comtrade.india_imports_to_data_points(raw)
+        assert len(pts) == 1
+        dp = pts[0]
+        assert dp.geography == "IN" and dp.metric == "import_value"
+        assert dp.value_basis == "IMPORT_CIF"
+        assert dp.value == pytest.approx(0.14006)
+        assert "[CORRIDOR]" in dp.notes  # Korea origin
+
     def test_comtrade_world_not_corridor_tagged(self):
         raw = [{"hs": "3305", "partner": "World", "year": 2024,
                 "rows": [{"primaryValue": 1_000_000.0}]}]

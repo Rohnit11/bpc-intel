@@ -1,7 +1,7 @@
 {
   "geography": "IN",
   "segment": "sun_care",
-  "last_updated": "2026-07-22",
+  "last_updated": "2026-07-23",
   "data_points": [
     {
       "geography": "IN",
@@ -40,6 +40,44 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "India sunscreen forecast CAGR to 2030"
+    },
+    {
+      "geography": "IN",
+      "segment": "sun_care",
+      "sub_segment": null,
+      "metric": "market_size",
+      "value": 0.5766,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "IMARC Group",
+      "source_url": "https://www.imarcgroup.com/india-sunscreen-market",
+      "date_accessed": "2026-07-23",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "India sunscreen; cf TechSci US$0.893bn (2024) — definitional spread; CAGR 6.07%"
+    },
+    {
+      "geography": "IN",
+      "segment": "sun_care",
+      "sub_segment": null,
+      "metric": "growth_yoy",
+      "value": 170.0,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "1digitalstack / quick-commerce report",
+      "source_url": "https://www.linkedin.com/posts/samiran-mathur_1ds-sunscreen-qcom-report-apr26-activity-7458503608859250688-2W9u",
+      "date_accessed": "2026-07-23",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "Sunscreen on q-commerce projected ~2.7x (i.e. ~+170%) 2026 vs 2025; Tier 2/3 surge"
     }
   ]
 }

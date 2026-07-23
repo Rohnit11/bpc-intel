@@ -110,25 +110,44 @@ def to_data_points(raw_records: list[dict]) -> list[DataPoint]:
             logger.warning("No Sales row for %s", rec["company"])
             continue
         sales = sales_rows.iloc[0]
+        # Operating margin (OPM %) row — Screener's cost-structure summary line.
+        opm_rows = df[labels.str.contains(r"^OPM", case=False, regex=True)]
+        opm = opm_rows.iloc[0] if not opm_rows.empty else None
         for col in df.columns[1:]:
             col_s = str(col)
             if not col_s.startswith("Mar"):
                 continue
+            fy = f"FY{col_s.split()[-1][-2:]}"
             try:
                 value = float(str(sales[col]).replace(",", ""))
             except ValueError:
-                continue
-            fy = f"FY{col_s.split()[-1][-2:]}"
-            points.append(DataPoint(
-                geography="IN", segment="total_bpc", metric="revenue",
-                value=value, unit="inr_cr", currency="INR",
-                period=fy, period_type="FY", value_basis="NET_REALISATION",
-                source_name="Screener.in (consolidated P&L)",
-                source_url=rec["url"], date_accessed=date.today(),
-                confidence="HIGH",
-                notes=f"Company: {rec['company']} — annual Sales line; organised sector",
-            ))
-    logger.info("Converted Screener tables to %d revenue DataPoints", len(points))
+                value = None
+            if value is not None:
+                points.append(DataPoint(
+                    geography="IN", segment="total_bpc", metric="revenue",
+                    value=value, unit="inr_cr", currency="INR",
+                    period=fy, period_type="FY", value_basis="NET_REALISATION",
+                    source_name="Screener.in (consolidated P&L)",
+                    source_url=rec["url"], date_accessed=date.today(),
+                    confidence="HIGH",
+                    notes=f"Company: {rec['company']} — annual Sales line; organised sector",
+                ))
+            if opm is not None:
+                try:
+                    margin = float(str(opm[col]).replace(",", "").replace("%", ""))
+                except ValueError:
+                    continue
+                points.append(DataPoint(
+                    geography="IN", segment="total_bpc", metric="operating_margin",
+                    value=margin, unit="percent", currency="INR",
+                    period=fy, period_type="FY", value_basis="NA",
+                    source_name="Screener.in (consolidated P&L)",
+                    source_url=rec["url"], date_accessed=date.today(),
+                    confidence="HIGH",
+                    notes=f"Company: {rec['company']} — operating margin (OPM %); "
+                          "cost-structure proxy",
+                ))
+    logger.info("Converted Screener tables to %d DataPoints", len(points))
     return points
 
 

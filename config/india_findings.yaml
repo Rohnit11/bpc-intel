@@ -1,0 +1,55 @@
+# config/india_findings.yaml
+# Qualitative India value-chain findings from the Tavily india_research sweep
+# (data/raw/india_research_*.json, accessed 2026-07-23). Each bullet carries a
+# source so the brief stays traceable. Quantitative facts live as DataPoints
+# (see lib/ingest/india_curated.py); this holds the narrative structure.
+
+supply_chain:
+  - text: "Most Indian D2C beauty brands do NOT own factories — they use third-party contract manufacturers / private-label houses (e.g. Gorgeous Cosmos, and hundreds listed on IndiaMART), with MOQs from ~500 units. The brand owns formula/brand; the CM owns production."
+    source: "Gorgeous Cosmos; IndiaMART"
+    url: "https://gorgeouscosmos.in/news/india-1-private-label-cosmetic-manufacturer"
+  - text: "FMCG brands demand audit-readiness/scale from CMs; D2C brands demand agility, small batches, and RM-sourcing transparency — two different contract-manufacturing service models."
+    source: "IMARC Engineering"
+    url: "https://www.imarcengineering.com/blog/contract-manufacturing-in-india"
+  - text: "Upstream, specialty-ingredient suppliers underpin the chain: Galaxy Surfactants (mild surfactants for cleansers) and Fine Organics (oleochemical specialty additives) are key Indian actives/ingredient makers."
+    source: "Marcellus; GlobalData"
+    url: "https://marcellus.in/newsletter/little-champs/spotlighting-galaxy-surfactants"
+
+import_make:
+  - text: "India skincare is ~91% domestically supplied by value (imports ~US$844m vs ~US$9bn market); imports concentrate in premium and K-beauty tiers. Korea 17% and China 22% of skincare imports."
+    source: "UN Comtrade; IMARC (derived)"
+    url: "https://comtradeplus.un.org"
+  - text: "Premium fragrance is import-reliant: UAE is India's largest perfume-import source (HS 3303), then France/Germany for high-end oils; mass perfume/deodorant is domestically filled."
+    source: "Seair Exim"
+    url: "https://www.seair.co.in/blog/perfume-importers-in-india.aspx"
+  - text: "Any imported cosmetic needs a CDSCO Import Registration (Form COS-1 -> COS-2 via SUGAM), plus manufacturing-site registration — the key lead-time/friction cost for K-beauty entrants."
+    source: "PSR Compliance / CDSCO"
+    url: "https://www.psrcompliance.com/cosmetic-import-license"
+
+new_players:
+  - text: "Consolidation by strategics: HUL acquired Minimalist (~Rs3,000cr) and Plum; Estee Lauder took Forest Essentials; Puig bought 85% of Kama Ayurveda; KKR owns 54% of Vini Cosmetics/Fogg (US$625m, US$1.2bn valuation)."
+    source: "IMA Pro; Economic Times"
+    url: "https://gaurav.imapro.in/research/india-skincare-market-report"
+  - text: "Funding continues into 2026 despite the broader D2C slowdown: KOSE invested US$30m in Foxtale, Moxie raised US$15m, Antinorm Rs28cr seed; India D2C attracted ~US$757m over 18 months (wellness+beauty led)."
+    source: "The D2C Pulse; The Hindu BusinessLine"
+    url: "https://thed2cpulse.com/market-industry-d2c/d2c-funding-trends-india-2026"
+  - text: "House-of-brands model emerging among small players: Innovist runs Bare Anatomy (hair), Chemist at Play (skin), Sunscoop (sun) as science-backed sub-brands."
+    source: "Indian Startup Times"
+    url: "https://www.indianstartuptimes.com/news/the-d2c-100-indias-emerging-brands"
+  - text: "K-beauty brand owners are entering directly: APR launched Medicube on Nykaa; AmorePacific introduced dermocosmetic brand Illiyoon — accelerating India entry to offset SWANA-region volatility."
+    source: "Personal Care Insights"
+    url: "https://www.personalcareinsights.com/news/kbeauty-expands-india-market"
+
+demand:
+  - text: "Beauty is one of the fastest-rising quick-commerce categories: ~160% YoY growth (RedSeer); premium/high-end beauty is gaining on q-commerce, not just mass."
+    source: "RedSeer (via Unicommerce)"
+    url: "https://unicommerce.com/blog/beauty-trends-quick-commerce"
+  - text: "Q-commerce is ~Rs40,000cr (~US$5bn) GMV in 2026; share roughly Blinkit 45-50%, Zepto 20-25%, Instamart 20-25% — the new default access rail into Tier 2/3."
+    source: "Digital in Asia; Product Growth"
+    url: "https://digitalinasia.com/india-quick-commerce-blinkit-zepto-instamart"
+  - text: "Demand is shifting from awareness-led to access-led, driven by Gen Z, rising incomes, and vernacular/omnichannel reach; beauty has become a daily self-care essential, not aspirational luxury."
+    source: "Outlook Business (RedSeer)"
+    url: "https://www.outlookbusiness.com/markets/indias-beauty-products-market-projected-to-reach-39-bn-by-2030-report"
+  - text: "'Skinification' is reshaping hair care (~US$4bn market): buyers want actives (niacinamide, ceramides, peptides) in serums/tonics; specialist D2C brands outperform legacy FMCG."
+    source: "Entrepreneur India; Arise"
+    url: "https://arisecosmetic.com/hair-care-trends-in-india"

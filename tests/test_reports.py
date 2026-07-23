@@ -88,3 +88,11 @@ class TestRendering:
         text = open(path, encoding="utf-8").read()
         assert "K-beauty Corridor Brief" in text
         assert "{{" not in text
+
+    def test_india_value_chain_brief_renders(self):
+        from lib.reports.snapshot import generate_india_value_chain_brief
+        path = generate_india_value_chain_brief()
+        text = open(path, encoding="utf-8").read()
+        assert "India Beauty & Personal Care" in text
+        assert "Import vs make" in text and "Consumer demand" in text
+        assert "{{" not in text and "{%" not in text

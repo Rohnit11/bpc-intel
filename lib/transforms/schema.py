@@ -25,14 +25,25 @@ class DataPoint(BaseModel):
         "market_size", "growth_yoy", "cagr_historical", "cagr_forecast",
         "market_share", "revenue", "export_value", "production_value",
         "channel_share", "per_capita_spend", "penetration_rate",
+        # Value-chain metrics (India deep-research extension)
+        "import_value",        # goods imported (customs)
+        "import_dependence",   # imports as % of market/consumption
+        "retail_price",        # a product's shelf price (MRP for India)
+        "gross_margin",        # (revenue - COGS) / revenue, %
+        "operating_margin",    # operating profit / revenue, %
+        "adspend_ratio",       # advertising & promotion / revenue, %
+        "trade_margin",        # distributor + retailer markup, %
     ]
     value: float
-    unit: str                           # "usd_bn", "krw_tn", "inr_cr", "percent", "usd"
+    unit: str                           # "usd_bn", "krw_tn", "inr_cr", "percent", "usd", "inr"
     currency: Literal["USD", "KRW", "INR"]
     period: str                         # "2024", "FY25", "2020-2024", "H1_2025"
     period_type: Literal["CY", "FY", "H1", "H2", "Q1", "Q2", "Q3", "Q4", "range"]
     value_basis: Literal[
-        "RETAIL", "NET_REALISATION", "WHOLESALE", "EXPORT_FOB", "PRODUCTION"
+        "RETAIL", "NET_REALISATION", "WHOLESALE", "EXPORT_FOB", "PRODUCTION",
+        "IMPORT_CIF",   # customs import value (cost-insurance-freight)
+        "MRP",          # maximum retail price (India shelf price, tax+margin incl.)
+        "NA",           # basis not applicable (e.g. a ratio/margin/dependence %)
     ]
     tier: Optional[Literal["premium", "masstige", "mass"]] = None
     source_name: str

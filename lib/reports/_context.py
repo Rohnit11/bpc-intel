@@ -125,6 +125,57 @@ def shares(geography: str) -> dict:
     return compute_shares(geography, "total_bpc")
 
 
+_INDIA_BRIEF_SEGMENTS = [
+    "total_bpc", "skincare", "sun_care", "dermocosmetics",
+    "fragrances", "mens_grooming", "hair_care",
+]
+
+
+def india_value_chain_context() -> dict:
+    """Assemble the India value-chain brief context (data + sourced findings)."""
+    with (PROJECT_ROOT / "config" / "india_findings.yaml").open(encoding="utf-8") as fh:
+        findings = yaml.safe_load(fh)
+
+    segments = []
+    for seg in _INDIA_BRIEF_SEGMENTS:
+        pts = load_points("IN", seg)
+        size = top_down_size("IN", seg)
+        imports = {"World": None, "Korea": None, "China": None}
+        for dp in pts:
+            if dp.metric == "import_value":
+                for origin in imports:
+                    if origin in (dp.notes or ""):
+                        imports[origin] = _fmt(dp)
+        segments.append({
+            "segment": seg,
+            "size": _fmt(size) if size else None,
+            "growth": [_fmt(dp) for dp in pts if dp.metric in ("growth_yoy", "cagr_forecast")],
+            "imports": imports,
+            "import_dependence": next((_fmt(dp) for dp in pts if dp.metric == "import_dependence"), None),
+            "prices": [_fmt(dp) for dp in pts if dp.metric == "retail_price"],
+            "margins": [_fmt(dp) for dp in pts if dp.metric in ("gross_margin",)],
+        })
+
+    # Company operating margins (cost structure) — latest per company.
+    tp = load_points("IN", "total_bpc")
+    from lib.analysis._load import company_name, period_end_year
+    opm: dict[str, dict] = {}
+    for dp in tp:
+        if dp.metric != "operating_margin":
+            continue
+        name = company_name(dp)
+        if name and (name not in opm or period_end_year(dp.period) > opm[name]["_yr"]):
+            opm[name] = {"company": name, "value": dp.value, "period": dp.period,
+                         "_yr": period_end_year(dp.period)}
+
+    return {
+        "generated": date.today().isoformat(),
+        "segments": segments,
+        "operating_margins": sorted(opm.values(), key=lambda d: -d["value"]),
+        "findings": findings,
+    }
+
+
 def full_context() -> dict:
     """Assemble the whole context object for the full snapshot report."""
     gaps_path = PROJECT_ROOT / "reports" / "latest" / "gaps_register.md"

@@ -1,0 +1,61 @@
+{%- macro fig(f) -%}
+{%- if f -%}{{ f.value }} {{ f.unit }} ({{ f.value_basis }}, {{ f.period }}, {{ f.confidence }}){%- else -%}—{%- endif -%}
+{%- endmacro -%}
+# India Beauty & Personal Care — Value-Chain Brief
+*Generated {{ ctx.generated }} · segments: skincare/sun/derma, fragrances, men's grooming, hair care, K-beauty corridor*
+*Every figure traces to data/sources.csv; qualitative findings cite their source inline.*
+
+## Executive read
+- **Import vs make:** India makes/fills most of its beauty volume domestically via **third-party contract manufacturers** — brands own formula + marketing, not factories. Imports concentrate in **premium and K-beauty** tiers (skincare ~9% import-dependent; premium fragrance far higher, UAE/France-sourced).
+- **Cost of making:** a 30 ml serum costs **₹80–120 to manufacture** and retails at **₹500–700** (75–85% gross markup) — beauty has the best D2C gross margins in India, though returns (8–12%) and ad/shipping erode the net.
+- **Demand:** beauty on **quick commerce grew ~160% YoY** and is the new access rail into Tier 2/3; premium is now moving on q-commerce too.
+
+## 1. Segment economics
+| Segment | Market size | Imports (World) | of which Korea | Import-dependence |
+|---|---|---|---|---|
+{% for s in ctx.segments -%}
+{% if s.segment != 'total_bpc' -%}
+| {{ s.segment.replace('_',' ') }} | {{ fig(s.size) }} | {{ fig(s.imports.World) }} | {{ fig(s.imports.Korea) }} | {% if s.import_dependence %}{{ s.import_dependence.value }}% ({{ s.import_dependence.confidence }}){% else %}—{% endif %} |
+{% endif -%}
+{% endfor %}
+
+_Import values are UN Comtrade CIF (2024); import-dependence is derived (imports ÷ market size) — see methodology in data/sources.csv._
+
+## 2. Cost & margin structure
+**Pricing / cost-of-making**
+{% for s in ctx.segments -%}
+{% for p in s.prices -%}
+- {{ s.segment.replace('_',' ') }}: {{ p.notes }} — {{ p.source }}
+{% endfor -%}
+{% for m in s.margins -%}
+- {{ s.segment.replace('_',' ') }} gross margin {{ m.value }}% — {{ m.notes }} ({{ m.source }})
+{% endfor -%}
+{% endfor %}
+
+**Listed-player operating margins (cost-efficiency proxy, latest FY)**
+| Company | Operating margin |
+|---|---|
+{% for o in ctx.operating_margins -%}
+| {{ o.company }} | {{ o.value }}% ({{ o.period }}) |
+{% endfor %}
+
+## 3. Import vs make & supply chain
+{% for b in ctx.findings.import_make -%}
+- {{ b.text }} *({{ b.source }})*
+{% endfor %}
+{% for b in ctx.findings.supply_chain -%}
+- {{ b.text }} *({{ b.source }})*
+{% endfor %}
+
+## 4. Competitive dynamics & new players
+{% for b in ctx.findings.new_players -%}
+- {{ b.text }} *({{ b.source }})*
+{% endfor %}
+
+## 5. Consumer demand
+{% for b in ctx.findings.demand -%}
+- {{ b.text }} *({{ b.source }})*
+{% endfor %}
+
+---
+*Confidence: market-research aggregators (IMARC, Mordor, TechSci, MarkNtel) = LOW; named trade press / consulting (Economic Times, RedSeer, Outlook) = MEDIUM; UN Comtrade imports = HIGH; derived ratios = ESTIMATE with methodology.*

@@ -57,29 +57,86 @@ def upsert_data_points(
                              last_updated=date.today(), data_points=[])
 
         existing = {_identity_key(dp): i for i, dp in enumerate(sf.data_points)}
-        added = updated = unchanged = 0
+        added = updated = unchanged = refreshed = 0
         for dp in new_dps:
             key = _identity_key(dp)
             if key in existing:
                 idx = existing[key]
-                if sf.data_points[idx].value == dp.value:
-                    unchanged += 1
-                else:
+                cur = sf.data_points[idx]
+                if cur.value != dp.value:
                     sf.data_points[idx] = dp
                     updated += 1
+                elif cur.model_dump() != dp.model_dump():
+                    # Same claim + value but metadata changed (e.g. corrected
+                    # source_url) — refresh in place so provenance stays current.
+                    sf.data_points[idx] = dp
+                    refreshed += 1
+                else:
+                    unchanged += 1
             else:
                 sf.data_points.append(dp)
                 existing[key] = len(sf.data_points) - 1
                 added += 1
 
-        if added or updated:
+        if added or updated or refreshed:
             sf.last_updated = date.today()
             save_segment_file(sf, path)
-        summary[fname] = {"added": added, "updated": updated, "unchanged": unchanged}
-        logger.info("%s: %d added, %d updated, %d unchanged", fname, added, updated, unchanged)
+        summary[fname] = {"added": added, "updated": updated,
+                          "unchanged": unchanged, "refreshed": refreshed}
+        logger.info("%s: %d added, %d updated, %d refreshed, %d unchanged",
+                    fname, added, updated, refreshed, unchanged)
 
     append_to_sources_csv(points)
     return summary
+
+
+def rebuild_sources_csv(
+    processed_dir: str | Path | None = None,
+    csv_path: str | Path | None = None,
+) -> int:
+    """Regenerate data/sources.csv canonically from all processed files.
+
+    The append-only ledger can accumulate stale rows (e.g. a corrected URL
+    leaves the old row behind). This rebuilds it from the processed data —
+    the source of truth — deduplicating on claim identity.
+
+    Args:
+        processed_dir: Processed-data directory.
+        csv_path: Ledger path.
+
+    Returns:
+        Number of rows written.
+    """
+    processed_dir = Path(processed_dir) if processed_dir is not None else PROCESSED_DIR
+    csv_path = Path(csv_path) if csv_path is not None else SOURCES_CSV
+
+    header = ["claim", "value", "unit", "currency", "geography", "segment",
+              "period", "period_type", "value_basis", "source_name", "url",
+              "date_accessed", "confidence", "notes"]
+    rows: list[list[str]] = []
+    seen: set[tuple] = set()
+    for path in sorted(processed_dir.glob("*.json")):
+        sf = load_segment_file(path)
+        for dp in sf.data_points:
+            key = (str(dp.value), dp.geography, dp.segment, dp.period,
+                   dp.value_basis, dp.source_name, dp.notes or "")
+            if key in seen:
+                continue
+            seen.add(key)
+            claim = f"{dp.geography} {dp.segment} {dp.metric}" + (f" [{dp.tier}]" if dp.tier else "")
+            rows.append([
+                claim, str(dp.value), dp.unit, dp.currency, dp.geography, dp.segment,
+                dp.period, dp.period_type, dp.value_basis, dp.source_name,
+                dp.source_url or "", dp.date_accessed.isoformat(), dp.confidence,
+                dp.notes or "",
+            ])
+    with csv_path.open("w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(header)
+        w.writerows(rows)
+    logger.info("Rebuilt %s: %d rows from %d processed files",
+                csv_path, len(rows), len(list(processed_dir.glob('*.json'))))
+    return len(rows)
 
 
 def append_to_sources_csv(points: list[DataPoint], csv_path: str | Path | None = None) -> int:
@@ -125,4 +182,4 @@ def append_to_sources_csv(points: list[DataPoint], csv_path: str | Path | None =
     return len(new_rows)
 
 
-__all__ = ["upsert_data_points", "append_to_sources_csv"]
+__all__ = ["upsert_data_points", "append_to_sources_csv", "rebuild_sources_csv"]

@@ -1,6 +1,6 @@
 # Gaps Register
 
-61 missing segment × geography × metric combinations.
+56 missing segment × geography × metric combinations.
 
 | Geography | Segment | Metric | Status | Suggested source |
 |---|---|---|---|---|
@@ -36,27 +36,22 @@
 | KR | emerging_adjacencies | market_size | no data | euromonitor_passport, statista, tavily |
 | KR | emerging_adjacencies | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |
 | KR | emerging_adjacencies | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
-| IN | skincare | market_size | segment has ['market_share', 'revenue'] only | euromonitor_passport, statista, tavily |
-| IN | skincare | growth_yoy | segment has ['market_share', 'revenue'] only | euromonitor_passport, tavily |
-| IN | skincare | cagr_forecast | segment has ['market_share', 'revenue'] only | euromonitor_passport, bmi_research, statista |
-| IN | sun_care | growth_yoy | segment has ['cagr_forecast', 'market_size'] only | euromonitor_passport, tavily |
+| IN | skincare | growth_yoy | segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only | euromonitor_passport, tavily |
+| IN | skincare | cagr_forecast | segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only | euromonitor_passport, bmi_research, statista |
 | IN | colour_cosmetics | growth_yoy | segment has ['market_share', 'market_size'] only | euromonitor_passport, tavily |
 | IN | colour_cosmetics | cagr_forecast | segment has ['market_share', 'market_size'] only | euromonitor_passport, bmi_research, statista |
-| IN | fragrances | market_size | no data | euromonitor_passport, statista, tavily |
-| IN | fragrances | growth_yoy | no data | euromonitor_passport, tavily |
-| IN | fragrances | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
-| IN | hair_care | market_size | no data | euromonitor_passport, statista, tavily |
-| IN | hair_care | growth_yoy | no data | euromonitor_passport, tavily |
-| IN | hair_care | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
+| IN | fragrances | growth_yoy | segment has ['import_dependence', 'import_value', 'market_size', 'revenue'] only | euromonitor_passport, tavily |
+| IN | fragrances | cagr_forecast | segment has ['import_dependence', 'import_value', 'market_size', 'revenue'] only | euromonitor_passport, bmi_research, statista |
+| IN | hair_care | growth_yoy | segment has ['cagr_forecast', 'import_value', 'market_size'] only | euromonitor_passport, tavily |
 | IN | bath_shower | market_size | no data | euromonitor_passport, statista, tavily |
 | IN | bath_shower | growth_yoy | no data | euromonitor_passport, tavily |
 | IN | bath_shower | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
 | IN | deodorants | market_size | no data | euromonitor_passport, statista, tavily |
 | IN | deodorants | growth_yoy | no data | euromonitor_passport, tavily |
 | IN | deodorants | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
-| IN | oral_care | market_size | no data | euromonitor_passport, statista, tavily |
-| IN | oral_care | growth_yoy | no data | euromonitor_passport, tavily |
-| IN | oral_care | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
+| IN | oral_care | market_size | segment has ['import_value'] only | euromonitor_passport, statista, tavily |
+| IN | oral_care | growth_yoy | segment has ['import_value'] only | euromonitor_passport, tavily |
+| IN | oral_care | cagr_forecast | segment has ['import_value'] only | euromonitor_passport, bmi_research, statista |
 | IN | baby_child | market_size | no data | euromonitor_passport, statista, tavily |
 | IN | baby_child | growth_yoy | no data | euromonitor_passport, tavily |
 | IN | baby_child | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |

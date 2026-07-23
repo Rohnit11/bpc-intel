@@ -107,6 +107,22 @@ def generate_comparison(metric: str = "market_size") -> str:
     return str(out)
 
 
+def generate_india_value_chain_brief() -> str:
+    """Render the India value-chain brief (pricing, sourcing, competition, demand).
+
+    Returns:
+        Path to the written Markdown brief.
+    """
+    LATEST_DIR.mkdir(parents=True, exist_ok=True)
+    ctx = _context.india_value_chain_context()
+    md = _env().get_template("india_value_chain.md.j2").render(ctx=ctx)
+    _archive_existing("india_value_chain.md")
+    out = LATEST_DIR / "india_value_chain.md"
+    out.write_text(md, encoding="utf-8")
+    logger.info("Wrote India value-chain brief to %s (%d chars)", out, len(md))
+    return str(out)
+
+
 def generate_segment_brief(geography: str, segment: str) -> str:
     """Render a one-page brief for a single geography × segment.
 
@@ -144,6 +160,8 @@ if __name__ == "__main__":
         print(generate_comparison(sys.argv[2] if len(sys.argv) > 2 else "market_size"))
     elif what == "segment" and len(sys.argv) >= 4:
         print(generate_segment_brief(sys.argv[2], sys.argv[3]))
+    elif what == "india":
+        print(generate_india_value_chain_brief())
     else:
         print("Usage: python -m lib.reports.snapshot "
-              "[full | corridor | comparison [metric] | segment <KR|IN> <segment>]")
+              "[full | corridor | comparison [metric] | segment <KR|IN> <segment> | india]")

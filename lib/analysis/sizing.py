@@ -51,6 +51,7 @@ def top_down_size(geography: str, segment: str) -> DataPoint | None:
     def key(dp: DataPoint) -> tuple:
         end_year = period_end_year(dp.period)
         return (
+            1 if dp.sub_segment is None else 0,    # segment total over sub-segment slice
             0 if end_year > current_year else 1,   # prefer actuals over forecasts
             1 if dp.value_basis == "RETAIL" else 0,
             _CONFIDENCE_RANK.get(dp.confidence, 0),

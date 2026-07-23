@@ -39,8 +39,11 @@ Shares of summed revenue for 2 listed BRAND OWNERS (KRW krw_tn, NET_REALISATION)
 
 | Segment | Market size | YoY | Fcst CAGR |
 |---|---|---|---|
-| sun care | 0.89312 usd_bn (RETAIL, 2024, LOW; TechSci Research) | — | 6.8 percent (RETAIL, 2024-2030, LOW; TechSci Research) |
+| skincare | 9.06 usd_bn (RETAIL, 2025, LOW; IMARC Group) | — | — |
+| sun care | 0.5766 usd_bn (RETAIL, 2025, LOW; IMARC Group) | 170.0 percent (RETAIL, 2026, LOW; 1digitalstack / quick-commerce report) | 6.8 percent (RETAIL, 2024-2030, LOW; TechSci Research) |
 | colour cosmetics | 3.46 usd_bn (RETAIL, 2024, LOW; DMI) | — | — |
+| fragrances | 2.6 usd_bn (RETAIL, 2024, LOW; Industry (FMCG analysis via LinkedIn)) | — | — |
+| hair care | 4.1 usd_bn (RETAIL, 2026, LOW; Mordor Intelligence) | — | 4.73 percent (NA, 2026-2031, LOW; Mordor Intelligence) |
 | mens grooming | 186.3 inr_bn (RETAIL, 2025, HIGH; Euromonitor International) | 9.0 percent (RETAIL, 2025, HIGH; Euromonitor International) | 12.2 percent (RETAIL, 2025-2035, LOW; Future Market Insights) |
 | dermocosmetics | 0.2803 usd_bn (RETAIL, 2024, LOW; P&S Market Research) | — | — |
 ### India — sizing reconciliation (top-down vs bottom-up)
@@ -66,9 +69,14 @@ Shares of summed revenue for 3 listed BRAND OWNERS (INR inr_cr, NET_REALISATION)
 ### Corridor sizing (K-beauty in India)
 | Segment | Value | Period | Basis | Confidence | Source |
 |---|---|---|---|---|---|
+| skincare | 0.14006 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
+| fragrances | 0.000135 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
+| oral_care | 0.000485 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
 | total_bpc | 0.4 usd_bn | 2024 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
+| total_bpc | 0.002055 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
 | total_bpc | 25.9 percent | 2024-2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
 | total_bpc | 3139.31 inr_cr | 2025 | RETAIL | LOW | Expert Market Research |
+| total_bpc | 0.335 usd_bn | 2026 | RETAIL | LOW | The Report Cubes |
 | total_bpc | 1.5 usd_bn | 2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
 ### Corridor trade flows (Korea → India, UN Comtrade)
 | Segment | Exports | Period | Source |
@@ -95,7 +103,7 @@ Shares of summed revenue for 3 listed BRAND OWNERS (INR inr_cr, NET_REALISATION)
 
 # Gaps Register
 
-61 missing segment × geography × metric combinations.
+56 missing segment × geography × metric combinations.
 
 | Geography | Segment | Metric | Status | Suggested source |
 |---|---|---|---|---|
@@ -131,27 +139,22 @@ Shares of summed revenue for 3 listed BRAND OWNERS (INR inr_cr, NET_REALISATION)
 | KR | emerging_adjacencies | market_size | no data | euromonitor_passport, statista, tavily |
 | KR | emerging_adjacencies | growth_yoy | no data | euromonitor_passport, korea_mfds, tavily |
 | KR | emerging_adjacencies | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
-| IN | skincare | market_size | segment has ['market_share', 'revenue'] only | euromonitor_passport, statista, tavily |
-| IN | skincare | growth_yoy | segment has ['market_share', 'revenue'] only | euromonitor_passport, tavily |
-| IN | skincare | cagr_forecast | segment has ['market_share', 'revenue'] only | euromonitor_passport, bmi_research, statista |
-| IN | sun_care | growth_yoy | segment has ['cagr_forecast', 'market_size'] only | euromonitor_passport, tavily |
+| IN | skincare | growth_yoy | segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only | euromonitor_passport, tavily |
+| IN | skincare | cagr_forecast | segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only | euromonitor_passport, bmi_research, statista |
 | IN | colour_cosmetics | growth_yoy | segment has ['market_share', 'market_size'] only | euromonitor_passport, tavily |
 | IN | colour_cosmetics | cagr_forecast | segment has ['market_share', 'market_size'] only | euromonitor_passport, bmi_research, statista |
-| IN | fragrances | market_size | no data | euromonitor_passport, statista, tavily |
-| IN | fragrances | growth_yoy | no data | euromonitor_passport, tavily |
-| IN | fragrances | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
-| IN | hair_care | market_size | no data | euromonitor_passport, statista, tavily |
-| IN | hair_care | growth_yoy | no data | euromonitor_passport, tavily |
-| IN | hair_care | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
+| IN | fragrances | growth_yoy | segment has ['import_dependence', 'import_value', 'market_size', 'revenue'] only | euromonitor_passport, tavily |
+| IN | fragrances | cagr_forecast | segment has ['import_dependence', 'import_value', 'market_size', 'revenue'] only | euromonitor_passport, bmi_research, statista |
+| IN | hair_care | growth_yoy | segment has ['cagr_forecast', 'import_value', 'market_size'] only | euromonitor_passport, tavily |
 | IN | bath_shower | market_size | no data | euromonitor_passport, statista, tavily |
 | IN | bath_shower | growth_yoy | no data | euromonitor_passport, tavily |
 | IN | bath_shower | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
 | IN | deodorants | market_size | no data | euromonitor_passport, statista, tavily |
 | IN | deodorants | growth_yoy | no data | euromonitor_passport, tavily |
 | IN | deodorants | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
-| IN | oral_care | market_size | no data | euromonitor_passport, statista, tavily |
-| IN | oral_care | growth_yoy | no data | euromonitor_passport, tavily |
-| IN | oral_care | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |
+| IN | oral_care | market_size | segment has ['import_value'] only | euromonitor_passport, statista, tavily |
+| IN | oral_care | growth_yoy | segment has ['import_value'] only | euromonitor_passport, tavily |
+| IN | oral_care | cagr_forecast | segment has ['import_value'] only | euromonitor_passport, bmi_research, statista |
 | IN | baby_child | market_size | no data | euromonitor_passport, statista, tavily |
 | IN | baby_child | growth_yoy | no data | euromonitor_passport, tavily |
 | IN | baby_child | cagr_forecast | no data | euromonitor_passport, bmi_research, statista |

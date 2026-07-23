@@ -31,8 +31,8 @@ Shares of summed revenue for 2 listed BRAND OWNERS (KRW krw_tn, NET_REALISATION)
 
 | Company | Revenue | Share |
 |---|---|---|
-| LG H&H | 6.36 krw_tn | 59.9% |
-| AmorePacific | 4.25 krw_tn | 40.1% |
+| LG H&H | 6.355 krw_tn | 59.9% |
+| AmorePacific | 4.253 krw_tn | 40.1% |
 ---
 
 ## 3. India — segments
@@ -47,7 +47,7 @@ Shares of summed revenue for 2 listed BRAND OWNERS (KRW krw_tn, NET_REALISATION)
 | mens grooming | 186.3 inr_bn (RETAIL, 2025, HIGH; Euromonitor International) | 9.0 percent (RETAIL, 2025, HIGH; Euromonitor International) | 12.2 percent (RETAIL, 2025-2035, LOW; Future Market Insights) |
 | dermocosmetics | 0.2803 usd_bn (RETAIL, 2024, LOW; P&S Market Research) | — | — |
 ### India — sizing reconciliation (top-down vs bottom-up)
-- **Top-down:** 33.08 usd_bn (RETAIL, Statista (via China Briefing))- **Bottom-up:** 92060.0 inr_cr from Nykaa (FSN E-Commerce), Honasa Consumer, Hindustan Unilever, Godrej Consumer Products- **Gap:** not computed (bases not comparable) · **Publishable:** False
+- **Top-down:** 33.08 usd_bn (RETAIL, Statista (via China Briefing))- **Bottom-up:** 82038.0 inr_cr from Honasa Consumer, Hindustan Unilever, Godrej Consumer Products- **Gap:** not computed (bases not comparable) · **Publishable:** False
   - Unit/currency differ (top-down USD usd_bn vs bottom-up INR inr_cr) - convert before comparing.
   - Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).
   - Bottom-up base is inflated by non-pure-play conglomerates (Godrej Consumer Products, Hindustan Unilever) reporting non-BPC revenue.

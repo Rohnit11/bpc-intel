@@ -13,7 +13,7 @@ from __future__ import annotations
 import logging
 from datetime import date
 
-from lib.analysis._load import latest_company_revenues, load_points, period_end_year
+from lib.analysis._load import company_role, latest_company_revenues, load_points, period_end_year
 from lib.transforms.schema import DataPoint
 
 logger = logging.getLogger("bpc_intel.sizing")
@@ -81,6 +81,14 @@ def bottom_up_size(geography: str, segment: str) -> dict | None:
     if not revs:
         return None
 
+    # Summing a retailer's revenue with the brands it sells, or an ODM's with
+    # the brands it manufactures for, double-counts across value-chain levels.
+    # Sum BRAND OWNERS only (mirrors share.compute_shares); name what's dropped.
+    non_brand = {n: company_role(n) for n in revs if company_role(n) in ("odm", "retailer")}
+    revs = {n: dp for n, dp in revs.items() if n not in non_brand}
+    if not revs:
+        return None
+
     # Only sum revenues sharing one currency+unit (don't mix KRW tn with INR cr).
     from collections import Counter
     combos = Counter((dp.currency, dp.unit) for dp in revs.values())
@@ -101,6 +109,9 @@ def bottom_up_size(geography: str, segment: str) -> dict | None:
             f"{', '.join(non_pure)} report revenue well beyond BPC "
             "(conglomerate/total-company figures). "
         )
+    if non_brand:
+        roles = ', '.join(f"{n} ({r})" for n, r in sorted(non_brand.items()))
+        qualifier += f"Excluded as different value-chain levels (not brand owners): {roles}. "
     if excluded:
         qualifier += f"Excluded (different currency/unit): {', '.join(sorted(excluded))}. "
 
@@ -110,6 +121,7 @@ def bottom_up_size(geography: str, segment: str) -> dict | None:
         "value_basis": "NET_REALISATION",
         "companies": {n: dp.value for n, dp in included.items()},
         "non_pure_play": non_pure,
+        "excluded_value_chain": non_brand,
         "qualifier": qualifier.strip(),
     }
     logger.info("Bottom-up %s/%s: %s %s from %d companies",

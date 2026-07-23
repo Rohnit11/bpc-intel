@@ -86,16 +86,20 @@ class TestTopDown:
 
 
 class TestBottomUp:
-    def test_sums_latest_per_company_with_qualifier(self, tmp_path, monkeypatch):
+    def test_sums_brand_owners_latest_per_company(self, tmp_path, monkeypatch):
         _write(tmp_path, monkeypatch, "IN", "total_bpc", [
-            _rev("Nykaa", "FY24", 6000.0), _rev("Nykaa", "FY25", 10022.0),
+            _rev("Nykaa", "FY25", 10022.0),               # retailer -> excluded
+            _rev("Hindustan Unilever", "FY24", 60000.0),
+            _rev("Hindustan Unilever", "FY25", 63000.0),  # latest wins over FY24
             _rev("Honasa", "FY25", 2067.0),
-            _rev("Hindustan Unilever", "FY25", 63000.0),
         ])
         bu = sizing.bottom_up_size("IN", "total_bpc")
-        # Latest Nykaa (FY25) used, not FY24; name canonicalized
-        assert bu["companies"]["Nykaa (FSN E-Commerce)"] == 10022.0
-        assert bu["value"] == pytest.approx(75089.0)
+        # Nykaa is a retailer — summing it with the brands it sells double-counts.
+        assert "Nykaa (FSN E-Commerce)" not in bu["companies"]
+        assert "Nykaa (FSN E-Commerce)" in bu["excluded_value_chain"]
+        # Brand owners only, latest period per company: HUL FY25 + Honasa.
+        assert bu["companies"]["Hindustan Unilever"] == 63000.0
+        assert bu["value"] == pytest.approx(65067.0)
         assert "Hindustan Unilever" in bu["non_pure_play"]
         assert "NOT a market size" in bu["qualifier"]
 

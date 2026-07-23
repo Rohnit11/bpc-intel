@@ -194,3 +194,7 @@ KR total_bpc market_size,24.8,krw_tn,KRW,KR,total_bpc,2019,CY,RETAIL,Korea Duty 
 KR total_bpc market_size,2.5,krw_tn,KRW,KR,total_bpc,2024,CY,RETAIL,Baseline report (scope varies),,2026-07-21,LOW,Live commerce; 'sizing varies by scope definition'; Naver ~73.6% share; value_basis_uncertain
 KR total_bpc export_value,0.002497,usd_bn,USD,KR,total_bpc,2024,CY,EXPORT_FOB,UN Comtrade,https://comtradeplus.un.org,2026-07-21,HIGH,"HS 3307 Korea exports to India (UN Comtrade, FOB USD). HS 3307 is mixed shave/deo/bath preparations. [CORRIDOR]"
 KR total_bpc export_value,0.730692,usd_bn,USD,KR,total_bpc,2024,CY,EXPORT_FOB,UN Comtrade,https://comtradeplus.un.org,2026-07-21,HIGH,"HS 3307 Korea exports to World (UN Comtrade, FOB USD). HS 3307 is mixed shave/deo/bath preparations."
+KR total_bpc revenue,4.253,krw_tn,KRW,KR,total_bpc,2025,CY,NET_REALISATION,DART (FSS) annual filing,https://dart.fss.or.kr,2026-07-23,HIGH,Company: AmorePacific — consolidated revenue from DART
+KR total_bpc revenue,6.355,krw_tn,KRW,KR,total_bpc,2025,CY,NET_REALISATION,DART (FSS) annual filing,https://dart.fss.or.kr,2026-07-23,HIGH,Company: LG H&H — consolidated revenue from DART
+KR total_bpc revenue,2.399,krw_tn,KRW,KR,total_bpc,2025,CY,NET_REALISATION,DART (FSS) annual filing,https://dart.fss.or.kr,2026-07-23,HIGH,Company: Cosmax — consolidated revenue from DART
+KR total_bpc revenue,2.722,krw_tn,KRW,KR,total_bpc,2025,CY,NET_REALISATION,DART (FSS) annual filing,https://dart.fss.or.kr,2026-07-23,HIGH,Company: Kolmar Korea — consolidated revenue from DART

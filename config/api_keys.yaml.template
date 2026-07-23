@@ -2,7 +2,11 @@
 #
 # DART (Korean company filings) — free key, register at:
 #   https://opendart.fss.or.kr  (English: https://engdart.fss.or.kr)
+# Optional dart_fallback: a second key the fetcher fails over to when the
+# primary is rate-limited (status 020) or rejected (010/011). Each free key
+# allows 20,000 calls/day, so two keys double the daily headroom.
 dart: YOUR_DART_KEY_HERE
+dart_fallback: YOUR_DART_FALLBACK_KEY_HERE
 
 # UN Comtrade — free tier key (optional; public preview works without it,
 # 500 calls/day, register at https://comtradeplus.un.org):

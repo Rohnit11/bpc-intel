@@ -116,6 +116,7 @@ def corridor_context() -> dict:
         "headline": cfg.get("headline", {}),
         "conduits": cfg.get("conduits", []),
         "india_side_players": cfg.get("india_side_players", {}),
+        "qcommerce": cfg.get("qcommerce_assortment", {}),
         "whitespace": cfg.get("whitespace", []),
         "regulation": cfg.get("regulation", {}),
         "sizing": sorted(sizing_pts, key=lambda p: p["period"]),

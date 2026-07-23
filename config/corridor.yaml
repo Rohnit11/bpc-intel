@@ -91,6 +91,23 @@ corridor:
         angle: "Foxtale pivoting D2C -> house of brands; launched Hula Hoop amid Korean-inspired demand"
         source_url: "https://ww.fashionnetwork.com/news/India-s-foxtale-announces-shift-from-d2c-label-to-house-of-brands,1790682.html"
 
+  qcommerce_assortment:
+    # Live Blinkit capture via lib/fetchers/qcommerce_tracker.py (headless
+    # Chromium), 2026-07-23: 63 unique K-brand SKUs across the watchlist. The
+    # q-commerce rail is real but UNEVEN and splits by ownership.
+    source: "Blinkit (headless-browser snapshot), 2026-07-23"
+    insight: "Conglomerate-owned K-brands (AmorePacific, LG H&H) have mature India supply chains and are deeply stocked on q-commerce; the viral indie/derma brands driving the K-beauty narrative (COSRX, Anua, Some By Mi) are out-of-stock, 'coming soon', or absent. The real Tier 2/3 whitespace is getting indie derma K-beauty onto the q-commerce rail, not the conglomerate brands already there."
+    stocked_deep:
+      - { brand: "The Face Shop", owner: "LG H&H", skus_seen: 21, note: "deepest K-brand on Blinkit; Rice Water line; sheet masks from Rs90 to cleansers/kits Rs1349; all in stock" }
+      - { brand: Laneige, owner: AmorePacific, skus_seen: 16, note: "lip masks/tints + sleeping masks; Rs540-1300; in stock" }
+      - { brand: Etude, owner: AmorePacific, skus_seen: 10, note: "colour/lip tints Rs195-980 + SoonJung derma skincare Rs1013-1200; in stock" }
+      - { brand: Innisfree, owner: AmorePacific, skus_seen: 9, note: "serum/masks/pact; Rs130-935; in stock" }
+      - { brand: "Beauty of Joseon", skus_seen: 4, note: "premium skincare only Rs1400-1570; in stock; ownership independent (Gudai Global)" }
+    thin_or_absent:
+      - { brand: COSRX, owner: AmorePacific, status: out_of_stock, note: "1 SKU listed (toner Rs1890), out of stock" }
+      - { brand: Anua, owner: "The Founders", status: coming_soon, note: "3 SKUs listed (Rs1650-2000), all 'Coming Soon'" }
+      - { brand: "Some By Mi / Isntree / Mixsoon", status: absent, note: "no listings surfaced on Blinkit" }
+
   regulation:
     india_import: "CDSCO, Drugs & Cosmetics Act 1940 + Cosmetics Rules 2020; Form COS-1 application -> COS-2 Registration Certificate via SUGAM portal; manufacturing site registration required; BIS IS 4707 ingredient standards (Part 2 revised Aug 2025); paper filings not accepted as of 2026"
     korea_export_support: "MFDS regulatory-diplomacy MOUs to smooth exports"

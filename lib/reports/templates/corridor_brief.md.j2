@@ -41,6 +41,23 @@ Indian D2C brands riding the Korean wave:
 {% endfor %}
 {% endif %}
 
+## q-commerce assortment — live Blinkit snapshot
+{% if corridor.qcommerce.insight %}{{ corridor.qcommerce.insight }}
+
+_Source: {{ corridor.qcommerce.source }}_
+{% endif %}
+{% if corridor.qcommerce.stocked_deep %}
+**Deeply stocked (conglomerate-owned, in stock):**
+{% for b in corridor.qcommerce.stocked_deep %}
+- **{{ b.brand }}**{% if b.owner %} ({{ b.owner }}){% endif %} — ~{{ b.skus_seen }} SKUs · {{ b.note }}{{ '' }}
+{% endfor %}
+
+**Thin or absent (viral indie/derma):**
+{% for b in corridor.qcommerce.thin_or_absent %}
+- **{{ b.brand }}** — {{ b.status }}: {{ b.note }}{{ '' }}
+{% endfor %}
+{% endif %}
+
 ## Hero-SKU shelf prices in India (MRP)
 | Segment | Product & note | Price | Basis | Confidence | Source |
 |---|---|---|---|---|---|

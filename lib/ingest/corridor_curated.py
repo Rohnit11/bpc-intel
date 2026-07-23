@@ -72,6 +72,41 @@ FACTS: list[dict] = [
          source_url="https://www.nykaa.com/dp/innisfree-serum",
          notes="[CORRIDOR] Innisfree Green Tea Seed Serum; MRP Rs2200, Nykaa/Amazon sale Rs1650 "
                "(25% off) as of 2026-07-23"),
+
+    # ---- q-commerce (Blinkit) snapshot prices, 2026-07-23 ----
+    dict(segment="skincare", metric="retail_price", value=625.0, unit="inr",
+         currency="INR", period="2026", value_basis="MRP", confidence="MEDIUM",
+         sub_segment="facial_cleansers",
+         source_name="Blinkit (q-commerce snapshot)",
+         source_url="https://blinkit.com/s/?q=the%20face%20shop",
+         notes="[CORRIDOR] The Face Shop Rice Water Bright Foaming Cleanser 100ml; Blinkit Rs625 "
+               "in stock as of 2026-07-23; entry-price K-beauty on the q-commerce rail"),
+    dict(segment="skincare", metric="retail_price", value=850.0, unit="inr",
+         currency="INR", period="2026", value_basis="MRP", confidence="MEDIUM",
+         source_name="Blinkit (q-commerce snapshot)",
+         source_url="https://blinkit.com/s/?q=laneige",
+         notes="[CORRIDOR] Laneige Water Sleeping Mask 25ml; MRP Rs850, Blinkit Rs765 as of 2026-07-23"),
+    dict(segment="skincare", metric="retail_price", value=850.0, unit="inr",
+         currency="INR", period="2026", value_basis="MRP", confidence="MEDIUM",
+         sub_segment="serums_ampoules",
+         source_name="Blinkit (q-commerce snapshot)",
+         source_url="https://blinkit.com/s/?q=innisfree",
+         notes="[CORRIDOR] Innisfree Green Tea Seed Hyaluronic Face Serum 30ml; MRP Rs850, Blinkit "
+               "Rs680 as of 2026-07-23 (distinct from the larger Green Tea Seed Serum ~Rs2200)"),
+    dict(segment="skincare", metric="retail_price", value=1600.0, unit="inr",
+         currency="INR", period="2026", value_basis="MRP", confidence="MEDIUM",
+         sub_segment="facial_moisturisers",
+         source_name="Blinkit (q-commerce snapshot)",
+         source_url="https://blinkit.com/s/?q=etude",
+         notes="[CORRIDOR] Etude SoonJung Hydro Barrier Face Cream 75ml (derma); MRP Rs1600, "
+               "Blinkit Rs1200 as of 2026-07-23"),
+    dict(segment="skincare", metric="retail_price", value=1500.0, unit="inr",
+         currency="INR", period="2026", value_basis="MRP", confidence="MEDIUM",
+         sub_segment="toners_essences",
+         source_name="Blinkit (q-commerce snapshot)",
+         source_url="https://blinkit.com/s/?q=beauty%20of%20joseon",
+         notes="[CORRIDOR] Beauty of Joseon Ginseng Skin Essence Water 150ml; Blinkit Rs1500 "
+               "in stock as of 2026-07-23"),
 ]
 
 

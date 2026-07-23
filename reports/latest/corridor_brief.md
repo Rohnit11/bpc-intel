@@ -48,13 +48,34 @@ Indian D2C brands riding the Korean wave:
 | Limese | indian_d2c | K-beauty formulations manufactured IN KOREA, tuned for Indian skin (snail mucin, cica, rice, collagen) |
 | Foxtale (Hula Hoop) | indian_d2c | Foxtale pivoting D2C -> house of brands; launched Hula Hoop amid Korean-inspired demand |
 
+## q-commerce assortment — live Blinkit snapshot
+Conglomerate-owned K-brands (AmorePacific, LG H&H) have mature India supply chains and are deeply stocked on q-commerce; the viral indie/derma brands driving the K-beauty narrative (COSRX, Anua, Some By Mi) are out-of-stock, 'coming soon', or absent. The real Tier 2/3 whitespace is getting indie derma K-beauty onto the q-commerce rail, not the conglomerate brands already there.
+
+_Source: Blinkit (headless-browser snapshot), 2026-07-23_
+**Deeply stocked (conglomerate-owned, in stock):**
+- **The Face Shop** (LG H&H) — ~21 SKUs · deepest K-brand on Blinkit; Rice Water line; sheet masks from Rs90 to cleansers/kits Rs1349; all in stock
+- **Laneige** (AmorePacific) — ~16 SKUs · lip masks/tints + sleeping masks; Rs540-1300; in stock
+- **Etude** (AmorePacific) — ~10 SKUs · colour/lip tints Rs195-980 + SoonJung derma skincare Rs1013-1200; in stock
+- **Innisfree** (AmorePacific) — ~9 SKUs · serum/masks/pact; Rs130-935; in stock
+- **Beauty of Joseon** — ~4 SKUs · premium skincare only Rs1400-1570; in stock; ownership independent (Gudai Global)
+
+**Thin or absent (viral indie/derma):**
+- **COSRX** — out_of_stock: 1 SKU listed (toner Rs1890), out of stock
+- **Anua** — coming_soon: 3 SKUs listed (Rs1650-2000), all 'Coming Soon'
+- **Some By Mi / Isntree / Mixsoon** — absent: no listings surfaced on Blinkit
+
 ## Hero-SKU shelf prices in India (MRP)
 | Segment | Product & note | Price | Basis | Confidence | Source |
 |---|---|---|---|---|---|
 | skincare | Innisfree Green Tea Seed Serum; MRP Rs2200, Nykaa/Amazon sale Rs1650 (25% off) as of 2026-07-23 | 2200.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
 | skincare | Anua Heartleaf 77% Soothing Toner 250ml; Nykaa list Rs2050 (sale Rs1743); Amazon MRP Rs2999/buy Rs1999 as of 2026-07-23; MRP varies by platform | 2050.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
+| skincare | Etude SoonJung Hydro Barrier Face Cream 75ml (derma); MRP Rs1600, Blinkit Rs1200 as of 2026-07-23 | 1600.0 inr | MRP | MEDIUM | Blinkit (q-commerce snapshot) |
 | sun_care | Beauty of Joseon Relief Sunscreen SPF50+; MRP Rs1570, Nykaa sale Rs1256 (20% off) as of 2026-07-23; category bestseller; promo-dependent | 1570.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
+| skincare | Beauty of Joseon Ginseng Skin Essence Water 150ml; Blinkit Rs1500 in stock as of 2026-07-23 | 1500.0 inr | MRP | MEDIUM | Blinkit (q-commerce snapshot) |
 | skincare | COSRX Advanced Snail 96 Mucin Power Essence 100ml; MRP Rs1490, Nykaa sale Rs969 (35% off), Amazon ~Rs949 as of 2026-07-23; hero SKU; promo-dependent | 1490.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
+| skincare | Laneige Water Sleeping Mask 25ml; MRP Rs850, Blinkit Rs765 as of 2026-07-23 | 850.0 inr | MRP | MEDIUM | Blinkit (q-commerce snapshot) |
+| skincare | Innisfree Green Tea Seed Hyaluronic Face Serum 30ml; MRP Rs850, Blinkit Rs680 as of 2026-07-23 (distinct from the larger Green Tea Seed Serum ~Rs2200) | 850.0 inr | MRP | MEDIUM | Blinkit (q-commerce snapshot) |
+| skincare | The Face Shop Rice Water Bright Foaming Cleanser 100ml; Blinkit Rs625 in stock as of 2026-07-23; entry-price K-beauty on the q-commerce rail | 625.0 inr | MRP | MEDIUM | Blinkit (q-commerce snapshot) |
 | skincare | Laneige Lip Sleeping Mask Berry 8g; MRP Rs600, Nykaa sale Rs510 (15% off); 20g Rs1136 as of 2026-07-23 | 600.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
 
 ## Whitespace (ranked)

@@ -98,24 +98,28 @@ def corridor_context() -> dict:
     with (PROJECT_ROOT / "config" / "corridor.yaml").open(encoding="utf-8") as fh:
         cfg = yaml.safe_load(fh)["corridor"]
 
-    # Corridor sizing (K-beauty in India) — points tagged [CORRIDOR]
+    # [CORRIDOR]-tagged data points: shelf prices feed the pricing table,
+    # everything else (market sizes, CAGRs, import values) feeds sizing.
     sizing_pts: list[dict] = []
+    pricing_pts: list[dict] = []
     trade_pts: list[dict] = []
     for seg in _SEGMENTS + ["total_bpc"]:
         for dp in load_points("IN", seg):
             if dp.notes and "[CORRIDOR]" in dp.notes:
-                sizing_pts.append(_fmt(dp) | {"segment": seg})
+                row = _fmt(dp) | {"segment": seg}
+                (pricing_pts if dp.metric == "retail_price" else sizing_pts).append(row)
         for dp in load_points("KR", seg):
             if dp.notes and "[CORRIDOR]" in dp.notes and "India" in dp.notes:
                 trade_pts.append(_fmt(dp) | {"segment": seg})
 
-    conduits = cfg.get("conduits", [])
     return {
         "headline": cfg.get("headline", {}),
-        "conduits": conduits,
+        "conduits": cfg.get("conduits", []),
+        "india_side_players": cfg.get("india_side_players", {}),
         "whitespace": cfg.get("whitespace", []),
         "regulation": cfg.get("regulation", {}),
         "sizing": sorted(sizing_pts, key=lambda p: p["period"]),
+        "pricing": sorted(pricing_pts, key=lambda p: -p["value"]),
         "trade": sorted(trade_pts, key=lambda p: -p["value"]),
     }
 

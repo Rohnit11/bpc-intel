@@ -78,6 +78,25 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "Sunscreen on q-commerce projected ~2.7x (i.e. ~+170%) 2026 vs 2025; Tier 2/3 surge"
+    },
+    {
+      "geography": "IN",
+      "segment": "sun_care",
+      "sub_segment": null,
+      "metric": "retail_price",
+      "value": 1570.0,
+      "unit": "inr",
+      "currency": "INR",
+      "period": "2026",
+      "period_type": "CY",
+      "value_basis": "MRP",
+      "tier": null,
+      "source_name": "Nykaa (retailer listing)",
+      "source_url": "https://www.nykaa.com/brands/beauty-of-joseon/c/26410",
+      "date_accessed": "2026-07-23",
+      "confidence": "MEDIUM",
+      "methodology": null,
+      "notes": "[CORRIDOR] Beauty of Joseon Relief Sunscreen SPF50+; MRP Rs1570, Nykaa sale Rs1256 (20% off) as of 2026-07-23; category bestseller; promo-dependent"
     }
   ]
 }

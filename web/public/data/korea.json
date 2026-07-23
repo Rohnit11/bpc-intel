@@ -1,0 +1,273 @@
+{
+  "geography": "KR",
+  "headline": {
+    "geography": "KR",
+    "market_size": {
+      "value": 13.0,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "value_basis": "RETAIL",
+      "confidence": "HIGH",
+      "source": "Euromonitor International",
+      "url": null,
+      "notes": "Category-consistent BPC definition; report's highest-weighted total",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 13.0,
+      "fx_note": "identity (no conversion)"
+    },
+    "growth_yoy": {
+      "value": 1.8,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2024",
+      "value_basis": "RETAIL",
+      "confidence": "HIGH",
+      "source": "Euromonitor International",
+      "url": null,
+      "notes": "Constant value terms",
+      "metric": "growth_yoy",
+      "tier": null
+    },
+    "cagr_forecast": {
+      "value": 6.61,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025-2030",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "Mordor Intelligence",
+      "url": null,
+      "notes": "Forecast CAGR to 2030; broader basket",
+      "metric": "cagr_forecast",
+      "tier": null
+    },
+    "per_capita_spend": {
+      "value": 250.0,
+      "unit": "usd",
+      "currency": "USD",
+      "period": "2024",
+      "value_basis": "RETAIL",
+      "confidence": "ESTIMATE",
+      "source": "Baseline report (derived)",
+      "url": null,
+      "notes": "Order-of-magnitude comparison vs India",
+      "metric": "per_capita_spend",
+      "tier": null
+    },
+    "total_export": {
+      "value": 11.43,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "EXPORT_FOB",
+      "confidence": "HIGH",
+      "source": "MFDS / Korea Customs Service",
+      "url": null,
+      "notes": "Record; world #2 cosmetics exporter",
+      "metric": "export_value",
+      "tier": null
+    }
+  },
+  "segments": [
+    {
+      "segment": "skincare",
+      "size": {
+        "value": 7.653,
+        "unit": "krw_tn",
+        "currency": "KRW",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Euromonitor International (via marketresearch.com)",
+        "url": "https://www.marketresearch.com/seek/Skin-Care-South-Korea/1554/1229/1.html",
+        "notes": "Domestic retail value; +1% YoY; population 51.7m cited",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 5.1765,
+        "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
+      },
+      "growth": {
+        "value": 1.0,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Euromonitor International (via marketresearch.com)",
+        "url": "https://www.marketresearch.com/seek/Skin-Care-South-Korea/1554/1229/1.html",
+        "notes": "Korea skincare domestic retail growth",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": null,
+      "export": {
+        "value": 8.54,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS via Yonhap/Korea Herald",
+        "url": null,
+        "notes": "~75% of total exports",
+        "metric": "export_value",
+        "tier": null
+      }
+    },
+    {
+      "segment": "colour_cosmetics",
+      "size": null,
+      "growth": {
+        "value": 12.0,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS via Yonhap/Korea Herald",
+        "url": null,
+        "notes": null,
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": null,
+      "export": {
+        "value": 1.51,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS via Yonhap/Korea Herald",
+        "url": null,
+        "notes": "~13% of total exports",
+        "metric": "export_value",
+        "tier": null
+      }
+    },
+    {
+      "segment": "fragrances",
+      "size": null,
+      "growth": null,
+      "cagr": null,
+      "export": {
+        "value": 0.06,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS via Yonhap/Korea Herald",
+        "url": null,
+        "notes": "+46.2% YoY, small base",
+        "metric": "export_value",
+        "tier": null
+      }
+    },
+    {
+      "segment": "bath_shower",
+      "size": null,
+      "growth": null,
+      "cagr": null,
+      "export": {
+        "value": 0.59,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS via Yonhap/Korea Herald",
+        "url": null,
+        "notes": "'Body cleansing products' category",
+        "metric": "export_value",
+        "tier": null
+      }
+    },
+    {
+      "segment": "dermocosmetics",
+      "size": null,
+      "growth": {
+        "value": 13.0,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Euromonitor International",
+        "url": null,
+        "notes": "Driven by PDRN, exosomes, peptides",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": null,
+      "export": null
+    }
+  ],
+  "shares": {
+    "geography": "KR",
+    "segment": "total_bpc",
+    "currency": "KRW",
+    "unit": "krw_tn",
+    "base": 10.608,
+    "shares": [
+      {
+        "company": "LG H&H",
+        "revenue": 6.355,
+        "period": "2025",
+        "share_pct": 59.9,
+        "non_pure_play": true
+      },
+      {
+        "company": "AmorePacific",
+        "revenue": 4.253,
+        "period": "2025",
+        "share_pct": 40.1,
+        "non_pure_play": false
+      }
+    ],
+    "qualifier": "Shares of summed revenue for 2 listed BRAND OWNERS (KRW krw_tn, NET_REALISATION). Does NOT include unorganised/unlisted players. Conglomerate members (HUL/Godrej/LG H&H) carry non-BPC revenue, so their shares overstate BPC position. Excluded as different value-chain levels (not brand shares): CJ Olive Young (retailer), Cosmax (odm), Kolmar Korea (odm). Excluded (different currency/unit): Innisfree."
+  },
+  "reconciliation": {
+    "top_down": {
+      "value": 13.0,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "value_basis": "RETAIL",
+      "confidence": "HIGH",
+      "period": "2024",
+      "source": "Euromonitor International"
+    },
+    "bottom_up": {
+      "geography": "KR",
+      "segment": "total_bpc",
+      "value": 10.608,
+      "currency": "KRW",
+      "unit": "krw_tn",
+      "value_basis": "NET_REALISATION",
+      "companies": {
+        "AmorePacific": 4.253,
+        "LG H&H": 6.355
+      },
+      "non_pure_play": [
+        "LG H&H"
+      ],
+      "excluded_value_chain": {
+        "Cosmax": "odm",
+        "Kolmar Korea": "odm",
+        "CJ Olive Young": "retailer"
+      },
+      "qualifier": "Sum of latest reported revenue for 2 listed players (KRW krw_tn), NET_REALISATION basis. Coverage excludes unorganised/unlisted competitors. NOT a market size: LG H&H report revenue well beyond BPC (conglomerate/total-company figures). Excluded as different value-chain levels (not brand owners): CJ Olive Young (retailer), Cosmax (odm), Kolmar Korea (odm). Excluded (different currency/unit): Innisfree."
+    },
+    "gap_pct": null,
+    "publishable": false,
+    "mismatches": [
+      "Unit/currency differ (top-down USD usd_bn vs bottom-up KRW krw_tn) - convert before comparing.",
+      "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
+      "Bottom-up base is inflated by non-pure-play conglomerates (LG H&H) reporting non-BPC revenue."
+    ],
+    "date": "2026-07-23",
+    "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-07-23T21:53:10.231650+00:00",
+  "git_sha": "0e9bd48e7a4da1d884cea7a084bd6a6775b3bd16",
+  "segments": [
+    {
+      "id": "skincare",
+      "name": "Skincare"
+    },
+    {
+      "id": "sun_care",
+      "name": "Sun Care"
+    },
+    {
+      "id": "colour_cosmetics",
+      "name": "Colour Cosmetics"
+    },
+    {
+      "id": "fragrances",
+      "name": "Fragrances"
+    },
+    {
+      "id": "hair_care",
+      "name": "Hair Care"
+    },
+    {
+      "id": "bath_shower",
+      "name": "Bath & Shower"
+    },
+    {
+      "id": "deodorants",
+      "name": "Deodorants"
+    },
+    {
+      "id": "oral_care",
+      "name": "Oral Care"
+    },
+    {
+      "id": "mens_grooming",
+      "name": "Men's Grooming"
+    },
+    {
+      "id": "baby_child",
+      "name": "Baby & Child"
+    },
+    {
+      "id": "dermocosmetics",
+      "name": "Dermocosmetics / Clinical Beauty"
+    },
+    {
+      "id": "emerging_adjacencies",
+      "name": "Emerging Adjacencies"
+    }
+  ],
+  "geographies": [
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "currency": "KRW",
+      "fiscal_year": "calendar"
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "currency": "INR",
+      "fiscal_year": "april"
+    }
+  ],
+  "exchange_rates": [
+    {
+      "base": "USD",
+      "quote": "KRW",
+      "rate": 1478.4,
+      "date": "2026-07-21",
+      "source": "frankfurter.dev (ECB reference rates)"
+    },
+    {
+      "base": "USD",
+      "quote": "INR",
+      "rate": 96.23,
+      "date": "2026-07-21",
+      "source": "frankfurter.dev (ECB reference rates)"
+    }
+  ],
+  "confidence_legend": {
+    "HIGH": "Primary source (company filing, government database, Euromonitor Passport)",
+    "MEDIUM": "Credible secondary (Korea Herald, Business Standard, Statista, McKinsey)",
+    "LOW": "Aggregator/estimate (Mordor Intelligence, Grand View, IMARC)",
+    "ESTIMATE": "Model-derived with methodology shown"
+  },
+  "value_basis_legend": {
+    "RETAIL": "Consumer sell-through (MRP-inclusive for India)",
+    "NET_REALISATION": "Company revenue (ex-trade margins, for India)",
+    "WHOLESALE": "Trade/distributor price",
+    "EXPORT_FOB": "Customs/FOB value (Korea exports)",
+    "PRODUCTION": "Factory-gate output value",
+    "IMPORT_CIF": "Customs import value (cost-insurance-freight)",
+    "MRP": "Maximum retail price (India shelf price, tax + margin included)",
+    "NA": "Basis not applicable (a ratio, margin, or dependence %)"
+  }
+}

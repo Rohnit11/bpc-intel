@@ -1,0 +1,735 @@
+{
+  "generated": "2026-07-23",
+  "segments": [
+    {
+      "segment": "total_bpc",
+      "size": {
+        "value": 33.08,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Statista (via China Briefing)",
+        "url": null,
+        "notes": "Statista consumer-market 'revenue' basis; value_basis_uncertain",
+        "metric": "market_size",
+        "tier": null
+      },
+      "growth": [
+        {
+          "value": 3.48,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2030",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "Statista",
+          "url": null,
+          "notes": "Conservative vs consensus ~10%",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 10.0,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "Baseline consensus (multiple houses)",
+          "url": null,
+          "notes": "Most houses cluster 10-11%; conservative ones 5-6%",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        {
+          "value": 25.9,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2024-2030",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "Economic Times Retail (consulting estimate)",
+          "url": "https://retail.economictimes.indiatimes.com/news/health-and-beauty/indias-k-beauty-market-forecast-15-billion-by-2030/123190386",
+          "notes": "[CORRIDOR] K-beauty in India forecast CAGR 2024-2030",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 160.0,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "RedSeer (via Unicommerce)",
+          "url": "https://unicommerce.com/blog/beauty-trends-quick-commerce",
+          "notes": "Beauty on QUICK COMMERCE channel YoY growth (channel, not overall market)",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        {
+          "value": 26.3,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "2026-2035",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "Expert Market Research",
+          "url": "https://www.expertmarketresearch.com/reports/india-k-beauty-products-market",
+          "notes": "[CORRIDOR] India K-beauty products market forecast CAGR 2026-2035; fastest-growing beauty sub-trend, K-pop/K-drama pull",
+          "metric": "cagr_forecast",
+          "tier": null
+        }
+      ],
+      "imports": {
+        "World": {
+          "value": 0.120193,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3307 India imports from World (UN Comtrade, CIF USD).",
+          "metric": "import_value",
+          "tier": null
+        },
+        "Korea": {
+          "value": 0.002055,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3307 India imports from Korea (UN Comtrade, CIF USD). [CORRIDOR]",
+          "metric": "import_value",
+          "tier": null
+        },
+        "China": {
+          "value": 0.009913,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3307 India imports from China (UN Comtrade, CIF USD).",
+          "metric": "import_value",
+          "tier": null
+        }
+      },
+      "import_dependence": null,
+      "prices": [],
+      "margins": []
+    },
+    {
+      "segment": "skincare",
+      "size": {
+        "value": 9.06,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-skincare-market",
+        "notes": "India skincare total; facial care leads; to US$18.38bn by 2034 (CAGR 7.49%)",
+        "metric": "market_size",
+        "tier": null
+      },
+      "growth": [],
+      "imports": {
+        "World": {
+          "value": 0.844115,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3304 India imports from World (UN Comtrade, CIF USD). Includes makeup as well as skincare.",
+          "metric": "import_value",
+          "tier": null
+        },
+        "Korea": {
+          "value": 0.14006,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3304 India imports from Korea (UN Comtrade, CIF USD). Includes makeup as well as skincare. [CORRIDOR]",
+          "metric": "import_value",
+          "tier": null
+        },
+        "China": {
+          "value": 0.187975,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3304 India imports from China (UN Comtrade, CIF USD). Includes makeup as well as skincare.",
+          "metric": "import_value",
+          "tier": null
+        }
+      },
+      "import_dependence": {
+        "value": 9.3,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Derived (UN Comtrade / IMARC)",
+        "url": null,
+        "notes": "Import-vs-make: India skincare is ~91% domestically supplied by value",
+        "metric": "import_dependence",
+        "tier": null
+      },
+      "prices": [
+        {
+          "value": 600.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "LOW",
+          "source": "The D2C Pulse",
+          "url": "https://thed2cpulse.com/growth-strategy/gross-margins-for-d2c-brands-in-india",
+          "notes": "30ml serum MRP typically Rs500-700 (midpoint 600); manufacturing cost Rs80-120/unit",
+          "metric": "retail_price",
+          "tier": null
+        },
+        {
+          "value": 1490.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Nykaa (retailer listing)",
+          "url": "https://www.nykaa.com/cosrx-advanced-snail-96-mucin-power-essence/p/757628",
+          "notes": "[CORRIDOR] COSRX Advanced Snail 96 Mucin Power Essence 100ml; MRP Rs1490, Nykaa sale Rs969 (35% off), Amazon ~Rs949 as of 2026-07-23; hero SKU; promo-dependent",
+          "metric": "retail_price",
+          "tier": null
+        },
+        {
+          "value": 2050.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Nykaa (retailer listing)",
+          "url": "https://www.nykaa.com/anua-heartleaf-77percent-soothing-toner/p/20736553",
+          "notes": "[CORRIDOR] Anua Heartleaf 77% Soothing Toner 250ml; Nykaa list Rs2050 (sale Rs1743); Amazon MRP Rs2999/buy Rs1999 as of 2026-07-23; MRP varies by platform",
+          "metric": "retail_price",
+          "tier": null
+        },
+        {
+          "value": 600.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Nykaa (retailer listing)",
+          "url": "https://www.nykaa.com/laneige-lip-sleeping-mask-berry/p/15227410",
+          "notes": "[CORRIDOR] Laneige Lip Sleeping Mask Berry 8g; MRP Rs600, Nykaa sale Rs510 (15% off); 20g Rs1136 as of 2026-07-23",
+          "metric": "retail_price",
+          "tier": null
+        },
+        {
+          "value": 2200.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Nykaa (retailer listing)",
+          "url": "https://www.nykaa.com/dp/innisfree-serum",
+          "notes": "[CORRIDOR] Innisfree Green Tea Seed Serum; MRP Rs2200, Nykaa/Amazon sale Rs1650 (25% off) as of 2026-07-23",
+          "metric": "retail_price",
+          "tier": null
+        },
+        {
+          "value": 625.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Blinkit (q-commerce snapshot)",
+          "url": "https://blinkit.com/s/?q=the%20face%20shop",
+          "notes": "[CORRIDOR] The Face Shop Rice Water Bright Foaming Cleanser 100ml; Blinkit Rs625 in stock as of 2026-07-23; entry-price K-beauty on the q-commerce rail",
+          "metric": "retail_price",
+          "tier": null
+        },
+        {
+          "value": 850.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Blinkit (q-commerce snapshot)",
+          "url": "https://blinkit.com/s/?q=laneige",
+          "notes": "[CORRIDOR] Laneige Water Sleeping Mask 25ml; MRP Rs850, Blinkit Rs765 as of 2026-07-23",
+          "metric": "retail_price",
+          "tier": null
+        },
+        {
+          "value": 850.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Blinkit (q-commerce snapshot)",
+          "url": "https://blinkit.com/s/?q=innisfree",
+          "notes": "[CORRIDOR] Innisfree Green Tea Seed Hyaluronic Face Serum 30ml; MRP Rs850, Blinkit Rs680 as of 2026-07-23 (distinct from the larger Green Tea Seed Serum ~Rs2200)",
+          "metric": "retail_price",
+          "tier": null
+        },
+        {
+          "value": 1600.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Blinkit (q-commerce snapshot)",
+          "url": "https://blinkit.com/s/?q=etude",
+          "notes": "[CORRIDOR] Etude SoonJung Hydro Barrier Face Cream 75ml (derma); MRP Rs1600, Blinkit Rs1200 as of 2026-07-23",
+          "metric": "retail_price",
+          "tier": null
+        },
+        {
+          "value": 1500.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Blinkit (q-commerce snapshot)",
+          "url": "https://blinkit.com/s/?q=beauty%20of%20joseon",
+          "notes": "[CORRIDOR] Beauty of Joseon Ginseng Skin Essence Water 150ml; Blinkit Rs1500 in stock as of 2026-07-23",
+          "metric": "retail_price",
+          "tier": null
+        }
+      ],
+      "margins": [
+        {
+          "value": 80.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "The D2C Pulse",
+          "url": "https://thed2cpulse.com/growth-strategy/gross-margins-for-d2c-brands-in-india",
+          "notes": "Serum gross markup 75-85% pre-deductions (COGS Rs80-120 vs MRP Rs500-700); true margin lower after packaging/shipping/returns",
+          "metric": "gross_margin",
+          "tier": null
+        }
+      ]
+    },
+    {
+      "segment": "sun_care",
+      "size": {
+        "value": 0.5766,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-sunscreen-market",
+        "notes": "India sunscreen; cf TechSci US$0.893bn (2024) — definitional spread; CAGR 6.07%",
+        "metric": "market_size",
+        "tier": null
+      },
+      "growth": [
+        {
+          "value": 6.8,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2024-2030",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "TechSci Research",
+          "url": "https://www.techsciresearch.com/report/india-sunscreen-market/26904.html",
+          "notes": "India sunscreen forecast CAGR to 2030",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 170.0,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "1digitalstack / quick-commerce report",
+          "url": "https://www.linkedin.com/posts/samiran-mathur_1ds-sunscreen-qcom-report-apr26-activity-7458503608859250688-2W9u",
+          "notes": "Sunscreen on q-commerce projected ~2.7x (i.e. ~+170%) 2026 vs 2025; Tier 2/3 surge",
+          "metric": "growth_yoy",
+          "tier": null
+        }
+      ],
+      "imports": {
+        "World": null,
+        "Korea": null,
+        "China": null
+      },
+      "import_dependence": null,
+      "prices": [
+        {
+          "value": 1570.0,
+          "unit": "inr",
+          "currency": "INR",
+          "period": "2026",
+          "value_basis": "MRP",
+          "confidence": "MEDIUM",
+          "source": "Nykaa (retailer listing)",
+          "url": "https://www.nykaa.com/brands/beauty-of-joseon/c/26410",
+          "notes": "[CORRIDOR] Beauty of Joseon Relief Sunscreen SPF50+; MRP Rs1570, Nykaa sale Rs1256 (20% off) as of 2026-07-23; category bestseller; promo-dependent",
+          "metric": "retail_price",
+          "tier": null
+        }
+      ],
+      "margins": []
+    },
+    {
+      "segment": "dermocosmetics",
+      "size": {
+        "value": 0.2803,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "P&S Market Research",
+        "url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
+        "notes": "India skincare dermacosmetics; 2030 forecast US$0.505bn",
+        "metric": "market_size",
+        "tier": null
+      },
+      "growth": [],
+      "imports": {
+        "World": null,
+        "Korea": null,
+        "China": null
+      },
+      "import_dependence": null,
+      "prices": [],
+      "margins": []
+    },
+    {
+      "segment": "fragrances",
+      "size": {
+        "value": 2.6,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Industry (FMCG analysis via LinkedIn)",
+        "url": "https://www.linkedin.com/posts/vishekpratap_fmcg-indianmarket-fragrance-activity-7359092677608419328-Pnhv",
+        "notes": "India perfume+DEODORANT combined; CAGR ~11.1% to US$6.7bn by 2033; broader than perfume-only",
+        "metric": "market_size",
+        "tier": null
+      },
+      "growth": [],
+      "imports": {
+        "World": {
+          "value": 0.331681,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3303 India imports from World (UN Comtrade, CIF USD).",
+          "metric": "import_value",
+          "tier": null
+        },
+        "Korea": {
+          "value": 0.000135,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3303 India imports from Korea (UN Comtrade, CIF USD). [CORRIDOR]",
+          "metric": "import_value",
+          "tier": null
+        },
+        "China": {
+          "value": 0.000249,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3303 India imports from China (UN Comtrade, CIF USD).",
+          "metric": "import_value",
+          "tier": null
+        }
+      },
+      "import_dependence": {
+        "value": 12.8,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Derived (UN Comtrade / industry)",
+        "url": null,
+        "notes": "Import-vs-make: premium fragrance import-reliant, mass domestic",
+        "metric": "import_dependence",
+        "tier": null
+      },
+      "prices": [],
+      "margins": []
+    },
+    {
+      "segment": "mens_grooming",
+      "size": {
+        "value": 186.3,
+        "unit": "inr_bn",
+        "currency": "INR",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Euromonitor International",
+        "url": null,
+        "notes": "+9% growth",
+        "metric": "market_size",
+        "tier": null
+      },
+      "growth": [
+        {
+          "value": 9.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "HIGH",
+          "source": "Euromonitor International",
+          "url": null,
+          "notes": null,
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        {
+          "value": 12.2,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2035",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "Future Market Insights",
+          "url": "https://www.futuremarketinsights.com/reports/mens-skincare-products-market",
+          "notes": "India MEN'S SKINCARE (sub-slice) CAGR; faster than overall grooming",
+          "metric": "cagr_forecast",
+          "tier": null
+        }
+      ],
+      "imports": {
+        "World": null,
+        "Korea": null,
+        "China": null
+      },
+      "import_dependence": null,
+      "prices": [],
+      "margins": []
+    },
+    {
+      "segment": "hair_care",
+      "size": {
+        "value": 4.1,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2026",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Mordor Intelligence",
+        "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+        "notes": "India hair care; 'skinification' shift to actives/serums",
+        "metric": "market_size",
+        "tier": null
+      },
+      "growth": [
+        {
+          "value": 4.73,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2031",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Mordor Intelligence",
+          "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+          "notes": "India hair care forecast CAGR",
+          "metric": "cagr_forecast",
+          "tier": null
+        }
+      ],
+      "imports": {
+        "World": {
+          "value": 0.198534,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3305 India imports from World (UN Comtrade, CIF USD).",
+          "metric": "import_value",
+          "tier": null
+        },
+        "Korea": null,
+        "China": {
+          "value": 0.031111,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2024",
+          "value_basis": "IMPORT_CIF",
+          "confidence": "HIGH",
+          "source": "UN Comtrade",
+          "url": "https://comtradeplus.un.org",
+          "notes": "HS 3305 India imports from China (UN Comtrade, CIF USD).",
+          "metric": "import_value",
+          "tier": null
+        }
+      },
+      "import_dependence": null,
+      "prices": [],
+      "margins": []
+    }
+  ],
+  "operating_margins": [
+    {
+      "company": "Hindustan Unilever",
+      "value": 23.0,
+      "period": "FY26",
+      "_yr": 2026
+    },
+    {
+      "company": "Godrej Consumer Products",
+      "value": 21.0,
+      "period": "FY26",
+      "_yr": 2026
+    },
+    {
+      "company": "Honasa Consumer",
+      "value": 10.0,
+      "period": "FY26",
+      "_yr": 2026
+    },
+    {
+      "company": "Nykaa (FSN E-Commerce)",
+      "value": 8.0,
+      "period": "FY26",
+      "_yr": 2026
+    }
+  ],
+  "findings": {
+    "supply_chain": [
+      {
+        "text": "Most Indian D2C beauty brands do NOT own factories — they use third-party contract manufacturers / private-label houses (e.g. Gorgeous Cosmos, and hundreds listed on IndiaMART), with MOQs from ~500 units. The brand owns formula/brand; the CM owns production.",
+        "source": "Gorgeous Cosmos; IndiaMART",
+        "url": "https://gorgeouscosmos.in/news/india-1-private-label-cosmetic-manufacturer"
+      },
+      {
+        "text": "FMCG brands demand audit-readiness/scale from CMs; D2C brands demand agility, small batches, and RM-sourcing transparency — two different contract-manufacturing service models.",
+        "source": "IMARC Engineering",
+        "url": "https://www.imarcengineering.com/blog/contract-manufacturing-in-india"
+      },
+      {
+        "text": "Upstream, specialty-ingredient suppliers underpin the chain: Galaxy Surfactants (mild surfactants for cleansers) and Fine Organics (oleochemical specialty additives) are key Indian actives/ingredient makers.",
+        "source": "Marcellus; GlobalData",
+        "url": "https://marcellus.in/newsletter/little-champs/spotlighting-galaxy-surfactants"
+      }
+    ],
+    "import_make": [
+      {
+        "text": "India skincare is ~91% domestically supplied by value (imports ~US$844m vs ~US$9bn market); imports concentrate in premium and K-beauty tiers. Korea 17% and China 22% of skincare imports.",
+        "source": "UN Comtrade; IMARC (derived)",
+        "url": "https://comtradeplus.un.org"
+      },
+      {
+        "text": "Premium fragrance is import-reliant: UAE is India's largest perfume-import source (HS 3303), then France/Germany for high-end oils; mass perfume/deodorant is domestically filled.",
+        "source": "Seair Exim",
+        "url": "https://www.seair.co.in/blog/perfume-importers-in-india.aspx"
+      },
+      {
+        "text": "Any imported cosmetic needs a CDSCO Import Registration (Form COS-1 -> COS-2 via SUGAM), plus manufacturing-site registration — the key lead-time/friction cost for K-beauty entrants.",
+        "source": "PSR Compliance / CDSCO",
+        "url": "https://www.psrcompliance.com/cosmetic-import-license"
+      }
+    ],
+    "new_players": [
+      {
+        "text": "Consolidation by strategics: HUL acquired Minimalist (~Rs3,000cr) and Plum; Estee Lauder took Forest Essentials; Puig bought 85% of Kama Ayurveda; KKR owns 54% of Vini Cosmetics/Fogg (US$625m, US$1.2bn valuation).",
+        "source": "IMA Pro; Economic Times",
+        "url": "https://gaurav.imapro.in/research/india-skincare-market-report"
+      },
+      {
+        "text": "Funding continues into 2026 despite the broader D2C slowdown: KOSE invested US$30m in Foxtale, Moxie raised US$15m, Antinorm Rs28cr seed; India D2C attracted ~US$757m over 18 months (wellness+beauty led).",
+        "source": "The D2C Pulse; The Hindu BusinessLine",
+        "url": "https://thed2cpulse.com/market-industry-d2c/d2c-funding-trends-india-2026"
+      },
+      {
+        "text": "House-of-brands model emerging among small players: Innovist runs Bare Anatomy (hair), Chemist at Play (skin), Sunscoop (sun) as science-backed sub-brands.",
+        "source": "Indian Startup Times",
+        "url": "https://www.indianstartuptimes.com/news/the-d2c-100-indias-emerging-brands"
+      },
+      {
+        "text": "K-beauty brand owners are entering directly: APR launched Medicube on Nykaa; AmorePacific introduced dermocosmetic brand Illiyoon — accelerating India entry to offset SWANA-region volatility.",
+        "source": "Personal Care Insights",
+        "url": "https://www.personalcareinsights.com/news/kbeauty-expands-india-market"
+      }
+    ],
+    "demand": [
+      {
+        "text": "Beauty is one of the fastest-rising quick-commerce categories: ~160% YoY growth (RedSeer); premium/high-end beauty is gaining on q-commerce, not just mass.",
+        "source": "RedSeer (via Unicommerce)",
+        "url": "https://unicommerce.com/blog/beauty-trends-quick-commerce"
+      },
+      {
+        "text": "Q-commerce is ~Rs40,000cr (~US$5bn) GMV in 2026; share roughly Blinkit 45-50%, Zepto 20-25%, Instamart 20-25% — the new default access rail into Tier 2/3.",
+        "source": "Digital in Asia; Product Growth",
+        "url": "https://digitalinasia.com/india-quick-commerce-blinkit-zepto-instamart"
+      },
+      {
+        "text": "Demand is shifting from awareness-led to access-led, driven by Gen Z, rising incomes, and vernacular/omnichannel reach; beauty has become a daily self-care essential, not aspirational luxury.",
+        "source": "Outlook Business (RedSeer)",
+        "url": "https://www.outlookbusiness.com/markets/indias-beauty-products-market-projected-to-reach-39-bn-by-2030-report"
+      },
+      {
+        "text": "'Skinification' is reshaping hair care (~US$4bn market): buyers want actives (niacinamide, ceramides, peptides) in serums/tonics; specialist D2C brands outperform legacy FMCG.",
+        "source": "Entrepreneur India; Arise",
+        "url": "https://arisecosmetic.com/hair-care-trends-in-india"
+      }
+    ]
+  }
+}

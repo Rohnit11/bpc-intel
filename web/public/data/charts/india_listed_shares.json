@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Hindustan Unilever",
+    "currency": "INR",
+    "unit": "inr_cr",
+    "company": "Hindustan Unilever",
+    "revenue": 64468.0,
+    "period": "FY26",
+    "share_pct": 78.6,
+    "non_pure_play": true
+  },
+  {
+    "label": "Godrej Consumer Products",
+    "currency": "INR",
+    "unit": "inr_cr",
+    "company": "Godrej Consumer Products",
+    "revenue": 15178.0,
+    "period": "FY26",
+    "share_pct": 18.5,
+    "non_pure_play": true
+  },
+  {
+    "label": "Honasa Consumer",
+    "currency": "INR",
+    "unit": "inr_cr",
+    "company": "Honasa Consumer",
+    "revenue": 2392.0,
+    "period": "FY26",
+    "share_pct": 2.9,
+    "non_pure_play": false
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "segment": "bath_shower",
+  "KR": {
+    "segment": "bath_shower",
+    "size": null,
+    "growth": null,
+    "cagr": null,
+    "export": {
+      "value": 0.59,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "EXPORT_FOB",
+      "confidence": "HIGH",
+      "source": "MFDS via Yonhap/Korea Herald",
+      "url": null,
+      "notes": "'Body cleansing products' category",
+      "metric": "export_value",
+      "tier": null
+    },
+    "points": [
+      {
+        "value": 0.59,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "EXPORT_FOB",
+        "confidence": "HIGH",
+        "source": "MFDS via Yonhap/Korea Herald",
+        "url": null,
+        "notes": "'Body cleansing products' category",
+        "metric": "export_value",
+        "tier": null
+      }
+    ]
+  },
+  "IN": {
+    "segment": "bath_shower",
+    "size": null,
+    "growth": null,
+    "cagr": null,
+    "export": null,
+    "points": []
+  }
+}

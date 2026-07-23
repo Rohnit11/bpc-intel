@@ -1,0 +1,73 @@
+{
+  "segment": "dermocosmetics",
+  "KR": {
+    "segment": "dermocosmetics",
+    "size": null,
+    "growth": {
+      "value": 13.0,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2024",
+      "value_basis": "RETAIL",
+      "confidence": "HIGH",
+      "source": "Euromonitor International",
+      "url": null,
+      "notes": "Driven by PDRN, exosomes, peptides",
+      "metric": "growth_yoy",
+      "tier": null
+    },
+    "cagr": null,
+    "export": null,
+    "points": [
+      {
+        "value": 13.0,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Euromonitor International",
+        "url": null,
+        "notes": "Driven by PDRN, exosomes, peptides",
+        "metric": "growth_yoy",
+        "tier": null
+      }
+    ]
+  },
+  "IN": {
+    "segment": "dermocosmetics",
+    "size": {
+      "value": 0.2803,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2024",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "P&S Market Research",
+      "url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
+      "notes": "India skincare dermacosmetics; 2030 forecast US$0.505bn",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 0.2803,
+      "fx_note": "identity (no conversion)"
+    },
+    "growth": null,
+    "cagr": null,
+    "export": null,
+    "points": [
+      {
+        "value": 0.2803,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "P&S Market Research",
+        "url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
+        "notes": "India skincare dermacosmetics; 2030 forecast US$0.505bn",
+        "metric": "market_size",
+        "tier": null
+      }
+    ]
+  }
+}

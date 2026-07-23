@@ -51,6 +51,27 @@ FACTS: list[dict] = [
          source_url="https://www.nykaa.com/cosrx-advanced-snail-96-mucin-power-essence/p/757628",
          notes="[CORRIDOR] COSRX Advanced Snail 96 Mucin Power Essence 100ml; MRP Rs1490, "
                "Nykaa sale Rs969 (35% off), Amazon ~Rs949 as of 2026-07-23; hero SKU; promo-dependent"),
+    dict(segment="skincare", metric="retail_price", value=2050.0, unit="inr",
+         currency="INR", period="2026", value_basis="MRP", confidence="MEDIUM",
+         sub_segment="toners_essences",
+         source_name="Nykaa (retailer listing)",
+         source_url="https://www.nykaa.com/anua-heartleaf-77percent-soothing-toner/p/20736553",
+         notes="[CORRIDOR] Anua Heartleaf 77% Soothing Toner 250ml; Nykaa list Rs2050 (sale "
+               "Rs1743); Amazon MRP Rs2999/buy Rs1999 as of 2026-07-23; MRP varies by platform"),
+    dict(segment="skincare", metric="retail_price", value=600.0, unit="inr",
+         currency="INR", period="2026", value_basis="MRP", confidence="MEDIUM",
+         sub_segment="lip_care_non_colour",
+         source_name="Nykaa (retailer listing)",
+         source_url="https://www.nykaa.com/laneige-lip-sleeping-mask-berry/p/15227410",
+         notes="[CORRIDOR] Laneige Lip Sleeping Mask Berry 8g; MRP Rs600, Nykaa sale Rs510 "
+               "(15% off); 20g Rs1136 as of 2026-07-23"),
+    dict(segment="skincare", metric="retail_price", value=2200.0, unit="inr",
+         currency="INR", period="2026", value_basis="MRP", confidence="MEDIUM",
+         sub_segment="serums_ampoules",
+         source_name="Nykaa (retailer listing)",
+         source_url="https://www.nykaa.com/dp/innisfree-serum",
+         notes="[CORRIDOR] Innisfree Green Tea Seed Serum; MRP Rs2200, Nykaa/Amazon sale Rs1650 "
+               "(25% off) as of 2026-07-23"),
 ]
 
 

@@ -2,4 +2,12 @@
 # Scraping Blinkit/Zepto is ToS-sensitive. The fetcher refuses to run unless
 # you explicitly set enabled: true, and even then applies 5+ second delays
 # and an identifying user agent.
+#
+# NOTE (probed 2026-07-23): Blinkit's search page (blinkit.com/s/) is a
+# JavaScript SPA behind a location gate — a plain HTTP GET returns only the
+# app shell (no product listings, no "add to cart", ~2 rupee symbols total).
+# The current requests-based fetcher therefore CANNOT capture assortment or
+# pricing. Making it work needs headless-browser rendering (Playwright) plus an
+# India delivery pincode. Until then, hero-SKU prices are curated from Nykaa/
+# Amazon listings via lib/ingest/corridor_curated.py. Kept disabled.
 enabled: false

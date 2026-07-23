@@ -51,8 +51,11 @@ Indian D2C brands riding the Korean wave:
 ## Hero-SKU shelf prices in India (MRP)
 | Segment | Product & note | Price | Basis | Confidence | Source |
 |---|---|---|---|---|---|
+| skincare | Innisfree Green Tea Seed Serum; MRP Rs2200, Nykaa/Amazon sale Rs1650 (25% off) as of 2026-07-23 | 2200.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
+| skincare | Anua Heartleaf 77% Soothing Toner 250ml; Nykaa list Rs2050 (sale Rs1743); Amazon MRP Rs2999/buy Rs1999 as of 2026-07-23; MRP varies by platform | 2050.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
 | sun_care | Beauty of Joseon Relief Sunscreen SPF50+; MRP Rs1570, Nykaa sale Rs1256 (20% off) as of 2026-07-23; category bestseller; promo-dependent | 1570.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
 | skincare | COSRX Advanced Snail 96 Mucin Power Essence 100ml; MRP Rs1490, Nykaa sale Rs969 (35% off), Amazon ~Rs949 as of 2026-07-23; hero SKU; promo-dependent | 1490.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
+| skincare | Laneige Lip Sleeping Mask Berry 8g; MRP Rs600, Nykaa sale Rs510 (15% off); 20g Rs1136 as of 2026-07-23 | 600.0 inr | MRP | MEDIUM | Nykaa (retailer listing) |
 
 ## Whitespace (ranked)
 1. Mid-price derma K-beauty in Tier 2/3 (baseline whitespace #5, highest corridor conviction)

@@ -23,6 +23,9 @@ _Import values are UN Comtrade CIF (2024); import-dependence is derived (imports
 **Pricing / cost-of-making**
 - skincare: 30ml serum MRP typically Rs500-700 (midpoint 600); manufacturing cost Rs80-120/unit — The D2C Pulse
 - skincare: [CORRIDOR] COSRX Advanced Snail 96 Mucin Power Essence 100ml; MRP Rs1490, Nykaa sale Rs969 (35% off), Amazon ~Rs949 as of 2026-07-23; hero SKU; promo-dependent — Nykaa (retailer listing)
+- skincare: [CORRIDOR] Anua Heartleaf 77% Soothing Toner 250ml; Nykaa list Rs2050 (sale Rs1743); Amazon MRP Rs2999/buy Rs1999 as of 2026-07-23; MRP varies by platform — Nykaa (retailer listing)
+- skincare: [CORRIDOR] Laneige Lip Sleeping Mask Berry 8g; MRP Rs600, Nykaa sale Rs510 (15% off); 20g Rs1136 as of 2026-07-23 — Nykaa (retailer listing)
+- skincare: [CORRIDOR] Innisfree Green Tea Seed Serum; MRP Rs2200, Nykaa/Amazon sale Rs1650 (25% off) as of 2026-07-23 — Nykaa (retailer listing)
 - skincare gross margin 80.0% — Serum gross markup 75-85% pre-deductions (COGS Rs80-120 vs MRP Rs500-700); true margin lower after packaging/shipping/returns (The D2C Pulse)
 - sun care: [CORRIDOR] Beauty of Joseon Relief Sunscreen SPF50+; MRP Rs1570, Nykaa sale Rs1256 (20% off) as of 2026-07-23; category bestseller; promo-dependent — Nykaa (retailer listing)
 

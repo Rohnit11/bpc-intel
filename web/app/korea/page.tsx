@@ -1,15 +1,17 @@
-import { getKorea, getKoreaExportsChart } from "@/lib/data";
+import { getKorea, getKoreaExportsChart, getInsight } from "@/lib/data";
 import { SegmentTable } from "@/components/segment-table";
 import { ReconciliationCallout } from "@/components/reconciliation-callout";
 import { ChartCard } from "@/components/charts/chart-card";
 import { KoreaExportsChart } from "@/components/charts/korea-exports-chart";
 import { FigureValue } from "@/components/figure-value";
+import { AnalystRead } from "@/components/analyst-read";
 
 export const metadata = { title: "Korea | bpc-intel" };
 
 export default function KoreaPage() {
   const kr = getKorea();
   const exports = getKoreaExportsChart();
+  const insight = getInsight("total_bpc");
 
   return (
     <div className="space-y-10">
@@ -41,6 +43,8 @@ export default function KoreaPage() {
           <FigureValue figure={kr.headline.total_export} emphasis />
         </div>
       </section>
+
+      <AnalystRead insight={insight} geography="KR" />
 
       <section>
         <h2 className="font-serif text-xl font-semibold mb-4">Segments</h2>

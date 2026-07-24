@@ -1,0 +1,17 @@
+{
+  "segment": "deodorants",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "No sourced data exists yet for deodorants in South Korea. There is no processed DataPoint file (data/processed/KR_deodorants.json is absent), and the pre-shaped segment file shows null for size, growth, cagr, and export with an empty points array.",
+    "trend": "Growth direction cannot be assessed from current data.",
+    "caveats": "This is a registered gap, not a zero market: web/public/data/gaps.json lists market_size, growth_yoy, and cagr_forecast for KR/deodorants as \"no data,\" with euromonitor_passport, statista, korea_mfds, and tavily suggested as sources to fill it."
+  },
+  "IN": {
+    "read": "No sourced data exists yet for deodorants in India — see the gaps register. There is no processed DataPoint file (data/processed/IN_deodorants.json is absent), and the pre-shaped segment file shows null for size, growth, cagr, and export with an empty points array.",
+    "trend": "Growth direction cannot be assessed from current data.",
+    "caveats": "This is a registered gap, not a zero market: web/public/data/gaps.json lists market_size, growth_yoy, and cagr_forecast for IN/deodorants as \"no data,\" with euromonitor_passport, statista, and tavily suggested as sources to fill it. No organised-vs-unorganised split can be stated because no figure exists to attach one to."
+  },
+  "combined": {
+    "read": "A fair comparison between South Korea and India is not possible for deodorants: neither geography has a single sourced DataPoint (no market_size, growth_yoy, cagr_forecast, or export_value in data/processed/ or the pre-shaped segment file for either side), so there is no value_usd_bn on either side to compare. This segment is a confirmed data gap across both markets per web/public/data/gaps.json, and no corridor-relevant [CORRIDOR] data exists for deodorants either."
+  }
+}

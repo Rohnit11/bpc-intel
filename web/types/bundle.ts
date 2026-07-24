@@ -217,6 +217,26 @@ export interface CorridorTradeChartEntry {
   sources: string[];
 }
 
+/** One geography's analyst read, written by /insights (commands/insights.md). */
+export interface InsightRead {
+  read: string;
+  trend: string;
+  caveats: string;
+}
+
+/**
+ * A segment's (or total_bpc's) analyst insight — commentary on figures
+ * already in the bundle, never a new source of numbers. Optional: a segment
+ * with no data/manual/insights/<id>.json yet simply has none.
+ */
+export interface Insight {
+  segment: string;
+  generated_at: string;
+  KR: InsightRead;
+  IN: InsightRead;
+  combined: { read: string };
+}
+
 export interface MetaBundle {
   generated_at: string;
   git_sha: string | null;

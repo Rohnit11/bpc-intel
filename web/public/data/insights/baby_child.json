@@ -1,0 +1,17 @@
+{
+  "segment": "baby_child",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "No DataPoints exist for the baby_child segment in South Korea. There is no market size, growth, CAGR, or export figure in data/processed/ or in the pre-shaped web/public/data/segments/baby_child.json (both are null with an empty points array), and gaps.json confirms all three metrics (market_size, growth_yoy, cagr_forecast) are flagged 'no data' for KR baby_child.",
+    "trend": "Growth direction cannot be assessed from current data.",
+    "caveats": "No source has been fetched for this segment yet; any characterization of the Korean baby_child market would be fabrication until a fetcher or manual data drop populates it."
+  },
+  "IN": {
+    "read": "No DataPoints exist for the baby_child segment in India either. data/processed/IN_baby_child.json is not present, the pre-shaped segment file shows all null fields and no points, and gaps.json lists market_size, growth_yoy, and cagr_forecast as 'no data' for IN baby_child.",
+    "trend": "Growth direction cannot be assessed from current data.",
+    "caveats": "No source has been fetched for this segment yet; organised-vs-unorganised coverage cannot even be determined without a first data point."
+  },
+  "combined": {
+    "read": "A KR vs IN comparison is not possible for baby_child: neither geography has a single DataPoint (market size, growth, CAGR, or export) recorded in the system, so there is no value_usd_bn or any other figure on either side to compare. This segment needs a fetcher run or a manual data drop (per gaps.json's suggested sources: euromonitor_passport, statista, tavily) before any read can be written."
+  }
+}

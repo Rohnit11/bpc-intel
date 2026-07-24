@@ -1,17 +1,19 @@
 import Link from "next/link";
-import { getOverview, getMeta, getKoreaExportsChart, getIndiaSharesChart } from "@/lib/data";
+import { getOverview, getMeta, getKoreaExportsChart, getIndiaSharesChart, getInsight } from "@/lib/data";
 import { HeadlineComparisonCard } from "@/components/headline-comparison-card";
 import { ReconciliationCallout } from "@/components/reconciliation-callout";
 import { ChartCard } from "@/components/charts/chart-card";
 import { KoreaExportsChart } from "@/components/charts/korea-exports-chart";
 import { IndiaSharesChart } from "@/components/charts/india-shares-chart";
 import { Legend } from "@/components/legend";
+import { CombinedAnalystRead } from "@/components/analyst-read";
 
 export default function OverviewPage() {
   const ov = getOverview();
   const meta = getMeta();
   const koreaExports = getKoreaExportsChart();
   const indiaShares = getIndiaSharesChart();
+  const totalInsight = getInsight("total_bpc");
 
   return (
     <div className="space-y-10">
@@ -38,6 +40,8 @@ export default function OverviewPage() {
           ))}
         </nav>
       </div>
+
+      <CombinedAnalystRead insight={totalInsight} />
 
       <section>
         <h2 className="font-serif text-xl font-semibold mb-4">Headline comparison</h2>

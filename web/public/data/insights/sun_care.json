@@ -1,0 +1,17 @@
+{
+  "segment": "sun_care",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "No processed data points exist for South Korea in the sun_care segment — there is no KR_sun_care.json file in data/processed/, and the pre-shaped web bundle confirms all KR fields (size, growth, cagr, export) are null. No market size, growth, or export figure can be stated for Korean sun care.",
+    "trend": "Growth direction cannot be assessed from current data.",
+    "caveats": "This is a data gap, not a zero-growth or small-market signal — it simply has not been fetched or dropped into the system yet."
+  },
+  "IN": {
+    "read": "Two LOW-confidence market-size estimates exist for India sun care: TechSci Research puts it at US$0.893bn (RETAIL basis, 2024) while IMARC Group puts it at US$0.577bn (RETAIL basis, 2025) — the IMARC source note itself flags this as a \"definitional spread\" versus TechSci rather than a like-for-like decline. A LOW-confidence forecast CAGR of 6.8% (RETAIL, 2024-2030) is also on file from TechSci. Separately, a MEDIUM-confidence retail price point for Beauty of Joseon's Relief Sunscreen SPF50+ (MRP INR 1,570, Nykaa listing, 2026) is [CORRIDOR]-tagged — it describes one K-beauty SKU's India shelf price, not the segment as a whole.",
+    "trend": "The TechSci figure gives a forecast CAGR of 6.8% (RETAIL basis, 2024-2030) — a forward-looking projection, not observed growth. Separately, a LOW-confidence growth_yoy figure of +170% for 2026 vs 2025 is on file, but this covers only the q-commerce channel (per a 1digitalstack/quick-commerce industry report), not total market growth, so it should not be read as segment-wide.",
+    "caveats": "Both market-size figures are LOW-confidence aggregator estimates with a real spread between them and no reconciliation performed in the data; the +170% growth figure is channel-specific (q-commerce only) and should not be extrapolated to the whole sun care market."
+  },
+  "combined": {
+    "read": "A fair KR-vs-IN comparison is not possible for this segment: Korea has no market-size data point at all, so there is no value_usd_bn on the KR side to set against India's US$0.577-0.893bn (RETAIL, LOW confidence, two conflicting estimates). What the data does support is corridor relevance — config/corridor.yaml lists dedicated sunscreens as a named whitespace opportunity in the Korea-to-India K-beauty corridor (India sun care described as underpenetrated), and the one concrete India data point tied to a Korean brand in this segment is the [CORRIDOR]-tagged Beauty of Joseon sunscreen retail price (MRP INR 1,570, MEDIUM confidence), which illustrates a single SKU's positioning rather than corridor-wide trade flow."
+  }
+}

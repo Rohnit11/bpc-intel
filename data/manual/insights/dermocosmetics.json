@@ -1,0 +1,17 @@
+{
+  "segment": "dermocosmetics",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "The only figure held for Korea's dermocosmetics segment is a growth_yoy of 13.0% for CY2024, on a RETAIL basis, HIGH confidence (Euromonitor International). There is no market_size, cagr_forecast, or export figure in the data, so the segment's absolute scale cannot be stated or benchmarked from what's on file.",
+    "trend": "The 13.0% figure is observed growth for 2024, not a forecast. No cagr_forecast data point exists, so direction beyond 2024 cannot be assessed from current data.",
+    "caveats": "This read rests on a single data point with no accompanying size or export figure for scale; the notes attribute the growth to specific actives (PDRN, exosomes, peptides) rather than a broader, independently verifiable category driver."
+  },
+  "IN": {
+    "read": "The only figure held for India's dermocosmetics segment is a market_size of US$0.2803bn for 2024, RETAIL basis, LOW confidence (P&S Market Research, an aggregator source). No growth_yoy or cagr field is populated. The source's notes reference a 2030 figure of US$0.505bn, but that is a forward-looking figure from the source, not a stored cagr_forecast metric.",
+    "trend": "Growth direction cannot be assessed from current data — no growth_yoy or cagr_forecast field is populated. The 2030 figure of US$0.505bn mentioned in the source notes is a forecast and must not be read as an observed trend.",
+    "caveats": "Confidence is LOW (aggregator estimate, not a primary source); the source labels this market 'India skincare dermacosmetics', a blended label that may not cleanly isolate dermocosmetics from skincare; no organised-vs-unorganised split is stated."
+  },
+  "combined": {
+    "read": "Korea's dermocosmetics data point is a growth rate with no value_usd_bn attached, while India's is a market size of US$0.2803bn (value_usd_bn present). Because Korea lacks a value_usd_bn figure for this segment, a fair side-by-side size comparison isn't possible here. Dermocosmetics is one of the segments corridor.yaml flags as corridor-relevant — Aestura, Illiyoon, Medicube and Dr. Melaxin are named as dermocosmetics K-brands entering Indian platforms (Nykaa, Tira) in 2026, and mid-price derma K-beauty in Tier 2/3 is listed as the corridor's highest-conviction whitespace — but neither the KR nor IN data point above carries a [CORRIDOR] tag or a dermocosmetics-specific corridor market figure, so that relevance is qualitative context from the registry, not a quantified overlap in this segment's data."
+  }
+}

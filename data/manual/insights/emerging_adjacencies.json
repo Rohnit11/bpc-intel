@@ -1,0 +1,17 @@
+{
+  "segment": "emerging_adjacencies",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "No DataPoints exist for this segment in Korea. data/processed/KR_emerging_adjacencies.json is absent, and web/public/data/segments/emerging_adjacencies.json shows null for size, growth, cagr, and export with an empty points array, so no read on market size or position can be given for beauty devices, nutricosmetics, halal, ayurvedic, clean/vegan, or kbeauty_derivative sub-segments in Korea.",
+    "trend": "Growth direction cannot be assessed from current data.",
+    "caveats": "data/gaps.json confirms market_size, growth_yoy, and cagr_forecast are all flagged 'no data' for KR emerging_adjacencies; any figure would need to come from a fetcher run (euromonitor_passport, statista, or tavily are the suggested sources) rather than being estimated here."
+  },
+  "IN": {
+    "read": "No DataPoints exist for this segment in India either. data/processed/IN_emerging_adjacencies.json is absent, and the pre-shaped segment file shows null across size, growth, cagr, and export with no points, so no read on market size or position can be given for beauty devices, nutricosmetics, halal, ayurvedic, clean/vegan, or kbeauty_derivative sub-segments in India.",
+    "trend": "Growth direction cannot be assessed from current data.",
+    "caveats": "data/gaps.json confirms market_size, growth_yoy, and cagr_forecast are all flagged 'no data' for IN emerging_adjacencies; any figure would need to come from a fetcher run (euromonitor_passport, statista, or tavily are the suggested sources) rather than being estimated here."
+  },
+  "combined": {
+    "read": "A KR vs IN comparison is not possible for this segment: neither geography has any DataPoint (market size, growth, CAGR, or export) recorded in data/processed/ or the pre-shaped segments file, and data/gaps.json lists this segment's core metrics as 'no data' on both sides. Populating this segment requires running the applicable fetchers before any assessment, corridor-related or otherwise, can be written."
+  }
+}

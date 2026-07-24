@@ -1,0 +1,17 @@
+{
+  "segment": "colour_cosmetics",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "Korea's only colour_cosmetics figure in the current dataset is an export figure: US$1.51bn in export value for 2025 (EXPORT_FOB basis, HIGH confidence, MFDS via Yonhap/Korea Herald), noted as roughly 13% of Korea's total cosmetics exports. No domestic retail, production, or overall market-size figure for colour_cosmetics is present in the data, so this reads only Korea's outbound trade in the category, not its home market.",
+    "trend": "The export figure is paired with a 12.0% year-on-year growth rate for 2025 (same EXPORT_FOB basis, HIGH confidence) — this is observed growth in exports for the period, not a forecast.",
+    "caveats": "This is a HIGH-confidence trade-data figure, but it covers exports only (EXPORT_FOB basis); it cannot stand in for Korea's domestic colour_cosmetics retail or production value, which are distinct measures not present in this segment's data."
+  },
+  "IN": {
+    "read": "India's colour_cosmetics market size is put at US$3.46bn for 2024 (RETAIL/MRP-inclusive basis, LOW confidence, source DMI). A separate figure puts the mass tier at 79.55% of colour_cosmetics market share for 2025 (RETAIL basis, LOW confidence, Mordor Intelligence), suggesting the segment is currently mass-tier dominated by this estimate.",
+    "trend": "No growth_yoy figure is present for India colour_cosmetics. The market-size DataPoint's notes field references an accompanying forecast CAGR of 7.08%, but this is forward-looking and must be read as a forecast, not observed growth; no separate cagr_forecast metric with defined start/end period accompanies it.",
+    "caveats": "Both India figures come from LOW-confidence aggregator/estimate sources (DMI, Mordor Intelligence) rather than primary data, and neither DataPoint states whether it covers organised retail only or includes the unorganised segment — treat as directional rather than definitive."
+  },
+  "combined": {
+    "read": "A direct value_usd_bn comparison is not possible for this segment: India's market_size DataPoint carries a value_usd_bn of 3.46 on a RETAIL basis, but Korea has no market-size or value_usd_bn figure for colour_cosmetics in the data — only an EXPORT_FOB export figure (US$1.51bn), a different value_basis that cannot be netted against India's retail estimate. Separately, config/corridor.yaml documents colour_cosmetics-specific K-beauty corridor activity for context — Hince launching via Tira in January 2026, and Etude's colour/lip tints appearing among K-brands stocked on Blinkit q-commerce — but none of this qualitative corridor material is attached as a [CORRIDOR]-tagged quantitative DataPoint in the current colour_cosmetics dataset for either geography."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "segment": "oral_care",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "The only KR data available for oral_care is trade-flow, not domestic market size. Korea's HS 3306 (oral hygiene) exports to the world totalled approximately US$0.079986bn (~$80.0m) FOB in 2024, a HIGH-confidence UN Comtrade figure. Of that, exports specifically to India were about US$0.000251bn (~$251,000) FOB in 2024, also HIGH confidence and [CORRIDOR]-tagged, a very small share of total Korean oral care exports. No domestic retail, production, or wholesale figure for Korean oral care exists in the current data.",
+    "trend": "No growth_yoy or cagr_forecast figure is present for either export series, so growth direction cannot be assessed from current data.",
+    "caveats": "These are single-year (2024) customs export declarations for HS 3306 only, not a market-size estimate, and the India-bound figure is a small corridor subset of total exports rather than segment-wide activity."
+  },
+  "IN": {
+    "read": "IN oral_care data is likewise trade-flow only. India's HS 3306 imports from the world totalled about US$0.01974bn (~$19.7m) CIF in 2024 (HIGH confidence, UN Comtrade). Imports from Korea were about US$0.000485bn (~$485,000) CIF, [CORRIDOR]-tagged, versus US$0.001595bn (~$1.6m) CIF from China, so Korea is a minor supplier relative to China and to India's total oral care imports. No domestic market-size figure is available for this segment.",
+    "trend": "No growth_yoy or cagr_forecast figure is present for any of the three import series, so growth direction cannot be assessed from current data.",
+    "caveats": "These are single-year (2024) customs import declarations for HS 3306, not a retail market-size estimate, and carry no organised-vs-unorganised split since they describe trade flow rather than domestic sales."
+  },
+  "combined": {
+    "read": "No RETAIL, NET_REALISATION, or PRODUCTION size figure (and no shaped value_usd_bn size field) exists for oral_care in either geography, so KR and IN cannot be compared as markets here. The only available figures are trade flows recorded on different value bases, Korea's on EXPORT_FOB and India's on IMPORT_CIF, so per the no-netting rule they are not combined into one number. The two [CORRIDOR]-tagged figures, Korea's ~US$0.000251bn FOB export to India versus India's ~US$0.000485bn CIF import from Korea, describe the same HS 3306 flow from opposite customs sides; the difference between them likely reflects the FOB/CIF basis gap and normal mirror-statistics discrepancy rather than two distinct quantities."
+  }
+}

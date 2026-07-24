@@ -1,0 +1,17 @@
+{
+  "segment": "hair_care",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "No market-size, growth, or CAGR DataPoint exists for Korean hair care; the only figures on file are export values. Total Korean hair-care exports to the world (HS 3305) were USD 0.413bn (EXPORT_FOB, HIGH-confidence, UN Comtrade, CY2024), of which USD 0.003bn went specifically to India — a CORRIDOR-tagged trade flow rather than a market-size figure.",
+    "trend": "Growth direction cannot be assessed from current data — no growth_yoy or cagr_forecast figure is present for Korea in this segment.",
+    "caveats": "These are trade (export) figures only, not a domestic retail estimate; the India-bound export value is a small CORRIDOR subset of total world exports and should not be read as Korea's domestic hair-care market size."
+  },
+  "IN": {
+    "read": "India's hair-care market is sized at USD 4.1bn (RETAIL/MRP-inclusive basis, LOW-confidence aggregator estimate from Mordor Intelligence, period 2026), with notes pointing to a 'skinification' shift toward actives and serums. Separately, India imported USD 0.199bn of hair-care products (HS 3305) from the world and USD 0.031bn from China specifically (IMPORT_CIF, HIGH-confidence, UN Comtrade, CY2024).",
+    "trend": "A forecast CAGR of 4.73% is given for 2026-2031 (LOW-confidence, Mordor Intelligence) — this is a forecast, not observed growth. No growth_yoy figure is present for India in this segment.",
+    "caveats": "The market-size and CAGR figures are LOW-confidence aggregator estimates rather than primary-sourced data, and the files do not specify whether they cover organised, unorganised, or both parts of the market."
+  },
+  "combined": {
+    "read": "A fair size comparison between the two markets is not possible from current data: India's USD 4.1bn figure carries a value_usd_bn on a RETAIL basis, while Korea has no comparable market-size value_usd_bn at all, only EXPORT_FOB trade figures. What can be observed on a like-for-like basis is trade activity: Korea's hair-care exports to the world (USD 0.413bn) far exceed its exports specifically to India (USD 0.003bn), and this small India-bound slice is the CORRIDOR-relevant figure, consistent with the corridor registry noting AmorePacific hair-care brands Mise En Scene and RYO entering the Nykaa platform in 2025. India's imports of hair-care products from the world (USD 0.199bn, IMPORT_CIF) are larger than the KR-to-India export figure, but exports and imports sit on different value bases (EXPORT_FOB vs IMPORT_CIF) and are not netted against each other here."
+  }
+}

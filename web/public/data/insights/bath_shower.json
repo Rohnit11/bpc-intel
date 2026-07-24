@@ -1,0 +1,17 @@
+{
+  "segment": "bath_shower",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "The only figure on file for Korean bath & shower is a single export value of US$0.59bn for 2025, covering the 'body cleansing products' customs category, sourced from MFDS via Yonhap/Korea Herald at HIGH confidence. There is no domestic retail size, no growth rate, and no CAGR recorded for this segment, so the current data speaks only to Korea's export flow in this category, not its home-market scale.",
+    "trend": "No growth_yoy or cagr_forecast figure is present for this segment, so growth direction cannot be assessed from current data.",
+    "caveats": "This is an EXPORT_FOB figure (customs value of outbound shipments), not a domestic retail or production estimate, and it is a single 2025 data point with no prior-period figure to compare it against."
+  },
+  "IN": {
+    "read": "India has no processed data for this segment: data/processed has no IN_bath_shower.json file, and the pre-shaped web export confirms size, growth, cagr, and export are all null with an empty points list.",
+    "trend": "growth direction cannot be assessed from current data.",
+    "caveats": "No data points exist for this segment/geography at all; nothing here should be treated as even a low-confidence estimate."
+  },
+  "combined": {
+    "read": "Korea has one HIGH-confidence EXPORT_FOB figure for bath & shower (US$0.59bn, 2025, 'body cleansing products'); India has no data points for this segment at all. Since India lacks a value_usd_bn to set against Korea's figure, a fair KR-vs-IN comparison is not possible here. Bath & shower is not one of the segments flagged as corridor-relevant in config/corridor.yaml (that list covers skincare, sun_care, colour_cosmetics, hair_care, and dermocosmetics), and neither the KR data point nor the India file carries a [CORRIDOR] tag, so no K-beauty-in-India corridor read applies to this segment on current data."
+  }
+}

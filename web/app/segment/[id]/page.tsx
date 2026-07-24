@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
-import { getSegment, listSegmentIds } from "@/lib/data";
+import { getInsight, getSegment, listSegmentIds } from "@/lib/data";
 import { FigureValue } from "@/components/figure-value";
 import { formatSegmentName } from "@/lib/format";
 import { BasisBadge } from "@/components/basis-badge";
 import { ConfidenceBadge } from "@/components/confidence-badge";
+import { AnalystRead, CombinedAnalystRead } from "@/components/analyst-read";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import type { SegmentGeoBlock } from "@/types/bundle";
+import type { Insight, SegmentGeoBlock } from "@/types/bundle";
 
 export function generateStaticParams() {
   return listSegmentIds().map((id) => ({ id }));
@@ -16,10 +17,21 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return { title: `${formatSegmentName(id)} | bpc-intel` };
 }
 
-function GeoBlock({ label, block }: { label: string; block: SegmentGeoBlock }) {
+function GeoBlock({
+  label,
+  block,
+  geography,
+  insight,
+}: {
+  label: string;
+  block: SegmentGeoBlock;
+  geography: "KR" | "IN";
+  insight: Insight | null;
+}) {
   return (
-    <div className="rounded-xl border border-[var(--border)] bg-[var(--surface-1)] p-4">
-      <h3 className="font-serif text-lg font-semibold mb-3">{label}</h3>
+    <div className="rounded-xl border border-[var(--border)] bg-[var(--surface-1)] p-4 space-y-4">
+      <h3 className="font-serif text-lg font-semibold">{label}</h3>
+      <AnalystRead insight={insight} geography={geography} />
       <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
         <div>
           <div className="text-xs font-semibold uppercase tracking-wide text-[var(--text-muted)] mb-1">Size</div>
@@ -83,13 +95,15 @@ export default async function SegmentPage({ params }: { params: Promise<{ id: st
   const ids = listSegmentIds();
   if (!ids.includes(id)) notFound();
   const bundle = getSegment(id);
+  const insight = getInsight(id);
 
   return (
     <div className="space-y-8">
       <h1 className="font-serif text-3xl font-semibold">{formatSegmentName(bundle.segment)}</h1>
+      <CombinedAnalystRead insight={insight} />
       <div className="grid gap-4 lg:grid-cols-2">
-        <GeoBlock label="South Korea" block={bundle.KR} />
-        <GeoBlock label="India" block={bundle.IN} />
+        <GeoBlock label="South Korea" block={bundle.KR} geography="KR" insight={insight} />
+        <GeoBlock label="India" block={bundle.IN} geography="IN" insight={insight} />
       </div>
     </div>
   );

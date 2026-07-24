@@ -37,6 +37,7 @@ from lib.transforms.schema import PROJECT_ROOT
 logger = logging.getLogger("bpc_intel.web_export")
 
 WEB_DATA_DIR = PROJECT_ROOT / "web" / "public" / "data"
+INSIGHTS_DIR = PROJECT_ROOT / "data" / "manual" / "insights"
 # Transient hand-off file: Node's json-schema-to-typescript reads this to
 # generate web/types/schema.ts (see web/scripts/gen-schema-ts.mjs). Not
 # committed — only the generated .ts is.
@@ -209,6 +210,23 @@ def build_charts() -> dict[str, object]:
     }
 
 
+def build_insights() -> dict[str, dict]:
+    """Copy /insights-authored analyst reads verbatim into the bundle.
+
+    Pure serialization: data/manual/insights/<segment>.json is written by
+    Claude (see commands/insights.md), never derived here. A segment with no
+    insight file yet is simply omitted — the UI treats that as "not written
+    yet", not an error.
+    """
+    if not INSIGHTS_DIR.exists():
+        return {}
+    out: dict[str, dict] = {}
+    for path in sorted(INSIGHTS_DIR.glob("*.json")):
+        with path.open(encoding="utf-8") as fh:
+            out[path.stem] = json.load(fh)
+    return out
+
+
 def build_json_schema() -> dict:
     """JSON Schema for DataPoint + SegmentFile, source for web/types/schema.ts.
 
@@ -262,6 +280,8 @@ def export_all() -> list[Path]:
         emit(f"segments/{seg}.json", bundle)
     emit("sources.json", build_sources())
     emit("gaps.json", build_gaps())
+    for seg, insight in build_insights().items():
+        emit(f"insights/{seg}.json", insight)
     charts_out = build_charts()
     for name, data in charts_out.items():
         emit(f"charts/{name}.json", data)

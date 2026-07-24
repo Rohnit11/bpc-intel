@@ -29,6 +29,18 @@ by combining two DataPoints, always name confidence/value_basis when leaning
 on a figure, and never net figures across value_basis for the KR-vs-IN
 "combined" read (value_usd_bn only, and only when both sides have it).
 
+## Entry-analysis layer & research backlog (added 2026-07-24)
+docs/research-backlog.md is the prioritized worklist for the next research
+pass (sub-segment coverage is 5/34; the backlog explains why and what fills
+it). /research is the protocol for executing it; /entry-analysis is the
+market-entry analysis layer (Porter, entrants/M&A, positioning, entry
+scorecard, RTM, price ladder, regulatory, demand, value-chain, corridor
+vector, profiles, risk, entry-mode) that runs once Tier-1 data lands.
+Analysis artifacts live in data/manual/analysis/ and are copied verbatim
+into the web bundle. Judgment calls are allowed there but every rating
+carries rationale + evidence refs + evidence_strength, and INSUFFICIENT
+renders as "research needed" — never a hedged guess.
+
 ## Non-negotiable evidence rules
 
 1. NEVER state a market size, share, growth rate, price, or revenue from your own

@@ -26,6 +26,9 @@ data/manual/*
 # "Analyst read" panels. See commands/insights.md.
 !data/manual/insights/
 !data/manual/insights/**
+# Entry-analysis artifacts likewise (see commands/entry-analysis.md)
+!data/manual/analysis/
+!data/manual/analysis/**
 
 # Report archives — regenerable dev churn
 reports/archive/

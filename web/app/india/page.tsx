@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { getIndia, getIndiaSharesChart, getIndiaSharesQualifier } from "@/lib/data";
+import { getIndia, getIndiaSharesChart, getIndiaSharesQualifier, getInsight } from "@/lib/data";
 import { SegmentTable } from "@/components/segment-table";
 import { ReconciliationCallout } from "@/components/reconciliation-callout";
 import { ChartCard } from "@/components/charts/chart-card";
 import { IndiaSharesChart } from "@/components/charts/india-shares-chart";
 import { FigureValue } from "@/components/figure-value";
+import { AnalystRead } from "@/components/analyst-read";
 
 export const metadata = { title: "India | bpc-intel" };
 
@@ -12,6 +13,7 @@ export default function IndiaPage() {
   const india = getIndia();
   const shares = getIndiaSharesChart();
   const qualifier = getIndiaSharesQualifier();
+  const insight = getInsight("total_bpc");
 
   return (
     <div className="space-y-10">
@@ -46,6 +48,8 @@ export default function IndiaPage() {
           <FigureValue figure={india.headline.per_capita_spend} emphasis />
         </div>
       </section>
+
+      <AnalystRead insight={insight} geography="IN" />
 
       <section>
         <h2 className="font-serif text-xl font-semibold mb-4">Segments</h2>

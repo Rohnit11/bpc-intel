@@ -8,6 +8,7 @@ import type {
   Gap,
   GeographyBundle,
   IndiaValueChainBundle,
+  Insight,
   MetaBundle,
   OverviewBundle,
   SegmentBundle,
@@ -45,6 +46,14 @@ export function listSegmentIds(): string[] {
     .filter((f) => f.endsWith(".json"))
     .map((f) => f.replace(/\.json$/, ""));
 }
+
+/** The analyst read for a segment (or "total_bpc"), if /insights has been run
+ * for it yet — null otherwise. Never throws on a missing file. */
+export const getInsight = cache((id: string): Insight | null => {
+  const full = path.join(DATA_DIR, "insights", `${id}.json`);
+  if (!fs.existsSync(full)) return null;
+  return JSON.parse(fs.readFileSync(full, "utf-8")) as Insight;
+});
 
 export const getKoreaExportsChart = cache((): ChartFigure[] =>
   readJson("charts/korea_exports_by_segment.json"),

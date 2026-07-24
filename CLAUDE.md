@@ -18,6 +18,17 @@ queries). Conventions:
 - Every fetcher that supports queries includes the corridor query set from
   corridor.yaml, not just the per-geography defaults.
 
+## Analyst insights (added 2026-07-24)
+`/insights` produces the dashboard's "Analyst read" panels — commentary
+synthesizing existing DataPoints (what a figure says, its trend, its
+caveats), never a new source of numbers. Written by Claude directly (there is
+no deterministic script for interpretation), stored in data/manual/insights/,
+and copied verbatim by lib/web_export.py into web/public/data/insights/. Bound
+by the same non-fabrication rules below, plus: never derive an implied stat
+by combining two DataPoints, always name confidence/value_basis when leaning
+on a figure, and never net figures across value_basis for the KR-vs-IN
+"combined" read (value_usd_bn only, and only when both sides have it).
+
 ## Non-negotiable evidence rules
 
 1. NEVER state a market size, share, growth rate, price, or revenue from your own

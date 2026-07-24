@@ -21,6 +21,11 @@ bpc-intel-build-spec (1).md
 deep-research-report (1).md
 data/manual/*
 !data/manual/.gitkeep
+# Analyst insights ARE committed — Claude-authored commentary (not a
+# subscription vendor drop), the curated source for the dashboard's
+# "Analyst read" panels. See commands/insights.md.
+!data/manual/insights/
+!data/manual/insights/**
 
 # Report archives — regenerable dev churn
 reports/archive/

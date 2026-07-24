@@ -1,0 +1,17 @@
+{
+  "segment": "mens_grooming",
+  "generated_at": "2026-07-24T00:00:00Z",
+  "KR": {
+    "read": "No processed DataPoints exist for men's grooming in South Korea (data/processed/KR_mens_grooming.json is absent, and the pre-shaped segment file shows size, growth, cagr, and export all null). There is nothing in the system to read for this geography x segment at present.",
+    "trend": "Growth direction cannot be assessed from current data.",
+    "caveats": "This is a data gap, not a finding of zero or flat market activity — no fetch or manual drop has populated this segment for Korea yet."
+  },
+  "IN": {
+    "read": "The HIGH-confidence figure, Euromonitor International's RETAIL-basis market size, puts India men's grooming at INR 186.3bn (~US$1.94bn) for 2025. Separately, IMARC estimates (LOW confidence) put a narrower 'male grooming products' basket at US$2.3bn (2024) rising to US$2.45bn (2025). These two size estimates use the same RETAIL value_basis but differ in scope (whole segment vs a narrower product basket), so they should not be read as confirming or contradicting one another.",
+    "trend": "Observed growth is +9.0% YoY for 2025 (HIGH confidence, Euromonitor, RETAIL basis). A cagr_forecast of 12.2% (2025-2035, LOW confidence, Future Market Insights) is a forecast, not an observed trend, and it explicitly covers the men's SKINCARE sub-slice rather than the whole men's grooming segment, so it should not be read as this segment's overall forecast growth rate.",
+    "caveats": "Confidence is uneven across the underlying figures: the single HIGH-confidence data point (Euromonitor size and growth) sits alongside several LOW-confidence aggregator figures (IMARC, Future Market Insights) that also vary in scope (narrower 'male grooming products' basket, or a men's-skincare-only sub-slice for the 12.2% CAGR)."
+  },
+  "combined": {
+    "read": "A side-by-side KR vs IN comparison is not possible for this segment: Korea has no processed DataPoints at all for men's grooming, so there is no value_usd_bn (or any other figure) to set against India's US$1.94bn (2025, HIGH confidence, RETAIL). config/corridor.yaml separately lists 'Men's K-beauty' as a corridor whitespace opportunity (baseline whitespace #4, describing men's skincare as underserved relative to toiletries), but this is a qualitative whitespace note in the corridor registry, not a quantified [CORRIDOR]-tagged DataPoint within this segment's files, and none of the India DataPoints read here carry a [CORRIDOR] tag."
+  }
+}

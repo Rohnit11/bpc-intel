@@ -19,6 +19,7 @@ import yaml
 
 from lib.analysis._load import load_points
 from lib.analysis.gaps import scan_gaps, suggest_source
+from lib.chat_index import build_index as build_chat_index
 from lib.analysis.share import compute_shares
 from lib.reports import charts
 from lib.transforms.currency import convert
@@ -232,23 +233,6 @@ def build_insights() -> dict[str, dict]:
 def build_analysis() -> dict[str, dict]:
     """Copy /entry-analysis artifacts verbatim into the bundle.
 
-    Same pure-serialization contract as build_insights(): the judgment lives
-    in data/manual/analysis/ (see commands/entry-analysis.md), never here.
-    Nested one level (e.g. analysis/profiles/<slug>.json) is preserved.
-    """
-    if not ANALYSIS_DIR.exists():
-        return {}
-    out: dict[str, dict] = {}
-    for path in sorted(ANALYSIS_DIR.rglob("*.json")):
-        rel = path.relative_to(ANALYSIS_DIR).as_posix().removesuffix(".json")
-        with path.open(encoding="utf-8") as fh:
-            out[rel] = json.load(fh)
-    return out
-
-
-def build_analysis() -> dict[str, dict]:
-    """Copy /entry-analysis artifacts verbatim into the bundle.
-
     Pure serialization of data/manual/analysis/**/*.json (Claude-authored, see
     commands/entry-analysis.md) — no new logic. Keys are bundle-relative ids
     with "/" preserved (e.g. "porter_skincare", "profiles/amorepacific"), so
@@ -321,8 +305,7 @@ def export_all() -> list[Path]:
         emit(f"insights/{seg}.json", insight)
     for rel, artifact in build_analysis().items():
         emit(f"analysis/{rel}.json", artifact)
-    for rel, artifact in build_analysis().items():
-        emit(f"analysis/{rel}.json", artifact)
+    emit("chat_index.json", build_chat_index())
     charts_out = build_charts()
     for name, data in charts_out.items():
         emit(f"charts/{name}.json", data)

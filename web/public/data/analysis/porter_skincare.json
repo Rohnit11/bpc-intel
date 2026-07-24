@@ -1,0 +1,143 @@
+{
+  "segment": "skincare",
+  "generated_at": "2026-07-24T17:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "Two listed conglomerates split the organised top (LG H&H 59.9%, AmorePacific 40.1% of the summed listed-brand-owner base, 2025), but that share cut deliberately excludes an unusually deep indie long tail — COSRX, Anua (The Founders), Beauty of Joseon (Gudai Global), TirTir and APR/Medicube all compete visibly and several are recent entrants. A domestic retail market growing only +1% YoY (HIGH) against skincare-led exports up +11.6% YoY (HIGH, world #2 cosmetics exporter) means players fight over a near-flat home market while racing overseas. That combination — concentrated majors plus a crowded, fast-refreshing indie field in a stagnant domestic pool — is high rivalry.",
+      "evidence": [
+        "korea.json:shares (LG H&H 59.9%, AmorePacific 40.1%, 2025, NET_REALISATION, HIGH)",
+        "segments/skincare.json:KR growth_yoy +1.0% (RETAIL, HIGH) vs export +11.6% (EXPORT_FOB, HIGH)",
+        "companies.yaml:KR.indie_brands (APR/Medicube, The Founders/Anua, Gudai Global/Beauty of Joseon)",
+        "config/corridor.yaml:conduits (indie K-brand roster)"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "MEDIUM",
+      "rationale": "CJ Olive Young is the dominant health-and-beauty retail gatekeeper for domestic sell-through, and duty-free is a distinct, powerful channel (now contracting on the Chinese daigou decline) — both concentrate distribution in few hands, which raises buyer/channel power over brands. But the repo carries no numeric KR channel-share or retail-margin DataPoint, so the level is inferred from channel structure rather than measured.",
+      "evidence": [
+        "companies.yaml:KR.retailers (CJ Olive Young)",
+        "CLAUDE.md rule 12 (duty-free distinct channel, daigou decline)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "Olive Young / online / duty-free channel shares and retail trade margins for KR skincare (euromonitor_passport, korea_mfds)"
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Korea's brand-formulation supply is a deep, competitive ODM/OEM ecosystem — Cosmax, Kolmar Korea and Cosmecca Korea are all listed, scaled contract manufacturers. That commoditises production, lets a brand owner outsource the whole make with low switching cost, and is precisely what enables the indie proliferation seen in rivalry. Suppliers therefore hold little pricing leverage over brands. Rated on structural presence of the ODM base rather than on any margin/cost DataPoint.",
+      "evidence": [
+        "companies.yaml:KR.odm_oem (Cosmax, Kolmar Korea, Cosmecca Korea)",
+        "config/corridor.yaml:qcommerce_assortment (conglomerate-owned brands have mature supply chains)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "The same ODM depth that suppresses supplier power collapses the capital barrier to launching a skincare brand, and the recent arrival of indie names now carried across India's conduits (Anua, Beauty of Joseon, TirTir) evidences a live, low-friction entry pipeline. General (non-functional) skincare carries only light MFDS notification, not efficacy approval, so the regulatory gate is modest for basic-skincare entrants.",
+      "evidence": [
+        "companies.yaml:KR.odm_oem + KR.indie_brands",
+        "config/corridor.yaml:conduits (TirTir 2026-06, Beauty of Joseon, Anua as recent K-brands)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No DataPoint in the repo measures cross-category substitution away from KR skincare (e.g. toward aesthetic procedures or colour cosmetics). Per the grounding rules this force is left unrated rather than guessed.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Evidence on substitution between skincare routines and aesthetic/derma procedures in KR (euromonitor_passport, tavily)"
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "Structurally unattractive for a share-seeking entrant: a near-flat domestic market (+1%) with concentrated majors, a churning indie field, and near-zero barriers to entry compresses domestic economics. The real value of the KR skincare complex is as a brand-incubation and export engine (+11.6% exports, world #2), not as a domestic-share prize. Rivalry HIGH and new-entrant threat HIGH are the binding forces; low supplier power is the enabling condition, not an advantage a newcomer can capture.",
+      "evidence": [
+        "korea.json:shares",
+        "segments/skincare.json:KR (retail +1% vs export +11.6%)",
+        "companies.yaml:KR.odm_oem"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "Organised skincare is dominated at the top by non-pure-play FMCG (HUL 78.6%, Godrej 18.5%, Honasa 2.9% of the listed-brand-owner base) but is being contested underneath by a large D2C insurgency and heavy consolidation — HUL acquired Minimalist (~Rs3,000cr, 8.5x revenue) and Plum, Estee took Forest Essentials, Puig took Kama Ayurveda, KKR took Vini. A 40% mass-tier share (<Rs200: Pond's, Nivea, Himalaya, Lakme, Garnier) sits alongside a premiumising K-beauty import layer. Concentrated incumbents plus a well-funded, consolidating challenger field is high rivalry.",
+      "evidence": [
+        "india.json:shares (HUL 78.6%, Godrej 18.5%, Honasa 2.9%, FY26)",
+        "segments/skincare.json:IN market_share 40% mass tier (<Rs200)",
+        "india_findings.yaml:new_players (HUL/Minimalist, HUL/Plum, Estee/Forest Essentials, Puig/Kama, KKR/Vini)"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "HIGH",
+      "rationale": "Distribution power sits with a concentrated set of platforms and gatekeepers. Nykaa charges 22-26% commission on skincare brands (plus 18% GST on top); the q-commerce access rail is concentrated in three players (Blinkit ~45-50%, Zepto ~20-25%, Instamart ~20-25%); and India MRP embeds a 25-45% trade margin per the repo's normalisation rule. Brands face powerful, few buyers between them and the shelf.",
+      "evidence": [
+        "segments/skincare.json:IN trade_margin 24% (Nykaa commission, LOW)",
+        "india_findings.yaml:demand (q-commerce ~Rs40,000cr; Blinkit 45-50% / Zepto 20-25% / Instamart 20-25%)",
+        "CLAUDE.md rule 10 (MRP embeds 25-45% trade margin)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "India D2C skincare rarely owns factories — brands use third-party contract manufacturers / private-label houses (Gorgeous Cosmos and hundreds on IndiaMART, MOQs from ~500 units), with specialty inputs from domestic suppliers (Galaxy Surfactants, Fine Organics). Manufacturing is commoditised and switchable, and the market is ~91% domestically supplied by value, so suppliers hold little leverage over brand owners. (Imported K-beauty inverts this — see the corridor note in new-entrant threat.)",
+      "evidence": [
+        "india_findings.yaml:supply_chain (contract-mfg, MOQ ~500; Galaxy Surfactants, Fine Organics)",
+        "segments/skincare.json:IN import_dependence 9.3% (ESTIMATE, ~91% domestically supplied)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "Domestic entry is cheap and live: commoditised contract manufacturing plus continuing funding (~US$757m into India D2C beauty/wellness over 18 months; KOSE into Foxtale, Moxie, Antinorm) and a house-of-brands model (Innovist's Chemist at Play) keep new brands arriving despite the D2C slowdown. The offsetting friction applies only to imports — any imported cosmetic needs CDSCO registration (Form COS-1 to COS-2 via SUGAM) plus site registration and BIS IS 4707 compliance — so the import lane is MEDIUM while the domestic lane is HIGH.",
+      "evidence": [
+        "india_findings.yaml:new_players (US$757m D2C funding; KOSE/Foxtale; Innovist house-of-brands)",
+        "india_findings.yaml:import_make + config/corridor.yaml:regulation (CDSCO COS-1 to COS-2, SUGAM, BIS IS 4707)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No DataPoint measures substitution pressure on India skincare specifically. Skinification of hair care (actives migrating into serums/tonics) is documented as category-blurring but is adjacency, not evidence that another category displaces facial skincare. Left unrated.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Substitution evidence for India skincare vs adjacent actives categories (euromonitor_passport, tavily)"
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "Attractive on size and growth (US$9.06bn, 2025; consolidation confirming value) but hard to enter unaided: rivalry is HIGH across both incumbents and D2C, and buyer power is HIGH because platform gatekeepers (Nykaa, q-commerce trio) and MRP trade margins tax every brand. Low supplier power favours an asset-light build, but the import lane's CDSCO friction and the platforms' leverage argue for a partner-with-conduit / corridor-import route over a cold domestic launch.",
+      "evidence": [
+        "india.json:shares",
+        "segments/skincare.json:IN (size, trade_margin, mass 40%)",
+        "india_findings.yaml:supply_chain + new_players"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {
+      "sheet_masks": {
+        "new_entrant_threat": {
+          "rating": "HIGH",
+          "rationale": "Sheet masks are the format most directly tied to K-beauty in India and are named the fastest-growing facial-mask sub-segment (TechSci), driven by K-beauty routines; they are ~31% of the facial-mask category. Entry here is disproportionately import/corridor-shaped rather than domestic-manufacturing-shaped, so the corridor conduits (Nykaa, Flipkart, q-commerce) open a distinct, low-barrier entry vector for Korean-origin sheet masks specifically.",
+          "evidence": [
+            "segments/skincare.json:IN facial-mask points (sheet masks 31% of category; corridor-tagged US$44.4mn sheet-mask estimate)",
+            "config/corridor.yaml:conduits (Flipkart K-beauty portfolio incl. sheet-mask brands)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "Sheet-mask-specific brand shares and import share for India (euromonitor_passport, tavily)"
+        }
+      }
+    }
+  }
+}

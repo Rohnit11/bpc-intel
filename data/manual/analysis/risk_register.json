@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-07-24T00:00:00Z",
+  "risks": [
+    {
+      "risk": "data-confidence",
+      "geography": "BOTH",
+      "severity": "HIGH",
+      "rationale": "Most India segment sizes and growth rates rest on LOW-confidence aggregators (IMARC, TechSci, Mordor, P&S, MarkWide, EMR) and carry unresolved definitional gaps: India dermocosmetics spans a ~7x range (P&S US$256m 2023 vs MarkWide US$1.85bn 2026), sun care shows a ~2.3x base gap, and hair-care CAGR reads split 4.73% vs 10.58%. Korea's core skincare/derma/men's figures are Euromonitor HIGH, but several KR segments are export-value-only. Building an entry case on these numbers risks anchoring to a figure that is definitional noise, not signal.",
+      "evidence": [
+        "india.json / korea.json — segment sizes largely confidence LOW; KR headline single-source (Euromonitor), IN headline value_basis_uncertain (Statista via China Briefing)",
+        "dermocosmetics.json IN points — ~7x definitional gap flagged; do not reconcile without normalising",
+        "gaps.json — multiple KR/IN segments 'no data' or single-metric only"
+      ],
+      "mitigation": "Lean on the HIGH-confidence anchors (Euromonitor KR retail, UN Comtrade trade flows, Euromonitor IN men's grooming) and treat aggregator CAGRs as scenario ranges, not point estimates. Apply the repo's >20% reconciliation gap rule: where top-down and bottom-up diverge, find the definitional mismatch before publishing a number. Flag every value_basis_uncertain item in the entry case."
+    },
+    {
+      "risk": "concentration",
+      "geography": "BOTH",
+      "severity": "MEDIUM",
+      "rationale": "The market-share reads are shares of only 2-3 listed brand owners each (KR: LG H&H, AmorePacific; IN: HUL, Godrej, Honasa), computed on NET_REALISATION revenue, excluding all unorganised/unlisted players, and inflated by non-pure-play conglomerates carrying non-BPC revenue. They are coverage indicators, not true category shares. Reading 'competitive openness' or rivalry directly off them would overstate incumbent dominance and misjudge how contestable a segment actually is.",
+      "evidence": [
+        "korea.json shares qualifier — 2 listed brand owners only, conglomerate revenue overstates BPC position",
+        "india.json shares qualifier — 3 listed brand owners only; HUL/Godrej non-pure-play; excludes unorganised",
+        "korea.json / india.json reconciliation — publishable=false, bottom-up is a coverage indicator not a market size"
+      ],
+      "mitigation": "Read shares as coverage indicators, never as market shares; do not net conglomerate revenue against BPC-only sizes. Where a competitive-openness judgment is needed, ground it in channel and assortment evidence (conduit portfolios, q-commerce depth) rather than these share tables."
+    },
+    {
+      "risk": "regulatory",
+      "geography": "IN",
+      "severity": "HIGH",
+      "rationale": "Any imported cosmetic requires CDSCO import registration (Form COS-1 to COS-2 via SUGAM) as pre-clearance before any consignment, plus manufacturing-site registration and BIS IS 4707 compliance (Part 2 revised Aug 2025); paper filings are no longer accepted as of 2026. This gates the entire import_corridor thesis: no registration, no shipment. The severity is compounded because cost and timeline are not quantified anywhere in the current data.",
+      "evidence": [
+        "corridor.yaml regulation[india_import] — COS-1 to COS-2 via SUGAM, site registration, BIS IS 4707, paper filings not accepted 2026",
+        "india_findings.yaml import_make — CDSCO registration is the key lead-time/friction cost for K-beauty entrants (PSR Compliance / CDSCO)"
+      ],
+      "mitigation": "Budget CDSCO lead-time and working capital into any import_corridor plan and file registration well ahead of first shipment. Commission a regulatory pass (per the /regulatory backlog) to quantify COS-2 cost and timeline before committing volume. Where registration is a blocker, partner with a conduit that already holds registrations for the brand."
+    },
+    {
+      "risk": "FX pinning",
+      "geography": "BOTH",
+      "severity": "MEDIUM",
+      "rationale": "All USD normalisation is pinned to a single FX date (USD/KRW 1478.40, USD/INR 96.23, both 2026-07-21), and KR retail figures are converted via the inverse of that rate. Cross-geography comparisons and any KRW-cost / INR-revenue corridor margin are sensitive to rate drift away from that pin, so a comparison that looks clean today can move purely on FX.",
+      "evidence": [
+        "exchange_rates.yaml — single-date pin USD/KRW 1478.40, USD/INR 96.23 (2026-07-21)",
+        "korea.json fx_note — KR values converted 'inverse of USD/KRW=1478.4 (2026-07-21)'"
+      ],
+      "mitigation": "Re-pin FX each research pass and record the rate + date with every conversion; always show original currency alongside the USD equivalent; never net figures across value_basis, and flag corridor margin reads as FX-sensitive."
+    },
+    {
+      "risk": "single-source",
+      "geography": "BOTH",
+      "severity": "MEDIUM",
+      "rationale": "Several load-bearing figures rest on a single source with no triangulation: the corridor trade base (baseline report only), the q-commerce assortment picture (one Blinkit snapshot, 2026-07-23), the Nykaa K-beauty GMV growth (one earnings citation), the KR total market size (Euromonitor only) and the IN headline market size (Statista via China Briefing, value_basis uncertain). Any of these moving would shift the entry case, and none is currently corroborated.",
+      "evidence": [
+        "corridor.yaml qcommerce_assortment — single Blinkit snapshot 2026-07-23",
+        "corridor.yaml headline[trade_base] — baseline-only ~US$50m H1 2025 basis",
+        "india.json headline market_size — Statista via China Briefing, value_basis_uncertain"
+      ],
+      "mitigation": "Triangulate each single-source figure with a second independent source before using it as load-bearing; re-run the q-commerce tracker on a schedule so the assortment read is a trend, not a one-off; keep value_basis_uncertain items explicitly labelled in the entry case."
+    }
+  ]
+}

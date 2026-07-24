@@ -1,0 +1,127 @@
+{
+  "segment": "hair_care",
+  "generated_at": "2026-07-24T18:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": "MEDIUM",
+      "rationale": "Korea's US$1.8bn hair-care market (IMARC 2025, LOW) is anchored by AmorePacific (Mise En Scene, RYO) and LG H&H, with the ODM base enabling additional brands. Evidence is a single LOW size figure with no segment-specific shares, so intensity is inferred from the two-conglomerate structure rather than measured.",
+      "evidence": [
+        "hair_care.json KR size US$1.8bn (IMARC, 2025, LOW)",
+        "companies.yaml KR: AmorePacific lists hair_care; corridor.yaml carries AmorePacific Mise En Scene + RYO (2025 launches)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "No KR hair-care segment shares on file; brand-level share data would firm the rivalry read."
+    },
+    "buyer_power": {
+      "rating": "MEDIUM",
+      "rationale": "CJ Olive Young and online are the concentrated KR retail channels, giving gatekeeper leverage, but no KR hair-care trade-margin or channel-share figure exists in the repo to size it.",
+      "evidence": [
+        "companies.yaml KR retailers: CJ Olive Young",
+        "corridor.yaml KR channel set: Olive Young / online / duty-free"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "KR hair-care channel-concentration / retail-margin DataPoint absent."
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Korea's three listed ODM/OEM houses (Cosmax, Kolmar, Cosmecca) and wider contract base supply hair-care formulation as readily as skincare, so brand owners face little input-side bargaining leverage.",
+      "evidence": [
+        "companies.yaml KR odm_oem: Cosmax, Kolmar Korea, Cosmecca Korea"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "The ODM base lets new hair-care brands launch asset-light, the same route by which AmorePacific's hair brands and indie labels reach shelf and the corridor. No scale barrier is evident for domestic entry.",
+      "evidence": [
+        "companies.yaml KR odm_oem (three ODMs)",
+        "corridor.yaml: Mise En Scene + RYO recent (2025) Nykaa entrants — brand mobility"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No KR-specific adjacent-segment substitution evidence (e.g. scalp-serum crossover) is present in the repo.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR scalp-care / skinification substitution evidence not in current data (skinification findings are India-side only)."
+    },
+    "overall": {
+      "rating": "MEDIUM",
+      "rationale": "Korea hair care is a modest, two-conglomerate market with low supplier power and easy entry but thin repo evidence on shares and channel. Attractive as a source of formulation and corridor SKUs rather than a well-characterised domestic entry.",
+      "evidence": [
+        "hair_care.json KR size US$1.8bn + export US$0.413bn (HS3305, HIGH, 2024)",
+        "companies.yaml odm base"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "India hair care (~US$4.1bn 2026, LOW) is one of the largest BPC categories and is dominated by FMCG incumbents (HUL, Godrej) in shampoo/oils while actives-led D2C (Honasa, Innovist's Bare Anatomy) contest the premium 'skinification' edge, where specialist brands are cited as outperforming legacy FMCG. Broad incumbent scale plus D2C disruption yields high intensity.",
+      "evidence": [
+        "hair_care.json IN size US$4.1bn (Mordor, 2026); shampoo 45% (IMARC) vs conditioners 42.71% (Mordor) share splits",
+        "companies.yaml IN incumbents (HUL, Godrej) + d2c (Honasa)",
+        "india_findings.yaml demand: skinification; specialist D2C outperform legacy FMCG; Innovist runs Bare Anatomy (hair)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "MEDIUM",
+      "rationale": "Channel power is split: mass shampoo/oils flow through fragmented GT/MT where no single retailer dominates, while premium D2C hair care depends on beauty platforms taking Nykaa haircare commission of 20-24% and concentrated q-commerce. Gatekeeper leverage is real at the premium/D2C edge but diluted across mass distribution.",
+      "evidence": [
+        "colour_cosmetics.json IN trade_margin note: same Nykaa guide states haircare 20-24% commission",
+        "india_findings.yaml demand: q-commerce ~Rs40,000cr, Blinkit 45-50% (premium beauty gaining on q-commerce)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Contract manufacturing dominates D2C production, and the surfactant input critical to shampoos/cleansers comes from established domestic suppliers (Galaxy Surfactants named directly). A fragmented, capable supply base keeps input-side leverage low.",
+      "evidence": [
+        "india_findings.yaml supply_chain: third-party CMs (MOQ ~500); Galaxy Surfactants = mild surfactants for cleansers; Fine Organics"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "Skinification is opening an actives-led premium lane where D2C entrants outperform incumbents, contract manufacturing makes launch asset-light, and beauty D2C funding remains strong. Entry into the serum/scalp-care edge is cheap and well-capitalised.",
+      "evidence": [
+        "india_findings.yaml demand: skinification reshaping hair care (~US$4bn); specialist D2C outperform FMCG",
+        "india_findings.yaml new_players: ~US$757m D2C funding; house-of-brands (Innovist/Bare Anatomy)",
+        "hair_care.json IN scalp/serum proxies (hair serum US$155m 2025, growing 8.21% CAGR)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": "MEDIUM",
+      "rationale": "Within the hair-growth/scalp space, ingestible supplements are documented as growing at more than twice the pace of topicals, evidencing active substitution away from traditional topical hair care toward adjacent formats. Substitution pressure is present but scoped to the hair-loss/scalp sub-space.",
+      "evidence": [
+        "hair_care.json IN RedSeer note: alopecia-driven market US$267m 2023; supplements growing >2x pace of topicals",
+        "india_findings.yaml demand: skinification shifting buyers to serums/tonics/actives"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "overall": {
+      "rating": "MEDIUM",
+      "rationale": "India hair care is large and growing with easy production-side entry, but incumbents own the mass base, the growth edge (skinification/serums) is already crowded with well-funded D2C, and substitution toward supplements is emerging. Attractive on size; competitive on the premium lane that suits a K-beauty entrant.",
+      "evidence": [
+        "hair_care.json IN size US$4.1bn + serum/scalp proxies",
+        "india_findings.yaml skinification + D2C funding"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  }
+}

@@ -1,0 +1,1477 @@
+{
+  "generated_at": "2026-07-24T17:45:00Z",
+  "method_note": "Headline 'where to enter' ranking. Each criterion is scored 1-5 where 5 = most favorable for entry: market_size_evidence (larger + better-evidenced prize), growth_evidence (faster + more credibly documented), competitive_openness (less concentrated / more challenger-and-entry activity), channel_access (more routes-to-market documented), regulatory_friction (LOWER friction = HIGHER score), corridor_tailwind (stronger evidenced KR->IN pull). Scores are grounded ONLY in this repo's DataPoints (web/public/data/segments|korea|india) and config (corridor.yaml); no new numbers, no scoring by general knowledge. The market-attractiveness logic follows planning-market-entry (GE-McKinsey scorecard), but every rating traces to repo evidence. A criterion with no supporting data is score:null, evidence_strength INSUFFICIENT, with a research_needed string naming what unlocks it (renders 'research needed'). corridor_tailwind is a KR->IN vector, so it is literal null on all KR rows (Korea is the corridor SOURCE, not the entry destination) and scored mainly on IN rows. composite.score = mean of numeric (non-null) scores, rounded to 1 decimal; based_on = count of scored criteria, of = 6. This dataset is India- and corridor-heavy, so KR rows are legitimately sparse (Korea is measured here largely as an export/production origin, not as an entry-target market with channel/regulatory depth).",
+  "rows": [
+    {
+      "segment": "skincare",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 5,
+          "rationale": "Korea skincare has a large, HIGH-confidence domestic anchor: KRW 7.653tn (~US$5.18bn) retail 2025 (Euromonitor), plus a HIGH-confidence US$8.54bn EXPORT_FOB figure (~75% of total cosmetics exports). The prize is both large and firmly evidenced (the two bases must not be summed, but each is well-sourced).",
+          "evidence": [
+            "KR skincare market_size KRW 7.653tn RETAIL HIGH (Euromonitor, 2025)",
+            "KR skincare export US$8.54bn EXPORT_FOB HIGH (MFDS, 2025)"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 2,
+          "rationale": "Domestic retail is essentially flat: +1.0% YoY 2025 (Euromonitor, HIGH) — a mature, saturated home market, hence low attractiveness for a domestic-entry play. The +11.6% export growth is HIGH but sits on EXPORT_FOB, not domestic sell-through, so it does not lift the home-market growth read.",
+          "evidence": [
+            "KR skincare growth_yoy +1.0% RETAIL HIGH (Euromonitor, 2025)",
+            "KR skincare export growth_yoy +11.6% EXPORT_FOB HIGH (MFDS, 2025)"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Top of market is a listed duopoly (LG H&H, AmorePacific) but the deep ODM/OEM base (Cosmax, Kolmar Korea, named as excluded value-chain levels) lowers barriers for indie skincare brands — the engine behind K-beauty's long tail. Moderate openness: concentrated at the top, entry-enabled beneath.",
+          "evidence": [
+            "korea.json shares: LG H&H 59.9% / AmorePacific 40.1% of 2 listed brand owners (total-BPC, NET_REALISATION)",
+            "korea.json reconciliation excluded_value_chain: Cosmax (odm), Kolmar Korea (odm)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "Skincare-specific brand shares (compute_shares at segment level) would sharpen this beyond the total-BPC duopoly."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No Korea channel-structure DataPoints in the dataset. Only CJ Olive Young is named (as an excluded retailer in reconciliation); no share, online split, or duty-free breakdown is recorded.",
+          "evidence": [
+            "korea.json reconciliation excluded_value_chain: CJ Olive Young (retailer)"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data (Olive Young share, online, duty-free channel splits) — the rtm_KR artifact / channel research would unlock a score."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "The KR regulator (MFDS, functional-cosmetics registration) is known, but no cost, timeline, or friction DataPoint exists to score the barrier level.",
+          "evidence": [
+            "corridor.yaml korea_export_support: MFDS regulatory-diplomacy MOUs (export-facing only)"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS domestic registration cost/timeline (regulatory.json MFDS pathway) would unlock a friction score."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": 3.3,
+        "based_on": 3,
+        "of": 6,
+        "read": "partial — based on 3 of 6 criteria. Well-sized and HIGH-confidence, but domestic growth is flat and KR channel/regulatory data are absent; corridor is N/A (KR is the corridor source)."
+      }
+    },
+    {
+      "segment": "skincare",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Large market — US$9.06bn retail 2025 (IMARC) — with multiple corroborating sub-segment sizings (face wash US$1.23bn, facial masks, serum), but every figure is LOW-confidence aggregator with unstated organised/unorganised coverage. Big prize, thin evidence quality.",
+          "evidence": [
+            "IN skincare market_size US$9.06bn RETAIL LOW (IMARC, 2025)",
+            "IN face wash US$1.23bn RETAIL LOW (TechSci, 2024)",
+            "IN facial masks US$143.26mn / US$451.21mn LOW (IMARC/TechSci — 3.1x definitional gap)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "A primary-source (Euromonitor/Passport) segment size would raise confidence above LOW aggregator level."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 2,
+          "rationale": "No segment-level growth_yoy exists (gaps.json flags it missing); the only forward number is a serum-sub-segment CAGR of 5.99% (LOW, IMARC). Growth direction for the segment as a whole cannot be read from current data.",
+          "evidence": [
+            "gaps.json: IN skincare growth_yoy missing",
+            "IN facial-serum cagr_forecast 5.99% LOW (IMARC, 2026-2034)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "IN skincare segment growth_yoy (Euromonitor/tavily) per gaps.json would unlock a real growth score."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Open and being actively disrupted: mass tier (<Rs200) holds ~40% (Pond's/Nivea/Himalaya/Lakme/Garnier) but D2C challengers are winning share (Minimalist revenue Rs184cr->Rs347cr FY23->FY24) and Korean brands are entering at masstige — a fragmenting, contestable field despite conglomerate weight at total-BPC level (HUL 78.6% of listed owners).",
+          "evidence": [
+            "IN skincare mass-tier share 40% LOW (IMA Pro)",
+            "IN skincare Minimalist revenue Rs347cr FY24 NET_REALISATION MEDIUM",
+            "india.json shares: HUL 78.6% of 3 listed owners (total-BPC)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "channel_access": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Richest channel access in the dataset: multiple documented conduits (Nykaa, Tira, Flipkart, Amazon) plus the q-commerce rail carrying entry-price K-beauty (Face Shop, Innisfree, Laneige on Blinkit). Trade cost is quantified (Nykaa skincare commission 22-26%), so the route to shelf is well-mapped — margin is the price of easy access.",
+          "evidence": [
+            "IN skincare trade_margin Nykaa commission 22-26% LOW (Sylvr, 2025)",
+            "corridor.yaml conduits: Nykaa/Tira/Flipkart/Amazon/q-commerce",
+            "skincare.json [CORRIDOR] Blinkit SKUs: Face Shop Rs625, Innisfree Rs680, Laneige Rs765"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": 3,
+          "rationale": "CDSCO import registration (Form COS-1 -> COS-2 via SUGAM, site registration, BIS IS 4707, no paper filings) is real, documented friction for imports — but skincare is ~91% domestically supplied (import dependence 9.3%, ESTIMATE), so a local-manufacture route largely sidesteps it. Net friction is moderate.",
+          "evidence": [
+            "corridor.yaml regulation.india_import: CDSCO COS-1->COS-2, SUGAM, BIS IS 4707",
+            "IN skincare import_dependence 9.3% ESTIMATE (~91% domestically supplied)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "CDSCO registration cost and lead-time (regulatory.json) are not yet quantified."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Strong, well-documented KR->IN pull: a large set of [CORRIDOR]-tagged K-beauty SKUs live on Nykaa/Blinkit (COSRX, Laneige, Innisfree, Anua, Beauty of Joseon, Face Shop), HS 3304 imports from Korea of US$0.14bn (2024), and glass-skin demand. Skincare is the corridor's core axis, second only to derma in conviction.",
+          "evidence": [
+            "skincare.json [CORRIDOR] HS 3304 IN imports from Korea US$0.14bn IMPORT_CIF HIGH (2024)",
+            "skincare.json [CORRIDOR] Nykaa SKUs: COSRX Rs1490, Anua Rs2050, Innisfree Rs2200",
+            "corridor.yaml headline trade_base ~US$50m +44.7% YoY"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        }
+      },
+      "composite": {
+        "score": 3.3,
+        "based_on": 6,
+        "of": 6,
+        "read": "full — all 6 criteria scored. Large, channel-rich, corridor-backed market; held back by LOW-confidence sizing and absent segment growth data."
+      }
+    },
+    {
+      "segment": "sun_care",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "A MEDIUM-confidence production anchor exists (MFDS sunscreen production KRW 0.47tn CY2025, factory-gate) but retail sizings are two conflicting LOW aggregator estimates ~2.3x apart (Grand View US$330mn 2024 vs MarkNtel US$747mn 2025). Scale is bounded but not pinned.",
+          "evidence": [
+            "KR sun_care production_value KRW 0.4703tn PRODUCTION MEDIUM (MFDS, 2025)",
+            "KR sun_care market_size US$747mn / US$330.3mn RETAIL LOW (MarkNtel / Grand View — 2.3x spread)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "MFDS production output grew +9.4% CY2025 (MEDIUM, production basis) against a declining functional-cosmetics total; retail CAGR forecasts span 3.59-8.3% (LOW). Positive momentum, but the firmest number is on a production basis and the +43% figure is a US e-commerce export signal, not domestic.",
+          "evidence": [
+            "KR sun_care production growth +9.4% PRODUCTION MEDIUM (MFDS, 2025)",
+            "KR sun_care cagr 3.59% / 8.3% LOW (MarkNtel / Grand View)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR sun-care brand shares or concentration data in the dataset.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "Segment-level KR sun-care shares (compute_shares) would unlock an openness score."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR channel-structure DataPoints (see skincare KR).",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data (Olive Young/online/duty-free) — rtm_KR artifact."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "Sunscreen is an MFDS functional cosmetic, but no friction/cost/timeline DataPoint exists to score the barrier.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS functional-cosmetics pathway detail (regulatory.json)."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": 3.0,
+        "based_on": 2,
+        "of": 6,
+        "read": "partial — based on 2 of 6 criteria. Production-basis size and growth are the only evidenced cells; shares, channel, and regulatory data are absent."
+      }
+    },
+    {
+      "segment": "sun_care",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Sized at US$0.577bn (IMARC 2025) to US$0.893bn (TechSci 2024), both RETAIL LOW and effectively sunscreen-only; broader 'sun care products' reads run to US$1.4bn while an outlier sits at US$162mn — an 8.6x spread that means absolute scale is unresolved. Evidence exists but is definitionally noisy.",
+          "evidence": [
+            "IN sun_care market_size US$0.5766bn RETAIL LOW (IMARC, 2025)",
+            "IN sunscreen US$0.893bn RETAIL LOW (TechSci, 2024)",
+            "IN sun care products US$1.4bn vs MarkNtel US$162mn LOW (>20% gap flagged, do not reconcile)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Forecast CAGRs cluster 6.07-6.8% (LOW), and there is a strong channel-level surge signal (+170% q-commerce 2026 projection). Directionally positive; the eye-catching numbers are channel-specific, not whole-segment.",
+          "evidence": [
+            "IN sun_care cagr 6.07% / 6.8% LOW (IMARC / TechSci)",
+            "IN sun_care q-commerce growth +170% RETAIL LOW (1digitalstack, 2026)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Underpenetrated and contestable: sun care is baseline whitespace #2, sunscreen is among the fastest q-commerce risers, and both domestic and Korean brands are pushing in — an expanding, open field rather than a locked incumbent category.",
+          "evidence": [
+            "corridor.yaml whitespace #2: dedicated sunscreens, India sun care underpenetrated",
+            "IN sun_care q-commerce +170% (fast-rising, many entrants)",
+            "IN sun_care [CORRIDOR] Nykaa sunscreen sales +85% YoY MEDIUM (2023)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "channel_access": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Strong, documented access via the same multi-conduit + q-commerce infrastructure, with sun care specifically surging on those rails (q-commerce +170%, Nykaa platform +85% YoY, Beauty of Joseon SPF a Nykaa bestseller).",
+          "evidence": [
+            "IN sun_care [CORRIDOR] Nykaa sunscreen +85% YoY MEDIUM (2023)",
+            "IN sun_care [CORRIDOR] BoJ Relief Sunscreen Rs1570 MRP, Nykaa bestseller",
+            "IN sun_care q-commerce +170% (1digitalstack)"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": 3,
+          "rationale": "CDSCO import registration applies to imported sunscreen, but sunscreen is manufacturable domestically (large Indian sunscreen base), so friction is moderate rather than binding.",
+          "evidence": [
+            "corridor.yaml regulation.india_import: CDSCO COS-1->COS-2, BIS IS 4707"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "CDSCO cost/timeline (regulatory.json) not yet quantified."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Clear evidenced K-beauty sunscreen pull: 'Korean sunscreen' searches +148% and 'glass skin' +61% in a quarter, top Korean brands +50% on Nykaa, and Beauty of Joseon SPF a category bestseller — sun care is baseline whitespace #2 for the corridor.",
+          "evidence": [
+            "IN sun_care [CORRIDOR] Korean-sunscreen searches +148%, glass-skin +61%, top KR brands +50% on Nykaa (2023)",
+            "corridor.yaml whitespace #2: dedicated sunscreens",
+            "IN sun_care [CORRIDOR] BoJ SPF50+ Nykaa bestseller"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        }
+      },
+      "composite": {
+        "score": 3.5,
+        "based_on": 6,
+        "of": 6,
+        "read": "full — all 6 criteria scored. One of the best-rounded entry cases: open, channel-rich, and a documented corridor tailwind; only sizing confidence holds it back."
+      }
+    },
+    {
+      "segment": "colour_cosmetics",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Substantial and triangulated across three bases: domestic retail US$2.86bn (LOW), production KRW 2.68-2.84tn (MEDIUM), and export US$1.51bn (HIGH, ~13% of total cosmetics exports). Multiple measures corroborate a multi-billion-USD scale even if the retail figure alone is LOW.",
+          "evidence": [
+            "KR colour market_size US$2.86bn RETAIL LOW (EMR, 2025)",
+            "KR colour production KRW 2.84tn PRODUCTION MEDIUM (MFDS, 2025)",
+            "KR colour export US$1.51bn EXPORT_FOB HIGH (MFDS, 2025)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Strong momentum on the firm bases: exports +12% YoY (HIGH) and production surging (+51.4% 2024, lip-led; +13.5% lipsticks 2025, MEDIUM). Domestic retail growth is not separately isolated, but the evidenced growth signals are all positive and well-sourced.",
+          "evidence": [
+            "KR colour export growth +12% EXPORT_FOB HIGH (MFDS, 2025)",
+            "KR colour production growth +51.4% PRODUCTION MEDIUM (MFDS, 2024)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Duopoly at the top (LG H&H/AmorePacific) but colour is where indie K-brands (rom&nd, Hince, Etude) thrive on the ODM base — moderate openness, entry-enabled below the majors.",
+          "evidence": [
+            "korea.json shares: LG H&H / AmorePacific (total-BPC)",
+            "corridor.yaml conduits list indie KR colour brands (rom&nd, Hince, Etude)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "Colour-specific KR shares would sharpen this."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR channel-structure DataPoints.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data (rtm_KR)."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "MFDS regulates cosmetics colour, but no friction/cost/timeline DataPoint exists.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS pathway detail (regulatory.json)."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": 3.7,
+        "based_on": 3,
+        "of": 6,
+        "read": "partial — based on 3 of 6 criteria. Highest KR composite: large, triangulated size and strong growth; but scored on only half the criteria (no KR channel/regulatory data, corridor N/A)."
+      }
+    },
+    {
+      "segment": "colour_cosmetics",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Large and multiply-sourced — US$3.46bn (DMI 2024) to US$4.80-5.55bn (Markets and Data / MRFF) with application-level detail (face, lip, nail) — but all LOW confidence with differing period conventions. Big prize, aggregator-grade evidence.",
+          "evidence": [
+            "IN colour market_size US$3.46bn RETAIL LOW (DMI, 2024)",
+            "IN colour US$4.80bn (Markets and Data FY24) / US$5.55bn (MRFF 2024) LOW",
+            "IN lipstick US$629-631mn RETAIL LOW (Markets and Data / TechSci)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Forecast CAGRs cluster 6.18-8.41% (LOW) with lipstick sub-segments ~9.5%; no observed growth_yoy (gaps.json flags it). Positive forward trajectory, forecast-only.",
+          "evidence": [
+            "IN colour cagr 8.41% / 6.18% LOW (Markets and Data / MRFF)",
+            "gaps.json: IN colour_cosmetics growth_yoy missing"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "IN colour segment growth_yoy per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Mass tier dominates (~79.55% share, Mordor), concentrating volume, but the field carries many players and Korean indies (Hince on Tira, rom&nd on Flipkart) are entering the premium/masstige gap. Moderately open.",
+          "evidence": [
+            "IN colour mass-tier share 79.55% LOW (Mordor, 2025)",
+            "corridor.yaml conduits: Hince (Tira 2026-01), rom&nd (Flipkart)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "channel_access": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Well-mapped and cost-quantified: Nykaa colour commission 24-28%, and Amazon.in cut make-up referral fees to 3.5% (Sep-2025) — plus conduits carrying Etude/Hince. Multiple, increasingly cheaper routes to shelf.",
+          "evidence": [
+            "IN colour trade_margin Nykaa 24-28% LOW (Sylvr, 2025)",
+            "IN colour trade_margin Amazon make-up referral 3.5% LOW (Rekonsile, Sep-2025)",
+            "corridor.yaml conduits carry Etude/Hince"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": 3,
+          "rationale": "CDSCO import registration applies to imported colour cosmetics; domestic manufacture is common, so friction is moderate.",
+          "evidence": [
+            "corridor.yaml regulation.india_import: CDSCO COS-1->COS-2, BIS IS 4707"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "CDSCO cost/timeline (regulatory.json)."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Real but secondary corridor axis: Korean colour brands are entering via conduits (Hince exclusive on Tira Jan-2026, rom&nd/Etude on Flipkart/Amazon) and KR colour exports are strong, but colour is a smaller K-beauty pull into India than skincare/derma.",
+          "evidence": [
+            "corridor.yaml conduits: Hince (Tira 2026-01, colour_cosmetics), rom&nd (Flipkart), Etude (Amazon)",
+            "KR colour export US$1.51bn EXPORT_FOB HIGH"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        }
+      },
+      "composite": {
+        "score": 3.2,
+        "based_on": 6,
+        "of": 6,
+        "read": "full — all 6 criteria scored. A large, channel-friendly market with a moderate corridor pull; consistently mid-scored, dragged by LOW-confidence sizing and mass-tier concentration."
+      }
+    },
+    {
+      "segment": "fragrances",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No domestic market size for KR fragrances — only an export figure (US$0.06bn EXPORT_FOB, +46.2%), which is not a domestic-market measure. gaps.json flags market_size missing.",
+          "evidence": [
+            "KR fragrances export US$0.06bn EXPORT_FOB HIGH (MFDS, 2025)",
+            "gaps.json: KR fragrances market_size missing (has export_value only)"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR fragrances domestic market size (Euromonitor/Statista) per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "Only export growth (+46.2% off a tiny base) is available; no domestic growth. gaps.json flags growth_yoy and cagr missing.",
+          "evidence": [
+            "gaps.json: KR fragrances growth_yoy and cagr_forecast missing"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR fragrances domestic growth (Euromonitor/MFDS) per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR fragrance shares or structure data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR fragrance segment shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR channel DataPoints.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data (rtm_KR)."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR fragrance regulatory friction data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS pathway detail (regulatory.json)."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "insufficient — no criteria scorable. KR fragrances carries only an export_value DataPoint; domestic size, growth, competition, and channel data are all absent."
+      }
+    },
+    {
+      "segment": "fragrances",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "A headline US$2.6bn (2024, LOW) but it is perfume+deodorant combined — broader than fragrance — while a perfume-only cut sits at US$0.281bn (FY24, LOW). The definitional breadth makes the number soft, though a market clearly exists and one company revenue (Vini/Fogg Rs1,200cr FY25) is on file.",
+          "evidence": [
+            "IN fragrances market_size US$2.6bn RETAIL LOW (perfume+deodorant combined, 2024)",
+            "IN perfume-only US$0.281bn RETAIL LOW (Markets and Data, FY24)",
+            "IN Vini Cosmetics (Fogg) revenue Rs1,200cr NET_REALISATION MEDIUM (FY25)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "A perfume-specific IN segment size at primary confidence would firm this."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 2,
+          "rationale": "Only forecast CAGRs (~11.1% combined, 15.23% perfume-only, LOW); no observed growth_yoy (gaps.json flags it). Forward direction positive but unobserved and definitionally mixed.",
+          "evidence": [
+            "IN fragrances cagr ~11.1% LOW (combined) / 15.23% (perfume, Markets and Data)",
+            "gaps.json: IN fragrances growth_yoy and cagr_forecast missing"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "IN fragrances observed growth_yoy per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Mixed structure: a KKR-backed leader concentrates the mass deo-fragrance space (Vini/Fogg, KKR 54%), while premium is import-reliant and fragmented. Moderately open with one heavy player.",
+          "evidence": [
+            "IN Vini Cosmetics (Fogg) Rs1,200cr FY25, KKR 54% ownership MEDIUM",
+            "IN fragrances import_dependence 12.8% ESTIMATE (premium import-reliant, mass domestic)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": null
+        },
+        "channel_access": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Some documented channel economics (Nykaa fragrance commission 22-25%) atop general beauty conduits, but no fragrance-specific channel depth (GT/MT weight, gifting). Moderate, thinly evidenced.",
+          "evidence": [
+            "IN fragrances trade_margin Nykaa commission 22-25% LOW (Sylvr, 2025)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "Fragrance-specific channel mix (GT/MT vs e-commerce)."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": 3,
+          "rationale": "CDSCO applies; premium fragrance is import-reliant (12.8% import dependence) so registration friction bites the imported tier, while mass is domestic. Moderate.",
+          "evidence": [
+            "corridor.yaml regulation.india_import: CDSCO COS-1->COS-2",
+            "IN fragrances import_dependence 12.8% ESTIMATE"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "CDSCO cost/timeline (regulatory.json)."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": 1,
+          "rationale": "Effectively no KR->IN fragrance corridor: HS 3303 imports from Korea were US$0.000135bn (2024) — negligible — and no Korean fragrance brand entry is recorded. An evidenced near-absence of tailwind.",
+          "evidence": [
+            "IN fragrances [CORRIDOR] HS 3303 imports from Korea US$0.000135bn IMPORT_CIF HIGH (2024)",
+            "KR fragrances export to India US$6e-06bn (2024) — negligible"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": null
+        }
+      },
+      "composite": {
+        "score": 2.5,
+        "based_on": 6,
+        "of": 6,
+        "read": "full — all 6 criteria scored, but low across the board: soft definitional sizing, forecast-only growth, and essentially no corridor tailwind."
+      }
+    },
+    {
+      "segment": "hair_care",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "A single LOW aggregator size (US$1.8bn 2025, IMARC) with other aggregators clustering ~US$1.30bn — a real but modest and definitionally variable figure, no sub-segment detail.",
+          "evidence": [
+            "KR hair_care market_size US$1.8bn RETAIL LOW (IMARC, 2025)",
+            "IMARC note: other aggregators cluster US$1.30-1.31bn 2024"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 2,
+          "rationale": "Only a LOW CAGR forecast (3.23%, IMARC); no growth_yoy (gaps.json flags it). Slow and forecast-only.",
+          "evidence": [
+            "KR hair_care cagr 3.23% LOW (IMARC, 2026-2034)",
+            "gaps.json: KR hair_care growth_yoy missing"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "KR hair_care growth_yoy per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR hair-care shares/structure data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR hair-care segment shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR channel DataPoints.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data (rtm_KR)."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR hair-care regulatory friction data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS pathway detail (regulatory.json)."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": 2.5,
+        "based_on": 2,
+        "of": 6,
+        "read": "partial — based on 2 of 6 criteria. Modest, slow-growing, and thinly evidenced; no KR channel/competition/regulatory data."
+      }
+    },
+    {
+      "segment": "hair_care",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Large — US$4.1bn (Mordor 2026), corroborated by IMARC US$4.30bn (2025) — plus sub-segment detail (shampoo, hair serum US$155mn, hair-growth US$267-825mn). All LOW; forecasts diverge sharply (Mordor 4.73% vs IMARC 10.58%).",
+          "evidence": [
+            "IN hair_care market_size US$4.1bn RETAIL LOW (Mordor, 2026)",
+            "IN hair_care US$4.30bn RETAIL LOW (IMARC, 2025)",
+            "IN hair serum US$155.16mn LOW (Deep Market Insights, 2025)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 2,
+          "rationale": "Conflicting LOW forecasts (Mordor 4.73% vs IMARC 10.58% — flagged do-not-use-without-reconciliation); no observed growth_yoy (gaps.json). Growth is genuinely unresolved.",
+          "evidence": [
+            "IN hair_care cagr 4.73% (Mordor) vs 10.58% (IMARC) LOW — outlier flagged",
+            "gaps.json: IN hair_care growth_yoy missing"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "IN hair_care observed growth_yoy per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Incumbent-heavy (product-type shares split shampoo 45% / conditioners 42.71% across HUL-era majors) but the 'skinification' shift is opening a serum/actives/scalp-care D2C front. Moderate openness at the emerging edge.",
+          "evidence": [
+            "IN hair_care shampoo 45% / conditioner 42.71% shares LOW (IMARC / Mordor)",
+            "IN hair serum + hair-growth sub-segments (D2C-led skinification)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": null
+        },
+        "channel_access": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Documented Nykaa haircare commission (20-24%) plus Korean hair brands live on Nykaa (Mise En Scène, RYO) — access exists but hair care leans more on GT/MT than the K-beauty rails, so access is solid-not-stellar.",
+          "evidence": [
+            "IN colour note: Nykaa haircare commission 20-24% LOW (Sylvr, 2025)",
+            "corridor.yaml conduits: Mise En Scène, RYO (AmorePacific hair) on Nykaa 2025"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": 3,
+          "rationale": "CDSCO applies to imported hair care; domestic manufacture dominates the segment, so friction is moderate.",
+          "evidence": [
+            "corridor.yaml regulation.india_import: CDSCO COS-1->COS-2"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "CDSCO cost/timeline (regulatory.json)."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": 2,
+          "rationale": "Thin corridor: AmorePacific hair brands (Mise En Scène, RYO) launched on Nykaa in 2025, but KR->IN HS 3305 imports were only US$0.0033bn (2024). Present but small.",
+          "evidence": [
+            "corridor.yaml conduits: Mise En Scène/RYO (hair_care) launched 2025",
+            "IN hair_care [CORRIDOR] HS 3305 imports from Korea US$0.0033bn IMPORT_CIF HIGH (2024)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": null
+        }
+      },
+      "composite": {
+        "score": 2.7,
+        "based_on": 6,
+        "of": 6,
+        "read": "full — all 6 criteria scored. A large market but incumbent-heavy, with unresolved growth and only a thin corridor pull."
+      }
+    },
+    {
+      "segment": "deodorants",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR deodorants data of any kind (gaps.json: 'no data').",
+          "evidence": [
+            "gaps.json: KR deodorants market_size 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR deodorants market size (Euromonitor/Statista) per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR deodorants growth data.",
+          "evidence": [
+            "gaps.json: KR deodorants growth_yoy 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR deodorants growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR deodorants competition data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR deodorants shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR deodorants channel data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR deodorants regulatory data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS pathway detail."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "insufficient — no criteria scorable. No KR deodorants DataPoints exist in the dataset."
+      }
+    },
+    {
+      "segment": "deodorants",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN deodorants-specific size (gaps.json: 'no data'). The US$2.6bn fragrances figure bundles deodorant but is not a deo-only measure.",
+          "evidence": [
+            "gaps.json: IN deodorants market_size 'no data'",
+            "IN fragrances US$2.6bn note: perfume+deodorant combined (not deo-specific)"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN deodorants deo-specific market size per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN deodorants growth data.",
+          "evidence": [
+            "gaps.json: IN deodorants growth_yoy 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN deodorants growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN deodorants competition/share data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN deodorants shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN deodorants channel data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN deodorants channel mix."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "CDSCO would apply category-wide, but with zero other segment evidence a lone regulatory score would overstate evaluability — left INSUFFICIENT.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "Segment activity + CDSCO cost/timeline (regulatory.json)."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR->IN deodorant trade or brand-entry DataPoint.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "Any KR->IN deodorant corridor evidence."
+        }
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "insufficient — no criteria scorable. No IN deodorants DataPoints; not evaluable for entry on current evidence."
+      }
+    },
+    {
+      "segment": "oral_care",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR oral-care domestic size — only export values (HS 3306). gaps.json flags market_size missing.",
+          "evidence": [
+            "KR oral_care export HS 3306 US$0.08bn EXPORT_FOB HIGH (2024)",
+            "gaps.json: KR oral_care market_size missing (export_value only)"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR oral-care domestic size per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR oral-care domestic growth data.",
+          "evidence": [
+            "gaps.json: KR oral_care growth_yoy and cagr missing"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR oral-care growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR oral-care shares/structure data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR oral-care shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR channel DataPoints.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR oral-care regulatory data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS/oral-care pathway detail."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "insufficient — no criteria scorable. KR oral care carries only an export_value DataPoint."
+      }
+    },
+    {
+      "segment": "oral_care",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN oral-care market size — only an import value (HS 3306 US$0.0197bn). gaps.json flags market_size missing.",
+          "evidence": [
+            "IN oral_care import HS 3306 US$0.0197bn IMPORT_CIF HIGH (2024)",
+            "gaps.json: IN oral_care market_size missing (import_value only)"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN oral-care market size (Euromonitor/Statista) per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN oral-care growth data.",
+          "evidence": [
+            "gaps.json: IN oral_care growth_yoy and cagr missing"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN oral-care growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN oral-care share/structure data (the major toothpaste incumbents are not in the dataset).",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN oral-care shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN oral-care channel data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN oral-care channel mix."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "Oral care straddles cosmetic/drug classification in India and its regulatory pathway is not documented in the config; left INSUFFICIENT rather than assumed.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN oral-care regulatory classification and pathway (regulatory.json)."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": 1,
+          "rationale": "Negligible KR->IN oral-care corridor: HS 3306 imports from Korea were US$0.000485bn (2024) and no Korean oral-care brand entry is recorded. Evidenced near-absence of tailwind.",
+          "evidence": [
+            "IN oral_care [CORRIDOR] HS 3306 imports from Korea US$0.000485bn IMPORT_CIF HIGH (2024)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": null
+        }
+      },
+      "composite": {
+        "score": 1.0,
+        "based_on": 1,
+        "of": 6,
+        "read": "partial — based on 1 of 6 criteria. Only the (near-zero) corridor tailwind is scorable; no size, growth, competition, channel, or regulatory evidence. Effectively not evaluable for entry."
+      }
+    },
+    {
+      "segment": "mens_grooming",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 4,
+          "rationale": "A MEDIUM-confidence Euromonitor-sourced size (KRW 1.16tn 2025, ~US$0.78bn), consistent with the 2022 KRW 1.09tn base — a genuine, reasonably-evidenced segment, though a competing FMI skincare-only figure (US$1.2bn) shows definitional spread.",
+          "evidence": [
+            "KR mens_grooming market_size KRW 1.16tn RETAIL MEDIUM (Korea Herald citing Euromonitor, 2025)",
+            "KR mens 2022 base KRW 1.09tn RETAIL MEDIUM"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Only forecast CAGRs, and they conflict: FMI 11.04% (LOW, flagged optimistic) vs the Euromonitor-implied ~2.1% from the 2022->2025 series. No observed growth_yoy (gaps.json). Directionally growing but the rate is unresolved.",
+          "evidence": [
+            "KR mens cagr 11.04% LOW (FMI) vs Euromonitor-implied ~2.1% (2022-2025)",
+            "gaps.json: KR mens_grooming growth_yoy missing"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "KR mens_grooming observed growth_yoy per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR mens-grooming shares/structure data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR mens-grooming segment shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR channel DataPoints.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR mens-grooming regulatory data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS pathway detail."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": 3.5,
+        "based_on": 2,
+        "of": 6,
+        "read": "partial — based on 2 of 6 criteria. Reasonably-sized and MEDIUM-confidence, but growth rate is disputed and no KR channel/competition/regulatory data exist."
+      }
+    },
+    {
+      "segment": "mens_grooming",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Best-evidenced India segment size: INR 186.3bn (~US$1.94bn) 2025 at HIGH confidence (Euromonitor), corroborated by IBEF (Rs 20,500cr, govt-backed) and IMARC (US$2.45bn). A genuinely triangulated, primary-anchored figure.",
+          "evidence": [
+            "IN mens_grooming market_size INR 186.3bn RETAIL HIGH (Euromonitor, 2025)",
+            "IN mens Rs 20,500cr RETAIL MEDIUM (IBEF, 2024)",
+            "IN male grooming US$2.45bn RETAIL LOW (IMARC, 2025)"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Observed +9% YoY 2025 at HIGH confidence (Euromonitor) — a rare directly-measured segment growth figure — with forecast CAGRs 6.66-12.2% around it. Firmly growing.",
+          "evidence": [
+            "IN mens_grooming growth_yoy +9% RETAIL HIGH (Euromonitor, 2025)",
+            "IN mens cagr 6.66% (IMARC) / 12.2% mens-skincare (FMI) / 7.2% (EMR)"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 3,
+          "rationale": "An expanding product/consumer base (IBEF) with a fast-growing online tier, but haircare/deodorants remain incumbent-led while skincare/beard care are the fast-growing challenger edge. Moderately open.",
+          "evidence": [
+            "IN mens IBEF: haircare+deo largest, skincare+beard fastest-growing; e-commerce 30-35% of urban sales",
+            "IN male grooming online 27.2% share, ~9.5% CAGR (IMARC)"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "channel_access": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Well-documented and digitising: e-commerce is 30-35% of urban men's grooming (IBEF) and the online tier is the fastest-growing channel at 27.2% share (IMARC) — strong, quantified routes to market.",
+          "evidence": [
+            "IN mens e-commerce 30-35% of urban sales MEDIUM (IBEF)",
+            "IN male grooming online 27.2% share, fastest-growing ~9.5% CAGR (IMARC)"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": 3,
+          "rationale": "CDSCO applies to imported grooming products; the segment is largely domestically manufactured, so friction is moderate.",
+          "evidence": [
+            "corridor.yaml regulation.india_import: CDSCO COS-1->COS-2"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "CDSCO cost/timeline (regulatory.json)."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": 2,
+          "rationale": "Corridor whitespace #4 names men's K-beauty as underserved-and-opportune, but that is a flagged opportunity, not live traction — no men's-specific Korean product entry is recorded yet. Latent, not yet realised.",
+          "evidence": [
+            "corridor.yaml whitespace #4: Men's K-beauty (men's skincare underserved vs toiletries)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "Live men's K-beauty product/entry DataPoints to confirm the whitespace is activating."
+        }
+      },
+      "composite": {
+        "score": 3.3,
+        "based_on": 6,
+        "of": 6,
+        "read": "full — all 6 criteria scored. The best-evidenced India size and growth (both HIGH), channel-rich; corridor pull is still latent (whitespace, not traction)."
+      }
+    },
+    {
+      "segment": "baby_child",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR baby/child data of any kind (gaps.json: 'no data').",
+          "evidence": [
+            "gaps.json: KR baby_child market_size 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR baby/child market size per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR baby/child growth data.",
+          "evidence": [
+            "gaps.json: KR baby_child growth_yoy 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR baby/child growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR baby/child competition data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR baby/child shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR channel data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR baby/child regulatory data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS pathway detail."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "insufficient — no criteria scorable. No KR baby/child DataPoints exist."
+      }
+    },
+    {
+      "segment": "baby_child",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN baby/child data of any kind (gaps.json: 'no data').",
+          "evidence": [
+            "gaps.json: IN baby_child market_size 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN baby/child market size per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN baby/child growth data.",
+          "evidence": [
+            "gaps.json: IN baby_child growth_yoy 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN baby/child growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN baby/child competition data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN baby/child shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN baby/child channel data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN baby/child channel mix."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "CDSCO applies category-wide, but with zero other segment evidence a lone regulatory score would overstate evaluability — left INSUFFICIENT.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "Segment activity + CDSCO cost/timeline (regulatory.json)."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR->IN baby/child trade or brand-entry DataPoint.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "Any KR->IN baby/child corridor evidence."
+        }
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "insufficient — no criteria scorable. No IN baby/child DataPoints; not evaluable for entry."
+      }
+    },
+    {
+      "segment": "dermocosmetics",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 3,
+          "rationale": "A MEDIUM-confidence anchor (KRW 4.5tn, Samjong KPMG) exists but Korean sources disagree ~4x on definition (KRW 1.2tn cosmeceutical-only to KRW 4.5tn), so scale is bounded in the low-single-digit KRW-trillions but not pinned.",
+          "evidence": [
+            "KR dermocosmetics market_size KRW 4.5tn RETAIL MEDIUM (Samjong KPMG, 2020)",
+            "KR derma KRW 1.2tn (narrow cosmeceutical) vs KRW 5.5tn projected 2025 — ~4x definitional spread"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 4,
+          "rationale": "The firmest signal in the segment: +13% YoY 2024 at HIGH confidence (Euromonitor), driven by actives (PDRN, exosomes, peptides). Fast and well-evidenced.",
+          "evidence": [
+            "KR dermocosmetics growth_yoy +13% RETAIL HIGH (Euromonitor, 2024)"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 3,
+          "rationale": "Majors hold derma brands (AmorePacific's Aestura/Illiyoon) atop a broad indie-derma and ODM base — moderately open, with the actives boom pulling new entrants in.",
+          "evidence": [
+            "corridor.yaml: Aestura/Illiyoon (AmorePacific dermocosmetics)",
+            "korea.json shares duopoly + Cosmax/Kolmar ODM base"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "KR derma-specific brand shares would sharpen this."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR channel DataPoints.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data (rtm_KR)."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR derma regulatory friction data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "MFDS functional/cosmeceutical pathway (regulatory.json)."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": 3.3,
+        "based_on": 3,
+        "of": 6,
+        "read": "partial — based on 3 of 6 criteria. Fast HIGH-confidence growth is the standout; size is definitionally loose and KR channel/regulatory data are absent."
+      }
+    },
+    {
+      "segment": "dermocosmetics",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": 2,
+          "rationale": "Scale is genuinely unresolved: a narrow Rx-adjacent read of US$0.28bn (P&S 2024) sits ~7x below a broad read of US$1.85bn (MarkWide 2026), with a masstige-only cut at US$65.55mn. A real segment, but the sizing spread is too wide to bank on.",
+          "evidence": [
+            "IN dermocosmetics market_size US$0.28bn RETAIL LOW (P&S, narrow, 2024)",
+            "IN dermocosmetics US$1.85bn LOW (MarkWide, broad, 2026) — ~7x definitional gap",
+            "IN masstige derma US$65.55mn LOW (EMR, 2025)"
+          ],
+          "evidence_strength": "THIN",
+          "research_needed": "A definition-pinned IN dermocosmetics size (scope-consistent, primary source) to resolve the ~7x spread."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Strong momentum from several angles: Nykaa K-beauty GMV +60% YoY (MEDIUM, [CORRIDOR]), forecast CAGRs 10.3-14.6% (LOW), and Minimalist revenue +89% FY24. Fast-growing across narrow and masstige cuts.",
+          "evidence": [
+            "IN dermocosmetics [CORRIDOR] Nykaa K-beauty GMV +60% YoY MEDIUM (Q3 2025)",
+            "IN derma cagr 10.3% (P&S) / 14.6% masstige (EMR) LOW",
+            "IN Minimalist revenue Rs184cr->Rs347cr FY23->FY24 (+89%) MEDIUM"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": null
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": 4,
+          "rationale": "The most open, most contested India segment on the evidence: a derma-D2C boom (Minimalist Rs347cr, HUL acquisition at Rs2,955cr / 8.5x — the benchmark exit), fast masstige growth (14.6% CAGR), and Korean derma brands entering. This is the corridor's highest-conviction whitespace.",
+          "evidence": [
+            "IN Minimalist Rs347cr FY24 + HUL 90.5% acquisition Rs2,955cr (8.5x) MEDIUM",
+            "IN masstige derma cagr 14.6% (EMR)",
+            "corridor.yaml whitespace #1: mid-price derma K-beauty Tier 2/3 (highest conviction)"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "channel_access": {
+          "rating": null,
+          "score": 4,
+          "rationale": "Nykaa is the exclusive-conduit spine for the K-derma wave (Medicube, Illiyoon, Aestura launching 2026) with strong access there — though the q-commerce derma rail is itself the whitespace (COSRX out-of-stock, Anua 'coming soon' on Blinkit), so access is strong on platforms but still thin on q-commerce.",
+          "evidence": [
+            "corridor.yaml: Medicube/Illiyoon/Aestura on Nykaa; Nykaa 10-yr AmorePacific tie-up",
+            "corridor.yaml qcommerce_assortment: indie derma (COSRX OOS, Anua coming_soon) is the whitespace"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": 2,
+          "rationale": "Higher friction than other IN segments because the K-derma opportunity rides the import route, where CDSCO registration (COS-1->COS-2 via SUGAM, site registration, no paper filings) is the binding, evidenced barrier and lead-time cost.",
+          "evidence": [
+            "corridor.yaml regulation.india_import: CDSCO COS-1->COS-2, SUGAM, site registration, BIS IS 4707",
+            "corridor.yaml headline entry_barrier: CDSCO import registration is the key friction/lead-time cost"
+          ],
+          "evidence_strength": "PARTIAL",
+          "research_needed": "CDSCO registration cost/timeline (regulatory.json) to quantify the friction."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": 5,
+          "rationale": "The strongest corridor tailwind in the taxonomy: baseline whitespace #1 (mid-price derma K-beauty in Tier 2/3, highest corridor conviction), Nykaa K-beauty GMV +60% YoY, and a wave of 2026 K-derma launches (Medicube, Illiyoon, Aestura, Dr. Melaxin) across Nykaa and Tira.",
+          "evidence": [
+            "corridor.yaml whitespace #1: mid-price derma K-beauty Tier 2/3 (highest conviction)",
+            "IN dermocosmetics [CORRIDOR] Nykaa K-beauty GMV +60% YoY MEDIUM (Q3 2025)",
+            "corridor.yaml: Medicube/Illiyoon/Aestura/Dr.Melaxin 2026 launches"
+          ],
+          "evidence_strength": "STRONG",
+          "research_needed": null
+        }
+      },
+      "composite": {
+        "score": 3.5,
+        "based_on": 6,
+        "of": 6,
+        "read": "full — all 6 criteria scored. The corridor's headline entry case: highest corridor tailwind and most open competition; the drags are unresolved sizing (~7x spread) and the CDSCO import friction the whitespace must clear."
+      }
+    },
+    {
+      "segment": "emerging_adjacencies",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR emerging-adjacencies data of any kind (gaps.json: 'no data').",
+          "evidence": [
+            "gaps.json: KR emerging_adjacencies market_size 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR emerging-adjacencies scope + size per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR emerging-adjacencies growth data.",
+          "evidence": [
+            "gaps.json: KR emerging_adjacencies growth_yoy 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR emerging-adjacencies growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR emerging-adjacencies competition data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR emerging-adjacencies shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR channel data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR route-to-market data."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR emerging-adjacencies regulatory data (scope itself undefined in the dataset).",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "Define the emerging-adjacencies scope, then its regulatory pathway."
+        },
+        "corridor_tailwind": null
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "insufficient — no criteria scorable. No KR emerging-adjacencies DataPoints; scope itself is undefined in the data."
+      }
+    },
+    {
+      "segment": "emerging_adjacencies",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN emerging-adjacencies data of any kind (gaps.json: 'no data').",
+          "evidence": [
+            "gaps.json: IN emerging_adjacencies market_size 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN emerging-adjacencies scope + size per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN emerging-adjacencies growth data.",
+          "evidence": [
+            "gaps.json: IN emerging_adjacencies growth_yoy 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN emerging-adjacencies growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN emerging-adjacencies competition data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN emerging-adjacencies shares."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN emerging-adjacencies channel data.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN emerging-adjacencies channel mix."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "Scope is undefined (may span ingestibles/devices under FSSAI/BIS rather than CDSCO cosmetics), so no regulatory read can be grounded — left INSUFFICIENT rather than assumed.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "Define the emerging-adjacencies scope and its regulatory classification (regulatory.json)."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR->IN emerging-adjacencies trade or brand-entry DataPoint.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "Any KR->IN emerging-adjacencies corridor evidence."
+        }
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "insufficient — no criteria scorable. No IN emerging-adjacencies DataPoints; scope itself is undefined."
+      }
+    }
+  ]
+}

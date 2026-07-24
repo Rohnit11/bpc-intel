@@ -1,0 +1,127 @@
+{
+  "segment": "colour_cosmetics",
+  "generated_at": "2026-07-24T18:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "Two listed conglomerates (AmorePacific, LG H&H) both carry colour cosmetics, and a deep ODM base (Cosmax, Kolmar, Cosmecca) has enabled a long tail of indie brands (rom&nd, Etude, Hince) to proliferate and compete for the same shelf and export demand. Colour-cosmetics factory-gate output surged +51.4% YoY in 2024 (MFDS via Personal Care Insights, MEDIUM), a supply push that intensifies competition for placement.",
+      "evidence": [
+        "companies.yaml KR conglomerates: AmorePacific + LG H&H both list colour_cosmetics; odm_oem: Cosmax/Kolmar/Cosmecca; indie_brands present",
+        "korea.json shares (total_bpc): LG H&H 59.9% / AmorePacific 40.1% of 2 listed brand owners — duopoly at conglomerate level, not colour-specific",
+        "colour_cosmetics.json KR production +51.4% YoY 2024, +13.5% lip/liner 2025 (MFDS, MEDIUM, PRODUCTION)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "MEDIUM",
+      "rationale": "CJ Olive Young is the dominant health-and-beauty retail gatekeeper for Korean colour cosmetics (listed as the KR retailer conduit), giving concentrated channel leverage over brands, but no Korea-specific trade-margin or channel-share figure is in the repo to size that leverage precisely.",
+      "evidence": [
+        "companies.yaml KR retailers: CJ Olive Young (dominant H&B retailer)",
+        "corridor.yaml conduits reference Olive Young / online / duty-free as the KR channel set"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "No KR colour-cosmetics channel-concentration or trade-margin DataPoint exists; a retail-margin / Olive Young share figure would firm this rating."
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Korea hosts three listed, competing ODM/OEM houses (Cosmax, Kolmar, Cosmecca) plus a wider contract base, so brand owners can source formulation and fill from multiple suppliers on commodity terms. A fragmented, capable supplier tier keeps input-side bargaining power low for colour-cosmetics brands.",
+      "evidence": [
+        "companies.yaml KR odm_oem: Cosmax, Kolmar Korea, Cosmecca Korea (three listed ODMs)",
+        "colour_cosmetics.json KR PRODUCTION basis output KRW 2.68-2.84tn 2024-2025 — large contract-manufacturing capacity"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "The same deep ODM base lets a new brand launch colour cosmetics without owning a factory, which is exactly how Korea's indie wave (rom&nd, Hince, Beauty of Joseon) reached market and then the corridor. MFDS registration exists but is not a scale barrier against the low formulation-and-fill cost of entry.",
+      "evidence": [
+        "companies.yaml KR odm_oem (three ODMs) + indie_brands (APR/Medicube, Anua, Beauty of Joseon)",
+        "corridor.yaml: independent K colour/indie brands (Hince via Tira 2026-01, rom&nd via Flipkart) reaching India",
+        "colour_cosmetics.json KR production +51.4% 2024 (capacity readily available to new labels)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No adjacent-segment substitution evidence for Korean colour cosmetics is present in the repo (e.g. no data on skincare-hybrids or tinted-care displacing makeup).",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Substitution read requires adjacent-segment evidence (e.g. tinted skincare / cushion-hybrid displacement) not currently in segment or insights data."
+    },
+    "overall": {
+      "rating": "MEDIUM",
+      "rationale": "Korea's colour cosmetics is a manufacturing-and-export hub with intense rivalry and easy entry (low supplier power, deep ODM base) but concentrated retail gatekeeping. Structurally crowded on the supply side; attractive as a sourcing/export origin rather than a low-competition domestic entry.",
+      "evidence": [
+        "companies.yaml (duopoly conglomerates + three ODMs + indie tail)",
+        "colour_cosmetics.json KR export US$1.51bn 2025 (HIGH), production surge 2024"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "India colour cosmetics (US$3.46bn 2024, LOW) is mass-tier-dominated (79.55% mass share, Mordor 2025) and contested by MNC incumbents (HUL, L'Oreal India), platform-native D2C (SUGAR, Plum), and active strategic consolidation (HUL acquiring Minimalist and Plum). A crowded mass base plus M&A land-grab signals high competitive intensity.",
+      "evidence": [
+        "colour_cosmetics.json IN market_share mass 79.55% (Mordor, 2025, LOW); size US$3.46bn (DMI, LOW)",
+        "companies.yaml IN incumbents (HUL, L'Oreal India, Godrej) + d2c_brands (SUGAR, Plum, Minimalist)",
+        "india_findings.yaml new_players: HUL acquired Minimalist (~Rs3,000cr) and Plum"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "HIGH",
+      "rationale": "Beauty platforms take the highest commission band of any category on colour cosmetics — Nykaa 24-28% — and concentrated q-commerce (Blinkit ~45-50%) is now a default access rail, so a small number of channel gatekeepers set the terms of shelf access and economics for entrants.",
+      "evidence": [
+        "colour_cosmetics.json IN trade_margin: Nykaa colour commission 24-28% (2025, LOW); Amazon referral fee revision Sep-2025",
+        "india_findings.yaml demand: q-commerce ~Rs40,000cr GMV, Blinkit 45-50% / Zepto 20-25% / Instamart 20-25%"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Indian brands overwhelmingly use third-party contract manufacturers / private-label houses (MOQs from ~500 units) rather than owning production, and specialty inputs come from established suppliers (Galaxy Surfactants, Fine Organics). A fragmented, agile CM base keeps supplier bargaining power low for colour brands.",
+      "evidence": [
+        "india_findings.yaml supply_chain: D2C brands use third-party CMs (Gorgeous Cosmos, IndiaMART), MOQ ~500 units; Galaxy Surfactants / Fine Organics ingredient suppliers"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "Low production barriers (contract manufacturing) plus a strong D2C funding record (~US$757m into India beauty/wellness D2C over 18 months) make brand launch cheap and well-capitalised. CDSCO import registration (COS-1 to COS-2 via SUGAM) is a real barrier only for imported entrants, not domestic launches.",
+      "evidence": [
+        "india_findings.yaml new_players: D2C attracted ~US$757m over 18 months; KOSE US$30m into Foxtale, Moxie US$15m",
+        "india_findings.yaml supply_chain: contract-manufacturing base lowers launch cost",
+        "corridor.yaml regulation: CDSCO COS-1 to COS-2 via SUGAM (import friction only)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No adjacent-segment substitution evidence for India colour cosmetics is present in the repo.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Substitution read requires adjacent-segment evidence (e.g. tinted skincare / BB-CC displacement of colour makeup) not in current data."
+    },
+    "overall": {
+      "rating": "MEDIUM",
+      "rationale": "India colour cosmetics is large and growing (forecast ~7-8% CAGR) with easy production-side entry, but rivalry is high, channel gatekeepers extract the category's top commission band, and incumbents are consolidating the best D2C assets. Attractive on size and growth, but not a low-competition or low-channel-cost entry.",
+      "evidence": [
+        "colour_cosmetics.json IN size US$3.46bn + mass 79.55% + Nykaa 24-28% margin",
+        "india_findings.yaml new_players consolidation (HUL/Minimalist/Plum)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  }
+}

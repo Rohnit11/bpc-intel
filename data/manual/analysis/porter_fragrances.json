@@ -1,0 +1,119 @@
+{
+  "segment": "fragrances",
+  "generated_at": "2026-07-24T18:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": null,
+      "rationale": "Korea fragrances has no domestic market-size, share, or company data in the repo — only tiny export figures (US$0.06bn 2025 FOB). Competitive intensity cannot be rated from export values alone.",
+      "evidence": [
+        "fragrances.json KR: size/growth/cagr all null; only export_value US$0.06bn (2025) and Comtrade HS3303 US$0.039bn (2024)",
+        "gaps.json: KR fragrances missing market_size, growth_yoy, cagr_forecast"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR fragrances domestic market size and player shares (gaps.json rows: market_size, growth_yoy, cagr_forecast) must be filled before any force can be rated."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "No KR fragrance channel, retail, or trade-margin evidence exists.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR fragrance channel/retail data absent."
+    },
+    "supplier_power": {
+      "rating": null,
+      "rationale": "Korea's general cosmetics ODM base does not extend cleanly to fine-fragrance perfumery, and no fragrance-specific supplier evidence is present. Not rated.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR fragrance supply-chain / perfumery sourcing evidence absent."
+    },
+    "new_entrant_threat": {
+      "rating": null,
+      "rationale": "No KR fragrance market structure or barrier evidence to assess entry against.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR fragrance market size + regulatory-barrier evidence absent."
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No KR fragrance adjacent-substitution evidence.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR fragrance substitution evidence absent."
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "Korea fragrances is a data-void segment in this repo: export-only figures, no domestic size, shares, channel, or supplier evidence. No attractiveness read is defensible — research needed across the board.",
+      "evidence": [
+        "fragrances.json KR export-only; gaps.json KR fragrances triple-missing"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Fill KR fragrances domestic size/growth/shares (gaps.json) before rating."
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "India fragrances (~US$2.6bn perfume+deodorant, LOW) is led in mass by Vini Cosmetics/Fogg (FY25 revenue INR 1,200cr, KKR-controlled) with many domestic deo/perfume players, while a wave of D2C fragrance entrants is drawing investor money. A dominant mass player plus an active D2C challenger field indicates high intensity.",
+      "evidence": [
+        "fragrances.json IN size US$2.6bn (perfume+deo, LOW); Vini Cosmetics/Fogg FY25 rev INR1200cr (MEDIUM, NET_REALISATION)",
+        "india_findings.yaml new_players: KKR owns 54% of Vini Cosmetics/Fogg (US$1.2bn valuation)",
+        "fragrances.json IN revenue point source: 'investors catch a big whiff of money in D2C fragrance firms' (ET)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "MEDIUM",
+      "rationale": "Premium/perfume distribution runs through beauty platforms taking Nykaa fragrance commission of 22-25%, while mass deodorant flows through fragmented GT/MT. Channel leverage is meaningful at the premium end but diluted across mass retail.",
+      "evidence": [
+        "colour_cosmetics.json IN trade_margin note: same Nykaa guide states fragrances 22-25% commission",
+        "fragrances.json IN import_dependence note: mass perfume/deodorant domestically filled"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "supplier_power": {
+      "rating": "MEDIUM",
+      "rationale": "Premium fragrance is import-reliant — UAE is India's largest perfume-import source (HS 3303), then France/Germany for high-end oils — so premium entrants depend on overseas suppliers of oils and finished juice, raising input-side leverage. Mass perfume/deodorant is domestically filled, so the higher supplier power is scoped to the premium tier.",
+      "evidence": [
+        "india_findings.yaml import_make: premium fragrance import-reliant, UAE largest source then France/Germany; mass domestically filled",
+        "fragrances.json IN import_value HS3303 US$0.332bn from world (2024, HIGH); import_dependence 12.8% (ESTIMATE)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "Mass perfume/deodorant is domestically filled via contract manufacturing and D2C fragrance is actively funded, so domestic launch is cheap and well-capitalised. Premium entrants instead face import friction (CDSCO COS-1 to COS-2 plus overseas oil sourcing), so the threat is high for domestic-fill entrants and moderated for import-led premium.",
+      "evidence": [
+        "fragrances.json IN revenue source: strong D2C fragrance funding ('big whiff of money', ET)",
+        "india_findings.yaml supply_chain: contract-manufacturing base; import_make: premium import-reliant + CDSCO",
+        "corridor.yaml regulation: CDSCO COS-1 to COS-2 via SUGAM (import friction)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": "MEDIUM",
+      "rationale": "The segment itself bundles fine perfume with deodorant/body-mist, and the dominant volume sits in cheaper deo/mist formats — evidencing substitution between premium perfume and mass deodorant within the same demand space. Substitution is directional given the combined-basket sizing.",
+      "evidence": [
+        "fragrances.json IN size note: US$2.6bn is 'perfume+DEODORANT combined', broader than perfume-only US$0.281bn",
+        "fragrances.json IN import_dependence note: mass perfume/deodorant domestically filled (the cheaper substitute layer)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "overall": {
+      "rating": "MEDIUM",
+      "rationale": "India fragrances is a growing, mass-led market with a dominant deo incumbent (Fogg) and easy domestic entry, but the premium tier an import-led K-beauty entrant would target is supplier-dependent (UAE/France) and channel-gated. Attractive on demand, but premium entry carries import and supplier friction; the KR-IN corridor flow itself is negligible.",
+      "evidence": [
+        "fragrances.json IN size US$2.6bn + premium import-reliance; KR-IN corridor imports US$0.000135bn (2024)",
+        "india_findings.yaml import_make premium import-reliant"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  }
+}

@@ -26,6 +26,11 @@ data/manual/*
 # "Analyst read" panels. See commands/insights.md.
 !data/manual/insights/
 !data/manual/insights/**
+# Entry-analysis artifacts ARE committed — Claude-authored strategic analysis
+# (Porter, scorecard, profiles...), diffable source for the dashboard's entry
+# layer. See commands/entry-analysis.md.
+!data/manual/analysis/
+!data/manual/analysis/**
 # Entry-analysis artifacts likewise (see commands/entry-analysis.md)
 !data/manual/analysis/
 !data/manual/analysis/**

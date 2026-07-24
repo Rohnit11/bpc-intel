@@ -1,0 +1,128 @@
+{
+  "segment": "dermocosmetics",
+  "generated_at": "2026-07-24T17:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "No derma-specific brand shares exist, but the visible competitive cluster is dense and the pull is strong: the segment grew +13% YoY (2024, Euromonitor, HIGH) on an actives race (PDRN, exosomes, peptides), and the named players span both majors and indies — AmorePacific runs Aestura and Illiyoon, LG H&H is present, and APR (Medicube) is a listed indie, alongside Dr.Jart+ and Dr. Melaxin. Double-digit growth attracting both conglomerate derma lines and funded indies into an actives arms race reads as HIGH rivalry, though the rating rests on player visibility rather than measured shares.",
+      "evidence": [
+        "segments/dermocosmetics.json:KR growth +13% YoY 2024 (Euromonitor, HIGH; PDRN/exosomes/peptides)",
+        "config/corridor.yaml:conduits (Aestura, Illiyoon, Medicube, Dr.Jart+, Dr. Melaxin)",
+        "companies.yaml:KR (AmorePacific; APR/Medicube indie)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "KR dermocosmetics brand-level shares (euromonitor_passport)"
+    },
+    "buyer_power": {
+      "rating": "MEDIUM",
+      "rationale": "Derma reaches consumers through the same concentrated H&B retail (Olive Young) and online channels as skincare, plus pharmacy/clinic-adjacent routes, so channel power is present. No derma-specific channel-share or margin DataPoint exists, so the level is held at MEDIUM on structural inference.",
+      "evidence": [
+        "companies.yaml:KR.retailers (CJ Olive Young)",
+        "segments/dermocosmetics.json:KR (retail-basis sizing, channel unspecified)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "KR dermocosmetics channel mix and margins incl. pharmacy/clinic (euromonitor_passport)"
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Korea's ODM base (Cosmax, Kolmar, Cosmecca) extends into actives-heavy derma formulation, keeping the make outsourced and switchable and supplier leverage low overall. The one caveat: the frontier actives driving the segment (PDRN, exosomes, peptides) can concentrate around specialised ingredient/IP suppliers, which could raise supplier power at the premium edge — but the repo has no DataPoint isolating that, so the base reading stays LOW.",
+      "evidence": [
+        "companies.yaml:KR.odm_oem (Cosmax, Kolmar Korea, Cosmecca Korea)",
+        "segments/dermocosmetics.json:KR growth note (PDRN, exosomes, peptides as actives)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "Whether frontier-actives (PDRN/exosome) supply is concentrated enough to lift supplier power (tavily, euromonitor_passport)"
+    },
+    "new_entrant_threat": {
+      "rating": "MEDIUM",
+      "rationale": "Cosmeceutical/derma positioning leans on efficacy claims that fall under MFDS functional-cosmetic approval — a higher regulatory bar than plain skincare — which restrains entry. Offsetting it, APR/Medicube shows a listed indie can scale a derma brand fast off the ODM base. The two forces net to MEDIUM.",
+      "evidence": [
+        "segments/dermocosmetics.json:KR (functional/derma actives positioning)",
+        "companies.yaml:KR.indie_brands (APR/Medicube listed indie); KR.odm_oem"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "MFDS functional-cosmetic (derma-claim) approval cost/timeline (korea_mfds)"
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "The natural adjacency is aesthetic-clinic procedures and injectables (the same PDRN/exosome science originates there), but the repo holds no DataPoint measuring substitution between dermocosmetics and procedures. Left unrated per the grounding rules.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Substitution evidence between derma cosmetics and aesthetic/clinic procedures in KR (euromonitor_passport, tavily)"
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "The fastest-growing KR segment on file (+13%, HIGH) with an active innovation frontier and low supplier power — genuinely dynamic — but sizing is definitionally unresolved (Korean sources ~4x apart) and the functional-cosmetic entry bar plus concentrated retail temper attractiveness. Strongest read is as a brand-incubation and corridor-export segment rather than a clean domestic-share play.",
+      "evidence": [
+        "segments/dermocosmetics.json:KR (+13% growth; KRW 1.2-5.5tn definitional spread)",
+        "companies.yaml:KR.odm_oem"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "Derma/actives is India's hottest skincare fight. Domestic D2C is proven and consolidating — Minimalist reached Rs347cr revenue FY24 (+89% YoY) and was acquired by HUL at ~8.5x (~US$350mn), the benchmark derma-D2C exit — while the masstige-derma tier is the fastest-growing India cut on file (+14.6% CAGR). On top sit incumbents (Cetaphil, Skinshine) and an incoming K-derma import wave (Medicube, Aestura, Illiyoon on Nykaa/Tira). Multiple funded challengers, active M&A, and imports converging on one lane is HIGH rivalry.",
+      "evidence": [
+        "segments/dermocosmetics.json:IN revenue Minimalist Rs347cr FY24 (+89%) + HUL 8.5x acquisition",
+        "segments/dermocosmetics.json:IN Expert Market Research masstige derma +14.6% CAGR",
+        "config/corridor.yaml:conduits (Medicube, Aestura, Illiyoon); india_findings.yaml:new_players"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "HIGH",
+      "rationale": "Buyer power is elevated by conduit concentration specific to derma: Nykaa is effectively the exclusive gateway for the K-derma wave (Medicube omnichannel launch, Illiyoon exclusive, Aestura), and its K-beauty GMV grew +60% YoY (Q3 2025) — the platform sits astride the segment's fastest-growing supply. Add the concentrated q-commerce rail and standard commissions/MRP margins, and channel buyers hold strong leverage over derma brands.",
+      "evidence": [
+        "config/corridor.yaml:conduits (Nykaa exclusive K-derma: Illiyoon, Aestura; Medicube)",
+        "segments/dermocosmetics.json:IN Nykaa K-beauty GMV +60% YoY Q3 2025 (MEDIUM) [CORRIDOR]",
+        "india_findings.yaml:demand (q-commerce concentration); CLAUDE.md rule 10 (MRP margin)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Domestic derma D2C uses the same commoditised contract-manufacturing base as skincare (Gorgeous Cosmos / IndiaMART CMs; Galaxy Surfactants and Fine Organics for actives/surfactants), so suppliers hold little power over Indian brand owners. For imported K-derma the balance inverts — the brand depends on the Korean ODM/owner plus CDSCO clearance — so supplier power is MEDIUM specifically on the corridor-import lane.",
+      "evidence": [
+        "india_findings.yaml:supply_chain (contract-mfg; Galaxy Surfactants, Fine Organics)",
+        "config/corridor.yaml:regulation (CDSCO import dependence for K-derma)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "Derma is the most-funded and most-imitated lane: the Minimalist exit set a benchmark that pulls capital in, masstige derma is growing +14.6%, and the house-of-brands model spins up derma sub-brands cheaply (Innovist's Chemist at Play) on commoditised CM. K-derma owners are also entering directly (APR launched Medicube; AmorePacific brought Illiyoon). The import lane carries CDSCO/BIS friction (MEDIUM there), but domestic and direct-K entry are both wide open.",
+      "evidence": [
+        "segments/dermocosmetics.json:IN (Minimalist exit benchmark; masstige +14.6% CAGR)",
+        "india_findings.yaml:new_players (Innovist/Chemist at Play; APR/Medicube, AmorePacific/Illiyoon)",
+        "config/corridor.yaml:regulation (CDSCO, BIS IS 4707)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "P&S scopes India dermacosmetics as Rx-adjacent (acne, psoriasis, scars), which points to dermatologist prescriptions and clinic treatment as the natural substitute — but no DataPoint measures that substitution flow, so the force is left unrated.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Substitution evidence: OTC dermocosmetics vs dermatologist Rx / clinic procedures in India (tavily, euromonitor_passport)"
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "The corridor's highest-conviction whitespace — mid-price derma K-beauty into Tier 2/3 — and the most attractive of the three IN reads on demand: double-digit growth, a proven exit multiple, and confirmed corridor pull (Nykaa K-beauty GMV +60%, Medicube/Illiyoon/Aestura launching). Attractiveness is real but bounded by HIGH rivalry, HIGH buyer power (Nykaa's derma gatekeeping), and a genuinely unresolved ~7x sizing spread. Entry logic favours the corridor-import / partner-with-conduit route the whitespace itself describes.",
+      "evidence": [
+        "config/corridor.yaml:whitespace (#1 mid-price derma K-beauty Tier 2/3)",
+        "segments/dermocosmetics.json:IN (growth, Minimalist exit, Nykaa GMV +60%)"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  }
+}

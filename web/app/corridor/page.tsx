@@ -1,5 +1,7 @@
-import { getCorridor, getCorridorTradeChart } from "@/lib/data";
+import { getCorridor, getCorridorTradeChart, getAnalysisArtifact } from "@/lib/data";
 import { CorridorMap } from "@/components/corridor-map";
+import { CorridorVectorPanel } from "@/components/analysis/corridor-vector-panel";
+import type { CorridorVectorArtifact } from "@/types/analysis";
 import { ChartCard } from "@/components/charts/chart-card";
 import { CorridorTradeChart } from "@/components/charts/corridor-trade-chart";
 import { FigureValue } from "@/components/figure-value";
@@ -11,6 +13,7 @@ export const metadata = { title: "K-beauty corridor | bpc-intel" };
 export default function CorridorPage() {
   const corridor = getCorridor();
   const trade = getCorridorTradeChart();
+  const vector = getAnalysisArtifact<CorridorVectorArtifact>("corridor_vector");
 
   return (
     <div className="space-y-10">
@@ -29,6 +32,8 @@ export default function CorridorPage() {
           </p>
         )}
       </div>
+
+      <CorridorVectorPanel artifact={vector} />
 
       <section>
         <ChartCard

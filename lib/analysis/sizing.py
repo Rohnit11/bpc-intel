@@ -44,6 +44,10 @@ def top_down_size(geography: str, segment: str) -> DataPoint | None:
         if dp.metric == "market_size"
         # [CORRIDOR] figures are a K-beauty subset, not the segment total.
         and not (dp.notes and "[CORRIDOR]" in dp.notes)
+        # "Channel: ..." figures size one channel (e-commerce, q-commerce,
+        # duty-free), not the whole market — a channel GMV must never be
+        # picked as the segment total.
+        and not (dp.notes and dp.notes.lstrip().startswith("Channel:"))
     ]
     if not sizes:
         return None

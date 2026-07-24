@@ -10,17 +10,20 @@
 ## Market sizing — K-beauty in India
 | Segment | Value | Period | Basis | Confidence | Source |
 |---|---|---|---|---|---|
+| sun_care | 85.0 percent | 2023 | RETAIL | MEDIUM | Nykaa (via CosmeticsDesign-Asia, archived) |
 | skincare | 0.14006 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
 | fragrances | 0.000135 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
 | oral_care | 0.000485 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
 | total_bpc | 0.4 usd_bn | 2024 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
 | total_bpc | 0.002055 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
 | total_bpc | 25.9 percent | 2024-2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
+| skincare | 44.4 usd_mn | 2025 | RETAIL | ESTIMATE | IMARC Group (derived) |
 | total_bpc | 3139.31 inr_cr | 2025 | RETAIL | LOW | Expert Market Research |
 | total_bpc | 0.335 usd_bn | 2026 | RETAIL | LOW | The Report Cubes |
 | total_bpc | 26.3 percent | 2026-2035 | RETAIL | LOW | Expert Market Research |
 | total_bpc | 1.5 usd_bn | 2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
 | total_bpc | 32424.0 inr_cr | 2035 | RETAIL | LOW | Expert Market Research |
+| dermocosmetics | 60.0 percent | Jul-Sep 2025 | RETAIL | MEDIUM | Nykaa quarterly earnings materials via Insight Korea |
 
 ## Trade flows — Korea → India cosmetics exports (UN Comtrade)
 | Segment | Exports | Period | Confidence | Source |

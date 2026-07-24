@@ -81,6 +81,45 @@
           "notes": "[CORRIDOR] India K-beauty products market forecast CAGR 2026-2035; fastest-growing beauty sub-trend, K-pop/K-drama pull",
           "metric": "cagr_forecast",
           "tier": null
+        },
+        {
+          "value": 35.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY26",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "Redseer (Habit or Desire article, May-2026)",
+          "url": "https://redseer.com/articles/habit-or-desire-whats-driving-indias-beauty-personal-care-market/",
+          "notes": "Channel: e-commerce (all online) — India online BPC growth ~35% YoY FY26. Grooming +37% YoY; makeup & fragrance ~+30% YoY per same source.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        {
+          "value": 120.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY26",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "Redseer (Habit or Desire article, May-2026)",
+          "url": "https://redseer.com/articles/habit-or-desire-whats-driving-indias-beauty-personal-care-market/",
+          "notes": "Channel: quick-commerce — BPC GMV on q-commerce grew 120%+ YoY in FY26. Cross-reference: Redseer digest reports ~140% YoY for BPC within q-commerce on CY25 basis (see CY25 growth claim).",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        {
+          "value": 140.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "Redseer (Quick Commerce and BPC Strategy digest)",
+          "url": "https://redseer.com/digests/quick-commerce-and-bpc-strategy-in-india/",
+          "notes": "Channel: quick-commerce — BPC YoY growth within q-commerce ~140% (period stated as latest year in digest, taken as CY25; non-grocery growing ~1.6x faster than grocery). Cross-reference: 120%+ FY26 figure from same firm's Habit or Desire article.",
+          "metric": "growth_yoy",
+          "tier": null
         }
       ],
       "imports": {
@@ -143,7 +182,73 @@
         "metric": "market_size",
         "tier": null
       },
-      "growth": [],
+      "growth": [
+        {
+          "value": 5.99,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-facial-serum-market",
+          "notes": "IMARC: USD 203.4mn (2025) to USD 343.4mn (2034), CAGR 5.99% 2026-2034. Grand View Research horizon page reportedly shows 7.9% CAGR 2026-2033 but page is bot-blocked (HTTP 403), could not verify, so excluded as a claim.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 5.01,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-facial-masks-market",
+          "notes": "CAGR for ALL India facial masks (USD 143.26mn 2025 to USD 222.45mn 2034), not sheet-only; sheet masks growing faster than category per TechSci. cf TechSci category CAGR 3.61% through 2030.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 3.61,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2024-2030",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "TechSci Research",
+          "url": "https://www.techsciresearch.com/report/india-facial-masks-market/7728.html",
+          "notes": "CAGR for ALL India facial masks (USD 451.21mn 2024 to USD 556.12mn 2030), not sheet-only. cf IMARC 5.01% (2026-2034). Sheet-mask sub-segment grows faster than category per same source (qualitative only).",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 6.76,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2030",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "TechSci Research",
+          "url": "https://www.techsciresearch.com/news/23307-india-face-wash-market.html",
+          "notes": "TechSci: India face wash CAGR 6.76% through 2030F. Internally inconsistent with the same page's USD 1.23bn (2024) to USD 4.34bn (2030) trajectory (implies ~23% CAGR); the stated CAGR is taken as the intended figure, the 4.34bn endpoint treated as suspect.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 9.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "2023-2028",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Bonafide Research (via ResearchAndMarkets)",
+          "url": "https://www.researchandmarkets.com/reports/5660351/india-facial-creams-and-gels-market-outlook-2027-28",
+          "notes": "Reported as 'more than 9% CAGR' to 2027-28 for India facial creams & gels; 9.0 is the stated floor, actual forecast is above this. Forecast base year not stated on page; period recorded as approximate.",
+          "metric": "cagr_forecast",
+          "tier": null
+        }
+      ],
       "imports": {
         "World": {
           "value": 0.844115,
@@ -387,6 +492,71 @@
           "notes": "Sunscreen on q-commerce projected ~2.7x (i.e. ~+170%) 2026 vs 2025; Tier 2/3 surge",
           "metric": "growth_yoy",
           "tier": null
+        },
+        {
+          "value": 6.07,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-sunscreen-market",
+          "notes": "India sunscreen CAGR 6.07% 2026-2034 (USD 576.6mn 2025 to USD 996.0mn 2034). Close to TechSci 6.8% 2025-2030 despite a large base-size disagreement.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 6.8,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2030",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "TechSci Research",
+          "url": "https://www.techsciresearch.com/report/india-sunscreen-market/26904.html",
+          "notes": "India sunscreen CAGR 6.8% 2025-2030 (USD 893.12mn 2024 to USD 1,325.37mn 2030). Close to IMARC 6.07% despite base-size disagreement.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 5.05,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-sun-care-products-market",
+          "notes": "India sun care products CAGR 5.05% 2026-2034 (USD 1.4bn 2025 to USD 2.2bn 2034).",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 12.48,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2032",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "MarkNtel Advisors",
+          "url": "https://www.marknteladvisors.com/research-library/india-sun-care-market-report.html",
+          "notes": "India sun care CAGR 12.48% 2026-2032. Highest growth estimate on file for the segment (vs IMARC 5.05%, TechSci 6.8%, IMARC sunscreen 6.07%) - from the smallest base.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 85.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "2023",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "Nykaa (via CosmeticsDesign-Asia, archived)",
+          "url": "https://web.archive.org/web/2024id_/https://www.cosmeticsdesign-asia.com/Article/2023/12/13/India-embraces-K-beauty-Korean-sunscreen-glass-skin-among-top-searches-by-consumers/",
+          "notes": "[CORRIDOR] Nykaa platform sunscreen sales +85% YoY (stated Dec-2023; Nykaa CSMS routine push). PLATFORM-level, all brands - not a market growth rate and not K-beauty-only. Corridor signals in same article: 'Korean sunscreen' searches +148% and 'glass skin' +61% in the quarter; top Korean brands (Sulwhasoo, Innisfree, Cosrx, TonyMoly) +50% growth on Nykaa. Original CosmeticsDesign-Asia URL now 410; verified via Wayback archive.",
+          "metric": "growth_yoy",
+          "tier": null
         }
       ],
       "imports": {
@@ -427,7 +597,60 @@
         "metric": "market_size",
         "tier": null
       },
-      "growth": [],
+      "growth": [
+        {
+          "value": 10.3,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2024-2030",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "P&S Market Research (India Skincare Dermacosmetics)",
+          "url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
+          "notes": "10.3% CAGR 2024-2030, reaching US$505.0mn by 2030 (from US$256.2mn 2023). Western region highest regional CAGR at 10.6%. Same narrow definition caveat as the P&S market_size claim.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 11.6,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2035",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "MarkWide Research (India Dermocosmetics Market)",
+          "url": "https://markwideresearch.com/india-dermocosmetics-market/",
+          "notes": "11.60% CAGR, US$1.85bn 2026 -> US$4.97bn 2035. Page inconsistently states 'analysis window 2026-2036'; endpoint values imply 2026-2035. Broad-definition caveat as per the matching market_size claim.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 14.6,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2035",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Expert Market Research (India Masstige Derma Cosmetics)",
+          "url": "https://www.expertmarketresearch.com/reports/india-masstige-derma-cosmetics-market",
+          "notes": "Masstige derma tier: 14.60% CAGR 2026-2035, US$65.55mn 2025 -> US$256.11mn 2035. Fastest growth read among India derma estimates — consistent with masstige/derma D2C (Minimalist et al.) outgrowing the category.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 60.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "Jul-Sep 2025",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "Nykaa quarterly earnings materials via Insight Korea",
+          "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=247479",
+          "notes": "[CORRIDOR] K-beauty transaction value (GMV) on Nykaa grew MORE THAN 60% YoY in Jul-Sep 2025 per Nykaa quarterly earnings materials. Scope is all K-beauty on Nykaa, not derma-only — proxy for corridor derma momentum since Nykaa is the exclusive conduit for the K-derma wave: Medicube (APR) omnichannel India launch on Nykaa 2026-02-20; Aestura (Amorepacific) launched earlier; Illiyoon (Amorepacific) exclusive Nykaa launch Mar-2026. No brand-level India revenue published yet for any of the three. Article dated 2026-06-02.",
+          "metric": "growth_yoy",
+          "tier": null
+        }
+      ],
       "imports": {
         "World": null,
         "Korea": null,
@@ -551,6 +774,45 @@
           "notes": "India MEN'S SKINCARE (sub-slice) CAGR; faster than overall grooming",
           "metric": "cagr_forecast",
           "tier": null
+        },
+        {
+          "value": 7.2,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "2026-2035",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Expert Market Research — India Men's Grooming Market",
+          "url": "https://www.expertmarketresearch.com/reports/india-mens-grooming-market",
+          "notes": "EMR forecast to INR 36,407.12 cr by 2035. Consistent with IBEF-implied ~7.2% and IMARC 6.66% (2026-2034) — segment CAGR consensus ~6.5-7.5%. EMR sub-signals: haircare 8.6% CAGR (fastest category), mass tier 6.9%.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 6.66,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group — India Male Grooming Products Market",
+          "url": "https://www.imarcgroup.com/india-male-grooming-products-market",
+          "notes": "USD-terms CAGR to USD 4.46bn 2034. Cross-check: EMR 7.20% (INR, 2026-2035), IBEF-implied ~7.2% (INR, 2024-2033). INR-vs-USD terms explain part of the gap.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 5.05,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Deep Market Insights — India Men's Skincare Products Market",
+          "url": "https://deepmarketinsights.com/vista/insights/mens-skincare-products-market/india",
+          "notes": "5.05% CAGR 2026-2034, USD terms — BELOW segment CAGR (6.7-7.2%), contradicting IBEF's qualitative 'skincare fastest-growing'. Conflict flagged: either DMI base is overstated (so growth understated) or IBEF growth claim covers a narrower premium-skincare slice. Do not publish a men's-skincare growth number without resolving.",
+          "metric": "cagr_forecast",
+          "tier": null
         }
       ],
       "imports": {
@@ -588,6 +850,58 @@
           "source": "Mordor Intelligence",
           "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
           "notes": "India hair care forecast CAGR",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 10.58,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-haircare-market",
+          "notes": "USD 4.30bn 2025 to USD 11.49bn 2034. Outlier vs Mordor 4.73% (2026-2031) — do not use without reconciliation.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 4.73,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2031",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Mordor Intelligence",
+          "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
+          "notes": "USD 4.1bn 2026 to USD 5.19bn 2031. Conflicts with IMARC 10.58%.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 4.8,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2035",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Expert Market Research",
+          "url": "https://www.expertmarketresearch.com/reports/india-shampoo-market",
+          "notes": "USD 1.26bn 2025 to USD 2.01bn 2035.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 8.21,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Deep Market Insights",
+          "url": "https://deepmarketinsights.com/vista/insights/hair-serum-market/india",
+          "notes": "India hair serum: USD 155.16mn 2025 to USD 317.12mn 2034; 'fastest-growing market in Asia Pacific' per source.",
           "metric": "cagr_forecast",
           "tier": null
         }

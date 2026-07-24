@@ -84,6 +84,20 @@ class TestTopDown:
         best = sizing.top_down_size("IN", "total_bpc")
         assert best.value == 33.08  # corridor subset + forecast excluded
 
+    def test_excludes_channel_gmv_from_total(self, tmp_path, monkeypatch):
+        # A channel GMV figure (larger, more recent, RETAIL) must NOT be
+        # picked as the market total — it sizes one channel, not the market.
+        channel = _size("IN", "total_bpc", 56000.0, unit="inr_cr", currency="INR",
+                        conf="MEDIUM", period="FY26")
+        channel.notes = "Channel: e-commerce (all online) — India online BPC market"
+        _write(tmp_path, monkeypatch, "IN", "total_bpc", [
+            channel,
+            _size("IN", "total_bpc", 33.08, currency="USD", unit="usd_bn",
+                  conf="MEDIUM", period="2025"),
+        ])
+        best = sizing.top_down_size("IN", "total_bpc")
+        assert best.value == 33.08  # channel GMV excluded from the total
+
 
 class TestBottomUp:
     def test_sums_brand_owners_latest_per_company(self, tmp_path, monkeypatch):

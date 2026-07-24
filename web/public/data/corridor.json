@@ -244,6 +244,20 @@
   },
   "sizing": [
     {
+      "value": 85.0,
+      "unit": "percent",
+      "currency": "INR",
+      "period": "2023",
+      "value_basis": "RETAIL",
+      "confidence": "MEDIUM",
+      "source": "Nykaa (via CosmeticsDesign-Asia, archived)",
+      "url": "https://web.archive.org/web/2024id_/https://www.cosmeticsdesign-asia.com/Article/2023/12/13/India-embraces-K-beauty-Korean-sunscreen-glass-skin-among-top-searches-by-consumers/",
+      "notes": "[CORRIDOR] Nykaa platform sunscreen sales +85% YoY (stated Dec-2023; Nykaa CSMS routine push). PLATFORM-level, all brands - not a market growth rate and not K-beauty-only. Corridor signals in same article: 'Korean sunscreen' searches +148% and 'glass skin' +61% in the quarter; top Korean brands (Sulwhasoo, Innisfree, Cosrx, TonyMoly) +50% growth on Nykaa. Original CosmeticsDesign-Asia URL now 410; verified via Wayback archive.",
+      "metric": "growth_yoy",
+      "tier": null,
+      "segment": "sun_care"
+    },
+    {
       "value": 0.14006,
       "unit": "usd_bn",
       "currency": "USD",
@@ -328,6 +342,20 @@
       "segment": "total_bpc"
     },
     {
+      "value": 44.4,
+      "unit": "usd_mn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "RETAIL",
+      "confidence": "ESTIMATE",
+      "source": "IMARC Group (derived)",
+      "url": "https://www.imarcgroup.com/india-facial-masks-market",
+      "notes": "[CORRIDOR] Sheet masks are the format most directly tied to K-beauty in India; TechSci names sheet masks the fastest-growing facial-mask segment, driven by K-beauty routines.",
+      "metric": "market_size",
+      "tier": null,
+      "segment": "skincare"
+    },
+    {
       "value": 3139.31,
       "unit": "inr_cr",
       "currency": "INR",
@@ -396,6 +424,20 @@
       "metric": "market_size",
       "tier": null,
       "segment": "total_bpc"
+    },
+    {
+      "value": 60.0,
+      "unit": "percent",
+      "currency": "INR",
+      "period": "Jul-Sep 2025",
+      "value_basis": "RETAIL",
+      "confidence": "MEDIUM",
+      "source": "Nykaa quarterly earnings materials via Insight Korea",
+      "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=247479",
+      "notes": "[CORRIDOR] K-beauty transaction value (GMV) on Nykaa grew MORE THAN 60% YoY in Jul-Sep 2025 per Nykaa quarterly earnings materials. Scope is all K-beauty on Nykaa, not derma-only — proxy for corridor derma momentum since Nykaa is the exclusive conduit for the K-derma wave: Medicube (APR) omnichannel India launch on Nykaa 2026-02-20; Aestura (Amorepacific) launched earlier; Illiyoon (Amorepacific) exclusive Nykaa launch Mar-2026. No brand-level India revenue published yet for any of the three. Article dated 2026-06-02.",
+      "metric": "growth_yoy",
+      "tier": null,
+      "segment": "dermocosmetics"
     }
   ],
   "pricing": [

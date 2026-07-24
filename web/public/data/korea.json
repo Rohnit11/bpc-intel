@@ -117,8 +117,67 @@
       }
     },
     {
+      "segment": "sun_care",
+      "size": {
+        "value": 747.0,
+        "unit": "usd_mn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "MarkNtel Advisors",
+        "url": "https://www.marknteladvisors.com/research-library/south-korea-sun-care-products-market-report.html",
+        "notes": "South Korea sun care products market: USD 747mn 2025, USD 805mn 2026, USD 995mn 2032. CONFLICTS with Grand View USD 330.3mn 2024 (2.3x gap) - definitional mismatch unresolved. MFDS production value for sunscreen (KRW 470.3bn 2025, ~USD 318mn) sits between the two but is PRODUCTION basis, not retail.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 0.747,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": {
+        "value": 43.0,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Samsung Securities (via Korea Herald)",
+        "url": "https://www.koreaherald.com/article/10467809",
+        "notes": "Projected +43% on-year surge in US e-commerce sales of Korean sun care products in 2025 (Samsung Securities report). Export-demand indicator for Korean sun care, NOT KR domestic retail growth - destination market is the US, e-commerce channel only. Same article: Kolmar Korea saw +88% on-year surge in US-bound OTC sunscreen products in 2024. No sunscreen-specific customs export value published (sunscreen has no separate HS line; sits inside skincare, which was 74.7% of the USD 11.4bn CY2025 cosmetics export total).",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 8.3,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025-2033",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Grand View Research (via ResearchAndMarkets listing)",
+        "url": "https://www.researchandmarkets.com/report/south-korea-suncare-cosmetic-market",
+        "notes": "CAGR 8.3% 2025-2033, from USD 330.3mn (2024) to USD 684.3mn (2033). Contrast MarkNtel CAGR 3.59% 2026-2032 for nominally the same market.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
       "segment": "colour_cosmetics",
-      "size": null,
+      "size": {
+        "value": 2.86,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Expert Market Research",
+        "url": "https://www.expertmarketresearch.com/reports/south-korea-colour-cosmetics-market",
+        "notes": "Forecast USD 5.07bn by 2035. Conflicts with MRFF USD 2.22bn 2024 (see companion claim). Domestic market measure; do NOT conflate with MFDS production KRW 2.68tn 2024 or export FOB.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 2.86,
+        "fx_note": "identity (no conversion)"
+      },
       "growth": {
         "value": 12.0,
         "unit": "percent",
@@ -132,7 +191,19 @@
         "metric": "growth_yoy",
         "tier": null
       },
-      "cagr": null,
+      "cagr": {
+        "value": 5.9,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2035",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Expert Market Research",
+        "url": "https://www.expertmarketresearch.com/reports/south-korea-colour-cosmetics-market",
+        "notes": "USD 2.86bn 2025 to USD 5.07bn 2035.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
       "export": {
         "value": 1.51,
         "unit": "usd_bn",
@@ -167,6 +238,39 @@
       }
     },
     {
+      "segment": "hair_care",
+      "size": {
+        "value": 1.8,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/south-korea-hair-care-market",
+        "notes": "Domestic South Korea hair care market. Forecast USD 2.4bn by 2034. Other aggregators cluster at USD 1.30-1.31bn 2024 (EMR/Research and Markets, not independently fetched) — spread flags definitional variance. No sub-segment values disclosed.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 1.8,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": null,
+      "cagr": {
+        "value": 3.23,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/south-korea-hair-care-market",
+        "notes": "USD 1.8bn 2025 to USD 2.4bn 2034.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
       "segment": "bath_shower",
       "size": null,
       "growth": null,
@@ -186,8 +290,55 @@
       }
     },
     {
+      "segment": "mens_grooming",
+      "size": {
+        "value": 1.16,
+        "unit": "krw_tn",
+        "currency": "KRW",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Korea Herald (citing Euromonitor International)",
+        "url": "https://www.koreaherald.com/view.php?ud=20220630000659",
+        "notes": "Euromonitor projection (made 2022) for Korean men's cosmetics market by 2025. Implies ~2.1% CAGR 2022-2025. Same definitional caveat as 2022 figure. Conflicts with FMI KR mens_skincare USD 1.2bn 2025 claim (FMI skincare-only figure exceeds this whole-market figure ~USD 0.85bn) — definitional mismatch, do not reconcile without normalising.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 0.7846,
+        "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
+      },
+      "growth": null,
+      "cagr": {
+        "value": 11.04,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025-2035",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Future Market Insights — Men's Skincare in Korea 2025-2035",
+        "url": "https://www.futuremarketinsights.com/reports/demand-and-trend-analysis-of-mens-skincare-product-in-korea",
+        "notes": "FMI forecast CAGR for Korea men's skincare, USD terms. Far above Euromonitor-implied ~2-3% for the segment 2022-2025 — treat as optimistic aggregator scenario.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
       "segment": "dermocosmetics",
-      "size": null,
+      "size": {
+        "value": 4.5,
+        "unit": "krw_tn",
+        "currency": "KRW",
+        "period": "2020",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Samjong KPMG via The Korea Herald",
+        "url": "https://www.koreaherald.com/article/2897219",
+        "notes": "KR dermocosmetics market KRW 4.5tn in 2020, up 17.6% vs five years prior (Samjong KPMG). Article's own USD conversion ~US$3.1bn. Value basis not stated by source; assumed consumer sell-through. cf Korea Cosmeceutical Education & Research Institute KRW 1.2tn for same year 2020 (narrower definition) and KERI KRW 4.5tn for 2022 — Korean sources conflict on definition. Article dated 2022-06-23.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 3.0438,
+        "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
+      },
       "growth": {
         "value": 13.0,
         "unit": "percent",

@@ -32,15 +32,22 @@ _METRIC_SOURCE_HINTS = {
 def scan_gaps(
     taxonomy_path: str | Path = PROJECT_ROOT / "config" / "taxonomy.yaml",
     processed_dir: str | Path = PROJECT_ROOT / "data" / "processed",
+    include_sub_segments: bool = False,
 ) -> list[dict]:
     """Walk segment x geography x metric combinations and report what's missing.
 
     Args:
         taxonomy_path: Path to config/taxonomy.yaml.
         processed_dir: Directory of processed segment JSON files.
+        include_sub_segments: Also walk every taxonomy sub-segment (a
+            sub-segment gap means no DataPoint carries that sub_segment for
+            the geography). Sub-segment coverage comes almost entirely from
+            paid databases (Passport/Statista sub-categories) via /ingest,
+            so this view is the research worklist, not a fetcher to-do.
 
     Returns:
-        List of gap dicts: {geography, segment, metric, status}.
+        List of gap dicts: {geography, segment, sub_segment, metric, status}.
+        sub_segment is None for segment-level gaps.
     """
     taxonomy_path = Path(taxonomy_path)
     processed_dir = Path(processed_dir)
@@ -50,9 +57,11 @@ def scan_gaps(
 
     geographies = [g["code"] for g in tax["geographies"]]
     segments = [s["id"] for s in tax["segments"]]
+    sub_segments = {s["id"]: (s.get("sub_segments") or []) for s in tax["segments"]}
 
-    # Index what exists: (geo, segment) -> set of metrics present
+    # Index what exists: (geo, segment) -> metrics; (geo, segment, sub) -> metrics
     present: dict[tuple[str, str], set[str]] = {}
+    sub_present: dict[tuple[str, str, str], set[str]] = {}
     if processed_dir.exists():
         for jf in sorted(processed_dir.glob("*.json")):
             try:
@@ -61,8 +70,12 @@ def scan_gaps(
                 logger.exception("Skipping malformed processed file %s", jf)
                 continue
             key = (payload.get("geography"), payload.get("segment"))
-            metrics = {dp["metric"] for dp in payload.get("data_points", [])}
-            present.setdefault(key, set()).update(metrics)
+            for dp in payload.get("data_points", []):
+                present.setdefault(key, set()).add(dp["metric"])
+                if dp.get("sub_segment"):
+                    sub_present.setdefault(
+                        (key[0], key[1], dp["sub_segment"]), set()
+                    ).add(dp["metric"])
 
     gaps: list[dict] = []
     for geo in geographies:
@@ -73,12 +86,30 @@ def scan_gaps(
                     gaps.append({
                         "geography": geo,
                         "segment": seg,
+                        "sub_segment": None,
                         "metric": metric,
                         "status": "no data" if not have else f"segment has {sorted(have)} only",
                     })
+            if not include_sub_segments:
+                continue
+            for sub in sub_segments[seg]:
+                sub_have = sub_present.get((geo, seg, sub), set())
+                for metric in CORE_METRICS:
+                    if metric not in sub_have:
+                        gaps.append({
+                            "geography": geo,
+                            "segment": seg,
+                            "sub_segment": sub,
+                            "metric": metric,
+                            "status": (
+                                "no data" if not sub_have
+                                else f"sub-segment has {sorted(sub_have)} only"
+                            ),
+                        })
     logger.info(
-        "Gap scan: %d gaps across %d geographies x %d segments x %d core metrics",
-        len(gaps), len(geographies), len(segments), len(CORE_METRICS),
+        "Gap scan: %d gaps across %d geographies x %d segments (%s sub-segments)",
+        len(gaps), len(geographies), len(segments),
+        "incl." if include_sub_segments else "excl.",
     )
     return gaps
 
@@ -114,13 +145,13 @@ def format_gaps_register(gaps: list[dict]) -> str:
         "",
         f"{len(gaps)} missing segment × geography × metric combinations.",
         "",
-        "| Geography | Segment | Metric | Status | Suggested source |",
-        "|---|---|---|---|---|",
+        "| Geography | Segment | Sub-segment | Metric | Status | Suggested source |",
+        "|---|---|---|---|---|---|",
     ]
     for gap in gaps:
         lines.append(
-            f"| {gap['geography']} | {gap['segment']} | {gap['metric']} "
-            f"| {gap['status']} | {suggest_source(gap)} |"
+            f"| {gap['geography']} | {gap['segment']} | {gap.get('sub_segment') or '—'} "
+            f"| {gap['metric']} | {gap['status']} | {suggest_source(gap)} |"
         )
     lines.append("")
     return "\n".join(lines)

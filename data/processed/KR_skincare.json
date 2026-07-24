@@ -1,7 +1,7 @@
 {
   "geography": "KR",
   "segment": "skincare",
-  "last_updated": "2026-07-22",
+  "last_updated": "2026-07-24",
   "data_points": [
     {
       "geography": "KR",
@@ -116,6 +116,44 @@
       "confidence": "HIGH",
       "methodology": null,
       "notes": "Korea skincare domestic retail growth"
+    },
+    {
+      "geography": "KR",
+      "segment": "skincare",
+      "sub_segment": "sheet_masks",
+      "metric": "penetration_rate",
+      "value": 85.0,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2026",
+      "period_type": "CY",
+      "value_basis": "NA",
+      "tier": null,
+      "source_name": "WifiTalents (Korea beauty industry statistics 2026)",
+      "source_url": "https://wifitalents.com/korea-beauty-industry-statistics/",
+      "date_accessed": "2026-07-24",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "85% of South Korean women use a sheet mask at least once a week (aggregator compilation). Same page: >90% of KR women who wear makeup daily practice double cleansing."
+    },
+    {
+      "geography": "KR",
+      "segment": "skincare",
+      "sub_segment": null,
+      "metric": "per_capita_spend",
+      "value": 100.0,
+      "unit": "usd",
+      "currency": "USD",
+      "period": "2026",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "WifiTalents (Korea beauty industry statistics 2026)",
+      "source_url": "https://wifitalents.com/korea-beauty-industry-statistics/",
+      "date_accessed": "2026-07-24",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "South Korea per-capita SKINCARE spend stated as 'exceeding $100 per person annually', described as highest in the world; recorded at 100 (floor of stated figure). Aggregator compilation — cross-check against existing KR per-capita datapoints before use."
     }
   ]
 }

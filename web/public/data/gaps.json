@@ -4,47 +4,7 @@
     "segment": "skincare",
     "sub_segment": null,
     "metric": "cagr_forecast",
-    "status": "segment has ['export_value', 'growth_yoy', 'market_size'] only",
-    "suggested_source": "euromonitor_passport, bmi_research, statista"
-  },
-  {
-    "geography": "KR",
-    "segment": "sun_care",
-    "sub_segment": null,
-    "metric": "market_size",
-    "status": "no data",
-    "suggested_source": "euromonitor_passport, statista, tavily"
-  },
-  {
-    "geography": "KR",
-    "segment": "sun_care",
-    "sub_segment": null,
-    "metric": "growth_yoy",
-    "status": "no data",
-    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
-  },
-  {
-    "geography": "KR",
-    "segment": "sun_care",
-    "sub_segment": null,
-    "metric": "cagr_forecast",
-    "status": "no data",
-    "suggested_source": "euromonitor_passport, bmi_research, statista"
-  },
-  {
-    "geography": "KR",
-    "segment": "colour_cosmetics",
-    "sub_segment": null,
-    "metric": "market_size",
-    "status": "segment has ['export_value', 'growth_yoy'] only",
-    "suggested_source": "euromonitor_passport, statista, tavily"
-  },
-  {
-    "geography": "KR",
-    "segment": "colour_cosmetics",
-    "sub_segment": null,
-    "metric": "cagr_forecast",
-    "status": "segment has ['export_value', 'growth_yoy'] only",
+    "status": "segment has ['export_value', 'growth_yoy', 'market_size', 'penetration_rate', 'per_capita_spend'] only",
     "suggested_source": "euromonitor_passport, bmi_research, statista"
   },
   {
@@ -75,25 +35,9 @@
     "geography": "KR",
     "segment": "hair_care",
     "sub_segment": null,
-    "metric": "market_size",
-    "status": "segment has ['export_value'] only",
-    "suggested_source": "euromonitor_passport, statista, tavily"
-  },
-  {
-    "geography": "KR",
-    "segment": "hair_care",
-    "sub_segment": null,
     "metric": "growth_yoy",
-    "status": "segment has ['export_value'] only",
+    "status": "segment has ['cagr_forecast', 'export_value', 'market_size'] only",
     "suggested_source": "euromonitor_passport, korea_mfds, tavily"
-  },
-  {
-    "geography": "KR",
-    "segment": "hair_care",
-    "sub_segment": null,
-    "metric": "cagr_forecast",
-    "status": "segment has ['export_value'] only",
-    "suggested_source": "euromonitor_passport, bmi_research, statista"
   },
   {
     "geography": "KR",
@@ -171,25 +115,9 @@
     "geography": "KR",
     "segment": "mens_grooming",
     "sub_segment": null,
-    "metric": "market_size",
-    "status": "no data",
-    "suggested_source": "euromonitor_passport, statista, tavily"
-  },
-  {
-    "geography": "KR",
-    "segment": "mens_grooming",
-    "sub_segment": null,
     "metric": "growth_yoy",
-    "status": "no data",
+    "status": "segment has ['cagr_forecast', 'market_size'] only",
     "suggested_source": "euromonitor_passport, korea_mfds, tavily"
-  },
-  {
-    "geography": "KR",
-    "segment": "mens_grooming",
-    "sub_segment": null,
-    "metric": "cagr_forecast",
-    "status": "no data",
-    "suggested_source": "euromonitor_passport, bmi_research, statista"
   },
   {
     "geography": "KR",
@@ -219,16 +147,8 @@
     "geography": "KR",
     "segment": "dermocosmetics",
     "sub_segment": null,
-    "metric": "market_size",
-    "status": "segment has ['growth_yoy'] only",
-    "suggested_source": "euromonitor_passport, statista, tavily"
-  },
-  {
-    "geography": "KR",
-    "segment": "dermocosmetics",
-    "sub_segment": null,
     "metric": "cagr_forecast",
-    "status": "segment has ['growth_yoy'] only",
+    "status": "segment has ['growth_yoy', 'market_size'] only",
     "suggested_source": "euromonitor_passport, bmi_research, statista"
   },
   {
@@ -260,32 +180,16 @@
     "segment": "skincare",
     "sub_segment": null,
     "metric": "growth_yoy",
-    "status": "segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only",
+    "status": "segment has ['cagr_forecast', 'gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue', 'trade_margin'] only",
     "suggested_source": "euromonitor_passport, tavily"
-  },
-  {
-    "geography": "IN",
-    "segment": "skincare",
-    "sub_segment": null,
-    "metric": "cagr_forecast",
-    "status": "segment has ['gross_margin', 'import_dependence', 'import_value', 'market_share', 'market_size', 'retail_price', 'revenue'] only",
-    "suggested_source": "euromonitor_passport, bmi_research, statista"
   },
   {
     "geography": "IN",
     "segment": "colour_cosmetics",
     "sub_segment": null,
     "metric": "growth_yoy",
-    "status": "segment has ['market_share', 'market_size'] only",
+    "status": "segment has ['cagr_forecast', 'market_share', 'market_size', 'trade_margin'] only",
     "suggested_source": "euromonitor_passport, tavily"
-  },
-  {
-    "geography": "IN",
-    "segment": "colour_cosmetics",
-    "sub_segment": null,
-    "metric": "cagr_forecast",
-    "status": "segment has ['market_share', 'market_size'] only",
-    "suggested_source": "euromonitor_passport, bmi_research, statista"
   },
   {
     "geography": "IN",
@@ -308,7 +212,7 @@
     "segment": "hair_care",
     "sub_segment": null,
     "metric": "growth_yoy",
-    "status": "segment has ['cagr_forecast', 'import_value', 'market_size'] only",
+    "status": "segment has ['cagr_forecast', 'import_value', 'market_share', 'market_size'] only",
     "suggested_source": "euromonitor_passport, tavily"
   },
   {
@@ -405,22 +309,6 @@
     "sub_segment": null,
     "metric": "cagr_forecast",
     "status": "no data",
-    "suggested_source": "euromonitor_passport, bmi_research, statista"
-  },
-  {
-    "geography": "IN",
-    "segment": "dermocosmetics",
-    "sub_segment": null,
-    "metric": "growth_yoy",
-    "status": "segment has ['market_size'] only",
-    "suggested_source": "euromonitor_passport, tavily"
-  },
-  {
-    "geography": "IN",
-    "segment": "dermocosmetics",
-    "sub_segment": null,
-    "metric": "cagr_forecast",
-    "status": "segment has ['market_size'] only",
     "suggested_source": "euromonitor_passport, bmi_research, statista"
   },
   {

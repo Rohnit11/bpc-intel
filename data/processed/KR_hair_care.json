@@ -1,7 +1,7 @@
 {
   "geography": "KR",
   "segment": "hair_care",
-  "last_updated": "2026-07-21",
+  "last_updated": "2026-07-24",
   "data_points": [
     {
       "geography": "KR",
@@ -40,6 +40,44 @@
       "confidence": "HIGH",
       "methodology": null,
       "notes": "HS 3305 Korea exports to World (UN Comtrade, FOB USD)."
+    },
+    {
+      "geography": "KR",
+      "segment": "hair_care",
+      "sub_segment": null,
+      "metric": "market_size",
+      "value": 1.8,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "period_type": "CY",
+      "value_basis": "RETAIL",
+      "tier": null,
+      "source_name": "IMARC Group",
+      "source_url": "https://www.imarcgroup.com/south-korea-hair-care-market",
+      "date_accessed": "2026-07-24",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "Domestic South Korea hair care market. Forecast USD 2.4bn by 2034. Other aggregators cluster at USD 1.30-1.31bn 2024 (EMR/Research and Markets, not independently fetched) — spread flags definitional variance. No sub-segment values disclosed."
+    },
+    {
+      "geography": "KR",
+      "segment": "hair_care",
+      "sub_segment": null,
+      "metric": "cagr_forecast",
+      "value": 3.23,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026-2034",
+      "period_type": "range",
+      "value_basis": "NA",
+      "tier": null,
+      "source_name": "IMARC Group",
+      "source_url": "https://www.imarcgroup.com/south-korea-hair-care-market",
+      "date_accessed": "2026-07-24",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "USD 1.8bn 2025 to USD 2.4bn 2034."
     }
   ]
 }

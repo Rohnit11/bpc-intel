@@ -77,7 +77,19 @@
         "fx_note": "identity (no conversion)"
       },
       "growth": null,
-      "cagr": null,
+      "cagr": {
+        "value": 5.99,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-facial-serum-market",
+        "notes": "IMARC: USD 203.4mn (2025) to USD 343.4mn (2034), CAGR 5.99% 2026-2034. Grand View Research horizon page reportedly shows 7.9% CAGR 2026-2033 but page is bot-blocked (HTTP 403), could not verify, so excluded as a claim.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
       "export": null
     },
     {
@@ -143,7 +155,19 @@
         "fx_note": "identity (no conversion)"
       },
       "growth": null,
-      "cagr": null,
+      "cagr": {
+        "value": 8.41,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "FY25-FY32",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Markets and Data",
+        "url": "https://www.marketsandata.com/industry-reports/india-color-cosmetics-market",
+        "notes": "USD 4.80bn FY2024 to USD 9.15bn FY2032. Face cosmetics cited as leading sub-segment (share not quantified).",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
       "export": null
     },
     {
@@ -262,8 +286,32 @@
         "value_usd_bn": 0.2803,
         "fx_note": "identity (no conversion)"
       },
-      "growth": null,
-      "cagr": null,
+      "growth": {
+        "value": 60.0,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "Jul-Sep 2025",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Nykaa quarterly earnings materials via Insight Korea",
+        "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=247479",
+        "notes": "[CORRIDOR] K-beauty transaction value (GMV) on Nykaa grew MORE THAN 60% YoY in Jul-Sep 2025 per Nykaa quarterly earnings materials. Scope is all K-beauty on Nykaa, not derma-only — proxy for corridor derma momentum since Nykaa is the exclusive conduit for the K-derma wave: Medicube (APR) omnichannel India launch on Nykaa 2026-02-20; Aestura (Amorepacific) launched earlier; Illiyoon (Amorepacific) exclusive Nykaa launch Mar-2026. No brand-level India revenue published yet for any of the three. Article dated 2026-06-02.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 10.3,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2030",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "P&S Market Research (India Skincare Dermacosmetics)",
+        "url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
+        "notes": "10.3% CAGR 2024-2030, reaching US$505.0mn by 2030 (from US$256.2mn 2023). Western region highest regional CAGR at 10.6%. Same narrow definition caveat as the P&S market_size claim.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
       "export": null
     }
   ],

@@ -55,6 +55,31 @@ export const getInsight = cache((id: string): Insight | null => {
   return JSON.parse(fs.readFileSync(full, "utf-8")) as Insight;
 });
 
+/** An /entry-analysis artifact by bundle-relative id (e.g. "porter_skincare",
+ * "entry_scorecard", "profiles/amorepacific") — null until it's been
+ * generated. Pages must render a "not yet analyzed" state on null, never 404. */
+export const getAnalysisArtifact = cache(<T>(rel: string): T | null => {
+  const full = path.join(DATA_DIR, "analysis", `${rel}.json`);
+  if (!fs.existsSync(full)) return null;
+  return JSON.parse(fs.readFileSync(full, "utf-8")) as T;
+});
+
+/** All artifact ids currently in the bundle (recursive, "/"-joined). */
+export function listAnalysisArtifacts(): string[] {
+  const dir = path.join(DATA_DIR, "analysis");
+  if (!fs.existsSync(dir)) return [];
+  const out: string[] = [];
+  const walk = (sub: string) => {
+    for (const entry of fs.readdirSync(path.join(dir, sub), { withFileTypes: true })) {
+      const rel = sub ? `${sub}/${entry.name}` : entry.name;
+      if (entry.isDirectory()) walk(rel);
+      else if (entry.name.endsWith(".json")) out.push(rel.replace(/\.json$/, ""));
+    }
+  };
+  walk("");
+  return out.sort();
+}
+
 export const getKoreaExportsChart = cache((): ChartFigure[] =>
   readJson("charts/korea_exports_by_segment.json"),
 );

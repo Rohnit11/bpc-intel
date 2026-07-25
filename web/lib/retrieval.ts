@@ -117,10 +117,20 @@ const SYNONYMS: Record<string, string[]> = {
 };
 
 function tokenize(s: string): string[] {
-  return s
-    .toLowerCase()
-    .split(/[^a-z0-9_]+/)
-    .filter((t) => t.length > 1 && !STOPWORDS.has(t));
+  const out: string[] = [];
+  for (const raw of s.toLowerCase().split(/[^a-z0-9_]+/)) {
+    if (!raw) continue;
+    // Segment/artifact ids are snake_case ("sun_care", "entry_mode") but people
+    // type them with spaces ("sun care"). Emit BOTH the compound token and its
+    // parts, so an id matches whichever form the question used — without this,
+    // every multi-word segment is unreachable by natural-language query.
+    if (raw.includes("_")) {
+      out.push(raw, ...raw.split("_"));
+    } else {
+      out.push(raw);
+    }
+  }
+  return out.filter((t) => t.length > 1 && !STOPWORDS.has(t));
 }
 
 function expand(tokens: string[]): string[] {

@@ -180,10 +180,41 @@ interface Scored<T> {
 }
 
 /** IDF-weighted overlap. Docs are short, so length normalisation is light. */
-function scoreDocs<T extends { text: string; title?: string }>(
-  docs: T[],
-  queryTokens: string[],
-): Scored<T>[] {
+/**
+ * Which geography the question is explicitly about, or null if it doesn't say.
+ * Both records carry a structured `geography` field, so an explicit "India"
+ * should be treated as a constraint rather than as one more low-IDF word that
+ * happens to appear in Korean records too.
+ */
+function queryGeography(queryTokens: string[]): "KR" | "IN" | null {
+  const t = new Set(queryTokens);
+  const kr = t.has("korea") || t.has("korean") || t.has("kr");
+  const inn = t.has("india") || t.has("indian");
+  if (kr === inn) return null; // neither, or both — no constraint
+  return kr ? "KR" : "IN";
+}
+
+/**
+ * Segment ids the question names in full, e.g. "sun care" -> sun_care.
+ * Requires every part to be present, so "sun care" does not match oral_care /
+ * hair_care on the shared word "care" — which it otherwise does, since "care"
+ * is one of the most common tokens in the corpus.
+ */
+function querySegments(queryTokens: string[], docs: { segment?: string }[]): Set<string> {
+  const q = new Set(queryTokens);
+  const hits = new Set<string>();
+  for (const seg of new Set(docs.map((d) => d.segment).filter(Boolean) as string[])) {
+    const parts = seg.split("_");
+    if (parts.every((p) => q.has(p))) hits.add(seg);
+  }
+  return hits;
+}
+
+function scoreDocs<
+  T extends { text: string; title?: string; geography?: string; segment?: string },
+>(docs: T[], queryTokens: string[]): Scored<T>[] {
+  const wantGeo = queryGeography(queryTokens);
+  const wantSegs = querySegments(queryTokens, docs);
   const N = docs.length;
   const docTokens = docs.map((d) => tokenize(`${d.title ?? ""} ${d.text}`));
   const df = new Map<string, number>();
@@ -203,7 +234,23 @@ function scoreDocs<T extends { text: string; title?: string }>(
       const idf = Math.log(1 + N / (1 + (df.get(q) ?? 0)));
       score += idf * (f / (f + 1.2)); // saturating tf
     }
-    if (score > 0) scored.push({ item: docs[i], score: score / Math.sqrt(toks.length) });
+    if (score <= 0) continue;
+    // Length normalisation, but gentler than sqrt(n): a judgment's passage is
+    // long precisely BECAUSE it carries more evidence, and sqrt penalised the
+    // best-evidenced records hard enough to push them under the cut (the India
+    // sun-care entry mode — STRONG, import_corridor — ranked 12th while the
+    // Korean "research needed" stub ranked 4th).
+    let final = score / Math.pow(toks.length, 0.35);
+    // Honour an explicit geography in the question. Same-segment records for
+    // the other geography are near-identical lexically, so without this the
+    // wrong one wins on incidental term overlap.
+    const geo = (docs[i] as { geography?: string }).geography;
+    if (wantGeo && geo) final *= geo === wantGeo ? 1.35 : 0.45;
+    // Same for an explicitly named segment: "sun care" must not lose to
+    // "oral care" on the shared token "care".
+    const seg = (docs[i] as { segment?: string }).segment;
+    if (wantSegs.size > 0 && seg) final *= wantSegs.has(seg) ? 1.6 : 0.5;
+    scored.push({ item: docs[i], score: final });
   }
   return scored.sort((a, b) => b.score - a.score);
 }

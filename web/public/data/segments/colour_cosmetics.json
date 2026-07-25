@@ -219,7 +219,19 @@
       "value_usd_bn": 3.46,
       "fx_note": "identity (no conversion)"
     },
-    "growth": null,
+    "growth": {
+      "value": 6.13,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "NA",
+      "confidence": "ESTIMATE",
+      "source": "Market Research Future (derived)",
+      "url": "https://www.marketresearchfuture.com/reports/india-colour-cosmetics-market-47939",
+      "notes": "Organised/unorganised coverage not stated by the source. India colour cosmetics carries a significant unorganised and counterfeit tail that aggregator sizing typically excludes. Do not present as an audited market-growth reading.",
+      "metric": "growth_yoy",
+      "tier": null
+    },
     "cagr": {
       "value": 8.41,
       "unit": "percent",
@@ -428,6 +440,19 @@
         "url": "https://rekonsile.com/amazon-india-fee-revision-september-2025-complete-guide",
         "notes": "Channel: e-commerce — Amazon.in referral fee, Beauty (Make-up) category, INR 500-1,000 price band: cut from 7.5% to 3.5% effective Sep-2025; INR 300-500 band cut from 4.5% to 2.0%.",
         "metric": "trade_margin",
+        "tier": null
+      },
+      {
+        "value": 6.13,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Market Research Future (derived)",
+        "url": "https://www.marketresearchfuture.com/reports/india-colour-cosmetics-market-47939",
+        "notes": "Organised/unorganised coverage not stated by the source. India colour cosmetics carries a significant unorganised and counterfeit tail that aggregator sizing typically excludes. Do not present as an audited market-growth reading.",
+        "metric": "growth_yoy",
         "tier": null
       }
     ]

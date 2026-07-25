@@ -258,6 +258,20 @@
       "segment": "sun_care"
     },
     {
+      "value": 406.58,
+      "unit": "usd_mn",
+      "currency": "USD",
+      "period": "2023",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "Credence Research",
+      "url": "https://www.credenceresearch.com/report/india-k-beauty-product-market",
+      "notes": "[CORRIDOR] India K-beauty product market, USD 406.58mn (2023), forecast USD 959.33mn by 2032. Organised/unorganised coverage not stated; grey-market/parallel-import K-beauty is a known and unmeasured channel in India, so any of these figures likely undercounts actual sell-through. cf MarkNtel USD 310mn (2025) — MarkNtel's later-year figure is 24% BELOW this earlier-year figure; the two cannot both be right, definitional mismatch unresolved, do not average.",
+      "metric": "market_size",
+      "tier": null,
+      "segment": "emerging_adjacencies"
+    },
+    {
       "value": 0.14006,
       "unit": "usd_bn",
       "currency": "USD",
@@ -342,6 +356,20 @@
       "segment": "total_bpc"
     },
     {
+      "value": 10.0,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2024-2032",
+      "value_basis": "NA",
+      "confidence": "LOW",
+      "source": "Credence Research",
+      "url": "https://www.credenceresearch.com/report/india-k-beauty-product-market",
+      "notes": "[CORRIDOR] Credence: India K-beauty CAGR 10.00% 2024-2032 (USD 406.58mn 2023 to USD 959.33mn 2032). Organised/unorganised coverage not stated. cf MarkNtel 18.06% 2026-2032 — 1.8x gap, and the two size bases contradict each other outright; definitional mismatch unresolved, do not average.",
+      "metric": "cagr_forecast",
+      "tier": null,
+      "segment": "emerging_adjacencies"
+    },
+    {
       "value": 44.4,
       "unit": "usd_mn",
       "currency": "USD",
@@ -354,6 +382,20 @@
       "metric": "market_size",
       "tier": null,
       "segment": "skincare"
+    },
+    {
+      "value": 310.0,
+      "unit": "usd_mn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "MarkNtel Advisors",
+      "url": "https://www.marknteladvisors.com/research-library/india-k-beauty-products-market-report.html",
+      "notes": "[CORRIDOR] India K-beauty products market, USD 310mn (2025), forecast USD 872mn by 2032. Page also states facial skincare is ~65% of the K-beauty mix and female consumers ~80%. It cites India BPC at USD 28bn (2024) but does NOT compute K-beauty's share of that, so no share figure is claimed here. Organised/unorganised coverage not stated; grey-market and parallel-import K-beauty is a known unmeasured channel in India, so this likely undercounts sell-through. cf Credence Research USD 406.58mn (2023) — Credence's EARLIER-year level EXCEEDS this LATER-year level on a growing category, a direct contradiction; definitional mismatch unresolved, do not average.",
+      "metric": "market_size",
+      "tier": null,
+      "segment": "emerging_adjacencies"
     },
     {
       "value": 3139.31,
@@ -382,6 +424,34 @@
       "metric": "market_size",
       "tier": null,
       "segment": "total_bpc"
+    },
+    {
+      "value": 18.06,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026-2032",
+      "value_basis": "NA",
+      "confidence": "LOW",
+      "source": "MarkNtel Advisors",
+      "url": "https://www.marknteladvisors.com/research-library/india-k-beauty-products-market-report.html",
+      "notes": "[CORRIDOR] MarkNtel: India K-beauty CAGR 18.06% 2026-2032 (USD 310mn 2025 to USD 872mn 2032). Organised/unorganised coverage not stated. cf Credence Research 10.00% 2024-2032 — a 1.8x gap on the growth rate on top of a contradictory size base; definitional mismatch unresolved, do not average.",
+      "metric": "cagr_forecast",
+      "tier": null,
+      "segment": "emerging_adjacencies"
+    },
+    {
+      "value": 11.1,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026-2033",
+      "value_basis": "NA",
+      "confidence": "LOW",
+      "source": "Persistence Market Research",
+      "url": "https://www.persistencemarketresearch.com/market-research/skin-toner-market.asp",
+      "notes": "[CORRIDOR] India named the fastest-growing country in the global skin toner market at 11.1% CAGR 2026-2033, vs global 6.1% (global US$1.5bn 2026 to US$2.3bn 2033 on the same page). Toners/essences are a core K-beauty format and the India acceleration is attributed to younger consumers and e-commerce adoption. SCOPE CAVEAT: 'skin toner' scope - essences are not explicitly named as included. No India value figure is disclosed on the page, only the country CAGR. Organised/unorganised coverage not stated.",
+      "metric": "cagr_forecast",
+      "tier": null,
+      "segment": "skincare"
     },
     {
       "value": 26.3,
@@ -583,6 +653,20 @@
     }
   ],
   "trade": [
+    {
+      "value": 33.45,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2024",
+      "value_basis": "NA",
+      "confidence": "ESTIMATE",
+      "source": "MFDS (식품의약품안전처) 2024 cosmetics production statistics press release, via Korea Cosmetic Association",
+      "url": "https://kcia.or.kr/inc/down.php?dir=BOARD&file_name=202505_174830652594232_2.pdf&rename=5.27+%ED%99%94%EC%9E%A5%ED%92%88%EC%A0%95%EC%B1%85%EA%B3%BC.pdf",
+      "notes": "All pack/mask formats, not sheet-only. PRODUCTION basis, nominal KRW — the fastest-growing of the three MFDS skincare sub-types disclosed for 2024 (vs +29.52% lotion/cream/essence/oil and +30.03% foam cleanser). Growth is inflated by export-bound output; it is not evidence of domestic demand growth at that rate. [CORRIDOR] Pack/mask is the format most directly associated with K-beauty export flows, including into India.",
+      "metric": "growth_yoy",
+      "tier": null,
+      "segment": "skincare"
+    },
     {
       "value": 0.065624,
       "unit": "usd_bn",

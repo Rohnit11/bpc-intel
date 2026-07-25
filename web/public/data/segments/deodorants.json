@@ -2,18 +2,174 @@
   "segment": "deodorants",
   "KR": {
     "segment": "deodorants",
-    "size": null,
-    "growth": null,
+    "size": {
+      "value": 63.7,
+      "unit": "krw_bn",
+      "currency": "KRW",
+      "period": "2018",
+      "value_basis": "RETAIL",
+      "confidence": "MEDIUM",
+      "source": "Euromonitor International via Pharm News (파맄뉴스)",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=98336",
+      "notes": "Korean domestic deodorant market 637억원 (KRW 63.7bn) in 2018, up from 593억원 (KRW 59.3bn) in 2017; figures attributed by the article to Euromonitor International's Beauty & Personal Care analysis. ~USD 43.1mn @ USD/KRW 1478.40 pinned 2026-07-21. SCOPE CAVEAT: domestic RETAIL sell-through, not export FOB or MFDS production value. STALE VINTAGE: 2018 is the most recent Korean-language figure that could be verified on a fetched page; no newer primary figure located. cf Actual Market Research >USD 160mn (2023) — 3.7x higher on a USD basis, definitional mismatch unresolved, do not average.",
+      "metric": "market_size",
+      "tier": null
+    },
+    "growth": {
+      "value": 7.0,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2018",
+      "value_basis": "NA",
+      "confidence": "MEDIUM",
+      "source": "Euromonitor International via Pharm News (파맄뉴스)",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=98336",
+      "notes": "Article states the Korean deodorant market recorded growth 'in the 7% range' (7%대의 성장률) moving from 593억원 (2017) to 637억원 (2018); implied arithmetic growth is 7.4%. Attributed to Euromonitor. STALE VINTAGE: 2018. Growth is on domestic RETAIL value in KRW.",
+      "metric": "growth_yoy",
+      "tier": null
+    },
     "cagr": null,
     "export": null,
-    "points": []
+    "points": [
+      {
+        "value": 63.7,
+        "unit": "krw_bn",
+        "currency": "KRW",
+        "period": "2018",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "Euromonitor International via Pharm News (파맄뉴스)",
+        "url": "https://www.pharmnews.com/news/articleView.html?idxno=98336",
+        "notes": "Korean domestic deodorant market 637억원 (KRW 63.7bn) in 2018, up from 593억원 (KRW 59.3bn) in 2017; figures attributed by the article to Euromonitor International's Beauty & Personal Care analysis. ~USD 43.1mn @ USD/KRW 1478.40 pinned 2026-07-21. SCOPE CAVEAT: domestic RETAIL sell-through, not export FOB or MFDS production value. STALE VINTAGE: 2018 is the most recent Korean-language figure that could be verified on a fetched page; no newer primary figure located. cf Actual Market Research >USD 160mn (2023) — 3.7x higher on a USD basis, definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 7.0,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2018",
+        "value_basis": "NA",
+        "confidence": "MEDIUM",
+        "source": "Euromonitor International via Pharm News (파맄뉴스)",
+        "url": "https://www.pharmnews.com/news/articleView.html?idxno=98336",
+        "notes": "Article states the Korean deodorant market recorded growth 'in the 7% range' (7%대의 성장률) moving from 593억원 (2017) to 637억원 (2018); implied arithmetic growth is 7.4%. Attributed to Euromonitor. STALE VINTAGE: 2018. Growth is on domestic RETAIL value in KRW.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      {
+        "value": 160.0,
+        "unit": "usd_mn",
+        "currency": "USD",
+        "period": "2023",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Actual Market Research",
+        "url": "https://www.actualmarketresearch.com/product/south-korea-deodorant-market",
+        "notes": "Stated as 'valued at more than USD 160 Million in 2023' — a floor, not a point estimate. Value basis not stated by source; assumed consumer sell-through. cf Euromonitor-via-Pharm News KRW 63.7bn (2018) = ~USD 43mn — 3.7x gap, definitional mismatch unresolved (aggregator scope may include antiperspirant/body-mist adjacencies), do not average. Statista Consumer Market Outlook reportedly shows US$41.42mn for 2025 but all figures on the Statista page are masked behind a paywall, so not claimed.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 59.0,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2025",
+        "value_basis": "NA",
+        "confidence": "HIGH",
+        "source": "Euromonitor International",
+        "url": "https://www.euromonitor.com/deodorants-in-south-korea/report",
+        "notes": "Category leader share: 'Deodorants in South Korea in 2025 remained highly concentrated' with 'Beiersdorf Korea Ltd (Nivea) holding a commanding share of 59%'. Text verified on the fetched Euromonitor report-overview page; the underlying value figures on that page are paywalled. Highly concentrated category structure is the key entry-barrier read for this segment.",
+        "metric": "market_share",
+        "tier": null
+      }
+    ]
   },
   "IN": {
     "segment": "deodorants",
-    "size": null,
+    "size": {
+      "value": 1.0,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "IMARC Group",
+      "url": "https://www.imarcgroup.com/india-deodorants-market",
+      "notes": "SCOPE CAVEAT: IMARC scope = sprays, roll-ons, creams, gels, wipes, sticks and others. Organised/unorganised coverage not stated; the source notes competition from both organised and unorganised players but does not say which its sizing covers. Value is rounded to one decimal by the source (USD 1.0bn), so precision is low.",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 1.0,
+      "fx_note": "identity (no conversion)"
+    },
     "growth": null,
-    "cagr": null,
+    "cagr": {
+      "value": 3.1,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026-2034",
+      "value_basis": "NA",
+      "confidence": "LOW",
+      "source": "IMARC Group",
+      "url": "https://www.imarcgroup.com/india-deodorants-market",
+      "notes": "IMARC: USD 1.0bn (2025) to USD 1.4bn (2034), CAGR 3.10% 2026-2034. Organised/unorganised coverage not stated.",
+      "metric": "cagr_forecast",
+      "tier": null
+    },
     "export": null,
-    "points": []
+    "points": [
+      {
+        "value": 1.0,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-deodorants-market",
+        "notes": "SCOPE CAVEAT: IMARC scope = sprays, roll-ons, creams, gels, wipes, sticks and others. Organised/unorganised coverage not stated; the source notes competition from both organised and unorganised players but does not say which its sizing covers. Value is rounded to one decimal by the source (USD 1.0bn), so precision is low.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 3.1,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-deodorants-market",
+        "notes": "IMARC: USD 1.0bn (2025) to USD 1.4bn (2034), CAGR 3.10% 2026-2034. Organised/unorganised coverage not stated.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": 7.8,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2035",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Expert Market Research",
+        "url": "https://www.expertmarketresearch.com/reports/india-deodorant-market",
+        "notes": "\"India Deodorant Market is set to grow at a CAGR of around 7.80% during 2026-2035\", base year 2025. Scope = gel, cream, spray, roll-on, stick, wipes, others; branded products across supermarkets, hypermarkets, convenience stores and online. Organised/unorganised coverage not stated. CONFLICT: cf IMARC 3.10% (2026-2034) and Bonafide Research 9.13% (2024-2029) — the three forecasts span 3.10-9.13% on essentially the same product scope. Do not average.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": 9.13,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2029",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Bonafide Research",
+        "url": "https://www.bonafideresearch.com/product/170410391/india-deodorant-market",
+        "notes": "\"forecasted to grow at over 9.13% CAGR from 2024 to 2029\". Scope = spray, roll-on, gel, stick, creams, wipes, others; offline + online. No base-year value is disclosed on the teaser page, so no market_size claim is recorded from this source. Organised/unorganised coverage not stated. CONFLICT: cf IMARC 3.10% (2026-2034) and Expert Market Research 7.80% (2026-2035) — a ~3x spread between the extremes. 6Wresearch publishes the same 9.13% figure but states no year range on its page, so it is treated as the same underlying estimate rather than independent corroboration. Do not average.",
+        "metric": "cagr_forecast",
+        "tier": null
+      }
+    ]
   }
 }

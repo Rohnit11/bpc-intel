@@ -247,6 +247,84 @@
           "notes": "Reported as 'more than 9% CAGR' to 2027-28 for India facial creams & gels; 9.0 is the stated floor, actual forecast is above this. Forecast base year not stated on page; period recorded as approximate.",
           "metric": "cagr_forecast",
           "tier": null
+        },
+        {
+          "value": 11.1,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2033",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Persistence Market Research",
+          "url": "https://www.persistencemarketresearch.com/market-research/skin-toner-market.asp",
+          "notes": "[CORRIDOR] India named the fastest-growing country in the global skin toner market at 11.1% CAGR 2026-2033, vs global 6.1% (global US$1.5bn 2026 to US$2.3bn 2033 on the same page). Toners/essences are a core K-beauty format and the India acceleration is attributed to younger consumers and e-commerce adoption. SCOPE CAVEAT: 'skin toner' scope - essences are not explicitly named as included. No India value figure is disclosed on the page, only the country CAGR. Organised/unorganised coverage not stated.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 3.0,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026",
+          "value_basis": "NA",
+          "confidence": "MEDIUM",
+          "source": "Statista Market Insights",
+          "url": "https://www.statista.com/outlook/cmo/beauty-personal-care/skin-care/india/",
+          "notes": "Statista Consumer Market Outlook 'Revenue Change (2026): 3.0%' for India Skin Care, against a projected 2026 revenue of US$10.63bn. Underlying basis is consumer sell-through (RETAIL); value_basis NA because the metric is a percentage. Organised/unorganised coverage not stated by Statista. SCOPE CAVEAT: Statista's own forward CAGR on the same page is only 2.76% (2026-2031), far below the 7-16% CAGRs aggregators publish for India skincare (IMARC 7.49% 2026-2034, TechSci 15.78% to 2030) - the YoY figure sits on a much more conservative revenue series, do not read it alongside those CAGRs without normalising.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        {
+          "value": 7.8,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2035",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Expert Market Research",
+          "url": "https://www.expertmarketresearch.com/reports/india-body-lotion-market",
+          "notes": "SCOPE CAVEAT: India body lotion only, not full body_care. CAGR 7.80% 2026-2035, consistent with the stated USD 686.62mn (2025) to USD 1455.14mn (2035) trajectory. Organised/unorganised coverage not stated.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 7.35,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2032",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "6Wresearch",
+          "url": "https://www.6wresearch.com/industry-report/india-lip-balm-market-outlook",
+          "notes": "SCOPE CAVEAT: India LIP BALM only, not all non-colour lip care (excludes lip masks, lip scrubs, medicated lip treatments). Organised/unorganised coverage not stated. Page also reports lip balm IMPORT value growth of 24.98% 2023-2024 and import CAGR 35.51% 2020-2024 - those are customs import flows, not market growth, so not recorded as market metrics here. No market size value is disclosed on the free page. cf IMARC 6.11% (2026-2034) for the wider India lip care products category - 1.2x gap on a wider scope, both retained, do not average.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 6.11,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-lip-care-products-market",
+          "notes": "IMARC CAGR 6.11% 2026-2034, internally consistent with its own USD 231.4mn (2025) to USD 405.5mn (2034) trajectory. Covers the whole non-colour lip care category (balms, scrubs, others). cf 6Wresearch 7.35% (2026-2032) for India lip balm alone - narrower scope, higher rate; both recorded, definitional difference unresolved, do not average. Organised/unorganised coverage not stated.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 6.35,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Deep Market Insights",
+          "url": "https://deepmarketinsights.com/vista/insights/hand-cream-market/india",
+          "notes": "SCOPE CAVEAT: India HAND CREAM only, not the full hand_care sub-segment (excludes hand serums, cuticle/nail-adjacent care; hand wash and sanitiser sit outside skincare). WARNING: the same page is internally inconsistent - it states India hand cream 'worth USD 20.71 in 2025' and 'USD 36.05 by 2034' with NO unit given, alongside a 'Moisturizing: USD 9.38 billion' product line that cannot be reconciled with a ~USD 20-36 country market. The unit-free size figures are therefore NOT recorded as claims; only the explicitly stated CAGR is. Page also states India = 4.5% of the global hand cream market in 2025 but does not give the global value on the India page, so that share cannot be used to back out a size. For context only (not a claim, and not combined into one): SkyQuest puts the GLOBAL hand cream market at USD 465.66mn in 2024, which would make the unit-free India figures read as millions - cross-source inference, not recorded as evidence. Organised/unorganised coverage not stated.",
+          "metric": "cagr_forecast",
+          "tier": null
         }
       ],
       "imports": {
@@ -675,7 +753,47 @@
         "metric": "market_size",
         "tier": null
       },
-      "growth": [],
+      "growth": [
+        {
+          "value": 5.36,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-perfume-market",
+          "notes": "PERFUME-ONLY scope, the closest match to the taxonomy 'fragrances' segment (premium/mass/niche perfume): IMARC India perfume USD 1,250.02mn (2025) to USD 1,999.32mn (2034), CAGR 5.36% 2026-2034. Page states no deodorant coverage. Organised/unorganised coverage not stated. cf the same publisher's perfumes-AND-deodorants page at 10.26% (2026-2034) on a USD 2,890.8mn (2025) base — deodorants roughly double the base and double the growth rate, so the two are not substitutes; do not average. Use this one when the cell must be perfume-only.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 10.26,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-perfumes-deodorants-market",
+          "notes": "IMARC: India perfumes & deodorants USD 2,890.8mn (2025) to USD 7,146.3mn (2034), CAGR 10.26% 2026-2034. SCOPE CAVEAT: perfumes AND deodorants combined; the taxonomy 'fragrances' segment is perfume only, so deodorants inflate both base and growth. cf TechSci 11.54% (2025-2030) on a USD 1,540.32mn (2024) base — the two size bases differ ~1.9x, definitional mismatch unresolved, do not average. cf same-publisher perfume-only 5.36%. Organised/unorganised coverage not stated.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 11.54,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2030",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "TechSci Research",
+          "url": "https://www.techsciresearch.com/report/india-perfumes-deodorants-market/27736.html",
+          "notes": "TechSci: India perfumes & deodorants USD 1,540.32mn (2024) to USD 2,965.62mn (2030), CAGR 11.54%. SCOPE CAVEAT: perfumes AND deodorants combined. cf IMARC 10.26% (2026-2034) on a USD 2,890.8mn (2025) base — ~1.9x gap on the size base, definitional mismatch unresolved, do not average. Page discusses organised retail expansion but does not state whether the sizing itself covers unorganised trade.",
+          "metric": "cagr_forecast",
+          "tier": null
+        }
+      ],
       "imports": {
         "World": {
           "value": 0.331681,
@@ -903,6 +1021,19 @@
           "url": "https://deepmarketinsights.com/vista/insights/hair-serum-market/india",
           "notes": "India hair serum: USD 155.16mn 2025 to USD 317.12mn 2034; 'fastest-growing market in Asia Pacific' per source.",
           "metric": "cagr_forecast",
+          "tier": null
+        },
+        {
+          "value": 4.57,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "NA",
+          "confidence": "ESTIMATE",
+          "source": "Market Research Future (derived)",
+          "url": "https://www.marketresearchfuture.com/reports/india-hair-care-market-44328",
+          "notes": "SCOPE CAVEAT: MRF scope is hair styling, shampoo, hair colorant, conditioners and hair oil. India hair oil carries a large unorganised/loose-sold tail; organised vs unorganised coverage not stated by the source. Do not present as an audited market-growth reading.",
+          "metric": "growth_yoy",
           "tier": null
         }
       ],

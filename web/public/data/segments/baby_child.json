@@ -2,18 +2,176 @@
   "segment": "baby_child",
   "KR": {
     "segment": "baby_child",
-    "size": null,
+    "size": {
+      "value": 746.89,
+      "unit": "usd_mn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "Expert Market Research",
+      "url": "https://www.expertmarketresearch.com/reports/south-korea-baby-products-market",
+      "notes": "SCOPE CAVEAT: scope stated as 'Baby Cosmetics and Toiletries, Baby Food, Baby Safety and Convenience, Others' — includes non-BPC categories, no BPC-only split disclosed. Value basis not stated; assumed consumer sell-through. cf BlueWeave USD 1.61bn (2024) on a stated-identical scope — 2.2x gap, definitional mismatch unresolved, do not average.",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 0.7469,
+      "fx_note": "identity (no conversion)"
+    },
     "growth": null,
-    "cagr": null,
+    "cagr": {
+      "value": 3.55,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025-2031",
+      "value_basis": "NA",
+      "confidence": "LOW",
+      "source": "BlueWeave Consulting",
+      "url": "https://www.blueweaveconsulting.com/report/south-korea-baby-care-products-market",
+      "notes": "USD 1.61bn (2024) to USD 2.06bn (2031). Internally consistent (1.61 x 1.0355^7 = 2.05). SCOPE CAVEAT: includes baby food and baby safety/convenience alongside baby cosmetics & toiletries. cf Expert Market Research 6.20% (2026-2035) — 1.7x higher growth on a stated-identical scope; South Korea's falling birth rate makes the lower figure the more conservative read but neither is reconciled. Do not average.",
+      "metric": "cagr_forecast",
+      "tier": null
+    },
     "export": null,
-    "points": []
+    "points": [
+      {
+        "value": 1.61,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "BlueWeave Consulting",
+        "url": "https://www.blueweaveconsulting.com/report/south-korea-baby-care-products-market",
+        "notes": "SCOPE CAVEAT: source scope is 'Baby Cosmetics & Toiletries, Baby Food, Baby Safety & Convenience' — baby food and safety/convenience are NOT Beauty & Personal Care, so this figure materially overstates the BPC-relevant baby_child cell. No BPC-only split disclosed. Value basis not stated; assumed consumer sell-through. cf Expert Market Research USD 746.89mn (2025) on a stated-identical category scope — 2.2x gap, definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 3.55,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025-2031",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "BlueWeave Consulting",
+        "url": "https://www.blueweaveconsulting.com/report/south-korea-baby-care-products-market",
+        "notes": "USD 1.61bn (2024) to USD 2.06bn (2031). Internally consistent (1.61 x 1.0355^7 = 2.05). SCOPE CAVEAT: includes baby food and baby safety/convenience alongside baby cosmetics & toiletries. cf Expert Market Research 6.20% (2026-2035) — 1.7x higher growth on a stated-identical scope; South Korea's falling birth rate makes the lower figure the more conservative read but neither is reconciled. Do not average.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": 746.89,
+        "unit": "usd_mn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Expert Market Research",
+        "url": "https://www.expertmarketresearch.com/reports/south-korea-baby-products-market",
+        "notes": "SCOPE CAVEAT: scope stated as 'Baby Cosmetics and Toiletries, Baby Food, Baby Safety and Convenience, Others' — includes non-BPC categories, no BPC-only split disclosed. Value basis not stated; assumed consumer sell-through. cf BlueWeave USD 1.61bn (2024) on a stated-identical scope — 2.2x gap, definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 6.2,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2035",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Expert Market Research",
+        "url": "https://www.expertmarketresearch.com/reports/south-korea-baby-products-market",
+        "notes": "USD 746.89mn (2025) to USD 1363.02mn (2035). Internally consistent (0.74689 x 1.062^10 = 1.363). SCOPE CAVEAT: includes baby food and safety/convenience. cf BlueWeave 3.55% (2025-2031) — 1.7x gap on a stated-identical scope, definitional mismatch unresolved, do not average.",
+        "metric": "cagr_forecast",
+        "tier": null
+      }
+    ]
   },
   "IN": {
     "segment": "baby_child",
-    "size": null,
+    "size": {
+      "value": 4.82,
+      "unit": "usd_bn",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "IMARC Group",
+      "url": "https://www.imarcgroup.com/india-baby-care-products-market",
+      "notes": "SCOPE CAVEAT: IMARC 'baby care products' spans baby skin care, baby hair care, baby toiletries (bath, fragrances, diapers, wipes) AND baby food & beverages. Baby food/beverages and diapers sit outside BPC scope, so this OVERSTATES the BPC baby & child segment; treat as an upper bound on a wider basket, not a BPC read. Organised/unorganised coverage not stated on the page. cf Maximize Market Research USD 14.17bn (2024) on a NARROWER basket (baby food explicitly excluded) — 2.9x higher despite covering less, an outright contradiction; definitional mismatch unresolved, do not average.",
+      "metric": "market_size",
+      "tier": null,
+      "value_usd_bn": 4.82,
+      "fx_note": "identity (no conversion)"
+    },
     "growth": null,
-    "cagr": null,
+    "cagr": {
+      "value": 9.17,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026-2034",
+      "value_basis": "NA",
+      "confidence": "LOW",
+      "source": "IMARC Group",
+      "url": "https://www.imarcgroup.com/india-baby-care-products-market",
+      "notes": "IMARC: USD 4.82bn (2025) to USD 10.62bn (2034), CAGR 9.17% 2026-2034. SCOPE CAVEAT: basket includes baby food & beverages and diapers/wipes, i.e. wider than BPC baby & child. Organised/unorganised coverage not stated. cf Maximize Market Research 14.35% (2024-2030) on a food-excluded basket — 1.6x gap, definitional mismatch unresolved, do not average.",
+      "metric": "cagr_forecast",
+      "tier": null
+    },
     "export": null,
-    "points": []
+    "points": [
+      {
+        "value": 4.82,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-baby-care-products-market",
+        "notes": "SCOPE CAVEAT: IMARC 'baby care products' spans baby skin care, baby hair care, baby toiletries (bath, fragrances, diapers, wipes) AND baby food & beverages. Baby food/beverages and diapers sit outside BPC scope, so this OVERSTATES the BPC baby & child segment; treat as an upper bound on a wider basket, not a BPC read. Organised/unorganised coverage not stated on the page. cf Maximize Market Research USD 14.17bn (2024) on a NARROWER basket (baby food explicitly excluded) — 2.9x higher despite covering less, an outright contradiction; definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 14.17,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Maximize Market Research",
+        "url": "https://www.maximizemarketresearch.com/market-report/india-baby-care-product-market/122978/",
+        "notes": "SCOPE CAVEAT: covers body lotion, head-to-toe wash, diaper cream, massage oil, diapers & wipes, hair care and others. Baby food is EXPLICITLY EXCLUDED (page cites Indian regulation restricting baby-food promotion). Diapers & wipes are stated at 'over 35% of total market value in 2024', i.e. at least a third of this figure is outside BPC scope — a BPC-only read would be roughly two thirds of it, but the 35% is given as a floor so no derived figure is claimed here. Organised/unorganised coverage not stated. cf IMARC USD 4.82bn (2025) on a WIDER basket that includes baby food — 2.9x lower despite covering more; definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 9.17,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-baby-care-products-market",
+        "notes": "IMARC: USD 4.82bn (2025) to USD 10.62bn (2034), CAGR 9.17% 2026-2034. SCOPE CAVEAT: basket includes baby food & beverages and diapers/wipes, i.e. wider than BPC baby & child. Organised/unorganised coverage not stated. cf Maximize Market Research 14.35% (2024-2030) on a food-excluded basket — 1.6x gap, definitional mismatch unresolved, do not average.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": 14.35,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2030",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Maximize Market Research",
+        "url": "https://www.maximizemarketresearch.com/market-report/india-baby-care-product-market/122978/",
+        "notes": "Maximize: 'CAGR 14.35% from 2024 to 2030'; the same page shows USD 14.17bn (2024) to almost USD 41.42bn (2032), so the stated CAGR period and the stated endpoint year do not line up — the CAGR is recorded as stated and the 2032 endpoint treated as suspect. SCOPE CAVEAT: baby food excluded, diapers & wipes (>35% of value) included. Organised/unorganised coverage not stated. cf IMARC 9.17% (2026-2034) — 1.6x gap, definitional mismatch unresolved, do not average.",
+        "metric": "cagr_forecast",
+        "tier": null
+      }
+    ]
   }
 }

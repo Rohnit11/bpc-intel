@@ -1,7 +1,7 @@
 {
   "geography": "IN",
   "segment": "colour_cosmetics",
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-07-25",
   "data_points": [
     {
       "geography": "IN",
@@ -287,6 +287,25 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "Channel: e-commerce — Amazon.in referral fee, Beauty (Make-up) category, INR 500-1,000 price band: cut from 7.5% to 3.5% effective Sep-2025; INR 300-500 band cut from 4.5% to 2.0%."
+    },
+    {
+      "geography": "IN",
+      "segment": "colour_cosmetics",
+      "sub_segment": null,
+      "metric": "growth_yoy",
+      "value": 6.13,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025",
+      "period_type": "CY",
+      "value_basis": "NA",
+      "tier": null,
+      "source_name": "Market Research Future (derived)",
+      "source_url": "https://www.marketresearchfuture.com/reports/india-colour-cosmetics-market-47939",
+      "date_accessed": "2026-07-25",
+      "confidence": "ESTIMATE",
+      "methodology": "Derived from two consecutive-year values stated on the fetched MRF page: India colour cosmetics USD 5.55bn (2024) to USD 5.89bn (2025), i.e. +6.13%. WARNING: not an observed retail-audit growth rate — it tracks MRF's own 2025-2035 forecast CAGR of 6.18%, so the 2025 value is essentially the 2024 value grown at the model CAGR. Sensitivity: MRF's level sits far above other aggregators' India colour cosmetics sizing (Data Bridge USD 1.66bn 2024, StrategyHelix USD 2.14bn 2024 — neither page fetched, so neither is cited as a claim) and other published forecasts run 7-13.6% CAGR; defensible range for 2025 value growth roughly 6-14%.",
+      "notes": "Organised/unorganised coverage not stated by the source. India colour cosmetics carries a significant unorganised and counterfeit tail that aggregator sizing typically excludes. Do not present as an audited market-growth reading."
     }
   ]
 }

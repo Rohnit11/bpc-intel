@@ -1,7 +1,7 @@
 {
   "geography": "IN",
   "segment": "hair_care",
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-07-25",
   "data_points": [
     {
       "geography": "IN",
@@ -306,6 +306,25 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "India HAIR GROWTH PRODUCTS market (broader than RedSeer's alopecia-driven USD 267mn 2023 — includes general anti-hairfall products). Forecast USD 1,124.1mn by 2034, CAGR 3.33% (2026-2034). Definitional mismatch with RedSeer; do not merge."
+    },
+    {
+      "geography": "IN",
+      "segment": "hair_care",
+      "sub_segment": null,
+      "metric": "growth_yoy",
+      "value": 4.57,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025",
+      "period_type": "CY",
+      "value_basis": "NA",
+      "tier": null,
+      "source_name": "Market Research Future (derived)",
+      "source_url": "https://www.marketresearchfuture.com/reports/india-hair-care-market-44328",
+      "date_accessed": "2026-07-25",
+      "confidence": "ESTIMATE",
+      "methodology": "Derived from two consecutive-year values stated on the fetched MRF page: India hair care USD 4,100mn (2024) to USD 4,287.37mn (2025), i.e. +4.57%. WARNING: this is NOT an observed retail-audit growth rate — it equals MRF's own 2025-2035 forecast CAGR of 4.57% to two decimals, so the 2025 value is simply the 2024 value grown at the model CAGR. Sensitivity: IMARC's India haircare page implies a much faster trajectory (USD 4.30bn 2025 to USD 11.49bn 2034, CAGR 10.58% 2026-2034); defensible range for 2025 India hair care value growth is roughly 4.5-10.5%. No verified observed-YoY source (NielsenIQ / Kantar India category read) was found.",
+      "notes": "SCOPE CAVEAT: MRF scope is hair styling, shampoo, hair colorant, conditioners and hair oil. India hair oil carries a large unorganised/loose-sold tail; organised vs unorganised coverage not stated by the source. Do not present as an audited market-growth reading."
     }
   ]
 }

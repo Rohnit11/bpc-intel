@@ -17,7 +17,19 @@
       "value_usd_bn": 1.8,
       "fx_note": "identity (no conversion)"
     },
-    "growth": null,
+    "growth": {
+      "value": 5.3,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026",
+      "value_basis": "RETAIL",
+      "confidence": "ESTIMATE",
+      "source": "Derived from Mordor Intelligence",
+      "url": "https://www.mordorintelligence.com/industry-reports/south-korea-hair-care-market-industry",
+      "notes": "This is a FORECAST year-on-year rate, not an actual. No observed Korean-source YoY for domestic hair care could be verified on a fetchable page. Consistent with the same source's 5.42% CAGR (2026-2031). cf IMARC 3.23% CAGR (2026-2034) already on file — Mordor runs ~2pp hotter; the two aggregators also disagree on level (Mordor USD 1.32bn 2025 vs IMARC USD 1.8bn 2025, a 1.36x gap), definitional mismatch unresolved.",
+      "metric": "growth_yoy",
+      "tier": null
+    },
     "cagr": {
       "value": 3.23,
       "unit": "percent",
@@ -84,6 +96,19 @@
         "notes": "USD 1.8bn 2025 to USD 2.4bn 2034.",
         "metric": "cagr_forecast",
         "tier": null
+      },
+      {
+        "value": 5.3,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026",
+        "value_basis": "RETAIL",
+        "confidence": "ESTIMATE",
+        "source": "Derived from Mordor Intelligence",
+        "url": "https://www.mordorintelligence.com/industry-reports/south-korea-hair-care-market-industry",
+        "notes": "This is a FORECAST year-on-year rate, not an actual. No observed Korean-source YoY for domestic hair care could be verified on a fetchable page. Consistent with the same source's 5.42% CAGR (2026-2031). cf IMARC 3.23% CAGR (2026-2034) already on file — Mordor runs ~2pp hotter; the two aggregators also disagree on level (Mordor USD 1.32bn 2025 vs IMARC USD 1.8bn 2025, a 1.36x gap), definitional mismatch unresolved.",
+        "metric": "growth_yoy",
+        "tier": null
       }
     ]
   },
@@ -104,7 +129,19 @@
       "value_usd_bn": 4.1,
       "fx_note": "identity (no conversion)"
     },
-    "growth": null,
+    "growth": {
+      "value": 4.57,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "NA",
+      "confidence": "ESTIMATE",
+      "source": "Market Research Future (derived)",
+      "url": "https://www.marketresearchfuture.com/reports/india-hair-care-market-44328",
+      "notes": "SCOPE CAVEAT: MRF scope is hair styling, shampoo, hair colorant, conditioners and hair oil. India hair oil carries a large unorganised/loose-sold tail; organised vs unorganised coverage not stated by the source. Do not present as an audited market-growth reading.",
+      "metric": "growth_yoy",
+      "tier": null
+    },
     "cagr": {
       "value": 4.73,
       "unit": "percent",
@@ -326,6 +363,19 @@
         "url": "https://www.imarcgroup.com/india-hair-growth-products-market",
         "notes": "India HAIR GROWTH PRODUCTS market (broader than RedSeer's alopecia-driven USD 267mn 2023 — includes general anti-hairfall products). Forecast USD 1,124.1mn by 2034, CAGR 3.33% (2026-2034). Definitional mismatch with RedSeer; do not merge.",
         "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 4.57,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Market Research Future (derived)",
+        "url": "https://www.marketresearchfuture.com/reports/india-hair-care-market-44328",
+        "notes": "SCOPE CAVEAT: MRF scope is hair styling, shampoo, hair colorant, conditioners and hair oil. India hair oil carries a large unorganised/loose-sold tail; organised vs unorganised coverage not stated by the source. Do not present as an audited market-growth reading.",
+        "metric": "growth_yoy",
         "tier": null
       }
     ]

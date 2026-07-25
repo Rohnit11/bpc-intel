@@ -1,12 +1,8 @@
 import { notFound } from "next/navigation";
-import { getInsight, getSegment, listSegmentIds } from "@/lib/data";
-import { FigureValue } from "@/components/figure-value";
+import { getInsight, getSegment, listSegmentIds, getAnalysisArtifact } from "@/lib/data";
 import { formatSegmentName } from "@/lib/format";
-import { BasisBadge } from "@/components/basis-badge";
-import { ConfidenceBadge } from "@/components/confidence-badge";
-import { AnalystRead, CombinedAnalystRead } from "@/components/analyst-read";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import type { Insight, SegmentGeoBlock } from "@/types/bundle";
+import { SegmentTabs } from "@/components/analysis/segment-tabs";
+import type { PorterArtifact, PositioningArtifact, PriceLadderArtifact } from "@/types/analysis";
 
 export function generateStaticParams() {
   return listSegmentIds().map((id) => ({ id }));
@@ -17,94 +13,28 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return { title: `${formatSegmentName(id)} | bpc-intel` };
 }
 
-function GeoBlock({
-  label,
-  block,
-  geography,
-  insight,
-}: {
-  label: string;
-  block: SegmentGeoBlock;
-  geography: "KR" | "IN";
-  insight: Insight | null;
-}) {
-  return (
-    <div className="rounded-xl border border-[var(--border)] bg-[var(--surface-1)] p-4 space-y-4">
-      <h3 className="font-serif text-lg font-semibold">{label}</h3>
-      <AnalystRead insight={insight} geography={geography} />
-      <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-wide text-[var(--text-muted)] mb-1">Size</div>
-          <FigureValue figure={block.size} />
-        </div>
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-wide text-[var(--text-muted)] mb-1">Growth</div>
-          <FigureValue figure={block.growth} />
-        </div>
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-wide text-[var(--text-muted)] mb-1">CAGR</div>
-          <FigureValue figure={block.cagr} />
-        </div>
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-wide text-[var(--text-muted)] mb-1">Exports</div>
-          <FigureValue figure={block.export} />
-        </div>
-      </div>
-      {block.points.length > 0 ? (
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead>Metric</TableHead>
-              <TableHead>Value</TableHead>
-              <TableHead>Basis</TableHead>
-              <TableHead>Confidence</TableHead>
-              <TableHead>Period</TableHead>
-              <TableHead>Source</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {block.points.map((p, i) => (
-              <TableRow key={i}>
-                <TableCell>{p.metric}</TableCell>
-                <TableCell><FigureValue figure={p} /></TableCell>
-                <TableCell><BasisBadge basis={p.value_basis} /></TableCell>
-                <TableCell><ConfidenceBadge confidence={p.confidence} /></TableCell>
-                <TableCell>{p.period}</TableCell>
-                <TableCell>
-                  {p.url ? (
-                    <a href={p.url} target="_blank" rel="noreferrer" className="text-[var(--series-1)] underline">
-                      {p.source}
-                    </a>
-                  ) : (
-                    p.source
-                  )}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      ) : (
-        <p className="text-sm text-[var(--text-muted)]">No DataPoints for this segment × geography yet.</p>
-      )}
-    </div>
-  );
-}
-
 export default async function SegmentPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const ids = listSegmentIds();
   if (!ids.includes(id)) notFound();
+
   const bundle = getSegment(id);
   const insight = getInsight(id);
+  const porter = getAnalysisArtifact<PorterArtifact>(`porter_${id}`);
+  const positioningAll = getAnalysisArtifact<PositioningArtifact>("positioning");
+  const positioning = positioningAll?.segments.find((s) => s.segment === id) ?? null;
+  const priceLadder = getAnalysisArtifact<PriceLadderArtifact>("price_ladder");
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <h1 className="font-serif text-3xl font-semibold">{formatSegmentName(bundle.segment)}</h1>
-      <CombinedAnalystRead insight={insight} />
-      <div className="grid gap-4 lg:grid-cols-2">
-        <GeoBlock label="South Korea" block={bundle.KR} geography="KR" insight={insight} />
-        <GeoBlock label="India" block={bundle.IN} geography="IN" insight={insight} />
-      </div>
+      <SegmentTabs
+        bundle={bundle}
+        insight={insight}
+        porter={porter}
+        positioning={positioning}
+        priceLadder={priceLadder}
+      />
     </div>
   );
 }

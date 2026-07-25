@@ -1,0 +1,50 @@
+{
+  "geography": "KR",
+  "generated_at": "2026-07-24T12:00:00Z",
+  "channels": [
+    {
+      "channel": "H&B stores (Olive Young)",
+      "known": "Health & beauty specialty stores are Korea's anchor beauty channel — Mordor puts them at ~54.1% of 2025 cosmetics distribution, led by CJ Olive Young, which holds MORE THAN 85% of the Korean H&B STORE market with 1,380+ stores (Seoulz). Olive Young standalone revenue was KRW 5.83tn (~US$4.2bn) in CY2025, +21.8% YoY (Seoulz); Daxue reports KRW 4.8tn consolidated 2024, +23.9% YoY. Notably, 26.4% of Olive Young's H1 2025 customers were foreign — tourist beauty spend is shifting out of duty-free and into H&B stores (Korea Times).",
+      "entry_implications": "Olive Young is the single most important shelf in Korea and a near-gatekeeper for domestic H&B distribution — winning it is close to winning the channel, but that dominance hands it strong buyer power over an entrant's terms and margins. Its rising foreign-customer share also makes it a discovery surface: a brand that proves out on Olive Young builds the reference to later travel the corridor to India.",
+      "evidence": [
+        "KR total_bpc channel_share 54.1% H&B stores 2025 (Mordor)",
+        "KR total_bpc channel_share >85% Olive Young of H&B store market, 1,380+ stores 2026 (Seoulz)",
+        "KR total_bpc market_size KRW 5.83tn Olive Young CY2025 +21.8% YoY (Seoulz); KRW 4.8tn 2024 +23.9% (Daxue)",
+        "sources.json note: 26.4% of Olive Young H1 2025 customers foreign (Korea Times)"
+      ],
+      "evidence_strength": "STRONG"
+    },
+    {
+      "channel": "online (e-commerce)",
+      "known": "Online is the largest channel by the Korea Ratings measure — 60.8% of the Korea cosmetics market in CY2024, up from 39.1% in 2019; Korea's online cosmetics transaction value was KRW 13.8tn (~US$9.25bn) in 2024, +7.7% YoY (Statistics Korea via press). This 60.8% online figure CONFLICTS with Mordor's 54.1% H&B-store share for 2025 — different channel definitions and coverage, so the two must not be added.",
+      "entry_implications": "E-commerce is either the largest or second-largest Korean channel depending on definition, and it grows steadily (~8% on online transaction value). For an entrant it is the lowest-barrier domestic route, but the definitional overlap with H&B means online and Olive Young should be treated as overlapping — not additive — when sizing reachable demand.",
+      "evidence": [
+        "KR total_bpc channel_share 60.8% online CY2024 vs 39.1% 2019 (Korea Ratings via Korea JoongAng Daily)",
+        "KR total_bpc market_size KRW 13.8tn online transaction value 2024, +7.7% YoY (Statistics Korea via press)",
+        "Conflict note: 60.8% online vs 54.1% H&B-store — definitions differ, do not mix"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "channel": "department store",
+      "known": "Department stores are the prestige tier of Korean beauty retail, but the available split combines them with drugstores: offline (department stores + drugstores) was 39.2% of the Korea cosmetics market in CY2024, down from 60.9% in 2019 (Korea Ratings) — a structural decline as online and H&B took share. The source does not break out a department-store-only figure.",
+      "entry_implications": "The prestige department-store channel is shrinking and is not separated out in the data, so it is a weak standalone entry route. It matters only for a premium-positioned brand; a masstige/derma K-beauty entrant should skip it in favour of H&B and online.",
+      "evidence": [
+        "KR total_bpc channel_share 39.2% offline (department stores + drugstores) CY2024 vs 60.9% 2019 (Korea Ratings via Korea JoongAng Daily)"
+      ],
+      "evidence_strength": "THIN"
+    },
+    {
+      "channel": "duty-free (distinct channel)",
+      "known": "Duty-free is a DISTINCT channel (repo rule 12 — never folded into domestic retail) and it is in structural decline: Korea duty-free sales were US$7.3bn Jan-Oct 2025, -16.6% YoY, headed for the lowest full year since 2015 (pre-pandemic >US$20bn/yr; AJU Press); KRW 6.36tn in H1 2025 (Korea Times). Figures cover all duty-free categories, not beauty only (cosmetics was historically the largest). The driver is the collapse of Chinese daigou/tourist buying, with the displaced tourist beauty spend migrating into Olive Young H&B stores.",
+      "entry_implications": "Duty-free is a declining, tourist-dependent channel an entrant should not build a Korea strategy around; its historic role as the daigou export back-door has broken down. Its decline is itself a signal — prioritise domestic H&B and online, where the displaced tourist demand is landing.",
+      "evidence": [
+        "KR total_bpc market_size US$7.3bn duty-free Jan-Oct 2025, -16.6% YoY (AJU Press)",
+        "KR total_bpc market_size KRW 6.36tn duty-free H1 2025 (Korea Times)",
+        "sources.json duty-free notes: Chinese daigou decline; spend shifting to Olive Young H&B"
+      ],
+      "evidence_strength": "STRONG"
+    }
+  ],
+  "summary": "Korea's beauty distribution splits between two dominant domestic channels whose measured shares conflict by definition: H&B specialty stores (~54% per Mordor, anchored by Olive Young at >85% of the H&B store market and KRW 5.83tn revenue) and online (~61% per Korea Ratings, KRW 13.8tn transaction value) — the two overlap and must not be summed. For an entrant, Olive Young is the near-gatekeeper shelf and online the lowest-barrier route; both are also where displaced tourist demand is concentrating. Department stores are a shrinking prestige tier (only available combined with drugstores, ~39% offline) relevant to premium brands only. Duty-free is a distinct, structurally declining channel (US$7.3bn Jan-Oct 2025, -16.6% YoY) hollowed out by the daigou collapse — flagged separately and not to be built around."
+}

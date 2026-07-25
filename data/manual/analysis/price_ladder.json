@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-07-24T12:00:00Z",
+  "geography": "IN",
+  "rungs": [
+    {
+      "segment": "skincare",
+      "sub_segment": "serum (India D2C)",
+      "tier": "mass",
+      "price_range": "Rs500-700 (midpoint Rs600, MRP)",
+      "examples": ["Generic 30ml India D2C serum (COGS Rs80-120/unit)"],
+      "evidence": [
+        "skincare retail_price DataPoint Rs600 MRP, 30ml serum typical Rs500-700 (The D2C Pulse)"
+      ]
+    },
+    {
+      "segment": "skincare",
+      "sub_segment": "cleanser (K-beauty, q-commerce)",
+      "tier": "masstige",
+      "price_range": "Rs625 (Blinkit); The Face Shop line spans Rs90 sheet masks to Rs1349 kits",
+      "examples": ["The Face Shop Rice Water Bright Foaming Cleanser 100ml"],
+      "evidence": [
+        "skincare retail_price DataPoint Rs625, The Face Shop Rice Water Cleanser, Blinkit (2026-07-23)",
+        "corridor.yaml qcommerce_assortment: The Face Shop Rs90-1349 (LG H&H), 21 SKUs deep-stocked"
+      ]
+    },
+    {
+      "segment": "skincare",
+      "sub_segment": "essence / serum (K-beauty)",
+      "tier": "masstige",
+      "price_range": "Rs680-1500 (Blinkit/Nykaa MRP)",
+      "examples": [
+        "Innisfree Green Tea Seed Hyaluronic Face Serum 30ml (Rs850 MRP / Rs680 Blinkit)",
+        "Beauty of Joseon Ginseng Skin Essence Water 150ml (Rs1500 Blinkit)",
+        "COSRX Advanced Snail 96 Mucin Power Essence 100ml (Rs1490 MRP / Nykaa sale Rs969)"
+      ],
+      "evidence": [
+        "skincare retail_price DataPoint Rs850 MRP / Rs680 Blinkit, Innisfree Green Tea Seed Hyaluronic Serum 30ml",
+        "skincare retail_price DataPoint Rs1500, Beauty of Joseon Ginseng Skin Essence Water, Blinkit",
+        "skincare retail_price DataPoint Rs1490 MRP (sale Rs969), COSRX Snail 96 Mucin Essence, Nykaa"
+      ]
+    },
+    {
+      "segment": "skincare",
+      "sub_segment": "sleeping / lip mask (K-beauty)",
+      "tier": "masstige",
+      "price_range": "Rs600-1300 (MRP)",
+      "examples": [
+        "Laneige Lip Sleeping Mask Berry 8g (Rs600 MRP; 20g Rs1136)",
+        "Laneige Water Sleeping Mask 25ml (Rs850 MRP / Rs765 Blinkit)"
+      ],
+      "evidence": [
+        "skincare retail_price DataPoint Rs600 MRP, Laneige Lip Sleeping Mask 8g, Nykaa",
+        "skincare retail_price DataPoint Rs850 MRP / Rs765 Blinkit, Laneige Water Sleeping Mask 25ml",
+        "corridor.yaml qcommerce_assortment: Laneige Rs540-1300 (AmorePacific), 16 SKUs"
+      ]
+    },
+    {
+      "segment": "dermocosmetics",
+      "sub_segment": "barrier cream (K-derma)",
+      "tier": "masstige",
+      "price_range": "Rs1013-1600 (Blinkit MRP; Etude SoonJung derma line)",
+      "examples": ["Etude SoonJung Hydro Barrier Face Cream 75ml (Rs1600 MRP / Rs1200 Blinkit)"],
+      "evidence": [
+        "skincare retail_price DataPoint Rs1600 MRP / Rs1200 Blinkit, Etude SoonJung Hydro Barrier Cream 75ml",
+        "corridor.yaml qcommerce_assortment: Etude SoonJung derma skincare Rs1013-1200"
+      ]
+    },
+    {
+      "segment": "skincare",
+      "sub_segment": "toner / essence (imported K-beauty)",
+      "tier": "premium",
+      "price_range": "Rs2050-2999 (MRP varies by platform)",
+      "examples": [
+        "Anua Heartleaf 77% Soothing Toner 250ml (Nykaa list Rs2050 / Amazon MRP Rs2999)",
+        "Innisfree Green Tea Seed Serum (larger SKU) (Rs2200 MRP / sale Rs1650)"
+      ],
+      "evidence": [
+        "skincare retail_price DataPoint Rs2050 Nykaa / Rs2999 Amazon MRP, Anua Heartleaf 77% Toner 250ml",
+        "skincare retail_price DataPoint Rs2200 MRP (sale Rs1650), Innisfree Green Tea Seed Serum"
+      ]
+    },
+    {
+      "segment": "sun_care",
+      "sub_segment": "sunscreen (imported K-beauty)",
+      "tier": "masstige",
+      "price_range": "Rs1570 MRP (Nykaa sale Rs1256)",
+      "examples": ["Beauty of Joseon Relief Sunscreen SPF50+"],
+      "evidence": [
+        "sun_care retail_price DataPoint Rs1570 MRP / Rs1256 Nykaa sale, Beauty of Joseon Relief Sunscreen SPF50+ (category bestseller; promo-dependent)"
+      ]
+    }
+  ],
+  "masstige_gap_note": "The observed India ladder is barbelled. Mass sits at Rs500-700 (India D2C serum), and imported K-beauty premium sits at Rs2000-2999 (Anua toner, large-format Innisfree). Between them, the Rs700-1600 masstige band is populated almost entirely by K-beauty SKUs that reach it only through heavy promotion — COSRX essence lists at Rs1490 MRP but sells at Rs969; Innisfree's small serum lands at Rs680 on Blinkit; The Face Show/Laneige/Etude q-commerce SKUs sit Rs600-1600. This is precisely the corridor's opening: mid-price derma K-beauty at a genuine (not promo-dependent) Rs700-1500 shelf price on the q-commerce rail into Tier 2/3 (baseline whitespace #5). The MRP-vs-promoted spread is the tell — brands are papering the masstige gap with discounts on premium-listed SKUs rather than pricing a true masstige tier, which an entrant with lower landed cost (e.g. India-manufactured Korean-ingredient line) could occupy directly."
+}

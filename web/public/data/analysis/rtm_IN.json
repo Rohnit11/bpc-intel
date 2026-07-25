@@ -1,0 +1,69 @@
+{
+  "geography": "IN",
+  "generated_at": "2026-07-24T12:00:00Z",
+  "channels": [
+    {
+      "channel": "e-commerce",
+      "known": "India online BPC reached ~INR 56,000cr in FY26, growing ~35% YoY (Redseer, Habit or Desire); digital channels were ~9.4% of BPC revenue in 2025 (baseline, LOW); e-commerce is projected to reach 34-38% of ALL India BPC spend by 2030 (Redseer, Beauty Blitz 2030 — implying offline still holds ~62-66%). Beauty platforms Nykaa/Tira/Flipkart/Amazon are the K-beauty conduits: Nykaa runs the 10-year AmorePacific portfolio (Innisfree, Laneige, Sulwhasoo, COSRX, Aestura, Illiyoon) and now also carries independent K-brands (TirTir Jun-2026, Medicube); Reliance's Tira is on a 2026 exclusive-launch sprint (Hince Jan, Medicube Feb, Dr. Melaxin Jul). Platform commissions are steep — Nykaa 22-28% by category (skincare ~24%, colour ~26%; Sylvr); Amazon.in referral 7-10% above INR1,000 but 0% below INR1,000 effective Mar-2026 (KwickMetrics).",
+      "entry_implications": "The online rail is where a K-beauty entrant lands first: it is the fastest-growing channel and the established conduit for imported Korean SKUs, requiring no GT/MT distribution build. But platform economics are demanding — budget ~22-28% of sell-through to Nykaa, while Amazon's zero referral below INR1,000 tilts the maths toward entry-price hero SKUs. Conduit choice is a strategic fork: Nykaa's incumbent AmorePacific tie-up versus Tira's exclusive-launch land grab.",
+      "evidence": [
+        "IN total_bpc growth_yoy 35% FY26 e-commerce (Redseer, Habit or Desire)",
+        "IN total_bpc channel_share 9.4% digital 2025 (baseline, LOW)",
+        "IN total_bpc channel_share 34-38% (midpoint 36) e-commerce projected 2030 (Redseer, Beauty Blitz 2030)",
+        "corridor.yaml conduits: Nykaa, Tira, Flipkart, Amazon India + AmorePacific/independent K-brand launch dates",
+        "IN skincare trade_margin 24% Nykaa commission (Sylvr); IN colour_cosmetics trade_margin 26% Nykaa (Sylvr)",
+        "IN total_bpc trade_margin 8.5% Amazon referral >INR1,000 / 0% <INR1,000 (KwickMetrics, Mar-2026)"
+      ],
+      "evidence_strength": "STRONG"
+    },
+    {
+      "channel": "quick-commerce",
+      "known": "Q-commerce is ~INR 40,000cr (~US$5bn) GMV in 2026, split roughly Blinkit 45-50% / Zepto 20-25% / Instamart 20-25% (Digital in Asia). BPC is the second-largest q-commerce category — ~8.5% of total q-commerce GMV in CY25, up from ~2.8% CY22; within online BPC, q-commerce rose to ~16% CY25 (from ~2% CY22) and ~18% FY26 (from 9% FY25) per Redseer. BPC GMV on q-commerce grew 120%+ YoY FY26 / ~140% CY25, and beauty on q-commerce +160% YoY (RedSeer via Unicommerce); BPC is ~13.4% of Blinkit's daily sales (Unicommerce). A live Blinkit capture (2026-07-23) shows the rail splits by ownership: conglomerate K-brands are deeply stocked (LG H&H's The Face Shop 21 SKUs, AmorePacific's Laneige 16 / Etude 10 / Innisfree 9), but the viral indie/derma brands driving the narrative are thin or absent (COSRX out-of-stock, Anua 'coming soon', Some By Mi / Isntree / Mixsoon absent). Take rates: Blinkit 18-22% base commission on MRP (~38% all-in incl. fulfilment/ads); Zepto ~22-23% (NewsBytes).",
+      "entry_implications": "Q-commerce is the access rail into Tier 2/3 and the corridor's clearest whitespace (baseline #5, mid-price derma K-beauty). The gap is not the conglomerate brands already on the shelf — it is getting indie/derma K-beauty onto dark-store slots. All-in economics (~38% on Blinkit) plus commission charged on MRP (not discounted price) mean an entrant must price for a high channel take. Dark-store SKU counts are small, so the play is a tight hero-SKU assortment, not a full range.",
+      "evidence": [
+        "IN total_bpc market_size 5.5 usd_bn q-commerce all-categories + share split Blinkit 45-50%/Zepto 20-25%/Instamart 20-25% (Digital in Asia / baseline)",
+        "IN total_bpc channel_share 8.5% BPC of q-commerce GMV CY25 vs 2.8% CY22 (Redseer, BPC in Quick Commerce)",
+        "IN total_bpc channel_share 16% q-commerce of online BPC CY25 / 18% FY26 (Redseer)",
+        "IN total_bpc growth_yoy 120% FY26 / 140% CY25 BPC on q-commerce (Redseer); 160% beauty on q-commerce (RedSeer via Unicommerce)",
+        "IN total_bpc channel_share 13.4% BPC of Blinkit daily sales (Unicommerce)",
+        "corridor.yaml qcommerce_assortment (Blinkit 2026-07-23): conglomerate deep-stocked vs indie derma out-of-stock/absent",
+        "IN total_bpc trade_margin 20% Blinkit base / 38% all-in (Ladya); 22.5% Zepto (NewsBytes)"
+      ],
+      "evidence_strength": "STRONG"
+    },
+    {
+      "channel": "D2C",
+      "known": "India's D2C beauty engine runs on third-party contract manufacturers (MOQs from ~500 units); the brand owns formula and brand, the CM owns production (Gorgeous Cosmos; hundreds on IndiaMART). Funding continues despite the broader D2C slowdown — ~US$757m into India D2C over 18 months (wellness+beauty led), with KOSE putting US$30m into Foxtale, Moxie raising US$15m and Antinorm an INR28cr seed (The D2C Pulse). D2C is projected to hold ~10% of online BPC by 2030 (Redseer). Indian D2C brands are already going Korean at local price points — Pilgrim's Korean Rice Water range, Limese (formulated in Korea for Indian skin), and Foxtale's Hula Hoop house-of-brands play (corridor.yaml india_side_players).",
+      "entry_implications": "A K-beauty entrant can side-step import registration entirely by building an India D2C line (own brand via contract manufacturer) — the Limese/Pilgrim template — trading corridor authenticity for speed, lower landed cost and no CDSCO COS-2 wait. Own-site D2C also escapes the 22-38% platform/q-commerce take, but must self-fund traffic. Deep contract-manufacturing capacity makes a made-in-India Korean-ingredient line feasible at mass Rs500-700 price points.",
+      "evidence": [
+        "india_findings.yaml supply_chain: D2C brands use third-party CMs, MOQs ~500 (Gorgeous Cosmos; IndiaMART)",
+        "india_findings.yaml new_players: ~US$757m D2C funding /18mo; KOSE US$30m Foxtale; Moxie US$15m (The D2C Pulse)",
+        "IN total_bpc channel_share ~10% D2C of online BPC 2030 (Redseer, Beauty Blitz 2030)",
+        "corridor.yaml india_side_players: Pilgrim, Limese, Foxtale (Hula Hoop)"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "channel": "general trade",
+      "known": "GT (kirana) still dominates Indian retail — offline is projected to retain ~62-66% of BPC even in 2030 (Redseer, Beauty Blitz 2030). Kirana margins run 5-10% on national brands with strong consumer pull but 18-25%+ demanded from NEW/unfamiliar brands; distributor all-in cost for smaller brands is 20-30% of sale price (Kirana Club). A Storewise worked example shows the structure — distributor/substockist ~12%, retailer ~20% on a mid-FMCG SKU. These are FMCG-wide benchmarks, not BPC-specific.",
+      "entry_implications": "GT is a heavy lift for an import-led K-beauty entrant: a new/unknown brand pays the top of the margin band (18-25%+ retailer, 20-30% distributor all-in) and needs a physical distributor network to reach kirana. It is not an entry channel — it is a scale channel to attempt only after online/q-commerce prove demand. Imported unit economics rarely survive GT margins stacked on top of CDSCO-landed cost.",
+      "evidence": [
+        "IN total_bpc channel_share ~62-66% offline implied 2030 (Redseer, Beauty Blitz 2030)",
+        "IN total_bpc trade_margin 7.5% national-brand / 21.5% new-brand kirana; 25% distributor all-in (Kirana Club)",
+        "IN total_bpc trade_margin 12% distributor / 20% retailer worked example (Storewise)"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "channel": "modern trade",
+      "known": "Modern-trade (organised chains, beauty specialty stores) evidence is thin — no modern-trade-specific BPC margin surfaced on any fetched page (explicitly noted in the trade-margin research). The nearest specialty-retail proxy is beauty platforms' own physical formats — Tira's select stores, used alongside online for K-beauty exclusive launches (corridor.yaml).",
+      "entry_implications": "research needed — insufficient standalone MT data to size the channel or its economics. For a K-beauty entrant, MT currently surfaces mainly as the physical arm of omnichannel platforms (Tira stores) rather than an independent route; treat it as an extension of the platform relationship until MT-specific data lands.",
+      "evidence": [
+        "IN total_bpc trade_margin note: 'No modern-trade-specific margin found on any fetched page' (Storewise)",
+        "corridor.yaml Tira: omnichannel, exclusive launches 'online + select stores'"
+      ],
+      "evidence_strength": "INSUFFICIENT"
+    }
+  ],
+  "summary": "For a K-beauty entrant, India's route to market is online-first: e-commerce platforms (Nykaa/Tira/Flipkart/Amazon) are the proven conduit for imported Korean SKUs and the fastest-growing channel (~35% YoY), while quick-commerce (~US$5bn GMV, BPC growing 120-140% YoY) is the Tier 2/3 access rail and the corridor's clearest whitespace — specifically getting indie/derma K-beauty onto dark stores the conglomerate brands already occupy. Both online routes carry heavy take rates (Nykaa 22-28%, Blinkit ~38% all-in on MRP), so pricing must absorb the channel. D2C via contract manufacturing offers a CDSCO-free, lower-cost alternative at mass price points (the Limese/Pilgrim Korean-ingredient template). General trade is a post-proof scale channel where new brands pay punishing margins (18-30%), and modern trade lacks standalone data — research needed."
+}

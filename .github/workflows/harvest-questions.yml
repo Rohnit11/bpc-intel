@@ -1,0 +1,64 @@
+name: Harvest chatbot knowledge gaps
+
+# Weekly harvest of questions the assistant could not answer, opened as a PR
+# for review. Nothing enters the knowledge base unreviewed — the PR is the gate.
+#
+# Requires repo secret: DATABASE_URL (Neon connection string).
+# The workflow no-ops cleanly if the secret is absent or there are no gaps.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install "psycopg[binary]"
+
+      - name: Harvest unanswered questions
+        id: harvest
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          python scripts/harvest_questions.py
+          if git diff --quiet -- docs/question-backlog.md data/manual/question_backlog.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open pull request
+        if: steps.harvest.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/question-backlog
+          title: "Chatbot knowledge gaps — weekly harvest"
+          commit-message: "Harvest unanswered chatbot questions into the backlog"
+          body: |
+            Questions the assistant could not answer from the current corpus.
+
+            **Next step:** run `/answer-gaps` locally. It routes findings through
+            `lib/ingest/research_drop.py`, so any new figure arrives with a real
+            source URL, `value_basis` and `confidence` — the same gate as every
+            other number in this system. Nothing here is auto-merged into the
+            knowledge base.
+
+            - **Research gaps** — no data retrieved; need actual research.
+            - **Retrieval gaps** — data existed but the assistant still declined;
+              check retrieval ranking or the prompt before commissioning research.
+          add-paths: |
+            docs/question-backlog.md
+            data/manual/question_backlog.json

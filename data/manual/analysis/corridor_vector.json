@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-07-24T00:00:00Z",
+  "read": "The Korea to India corridor is an import-and-curate entry route, not a build route: even AmorePacific is scaling India through platforms and imports with no India plant announced. The trade base is small but fast — baseline ~US$50m (H1 2025), +44.7% YoY — and HS 3304 imports from Korea were US$140m in 2024 (Comtrade, HIGH). Demand is proven at the platform layer (K-beauty GMV on Nykaa +60% YoY Jul-Sep 2025) and the K-beauty India market is put at ~INR 3,139cr (2025) with a ~26% CAGR to 2035 (single aggregator). A 2026 launch wave (Medicube, Illiyoon, TirTir, Hince, Dr. Melaxin) shows the corridor is actively widening. The entry decision therefore reduces to conduit choice plus clearing CDSCO — the numbers say demand and momentum are real, the friction is regulatory lead-time, and the whitespace is getting indie/derma K-beauty onto the Tier 2/3 rail rather than adding another conglomerate brand where the majors already sit.",
+  "conduit_ranking": [
+    {
+      "conduit": "Nykaa",
+      "case": "Primary conduit and the deepest Korean assortment in India: a 10-year AmorePacific partnership (2016-2026) plus a widening exclusives book (Illiyoon, Aestura, RYO, Mise En Scene) and now non-AmorePacific indie brands (TirTir, Medicube). It is the only conduit with a published corridor demand signal — K-beauty GMV +60% YoY Jul-Sep 2025 — and is the exclusive launch pad for the K-derma wave. First choice for a premium/derma entrant.",
+      "evidence": [
+        "corridor.yaml conduits[Nykaa] — 10-yr AmorePacific tie, largest Korean portfolio, Illiyoon exclusive 2026",
+        "india.json IN dermocosmetics growth — K-beauty GMV on Nykaa +60% YoY Jul-Sep 2025 (MEDIUM)"
+      ],
+      "evidence_strength": "STRONG"
+    },
+    {
+      "conduit": "Tira",
+      "case": "Reliance Retail's omnichannel platform running an aggressive 2026 K-beauty sprint built on exclusives (Hince Jan-2026, Dr. Melaxin exclusive Jul-2026, Medicube Feb-2026, Mixsoon since 2024). Its exclusive-launch model makes it the strongest alternative to Nykaa for a brand wanting a differentiated shelf and Reliance's store + online reach, though no corridor GMV figure is published for it.",
+      "evidence": [
+        "corridor.yaml conduits[Tira] — 2026 sprint, exclusive launches Hince / Dr. Melaxin / Medicube"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "conduit": "q-commerce",
+      "case": "Blinkit/Zepto/Instamart are the Tier 2/3 access rail and the corridor's clearest whitespace, but the assortment is uneven: a single Blinkit snapshot (2026-07-23, 63 K-brand SKUs) shows conglomerate brands stocked deep (The Face Shop 21 SKUs, Laneige 16) while the viral indie/derma brands driving the narrative (COSRX, Anua, Some By Mi) are out-of-stock, 'coming soon' or absent. High strategic value, thin current execution for indie derma.",
+      "evidence": [
+        "corridor.yaml qcommerce_assortment — Blinkit snapshot 2026-07-23; conglomerate brands deep, indie/derma OOS/absent",
+        "corridor.yaml conduits[q-commerce] — Tier 2/3 access rail; masstige-price derma the clearest whitespace"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "conduit": "Flipkart",
+      "case": "Launched an international K-beauty portfolio (2025) weighted to indie brands (Beauty of Joseon, rom&nd, TirTir, Thank You Farmer). Broad indie reach at mass scale, but the evidence is a launch note only — no assortment depth, exclusives or demand signal recorded.",
+      "evidence": [
+        "corridor.yaml conduits[Flipkart] — international K-beauty portfolio launch, indie-weighted brand list (2025)"
+      ],
+      "evidence_strength": "THIN"
+    },
+    {
+      "conduit": "Amazon",
+      "case": "Carries a spread of indie K-brands (Anua, Some By Mi, Isntree, Dr.Jart+, Etude, The Face Shop). Useful for reach and long-tail discovery, but only a brand list is recorded — no exclusives, assortment depth or corridor demand data to rank it higher.",
+      "evidence": [
+        "corridor.yaml conduits[Amazon India] — indie K-brand list (Anua, Some By Mi, Isntree, Dr.Jart+, Etude)"
+      ],
+      "evidence_strength": "THIN"
+    }
+  ],
+  "whitespace_read": "The sharpest gap is mid-price derma K-beauty on the Tier 2/3 q-commerce rail (baseline whitespace #5, highest corridor conviction). The Blinkit snapshot makes it concrete: conglomerate-owned K-brands (AmorePacific, LG H&H) have mature India supply chains and are deeply stocked, while the indie/derma brands actually driving the K-beauty story (COSRX, Anua, Some By Mi) are out-of-stock, coming-soon or absent. The opportunity is not adding another conglomerate SKU where the majors already sit; it is getting masstige-price indie derma into dark-store distribution. Dedicated sunscreens (whitespace #2) and men's K-beauty (whitespace #4) are the adjacent gaps.",
+  "friction_read": "The binding friction is CDSCO import registration: a Form COS-1 application resolving to a COS-2 Registration Certificate via the SUGAM portal, required as pre-clearance before any consignment, plus manufacturing-site registration and BIS IS 4707 ingredient standards (Part 2 revised Aug 2025). Paper filings are no longer accepted as of 2026. This is a lead-time and working-capital cost rather than a hard barrier, but it must be cleared before the first shipment — cost and timeline are not yet quantified in the data and remain a research-needed item."
+}

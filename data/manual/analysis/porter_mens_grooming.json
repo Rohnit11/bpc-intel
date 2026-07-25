@@ -1,0 +1,125 @@
+{
+  "segment": "mens_grooming",
+  "generated_at": "2026-07-24T18:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": "MEDIUM",
+      "rationale": "Korea's men's cosmetics market (KRW 1.16tn / ~US$0.78bn 2025, Euromonitor MEDIUM) is the world's highest per-capita men's beauty market and is served by both conglomerates' men's lines plus ODM-fed brands, but no segment-level shares exist, so intensity is inferred from the mature-market structure rather than measured.",
+      "evidence": [
+        "mens_grooming.json KR size KRW1.16tn (~US$0.78bn, Euromonitor via Korea Herald, 2025, MEDIUM)",
+        "mens_grooming insights KR: world's highest per-capita men's beauty market",
+        "companies.yaml KR: AmorePacific / LG H&H (men's lines within conglomerates); odm_oem base"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "No KR men's-grooming brand shares on file to size rivalry precisely."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "No KR men's-grooming channel, retail-share, or trade-margin evidence is present to assess gatekeeper leverage.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR men's-grooming channel-concentration / retail-margin DataPoint absent."
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Korea's three listed ODM/OEM houses supply men's grooming formulation and fill on the same competitive terms as the wider cosmetics market, keeping input-side leverage low for brand owners.",
+      "evidence": [
+        "companies.yaml KR odm_oem: Cosmax, Kolmar Korea, Cosmecca Korea"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "The ODM base makes asset-light men's-grooming launches straightforward, and the market's high per-capita intensity attracts entrants. No scale barrier to domestic entry is evident.",
+      "evidence": [
+        "companies.yaml KR odm_oem (three ODMs)",
+        "mens_grooming insights KR: highest per-capita men's beauty market (demand pull for entrants)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No KR-specific evidence on men's-dedicated products being substituted by unisex ranges or adjacent categories.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR men's-vs-unisex substitution evidence absent."
+    },
+    "overall": {
+      "rating": "MEDIUM",
+      "rationale": "Korea men's grooming is a small but intense, high-per-capita market with low supplier power and easy entry, but thin repo evidence on shares and channel. Attractive as a source of proven men's-skincare formulation for the corridor rather than a well-characterised domestic entry.",
+      "evidence": [
+        "mens_grooming.json KR size + insights (highest per-capita)",
+        "companies.yaml odm base"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "India men's grooming (INR 186.3bn / ~US$1.94bn 2025, Euromonitor HIGH, +9%) is contested by FMCG incumbents in the largest baskets (haircare, deodorants) plus razors, while men's skincare and beard care — the fastest-growing, corridor-whitespace slices — draw new D2C entrants. Established incumbency plus an emerging challenger front makes intensity high.",
+      "evidence": [
+        "mens_grooming.json IN size INR186.3bn (~US$1.94bn, Euromonitor, HIGH, +9%); male toiletries 46.8% (IMARC)",
+        "mens_grooming.json IN IBEF note: haircare+deodorants largest revenue; skincare and beard care fastest-growing",
+        "companies.yaml IN incumbents (HUL, Godrej) + d2c brands"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "MEDIUM",
+      "rationale": "E-commerce is 30-35% of urban men's-grooming sales (online ~27% share, fastest-growing), so beauty platforms and q-commerce are increasingly decisive gatekeepers, while the mass balance still moves through fragmented GT/MT. Channel leverage is rising but not yet dominant across the whole basket.",
+      "evidence": [
+        "mens_grooming.json IN IBEF note: e-commerce 30-35% of urban men's grooming sales",
+        "mens_grooming.json IN IMARC note: online 27.2% share 2025, fastest-growing ~9.5% CAGR"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Men's-grooming D2C relies on the same fragmented third-party contract-manufacturing base (MOQs ~500 units) and domestic ingredient suppliers, so input-side bargaining power over brand owners is low.",
+      "evidence": [
+        "india_findings.yaml supply_chain: third-party CMs (Gorgeous Cosmos, IndiaMART), MOQ ~500; Galaxy Surfactants / Fine Organics"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "Men's skincare is explicitly the corridor's whitespace #4 (underserved vs toiletries) and is the fastest-growing slice, so an underserved, growing lane sits open to asset-light contract-manufactured D2C and to K-beauty import entrants — with CDSCO registration the main friction for the imported route.",
+      "evidence": [
+        "corridor.yaml whitespace: 'Men's K-beauty (baseline whitespace #4 — men's skincare underserved vs toiletries)'",
+        "mens_grooming.json IN: men's skincare ~US$1.02bn (Deep Market Insights, LOW), IBEF 'skincare/beard fastest-growing'",
+        "india_findings.yaml new_players: D2C funding; corridor.yaml regulation CDSCO (import friction)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": "MEDIUM",
+      "rationale": "Men's-dedicated products compete with unisex/family grooming and the basket is shifting from toiletries toward skincare — men trading traditional shave/toiletry spend into dedicated skincare and beard care evidences substitution within the segment. Directional, given basket-definition variance.",
+      "evidence": [
+        "mens_grooming.json IN IBEF note: haircare+deo largest but skincare/beard care fastest-growing (spend migrating within basket)",
+        "mens_grooming.json IN IMARC 'male toiletries' 46.8% basket includes shampoo/body wash/face wash (definitional overlap with unisex care)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "overall": {
+      "rating": "MEDIUM",
+      "rationale": "India men's grooming is well-evidenced, growing +9%, with low supplier power and an explicit, underserved men's-skincare whitespace (corridor #4) that suits a K-beauty entrant. But incumbents own the large toiletries/deo/hair baskets, rivalry is high, and rising channel concentration adds gatekeeper cost. Attractive on the skincare whitespace specifically rather than the broad basket.",
+      "evidence": [
+        "mens_grooming.json IN size + growth (HIGH); corridor.yaml whitespace #4",
+        "india_findings.yaml supply-chain + funding"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  }
+}

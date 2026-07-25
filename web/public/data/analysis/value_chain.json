@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-24T00:00:00Z",
+  "sections": [
+    {
+      "topic": "operating margins",
+      "read": "India brand-owner operating margins fan out sharply by model: legacy FMCG runs highest (Hindustan Unilever ~23%, Godrej Consumer ~21% FY26), the D2C challenger sits far lower (Honasa ~10%), and the pure retailer thinnest of all (Nykaa/FSN ~8%). The spread says the profit pool concentrates at scale-manufacturing incumbents; a new brand entering as a D2C or riding a retail platform should underwrite low-double-digit or single-digit operating margins, not FMCG-grade economics, at least until it earns scale.",
+      "evidence": [
+        "india_value_chain.json operating_margins — HUL 23%, Godrej Consumer 21%, Honasa 10%, Nykaa (FSN E-Commerce) 8% (all FY26)"
+      ],
+      "evidence_strength": "STRONG"
+    },
+    {
+      "topic": "gross/trade margins",
+      "read": "Category gross margins are wide but heavily eroded downstream. A 30ml serum shows a 75-85% gross markup (COGS Rs80-120 vs MRP Rs500-700), yet the D2C Pulse itself flags that true margin falls sharply after packaging, shipping and returns. On the platform side, Nykaa takes roughly a 22-26% commission on skincare brands (~24% midpoint), higher for new brands. The headline gross margin is real but is not the margin an entrant keeps: platform commission plus fulfilment is the binding economic reality.",
+      "evidence": [
+        "india_value_chain.json skincare margins — serum gross markup 75-85% pre-deductions (The D2C Pulse, LOW)",
+        "skincare.json IN points — Nykaa platform commission on skincare 22-26%, midpoint ~24%, higher for new brands (LOW)"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "topic": "import dependence",
+      "read": "India skincare is ~91% domestically supplied by value (imports ~US$844m against a ~US$9bn market), with imports concentrated in the premium and K-beauty tiers — Korea ~17% and China ~22% of skincare imports. HS 3304 imports from Korea were US$140m in 2024 (Comtrade, HIGH). Premium fragrance is the exception (import-reliant, UAE/France-led; ~12.8% dependence), while mass perfume/deodorant is domestically filled. The read for a Korean entrant: you are competing in the ~9% import slice, not the whole market, and that slice is exactly where the corridor pull sits.",
+      "evidence": [
+        "india_findings.yaml import_make — skincare ~91% domestic; Korea 17% / China 22% of skincare imports (UN Comtrade; IMARC derived)",
+        "india_value_chain.json skincare imports — HS 3304 India-from-Korea US$140.06m, from-China US$187.98m, World US$844.1m 2024 (UN Comtrade, HIGH)",
+        "india_value_chain.json fragrances import_dependence — ~12.8% ESTIMATE; premium import-reliant"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "topic": "contract manufacturing",
+      "read": "Most Indian D2C beauty brands own formula and brand but not factories — they run on third-party contract manufacturers / private-label houses (Gorgeous Cosmos and hundreds on IndiaMART) with MOQs from ~500 units. Two service models coexist: FMCG buyers demand audit-readiness and scale, D2C buyers demand agility, small batches and RM transparency. Upstream, Galaxy Surfactants (mild surfactants) and Fine Organics (specialty additives) anchor domestic actives supply. The implication is a genuinely low build barrier — an entrant can launch a domestic-made brand without capex — but differentiation then rests on formula and brand, not manufacturing.",
+      "evidence": [
+        "india_findings.yaml supply_chain — D2C brands use third-party CMs, MOQs from ~500 units (Gorgeous Cosmos; IndiaMART)",
+        "india_findings.yaml supply_chain — two CM service models, FMCG vs D2C (IMARC Engineering)",
+        "india_findings.yaml supply_chain — Galaxy Surfactants, Fine Organics anchor upstream actives (Marcellus; GlobalData)"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "topic": "FX exposure",
+      "read": "Every cross-geography number in this system is pinned to a single FX date (USD/KRW 1478.40, USD/INR 96.23, both 2026-07-21), and Korean retail figures are converted via the inverse of that rate. For an importer running the corridor, this is a real operating exposure, not just a modelling artefact: COGS accrue in KRW while MRP is set in INR, so KRW appreciation compresses the landed margin between purchase and sale. Any USD-normalised comparison across the two markets inherits the same single-date sensitivity. This is an inference from the pinned-rate structure, not an observed FX-loss datapoint.",
+      "evidence": [
+        "exchange_rates.yaml — USD/KRW 1478.40 and USD/INR 96.23 pinned to 2026-07-21 (frankfurter.dev / ECB)",
+        "korea.json segment fx_note — KR retail values converted as 'inverse of USD/KRW=1478.4 (2026-07-21)'"
+      ],
+      "evidence_strength": "THIN"
+    }
+  ]
+}

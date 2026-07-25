@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-07-24T00:00:00Z",
+  "drivers": [
+    {
+      "driver": "skinification",
+      "geography": "IN",
+      "segments_touched": [
+        "hair_care",
+        "skincare"
+      ],
+      "evidence": [
+        "india_findings.yaml demand[skinification] — hair care (~US$4bn) buyers want actives (niacinamide, ceramides, peptides) in serums/tonics; specialist D2C outperform legacy FMCG (Entrepreneur India; Arise)",
+        "india_value_chain.json hair_care growth — Deep Market Insights hair serum USD 155.16mn (2025) to USD 317.12mn (2034), ~8.21% CAGR, 'fastest-growing in Asia Pacific' (LOW)"
+      ],
+      "read": "The active-ingredient logic of skincare is migrating into hair care: demand is moving from mass shampoo toward serums and scalp tonics carrying named actives, and the finding explicitly flags specialist D2C outpacing legacy FMCG. It reframes hair care as a treatment category rather than a cleansing one, which favours ingredient-led entrants over shelf-space incumbents. Note the underlying India hair-care sizing is LOW-confidence and internally conflicting (Mordor 4.73% vs IMARC 10.58% CAGR), so the direction is well-evidenced but the magnitude is not."
+    },
+    {
+      "driver": "glass-skin/K-beauty pull",
+      "geography": "IN",
+      "segments_touched": [
+        "dermocosmetics",
+        "sun_care",
+        "skincare",
+        "colour_cosmetics"
+      ],
+      "evidence": [
+        "corridor.yaml headline[momentum] — India K-beauty ~INR 3,139cr (2025), forecast ~26% CAGR to ~INR 32,424cr by 2035 (Expert Market Research); 2026 launch wave (Medicube, Illiyoon, TirTir, Hince, Dr. Melaxin)",
+        "india.json IN dermocosmetics growth — [CORRIDOR] K-beauty GMV on Nykaa +60% YoY Jul-Sep 2025 (Nykaa earnings via Insight Korea, MEDIUM)",
+        "india_value_chain.json sun_care growth — [CORRIDOR] 'Korean sunscreen' searches +148% and 'glass skin' +61% in-quarter; top Korean brands +50% on Nykaa (CosmeticsDesign-Asia via Nykaa, MEDIUM)"
+      ],
+      "read": "K-drama/K-pop-led aspiration is converting into category-specific search and transaction demand, concentrated in derma-adjacent skincare and sunscreen where the 'glass skin' aesthetic is most legible. This is the corridor's demand engine: it is documented as a channel signal (Nykaa GMV, platform search spikes) rather than an independent market size, and the K-beauty India totals rest on a single aggregator, so treat it as a strong directional pull with soft absolute sizing."
+    },
+    {
+      "driver": "access-led q-commerce shift",
+      "geography": "IN",
+      "segments_touched": [
+        "total_bpc",
+        "sun_care",
+        "skincare",
+        "dermocosmetics"
+      ],
+      "evidence": [
+        "india_findings.yaml demand — q-commerce ~Rs40,000cr (~US$5bn) GMV 2026, share Blinkit 45-50% / Zepto 20-25% / Instamart 20-25%; demand shifting awareness-led to access-led (RedSeer via Unicommerce; Outlook Business)",
+        "india_value_chain.json total_bpc growth — BPC on q-commerce +120% YoY FY26 and ~140% CY25; beauty +160% YoY (Redseer, MEDIUM)",
+        "india.json IN sun_care growth — sunscreen on q-commerce projected ~+170% 2026 vs 2025, Tier 2/3 surge (1digitalstack, LOW)"
+      ],
+      "read": "Quick commerce has become the default access rail into Tier 2/3, turning beauty from an aspiration-led into an availability-led purchase. BPC is growing far faster on q-commerce than overall, which reshapes route-to-market: dark-store availability, not brand awareness, is becoming the binding constraint on volume. The GMV split is single-sourced and the sunscreen surge is a LOW-confidence projection, but the structural shift is corroborated across multiple Redseer reads."
+    },
+    {
+      "driver": "premiumization",
+      "geography": "IN",
+      "segments_touched": [
+        "skincare",
+        "dermocosmetics",
+        "fragrances"
+      ],
+      "evidence": [
+        "india_findings.yaml demand — premium/high-end beauty gaining on q-commerce, not just mass (RedSeer via Unicommerce)",
+        "india_findings.yaml import_make — imports concentrate in premium and K-beauty tiers; premium fragrance import-reliant (UAE/France/Germany)",
+        "dermocosmetics.json IN points — masstige derma tier fastest India derma growth, 14.6% CAGR 2026-2035 (Expert Market Research, LOW)"
+      ],
+      "read": "Willingness to pay is rising within categories, not just across them: premium and masstige tiers are the fastest-growing slices even inside value-conscious channels like q-commerce, and imports cluster at the premium/K-beauty end. The masstige-derma tier is the clearest quantified expression of this. The signal is qualitative-plus-LOW-confidence sizing, so it supports a premium-tier entry thesis without a defensible premium market-size number."
+    },
+    {
+      "driver": "men's grooming rise",
+      "geography": "IN",
+      "segments_touched": [
+        "mens_grooming"
+      ],
+      "evidence": [
+        "india.json IN mens_grooming — market INR 186.3bn 2025, +9% YoY (Euromonitor, HIGH)",
+        "india_value_chain.json mens_grooming growth — India men's skincare sub-slice 12.2% CAGR 2025-2035, faster than overall grooming (Future Market Insights, LOW)",
+        "corridor.yaml whitespace — Men's K-beauty (baseline whitespace #4): men's skincare underserved vs toiletries"
+      ],
+      "read": "Men's grooming is the segment with the firmest India demand base in the set — a HIGH-confidence Euromonitor size growing ~9% — with the skincare sub-slice growing faster still. It is simultaneously flagged as corridor whitespace because men's skincare is underserved relative to toiletries. The size and growth are well-evidenced; the sub-slice CAGR and the whitespace read are softer, so the opportunity framing is stronger than any precise men's-skincare number."
+    },
+    {
+      "driver": "premiumization",
+      "geography": "KR",
+      "segments_touched": [
+        "dermocosmetics",
+        "skincare"
+      ],
+      "evidence": [
+        "korea.json KR dermocosmetics growth — +13% YoY 2024, driven by PDRN, exosomes, peptides (Euromonitor, HIGH)",
+        "korea.json KR skincare — domestic retail KRW 7.653tn 2025, +1% YoY (Euromonitor, HIGH)"
+      ],
+      "read": "Korea's mature domestic skincare market (~+1% YoY) is growing almost entirely through premium active-ingredient derma: dermocosmetics is up ~13% on next-generation actives (PDRN, exosomes, peptides). Value growth is coming from ingredient escalation inside a flat volume base, which is what feeds the export and corridor story. This is the best-evidenced driver in the set (both points Euromonitor HIGH), but it describes the source market, not an India demand pull."
+    }
+  ]
+}

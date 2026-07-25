@@ -1,0 +1,94 @@
+{
+  "segment": "sun_care",
+  "generated_at": "2026-07-24T17:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": "MEDIUM",
+      "rationale": "No sun-care-specific brand shares exist in the repo, so rivalry is inferred from segment structure. Korea is a global sunscreen production and export force — MFDS sunscreen production value KRW 470.3bn (CY2025, +9.4%), Kolmar Korea's US-bound OTC sunscreen +88% (2024), Korean sun-care US e-commerce projected +43% (2025) — which signals many capable, competing manufacturers/brands rather than a settled domestic oligopoly. Absent domestic share counts, the level is held at MEDIUM: clearly contested and innovation-driven, but the underlying rivalry intensity for domestic sell-through is not measured.",
+      "evidence": ["segments/sun_care.json:KR production_value KRW 470.3bn +9.4% (MFDS, MEDIUM)", "segments/sun_care.json:KR growth note (Kolmar +88% US OTC sunscreen; Samsung Securities +43% US e-commerce)"],
+      "evidence_strength": "THIN",
+      "research_needed": "KR sun-care domestic brand shares / player count (euromonitor_passport, korea_mfds)"
+    },
+    "buyer_power": {
+      "rating": "MEDIUM",
+      "rationale": "The channel structure mirrors KR skincare — Olive Young as dominant H&B gatekeeper, online, and duty-free — so channel/buyer concentration is present, but there is no sun-care-specific channel-share or margin DataPoint. Held at MEDIUM on structural inference only.",
+      "evidence": ["companies.yaml:KR.retailers (CJ Olive Young)", "CLAUDE.md rule 12 (duty-free distinct channel)"],
+      "evidence_strength": "THIN",
+      "research_needed": "KR sun-care channel shares and retail margins (euromonitor_passport)"
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Sunscreen is manufacturing- and formulation-intensive, yet Korea's ODM base specialises in exactly this — Kolmar Korea is named directly as the OTC-sunscreen contract manufacturer behind the US export surge, alongside Cosmax and Cosmecca. A deep, competitive sunscreen-capable ODM ecosystem keeps supplier leverage over brands low and switching feasible.",
+      "evidence": ["segments/sun_care.json:KR growth note (Kolmar Korea +88% US-bound OTC sunscreen)", "companies.yaml:KR.odm_oem (Cosmax, Kolmar Korea, Cosmecca Korea)"],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "MEDIUM",
+      "rationale": "Sunscreen is a 'functional cosmetic' under MFDS — it sits inside the functional-cosmetics production category (KRW 7.18tn, 40% of total) that requires efficacy/SPF approval, a real gate above plain-skincare notification. That approval bar tempers the otherwise-HIGH entry threat that Korea's ODM depth would create, netting to MEDIUM.",
+      "evidence": ["segments/sun_care.json:KR production note (sunscreen within MFDS functional-cosmetics category, efficacy-regulated)", "companies.yaml:KR.odm_oem (ODM base lowers capital barrier)"],
+      "evidence_strength": "THIN",
+      "research_needed": "MFDS functional-cosmetic sunscreen approval cost/timeline (korea_mfds)"
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No DataPoint measures substitution of dedicated KR sunscreen by SPF-moisturisers, cushions or make-up-with-SPF. Left unrated rather than guessed.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Evidence on SPF-moisturiser / SPF-make-up substitution for dedicated sunscreen in KR (euromonitor_passport)"
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "KR sun care reads as a production/export strength rather than a domestic-share opportunity: an efficacy-regulated 'functional cosmetic' with a deep sunscreen-capable ODM base (low supplier power) that is dynamic on exports (+9.4% production, +88% Kolmar US OTC, +43% US e-commerce). Its attractiveness to an entrant is as a sourcing and corridor-export base; the domestic scale itself is uncertain (retail estimates span 2.3x, all LOW).",
+      "evidence": ["segments/sun_care.json:KR (MFDS production, export dynamics; MarkNtel vs Grand View 2.3x spread)", "companies.yaml:KR.odm_oem"],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": "MEDIUM",
+      "rationale": "The market is small and underpenetrated (US$0.58-0.89bn, 2024-25; only ~32.77% of surveyed Indians used sun care daily, 2019) but actively contested — legacy players compete with a wave of D2C sun-specialists (e.g. Innovist's Sunscoop) and a growing K-beauty import layer where Beauty of Joseon's SPF50+ is a category bestseller. Fragmentation over a still-small base reads as MEDIUM rivalry, not the HIGH seen in mainstream skincare.",
+      "evidence": ["segments/sun_care.json:IN size (IMARC US$0.577bn 2025 / TechSci US$0.893bn 2024, LOW)", "segments/sun_care.json:IN penetration 32.77% daily (2019)", "segments/sun_care.json:IN Beauty of Joseon SPF50+ bestseller [CORRIDOR]; india_findings.yaml:new_players (Innovist/Sunscoop)"],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "HIGH",
+      "rationale": "Sunscreen is a q-commerce hero category, which puts unusual leverage in the platforms' hands: q-commerce sunscreen is projected ~+170% in 2026 and Nykaa's platform sunscreen sales grew +85% YoY (2023). With the access rail concentrated in Blinkit/Zepto/Instamart and Nykaa, plus standard commissions and MRP trade margins, channel buyers hold strong power over sun-care brands.",
+      "evidence": ["segments/sun_care.json:IN growth +170% q-commerce 2026 (LOW) and +85% Nykaa 2023 (MEDIUM) [CORRIDOR]", "india_findings.yaml:demand (Blinkit 45-50% / Zepto 20-25% / Instamart 20-25%)", "CLAUDE.md rule 10 (MRP trade margin)"],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Sunscreen brands draw on the same commoditised Indian contract-manufacturing and specialty-ingredient base as skincare (Gorgeous Cosmos / IndiaMART CMs, Galaxy Surfactants, Fine Organics). SPF formulation and BIS IS 4707 testing add some technical demand on the supplier, but do not concentrate supply enough to give manufacturers pricing power over brands.",
+      "evidence": ["india_findings.yaml:supply_chain (contract-mfg; Galaxy Surfactants, Fine Organics)", "config/corridor.yaml:regulation (BIS IS 4707 ingredient standards)"],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "Dedicated sunscreens are baseline whitespace #2 (India sun care underpenetrated), the q-commerce surge lowers the access barrier for new brands into Tier 2/3, and cheap contract manufacturing plus live D2C funding keep domestic launches easy (Innovist's Sunscoop is a documented sun-specialist entrant). Imports face the CDSCO + BIS SPF gate (MEDIUM for that lane), but the domestic and corridor entry vectors are wide open.",
+      "evidence": ["config/corridor.yaml:whitespace (#2 dedicated sunscreens underpenetrated)", "segments/sun_care.json:IN +170% q-commerce (Tier 2/3 surge)", "india_findings.yaml:new_players + config/corridor.yaml:regulation (CDSCO, BIS IS 4707)"],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": "MEDIUM",
+      "rationale": "The dominant alternative to dedicated sunscreen in India is non-consumption and casual substitution: a 2019 survey found 25.62% never use sun care and only ~32.77% use it daily, so SPF-moisturisers, BB creams and simply going without still absorb much of the occasion. That non-consumption pool is the real competitor for a dedicated-sunscreen entrant, though the supporting datapoint is a single dated survey.",
+      "evidence": ["segments/sun_care.json:IN penetration (32.77% daily, 25.62% never use, 2019 survey, LOW)"],
+      "evidence_strength": "THIN",
+      "research_needed": "Current substitution split: dedicated sunscreen vs SPF-moisturiser/BB vs non-use in India (euromonitor_passport, tavily)"
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "The most corridor-favourable of the three segments on the demand side: underpenetrated, high-growth, and pulled by evidenced K-beauty sunscreen demand (Korean-sunscreen searches +148%, glass-skin +61%). Attractive for entry on growth + corridor tailwind, but tempered by a small base, HIGH buyer power (q-commerce/Nykaa gatekeeping of the hero category), and non-consumption as the standing alternative. Best pursued via the corridor-import / partner-with-conduit route that the whitespace itself implies.",
+      "evidence": ["config/corridor.yaml:whitespace #2 + headline (Korean-sunscreen search pull)", "segments/sun_care.json:IN (growth, buyer, penetration)"],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    },
+    "sub_segment_overrides": {}
+  }
+}

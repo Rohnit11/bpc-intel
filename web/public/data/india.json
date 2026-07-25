@@ -384,7 +384,7 @@
       "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
       "Bottom-up base is inflated by non-pure-play conglomerates (Godrej Consumer Products, Hindustan Unilever) reporting non-BPC revenue."
     ],
-    "date": "2026-07-24",
+    "date": "2026-07-25",
     "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
   }
 }

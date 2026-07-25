@@ -1,0 +1,35 @@
+{
+  "slug": "lg-hh",
+  "name": "LG H&H",
+  "geography": "KR",
+  "role": "conglomerates",
+  "segments": [
+    "skincare",
+    "colour_cosmetics",
+    "oral_care",
+    "bath_shower"
+  ],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 6.355,
+      "unit": "krw_tn",
+      "period": "2025 (CY)",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "DART (FSS) annual filing — consolidated revenue; includes non-BPC Home & Daily Beauty and beverage lines, so it overstates the BPC position"
+    },
+    {
+      "metric": "market_share",
+      "value": 59.9,
+      "unit": "percent",
+      "period": "2025 (CY)",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "korea.json shares — share of summed revenue for the 2 listed KR brand owners (base KRW 10.608tn); flagged non_pure_play. NOT a market share"
+    }
+  ],
+  "recent_moves": [],
+  "corridor_involvement": "Present in India by assortment rather than by announced entry. Its The Face Shop is the deepest K-brand on the Blinkit q-commerce capture (2026-07-23) at 21 SKUs — Rice Water line, sheet masks from Rs90 up to cleansers and kits at Rs1,349, all in stock — and The Face Shop also appears in Flipkart's 2025 international K-beauty portfolio and on Amazon India. No launch event for LG H&H is recorded in corridor.yaml; it arrived through channel depth, not exclusives.",
+  "read": "The larger of Korea's two listed brand owners by revenue (KRW 6.355tn, 2025, DART) but the one moving backwards: reported -6.7% YoY with operating profit down 62.8% to KRW 170.7bn. Read the share figure carefully — 59.9% is share of a two-company revenue base that includes LG H&H's non-BPC lines, not a market share, and the repo's own qualifier says so. The India-relevant point is that LG H&H demonstrates the alternative corridor route to AmorePacific's exclusive-partnership model: mature local supply into mass q-commerce at Rs90-1,349 price points, which is precisely the masstige-and-below band an import-led entrant will struggle to reach."
+}

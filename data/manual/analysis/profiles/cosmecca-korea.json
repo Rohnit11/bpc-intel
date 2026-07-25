@@ -1,0 +1,21 @@
+{
+  "slug": "cosmecca-korea",
+  "name": "Cosmecca Korea",
+  "geography": "KR",
+  "role": "odm_oem",
+  "segments": ["total_bpc"],
+  "figures": [
+    {
+      "metric": "production_value",
+      "value": 353.0,
+      "unit": "krw_bn",
+      "period": "2025 (CY)",
+      "value_basis": "PRODUCTION",
+      "confidence": "HIGH",
+      "source": "MFDS — #3 in Korea by production value"
+    }
+  ],
+  "recent_moves": [],
+  "corridor_involvement": null,
+  "read": "The third ODM on the MFDS production-value table at KRW 353bn — roughly a fifth of Cosmax and a quarter of Kolmar, which is the point: Korean contract manufacturing is a two-tier structure with a long drop after the top two. No revenue DataPoint has been collected for Cosmecca in this repo, so only its production position is evidenced. For an entrant sourcing in Korea it represents the second-tier option where MOQ and attention terms are likely to be more negotiable than at the majors, though nothing here documents either."
+}

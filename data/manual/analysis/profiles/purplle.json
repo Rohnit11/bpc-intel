@@ -1,0 +1,11 @@
+{
+  "slug": "purplle",
+  "name": "Purplle",
+  "geography": "IN",
+  "role": "platforms",
+  "segments": ["total_bpc"],
+  "figures": [],
+  "recent_moves": [],
+  "corridor_involvement": null,
+  "read": "On the roster as India's second beauty platform, carried at a last valuation of US$1.1bn (config/companies.yaml — a config entry, not a collected DataPoint). No revenue, margin, share, commission or assortment DataPoint exists for Purplle in this repo, and corridor.yaml does not list it as a K-beauty conduit — so unlike Nykaa, Tira, Flipkart and Amazon India, there is no evidence here of a Korean portfolio on the platform. That absence is itself worth flagging for an entrant mapping conduits: it may be a genuine gap in Purplle's assortment or a gap in this repo's coverage, and the two cannot be distinguished from what has been collected. Figures remain empty until platform-level data is fetched."
+}

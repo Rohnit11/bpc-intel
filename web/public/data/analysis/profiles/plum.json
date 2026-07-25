@@ -1,0 +1,15 @@
+{
+  "slug": "plum",
+  "name": "Plum",
+  "geography": "IN",
+  "role": "d2c_brands",
+  "segments": [
+    "total_bpc"
+  ],
+  "figures": [],
+  "recent_moves": [
+    "undated — acquired by HUL / Unilever (reported); recorded in the 2026-07-23 India research sweep"
+  ],
+  "corridor_involvement": null,
+  "read": "Known only as the second half of HUL's D2C acquisition pair: india_findings.yaml records 'HUL acquired Minimalist (~Rs3,000cr) and Plum', and companies.yaml carries it as acquired with acquirer 'Unilever (reported)'. No consideration, revenue, margin or segment split has been collected, so the transaction is evidenced as a fact but not as a price — only the Minimalist multiple is available as a reference. Profiled here because the move matters to the consolidation read even though the figures do not yet exist; it is a candidate for the next research pass alongside the other undated strategic deals."
+}

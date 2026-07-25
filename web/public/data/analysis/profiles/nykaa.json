@@ -1,0 +1,46 @@
+{
+  "slug": "nykaa",
+  "name": "Nykaa (FSN E-Commerce)",
+  "geography": "IN",
+  "role": "platforms",
+  "segments": [
+    "total_bpc"
+  ],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 10022.0,
+      "unit": "inr_cr",
+      "period": "FY26",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "Screener.in (consolidated P&L) — annual Sales line. Note: a separate company-disclosure DataPoint records the same Rs10,022cr against FY25 (265 stores, ~4,200 brands, ~40m beauty customers); the period labels conflict across the two sources"
+    },
+    {
+      "metric": "revenue",
+      "value": 7950.0,
+      "unit": "inr_cr",
+      "period": "FY25",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "Screener.in (consolidated P&L) — annual Sales line"
+    },
+    {
+      "metric": "operating_margin",
+      "value": 8.0,
+      "unit": "percent",
+      "period": "FY26",
+      "value_basis": "NA",
+      "confidence": "HIGH",
+      "source": "Screener.in (consolidated P&L) — OPM %; cost-structure proxy"
+    }
+  ],
+  "recent_moves": [
+    "2016 — partnered AmorePacific on a 10-year exclusive-portfolio agreement (2016-2026) [CORRIDOR]",
+    "2025 — listed AmorePacific hair care (Mise En Scène, RYO) [CORRIDOR]",
+    "2026 — listed Illiyoon (AmorePacific dermocosmetics) as an exclusive, and Medicube (APR) [CORRIDOR]",
+    "2026-06 — listed TirTir, an independent K-brand outside the AmorePacific portfolio [CORRIDOR]"
+  ],
+  "corridor_involvement": "The corridor's primary conduit since 2016 and the holder of India's largest Korean assortment. Its own quarterly materials report K-beauty transaction value on the platform growing more than 60% YoY in Jul-Sep 2025. The economics of using it are documented: platform commission 22-28% by category (skincare ~24%, colour ~26%, hair 20-24%, fragrance 22-25%). Its listings are also the repo's main source of Indian K-beauty shelf prices — Innisfree Green Tea Seed Serum MRP Rs2,200 (sale Rs1,650), COSRX Snail 96 Essence MRP Rs1,490 (sale Rs969), Anua Heartleaf Toner Rs2,050, Laneige Lip Sleeping Mask Rs600, Beauty of Joseon Relief Sunscreen Rs1,570.",
+  "read": "Rs10,022cr of revenue growing steadily off Rs7,950cr the prior year, but at an 8% operating margin against incumbent brand owners' 21-23% — the structural fact about platforms in this market. Nykaa monetises the corridor by charging 22-28% of sell-through, so an entrant's Nykaa decision is a gross-margin decision before it is a distribution one. Its position is strong but no longer unique: the 10-year AmorePacific term expires in 2026, Tira is buying exclusives, and Nykaa itself now lists independent K-brands (TirTir, Medicube) it does not hold through AmorePacific. Note the period conflict on the Rs10,022cr figure between the Screener series (FY26) and the company-disclosure row (FY25); treat the Screener series as the consistent one."
+}

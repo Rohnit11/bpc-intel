@@ -1,0 +1,41 @@
+{
+  "slug": "cj-olive-young",
+  "name": "CJ Olive Young",
+  "geography": "KR",
+  "role": "retailers",
+  "segments": [
+    "total_bpc"
+  ],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 5.83,
+      "unit": "krw_tn",
+      "period": "2025 (CY)",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "Seoul Economic Daily — +21.8% YoY, ~1,350-1,370 stores"
+    },
+    {
+      "metric": "revenue",
+      "value": 4.79,
+      "unit": "krw_tn",
+      "period": "2024 (CY)",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "Seoul Economic Daily — +~22% YoY"
+    },
+    {
+      "metric": "market_share",
+      "value": 85.0,
+      "unit": "percent",
+      "period": "2026 (CY)",
+      "value_basis": "RETAIL",
+      "confidence": "LOW",
+      "source": "Seoulz (Olive Young Global 2026 profile) — share of the health-and-beauty STORE channel, NOT of total Korean cosmetics retail"
+    }
+  ],
+  "recent_moves": [],
+  "corridor_involvement": null,
+  "read": "The single most important gatekeeper in Korean domestic BPC: KRW 5.83tn in 2025, +21.8%, across roughly 1,350-1,370 stores, and reportedly more than 85% of the H&B store channel (Seoulz, LOW). The health-and-beauty channel is itself put at 54.1% of Korean cosmetics distribution (Mordor, LOW) — both figures are aggregator-grade and the repo flags them as conflicting with other channel reads, so treat the concentration as directionally strong and numerically soft. Two consequences for entry: any Korea-facing plan is really an Olive Young listing plan, which makes buyer power the binding force in KR; and its revenue is retailer sell-through, so it cannot be compared with the brand owners' net realisation or added to any market total."
+}

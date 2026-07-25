@@ -1,0 +1,42 @@
+{
+  "slug": "hindustan-unilever",
+  "name": "Hindustan Unilever",
+  "geography": "IN",
+  "role": "incumbents",
+  "segments": ["skincare", "hair_care", "colour_cosmetics", "deodorants"],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 64468.0,
+      "unit": "inr_cr",
+      "period": "FY26",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "Screener.in (consolidated P&L) — annual Sales line; organised sector; includes non-BPC lines (foods, home care)"
+    },
+    {
+      "metric": "operating_margin",
+      "value": 23.0,
+      "unit": "percent",
+      "period": "FY26",
+      "value_basis": "NA",
+      "confidence": "HIGH",
+      "source": "Screener.in (consolidated P&L) — OPM %; cost-structure proxy"
+    },
+    {
+      "metric": "market_share",
+      "value": 78.6,
+      "unit": "percent",
+      "period": "FY26",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "india.json shares — share of summed revenue for the 3 listed IN brand owners (base INR 82,038cr); flagged non_pure_play. NOT a market share"
+    }
+  ],
+  "recent_moves": [
+    "Jan-2025 — acquired 90.5% of Minimalist (Uprising Science) at Rs2,955cr pre-money, ~8.5x FY24 revenue",
+    "undated — acquired Plum (recorded in the 2026-07-23 India research sweep)"
+  ],
+  "corridor_involvement": null,
+  "read": "The Indian incumbent an entrant is actually pricing against: Rs64,468cr FY26 sales at a 23% operating margin, a margin band it has held between 23% and 25% every year since FY19 (Screener, HIGH). The 78.6% figure is share of a three-company listed base, not of the market, and it includes non-BPC revenue — the repo's own qualifier says so. What matters strategically is the shift in how HUL adds growth: sales have moved only Rs61,896cr to Rs64,468cr across FY24-FY26, and in the same window it bought Minimalist and Plum. A structurally low-growth incumbent with a 23% margin and an acquisition habit is the most likely eventual counterparty for a successful India entrant, and the most punishing competitor for an unsuccessful one."
+}

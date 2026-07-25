@@ -1,5 +1,5 @@
 # India Beauty & Personal Care — Value-Chain Brief
-*Generated 2026-07-24 · segments: skincare/sun/derma, fragrances, men's grooming, hair care, K-beauty corridor*
+*Generated 2026-07-25 · segments: skincare/sun/derma, fragrances, men's grooming, hair care, K-beauty corridor*
 *Every figure traces to data/sources.csv; qualitative findings cite their source inline.*
 
 ## Executive read

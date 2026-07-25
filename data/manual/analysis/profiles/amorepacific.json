@@ -1,0 +1,43 @@
+{
+  "slug": "amorepacific",
+  "name": "AmorePacific",
+  "geography": "KR",
+  "role": "conglomerates",
+  "segments": ["skincare", "colour_cosmetics", "fragrances", "hair_care"],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 4.253,
+      "unit": "krw_tn",
+      "period": "2025 (CY)",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "DART (FSS) annual filing — consolidated revenue"
+    },
+    {
+      "metric": "market_share",
+      "value": 22.0,
+      "unit": "percent",
+      "period": "2024 (CY)",
+      "value_basis": "RETAIL",
+      "confidence": "HIGH",
+      "source": "Euromonitor International — AmorePacific share of Korea PREMIUM BPC (premium tier only, not total market)"
+    },
+    {
+      "metric": "market_share",
+      "value": 40.1,
+      "unit": "percent",
+      "period": "2025 (CY)",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "korea.json shares — share of summed revenue for the 2 listed KR brand owners (base KRW 10.608tn). NOT a market share: the base excludes unlisted/unorganised players, ODMs and retailers"
+    }
+  ],
+  "recent_moves": [
+    "2016 — partnered Nykaa on a 10-year exclusive-portfolio agreement (2016-2026), India's largest Korean assortment [CORRIDOR]",
+    "2025 — launched Mise En Scène and RYO (hair care) via Nykaa [CORRIDOR]",
+    "2026 — launched Illiyoon (dermocosmetics) as a Nykaa exclusive [CORRIDOR]"
+  ],
+  "corridor_involvement": "The corridor's anchor principal. Its Nykaa partnership (2016-2026) built India's largest Korean portfolio — Innisfree, Laneige, Sulwhasoo, COSRX, Aestura, now Illiyoon — and corridor.yaml records that it is scaling India via platforms and imports, NOT local manufacturing, with no India plant announced. Its owned brands are also the deepest-stocked K-brands on the q-commerce rail (Laneige 16 SKUs, Etude 10, Innisfree 9 on Blinkit, 2026-07-23), while its COSRX acquisition sits out-of-stock on the same capture.",
+  "read": "Korea's #1 brand owner on a premium basis — 22% of Korean premium BPC (Euromonitor, HIGH) — with KRW 4.253tn consolidated revenue in 2025, reported up 9.5% YoY on operating profit of KRW 335.8bn, +52.3%. That recovery is real but it is measured against a damaged base: the group's own Innisfree fell to KRW 224.6bn in FY24, -18%, from a KRW 768bn peak in 2016 as the road-shop model collapsed. For an entrant the relevant fact is structural rather than financial: AmorePacific enters India through platform partnerships and imports, so it holds shelf and conduit position without owning any Indian manufacturing — a position that is rentable, contestable, and, with the Nykaa term expiring in 2026, currently in play."
+}

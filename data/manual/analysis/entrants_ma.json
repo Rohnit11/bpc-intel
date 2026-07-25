@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-07-25T04:00:00Z",
+  "events": [
+    {
+      "actor": "Nykaa (FSN E-Commerce)",
+      "action": "partnered",
+      "target": "AmorePacific — 10-year exclusive-portfolio partnership (2016-2026)",
+      "date_or_period": "2016 (10-year term running to 2026)",
+      "segments": ["skincare", "dermocosmetics", "hair_care"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml conduits: Nykaa — since 2016, '10-year AmorePacific partnership (2016-2026), India's largest Korean portfolio (skincare/derma/haircare)'; Innisfree launched 2016",
+      "what_it_signals": "The corridor's founding structure: Korea's largest brand owner chose a single Indian platform rather than local manufacturing or its own retail. Nykaa's decade-long lock on the AmorePacific stable (Innisfree, Laneige, Sulwhasoo, COSRX, Aestura) is the reason platform partnership — not build — is the default K-beauty entry mode into India, and the reason a challenger platform had to buy its way in with exclusives. The term expires in 2026, which makes conduit choice contestable right now.",
+      "corridor": true
+    },
+    {
+      "actor": "KKR",
+      "action": "acquired",
+      "target": "Vini Cosmetics (Fogg) — 54% stake",
+      "date_or_period": "2021",
+      "segments": ["fragrances", "deodorants"],
+      "geography": "IN",
+      "source": "DataPoint 'IN fragrances revenue 1200 inr_cr FY25' notes (Economic Times startups, MEDIUM): 'KKR owns 54% (US$625m, 2021, US$1.2bn valuation)'",
+      "what_it_signals": "Financial sponsors, not only strategics, will pay for Indian mass BPC scale: US$625m for control at a US$1.2bn valuation against what is now Rs1,200cr FY25 operating revenue. It prices the mass deodorant/fragrance rung and establishes that a distribution-heavy Indian brand can clear a US$1bn mark without premium positioning.",
+      "corridor": false
+    },
+    {
+      "actor": "Tira (Reliance Retail)",
+      "action": "launched",
+      "target": "Mixsoon (K-brand) on Tira",
+      "date_or_period": "2024-08",
+      "segments": ["total_bpc"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml conduits: Tira (Reliance) kr_brands_carried — Mixsoon, launched 2024-08",
+      "what_it_signals": "Reliance's opening move on the corridor, roughly eighteen months ahead of its 2026 exclusive sprint. Mixsoon is an indie K-brand, not a conglomerate one — Tira's entry route was the brands Nykaa's AmorePacific tie-up did not cover. Note the follow-through gap: Mixsoon does not surface on the Blinkit q-commerce capture (2026-07-23), so platform listing has not converted into the access rail.",
+      "corridor": true
+    },
+    {
+      "actor": "Hindustan Unilever",
+      "action": "acquired",
+      "target": "Minimalist (Uprising Science) — 90.5%",
+      "date_or_period": "Jan-2025",
+      "segments": ["dermocosmetics", "skincare"],
+      "geography": "IN",
+      "source": "config/india_findings.yaml new_players (IMA Pro; Economic Times): 'HUL acquired Minimalist (~Rs3,000cr)'; DataPoint 'IN dermocosmetics revenue 347 inr_cr FY24' notes (Entrackr, MEDIUM): 'HUL acquired 90.5% Jan-2025 at Rs 2,955 cr (~US$350mn) pre-money — 8.5x FY24 revenue, the benchmark derma D2C exit multiple'",
+      "what_it_signals": "The reference transaction for the whole India derma-D2C class, and the clearest evidence that incumbents will buy rather than build in dermocosmetics. Rs2,955cr against Rs347cr FY24 revenue (+89% YoY off Rs184cr FY23, PAT Rs10.83cr) sets an 8.5x revenue anchor. For an entrant it cuts both ways: it validates the derma thesis and it tells you HUL now owns the fastest asset in it.",
+      "corridor": false
+    },
+    {
+      "actor": "AmorePacific",
+      "action": "launched",
+      "target": "Mise En Scène and RYO (hair care) via Nykaa",
+      "date_or_period": "2025",
+      "segments": ["hair_care"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml conduits: Nykaa kr_brands_carried — 'Mise En Scène' (hair_care, launched 2025), RYO (hair_care, launched 2025)",
+      "what_it_signals": "The corridor widening past facial skincare into hair care, which is the segment India's own 'skinification' finding says is being reshaped by actives-led specialists. AmorePacific extended an existing conduit rather than opening a new one — the cheapest form of category expansion available to a corridor incumbent.",
+      "corridor": true
+    },
+    {
+      "actor": "Flipkart",
+      "action": "launched",
+      "target": "International K-beauty portfolio (The Face Shop, TirTir, Beauty of Joseon, rom&nd, Thank You Farmer, K Glo, Soyaang, K Riot)",
+      "date_or_period": "2025",
+      "segments": ["total_bpc"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml conduits: Flipkart — 'Launched international K-beauty portfolio (source: Flipkart, 2025)'",
+      "what_it_signals": "A third conduit opens, and a horizontal marketplace rather than a beauty specialist. Flipkart's list is indie-heavy and overlaps almost nothing with the AmorePacific portfolio, so the corridor is no longer a two-platform race — it is specialists (Nykaa, Tira) competing on exclusivity while horizontals compete on breadth and reach.",
+      "corridor": true
+    },
+    {
+      "actor": "Tira (Reliance Retail)",
+      "action": "launched",
+      "target": "Hince (colour cosmetics) — exclusive",
+      "date_or_period": "2026-01",
+      "segments": ["colour_cosmetics"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml conduits: Tira (Reliance) kr_brands_carried — Hince, segment colour_cosmetics, launched 2026-01; conduit note 'aggressive 2026 K-beauty sprint with exclusive launches (online + select stores)'",
+      "what_it_signals": "Opens Tira's 2026 exclusive sprint and does it in colour, where the corridor had been thin — the Korean pull into India had been read as skincare-led. Colour is the segment where Nykaa's platform commission is highest (26%), so an exclusive-launch structure is how Tira buys share it cannot buy on assortment.",
+      "corridor": true
+    },
+    {
+      "actor": "APR Corporation",
+      "action": "entered",
+      "target": "India — Medicube on Nykaa and Tira",
+      "date_or_period": "2026 (Tira listing Feb-2026)",
+      "segments": ["dermocosmetics"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml conduits: Nykaa kr_brands_carried — Medicube (owner APR Corporation, dermocosmetics, launched 2026); Tira kr_brands_carried — Medicube (launched 2026-02); config/india_findings.yaml new_players (Personal Care Insights): 'APR launched Medicube on Nykaa'",
+      "what_it_signals": "The single most consequential entry on this list: Korea's fastest-rising producer (APR's production value KRW 285bn in 2025, +177.8%, rank 21 to 4 per MFDS) entering India directly and dual-listing across both competing conduits rather than granting exclusivity. It shows an indie K-brand with domestic scale can dictate multi-platform terms, and it puts derma K-beauty — the corridor's stated whitespace — on the shelf at last.",
+      "corridor": true
+    },
+    {
+      "actor": "AmorePacific",
+      "action": "launched",
+      "target": "Illiyoon (dermocosmetics) — Nykaa exclusive",
+      "date_or_period": "2026",
+      "segments": ["dermocosmetics"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml conduits: Nykaa kr_brands_carried — Illiyoon (owner AmorePacific, dermocosmetics, launched 2026), 'Illiyoon newest exclusive (2026)'; config/india_findings.yaml new_players (Personal Care Insights): 'AmorePacific introduced dermocosmetic brand Illiyoon'",
+      "what_it_signals": "AmorePacific answering APR in the same segment on the same platform, in the final year of its Nykaa term. Illiyoon is a mass-to-masstige derma line rather than a prestige one, which places the incumbent conglomerate squarely in the price band the corridor's whitespace read identifies. The corridor's competitive line is now Korean major versus Korean indie inside India, not Korean versus Indian.",
+      "corridor": true
+    },
+    {
+      "actor": "TirTir",
+      "action": "entered",
+      "target": "India — Nykaa listing (Mask Fit Red Cushion)",
+      "date_or_period": "2026-06",
+      "segments": ["colour_cosmetics"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml conduits: Nykaa kr_brands_carried — TirTir (owner TirTir, launched 2026-06), notes 'Mask Fit Red Cushion; independent K-brand, not AmorePacific'; also listed under Flipkart kr_brands_carried",
+      "what_it_signals": "Nykaa carrying an independent K-brand it does not hold through AmorePacific — the clearest sign the exclusive portfolio no longer defines its Korean offer. Segment read is taken from the named product (a cushion foundation, i.e. face makeup); corridor.yaml assigns TirTir no segment field of its own.",
+      "corridor": true
+    },
+    {
+      "actor": "Tira (Reliance Retail)",
+      "action": "launched",
+      "target": "Dr. Melaxin (dermocosmetics) — exclusive to Tira",
+      "date_or_period": "2026-07",
+      "segments": ["dermocosmetics"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml conduits: Tira (Reliance) kr_brands_carried — 'Dr. Melaxin', segment dermocosmetics, launched 2026-07, notes 'exclusive to Tira'",
+      "what_it_signals": "The most recent event in the tracker and the fourth K-brand Tira has added inside eighteen months, three of them in the last seven months. Derma again. The cadence itself is the signal: conduit slots in Indian K-beauty are being taken now, and an entrant negotiating in 2026 is negotiating against a platform that has already filled much of its exclusive slate.",
+      "corridor": true
+    },
+    {
+      "actor": "KOSE",
+      "action": "invested",
+      "target": "Foxtale — US$30m",
+      "date_or_period": "2026",
+      "segments": ["total_bpc"],
+      "geography": "IN",
+      "source": "config/india_findings.yaml new_players (The D2C Pulse; The Hindu BusinessLine): 'KOSE invested US$30m in Foxtale'",
+      "what_it_signals": "A Japanese strategic taking a minority position in an Indian D2C brand rather than importing its own — the North-East-Asian playbook for India entry that is not the Korean corridor playbook. Worth holding against the corridor: Korea's majors are choosing platform distribution while a Japanese major is choosing equity in local capability.",
+      "corridor": false
+    },
+    {
+      "actor": "Moxie",
+      "action": "invested",
+      "target": "US$15m funding round raised",
+      "date_or_period": "2026",
+      "segments": ["total_bpc"],
+      "geography": "IN",
+      "source": "config/india_findings.yaml new_players (The D2C Pulse; The Hindu BusinessLine): 'Moxie raised US$15m'; same finding records ~US$757m into India D2C over 18 months, wellness+beauty led",
+      "what_it_signals": "Growth capital is still clearing for Indian beauty D2C in 2026 despite the wider D2C funding slowdown. For an entrant this reads as new-entrant threat rather than opportunity: the funding record means a well-capitalised local challenger can be stood up in the same segment inside a year.",
+      "corridor": false
+    },
+    {
+      "actor": "Antinorm",
+      "action": "invested",
+      "target": "INR 28cr seed round raised",
+      "date_or_period": "2026",
+      "segments": ["total_bpc"],
+      "geography": "IN",
+      "source": "config/india_findings.yaml new_players (The D2C Pulse; The Hindu BusinessLine): 'Antinorm Rs28cr seed'",
+      "what_it_signals": "Seed-stage formation is still live at the bottom of the funnel, not just late-stage rounds. Combined with contract-manufacturing MOQs from ~500 units, the capital required to put a credible new Indian beauty brand on shelf is low — which is the structural reason competitive openness in India reads high and defensibility reads low.",
+      "corridor": false
+    },
+    {
+      "actor": "Hindustan Unilever",
+      "action": "acquired",
+      "target": "Plum",
+      "date_or_period": "undated in source (recorded in the 2026-07-23 India research sweep)",
+      "segments": ["total_bpc"],
+      "geography": "IN",
+      "source": "config/india_findings.yaml new_players (IMA Pro; Economic Times): 'HUL acquired Minimalist (~Rs3,000cr) and Plum'; config/companies.yaml IN.d2c_brands — Plum, acquirer 'Unilever (reported)'",
+      "what_it_signals": "HUL's second D2C beauty acquisition, confirming a pattern rather than a one-off: the incumbent is assembling a portfolio of digital-native brands instead of extending its own. No consideration is recorded in this repo — the Minimalist multiple is the only priced reference available.",
+      "corridor": false
+    },
+    {
+      "actor": "Estée Lauder Companies",
+      "action": "acquired",
+      "target": "Forest Essentials",
+      "date_or_period": "undated in source (recorded in the 2026-07-23 India research sweep)",
+      "segments": ["total_bpc"],
+      "geography": "IN",
+      "source": "config/india_findings.yaml new_players (IMA Pro; Economic Times): 'Estee Lauder took Forest Essentials'",
+      "what_it_signals": "A global prestige house buying Indian premium rather than importing into it — the acquire route at the top of the ladder. Together with Puig/Kama it shows the premium Ayurvedic rung has been consolidated by foreign strategics, so a premium entrant now faces owned incumbents rather than independents.",
+      "corridor": false
+    },
+    {
+      "actor": "Puig",
+      "action": "acquired",
+      "target": "Kama Ayurveda — 85%",
+      "date_or_period": "undated in source (recorded in the 2026-07-23 India research sweep)",
+      "segments": ["total_bpc"],
+      "geography": "IN",
+      "source": "config/india_findings.yaml new_players (IMA Pro; Economic Times): 'Puig bought 85% of Kama Ayurveda'",
+      "what_it_signals": "The second foreign-strategic purchase of an Indian premium heritage brand, and at control level. Read with the Estée Lauder move, it establishes that the 'acquire' entry mode is the proven route into India's premium tier — and that the supply of acquirable premium targets is thinning.",
+      "corridor": false
+    },
+    {
+      "actor": "Foxtale",
+      "action": "launched",
+      "target": "Hula Hoop — house-of-brands pivot",
+      "date_or_period": "undated in source (recorded in the 2026-07-23 India research sweep)",
+      "segments": ["total_bpc"],
+      "geography": "IN",
+      "source": "config/corridor.yaml india_side_players.indian_brands — 'Foxtale (Hula Hoop)': 'Foxtale pivoting D2C -> house of brands; launched Hula Hoop amid Korean-inspired demand' (FashionNetwork)",
+      "what_it_signals": "The Indian-side response to the Korean wave: rather than distribute K-brands, local D2C players are spinning up sub-brands aimed at the same demand. Combined with Innovist's Bare Anatomy/Chemist at Play/Sunscoop structure, house-of-brands is becoming the standard Indian answer to segment proliferation — and a K-beauty entrant will meet these lines at lower price points than a landed import can reach.",
+      "corridor": false
+    },
+    {
+      "actor": "Pilgrim",
+      "action": "launched",
+      "target": "Korean Rice Water range",
+      "date_or_period": "undated in source (recorded in the 2026-07-23 India research sweep)",
+      "segments": ["skincare"],
+      "geography": "IN",
+      "source": "config/corridor.yaml india_side_players.indian_brands — Pilgrim: 'Korean Rice Water range (new launch); markets Korean/global rituals, made-in-India, vegan'",
+      "what_it_signals": "Korean positioning without Korean origin, made in India and priced accordingly. This is the substitute pressure on a corridor import: the Category Entry Point (glass skin, rice-water ritual) is served by a domestic brand carrying no CDSCO lead time and no landed cost. Note the shelf overlap — LG H&H's The Face Shop Rice Water line is the deepest K-brand on Blinkit.",
+      "corridor": false
+    },
+    {
+      "actor": "Limese",
+      "action": "entered",
+      "target": "India — K-beauty formulations manufactured in Korea for Indian skin",
+      "date_or_period": "undated in source (recorded in the 2026-07-23 India research sweep)",
+      "segments": ["skincare"],
+      "geography": "KR_to_IN",
+      "source": "config/corridor.yaml india_side_players.indian_brands — Limese: 'K-beauty formulations manufactured IN KOREA, tuned for Indian skin (snail mucin, cica, rice, collagen)'",
+      "what_it_signals": "A hybrid corridor structure worth naming separately: Indian brand ownership with Korean manufacture. It keeps the formulation credibility and the Korean ODM base while putting brand, pricing and channel control on the India side — the closest thing in this repo to a template for an entrant that wants corridor authenticity without ceding the platform relationship to a Korean principal.",
+      "corridor": true
+    }
+  ]
+}

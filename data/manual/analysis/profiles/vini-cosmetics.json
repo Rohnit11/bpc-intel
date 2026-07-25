@@ -1,0 +1,23 @@
+{
+  "slug": "vini-cosmetics",
+  "name": "Vini Cosmetics (Fogg)",
+  "geography": "IN",
+  "role": "incumbents (PE-controlled; not on the config/companies.yaml roster)",
+  "segments": ["fragrances"],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 1200.0,
+      "unit": "inr_cr",
+      "period": "FY25",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "Economic Times (startups) — FY25 operating revenue"
+    }
+  ],
+  "recent_moves": [
+    "2021 — KKR acquired 54% for US$625m at a US$1.2bn valuation"
+  ],
+  "corridor_involvement": null,
+  "read": "The mass fragrance and deodorant incumbent, Rs1,200cr FY25 operating revenue, 54% held by KKR since a 2021 deal that valued it at US$1.2bn on a US$625m cheque. It is the only priced reference in this repo for Indian mass BPC control, and the contrast with Minimalist is the point: roughly 8.5x revenue for a fast-growing masstige derma D2C brand versus a valuation built on distribution scale in a mass category. Vini also marks a segment gap — fragrances is otherwise thin in this dataset, and no Korean brand in the corridor registry competes in it, so a fragrance-led entry would be running against an entrenched, well-capitalised local owner with no corridor tailwind behind it."
+}

@@ -1,0 +1,298 @@
+{
+  "generated_at": "2026-07-25T09:00:00Z",
+  "segments": [
+    {
+      "segment": "skincare",
+      "KR": [
+        {
+          "tier": "premium",
+          "role": "conglomerate",
+          "players": [
+            "AmorePacific"
+          ],
+          "evidence": [
+            "KR_total_bpc: market_share 22.0% tier=premium, 'Company: AmorePacific share of premium BPC' (2024, RETAIL, HIGH, Euromonitor International) — the only tier-tagged KR player DataPoint in the repo; it is BPC-wide, NOT skincare-specific",
+            "companies.yaml:KR.conglomerates (AmorePacific tagged skincare)",
+            "korea.json:shares (AmorePacific 40.1% of the summed listed-brand-owner base, 2025, NET_REALISATION, HIGH — a revenue share, carries no tier)"
+          ]
+        }
+      ],
+      "IN": [
+        {
+          "tier": "premium",
+          "role": "indie",
+          "players": [
+            "Anua (The Founders)"
+          ],
+          "evidence": [
+            "segments/skincare.json IN retail_price Rs2050 Nykaa list / Rs2999 Amazon MRP, Anua Heartleaf 77% Soothing Toner 250ml [CORRIDOR]",
+            "data/manual/analysis/price_ladder.json premium rung 'toner/essence (imported K-beauty) Rs2050-2999'",
+            "companies.yaml:KR.indie_brands (The Founders/Anua, private)"
+          ]
+        },
+        {
+          "tier": "premium",
+          "role": "conglomerate",
+          "players": [
+            "Innisfree (AmorePacific)"
+          ],
+          "evidence": [
+            "segments/skincare.json IN retail_price Rs2200 MRP (sale Rs1650), Innisfree Green Tea Seed Serum, large format [CORRIDOR]",
+            "data/manual/analysis/price_ladder.json premium rung (large-format Innisfree)",
+            "config/corridor.yaml:conduits.Nykaa (Innisfree, owner AmorePacific, launched 2016)"
+          ]
+        },
+        {
+          "tier": "premium",
+          "role": "platform",
+          "players": [
+            "Nykaa",
+            "Amazon India"
+          ],
+          "evidence": [
+            "Placed on the price band they are observed carrying: every Rs1490-2999 K-beauty skincare listing in the repo sits on Nykaa or Amazon (COSRX Rs1490 MRP, Anua Rs2050/Rs2999, Innisfree Rs2200)",
+            "config/corridor.yaml:conduits (Nykaa primary conduit, 10-year AmorePacific partnership; Amazon India carries Anua, Some By Mi, Etude, Isntree, Dr.Jart+, The Face Shop)",
+            "companies.yaml:IN.platforms (Nykaa/FSN E-Commerce, listed)"
+          ]
+        },
+        {
+          "tier": "masstige",
+          "role": "conglomerate",
+          "players": [
+            "Laneige (AmorePacific)",
+            "Innisfree (AmorePacific)",
+            "Etude (AmorePacific)",
+            "COSRX (AmorePacific)",
+            "The Face Shop (LG H&H)"
+          ],
+          "evidence": [
+            "segments/skincare.json IN retail_price points Rs600-1600: Laneige Lip Sleeping Mask Rs600, The Face Shop Rice Water Cleanser Rs625 (Blinkit), Innisfree 30ml serum Rs850 MRP/Rs680 Blinkit, Laneige Water Sleeping Mask Rs850/Rs765, COSRX Snail 96 Essence Rs1490 MRP (Nykaa sale Rs969) [all CORRIDOR]",
+            "data/manual/analysis/price_ladder.json masstige rungs (cleanser Rs625; essence/serum Rs680-1500; sleeping/lip mask Rs600-1300)",
+            "config/corridor.yaml:qcommerce_assortment (The Face Shop Rs90-1349, 21 SKUs; Laneige Rs540-1300, 16 SKUs; Etude Rs195-1200, 10 SKUs; Innisfree Rs130-935, 9 SKUs — conglomerate-owned brands deep-stocked)",
+            "config/corridor.yaml:qcommerce_assortment.thin_or_absent (COSRX, owner AmorePacific, 1 SKU out of stock)"
+          ]
+        },
+        {
+          "tier": "masstige",
+          "role": "indie",
+          "players": [
+            "Beauty of Joseon (Gudai Global)"
+          ],
+          "evidence": [
+            "segments/skincare.json IN retail_price Rs1500, Beauty of Joseon Ginseng Skin Essence Water 150ml, Blinkit [CORRIDOR]",
+            "data/manual/analysis/price_ladder.json masstige rung 'essence/serum (K-beauty) Rs680-1500' includes this SKU",
+            "config/corridor.yaml:qcommerce_assortment (Beauty of Joseon, 4 SKUs, Rs1400-1570, described there as 'premium skincare only' — the repo's two tier readings for this brand conflict; placed masstige per the price_ladder rung, conflict flagged)",
+            "companies.yaml:KR.indie_brands (Gudai Global/Beauty of Joseon, private)"
+          ]
+        },
+        {
+          "tier": "masstige",
+          "role": "platform",
+          "players": [
+            "Blinkit (q-commerce)"
+          ],
+          "evidence": [
+            "Placed on the price band observed in the live capture: the Blinkit K-beauty skincare shelf runs Rs600-1600 (Rs625 cleanser, Rs680 serum, Rs765 sleeping mask, Rs1200 barrier cream, Rs1500 essence)",
+            "config/corridor.yaml:qcommerce_assortment (Blinkit headless-browser snapshot 2026-07-23, 63 unique K-brand SKUs)",
+            "config/corridor.yaml:conduits (q-commerce Blinkit/Zepto/Instamart as the Tier 2/3 access rail)"
+          ]
+        },
+        {
+          "tier": "mass",
+          "role": "incumbent",
+          "players": [
+            "Pond's",
+            "Nivea",
+            "Himalaya",
+            "Lakme",
+            "Garnier"
+          ],
+          "evidence": [
+            "segments/skincare.json IN market_share 40.0% tier=mass, 'Mass tier (<Rs200) share; Pond's, Nivea, Himalaya, Lakme, Garnier' (IMA Pro research) — the only India DataPoint that names brands at a tier"
+          ]
+        }
+      ],
+      "note": "The India grid is dense because skincare carries ten retail_price DataPoints; the Korea grid is near-empty because the repo holds no KR price point and only one tier-tagged KR figure (AmorePacific's 22% premium-BPC share, BPC-wide). Known but unplaced for want of tier evidence: LG H&H (conglomerate, tagged skincare), Cosmax / Kolmar Korea / Cosmecca Korea (ODM), CJ Olive Young (retailer) on the KR side; HUL, Godrej, L'Oreal India (incumbents), Honasa/Mamaearth, SUGAR, Plum (D2C) and Purplle (platform) on the IN side — all are in companies.yaml with no price or tier DataPoint attached. Minimalist is placed under dermocosmetics, where the repo's masstige evidence for it sits. Empty cells mean no evidence, not no players."
+    },
+    {
+      "segment": "sun_care",
+      "KR": [],
+      "IN": [
+        {
+          "tier": "masstige",
+          "role": "indie",
+          "players": [
+            "Beauty of Joseon (Gudai Global)"
+          ],
+          "evidence": [
+            "segments/sun_care.json IN retail_price Rs1570 MRP / Rs1256 Nykaa sale, Beauty of Joseon Relief Sunscreen SPF50+ — 'category bestseller; promo-dependent' [CORRIDOR]",
+            "data/manual/analysis/price_ladder.json sun_care rung 'sunscreen (imported K-beauty), masstige, Rs1570 MRP'",
+            "companies.yaml:KR.indie_brands (Gudai Global/Beauty of Joseon)"
+          ]
+        },
+        {
+          "tier": "masstige",
+          "role": "platform",
+          "players": [
+            "Nykaa"
+          ],
+          "evidence": [
+            "Placed on the one sun-care SKU the repo prices, which is a Nykaa listing (Rs1570 MRP / Rs1256 sale)",
+            "segments/sun_care.json IN growth_yoy: Nykaa platform sunscreen sales +85% YoY (stated Dec-2023, platform-level across all brands) [CORRIDOR]",
+            "companies.yaml:IN.platforms (Nykaa/FSN E-Commerce)"
+          ]
+        }
+      ],
+      "note": "Korea sun care has one company-level signal — Kolmar Korea saw a +88% on-year surge in US-bound OTC sunscreen in 2024 (Samsung Securities via Korea Herald) — but that is an ODM export indicator with no tier attached, so Kolmar is not placed. India has exactly one sun-care price point, so only one brand and the platform that lists it can be placed; the mass tier, which is where India's domestic sunscreen volume sits, has no named player in the repo. Dedicated sunscreens are corridor whitespace #2, which makes the empty mass and premium rows here a research priority rather than an absence of competitors."
+    },
+    {
+      "segment": "colour_cosmetics",
+      "KR": [
+        {
+          "tier": "premium",
+          "role": "conglomerate",
+          "players": [
+            "AmorePacific"
+          ],
+          "evidence": [
+            "KR_total_bpc: market_share 22.0% tier=premium, 'AmorePacific share of premium BPC' (2024, RETAIL, HIGH, Euromonitor) — BPC-wide, NOT colour-specific",
+            "companies.yaml:KR.conglomerates (AmorePacific tagged colour_cosmetics)"
+          ]
+        }
+      ],
+      "IN": [],
+      "note": "India colour cosmetics is 79.55% mass by value (Mordor, 2025, tier=mass) but that DataPoint names no brand, so the mass row cannot be populated — the largest tier in the segment has no placeable player. The corridor-carried colour brands are known but untiered: Hince (Tira exclusive, Jan-2026), TirTir Mask Fit Red Cushion (Nykaa, Jun-2026), rom&nd (Flipkart), and Etude lip tints on Blinkit at Rs195-980 — a band spanning mass and masstige, which is why Etude is not placed here. On the KR side, MRFF reports a US$888mn prestige-tier figure for 2024 but the repo flags the same number appearing in that source's online-channel breakdown as likely templated, so it is not used to tier anyone. LG H&H is tagged colour_cosmetics in companies.yaml with no tier evidence."
+    },
+    {
+      "segment": "fragrances",
+      "KR": [
+        {
+          "tier": "premium",
+          "role": "conglomerate",
+          "players": [
+            "AmorePacific"
+          ],
+          "evidence": [
+            "KR_total_bpc: market_share 22.0% tier=premium, 'AmorePacific share of premium BPC' (2024, RETAIL, HIGH, Euromonitor) — BPC-wide, NOT fragrance-specific",
+            "companies.yaml:KR.conglomerates (AmorePacific tagged fragrances)"
+          ]
+        }
+      ],
+      "IN": [
+        {
+          "tier": "mass",
+          "role": "incumbent",
+          "players": [
+            "Vini Cosmetics (Fogg)"
+          ],
+          "evidence": [
+            "segments/fragrances.json IN revenue INR 1,200cr FY25 (Vini Cosmetics/Fogg, MEDIUM, NET_REALISATION)",
+            "india_findings.yaml:new_players (KKR owns 54% of Vini Cosmetics/Fogg, US$625m in 2021, US$1.2bn valuation)",
+            "india_findings.yaml:import_make ('mass perfume/deodorant is domestically filled' — the mass tier is domestically supplied, unlike premium)",
+            "data/manual/analysis/porter_fragrances.json IN rivalry (segment 'led in mass by Vini Cosmetics/Fogg')"
+          ]
+        }
+      ],
+      "note": "The India premium row is empty by evidence, not by absence: premium fragrance is import-reliant (UAE largest HS 3303 source, then France and Germany for high-end oils) but no premium brand or importer is named in the repo. Korea fragrances has no domestic size or shares at all — only a US$0.06bn 2025 export figure — so AmorePacific's placement rests entirely on the BPC-wide premium share and should not be read as a fragrance-specific tier finding."
+    },
+    {
+      "segment": "hair_care",
+      "KR": [
+        {
+          "tier": "premium",
+          "role": "conglomerate",
+          "players": [
+            "AmorePacific"
+          ],
+          "evidence": [
+            "KR_total_bpc: market_share 22.0% tier=premium, 'AmorePacific share of premium BPC' (2024, RETAIL, HIGH, Euromonitor) — BPC-wide, NOT hair-care-specific",
+            "companies.yaml:KR.conglomerates (AmorePacific tagged hair_care)"
+          ]
+        }
+      ],
+      "IN": [],
+      "note": "No India hair-care player can be placed: the segment's share DataPoints split by product type (shampoo 45% per IMARC vs conditioners 42.71% per Mordor, a flagged definitional conflict), not by brand or tier, and no hair-care retail_price DataPoint exists. Known but unplaced: AmorePacific's Mise En Scene and RYO, both launched on Nykaa in 2025 (corridor.yaml conduits, no price recorded); Innovist's Bare Anatomy, cited as a science-backed D2C hair sub-brand (india_findings.yaml new_players, no tier). The 'skinification' finding — actives migrating into serums and tonics, with specialist D2C outperforming legacy FMCG — describes where a masstige row would form but names no placeable brand."
+    },
+    {
+      "segment": "bath_shower",
+      "KR": [],
+      "IN": [],
+      "note": "No player is placeable in either geography. Korea has a single US$0.59bn 2025 export figure for 'body cleansing products' and one register entry (LG H&H, tagged bath_shower) with no tier evidence; India has zero DataPoints and no company in companies.yaml tagged to the segment. Bath and shower is also absent from corridor.yaml's carried-brand list, so no K-brand enters the India grid by that route either."
+    },
+    {
+      "segment": "deodorants",
+      "KR": [],
+      "IN": [
+        {
+          "tier": "mass",
+          "role": "incumbent",
+          "players": [
+            "Vini Cosmetics (Fogg)"
+          ],
+          "evidence": [
+            "Cross-booked evidence: Vini Cosmetics/Fogg is a deodorant-led business recorded in the repo under fragrances — segments/fragrances.json IN revenue INR 1,200cr FY25 (MEDIUM, NET_REALISATION) — because india.json sizes India fragrances as 'perfume+DEODORANT combined' (US$2.6bn, LOW)",
+            "india_findings.yaml:import_make ('mass perfume/deodorant is domestically filled')",
+            "india_findings.yaml:new_players (KKR owns 54% of Vini Cosmetics/Fogg)"
+          ]
+        }
+      ],
+      "note": "The deodorants segment file itself is empty in both geographies; the single India placement above is carried across from the fragrances basket that bundles deodorant into it, and is flagged as such. HUL is tagged deodorants in companies.yaml but discloses no deodorant-level revenue and carries no tier evidence, so it is not placed. Korea has no deodorant DataPoint and no register entry, and deodorants do not appear in the MFDS segment export breakdown."
+    },
+    {
+      "segment": "oral_care",
+      "KR": [],
+      "IN": [],
+      "note": "Neither grid can be populated. Korea's only oral-care data is HS 3306 trade flow (US$0.079986bn FOB to world, US$0.000251bn to India, 2024) and its only register entry is LG H&H, tagged oral_care with no tier evidence. India has three import flows and no company in companies.yaml tagged to the segment at all, so the repo cannot name a single India oral-care brand owner — the incumbent set is unknown here, not merely untiered."
+    },
+    {
+      "segment": "mens_grooming",
+      "KR": [],
+      "IN": [],
+      "note": "No named player exists for either geography. India men's grooming has size and CAGR figures (INR 186.3bn 2025, +9%, Euromonitor) and a toiletries-share split (46.8%, IMARC, with a flagged definitional caveat that the bundle is broader than the taxonomy's mens_toiletries), but no brand is named at any tier and no retail_price DataPoint exists. Korea has a market size (KRW 1.16tn 2025, Euromonitor via Korea Herald) and no player data. Men's K-beauty is corridor whitespace #4, so the empty India grid marks an untested opportunity rather than a settled competitive picture."
+    },
+    {
+      "segment": "baby_child",
+      "KR": [],
+      "IN": [],
+      "note": "Zero DataPoints on both sides, no company in companies.yaml tagged to the segment in either geography, and no K-brand carried into India under corridor.yaml is tagged baby_child. There is no player to place and no tier evidence to place them on."
+    },
+    {
+      "segment": "dermocosmetics",
+      "KR": [],
+      "IN": [
+        {
+          "tier": "masstige",
+          "role": "d2c",
+          "players": [
+            "Minimalist (Uprising Science)"
+          ],
+          "evidence": [
+            "segments/dermocosmetics.json IN market_size US$65.55mn 2025 'MASSTIGE TIER ONLY (priced between mass and premium)' (Expert Market Research, India Masstige Derma Cosmetics)",
+            "segments/dermocosmetics.json IN cagr_forecast 14.6% note — masstige derma tier growth 'consistent with masstige/derma D2C (Minimalist et al.) outgrowing the category'",
+            "segments/dermocosmetics.json IN revenue Rs347cr FY24 (up from Rs184cr FY23, +89% YoY), Minimalist; HUL acquired 90.5% Jan-2025",
+            "companies.yaml:IN.d2c_brands (Minimalist/Uprising Science, acquired by HUL)"
+          ]
+        },
+        {
+          "tier": "masstige",
+          "role": "conglomerate",
+          "players": [
+            "Etude SoonJung (AmorePacific)"
+          ],
+          "evidence": [
+            "segments/skincare.json IN retail_price Rs1600 MRP / Rs1200 Blinkit, Etude SoonJung Hydro Barrier Face Cream 75ml (derma) [CORRIDOR]",
+            "data/manual/analysis/price_ladder.json dermocosmetics rung 'barrier cream (K-derma), masstige, Rs1013-1600'",
+            "config/corridor.yaml:qcommerce_assortment (Etude SoonJung derma skincare Rs1013-1200, in stock)"
+          ]
+        }
+      ],
+      "note": "India derma has a tier-scoped market figure (masstige-only, US$65.55mn 2025) which is what makes these two placements possible; the mass and premium rows have no tier-scoped evidence. Known but unplaced: the corridor's K-derma wave — Medicube (APR, Nykaa and Tira, 2026), Aestura and Illiyoon (AmorePacific, Nykaa exclusive), Dr. Melaxin (Tira exclusive, Jul-2026) — all launched but none carries an India price DataPoint yet, and no brand-level India revenue has been published for any of them. Korea's derma market has size and growth figures (KRW 4.5tn 2020, +13% 2024) with conflicting definitions and no player data at all."
+    },
+    {
+      "segment": "emerging_adjacencies",
+      "KR": [],
+      "IN": [],
+      "note": "No cell can be populated for a segment that bundles six unlike adjacencies (beauty_devices, ingestible_nutricosmetics, halal_certified, ayurvedic_herbal, clean_vegan, kbeauty_derivative) with zero DataPoints against any of them. Three India players are named in corridor.yaml for the kbeauty_derivative adjacency — Pilgrim (Korean Rice Water range, made-in-India, vegan), Limese (formulations manufactured in Korea, tuned for Indian skin) and Foxtale's Hula Hoop (launched amid Korean-inspired demand) — but none has a price or tier DataPoint, so all three stay unplaced. Capturing retail_price points for those three is what would let a derivative tier be placed against the imported K-beauty ladder (Rs680-2999)."
+    }
+  ]
+}

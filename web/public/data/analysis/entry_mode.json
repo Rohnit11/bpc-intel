@@ -1,0 +1,357 @@
+{
+  "generated_at": "2026-07-25T00:00:00Z",
+  "reads": [
+    {
+      "segment": "skincare",
+      "geography": "KR",
+      "mode": "partner",
+      "rationale": "A domestic share play in Korean skincare is not attractive and the mode call should be read that way. The scorecard scores size 5 (KRW 7.653tn retail, HIGH) but growth 2 — domestic retail is +1.0% YoY (Euromonitor, HIGH) — and porter_skincare rates rivalry HIGH (STRONG) with new-entrant threat HIGH: a near-flat market, a listed duopoly at the top, and near-zero barriers underneath compress economics for anyone buying share. What Korea is genuinely good for is origination, and that is what the mode reflects: partner with the ODM/OEM base (Cosmax, Kolmar Korea, Cosmecca — all named, all competing, supplier power LOW) to formulate and fill, and partner into the concentrated shelf (Olive Young holds >85% of the H&B store market at 1,380+ stores, and rtm_KR reads it as a near-gatekeeper). That is an asset-light presence that produces corridor-ready product, not a domestic share contest.",
+      "alternatives_considered": "build was rejected: owning production in the world's densest contract-manufacturing market duplicates capacity that is already commoditised, into +1% domestic demand. acquire has no grounding — the repo records no KR skincare M&A transaction to benchmark a multiple against (the only exit multiple on file, HUL/Minimalist at 8.5x, is Indian). import_corridor is directionally wrong: the corridor in this dataset runs KR->IN, and Korea is its source, so corridor_tailwind is literally null on every KR row.",
+      "evidence": [
+        "entry_scorecard.json skincare/KR: composite 3.3, based_on 3 of 6 (size 5, growth 2, openness 3)",
+        "KR skincare growth_yoy +1.0% RETAIL HIGH (Euromonitor, 2025); market_size KRW 7.653tn RETAIL HIGH",
+        "porter_skincare.json KR: rivalry HIGH (STRONG), supplier_power LOW (Cosmax/Kolmar/Cosmecca), new_entrant_threat HIGH",
+        "rtm_KR.json: Olive Young >85% of KR H&B store market, 1,380+ stores; KRW 5.83tn CY2025 (Seoulz)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "Skincare-specific KR brand shares and segment-level channel splits would test whether the indie long tail is genuinely enterable or already saturated."
+    },
+    {
+      "segment": "skincare",
+      "geography": "IN",
+      "mode": "partner",
+      "rationale": "India skincare is the largest documented prize in the dataset (US$9.06bn RETAIL, LOW) with the richest channel access (score 4, STRONG) and a strong corridor pull (score 4, STRONG: HS 3304 imports from Korea US$0.14bn in 2024, K-brands across Nykaa and Blinkit). But an unaided import play buys the most contested shelf at the highest take. porter_skincare rates IN rivalry HIGH (STRONG) and buyer power HIGH: Nykaa charges 22-26% on skincare plus GST, q-commerce runs ~38% all-in on MRP, and the Blinkit snapshot shows the conglomerate K-brands already deeply stocked (The Face Shop 21 SKUs, Laneige 16, Innisfree 9) — the general K-skincare slot is taken. The defensible mode is therefore partnering into a conduit rather than arriving alone: the evidenced entry pattern is the platform relationship itself (Nykaa's 10-year AmorePacific tie-up; Tira's 2026 exclusive-launch sprint), which buys placement and marketing weight the entrant cannot self-fund against a 22-28% take.",
+      "alternatives_considered": "import_corridor unaided is the obvious alternative and remains viable on the demand evidence, but it lands into HIGH rivalry and HIGH buyer power with no shelf guarantee and a 3-9 month CDSCO wait ahead of first revenue (regulatory.json) — the reason it is second, not first. build via India contract manufacturing (the Limese/Pilgrim Korean-ingredient template, MOQs ~500 units) escapes CDSCO entirely and is credible at mass Rs500-700 price points, but forfeits Korean-origin authenticity, which is the entrant's only differentiator here. acquire is unsupported: the sole India beauty exit benchmark on file is HUL/Minimalist at ~8.5x revenue, which prices consolidation richly and is a dermocosmetics, not general-skincare, datapoint.",
+      "evidence": [
+        "entry_scorecard.json skincare/IN: composite 3.3, based_on 6 of 6 (channel_access 4 STRONG, corridor_tailwind 4 STRONG, size 3, growth 2)",
+        "porter_skincare.json IN: rivalry HIGH (STRONG), buyer_power HIGH — Nykaa 22-26% skincare commission, concentrated q-commerce rail",
+        "rtm_IN.json: Nykaa 10-yr AmorePacific tie-up; Tira 2026 exclusive sprint; Blinkit ~38% all-in take on MRP",
+        "corridor.yaml qcommerce_assortment (Blinkit 2026-07-23): The Face Shop 21 SKUs, Laneige 16, Innisfree 9 — conglomerate K-skincare already deep-stocked"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "IN skincare observed growth_yoy (gaps.json) and a primary-source segment size would firm the prize behind this call; both are currently LOW/absent."
+    },
+    {
+      "segment": "sun_care",
+      "geography": "KR",
+      "mode": null,
+      "rationale": "Not recommendable on current evidence. The scorecard scores only 2 of 6 criteria (size 3, growth 3, both on a production/aggregator basis: MFDS sunscreen production KRW 0.4703tn MEDIUM against retail estimates 2.3x apart), with competitive openness, channel access and regulatory friction all INSUFFICIENT. porter_sun_care reads KR sun care as a production and export strength rather than a domestic-share opportunity — which is a useful read for sourcing, but not enough to name an entry mode into the Korean market itself.",
+      "alternatives_considered": "No mode is named because the choice between building, partnering with the sunscreen-capable ODM base (Kolmar Korea is directly named as the OTC-sunscreen contract manufacturer behind US exports) and acquiring cannot be discriminated without any share, channel or regulatory-cost evidence. Naming one would be a hedged guess.",
+      "evidence": [
+        "entry_scorecard.json sun_care/KR: composite 3.0, based_on 2 of 6 — openness/channel/regulatory all INSUFFICIENT",
+        "porter_sun_care.json KR overall: production/export strength rather than a domestic-share opportunity",
+        "KR sun_care production_value KRW 0.4703tn PRODUCTION MEDIUM (MFDS, 2025)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR sun-care brand shares (compute_shares at segment level) plus segment-level channel splits (Olive Young / online / duty-free for sun care) — two of the three missing scorecard criteria — would lift this row above the 3-of-6 threshold."
+    },
+    {
+      "segment": "sun_care",
+      "geography": "IN",
+      "mode": "import_corridor",
+      "rationale": "The cleanest corridor import case after dermocosmetics, and it scores 3.5 on all 6 criteria. Demand pull is specific and evidenced rather than inferred: 'Korean sunscreen' searches +148% and 'glass skin' +61% in a quarter, top Korean brands +50% on Nykaa, Nykaa platform sunscreen sales +85% YoY, and Beauty of Joseon's Relief Sunscreen (Rs1,570 MRP) a category bestseller — consumers are already asking for Korean-origin SPF by name, which is exactly the demand an import play monetises and a domestic build cannot claim. The category is underpenetrated (baseline whitespace #2) and rising fastest on the access rail (q-commerce sunscreen projected +170% in 2026), so the shelf is expanding rather than defended. Regulatory friction is now quantified and manageable: a narrow SPF hero range from a single Korean ODM plant registers for roughly USD 1,000-2,000 per category plus USD 50/variant and USD 500/site, on a 3-9 month clock, against a COS-2 valid 5 years.",
+      "alternatives_considered": "build (domestic sunscreen manufacture) is genuinely feasible — India has a large sunscreen base and supplier power is LOW — and it sidesteps CDSCO, but it discards the Korean-origin signal the search and Nykaa data show is doing the selling. partner with a conduit is the closest second and can be layered on top: the q-commerce whitespace is a distribution problem, not a registration problem. acquire is unsupported — no India sun-care acquisition is recorded in the repo.",
+      "evidence": [
+        "entry_scorecard.json sun_care/IN: composite 3.5, based_on 6 of 6 (channel_access 4 STRONG, corridor_tailwind 4 STRONG)",
+        "IN sun_care [CORRIDOR] Korean-sunscreen searches +148%, glass-skin +61%, top KR brands +50% on Nykaa (2023); Nykaa sunscreen sales +85% YoY MEDIUM",
+        "IN sun_care [CORRIDOR] Beauty of Joseon Relief Sunscreen Rs1570 MRP, Nykaa bestseller; q-commerce sunscreen +170% projected 2026",
+        "corridor.yaml whitespace #2: dedicated sunscreens — India sun care underpenetrated",
+        "regulatory.json: COS-1 USD 1,000/category + USD 50/variant + USD 500/site; COS-2 in 3-9 months, valid 5 years"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    {
+      "segment": "colour_cosmetics",
+      "geography": "KR",
+      "mode": "partner",
+      "rationale": "Korea's highest scorecard composite (3.7) but on only 3 of 6 criteria, and the strength is export-shaped: size is triangulated across three bases (retail US$2.86bn LOW, production KRW 2.84tn MEDIUM, export US$1.51bn HIGH) and growth is strongest on exactly the export and production bases (+12% EXPORT_FOB HIGH, +51.4% production). As a domestic share play it is unattractive on the same logic as skincare — porter_colour rates KR rivalry HIGH and new-entrant threat HIGH, a crowded field where the ODM base lets anyone launch. The mode that the evidence does support is partner: Korea's colour ODM/OEM ecosystem (supplier power LOW) plus the Olive Young shelf is a brand-origination and export platform, and the indie route the corridor already carries (rom&nd, Hince, Etude reaching India) is the proof that this is how value leaves Korea.",
+      "alternatives_considered": "build is hard to justify when three listed ODM houses compete for the work. acquire cannot be grounded — no KR colour transaction or valuation is on file. A domestic share contest against LG H&H/AmorePacific plus the indie long tail is rejected outright: rivalry HIGH with easy entry is the structural definition of compressed returns.",
+      "evidence": [
+        "entry_scorecard.json colour_cosmetics/KR: composite 3.7, based_on 3 of 6 (size 4, growth 4, openness 3; channel + regulatory INSUFFICIENT)",
+        "KR colour export US$1.51bn EXPORT_FOB HIGH +12% YoY (MFDS, 2025); production KRW 2.84tn PRODUCTION MEDIUM",
+        "porter_colour_cosmetics.json KR: rivalry HIGH, new_entrant_threat HIGH, supplier_power LOW (Cosmax/Kolmar/Cosmecca), overall MEDIUM",
+        "corridor.yaml conduits: indie KR colour brands rom&nd (Flipkart), Hince (Tira 2026-01), Etude (Amazon)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "Colour-specific KR brand shares and any KR channel-economics data (Olive Young terms for colour) would test whether the indie lane is still open or already crowded out."
+    },
+    {
+      "segment": "colour_cosmetics",
+      "geography": "IN",
+      "mode": "partner",
+      "rationale": "Scored on all 6 criteria (3.2) with channel access STRONG but the two structural drags both point away from arriving alone: the mass tier holds ~79.55% of the market (Mordor), and colour carries the highest platform commission band of any category (Nykaa 24-28%) with buyer power rated HIGH in porter_colour. Meanwhile the corridor evidence shows precisely how Korean colour has actually entered India — as platform exclusives: Hince launched exclusive on Tira in Jan-2026, rom&nd via Flipkart's international K-beauty portfolio, Etude on Amazon. That is a partner motion, not an independent import build, and Amazon's cut of make-up referral fees to 3.5% (Sep-2025) shows platforms actively bidding for this category's supply. Partnering into a conduit exclusive buys the placement and launch weight that a 24-28% take otherwise consumes.",
+      "alternatives_considered": "import_corridor unaided is credible on demand but corridor_tailwind scores only 3 (PARTIAL) — colour is a secondary K-beauty axis behind skincare and derma — so the pull is not strong enough to carry an independent import cost base against mass-tier price expectations. build via contract manufacturing is cheap (supplier power LOW) but lands in HIGH rivalry against funded platform-native D2C (SUGAR, Plum) and MNC incumbents. acquire has no India colour transaction on file to price.",
+      "evidence": [
+        "entry_scorecard.json colour_cosmetics/IN: composite 3.2, based_on 6 of 6 (channel_access 4 STRONG, corridor_tailwind 3 PARTIAL)",
+        "IN colour mass-tier share 79.55% LOW (Mordor, 2025); Nykaa colour commission 24-28% LOW (Sylvr, 2025)",
+        "porter_colour_cosmetics.json IN: rivalry HIGH, buyer_power HIGH (highest commission band), supplier_power LOW",
+        "corridor.yaml conduits: Hince exclusive on Tira 2026-01; rom&nd on Flipkart; Etude on Amazon",
+        "IN colour trade_margin Amazon make-up referral 3.5% LOW (Rekonsile, Sep-2025)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "IN colour observed growth_yoy (gaps.json) is missing; forecasts alone (6.18-8.41%) leave the trajectory unverified."
+    },
+    {
+      "segment": "fragrances",
+      "geography": "KR",
+      "mode": null,
+      "rationale": "Not evaluable. The scorecard scores zero of six criteria: KR fragrances carries only an export figure (US$0.06bn EXPORT_FOB, +46.2% off a tiny base) with no domestic size, growth, shares, channel or regulatory data. porter_fragrances calls the KR side a data-void segment and declines to rate any of the five forces. No entry mode can be named without inventing the market structure.",
+      "alternatives_considered": "None assessable. Even the supplier-side logic that carries other KR segments does not transfer — porter notes Korea's general cosmetics ODM base does not extend cleanly to fine-fragrance perfumery, so the usual 'partner with the ODM base' fallback is itself unevidenced here.",
+      "evidence": [
+        "entry_scorecard.json fragrances/KR: composite null, based_on 0 of 6 — every criterion INSUFFICIENT",
+        "porter_fragrances.json KR: all five forces INSUFFICIENT; 'data-void segment in this repo'",
+        "gaps.json: KR fragrances market_size, growth_yoy and cagr_forecast all missing (export_value only)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR fragrances domestic market size and growth (Euromonitor/Statista, per gaps.json) — nothing downstream is answerable until the segment exists in the data."
+    },
+    {
+      "segment": "fragrances",
+      "geography": "IN",
+      "mode": "build",
+      "rationale": "Scored on all 6 criteria but the lowest composite in the dataset (2.5), and the mode has to be read alongside a blunt finding: there is effectively no KR->IN fragrance corridor. HS 3303 imports from Korea were US$0.000135bn in 2024 and no Korean fragrance brand entry is recorded — corridor_tailwind scores 1 on evidenced near-absence, so a Korean-origin entrant has no advantage in this segment at all. What the evidence does support, for an entrant generally, is a domestic build: mass perfume and deodorant are filled domestically through contract manufacturing (supplier power LOW at mass, new-entrant threat HIGH), D2C fragrance is actively funded, and the incumbent concentration is a single KKR-controlled leader (Vini/Fogg, INR 1,200cr FY25) rather than a wall of MNCs. The premium tier is the part to avoid on an import basis: porter records it as import-reliant on UAE, France and Germany for oils and finished goods — supply routes that run through the Gulf, not Korea.",
+      "alternatives_considered": "import_corridor is rejected on direct evidence, not judgement — the KR->IN fragrance trade flow is effectively zero. partner with a conduit is weak because fragrance-specific channel depth is missing (only a Nykaa 22-25% commission datapoint exists; GT/MT and gifting weight are unrecorded), so there is no conduit case to partner into. acquire is unsupported — the only ownership datapoint is KKR's 54% of Vini, a control position at a scale that is not an entry vehicle.",
+      "evidence": [
+        "entry_scorecard.json fragrances/IN: composite 2.5, based_on 6 of 6 — corridor_tailwind 1 (evidenced near-absence)",
+        "IN fragrances [CORRIDOR] HS 3303 imports from Korea US$0.000135bn IMPORT_CIF HIGH (2024)",
+        "porter_fragrances.json IN: rivalry HIGH, supplier_power MEDIUM (premium import-reliant on UAE/France/Germany), new_entrant_threat HIGH",
+        "IN Vini Cosmetics (Fogg) revenue Rs1,200cr NET_REALISATION MEDIUM FY25, KKR 54%"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "IN fragrances observed growth_yoy and a fragrance-specific channel mix (GT/MT vs e-commerce, gifting seasonality) — the sizing is also definitionally mixed (perfume+deodorant combined), so the prize itself is soft."
+    },
+    {
+      "segment": "hair_care",
+      "geography": "KR",
+      "mode": null,
+      "rationale": "Not recommendable on 2 of 6 criteria. Size rests on a single LOW aggregator figure (US$1.8bn, IMARC 2025, with other aggregators clustering ~US$1.30bn) and growth on a LOW CAGR forecast alone (3.23%) with no observed growth_yoy; openness, channel and regulatory are all INSUFFICIENT. porter_hair_care rates the KR read THIN overall and frames Korea as a source of formulation and corridor SKUs rather than a domestic-share opportunity — a sourcing observation, not an entry recommendation.",
+      "alternatives_considered": "The ODM-partner logic that carries KR skincare and colour is plausible here too (Cosmax/Kolmar/Cosmecca supply hair formulation as readily as skincare, supplier power LOW), but with no shares, no channel data and a modest LOW-confidence market, naming partner would be extrapolation from adjacent segments rather than a grounded call.",
+      "evidence": [
+        "entry_scorecard.json hair_care/KR: composite 2.5, based_on 2 of 6 — openness/channel/regulatory INSUFFICIENT",
+        "porter_hair_care.json KR overall: MEDIUM, THIN — 'a source of formulation and corridor SKUs rather than' a share play",
+        "gaps.json: KR hair_care growth_yoy missing"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR hair-care brand shares and observed growth_yoy (gaps.json) would take this row to 4 of 6 and make a mode call defensible."
+    },
+    {
+      "segment": "hair_care",
+      "geography": "IN",
+      "mode": "partner",
+      "rationale": "Scored on all 6 criteria but weakly (2.7), and it is the least attractive of the fully-scored India rows. The market is large (US$4.1-4.30bn, LOW) but incumbent-owned in the mass base (shampoo 45%, conditioners 42.71% product-type concentration; HUL/Godrej-era majors), growth is genuinely unresolved (Mordor 4.73% vs IMARC 10.58%, flagged do-not-reconcile), and the corridor is thin — HS 3305 imports from Korea were only US$0.0033bn in 2024 despite AmorePacific putting Mise En Scene and RYO on Nykaa in 2025. porter_hair_care also records active substitution away from topicals toward ingestibles in the hair-growth space. Given all that, the only route with live evidence behind it is the one AmorePacific itself used: partner into the Nykaa conduit for the premium/actives lane, rather than building a mass presence against incumbents or importing at scale into a US$3.3m trade flow.",
+      "alternatives_considered": "build into the skinification/scalp-actives edge via contract manufacturing is the strategic alternative and matches where growth is — but porter records that lane as already crowded with well-funded D2C (Honasa, Innovist's Bare Anatomy), so it trades an incumbent fight for a funded-challenger fight. import_corridor is not supported by the trade evidence (corridor_tailwind 2, THIN). acquire has no India hair-care transaction on file.",
+      "evidence": [
+        "entry_scorecard.json hair_care/IN: composite 2.7, based_on 6 of 6 (corridor_tailwind 2 THIN, growth 2 THIN)",
+        "IN hair_care [CORRIDOR] HS 3305 imports from Korea US$0.0033bn IMPORT_CIF HIGH (2024)",
+        "corridor.yaml conduits: Mise En Scene and RYO (AmorePacific hair_care) launched on Nykaa 2025",
+        "porter_hair_care.json IN: rivalry HIGH, substitutes MEDIUM (ingestibles outgrowing topicals), overall MEDIUM",
+        "IN hair_care shampoo 45% / conditioner 42.71% shares LOW; cagr 4.73% (Mordor) vs 10.58% (IMARC) — outlier flagged"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "IN hair_care observed growth_yoy (gaps.json) to resolve the 4.73% vs 10.58% conflict, plus any performance signal from the 2025 Mise En Scene/RYO Nykaa launches — currently the corridor case is a launch note with no traction data."
+    },
+    {
+      "segment": "bath_shower",
+      "geography": "KR",
+      "mode": null,
+      "rationale": "Not evaluable — and uniquely so: bath_shower is the one taxonomy segment with no entry_scorecard row at all, so there is not even a partial composite to reason from. gaps.json records the KR side as carrying export_value only, with market_size, growth_yoy and cagr_forecast all missing, and no porter artifact exists for the segment.",
+      "alternatives_considered": "None. With no size, no structure and no scorecard row, every mode would be pure assertion.",
+      "evidence": [
+        "entry_scorecard.json: no row exists for bath_shower in either geography (11 of 12 taxonomy segments are scored)",
+        "gaps.json: KR bath_shower market_size / growth_yoy / cagr_forecast — 'segment has [export_value] only'",
+        "config/taxonomy.yaml segments: bath_shower is a first-class segment with no sub-segments defined"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "A KR bath_shower market size and growth (Euromonitor/Statista per gaps.json), then an entry_scorecard row — the segment is currently absent from the entry-analysis layer entirely."
+    },
+    {
+      "segment": "bath_shower",
+      "geography": "IN",
+      "mode": null,
+      "rationale": "Not evaluable. gaps.json records 'no data' for IN bath_shower on market_size, growth_yoy and cagr_forecast alike, there is no entry_scorecard row, no porter artifact, and no [CORRIDOR] datapoint linking Korean bath and shower products to India. This is a coverage hole rather than a negative finding — soaps and body washes are a large part of Indian BPC by volume, and the repo simply has not researched them.",
+      "alternatives_considered": "None. Naming a mode for a segment with zero DataPoints would be exactly the hedged guess the grounding rules forbid.",
+      "evidence": [
+        "gaps.json: IN bath_shower market_size / growth_yoy / cagr_forecast — 'no data'",
+        "entry_scorecard.json: no bath_shower row in either geography",
+        "config/taxonomy.yaml segments: bath_shower listed but uncovered by any research drop"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN bath_shower market size and growth (Euromonitor/Statista per gaps.json) plus organised/unorganised coverage — the segment needs baseline sizing before any entry read is possible."
+    },
+    {
+      "segment": "deodorants",
+      "geography": "KR",
+      "mode": null,
+      "rationale": "Not evaluable. The scorecard scores zero of six criteria and gaps.json records 'no data' for KR deodorants on every metric — no size, no growth, no shares, no channel, no regulatory evidence. There is no porter artifact for the segment either.",
+      "alternatives_considered": "None assessable on zero DataPoints.",
+      "evidence": [
+        "entry_scorecard.json deodorants/KR: composite null, based_on 0 of 6 — 'No KR deodorants DataPoints exist in the dataset'",
+        "gaps.json: KR deodorants market_size and growth_yoy — 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR deodorants market size and growth (Euromonitor/Statista per gaps.json) — the whole segment is a data void."
+    },
+    {
+      "segment": "deodorants",
+      "geography": "IN",
+      "mode": null,
+      "rationale": "Not evaluable, despite deodorants plainly being a real Indian market: the only figure that touches it is the US$2.6bn IN fragrances number, which explicitly bundles perfume and deodorant and is therefore not a deo-specific measure. The scorecard scores zero of six criteria. Vini/Fogg's INR 1,200cr FY25 revenue sits in the fragrances row and cannot be re-used as a deodorants sizing without deriving an implied statistic across DataPoints.",
+      "alternatives_considered": "None named. The temptation is to inherit the fragrances read (build, domestic contract manufacturing) since the categories overlap commercially — but that would be an inference across a definitional boundary the repo has explicitly flagged, so it is left unnamed.",
+      "evidence": [
+        "entry_scorecard.json deodorants/IN: composite null, based_on 0 of 6",
+        "gaps.json: IN deodorants market_size and growth_yoy — 'no data'",
+        "IN fragrances market_size US$2.6bn RETAIL LOW — note: perfume+deodorant combined, not deo-specific"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "A deodorant-only IN market size and growth (per gaps.json), separated from the perfume+deodorant bundle, plus brand shares for the mass deo field."
+    },
+    {
+      "segment": "oral_care",
+      "geography": "KR",
+      "mode": null,
+      "rationale": "Not evaluable. The scorecard scores zero of six criteria: KR oral care carries only an HS 3306 export figure (US$0.08bn EXPORT_FOB, 2024) with no domestic size, growth, shares, channel or regulatory data, and gaps.json confirms market_size and growth are missing.",
+      "alternatives_considered": "None assessable — an export value alone cannot discriminate between entry modes into a domestic market.",
+      "evidence": [
+        "entry_scorecard.json oral_care/KR: composite null, based_on 0 of 6",
+        "KR oral_care export HS 3306 US$0.08bn EXPORT_FOB HIGH (2024)",
+        "gaps.json: KR oral_care market_size, growth_yoy and cagr missing (export_value only)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR oral-care domestic market size and growth per gaps.json."
+    },
+    {
+      "segment": "oral_care",
+      "geography": "IN",
+      "mode": null,
+      "rationale": "Not recommendable: only 1 of 6 criteria is scorable, and that one criterion is a negative — corridor_tailwind scores 1 because HS 3306 imports from Korea were US$0.000485bn in 2024 with no Korean oral-care brand entry recorded. There is no size, growth, share or channel evidence, and the regulatory pathway is itself unresolved because oral care straddles cosmetic and drug classification in India and the repo's regulatory research covers cosmetics only. The one thing the data does say is that the corridor gives a Korean entrant nothing here.",
+      "alternatives_considered": "None named. A build or partner read would require knowing the incumbent structure, and the major Indian toothpaste incumbents are not in the dataset at all.",
+      "evidence": [
+        "entry_scorecard.json oral_care/IN: composite 1.0, based_on 1 of 6 — only the near-zero corridor tailwind is scorable",
+        "IN oral_care [CORRIDOR] HS 3306 imports from Korea US$0.000485bn IMPORT_CIF HIGH (2024)",
+        "gaps.json: IN oral_care market_size, growth_yoy and cagr missing (import_value only)",
+        "regulatory.json: the CDSCO research covers cosmetics under the Cosmetics Rules 2020; oral-care drug/cosmetic classification is not covered"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN oral-care market size, growth and brand shares (per gaps.json), plus the segment's regulatory classification (cosmetic vs drug) which determines whether the CDSCO cosmetics pathway in regulatory.json even applies."
+    },
+    {
+      "segment": "mens_grooming",
+      "geography": "KR",
+      "mode": null,
+      "rationale": "Not recommendable on 2 of 6 criteria. Size is reasonably evidenced (KRW 1.16tn, ~US$0.78bn 2025, Euromonitor MEDIUM) but growth is disputed between an FMI forecast of 11.04% and an Euromonitor-implied ~2.1% off the 2022-2025 series, with no observed growth_yoy; openness, channel and regulatory are all INSUFFICIENT. porter_mens_grooming rates the KR read THIN overall and positions Korea as a source of proven men's-skincare formulation rather than a share opportunity.",
+      "alternatives_considered": "The ODM-partner logic applies in principle (supplier power LOW, asset-light launches straightforward) but with a growth rate that is unresolved by a factor of five and no channel or share data, a mode call would rest on adjacent-segment inference rather than this segment's evidence.",
+      "evidence": [
+        "entry_scorecard.json mens_grooming/KR: composite 3.5, based_on 2 of 6 — openness/channel/regulatory INSUFFICIENT",
+        "KR mens_grooming market_size KRW 1.16tn RETAIL MEDIUM (Korea Herald citing Euromonitor, 2025)",
+        "KR mens cagr 11.04% LOW (FMI) vs Euromonitor-implied ~2.1% (2022-2025) — unresolved",
+        "porter_mens_grooming.json KR overall: MEDIUM, THIN"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR mens_grooming observed growth_yoy (gaps.json) to settle the 11.04% vs 2.1% conflict, plus segment-level shares — either would take this row past the 3-of-6 threshold."
+    },
+    {
+      "segment": "mens_grooming",
+      "geography": "IN",
+      "mode": "build",
+      "rationale": "The best-evidenced India segment on the two criteria that matter most — size INR 186.3bn (~US$1.94bn) 2025 at HIGH confidence and observed growth +9% YoY at HIGH confidence, both Euromonitor, corroborated by IBEF and IMARC. Channel access is STRONG and quantified (e-commerce 30-35% of urban men's grooming; online 27.2% share and the fastest-growing tier). Crucially, the corridor cannot carry this one: corridor_tailwind scores 2 (THIN) because men's K-beauty is a flagged whitespace (#4) with no live Korean men's product entry recorded — a latent opportunity, not traction. So the mode that the evidence supports is build: launch a dedicated men's skincare/beard line through India's contract-manufacturing base (supplier power LOW, MOQs ~500 units) into the explicitly underserved men's-skincare lane, distributed on the online tier where the growth is. This is the one India row where building is better-grounded than partnering or importing, because the demand evidence is domestic and HIGH-confidence while the corridor evidence is speculative.",
+      "alternatives_considered": "import_corridor is the tempting read given whitespace #4, but it is unsupported — no men's-specific Korean product entry exists in the data, so importing would be a bet on an unactivated whitespace rather than an observed pull. partner with a conduit is a reasonable overlay for distribution but does not address the actual gap, which is product for an underserved lane rather than shelf access (online access is already documented as strong). acquire has no India men's-grooming transaction on file to price.",
+      "evidence": [
+        "entry_scorecard.json mens_grooming/IN: composite 3.3, based_on 6 of 6 — size 4 STRONG, growth 4 STRONG, channel 4 STRONG, corridor 2 THIN",
+        "IN mens_grooming market_size INR 186.3bn RETAIL HIGH and growth_yoy +9% RETAIL HIGH (Euromonitor, 2025)",
+        "IN mens e-commerce 30-35% of urban sales MEDIUM (IBEF); online 27.2% share, fastest-growing ~9.5% CAGR (IMARC)",
+        "corridor.yaml whitespace #4: Men's K-beauty — men's skincare underserved vs toiletries (flagged, no live entry recorded)",
+        "porter_mens_grooming.json IN: supplier_power LOW (CM base, MOQs ~500), new_entrant_threat HIGH, overall MEDIUM"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "Live men's K-beauty product/entry DataPoints — if Korean men's SKUs start appearing on the conduits, the call should be re-run, because an activated whitespace would move this toward import_corridor."
+    },
+    {
+      "segment": "baby_child",
+      "geography": "KR",
+      "mode": null,
+      "rationale": "Not evaluable. The scorecard scores zero of six criteria and gaps.json records 'no data' for KR baby/child on every metric. No porter artifact, no company evidence, no corridor linkage.",
+      "alternatives_considered": "None assessable on zero DataPoints.",
+      "evidence": [
+        "entry_scorecard.json baby_child/KR: composite null, based_on 0 of 6 — 'No KR baby/child DataPoints exist'",
+        "gaps.json: KR baby_child market_size and growth_yoy — 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR baby/child market size and growth per gaps.json."
+    },
+    {
+      "segment": "baby_child",
+      "geography": "IN",
+      "mode": null,
+      "rationale": "Not evaluable. The scorecard scores zero of six criteria, gaps.json records 'no data' throughout, and no KR->IN baby/child trade or brand-entry DataPoint exists. Worth flagging that this is a coverage gap in a segment with obvious commercial weight in India, not a judgement that the segment is unattractive.",
+      "alternatives_considered": "None. Every mode would be assertion.",
+      "evidence": [
+        "entry_scorecard.json baby_child/IN: composite null, based_on 0 of 6",
+        "gaps.json: IN baby_child market_size and growth_yoy — 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN baby/child market size, growth and brand shares per gaps.json, plus any KR->IN baby-care corridor evidence."
+    },
+    {
+      "segment": "dermocosmetics",
+      "geography": "KR",
+      "mode": "partner",
+      "rationale": "Scored on 3 of 6 criteria (composite 3.3) and carrying the firmest growth signal in the Korean dataset: +13% YoY 2024 at HIGH confidence (Euromonitor), driven by an actives race (PDRN, exosomes, peptides). Unlike KR skincare, this is not a flat market — but it is still not a domestic share play an outsider wins by building, because porter_dermocosmetics rates rivalry HIGH with the majors holding derma brands (AmorePacific's Aestura and Illiyoon) atop a broad indie and ODM base. The route the evidence supports is partner: the ODM base extends into actives-heavy derma formulation (supplier power LOW), and MFDS approval is cheap and fast where a formulation reuses pre-approved functional actives (~7 days, ~KRW 189,000) — so partnering for formulation and shelf gives access to the actives frontier without owning either. The strategic case is compounded by the corridor: a KR derma position is the supply side of India's highest-conviction whitespace.",
+      "alternatives_considered": "build is weakened by the same ODM depth that makes partnering cheap, and by the one real supplier caveat porter flags — frontier actives are the exception to LOW supplier power. acquire is unsupported: no KR derma transaction or multiple is recorded (APR/Medicube appears in the data as an India entrant, not as an acquisition target with a price). A domestic share contest is rejected on rivalry HIGH plus a definitionally unresolved market size (Korean sources ~4x apart, KRW 1.2tn to KRW 4.5tn).",
+      "evidence": [
+        "entry_scorecard.json dermocosmetics/KR: composite 3.3, based_on 3 of 6 — growth 4 STRONG, size 3, openness 3",
+        "KR dermocosmetics growth_yoy +13% RETAIL HIGH (Euromonitor, 2024) — actives-led (PDRN, exosomes, peptides)",
+        "porter_dermocosmetics.json KR: rivalry HIGH, supplier_power LOW with a frontier-actives caveat, new_entrant_threat MEDIUM (MFDS functional bar)",
+        "regulatory.json MFDS functional-cosmetic approval: ~7 days / ~KRW 189,000 on pre-approved actives vs 4-6 months for new actives"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "KR derma-specific brand shares and any KR channel-economics data would test whether the indie derma lane is still open beneath Aestura/Illiyoon."
+    },
+    {
+      "segment": "dermocosmetics",
+      "geography": "IN",
+      "mode": "import_corridor",
+      "rationale": "The layer's headline entry case and the highest-conviction import call in the dataset. It scores 3.5 on all 6 criteria with the strongest corridor tailwind in the taxonomy (5, STRONG): baseline whitespace #1 is mid-price derma K-beauty in Tier 2/3, Nykaa K-beauty GMV is +60% YoY (Q3 2025, MEDIUM), and a 2026 launch wave is already landing (Medicube on Nykaa and Tira, Illiyoon Nykaa-exclusive, Aestura, Dr. Melaxin exclusive to Tira). Competitive openness is 4 (STRONG) with a proven exit benchmark — Minimalist at INR 347cr FY24 revenue acquired by HUL at INR 2,955cr, ~8.5x — showing the category creates real value. The import route is the right one specifically because the whitespace is Korean-origin derma: corridor_vector reads the corridor as an import-and-curate route, noting even AmorePacific is scaling India through platforms and imports with no India plant announced. The single real cost is CDSCO, and regulatory.json now sizes it: roughly USD 1,000-2,000 per category plus USD 50/variant and USD 500/site, 3-9 months to COS-2, valid 5 years — a lead-time and working-capital cost, not a barrier, and one that argues for a tight hero-SKU range from a single ODM plant. The gap to attack is dark-store distribution, where the Blinkit snapshot shows conglomerate brands deep-stocked while indie derma (COSRX out-of-stock, Anua 'coming soon', Some By Mi absent) is missing.",
+      "alternatives_considered": "partner with a conduit is the necessary complement rather than a rival — the import decision reduces to conduit choice, with Nykaa ranked first (deepest Korean assortment, the only conduit with a published corridor demand signal) and Tira second on its exclusive-launch model. build via India contract manufacturing avoids CDSCO entirely and is the Limese/Pilgrim template, but a made-in-India derma line surrenders the Korean-origin claim that is the whole basis of the +60% GMV pull, and drops into the most contested lane in Indian beauty (rivalry HIGH, STRONG). acquire is priced against a single benchmark (8.5x revenue) that reflects a strategic FMCG buyer, and there is no evidence of available India derma assets at entry scale.",
+      "evidence": [
+        "entry_scorecard.json dermocosmetics/IN: composite 3.5, based_on 6 of 6 — corridor_tailwind 5 STRONG, openness 4 STRONG, channel 4 STRONG, regulatory 2",
+        "corridor.yaml whitespace #1: mid-price derma K-beauty Tier 2/3 (highest corridor conviction)",
+        "IN dermocosmetics [CORRIDOR] Nykaa K-beauty GMV +60% YoY MEDIUM (Q3 2025); Medicube/Illiyoon/Aestura/Dr.Melaxin 2026 launches",
+        "IN Minimalist Rs347cr FY24, HUL 90.5% acquisition Rs2,955cr (~8.5x) MEDIUM",
+        "corridor_vector.json: import-and-curate route; AmorePacific scaling India via platforms/imports, no India plant announced",
+        "corridor.yaml qcommerce_assortment (Blinkit 2026-07-23): COSRX out-of-stock, Anua coming_soon, Some By Mi absent — the whitespace",
+        "regulatory.json: COS-1/COS-2 at USD 1,000-2,000/category + USD 50/variant + USD 500/site, 3-9 months, 5-year validity"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": "The IN dermocosmetics size remains unresolved by ~7x (US$0.28bn narrow vs US$1.85bn broad) — the entry case is sound on tailwind and openness, but the prize itself is not yet pinned."
+    },
+    {
+      "segment": "emerging_adjacencies",
+      "geography": "KR",
+      "mode": null,
+      "rationale": "Not evaluable, and for a reason worth stating plainly: the scope itself is undefined in the data. taxonomy.yaml lists six sub-segments (beauty devices, ingestible nutricosmetics, halal, ayurvedic/herbal, clean/vegan, K-beauty derivatives) that would sit under different regulators and different economics, and the scorecard scores zero of six criteria with gaps.json recording 'no data' throughout.",
+      "alternatives_considered": "None. A mode cannot be chosen for a bundle whose contents have not been separated — beauty devices and ingestibles alone would demand different regulatory and manufacturing answers.",
+      "evidence": [
+        "entry_scorecard.json emerging_adjacencies/KR: composite null, based_on 0 of 6 — 'scope itself is undefined in the data'",
+        "gaps.json: KR emerging_adjacencies market_size and growth_yoy — 'no data'",
+        "config/taxonomy.yaml: six heterogeneous sub-segments grouped under one id"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Define the emerging-adjacencies scope (split devices / ingestibles / clean-vegan at minimum), then size each — per gaps.json."
+    },
+    {
+      "segment": "emerging_adjacencies",
+      "geography": "IN",
+      "mode": null,
+      "rationale": "Not evaluable for the same scope reason, with an added regulatory complication: the India sub-segments span ingestibles and devices that would fall under FSSAI or BIS rather than the CDSCO cosmetics pathway documented in regulatory.json, so even the regulatory friction criterion cannot be answered until the scope is split. The scorecard scores zero of six criteria and gaps.json records 'no data' throughout. Note that two of the listed sub-segments — ayurvedic/herbal and K-beauty derivatives — are commercially live in India on the evidence of adjacent segments, so this is a taxonomy and coverage problem rather than an absence of market.",
+      "alternatives_considered": "None. Any mode named here would apply to an undefined basket.",
+      "evidence": [
+        "entry_scorecard.json emerging_adjacencies/IN: composite null, based_on 0 of 6",
+        "gaps.json: IN emerging_adjacencies market_size and growth_yoy — 'no data'",
+        "regulatory.json: the documented India pathway is CDSCO cosmetics (Cosmetics Rules 2020); ingestibles/devices classification is not covered"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Split the emerging-adjacencies scope and size the India-relevant pieces (ayurvedic/herbal, K-beauty derivative, ingestible nutricosmetics), and establish which regulator governs each — per gaps.json."
+    }
+  ]
+}

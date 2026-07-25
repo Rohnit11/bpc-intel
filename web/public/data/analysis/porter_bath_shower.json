@@ -1,0 +1,130 @@
+{
+  "segment": "bath_shower",
+  "generated_at": "2026-07-25T09:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": null,
+      "rationale": "There is no Korean domestic market size, growth rate or brand share for bath & shower in this repo — the single figure on file is an export value. LG H&H is the only company in the register tagged to the segment, and a one-name field with no shares cannot support an intensity rating.",
+      "evidence": [
+        "segments/bath_shower.json KR: size/growth/cagr null; single export_value point",
+        "companies.yaml:KR.conglomerates (LG H&H tagged bath_shower; no second KR bath-and-shower player in the register)",
+        "gaps.json: KR bath_shower missing market_size, growth_yoy, cagr_forecast ('segment has export_value only')"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR bath_shower domestic market size, growth and brand shares — gaps.json rows KR/bath_shower market_size + growth_yoy + cagr_forecast (suggested: euromonitor_passport, statista, korea_mfds, tavily)."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "No KR bath-and-shower channel or margin evidence exists. Body cleansing is a mass/grocery format in most markets, so the CJ Olive Young and duty-free structure the repo documents for cosmetics cannot be assumed to govern it, and duty-free in particular is a distinct channel that must not be folded into a domestic read.",
+      "evidence": [
+        "companies.yaml:KR.retailers (CJ Olive Young — H&B retailer; no bath-and-shower channel evidence)",
+        "CLAUDE.md rule 12 (duty-free is a distinct channel, not domestic retail)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR bath_shower channel split and retail margins — no channel DataPoint exists for this segment (euromonitor_passport, korea_mfds)."
+    },
+    "supplier_power": {
+      "rating": "LOW",
+      "rationale": "Korea shipped US$0.59bn FOB of 'body cleansing products' in 2025 (HIGH, MFDS via Yonhap/Korea Herald) — the third-largest of the four segment export values on file, behind skincare (US$8.54bn) and colour cosmetics (US$1.51bn) and far ahead of fragrances (US$0.06bn), all same year and same EXPORT_FOB basis. An export flow of that size evidences scaled, export-qualified production capacity standing behind the category rather than a boutique make. Against that, Korea's brand owners have three listed contract manufacturers to choose from (Cosmax, Kolmar Korea, Cosmecca Korea) plus in-house capacity at LG H&H, so no single maker holds pricing leverage over a brand owner. This is an inference from the export flow and the ODM roster — there is no bath-specific supplier, cost or margin DataPoint — hence THIN.",
+      "evidence": [
+        "segments/bath_shower.json KR export_value US$0.59bn ('body cleansing products', 2025, EXPORT_FOB, HIGH, MFDS via Yonhap/Korea Herald)",
+        "korea.json:segments (skincare US$8.54bn, colour_cosmetics US$1.51bn, fragrances US$0.06bn — same 2025 EXPORT_FOB basis)",
+        "companies.yaml:KR.odm_oem (Cosmax, Kolmar Korea, Cosmecca Korea) + KR.conglomerates (LG H&H tagged bath_shower)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": null
+    },
+    "new_entrant_threat": {
+      "rating": null,
+      "rationale": "The ODM depth that suppresses supplier power would ordinarily also lower the capital barrier to launching a body-wash brand, but the repo holds no bath-specific regulatory pathway, no launch record, and no funding evidence for this segment — and with no domestic market size there is no measurable prize to enter. Rating this on the skincare analogy alone would be a hedged guess.",
+      "evidence": [
+        "companies.yaml:KR.odm_oem (contract-manufacturing base exists, not segment-tagged)",
+        "gaps.json: KR bath_shower market_size 'segment has export_value only'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR bath_shower domestic market size plus MFDS pathway/launch evidence before entry barriers can be rated."
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No evidence of substitution between body cleansing and adjacent formats (bar soap, body-care skincare, in-shower treatments) exists for Korea in the repo.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR bath_shower substitution evidence (soap vs body wash vs body-care skinification) — absent (euromonitor_passport, tavily)."
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "Export-visible, domestically unmeasured. The US$0.59bn 2025 export flow is a genuine, HIGH-confidence signal that Korea has scaled body-cleansing manufacturing and international demand for it — enough to rate supplier power LOW and to make the category interesting as a sourcing base. It says nothing about the Korean home market, which has no size, growth or share data at all, so no attractiveness call for a domestic-share entrant is defensible. Note the export figure is the customs 'body cleansing products' category and must not be read as domestic retail.",
+      "evidence": [
+        "segments/bath_shower.json KR export_value US$0.59bn (2025, EXPORT_FOB, HIGH)",
+        "gaps.json: KR bath_shower triple-missing (market_size, growth_yoy, cagr_forecast)",
+        "CLAUDE.md rule 11 (retail vs export vs production are three different measures)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "KR bath_shower domestic retail size and shares (gaps.json) before an attractiveness read."
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": null,
+      "rationale": "India bath & shower has zero DataPoints — no processed file, no size, no growth, no shares, and no company in the register is tagged to the segment (HUL's tags are skincare, hair_care, colour_cosmetics, deodorants). There is nothing to rate against.",
+      "evidence": [
+        "segments/bath_shower.json IN: size/growth/cagr/export null, points list empty",
+        "companies.yaml:IN (no company tagged bath_shower)",
+        "gaps.json: IN bath_shower market_size, growth_yoy, cagr_forecast all 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN bath_shower market size, growth and organised/unorganised split — gaps.json rows IN/bath_shower market_size + growth_yoy + cagr_forecast (suggested: euromonitor_passport, statista, tavily)."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "No India bath-and-shower channel evidence exists. The repo's India channel data is beauty-platform-shaped (Nykaa commission bands, q-commerce GMV split); body wash and soap route primarily through GT/MT, which the repo has not measured for this segment.",
+      "evidence": [
+        "india_findings.yaml:demand (q-commerce split — category-agnostic, no bath-and-shower assortment evidence)",
+        "gaps.json: IN bath_shower 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN bath_shower channel split (GT/MT/q-commerce) and trade margins — absent."
+    },
+    "supplier_power": {
+      "rating": null,
+      "rationale": "The India contract-manufacturing findings on file (third-party private-label houses at ~500-unit MOQs; Galaxy Surfactants supplying mild surfactants for cleansers) are plausibly adjacent to body cleansing, but they were gathered as a beauty/skincare D2C finding and no bath-and-shower DataPoint anchors them to this segment. Not rated on adjacency alone.",
+      "evidence": [
+        "india_findings.yaml:supply_chain (contract manufacturers, MOQ ~500; Galaxy Surfactants — mild surfactants for cleansers)",
+        "segments/bath_shower.json IN: points list empty"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN bath_shower manufacturing structure and import dependence — no segment DataPoint exists."
+    },
+    "new_entrant_threat": {
+      "rating": null,
+      "rationale": "No market size, no barrier evidence, no launch or funding record scoped to India bath & shower. Nothing to rate.",
+      "evidence": [
+        "gaps.json: IN bath_shower market_size/growth_yoy/cagr_forecast all 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN bath_shower entry evidence (new brands, funding, CDSCO applicability to body cleansing) — absent."
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No substitution evidence exists. In India specifically the soap-versus-body-wash question and the unorganised share would both be central to this force, and neither is recorded.",
+      "evidence": [
+        "gaps.json: IN bath_shower 'no data' — no organised/unorganised split recorded"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN bath_shower substitution and unorganised-share evidence (bar soap vs body wash) — absent."
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "A confirmed data void: not one DataPoint exists for India bath & shower on either the market or the corridor side, and the segment is not listed among corridor.yaml's K-beauty-carried categories. This is a registered gap, not a zero market — the segment should be read as unresearched, and nothing here should be treated as even a low-confidence estimate.",
+      "evidence": [
+        "segments/bath_shower.json IN: all fields null, points empty",
+        "gaps.json: three IN bath_shower rows all 'no data'",
+        "config/corridor.yaml:conduits (no bath-and-shower K-brand carried; corridor coverage is skincare, dermocosmetics, hair_care, colour_cosmetics)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Run the gaps.json IN/bath_shower rows (market_size, growth_yoy, cagr_forecast) before any force is rated."
+    },
+    "sub_segment_overrides": {}
+  }
+}

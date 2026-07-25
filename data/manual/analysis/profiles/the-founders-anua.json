@@ -1,0 +1,21 @@
+{
+  "slug": "the-founders-anua",
+  "name": "The Founders (Anua)",
+  "geography": "KR",
+  "role": "indie_brands",
+  "segments": ["skincare"],
+  "figures": [
+    {
+      "metric": "production_value",
+      "value": 228.5,
+      "unit": "krw_bn",
+      "period": "2025 (CY)",
+      "value_basis": "PRODUCTION",
+      "confidence": "MEDIUM",
+      "source": "MFDS via Reach24H analysis — +50% YoY"
+    }
+  ],
+  "recent_moves": [],
+  "corridor_involvement": "Present in India but not landed. Anua is listed on Amazon India (corridor.yaml conduits) and its Heartleaf 77% Soothing Toner 250ml is priced at Rs2,050 list on Nykaa (sale Rs1,743) with Amazon showing a different MRP of Rs2,999 — MRP varies by platform, itself a sign of an uncontrolled route to market. On the Blinkit capture (2026-07-23) all three Anua SKUs at Rs1,650-2,000 read 'Coming Soon'. No launch event or platform partnership is recorded.",
+  "read": "A KRW 228.5bn producer growing 50% a year (MFDS, MEDIUM) and one of the brands driving the K-beauty narrative — yet in India it is the clearest example of narrative outrunning distribution. Its hero SKU is listed but not stocked on q-commerce, and its MRP differs by platform, which means the brand is arriving through unmanaged channel supply rather than a principal-led entry. That gap is the corridor whitespace stated plainly: the indie derma brands consumers are asking for are precisely the ones absent from the access rail, while conglomerate brands occupy it."
+}

@@ -1,0 +1,126 @@
+{
+  "segment": "baby_child",
+  "generated_at": "2026-07-25T09:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": null,
+      "rationale": "Korea baby & child has no DataPoint of any kind — no processed file, no size, growth, CAGR or export figure — and no company in the register is tagged to the segment. There is no player set and no market to rate.",
+      "evidence": [
+        "segments/baby_child.json KR: size/growth/cagr/export null, points list empty",
+        "companies.yaml:KR (no company tagged baby_child)",
+        "gaps.json: KR baby_child market_size, growth_yoy, cagr_forecast all 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR baby_child market size, growth and shares — gaps.json rows KR/baby_child market_size + growth_yoy + cagr_forecast (suggested: euromonitor_passport, statista, korea_mfds, tavily)."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "No KR baby-and-child channel or margin evidence exists. Baby care typically routes through pharmacy, mother-and-baby specialists and grocery rather than the H&B retail structure the repo documents for cosmetics, so nothing on file transfers.",
+      "evidence": [
+        "companies.yaml:KR.retailers (CJ Olive Young — H&B retailer; no baby-care channel evidence)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR baby_child channel split and retail margins — absent."
+    },
+    "supplier_power": {
+      "rating": null,
+      "rationale": "No baby-care supply evidence. The listed ODM/OEM trio carries no segment tags, and baby formulations sit under a stricter safety/testing regime that the repo has not documented for Korea.",
+      "evidence": [
+        "companies.yaml:KR.odm_oem (Cosmax, Kolmar Korea, Cosmecca Korea — no baby-care evidence)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR baby-care manufacturing base and safety-testing requirements — absent."
+    },
+    "new_entrant_threat": {
+      "rating": null,
+      "rationale": "No market size, no regulatory pathway, no launch record for Korean baby & child. Neither the prize nor the barrier is measurable.",
+      "evidence": [
+        "gaps.json: KR baby_child market_size 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR baby_child market size and MFDS pathway for baby/child products — absent."
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No substitution evidence for Korean baby & child (e.g. sensitive-skin or dermocosmetic lines used on children) exists.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR baby_child substitution evidence vs sensitive-skin/derma ranges — absent."
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "Unresearched, not unattractive. Baby & child is one of two segments in the taxonomy with zero DataPoints on both sides of the corridor, no register entry in either geography, and no sub-segment structure defined in taxonomy.yaml to hang partial research on. It also leaves no trace in Korea's export breakdown, so the trade-flow shortcut that produced first data points for oral care and bath & shower is not available here. Any characterisation of this market would be fabrication until a fetcher run or manual drop lands.",
+      "evidence": [
+        "segments/baby_child.json KR: empty",
+        "config/taxonomy.yaml (baby_child defined with no sub_segments)",
+        "gaps.json: three KR baby_child rows all 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Run the gaps.json KR/baby_child rows (market_size, growth_yoy, cagr_forecast) before any force is rated."
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": null,
+      "rationale": "India baby & child has no DataPoint either — the processed file is absent, the segment file is null across the board, and no company in the register is tagged to the segment. The incumbent set cannot even be named from repo evidence, let alone ranked.",
+      "evidence": [
+        "segments/baby_child.json IN: size/growth/cagr/export null, points list empty",
+        "companies.yaml:IN (no company tagged baby_child)",
+        "gaps.json: IN baby_child market_size, growth_yoy, cagr_forecast all 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN baby_child market size, growth and brand shares, with organised/unorganised split — gaps.json rows IN/baby_child market_size + growth_yoy + cagr_forecast (suggested: euromonitor_passport, statista, tavily)."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "No India baby-care channel evidence. The repo's India channel data is beauty-platform and q-commerce shaped; baby care's pharmacy, GT and specialist-retail routes are unmeasured for this segment.",
+      "evidence": [
+        "india_findings.yaml:demand (q-commerce GMV split — category-agnostic, no baby-care assortment evidence)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN baby_child channel split and trade margins — absent."
+    },
+    "supplier_power": {
+      "rating": null,
+      "rationale": "India's contract-manufacturing findings are scoped to beauty/skincare D2C and say nothing about baby-care fill, which carries stricter safety and testing obligations. No baby-care supply DataPoint exists, so the adjacency is noted but not rated.",
+      "evidence": [
+        "india_findings.yaml:supply_chain (third-party contract manufacturers, MOQ ~500 — beauty D2C scope)",
+        "segments/baby_child.json IN: points list empty"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN baby-care manufacturing structure, safety-testing and import dependence — absent."
+    },
+    "new_entrant_threat": {
+      "rating": null,
+      "rationale": "No size, no barrier evidence, and no launch or funding record scoped to India baby & child. The ~US$757m of India D2C beauty/wellness funding on file is not attributed to any baby-care brand, so it cannot carry an entry read for this segment.",
+      "evidence": [
+        "india_findings.yaml:new_players (~US$757m India D2C funding — not baby-care scoped)",
+        "gaps.json: IN baby_child market_size 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN baby_child entry evidence (new brands, funding, CDSCO/BIS applicability to baby products) — absent."
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No substitution evidence. For India this would also require the organised-versus-unorganised split — traditional and home-prepared baby-care practice is precisely the substitute in question — and that split is unrecorded.",
+      "evidence": [
+        "gaps.json: IN baby_child 'no data' — no organised/unorganised split recorded"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN baby_child substitution and unorganised-share evidence — absent."
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "A confirmed void on both sides of the corridor: neither geography has a single DataPoint, so no KR-versus-IN comparison and no corridor read is possible. Baby & child is also absent from corridor.yaml — no K-brand carried into India is tagged to it, and it is not among the three ranked whitespace opportunities (mid-price derma in Tier 2/3, dedicated sunscreens, men's K-beauty). On current evidence this segment is outside the corridor's demonstrated path, though that reflects what has been researched, not a finding that the opportunity is absent.",
+      "evidence": [
+        "segments/baby_child.json IN and KR: both empty",
+        "config/corridor.yaml:conduits + whitespace (no baby_child brand or whitespace entry)",
+        "gaps.json: six baby_child rows (three KR, three IN) all 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Run the gaps.json IN/baby_child rows (market_size, growth_yoy, cagr_forecast) before any force is rated."
+    },
+    "sub_segment_overrides": {}
+  }
+}

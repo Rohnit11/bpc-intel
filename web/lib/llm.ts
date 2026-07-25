@@ -4,9 +4,17 @@
  * Deliberately dependency-free (plain fetch) so the provider is a one-env-var
  * decision rather than an architectural commitment:
  *
- *   CHAT_PROVIDER = xai | google | anthropic   (default: xai)
+ *   CHAT_PROVIDER = groq | xai | google | anthropic   (default: groq)
  *   CHAT_API_KEY  = <key>
  *   CHAT_MODEL    = <optional model id override>
+ *
+ * GROQ vs GROK — two different companies, one letter apart:
+ *   groq = Groq (api.groq.com), fast inference for open models (Llama etc.),
+ *          has a genuinely free tier. This is the default.
+ *   xai  = xAI's Grok (api.x.ai).
+ * CHAT_PROVIDER="grok" is therefore ambiguous and is REJECTED with a message
+ * asking you to spell out which one you meant, rather than silently billing
+ * the wrong vendor.
  *
  * NOTE ON xAI FREE CREDITS: xAI's free monthly credits are reported to come
  * via a data-sharing programme, under which API traffic may be used for model
@@ -16,7 +24,7 @@
  * this corpus is small, so the cost is minimal.
  */
 
-export type Provider = "xai" | "google" | "anthropic";
+export type Provider = "groq" | "xai" | "google" | "anthropic";
 
 interface ProviderConfig {
   url: string;
@@ -27,6 +35,12 @@ interface ProviderConfig {
 }
 
 const PROVIDERS: Record<Provider, ProviderConfig> = {
+  groq: {
+    url: "https://api.groq.com/openai/v1/chat/completions",
+    model: "llama-3.3-70b-versatile",
+    style: "openai",
+    headers: (key) => ({ Authorization: `Bearer ${key}` }),
+  },
   xai: {
     url: "https://api.x.ai/v1/chat/completions",
     model: "grok-4.1-fast",
@@ -52,16 +66,26 @@ const PROVIDERS: Record<Provider, ProviderConfig> = {
 
 /** Friendly names people actually type, mapped to provider keys. */
 const PROVIDER_ALIASES: Record<string, Provider> = {
-  grok: "xai", "x.ai": "xai", x: "xai",
+  "groq.com": "groq", llama: "groq",
+  "x.ai": "xai", x: "xai", "grok-xai": "xai", xaigrok: "xai",
   gemini: "google", googleai: "google",
   claude: "anthropic",
 };
 
 export function activeProvider(): Provider {
-  const raw = (process.env.CHAT_PROVIDER ?? "xai").trim().toLowerCase();
+  const raw = (process.env.CHAT_PROVIDER ?? "groq").trim().toLowerCase();
+  // "grok" is one letter from "groq" and means a different vendor. Refuse to
+  // guess — silently calling (and billing) the wrong provider is worse than
+  // a clear error at startup.
+  if (raw === "grok") {
+    throw new Error(
+      'Ambiguous CHAT_PROVIDER "grok": did you mean "groq" (Groq — api.groq.com, ' +
+      'free tier, Llama models) or "xai" (xAI\'s Grok — api.x.ai)? Set one of those exactly.',
+    );
+  }
   const p = PROVIDER_ALIASES[raw] ?? raw;
   if (p in PROVIDERS) return p as Provider;
-  throw new Error(`Unknown CHAT_PROVIDER "${raw}" (expected xai | google | anthropic)`);
+  throw new Error(`Unknown CHAT_PROVIDER "${raw}" (expected groq | xai | google | anthropic)`);
 }
 
 export function isConfigured(): boolean {

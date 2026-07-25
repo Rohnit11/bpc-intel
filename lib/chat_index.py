@@ -85,6 +85,16 @@ def build_facts() -> list[dict]:
 
 
 def _passage(pid: str, title: str, text: str, ref: str, **extra) -> dict:
+    # Ensure the geography is searchable by the name people actually type.
+    # "IN" alone is useless: the retrieval tokenizer treats "in" as a stopword
+    # and drops it, so an India passage would carry no geography signal at all
+    # while "KR" (not a stopword) survives — India queries would silently lose
+    # to Korea ones. Injecting the full name here means no call site can
+    # reintroduce that asymmetry by forgetting to format its own title.
+    geo = extra.get("geography")
+    name = _GEO_NAME.get(geo) if geo else None
+    if name and name.lower() not in title.lower():
+        title = f"{title} ({name})"
     return {"id": pid, "kind": "passage", "title": title, "text": text,
             "source_ref": ref, **extra}
 
@@ -268,7 +278,8 @@ def _passages_from_analysis(rel: str, data: dict) -> list[dict]:
         for r in data.get("reads", []):
             out.append(_passage(
                 f"entrymode_{r.get('segment')}_{r.get('geography')}",
-                f"Entry mode — {str(r.get('segment','')).replace('_',' ')} ({r.get('geography')})",
+                f"Entry mode — {str(r.get('segment','')).replace('_',' ')} "
+                f"({_GEO_NAME.get(r.get('geography'), r.get('geography'))})",
                 f"Mode: {r.get('mode') or 'research needed'}. {r.get('rationale','')} "
                 f"Alternatives: {r.get('alternatives_considered','')}",
                 "analysis/entry_mode.json",
@@ -289,4 +300,11 @@ def build_index() -> dict:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     idx = build_index()
-    print(f"facts={len(idx['facts'])} passages={len(idx['passages'])}")
+    # Actually persist it. This block used to build the index and print counts
+    # without writing anything, so `python -m lib.chat_index` looked like it
+    # regenerated the index while silently leaving the old one in place — the
+    # counts printed were from the fresh build, which made the no-op invisible.
+    out_path = PROJECT_ROOT / "web" / "public" / "data" / "chat_index.json"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(idx, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"facts={len(idx['facts'])} passages={len(idx['passages'])} -> {out_path}")

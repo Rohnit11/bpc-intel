@@ -1,0 +1,25 @@
+{
+  "slug": "apr-medicube",
+  "name": "APR (Medicube)",
+  "geography": "KR",
+  "role": "indie_brands",
+  "segments": [
+    "dermocosmetics"
+  ],
+  "figures": [
+    {
+      "metric": "production_value",
+      "value": 285.0,
+      "unit": "krw_bn",
+      "period": "2025 (CY)",
+      "value_basis": "PRODUCTION",
+      "confidence": "MEDIUM",
+      "source": "MFDS via Reach24H analysis — +177.8% YoY, rank moved from 21 to 4"
+    }
+  ],
+  "recent_moves": [
+    "2026 — entered India with Medicube, listed on BOTH Nykaa and Tira (Tira listing Feb-2026) [CORRIDOR]"
+  ],
+  "corridor_involvement": "The most aggressive Korean entrant into India in this dataset, and the only brand owner recorded on both competing conduits. Medicube launched on Nykaa (2026) and on Tira (2026-02) — no exclusivity granted to either. india_findings.yaml attributes the timing to K-beauty accelerating India entry to offset SWANA-region volatility.",
+  "read": "The fastest-rising producer in Korea: KRW 285bn of production value in 2025, +177.8%, jumping from rank 21 to rank 4 in a single year (MFDS via Reach24H, MEDIUM). No revenue or margin DataPoint has been collected, so the read rests on production volume alone. APR matters to an India entrant for two reasons: it proves an indie derma brand can reach conglomerate-scale output inside a few years, and its refusal to grant either Indian platform exclusivity shows that a K-brand with domestic momentum negotiates from strength rather than accepting a single-conduit deal. It also puts derma K-beauty — the corridor's stated whitespace — onto Indian shelves for the first time at scale."
+}

@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-07-25T00:00:00Z",
+  "steps": [
+    {
+      "jurisdiction": "IN",
+      "step": "COS-1 registration (import registration application)",
+      "what": "The overseas manufacturer's authorised Indian agent files Form COS-1 with CDSCO under the Drugs & Cosmetics Act 1940 + Cosmetics Rules 2020, covering every product category, variant and manufacturing site to be imported. This is pre-clearance: no consignment of a Korean SKU may enter India before the application resolves into a COS-2 certificate. Government fees are additive and paid once at application (not per shipment), non-refundable.",
+      "cost": "USD 1,000 per product category + USD 50 per variant (shade/flavour of an identical formulation) + USD 500 per manufacturing site — e.g. 3 categories x 2 variants from 2 sites = USD 4,300 (CliniExperts, corroborated by Regacats). CONFLICT: a K-beauty-specific registration guide states USD 2,000 per category per brand — double the figure above; confirm the current schedule on the SUGAM portal before budgeting.",
+      "timeline": "Filing itself is immediate; the clock that matters is the COS-2 processing window (see next step).",
+      "evidence": [
+        "research_drops/qualitative/regulatory.json — CliniExperts, 'Decoding government fees for cosmetic import registration in India' (accessed 2026-07-24)",
+        "research_drops/qualitative/regulatory.json — Seyecs CDSCO K-beauty COS-2/COS-5 guide (conflicting USD 2,000/category figure, retained)",
+        "corridor.yaml regulation.india_import: CDSCO, Drugs & Cosmetics Act 1940 + Cosmetics Rules 2020, Form COS-1 application"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "jurisdiction": "IN",
+      "step": "COS-2 issuance (Import Registration Certificate)",
+      "what": "CDSCO reviews the dossier and issues the Form COS-2 Import Registration Certificate, which is the licence to import the registered categories/variants from the registered sites. Query cycles on an incomplete dossier are the main driver of elapsed time.",
+      "cost": "No separate issuance fee evidenced — the COS-1 fee schedule above covers it. Renewal fee schedule: research needed.",
+      "timeline": "180 working days is the official window under the Cosmetics Rules 2020; CliniExperts reports 6-9 months in practice. Practitioner estimates conflict sharply — Regacats 2-3 months (30-40 days with expert handling), Seyecs 60-90 days from a complete filing. All retained: plan 3-9 months depending on dossier quality. The certificate is valid 5 years from issue and does NOT auto-renew.",
+      "evidence": [
+        "research_drops/qualitative/regulatory.json — CliniExperts importer-services page (180 working days official / 6-9 months actual; 5-year validity, no auto-renewal)",
+        "research_drops/qualitative/regulatory.json — Regacats guide (2-3 months); Seyecs guide (60-90 days) — conflicting practitioner estimates retained",
+        "corridor.yaml regulation.india_import: Form COS-1 -> COS-2 Registration Certificate"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "jurisdiction": "IN",
+      "step": "SUGAM portal filing",
+      "what": "The COS-1/COS-2 process runs electronically through CDSCO's SUGAM portal, with government fees paid via SUGAM / Bharat Kosh at application. Paper filings are no longer accepted as of 2026, so an entrant needs a SUGAM-registered Indian agent and digital dossier assembly from the outset.",
+      "cost": "No portal fee separate from the COS-1 government fees. Agent/consultant professional fees for the filing: research needed (no cosmetic-import consultancy fee quote was captured).",
+      "timeline": "research needed",
+      "evidence": [
+        "corridor.yaml regulation.india_import: 'via SUGAM portal; paper filings not accepted as of 2026'",
+        "research_drops/qualitative/regulatory.json — CliniExperts: fees paid via SUGAM / Bharat Kosh at application"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "jurisdiction": "IN",
+      "step": "Site registration (overseas manufacturing site)",
+      "what": "Each overseas manufacturing site supplying the registered products must itself be registered with CDSCO as part of the import registration. For a Korean brand this means naming its ODM/OEM plants (Cosmax, Kolmar Korea, Cosmecca and similar contract sites) — a direct cost of multi-sourcing, since every additional plant adds a fee and a dossier.",
+      "cost": "USD 500 per manufacturing site (CliniExperts), additive to the per-category and per-variant fees.",
+      "timeline": "Registered within the same COS-1 -> COS-2 window; no separate site timeline evidenced.",
+      "evidence": [
+        "research_drops/qualitative/regulatory.json — CliniExperts government-fee schedule (USD 500 per manufacturing site)",
+        "corridor.yaml regulation.india_import: 'manufacturing site registration required'"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "jurisdiction": "IN",
+      "step": "BIS IS 4707 labelling and ingredient compliance",
+      "what": "Imported cosmetics must conform to BIS IS 4707 ingredient standards (Part 2 revised August 2025) and to the labelling provisions of the Cosmetics Rules 2020. Formulations cleared for Korea are not automatically compliant — the restricted/permitted-ingredient list is the item to check before committing a hero SKU to registration.",
+      "cost": "research needed — no cosmetic-specific BIS certification cost was found on any fetched page; the research explicitly records that cosmetic labelling compliance runs through Legal Metrology plus the Cosmetics Rules 2020 rather than a priced BIS certification.",
+      "timeline": "research needed",
+      "evidence": [
+        "corridor.yaml regulation.india_import: 'BIS IS 4707 ingredient standards (Part 2 revised Aug 2025)'",
+        "research_drops/qualitative/regulatory.json — Professional Utilities / lmpccertificate.in: no cosmetic-specific BIS certification cost found; labelling runs via Legal Metrology + Cosmetics Rules 2020"
+      ],
+      "evidence_strength": "THIN"
+    },
+    {
+      "jurisdiction": "IN",
+      "step": "Legal Metrology (LMPC) importer registration",
+      "what": "Mandatory importer registration under the Legal Metrology (Packaged Commodities) Rules 2011 for any pre-packaged imported cosmetic — the declaration set (MRP, net quantity, importer identity, country of origin) that must appear on pack. Cheap and fast relative to CDSCO, but a hard gate on retail-ready packaging.",
+      "cost": "INR 500 government fee; professional/service fees typically approx INR 5,000 (one provider quotes INR 6,489 all-in incl. GST).",
+      "timeline": "7-10 working days (Professional Utilities); another provider reports issuance within 7-20 days after verification. Validity 5 years.",
+      "evidence": [
+        "research_drops/qualitative/regulatory.json — Professional Utilities LMPC registration (INR 500 fee, ~INR 5,000 service fee, 7-10 working days)",
+        "research_drops/qualitative/regulatory.json — lmpccertificate.in (7-20 day issuance window, 5-year validity)"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "jurisdiction": "IN",
+      "step": "COS-5 / COS-8 domestic manufacturing licence (localisation route)",
+      "what": "The alternative to importing: manufacture in India under a State Licensing Authority licence, which removes the COS-1/COS-2 import registration entirely. Relevant because India's contract-manufacturing base is deep and Indian D2C brands already run Korean-formulated lines locally — the licence, not the import certificate, is then the gate.",
+      "cost": "Approx INR 10,000 for grant or retention of licence per category (up to 10 items), plus INR 500 for each additional category — roughly two orders of magnitude below the USD 1,000/category import fee.",
+      "timeline": "Site inspection must occur within 30 days of filing; the State Licensing Authority decides about 45 days after document review and inspection. COS-8 is valid indefinitely unless suspended/cancelled, subject to a retention fee before each 5-year period completes.",
+      "evidence": [
+        "research_drops/qualitative/regulatory.json — Seyecs CDSCO K-beauty registration guide (COS-5/COS-8 fees, 45-day decision, 30-day inspection window)",
+        "rtm_IN.json D2C channel: India D2C runs on third-party contract manufacturers (MOQs ~500 units), CDSCO-free route",
+        "corridor.yaml india_side_players: Pilgrim (Korean Rice Water), Limese (formulated in Korea for Indian skin)"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "jurisdiction": "IN",
+      "step": "Customs clearance (per consignment)",
+      "what": "With COS-2 in hand, each consignment clears customs against the registered categories/variants/sites. The registration is pre-clearance — an unregistered SKU cannot be shipped in and cleared retrospectively — so assortment changes are gated by the registration cycle, not by the shipping cycle.",
+      "cost": "research needed — no import-duty, clearing-agent or landed-cost figure for KR cosmetics into India is recorded in this repo.",
+      "timeline": "research needed — no per-consignment clearance time is recorded.",
+      "evidence": [
+        "corridor.yaml headline entry_barrier: 'CDSCO import registration ... pre-clearance before any consignment; key friction and lead-time cost'",
+        "corridor_vector.json friction_read: registration is a lead-time and working-capital cost, cleared before the first shipment"
+      ],
+      "evidence_strength": "THIN"
+    },
+    {
+      "jurisdiction": "KR",
+      "step": "MFDS functional-cosmetic approval",
+      "what": "Products making UV-protection (sunscreen), whitening or anti-wrinkle claims are 'functional cosmetics' requiring MFDS pre-market review before domestic sale. Two pathways split on ingredients: a submission procedure for products built only from MFDS pre-approved functional actives, versus full evaluation with efficacy and human-testing data for new/unapproved actives. This is the gate that separates a formulation-reuse launch from an innovation launch in Korea.",
+      "cost": "Approx KRW 189,000 for electronic submission, approx KRW 210,000 offline (roughly USD 140-155 at ~KRW 1,350/USD) — trivially small against India's USD 1,000+ per category. Human/efficacy testing cost on the new-ingredient pathway: research needed.",
+      "timeline": "Approx 7 days where only MFDS pre-approved functional ingredients are used; approx 4-6 months where new/unapproved actives require full efficacy and human-testing evaluation. A separate practitioner guide states ~60 days, likely the standard screening case; all three figures retained.",
+      "evidence": [
+        "research_drops/qualitative/regulatory.json — Critical Catalyst, regulatory framework for cosmetic products in South Korea (7 days vs 4-6 months, two pathways)",
+        "research_drops/qualitative/regulatory.json — Artixio, cosmetics regulations and registration process South Korea (KRW 189,000 electronic / KRW 210,000 offline; ~60 days)",
+        "porter_sun_care.json KR new_entrant_threat: sunscreen sits inside the MFDS functional-cosmetics category requiring efficacy/SPF approval"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "jurisdiction": "KR",
+      "step": "MFDS post-approval change and reissue procedures",
+      "what": "Once approved, reformulation, claim changes and certificate reissues run through defined MFDS change procedures. Material for a brand that iterates formulas quickly: a major change resets a two-month clock, so the Korean cadence of frequent reformulation carries a scheduled regulatory tax.",
+      "cost": "research needed — no separate change-procedure fee is recorded beyond the base approval fee.",
+      "timeline": "Approx 60 days for major changes, approx 15 days for minor changes, approx 7 days for certificate reissue — all assuming complete labelling, testing and documentation.",
+      "evidence": [
+        "research_drops/qualitative/regulatory.json — Artixio (major ~60 days, minor ~15 days, reissue ~7 days)"
+      ],
+      "evidence_strength": "PARTIAL"
+    },
+    {
+      "jurisdiction": "KR",
+      "step": "General (non-functional) cosmetics market entry and import",
+      "what": "Ordinary cosmetics making no functional claim fall outside the functional-cosmetic approval route, and a foreign brand entering Korea domestically would work through the responsible-distributor/importer obligations rather than pre-market approval. This repo holds no evidence on that pathway — only MFDS's export-facing regulatory-diplomacy MOUs are recorded — so it is not documented here rather than assumed from general knowledge.",
+      "cost": "research needed",
+      "timeline": "research needed",
+      "evidence": [
+        "corridor.yaml regulation.korea_export_support: 'MFDS regulatory-diplomacy MOUs to smooth exports' (export-facing only; no inbound-import pathway recorded)",
+        "entry_scorecard.json: regulatory_friction is INSUFFICIENT on every KR row — no KR cost/timeline DataPoint exists"
+      ],
+      "evidence_strength": "INSUFFICIENT"
+    }
+  ],
+  "summary": "The two regulators price entry very differently. For a Korean brand entering India, CDSCO is a working-capital and lead-time cost rather than a wall: USD 1,000 per category + USD 50 per variant + USD 500 per manufacturing site (one source disputes this at USD 2,000/category), filed as Form COS-1 through SUGAM and resolving to a COS-2 certificate valid 5 years. The official window is 180 working days, practitioners quote anywhere from 60-90 days to 6-9 months, and paper filings are dead as of 2026 — so the binding constraint is dossier quality and elapsed months before the first consignment, not the fee. Three consequences shape entry design: registration is per category/variant/site, so a tight hero-SKU assortment from a single ODM plant costs a fraction of a full range multi-sourced across contract manufacturers; the certificate is pre-clearance, so assortment changes move at the registration cycle, not the shipping cycle; and the localisation route is dramatically cheaper on paper (approx INR 10,000 per category for a COS-5/COS-8 manufacturing licence, ~45-day decision), which is why the Limese/Pilgrim contract-manufactured Korean-ingredient template exists. BIS IS 4707 ingredient conformity (Part 2 revised Aug 2025) plus LMPC importer registration (INR 500 + ~INR 5,000 service, 7-10 working days) are cheap but hard gates on retail-ready packaging. In the other direction, MFDS is fast and almost free where a formulation reuses pre-approved functional actives (~7 days, ~KRW 189,000) and slow where it does not (4-6 months of efficacy and human testing) — so for an entrant, Korea's regulatory cost sits in innovation, India's sits in breadth and time. Korea's inbound pathway for ordinary non-functional cosmetics is not documented in this repo and stays research needed, as do India's landed duty and per-consignment clearance costs."
+}

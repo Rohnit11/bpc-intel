@@ -1,0 +1,39 @@
+{
+  "slug": "cosmax",
+  "name": "Cosmax",
+  "geography": "KR",
+  "role": "odm_oem",
+  "segments": ["total_bpc"],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 2.399,
+      "unit": "krw_tn",
+      "period": "2025 (CY)",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "DART (FSS) annual filing — consolidated revenue"
+    },
+    {
+      "metric": "revenue",
+      "value": 2.16,
+      "unit": "krw_tn",
+      "period": "2024 (CY)",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "Korea Biomedical Review — +21.9% YoY"
+    },
+    {
+      "metric": "production_value",
+      "value": 1.61,
+      "unit": "krw_tn",
+      "period": "2025 (CY)",
+      "value_basis": "PRODUCTION",
+      "confidence": "HIGH",
+      "source": "MFDS — #1 in Korea by production value. PRODUCTION basis: factory-gate output, not comparable to the NET_REALISATION revenue rows above"
+    }
+  ],
+  "recent_moves": [],
+  "corridor_involvement": null,
+  "read": "Korea's largest cosmetics ODM — KRW 1.61tn of MFDS-registered production value in 2025 and KRW 2.399tn of consolidated revenue (DART), a record year, up from KRW 2.16tn in 2024. The two figures sit on different bases (production value is factory-gate output, revenue is company net realisation) and must not be netted. Cosmax is the reason the new-entrant threat in Korean BPC reads high: the manufacturing capability behind almost every indie K-brand is rentable, so a brand can be formulated and produced without owning a plant. For an entrant considering a made-in-Korea line for India, this is the supply-side counterpart to Limese's model — but no India-specific Cosmax activity is recorded in this repo."
+}

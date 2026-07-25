@@ -1,0 +1,129 @@
+{
+  "segment": "oral_care",
+  "generated_at": "2026-07-25T09:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": null,
+      "rationale": "Korea oral care exists in this repo only as customs trade flow. There is no domestic retail size, no growth rate, no player shares, and only one company in the register is tagged to the segment at all (LG H&H). A single named participant and zero share data cannot support an intensity read — rating it would be industry general knowledge, not evidence.",
+      "evidence": [
+        "segments/oral_care.json KR: size/growth/cagr/export all null; only two HS 3306 export_value points",
+        "companies.yaml:KR.conglomerates (LG H&H tagged oral_care; no second KR oral-care player in the register)",
+        "gaps.json: KR oral_care missing market_size, growth_yoy, cagr_forecast ('segment has export_value only')"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR oral_care domestic market size, growth and brand shares — gaps.json rows KR/oral_care market_size + growth_yoy + cagr_forecast (suggested: euromonitor_passport, statista, korea_mfds, tavily)."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "No KR oral-care channel, retail-margin or listing-fee evidence exists. The CJ Olive Young / duty-free gatekeeper structure documented for Korean cosmetics is a health-and-beauty-retail read; oral care is a different shelf (grocery/pharmacy/mass) and the repo carries nothing that evidences where Korean dentifrice actually sells. Carrying the cosmetics channel read across would be an unevidenced transfer, so this force is left unrated.",
+      "evidence": [
+        "companies.yaml:KR.retailers (CJ Olive Young — H&B retailer, no oral-care channel evidence)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR oral-care channel split (grocery/pharmacy/H&B/online) and trade margins — no channel DataPoint exists for this segment (euromonitor_passport, korea_mfds)."
+    },
+    "supplier_power": {
+      "rating": null,
+      "rationale": "Korea's listed contract-manufacturing base — Cosmax, Kolmar Korea, Cosmecca Korea — is a colour/skincare ODM ecosystem. Nothing in the repo evidences that it extends to dentifrice or oral-hygiene production, which is a separate plant type and a separate regulatory class. Reusing the skincare supplier-power read here would be exactly the general-knowledge shortcut the grounding rules forbid.",
+      "evidence": [
+        "companies.yaml:KR.odm_oem (Cosmax, Kolmar Korea, Cosmecca Korea — no segment tags, no oral-care evidence)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Who manufactures Korea's HS 3306 output (US$0.079986bn FOB to world, 2024) — no oral-care supply-base DataPoint in repo (korea_mfds, tavily)."
+    },
+    "new_entrant_threat": {
+      "rating": null,
+      "rationale": "Entry barriers cannot be assessed without either a market to enter (no domestic size) or a documented regulatory gate. Korea's MFDS pathway evidence in the repo covers cosmetics; oral care sits under a quasi-drug/dentifrice classification that is not documented here, so neither the capital nor the regulatory barrier is measurable.",
+      "evidence": [
+        "gaps.json: KR oral_care market_size 'segment has export_value only'",
+        "config/corridor.yaml:regulation (korea_export_support covers MFDS cosmetics MOUs only — no oral-care pathway)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR oral-care regulatory classification and entry barriers (MFDS quasi-drug pathway) — absent from repo."
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No evidence of substitution into or out of Korean oral care (e.g. dental-clinic services, whitening devices) exists in the repo.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR oral-care substitution evidence (professional dental/whitening adjacency) — absent (euromonitor_passport, tavily)."
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "No attractiveness call is defensible: four of five forces have literally no evidence base. What the trade data does establish, on a single consistent basis, is scale — Korea shipped US$0.079986bn FOB of HS 3306 oral hygiene to the world in 2024 (HIGH, UN Comtrade), against US$8.54bn FOB of skincare and US$1.51bn FOB of colour cosmetics in 2025 (HIGH, MFDS). Oral care is two orders of magnitude off the categories Korea actually exports at scale, and only US$0.000251bn of that reached India. The honest read is that this is not a segment where Korea currently competes globally at scale, and not one this repo can yet assess as a market.",
+      "evidence": [
+        "segments/oral_care.json KR: export_value US$0.079986bn to world and US$0.000251bn to India (2024, EXPORT_FOB, HIGH, UN Comtrade) [CORRIDOR]",
+        "korea.json:segments (skincare export US$8.54bn, colour_cosmetics US$1.51bn, 2025, EXPORT_FOB, HIGH — same basis, one year later)",
+        "gaps.json: KR oral_care triple-missing (market_size, growth_yoy, cagr_forecast)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "Fill KR oral_care domestic size/growth/shares before any force is rated."
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": null,
+      "rationale": "India oral care is a large, well-known category that this repo has simply not researched: the only DataPoints are three import flows. No company in the register is tagged to oral_care on the India side — HUL's tags are skincare, hair_care, colour_cosmetics and deodorants — so the repo cannot even name the incumbent set, let alone rate the intensity between them.",
+      "evidence": [
+        "segments/oral_care.json IN: size/growth/cagr null; only three HS 3306 import_value points",
+        "companies.yaml:IN (no company tagged oral_care)",
+        "gaps.json: IN oral_care missing market_size, growth_yoy, cagr_forecast ('segment has import_value only')"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN oral_care market size and brand shares, organised vs unorganised — gaps.json rows IN/oral_care market_size + growth_yoy + cagr_forecast (suggested: euromonitor_passport, statista, tavily)."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "The India channel evidence this repo holds is beauty-platform-specific: Nykaa commission bands (22-26% skincare, 24-28% colour, 22-25% fragrance) and the q-commerce trio's GMV split. Oral care is a grocery/GT/MT category whose route to shelf is not documented anywhere in the repo, and the beauty-platform commission structure cannot be assumed to price it.",
+      "evidence": [
+        "segments/skincare.json IN trade_margin 24% (Nykaa commission — skincare-scoped, not oral care)",
+        "india_findings.yaml:demand (q-commerce ~Rs40,000cr; Blinkit 45-50% / Zepto 20-25% / Instamart 20-25% — category-agnostic GMV split, no oral-care assortment evidence)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN oral-care channel split (GT/MT/q-commerce/pharmacy) and trade margins — no oral-care channel DataPoint exists."
+    },
+    "supplier_power": {
+      "rating": null,
+      "rationale": "India's HS 3306 import pool was US$0.01974bn CIF in 2024 (HIGH, UN Comtrade), which is small in absolute terms — but with no market-size DataPoint for the segment, import dependence cannot be computed, and deriving one by combining these two figures is exactly what the grounding rules forbid. The contract-manufacturing structure documented for India D2C beauty is a skincare/haircare finding and carries no oral-care evidence.",
+      "evidence": [
+        "segments/oral_care.json IN import_value US$0.01974bn from world (2024, IMPORT_CIF, HIGH)",
+        "india_findings.yaml:supply_chain (third-party contract manufacturers, MOQ ~500 — beauty D2C scope, not oral care)",
+        "gaps.json: IN oral_care market_size absent, so import dependence is not computable"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN oral_care market size (to make the import pool interpretable) plus domestic manufacturing structure."
+    },
+    "new_entrant_threat": {
+      "rating": "LOW",
+      "rationale": "Scoped strictly to the import / KR-IN corridor lane — the domestic-manufacture lane, which almost certainly carries this category, is unmeasured and is NOT covered by this rating. India's entire HS 3306 import pool was US$0.01974bn CIF in 2024; Korea supplied US$0.000485bn of it and China US$0.001595bn (all HIGH, UN Comtrade), so Korea is a minor supplier even within a small import pool, and behind China. Layered on that, any imported cosmetic requires CDSCO registration (Form COS-1 to COS-2 via the SUGAM portal) plus manufacturing-site registration before a consignment clears. A near-absent Korean beachhead plus a pre-clearance gate means the corridor-import route into India oral care is not a live entrant threat, and offers no established lane for a K-origin entrant to ride.",
+      "evidence": [
+        "segments/oral_care.json IN import_value US$0.01974bn world / US$0.000485bn Korea [CORRIDOR] / US$0.001595bn China (2024, IMPORT_CIF, HIGH, UN Comtrade)",
+        "segments/oral_care.json KR export_value US$0.000251bn to India (2024, EXPORT_FOB, HIGH) — the mirror side of the same flow",
+        "config/corridor.yaml:regulation.india_import (CDSCO Form COS-1 to COS-2 via SUGAM, site registration, BIS IS 4707; paper filings not accepted as of 2026)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "Domestic-lane entrant threat (contract-manufacturing availability, funding into India oral-care brands) is unrated — needs IN oral_care market structure from gaps.json."
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "No substitution evidence for India oral care (e.g. traditional/unorganised alternatives such as tooth powders, or dental services) exists in the repo. This matters more than usual here because the organised/unorganised split — mandatory on every India number under the repo's rules — is itself unknown for this segment.",
+      "evidence": [
+        "gaps.json: IN oral_care market_size 'segment has import_value only' — no organised/unorganised split recorded"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN oral-care substitution and unorganised-share evidence (tooth powder, traditional formats) — absent (euromonitor_passport, tavily)."
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "Not assessable as a market on current evidence. The only defensible structural read is corridor-shaped: the Korea-to-India oral-care flow is negligible in both directions (US$0.000251bn FOB out, US$0.000485bn CIF in, 2024 — the gap between them being the normal FOB/CIF mirror discrepancy, not two separate quantities), and China already supplies more of India's oral-care imports than Korea does. Four of five forces are unrated. Until gaps.json's IN oral_care size/growth rows are filled, this segment should be treated as unresearched rather than unattractive.",
+      "evidence": [
+        "segments/oral_care.json IN + KR corridor flows (2024, HIGH, UN Comtrade)",
+        "gaps.json: IN oral_care and KR oral_care each missing market_size, growth_yoy, cagr_forecast"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "Fill IN oral_care market size, growth and organised-share before rating rivalry, buyer power or substitutes."
+    },
+    "sub_segment_overrides": {}
+  }
+}

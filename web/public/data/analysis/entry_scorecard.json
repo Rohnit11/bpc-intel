@@ -1472,6 +1472,149 @@
         "of": 6,
         "read": "insufficient — no criteria scorable. No IN emerging-adjacencies DataPoints; scope itself is undefined."
       }
+    },
+    {
+      "segment": "bath_shower",
+      "geography": "KR",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No domestic KR bath_shower market size exists; the only figure on file is an export value (US$0.59bn, 2025, EXPORT_FOB, HIGH, MFDS via Yonhap/Korea Herald), which measures outbound trade, not the home market, and cannot stand in for it.",
+          "evidence": [
+            "KR_bath_shower export_value US$0.59bn 2025 EXPORT_FOB HIGH (MFDS via Yonhap/Korea Herald)",
+            "gaps.json: KR bath_shower market_size 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR bath_shower domestic retail size (Euromonitor/Statista) per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR bath_shower growth evidence data.",
+          "evidence": [
+            "gaps.json: KR bath_shower growth_evidence 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR bath_shower growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR bath_shower competitive openness data.",
+          "evidence": [
+            "gaps.json: KR bath_shower competitive_openness 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR bath_shower competitive_openness per gaps.json."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR bath_shower channel access data.",
+          "evidence": [
+            "gaps.json: KR bath_shower channel_access 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR bath_shower channel_access per gaps.json."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No KR bath_shower regulatory friction data.",
+          "evidence": [
+            "gaps.json: KR bath_shower regulatory_friction 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "KR bath_shower regulatory_friction per gaps.json."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": null,
+          "rationale": "corridor_tailwind is a KR->IN vector; Korea is the corridor source, not the entry destination, so it is not scored on KR rows.",
+          "evidence": [],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": null
+        }
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "Not scored — no criterion has supporting evidence (0 of 6). This is a data gap, not an unattractive market."
+      }
+    },
+    {
+      "segment": "bath_shower",
+      "geography": "IN",
+      "criteria": {
+        "market_size_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN bath_shower market size evidence data — the segment has no processed file.",
+          "evidence": [
+            "gaps.json: IN bath_shower market_size_evidence 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN bath_shower market_size per gaps.json."
+        },
+        "growth_evidence": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN bath_shower growth evidence data — the segment has no processed file.",
+          "evidence": [
+            "gaps.json: IN bath_shower growth_evidence 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN bath_shower growth per gaps.json."
+        },
+        "competitive_openness": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN bath_shower competitive openness data — the segment has no processed file.",
+          "evidence": [
+            "gaps.json: IN bath_shower competitive_openness 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN bath_shower competitive_openness per gaps.json."
+        },
+        "channel_access": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN bath_shower channel access data — the segment has no processed file.",
+          "evidence": [
+            "gaps.json: IN bath_shower channel_access 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN bath_shower channel_access per gaps.json."
+        },
+        "regulatory_friction": {
+          "rating": null,
+          "score": null,
+          "rationale": "No IN bath_shower regulatory friction data — the segment has no processed file.",
+          "evidence": [
+            "gaps.json: IN bath_shower regulatory_friction 'no data'"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "IN bath_shower regulatory_friction per gaps.json."
+        },
+        "corridor_tailwind": {
+          "rating": null,
+          "score": null,
+          "rationale": "No [CORRIDOR]-tagged bath_shower DataPoint and no bath_shower brand in corridor.yaml's conduit assortments, so corridor pull is unevidenced here.",
+          "evidence": [
+            "corridor.yaml: no bath_shower brands listed in conduit assortments"
+          ],
+          "evidence_strength": "INSUFFICIENT",
+          "research_needed": "Evidence of K-beauty body/bath products entering India (q-commerce assortment or trade flow)."
+        }
+      },
+      "composite": {
+        "score": null,
+        "based_on": 0,
+        "of": 6,
+        "read": "Not scored — no criterion has supporting evidence (0 of 6). This is a data gap, not an unattractive market."
+      }
     }
   ]
 }

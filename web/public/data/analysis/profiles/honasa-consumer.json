@@ -1,0 +1,41 @@
+{
+  "slug": "honasa-consumer",
+  "name": "Honasa Consumer (Mamaearth)",
+  "geography": "IN",
+  "role": "d2c_brands",
+  "segments": [
+    "total_bpc"
+  ],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 2392.0,
+      "unit": "inr_cr",
+      "period": "FY26",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "Screener.in (consolidated P&L) — annual Sales line; organised sector"
+    },
+    {
+      "metric": "operating_margin",
+      "value": 10.0,
+      "unit": "percent",
+      "period": "FY26",
+      "value_basis": "NA",
+      "confidence": "HIGH",
+      "source": "Screener.in (consolidated P&L) — OPM %; cost-structure proxy"
+    },
+    {
+      "metric": "market_share",
+      "value": 2.9,
+      "unit": "percent",
+      "period": "FY26",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "india.json shares — share of summed revenue for the 3 listed IN brand owners (base INR 82,038cr). NOT a market share"
+    }
+  ],
+  "recent_moves": [],
+  "corridor_involvement": null,
+  "read": "The only listed pure-play BPC brand owner in India and therefore the cleanest read available on what a digital-native brand actually earns here: Rs2,392cr FY26 at a 10% operating margin. The margin path is the story — -290% FY21, 1% FY22, 2% FY23, 7% FY24, then back down to 3% in FY25 during the 'Project Neev' distribution reset (PAT Rs73cr, -32%) before recovering to 10% in FY26. An entrant should read that sequence as the real cost curve of building an Indian D2C brand to scale: five years to reach double-digit margin, with a reversal in the middle when the channel mix had to be rebuilt. It is also the benchmark that makes HUL's 8.5x revenue multiple for Minimalist legible — buyers are paying for growth that takes this long to earn organically."
+}

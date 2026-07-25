@@ -1,0 +1,16 @@
+{
+  "known_not_profiled": [
+    "L'Oréal India — on the config/companies.yaml roster (IN incumbents, subsidiary_unlisted) but carries no segments field and no DataPoint of any kind in sources.json, india.json or india_value_chain.json. As an unlisted subsidiary it files no standalone Indian P&L on Screener, so revenue/margin would have to come from a separate filing or a market-research licence.",
+    "SUGAR Cosmetics — on the roster (IN d2c_brands, private) with no segments field, no revenue/margin/share DataPoint, and no entry in corridor.yaml or india_findings.yaml. Nothing at all to profile from.",
+    "Benow — appears in the MFDS production-value table (KRW 166.2bn, 2025, +52.9%, MEDIUM) but is not on the companies.yaml roster, so there is no role or segment basis on which to build a profile. Roster candidate for the next research pass.",
+    "Tira (Reliance Retail) — a first-class corridor conduit with four dated K-brand launches in corridor.yaml (Mixsoon 2024-08, Hince 2026-01, Medicube 2026-02, Dr. Melaxin 2026-07), but not on the companies.yaml roster and with zero company-level financials, commission rates or assortment DataPoints. The most consequential coverage gap in this artifact: Tira's economics are unknown while Nykaa's (22-28% commission) are documented.",
+    "Flipkart — corridor conduit carrying an eight-brand international K-beauty portfolio (2025) but no roster entry, no BPC-specific revenue, and no commission or assortment DataPoint.",
+    "Amazon India — corridor conduit carrying six K-brands, and the only referral-rate DataPoint exists at total_bpc level (7-10% above INR1,000, 0% below, effective Mar-2026) rather than as company evidence. Not a roster company.",
+    "Foxtale — subject of a real event (KOSE US$30m investment, 2026) and a house-of-brands pivot (Hula Hoop), both from config narrative rather than DataPoints. No revenue, margin or segment figure; profiled as entrants_ma events instead.",
+    "Pilgrim and Limese — Indian-side corridor players in corridor.yaml india_side_players with a positioning angle each (Pilgrim's Korean Rice Water range; Limese's Korea-manufactured formulations) but no numeric evidence whatsoever.",
+    "Innisfree — has a genuine revenue DataPoint (KRW 224.6bn, FY24, -18%, from a KRW 768bn 2016 peak) and Indian shelf prices, but it is an AmorePacific BRAND, not a company on the roster. Folded into the AmorePacific profile rather than given a card, so that brand-level and company-level revenue are not shown on the same basis.",
+    "COSRX, Laneige, Sulwhasoo, Aestura, Illiyoon, Etude, The Face Shop, TirTir, Hince, Dr. Melaxin, Mixsoon, Some By Mi, Isntree, Dr.Jart+, rom&nd and the other corridor brands — brand-level entities with price and assortment evidence but no company-level financials; they belong in the price ladder and corridor artifacts, not in company profiles.",
+    "Innovist (Bare Anatomy, Chemist at Play, Sunscoop) — named in india_findings.yaml as the house-of-brands template, with no figures and no roster entry.",
+    "Gorgeous Cosmos, Galaxy Surfactants, Fine Organics — supply-chain actors named in india_findings.yaml (contract manufacturing, specialty ingredients). Relevant to the value-chain artifact; no company DataPoints collected, and they sit upstream of the BPC brand roster."
+  ]
+}

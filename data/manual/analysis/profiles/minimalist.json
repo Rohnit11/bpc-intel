@@ -1,0 +1,32 @@
+{
+  "slug": "minimalist",
+  "name": "Minimalist (Uprising Science)",
+  "geography": "IN",
+  "role": "d2c_brands",
+  "segments": ["dermocosmetics", "skincare"],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 347.0,
+      "unit": "inr_cr",
+      "period": "FY24",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "Entrackr — FY24 (Apr-23 to Mar-24), +89% YoY; PAT Rs10.83cr (doubled YoY); ARR reportedly Rs500cr at acquisition"
+    },
+    {
+      "metric": "revenue",
+      "value": 184.0,
+      "unit": "inr_cr",
+      "period": "FY23",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "Entrackr — FY23 (Apr-22 to Mar-23); PAT Rs5cr. Base year for the +89% FY24 growth read"
+    }
+  ],
+  "recent_moves": [
+    "Jan-2025 — acquired by Hindustan Unilever, 90.5% at Rs2,955cr pre-money (~US$350mn), ~8.5x FY24 revenue"
+  ],
+  "corridor_involvement": null,
+  "read": "The benchmark exit in Indian derma D2C and the most useful single valuation reference in this repo: Rs347cr FY24 revenue, +89% off Rs184cr, profitable at Rs10.83cr PAT, sold to HUL at Rs2,955cr for 90.5% — about 8.5x trailing revenue. Two things follow for an entrant. First, the masstige derma tier is where Indian buyers are paying up, consistent with the 14.6% CAGR forecast on masstige derma cosmetics (Expert Market Research, LOW). Second, growing profitably at that rate mattered to the price: this was not a loss-making land-grab exit, which sets a harder bar for anyone planning to buy scale in the same segment now that the fastest asset is inside HUL."
+}

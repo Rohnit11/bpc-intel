@@ -1,0 +1,135 @@
+{
+  "segment": "emerging_adjacencies",
+  "generated_at": "2026-07-25T09:00:00Z",
+  "KR": {
+    "rivalry": {
+      "rating": null,
+      "rationale": "This segment is a container for six distinct adjacencies in taxonomy.yaml — beauty_devices, ingestible_nutricosmetics, halal_certified, ayurvedic_herbal, clean_vegan and kbeauty_derivative — and Korea has no DataPoint against any of them. No company in the register is tagged here either: APR (Medicube) appears as a KR indie brand owner and Cosmax/Kolmar/Cosmecca as ODMs, but nothing in the repo attaches any of them to devices, ingestibles or the other adjacencies. Rivalry cannot be rated across six unmeasured sub-markets.",
+      "evidence": [
+        "segments/emerging_adjacencies.json KR: size/growth/cagr/export null, points list empty",
+        "config/taxonomy.yaml (six sub_segments defined; none carries a DataPoint)",
+        "companies.yaml:KR (no company tagged emerging_adjacencies)",
+        "gaps.json: KR emerging_adjacencies market_size, growth_yoy, cagr_forecast all 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR sizing for the adjacencies separately — beauty_devices and ingestible_nutricosmetics first, since those are where Korea is most likely to have a measurable position. gaps.json rows KR/emerging_adjacencies market_size + growth_yoy + cagr_forecast (suggested: euromonitor_passport, statista, tavily)."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "No channel evidence for any Korean adjacency. Device and ingestible retail run through different gatekeepers than cosmetics (electronics/home-shopping and health-supplement channels respectively), and neither is documented here.",
+      "evidence": [
+        "segments/emerging_adjacencies.json KR: points list empty"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR channel evidence for beauty devices and nutricosmetics — absent."
+    },
+    "supplier_power": {
+      "rating": null,
+      "rationale": "The cosmetics ODM base on file does not evidence device electronics or ingestible/supplement manufacturing, which are different supply chains under different regulators. Not rated.",
+      "evidence": [
+        "companies.yaml:KR.odm_oem (Cosmax, Kolmar Korea, Cosmecca Korea — cosmetics contract manufacturing, no device or ingestible evidence)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR supply base for beauty devices / nutricosmetics — absent."
+    },
+    "new_entrant_threat": {
+      "rating": null,
+      "rationale": "Each adjacency has its own regulatory gate — devices under electrical/medical-device rules, ingestibles under food/health-functional rules — and the repo documents none of them for Korea. With no barrier evidence and no market size, entry cannot be assessed.",
+      "evidence": [
+        "config/corridor.yaml:regulation (korea_export_support covers MFDS cosmetics MOUs only)",
+        "gaps.json: KR emerging_adjacencies market_size 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR regulatory pathways for beauty devices and ingestible nutricosmetics — absent."
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "Substitution is the defining question for this segment — devices and ingestibles compete directly with topical skincare routines and with aesthetic procedures — and the repo carries no evidence on it for Korea. The same gap was flagged as unrateable in the KR skincare read.",
+      "evidence": [
+        "data/manual/analysis/porter_skincare.json KR substitutes (INSUFFICIENT — no KR cross-category substitution evidence exists)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "KR substitution evidence between topical skincare, beauty devices, ingestibles and aesthetic procedures (euromonitor_passport, tavily)."
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "Unassessable. Korea is the market where these adjacencies are most plausibly developed, which makes the void conspicuous rather than benign — but plausibility is not evidence, and no force can be rated. A further structural problem: 'emerging_adjacencies' is not one market. Any single rating over six sub-segments with different buyers, channels, supply chains and regulators would be meaningless even once data lands, so the research priority is per-sub-segment sizing, not a segment total.",
+      "evidence": [
+        "segments/emerging_adjacencies.json KR: empty",
+        "config/taxonomy.yaml (six heterogeneous sub_segments under one segment id)",
+        "gaps.json: three KR emerging_adjacencies rows all 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Size the KR adjacencies individually (beauty_devices, ingestible_nutricosmetics, clean_vegan) rather than as one segment."
+    },
+    "sub_segment_overrides": {}
+  },
+  "IN": {
+    "rivalry": {
+      "rating": null,
+      "rationale": "No India DataPoint exists for any of the six adjacencies — no size, no growth, no shares. Named players do exist in the repo for one of them (see new-entrant threat), but naming participants is not the same as measuring the intensity between them, and there is no market total to divide.",
+      "evidence": [
+        "segments/emerging_adjacencies.json IN: size/growth/cagr/export null, points list empty",
+        "gaps.json: IN emerging_adjacencies market_size, growth_yoy, cagr_forecast all 'no data'",
+        "config/taxonomy.yaml (halal_certified and ayurvedic_herbal flagged India-relevant; neither carries a DataPoint)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN sizing for ayurvedic_herbal and kbeauty_derivative first — these are the two adjacencies with the most India-specific relevance in taxonomy.yaml. gaps.json rows IN/emerging_adjacencies market_size + growth_yoy + cagr_forecast (suggested: euromonitor_passport, statista, tavily)."
+    },
+    "buyer_power": {
+      "rating": null,
+      "rationale": "No channel evidence scoped to any India adjacency. The Korean-derivative brands named below sell D2C and through beauty platforms, but the repo holds no listing, commission or assortment DataPoint for them specifically, so the Nykaa and q-commerce structure documented for skincare cannot be priced onto this segment.",
+      "evidence": [
+        "segments/skincare.json IN trade_margin 24% (Nykaa commission — skincare-scoped)",
+        "config/corridor.yaml:india_side_players (D2C brands named; no channel or price DataPoint attached)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "IN channel and commission evidence for Korean-derivative D2C lines — absent."
+    },
+    "supplier_power": {
+      "rating": null,
+      "rationale": "There is a real, unusual split visible in the repo but not enough to rate it: one Korean-derivative Indian brand manufactures in India (Pilgrim's Korean Rice Water range is made-in-India), while another manufactures in Korea and imports (Limese's formulations are made in Korea, tuned for Indian skin). Those two models have opposite supplier-power profiles — commoditised domestic contract fill versus dependence on an overseas maker plus CDSCO clearance — and with two brands and no cost, margin or volume data, the balance between them is unknown.",
+      "evidence": [
+        "config/corridor.yaml:india_side_players (Pilgrim — made-in-India Korean Rice Water range; Limese — K-beauty formulations manufactured in Korea)",
+        "india_findings.yaml:supply_chain (third-party contract manufacturers / private-label houses, MOQs from ~500 units)",
+        "config/corridor.yaml:regulation.india_import (CDSCO COS-1 to COS-2 via SUGAM applies to the import route)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Split of India Korean-derivative volume between domestic fill and Korean import, with landed-cost evidence — absent."
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "Scoped to ONE of the six sub-segments — kbeauty_derivative. The other five (beauty_devices, ingestible_nutricosmetics, halal_certified, ayurvedic_herbal, clean_vegan) have no India evidence and are NOT covered by this rating. Within kbeauty_derivative the entry record is explicit and recent: three Indian D2C brands have already launched Korean-derivative lines — Pilgrim's Korean Rice Water range (made-in-India, vegan), Limese's Korea-manufactured formulations tuned for Indian skin, and Foxtale's Hula Hoop launched amid Korean-inspired demand as it pivots from single-label D2C to a house of brands. The capital for that is documented too: KOSE put US$30m into Foxtale, and India D2C beauty/wellness drew ~US$757m over 18 months. On the make side, brands do not need factories — private-label houses take orders from ~500 units. Named entrants, documented funding and a commoditised make is a live, low-friction entry pipeline. THIN because the evidence is a launch-and-funding record rather than a measured sub-segment: there is no kbeauty_derivative market size, so the rate of entry cannot be set against the size of the prize.",
+      "evidence": [
+        "config/corridor.yaml:india_side_players (Pilgrim — Korean Rice Water, made-in-India vegan; Limese — made-in-Korea formulations for Indian skin; Foxtale/Hula Hoop — D2C to house-of-brands amid Korean-inspired demand)",
+        "india_findings.yaml:new_players (KOSE US$30m into Foxtale; ~US$757m into India D2C beauty/wellness over 18 months; Innovist house-of-brands model)",
+        "india_findings.yaml:supply_chain (contract manufacturers, MOQs from ~500 units)",
+        "config/corridor.yaml:india_side_players.dynamic ('Indian D2C brands going Korean' as one of the two India-side responses to the Korean wave)"
+      ],
+      "evidence_strength": "THIN",
+      "research_needed": "kbeauty_derivative market size in India, and any entry evidence at all for beauty_devices, ingestible_nutricosmetics, halal_certified, ayurvedic_herbal and clean_vegan — all five are unrated here."
+    },
+    "substitutes": {
+      "rating": null,
+      "rationale": "The kbeauty_derivative adjacency is itself best understood as a substitute — an India-made, India-priced alternative to imported K-beauty, which is why the brands market Korean rituals and ingredients rather than Korean origin. But the repo holds no head-to-head price, share or volume evidence between derivative lines and imported K-beauty, so the direction is describable and the pressure is not measurable.",
+      "evidence": [
+        "config/corridor.yaml:india_side_players (Indian D2C brands launching Korean-ingredient lines 'to win glass-skin demand at local price points')",
+        "data/manual/analysis/price_ladder.json (imported K-beauty occupies Rs680-2999; no derivative-brand price point recorded to compare against)"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Price and share comparison between India Korean-derivative lines and imported K-beauty SKUs — no derivative retail_price DataPoint exists."
+    },
+    "overall": {
+      "rating": null,
+      "rationale": "No segment-level attractiveness call is possible, and arguably none should ever be made for this container: six adjacencies with different buyers, regulators and supply chains do not share an attractiveness read. One signal is real and worth carrying forward — the kbeauty_derivative adjacency has live, funded, named entrants and a commoditised domestic make, which is the corridor's second India-side response alongside the platform land-grab. It is also the adjacency closest to the corridor's ranked whitespace (mid-price derma K-beauty in Tier 2/3), since a made-in-India Korean-ingredient line is precisely how an entrant would hold a genuine Rs700-1500 shelf price rather than a promotion-dependent one. That is a direction, not a rating: with no size for the sub-segment, no price points for the derivative brands and no shares, the segment stays unrated.",
+      "evidence": [
+        "config/corridor.yaml:india_side_players + whitespace ('Mid-price derma K-beauty in Tier 2/3', highest corridor conviction)",
+        "data/manual/analysis/price_ladder.json masstige_gap_note (Rs700-1600 band papered with discounts on premium-listed imported SKUs)",
+        "gaps.json: three IN emerging_adjacencies rows all 'no data'"
+      ],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "Size kbeauty_derivative in India and capture retail_price DataPoints for Pilgrim, Limese and Hula Hoop so the derivative tier can be placed against the imported K-beauty ladder."
+    },
+    "sub_segment_overrides": {}
+  }
+}

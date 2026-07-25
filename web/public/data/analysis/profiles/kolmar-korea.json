@@ -1,0 +1,32 @@
+{
+  "slug": "kolmar-korea",
+  "name": "Kolmar Korea",
+  "geography": "KR",
+  "role": "odm_oem",
+  "segments": [
+    "total_bpc"
+  ],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 2.722,
+      "unit": "krw_tn",
+      "period": "2025 (CY)",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "DART (FSS) annual filing — consolidated revenue"
+    },
+    {
+      "metric": "production_value",
+      "value": 1.3,
+      "unit": "krw_tn",
+      "period": "2025 (CY)",
+      "value_basis": "PRODUCTION",
+      "confidence": "HIGH",
+      "source": "MFDS — #2 in Korea by production value. PRODUCTION basis: factory-gate output, not comparable to the revenue row above"
+    }
+  ],
+  "recent_moves": [],
+  "corridor_involvement": null,
+  "read": "Korea's #2 ODM by production value (KRW 1.3tn, MFDS 2025) and, on consolidated revenue, marginally larger than Cosmax at KRW 2.722tn (DART) — the gap between the two rankings is the gap between what a company manufactures in Korea and what it books globally. Reported operating profit of KRW 239.6bn with its US subsidiary up 71%, which is the more telling number: Kolmar's growth is coming from serving brands in export markets, not from Korean domestic demand. Together with Cosmax it makes supplier power in Korean BPC a two-name question, and no India-facing activity for either is recorded here."
+}

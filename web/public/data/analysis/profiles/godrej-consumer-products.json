@@ -1,0 +1,41 @@
+{
+  "slug": "godrej-consumer-products",
+  "name": "Godrej Consumer Products",
+  "geography": "IN",
+  "role": "incumbents",
+  "segments": [
+    "total_bpc"
+  ],
+  "figures": [
+    {
+      "metric": "revenue",
+      "value": 15178.0,
+      "unit": "inr_cr",
+      "period": "FY26",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "Screener.in (consolidated P&L) — annual Sales line; organised sector; includes non-BPC lines (household insecticides)"
+    },
+    {
+      "metric": "operating_margin",
+      "value": 21.0,
+      "unit": "percent",
+      "period": "FY26",
+      "value_basis": "NA",
+      "confidence": "HIGH",
+      "source": "Screener.in (consolidated P&L) — OPM %; cost-structure proxy"
+    },
+    {
+      "metric": "market_share",
+      "value": 18.5,
+      "unit": "percent",
+      "period": "FY26",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "india.json shares — share of summed revenue for the 3 listed IN brand owners (base INR 82,038cr); flagged non_pure_play. NOT a market share"
+    }
+  ],
+  "recent_moves": [],
+  "corridor_involvement": null,
+  "read": "The second listed Indian incumbent, Rs15,178cr FY26 at 21% operating margin — roughly a quarter of HUL's scale on a near-identical margin structure, which is the useful observation: 20-22% is the incumbent cost structure in Indian BPC regardless of size, and any entrant modelling Indian unit economics should treat that band as the mature-state benchmark rather than an outlier. Growth has been lumpy (Rs14,096cr FY24, Rs13,997cr FY25, Rs15,178cr FY26). companies.yaml records no segment split for Godrej and no BPC-only revenue line exists in this repo, so its position within specific segments is not evidenced here."
+}

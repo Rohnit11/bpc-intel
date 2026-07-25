@@ -50,10 +50,18 @@ const PROVIDERS: Record<Provider, ProviderConfig> = {
   },
 };
 
+/** Friendly names people actually type, mapped to provider keys. */
+const PROVIDER_ALIASES: Record<string, Provider> = {
+  grok: "xai", "x.ai": "xai", x: "xai",
+  gemini: "google", googleai: "google",
+  claude: "anthropic",
+};
+
 export function activeProvider(): Provider {
-  const p = (process.env.CHAT_PROVIDER ?? "xai").toLowerCase();
+  const raw = (process.env.CHAT_PROVIDER ?? "xai").trim().toLowerCase();
+  const p = PROVIDER_ALIASES[raw] ?? raw;
   if (p in PROVIDERS) return p as Provider;
-  throw new Error(`Unknown CHAT_PROVIDER "${p}" (expected xai | google | anthropic)`);
+  throw new Error(`Unknown CHAT_PROVIDER "${raw}" (expected xai | google | anthropic)`);
 }
 
 export function isConfigured(): boolean {

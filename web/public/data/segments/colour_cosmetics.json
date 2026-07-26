@@ -213,13 +213,25 @@
       "confidence": "LOW",
       "source": "DMI",
       "url": null,
-      "notes": "Forecast CAGR 7.08%",
+      "notes": "Forecast CAGR 7.08%. CONFLICT, previously undocumented: Market Research Future puts India colour cosmetics at USD 5.55bn (2024, see companion claim) — 60% higher on the same nominal period; Markets and Data puts it at USD 4.80bn (FY24) — 39% higher. No shared definition confirmed across the three; do not average.",
       "metric": "market_size",
       "tier": null,
       "value_usd_bn": 3.46,
       "fx_note": "identity (no conversion)"
     },
-    "growth": null,
+    "growth": {
+      "value": 6.13,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2025",
+      "value_basis": "NA",
+      "confidence": "ESTIMATE",
+      "source": "Market Research Future (derived)",
+      "url": "https://www.marketresearchfuture.com/reports/india-colour-cosmetics-market-47939",
+      "notes": "Organised/unorganised coverage not stated by the source. India colour cosmetics carries a significant unorganised and counterfeit tail that aggregator sizing typically excludes. Do not present as an audited market-growth reading.",
+      "metric": "growth_yoy",
+      "tier": null
+    },
     "cagr": {
       "value": 8.41,
       "unit": "percent",
@@ -244,7 +256,7 @@
         "confidence": "LOW",
         "source": "DMI",
         "url": null,
-        "notes": "Forecast CAGR 7.08%",
+        "notes": "Forecast CAGR 7.08%. CONFLICT, previously undocumented: Market Research Future puts India colour cosmetics at USD 5.55bn (2024, see companion claim) — 60% higher on the same nominal period; Markets and Data puts it at USD 4.80bn (FY24) — 39% higher. No shared definition confirmed across the three; do not average.",
         "metric": "market_size",
         "tier": null
       },
@@ -296,7 +308,7 @@
         "confidence": "LOW",
         "source": "Market Research Future",
         "url": "https://www.marketresearchfuture.com/reports/india-colour-cosmetics-market-47939",
-        "notes": "2025: USD 5.89bn; 2035: USD 10.73bn. Conflicts with Markets and Data USD 4.80bn FY24 (see companion claim). MRFF page shows template-like breakdowns; treat cautiously.",
+        "notes": "2025: USD 5.89bn; 2035: USD 10.73bn. Conflicts with Markets and Data USD 4.80bn FY24 (see companion claim) and, previously undocumented, with DMI USD 3.46bn 2024 (see companion claim) — 60% lower on the same nominal period. MRFF page shows template-like breakdowns; treat cautiously.",
         "metric": "market_size",
         "tier": null
       },
@@ -428,6 +440,19 @@
         "url": "https://rekonsile.com/amazon-india-fee-revision-september-2025-complete-guide",
         "notes": "Channel: e-commerce — Amazon.in referral fee, Beauty (Make-up) category, INR 500-1,000 price band: cut from 7.5% to 3.5% effective Sep-2025; INR 300-500 band cut from 4.5% to 2.0%.",
         "metric": "trade_margin",
+        "tier": null
+      },
+      {
+        "value": 6.13,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Market Research Future (derived)",
+        "url": "https://www.marketresearchfuture.com/reports/india-colour-cosmetics-market-47939",
+        "notes": "Organised/unorganised coverage not stated by the source. India colour cosmetics carries a significant unorganised and counterfeit tail that aggregator sizing typically excludes. Do not present as an audited market-growth reading.",
+        "metric": "growth_yoy",
         "tier": null
       }
     ]

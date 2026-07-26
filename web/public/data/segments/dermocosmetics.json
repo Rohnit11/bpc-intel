@@ -3,18 +3,18 @@
   "KR": {
     "segment": "dermocosmetics",
     "size": {
-      "value": 4.5,
+      "value": 5.5,
       "unit": "krw_tn",
       "currency": "KRW",
-      "period": "2020",
+      "period": "2025",
       "value_basis": "RETAIL",
       "confidence": "MEDIUM",
-      "source": "Samjong KPMG via The Korea Herald",
-      "url": "https://www.koreaherald.com/article/2897219",
-      "notes": "KR dermocosmetics market KRW 4.5tn in 2020, up 17.6% vs five years prior (Samjong KPMG). Article's own USD conversion ~US$3.1bn. Value basis not stated by source; assumed consumer sell-through. cf Korea Cosmeceutical Education & Research Institute KRW 1.2tn for same year 2020 (narrower definition) and KERI KRW 4.5tn for 2022 — Korean sources conflict on definition. Article dated 2022-06-23.",
+      "source": "한국기업평판연구소 (Korean Enterprise Reputation Research Institute) via Youth Daily (청년일보)",
+      "url": "https://www.youthdaily.co.kr/news/article.html?no=182976",
+      "notes": "PROJECTION: '올해는 5조5천억원을 넘어설 것으로 전망된다' — expected to EXCEED KRW 5.5tn in 2025 ('올해' = this year; article dated 2025-04-18). ~USD 3.720bn @ USD/KRW 1478.40 pinned 2026-07-21. Stated as a floor, not a point estimate. Independently corroborates the KRW 5.5tn 2025 projection already on file from Pharm Edaily. cf DailyBeautyDrop/cogonggo (2025-05-04) which states the softer '5조 원 돌파' (exceed KRW 5tn) for 2025 — same direction, lower threshold.",
       "metric": "market_size",
       "tier": null,
-      "value_usd_bn": 3.0438,
+      "value_usd_bn": 3.7202,
       "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
     },
     "growth": {
@@ -30,7 +30,19 @@
       "metric": "growth_yoy",
       "tier": null
     },
-    "cagr": null,
+    "cagr": {
+      "value": 6.66,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2022-2025",
+      "value_basis": "NA",
+      "confidence": "ESTIMATE",
+      "source": "Derived from 한국기업평판연구소 via Youth Daily",
+      "url": "https://www.youthdaily.co.kr/news/article.html?no=182976",
+      "notes": "CORRIDOR WHITESPACE #5. Note the sharp deceleration versus the 2017-2022 formation phase (~55% CAGR derived) — the Korean dermocosmetics category is transitioning from explosive formation to mid-single-digit maturity. No publisher-stated forward CAGR for KR dermocosmetics could be verified on a fetchable page: Grand View Research's South Korea cosmeceutical horizon page (reportedly USD 556.4mn 2024 to USD 825.3mn 2030 at 6.7% CAGR 2025-2030) returned HTTP 403 and is therefore NOT cited. cf SPER Market Research 5.45% (2024-2033), also recorded here — both cluster mid-single-digit, which is the useful convergence.",
+      "metric": "cagr_forecast",
+      "tier": null
+    },
     "export": null,
     "points": [
       {
@@ -95,6 +107,84 @@
         "source": "Korean Enterprise Reputation Research Institute via Pharm Edaily",
         "url": "https://pharm.edaily.co.kr/News/Read?newsId=03365286642266992",
         "notes": "PROJECTION: KR dermocosmetics market projected KRW 5.5tn for 2025 (from KRW 4.5tn 2022, implying ~7% CAGR 2022-2025). Consistent direction with Euromonitor +13% growth read for 2024 already on file. Article dated 2025-08-13.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 4.5325,
+        "unit": "krw_tn",
+        "currency": "KRW",
+        "period": "2022",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "한국기업평판연구소 (Korean Enterprise Reputation Research Institute) via Youth Daily (청년일보)",
+        "url": "https://www.youthdaily.co.kr/news/article.html?no=182976",
+        "notes": "REFRESH/PRECISION: '국내 더마코스메틱 시장 규모는 지난 2017년 5천억원에서 2022년 약 4조5천325억원으로 10배 가까이 성장했으며' — KRW 4.5325tn in 2022, up from KRW 0.5tn in 2017 (~10x). ~USD 3.066bn @ USD/KRW 1478.40 pinned 2026-07-21. This is the precise figure behind the KRW 4.5tn (2022) already on file from Pharm Edaily; same underlying institute, so treat as the same series, not a second observation. Value basis not stated by source; assumed domestic consumer sell-through (NOT export FOB, NOT MFDS production value). Article dated 2025-04-18.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 5.5,
+        "unit": "krw_tn",
+        "currency": "KRW",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "한국기업평판연구소 (Korean Enterprise Reputation Research Institute) via Youth Daily (청년일보)",
+        "url": "https://www.youthdaily.co.kr/news/article.html?no=182976",
+        "notes": "PROJECTION: '올해는 5조5천억원을 넘어설 것으로 전망된다' — expected to EXCEED KRW 5.5tn in 2025 ('올해' = this year; article dated 2025-04-18). ~USD 3.720bn @ USD/KRW 1478.40 pinned 2026-07-21. Stated as a floor, not a point estimate. Independently corroborates the KRW 5.5tn 2025 projection already on file from Pharm Edaily. cf DailyBeautyDrop/cogonggo (2025-05-04) which states the softer '5조 원 돌파' (exceed KRW 5tn) for 2025 — same direction, lower threshold.",
+        "metric": "market_size",
+        "tier": null
+      },
+      {
+        "value": 55.4,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2017-2022",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Derived from 한국기업평판연구소 via Youth Daily",
+        "url": "https://www.youthdaily.co.kr/news/article.html?no=182976",
+        "notes": "Historical, not forward-looking. The KRW 0.5tn (2017) base is the single most likely source of overstatement — Korean sources disagree ~3.75x on the dermocosmetics definition for 2020 alone. Recorded because the direction (explosive category formation off a tiny base) is the load-bearing fact for corridor whitespace #5, not the precise rate.",
+        "metric": "cagr_historical",
+        "tier": null
+      },
+      {
+        "value": 6.66,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2022-2025",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Derived from 한국기업평판연구소 via Youth Daily",
+        "url": "https://www.youthdaily.co.kr/news/article.html?no=182976",
+        "notes": "CORRIDOR WHITESPACE #5. Note the sharp deceleration versus the 2017-2022 formation phase (~55% CAGR derived) — the Korean dermocosmetics category is transitioning from explosive formation to mid-single-digit maturity. No publisher-stated forward CAGR for KR dermocosmetics could be verified on a fetchable page: Grand View Research's South Korea cosmeceutical horizon page (reportedly USD 556.4mn 2024 to USD 825.3mn 2030 at 6.7% CAGR 2025-2030) returned HTTP 403 and is therefore NOT cited. cf SPER Market Research 5.45% (2024-2033), also recorded here — both cluster mid-single-digit, which is the useful convergence.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": 5.45,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2033",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "SPER Market Research",
+        "url": "https://www.sperresearch.com/report-store/south-korea-cosmeceuticals-market.aspx",
+        "notes": "WARNING: the CAGR is taken but the source's companion endpoint is not credible — SPER states the market reaches 'USD 27.89 billion by 2033', which exceeds Korea's ENTIRE domestic BPC market (~USD 13bn) by more than 2x and cannot be a cosmeceuticals sub-category. The level figure is treated as suspect and is NOT claimed; only the rate is recorded. SCOPE CAVEAT: 'cosmeceuticals' is a narrower/differently-drawn definition than the Korean-language '더마코스메틱' series. cf Bonafide Research USD 3.86bn by 2030 (recorded separately), which IS scale-consistent with the KRW 5.5tn 2025 Korean figure.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": 3.86,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2030",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Bonafide Research",
+        "url": "https://www.bonafideresearch.com/product/6504784516/south-korea-cosmeceuticals-market",
+        "notes": "FORECAST VALUE, stated as a floor: 'the South Korea Cosmeceutical market is expected to reach a market size of more than USD 3.86 Billion by 2030'. Report base year 2024, forecast year 2030; no CAGR disclosed on the page. Scale-consistent with the Korean-language series (KRW 5.5tn 2025 = ~USD 3.72bn @ 1478.40 pinned 2026-07-21), which is the main reason it is recorded. Value basis not stated; assumed consumer sell-through. cf SPER USD 27.89bn by 2033 — 7x higher and not credible, do not average.",
         "metric": "market_size",
         "tier": null
       }

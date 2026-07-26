@@ -1,17 +1,17 @@
 {
   "segment": "baby_child",
-  "generated_at": "2026-07-24T00:00:00Z",
+  "generated_at": "2026-07-26T00:00:00Z",
   "KR": {
-    "read": "No DataPoints exist for the baby_child segment in South Korea. There is no market size, growth, CAGR, or export figure in data/processed/ or in the pre-shaped web/public/data/segments/baby_child.json (both are null with an empty points array), and gaps.json confirms all three metrics (market_size, growth_yoy, cagr_forecast) are flagged 'no data' for KR baby_child.",
-    "trend": "Growth direction cannot be assessed from current data.",
-    "caveats": "No source has been fetched for this segment yet; any characterization of the Korean baby_child market would be fabrication until a fetcher or manual data drop populates it."
+    "read": "Korea's baby & child segment now has data for the first time, though the two size estimates disagree sharply: BlueWeave US$1.61bn (2024, RETAIL, LOW) vs Expert Market Research US$746.89mn (2025, RETAIL, LOW) - a 2.2x gap on what both describe as an identical scope (baby cosmetics & toiletries plus baby food and baby safety/convenience). Both therefore materially overstate the BPC-relevant segment, with no BPC-only split disclosed by either. A narrower, MFDS-sourced signal exists only for growth (see trend), not size.",
+    "trend": "The two size sources also disagree on pace: BlueWeave forecasts 3.55% CAGR (2025-2031, LOW) vs Expert Market Research 6.2% (2026-2035, LOW), a 1.7x spread on the same wider-than-BPC basket. The closest read to true BPC scope is an MFDS PRODUCTION-basis figure for the 'baby/infant products' cosmetics type: +6.21% YoY in 2024 (ESTIMATE confidence, derived from two adjacent years in the same official table) - factory-gate output, not retail sell-through. A true category-wide RETAIL growth_yoy remains an open research gap.",
+    "caveats": "Both RETAIL size estimates bundle in baby food and safety/convenience products with no BPC-only split, so treat scale as a wide upper bound rather than a segment figure; the two forecasts and two levels do not reconcile and should not be averaged. The MFDS growth figure is PRODUCTION basis (factory-gate, ESTIMATE confidence), not a retail category growth rate."
   },
   "IN": {
-    "read": "No DataPoints exist for the baby_child segment in India either. data/processed/IN_baby_child.json is not present, the pre-shaped segment file shows all null fields and no points, and gaps.json lists market_size, growth_yoy, and cagr_forecast as 'no data' for IN baby_child.",
-    "trend": "Growth direction cannot be assessed from current data.",
-    "caveats": "No source has been fetched for this segment yet; organised-vs-unorganised coverage cannot even be determined without a first data point."
+    "read": "India's baby & child segment now has data for the first time, with two size estimates in outright contradiction: IMARC US$4.82bn (2025, RETAIL, LOW) on a WIDER basket that includes baby food, versus Maximize Market Research US$14.17bn (2024, RETAIL, LOW) on a basket that explicitly EXCLUDES baby food - the narrower-scope source gives the much larger number, which the two sources do not reconcile. A single-company proxy exists alongside: Chicco India (Artsana), a premium/imported player, reported over 35% revenue growth in FY25 (MEDIUM confidence, CEO-quoted) - a floor figure for one brand, not the market.",
+    "trend": "Forecast CAGRs also disagree: IMARC 9.17% (2026-2034, LOW) vs Maximize Market Research 14.35% (2024-2030, LOW), a 1.6x spread on the same contradictory bases. No category-wide RETAIL growth_yoy figure exists; Chicco India's >35% is one premium-imported company, not the market.",
+    "caveats": "The two size estimates do not merely vary, they contradict outright (the wider-scope source is smaller), so India baby_child scale is unresolved in the data, not just imprecise; organised-vs-unorganised coverage is unstated by either. Category-wide growth_yoy remains an open research gap."
   },
   "combined": {
-    "read": "A KR vs IN comparison is not possible for baby_child: neither geography has a single DataPoint (market size, growth, CAGR, or export) recorded in the system, so there is no value_usd_bn or any other figure on either side to compare. This segment needs a fetcher run or a manual data drop (per gaps.json's suggested sources: euromonitor_passport, statista, tavily) before any read can be written."
+    "read": "Both sides now carry a RETAIL market-size figure, but each side's own two sources already contradict each other (KR 2.2x apart, IN 2.9x apart with the wider-scope source reading smaller) - comparing KR to IN on top of two unresolved internal conflicts would compound the uncertainty, so no KR-vs-IN size comparison is attempted here. No [CORRIDOR]-tagged data point exists for baby_child in either file."
   }
 }

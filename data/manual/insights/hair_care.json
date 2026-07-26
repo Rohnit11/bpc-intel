@@ -1,14 +1,14 @@
 {
   "segment": "hair_care",
-  "generated_at": "2026-07-24T16:40:00Z",
+  "generated_at": "2026-07-26T00:00:00Z",
   "KR": {
     "read": "Korea's hair care now has a domestic size anchor: IMARC puts the market at US$1.8bn for 2025 (RETAIL, LOW confidence), forecast to US$2.4bn by 2034. That sits alongside the existing trade picture — total Korean hair-care exports (HS 3305) of US$0.413bn (EXPORT_FOB, HIGH, UN Comtrade, 2024), of which US$0.003bn went to India ([CORRIDOR]-tagged).",
-    "trend": "IMARC gives a forecast CAGR of 3.23% (2026-2034, LOW) — a modest forward projection, not observed growth. No observed KR growth_yoy is on file for the domestic market; the reliable observed figures remain on the export side.",
+    "trend": "A growth_yoy figure now exists but is a projection, not an observed rate: derived from two adjacent Mordor Intelligence forecast values (US$1.32bn 2025 to US$1.39bn 2026), it works out to +5.3% (ESTIMATE confidence) — consistent with the same source's own 5.42% CAGR (2026-2031) and roughly 2pp hotter than IMARC's separate forecast CAGR of 3.23% (2026-2034, LOW), which also disagrees with Mordor on level (a 1.36x gap). No observed KR growth_yoy is on file for the domestic market; the reliable observed figures remain on the export side.",
     "caveats": "The domestic size is a single LOW-confidence aggregator estimate; the HIGH-confidence figures are exports (EXPORT_FOB), a different basis that cannot substitute for domestic retail scale."
   },
   "IN": {
     "read": "India's hair-care market is sized at US$4.1bn (RETAIL/MRP-inclusive, LOW, Mordor, 2026), with a 'skinification' shift toward actives and serums. Sub-segment detail is now firmer: shampoo ~US$1.26bn (2025), and scalp_care captured through three conflicting proxy measures (alopecia US$267mn, hair serum US$155mn, hair-growth products US$825mn) that reflect how differently 'scalp care' is scoped. India also imported US$0.199bn of hair-care products from the world (US$0.031bn from China) (IMPORT_CIF, HIGH, UN Comtrade, 2024).",
-    "trend": "A forecast CAGR of 4.73% (2026-2031, LOW, Mordor) is a projection, not observed growth. The scalp-care/serum sub-space is where the 'skinification' momentum sits, but its size proxies are LOW and definitionally scattered.",
+    "trend": "A growth_yoy figure now exists but is not independently observed: derived from two consecutive Market Research Future values (US$4,100mn 2024 to US$4,287.37mn 2025), it works out to +4.57% (ESTIMATE confidence) — numerically identical to MRF's own 4.57% forecast CAGR on the same page, since the 2025 value is modelled off that rate rather than separately measured. A forecast CAGR of 4.73% (2026-2031, LOW, Mordor) sits close to it, while IMARC's separate 10.58% (2026-2034, LOW) implies a much faster trajectory on the same market — none of these is an observed rate. The scalp-care/serum sub-space is where the 'skinification' momentum sits, but its size proxies are LOW and definitionally scattered.",
     "caveats": "Segment and sub-segment figures are LOW-confidence aggregator estimates from different houses on different definitions; the three scalp-care measures are not comparable to each other, and organised/unorganised coverage is unstated."
   },
   "combined": {

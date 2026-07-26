@@ -76,7 +76,19 @@
         "value_usd_bn": 9.06,
         "fx_note": "identity (no conversion)"
       },
-      "growth": null,
+      "growth": {
+        "value": 3.0,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026",
+        "value_basis": "NA",
+        "confidence": "MEDIUM",
+        "source": "Statista Market Insights",
+        "url": "https://www.statista.com/outlook/cmo/beauty-personal-care/skin-care/india/",
+        "notes": "Statista Consumer Market Outlook 'Revenue Change (2026): 3.0%' for India Skin Care, against a projected 2026 revenue of US$10.63bn. Underlying basis is consumer sell-through (RETAIL); value_basis NA because the metric is a percentage. Organised/unorganised coverage not stated by Statista. SCOPE CAVEAT: Statista's own forward CAGR on the same page is only 2.76% (2026-2031), far below the 7-16% CAGRs aggregators publish for India skincare (IMARC 7.49% 2026-2034, TechSci 15.78% to 2030) - the YoY figure sits on a much more conservative revenue series, do not read it alongside those CAGRs without normalising.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
       "cagr": {
         "value": 5.99,
         "unit": "percent",
@@ -148,13 +160,25 @@
         "confidence": "LOW",
         "source": "DMI",
         "url": null,
-        "notes": "Forecast CAGR 7.08%",
+        "notes": "Forecast CAGR 7.08%. CONFLICT, previously undocumented: Market Research Future puts India colour cosmetics at USD 5.55bn (2024, see companion claim) — 60% higher on the same nominal period; Markets and Data puts it at USD 4.80bn (FY24) — 39% higher. No shared definition confirmed across the three; do not average.",
         "metric": "market_size",
         "tier": null,
         "value_usd_bn": 3.46,
         "fx_note": "identity (no conversion)"
       },
-      "growth": null,
+      "growth": {
+        "value": 6.13,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Market Research Future (derived)",
+        "url": "https://www.marketresearchfuture.com/reports/india-colour-cosmetics-market-47939",
+        "notes": "Organised/unorganised coverage not stated by the source. India colour cosmetics carries a significant unorganised and counterfeit tail that aggregator sizing typically excludes. Do not present as an audited market-growth reading.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
       "cagr": {
         "value": 8.41,
         "unit": "percent",
@@ -187,8 +211,32 @@
         "value_usd_bn": 2.6,
         "fx_note": "identity (no conversion)"
       },
-      "growth": null,
-      "cagr": null,
+      "growth": {
+        "value": 26.0,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "FY25",
+        "value_basis": "NET_REALISATION",
+        "confidence": "HIGH",
+        "source": "Titan Company Ltd -- Q4 and FY25 Earnings Presentation (BSE/NSE regulatory filing), dated 2025-05-08",
+        "url": "https://www.titancompany.in/sites/default/files/2025-05/Q4FY25%20-%20Earnings%20presentation%20Uploaded.pdf",
+        "notes": "SCOPE CAVEAT: company-level (Titans Fragrances division -- SKINN and Fastrack Perfumes brands), not a category-wide India fragrances market figure. Direct quote from source (Emerging Businesses: Quarterly Performance slide): Fragrances recorded a good growth of c.26% YoY primarily led by healthy growth in Fastrack perfumes; overall volume growth in both SKINN and Fastrack was in high double-digits. Period is Q4FY25 (Jan-Mar 2025). Fragrances sits within Titans Emerging Businesses division (blended division Total Income INR 102 Cr in Q4FY25, +5.2% YoY, which also includes Womens Bags +10% and Taneira -4%) -- Fragrances-specific absolute INR revenue not separately disclosed, only the YoY %. Organised-market only (listed company); Titan describes itself as Indias Leading Fine Fragrances Brand.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 5.36,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-perfume-market",
+        "notes": "PERFUME-ONLY scope, the closest match to the taxonomy 'fragrances' segment (premium/mass/niche perfume): IMARC India perfume USD 1,250.02mn (2025) to USD 1,999.32mn (2034), CAGR 5.36% 2026-2034. Page states no deodorant coverage. Organised/unorganised coverage not stated. cf the same publisher's perfumes-AND-deodorants page at 10.26% (2026-2034) on a USD 2,890.8mn (2025) base — deodorants roughly double the base and double the growth rate, so the two are not substitutes; do not average. Use this one when the cell must be perfume-only.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
       "export": null
     },
     {
@@ -202,23 +250,158 @@
         "confidence": "LOW",
         "source": "Mordor Intelligence",
         "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-        "notes": "India hair care; 'skinification' shift to actives/serums",
+        "notes": "'Hair care products market' valued USD 4.1bn in 2026, to USD 5.19bn by 2031. Cross-ref IMARC USD 4.30bn 2025 (similar base, divergent forecasts). Source attributes the trajectory to a 'skinification' shift toward actives and serums.",
         "metric": "market_size",
         "tier": null,
         "value_usd_bn": 4.1,
         "fx_note": "identity (no conversion)"
       },
-      "growth": null,
-      "cagr": {
-        "value": 4.73,
+      "growth": {
+        "value": 4.57,
         "unit": "percent",
         "currency": "USD",
-        "period": "2026-2031",
+        "period": "2025",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "Market Research Future (derived)",
+        "url": "https://www.marketresearchfuture.com/reports/india-hair-care-market-44328",
+        "notes": "SCOPE CAVEAT: MRF scope is hair styling, shampoo, hair colorant, conditioners and hair oil. India hair oil carries a large unorganised/loose-sold tail; organised vs unorganised coverage not stated by the source. Do not present as an audited market-growth reading.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 10.58,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
         "value_basis": "NA",
         "confidence": "LOW",
-        "source": "Mordor Intelligence",
-        "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-        "notes": "India hair care forecast CAGR",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-haircare-market",
+        "notes": "USD 4.30bn 2025 to USD 11.49bn 2034. Outlier vs Mordor 4.73% (2026-2031) — do not use without reconciliation.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
+      "segment": "bath_shower",
+      "size": {
+        "value": 1.8,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-bath-shower-products-market",
+        "notes": "SCOPE CAVEAT: IMARC states scope = bath soaps, body wash, bath additives, others (bar soap IS included). Organised/unorganised coverage not stated by the source. CONFLICT: IMARC's own separate India bath soap page puts bath soap ALONE at USD 3,406.3mn (2025) — 1.9x this whole-category figure, which is internally impossible if bath soap sits inside bath & shower products. Both recorded as separate claims; definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 1.8,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": null,
+      "cagr": {
+        "value": 3.8,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-bath-shower-products-market",
+        "notes": "IMARC: USD 1.8bn (2025) to USD 2.5bn (2034), CAGR 3.80% 2026-2034. Organised/unorganised coverage not stated. cf IMARC bath-soap-only page 4.88% over the same 2026-2034 window — see the conflicting market_size pair on this segment.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
+      "segment": "deodorants",
+      "size": {
+        "value": 1.0,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-deodorants-market",
+        "notes": "SCOPE CAVEAT: IMARC scope = sprays, roll-ons, creams, gels, wipes, sticks and others. Organised/unorganised coverage not stated; the source notes competition from both organised and unorganised players but does not say which its sizing covers. Value is rounded to one decimal by the source (USD 1.0bn), so precision is low.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 1.0,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": {
+        "value": 17.0,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "FY25",
+        "value_basis": "NET_REALISATION",
+        "confidence": "MEDIUM",
+        "source": "Tracxn legal-entity financial profile (sourced from India MCA/ROC filings) -- Vini Cosmetics Pvt Ltd, maker of Fogg deodorants",
+        "url": "https://tracxn.com/d/legal-entities/india/vini-cosmetics-private-limited/__-x60HjqkHymaXvt00dylUXvxoMZxDIvUpOad67psKew",
+        "notes": "SCOPE CAVEAT: company-level (Vini Cosmetics Pvt Ltd, maker of Fogg -- Indias largest deodorant brand by volume share, ~15-16%), not a category-wide India deodorants market figure; used as proxy since Vini Cosmetics is a deodorant-focused company, unlike HUL/Godrej/ITC where deo is one line among many and no brand-level figure could be found in any fetchable source despite repeated attempts. Direct quote from source: VINI COSMETICS PRIVATE LIMITED generated more than INR 1,000 Cr in revenue for the financial year ending on Mar 31, 2025. The revenue has a compounded annual growth rate (CAGR) of 17% in the last 1 year. Tracxns 1-year CAGR is mathematically a single-year YoY growth rate (CAGR over exactly one year reduces to simple YoY), so this is not a CAGR-to-YoY substitution. Underlying data sourced by Tracxn from India MCA/ROC company filings; exact FY24 comparator and units not shown in free view. Corroborating datapoint, not a separate claim: McNroe Consumer Products (Wild Stone, #2 deodorant maker) shows a similar 1-year CAGR of 20% for FY25 on the same Tracxn platform -- consistent directionally, do not average. Organised-market only; no unorganised-market read implied.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 3.1,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-deodorants-market",
+        "notes": "IMARC: USD 1.0bn (2025) to USD 1.4bn (2034), CAGR 3.10% 2026-2034. Organised/unorganised coverage not stated.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
+      "segment": "oral_care",
+      "size": {
+        "value": 1.1,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-oral-care-market",
+        "notes": "SCOPE CAVEAT: IMARC scope = toothpaste, toothbrush, mouthwash, others; household + commercial applications. Organised/unorganised coverage not stated. CONFLICT: cf The India Watch INR 21,000 crore (~USD 2.18bn at the pinned USD/INR 96.23 of 2026-07-21) for the same category — a 2.0x gap. Definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 1.1,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": {
+        "value": -5.2,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "FY25",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Dabur India Ltd -- Investor Presentation Q4 FY24-25 (BSE regulatory filing), dated 2025-05-07",
+        "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3e9ddd06-c1f0-4744-9109-070398d0c551.pdf",
+        "notes": "SCOPE CAVEAT: this is Daburs own Oral Care business value growth (secondary sales, i.e. sell-through basis), not the overall India oral care category/market across all players (Colgate, HUL, etc). No clean same-source category-wide two-year series was found; filed as the best verifiable primary-source proxy per brief technique 3 (company results commentary). Organised/unorganised coverage not stated -- covers Daburs own branded secondary sales only. Deck explicitly attributes the -5.2% to a high base effect: Q4FY24 oral care had grown 22% YoY; Meswak and Dabur Herbl portfolio performed well within the segment despite the headline decline. For context only (not this claims value): Daburs oral care business grew +5.3% YoY in Q2FY25 (Jul-Sep 2024) per company concall commentary (HDFC Securities note) -- do not average across quarters into an implied annual figure, quarterly volatility is real and base-effect driven.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 4.15,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-oral-care-market",
+        "notes": "IMARC: USD 1.1bn (2025) to USD 1.7bn (2034), CAGR 4.15% 2026-2034. Organised/unorganised coverage not stated. cf The India Watch 'CAGR 5-6%' for the same category on a roughly 2x larger base.",
         "metric": "cagr_forecast",
         "tier": null
       },
@@ -270,6 +453,51 @@
       "export": null
     },
     {
+      "segment": "baby_child",
+      "size": {
+        "value": 4.82,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-baby-care-products-market",
+        "notes": "SCOPE CAVEAT: IMARC 'baby care products' spans baby skin care, baby hair care, baby toiletries (bath, fragrances, diapers, wipes) AND baby food & beverages. Baby food/beverages and diapers sit outside BPC scope, so this OVERSTATES the BPC baby & child segment; treat as an upper bound on a wider basket, not a BPC read. Organised/unorganised coverage not stated on the page. cf Maximize Market Research USD 14.17bn (2024) on a NARROWER basket (baby food explicitly excluded) — 2.9x higher despite covering less, an outright contradiction; definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 4.82,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": {
+        "value": 35.0,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "FY25",
+        "value_basis": "NET_REALISATION",
+        "confidence": "MEDIUM",
+        "source": "dfupublications.com, quoting Rajesh Vohra (CEO, Chicco India / Artsana India), published 2025-12-31",
+        "url": "https://www.dfupublications.com/index.php/news/apparel/chicco-india-eyes-50-store-milestone-as-baby-care-market-hits-4-9-billion",
+        "notes": "SCOPE CAVEAT: company-level (Chicco India / Artsana India Pvt Ltd -- strollers, feeding, baby care products), not a category-wide India baby_child market figure. Direct quote: Operating since 2009, it recorded over 35 per cent growth last fiscal year (CEO Rajesh Vohra), with momentum well above 20 per cent in the current year also noted. Value recorded here (35.0%) is the stated floor/minimum -- source says over 35%, exact figure not disclosed, true growth may be higher. Period read as FY25 (Apr24-Mar25), the most recently completed full fiscal year as of the Dec-2025 publication date; source does not give an explicit date beyond last fiscal year. Organised, premium/imported baby-products segment only -- no unorganised-market read implied. A Tracxn profile (MCA filing based) for Artsana India Pvt Ltd was checked but only showed a revenue band (INR 100-500 Cr) in the free view, not exact FY24/FY25 figures, so no independent two-year same-source cross-check was possible; do not treat as corroborated by that source.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 9.17,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-baby-care-products-market",
+        "notes": "IMARC: USD 4.82bn (2025) to USD 10.62bn (2034), CAGR 9.17% 2026-2034. SCOPE CAVEAT: basket includes baby food & beverages and diapers/wipes, i.e. wider than BPC baby & child. Organised/unorganised coverage not stated. cf Maximize Market Research 14.35% (2024-2030) on a food-excluded basket — 1.6x gap, definitional mismatch unresolved, do not average.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
       "segment": "dermocosmetics",
       "size": {
         "value": 0.2803,
@@ -309,6 +537,51 @@
         "source": "P&S Market Research (India Skincare Dermacosmetics)",
         "url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
         "notes": "10.3% CAGR 2024-2030, reaching US$505.0mn by 2030 (from US$256.2mn 2023). Western region highest regional CAGR at 10.6%. Same narrow definition caveat as the P&S market_size claim.",
+        "metric": "cagr_forecast",
+        "tier": null
+      },
+      "export": null
+    },
+    {
+      "segment": "emerging_adjacencies",
+      "size": {
+        "value": 2.0,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-ayurvedic-skincare-market",
+        "notes": "India ayurvedic SKINCARE only — facial care, body care, hair and scalp care, specialty (anti-ageing, acne). This is the cleanest BPC-scoped ayurvedic figure found; it does NOT cover ayurvedic oral care or colour cosmetics, so it under-covers the ayurvedic_herbal adjacency as a whole. Organised/unorganised coverage not stated on this page; note the same publisher's all-ayurvedic page puts organised at 70% / unorganised at 30% in 2025, and the ayurvedic personal-care tail (loose oils, regional herbal brands) is heavily unorganised.",
+        "metric": "market_size",
+        "tier": null,
+        "value_usd_bn": 2.0,
+        "fx_note": "identity (no conversion)"
+      },
+      "growth": {
+        "value": 20.0,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "FY26",
+        "value_basis": "NET_REALISATION",
+        "confidence": "HIGH",
+        "source": "Honasa Consumer Ltd (Mamaearth) -- Q4 and FY26 Investor Presentation, dated 2026-05-21, BSE regulatory filing",
+        "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/effd8f4c-874e-4947-8969-6cb61c158098.pdf",
+        "notes": "SCOPE CAVEAT: company-level, consolidated across Honasas full brand portfolio (Mamaearth, The Derma Co, Aqualogica, Dr. Sheths, BBlunt, Staze, Reginald Men), not a category-wide clean/vegan market figure -- no market-wide series exists. Filed under emerging_adjacencies/clean_vegan because Mamaearth (clean, toxin-free, Made Safe-certified positioning) is Honasas flagship and largest brand and anchors the portfolios identity, though some house brands (The Derma Co, Aqualogica) are actives/dermatology-positioned rather than clean-vegan specifically. Company-stated headline: Honasa delivered 20% YoY growth in FY26 (Apr25-Mar26); Revenue from Operations INR 2,479 Cr vs INR 2,067 Cr in FY25 (internally consistent, implies 19.9%). Covers organised-market listed-company sales (ecommerce + general/modern trade) only; no unorganised-market read implied or available.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
+      "cagr": {
+        "value": 11.98,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2034",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "IMARC Group",
+        "url": "https://www.imarcgroup.com/india-ayurvedic-skincare-market",
+        "notes": "IMARC: India ayurvedic skincare USD 2.0bn (2025) to USD 5.8bn (2034), CAGR 11.98% 2026-2034. SCOPE CAVEAT: ayurvedic skincare only, not the full ayurvedic/herbal BPC adjacency. cf the same publisher's all-ayurvedic-products CAGR of 15.52% — but that basket is 58% healthcare (medicines and nutraceuticals), which is outside BPC, so the two are not comparable and must not be averaged. Organised/unorganised coverage not stated.",
         "metric": "cagr_forecast",
         "tier": null
       },
@@ -384,7 +657,7 @@
       "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
       "Bottom-up base is inflated by non-pure-play conglomerates (Godrej Consumer Products, Hindustan Unilever) reporting non-BPC revenue."
     ],
-    "date": "2026-07-25",
+    "date": "2026-07-26",
     "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
   }
 }

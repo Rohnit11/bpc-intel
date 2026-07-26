@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-25",
+  "generated": "2026-07-26",
   "korea": {
     "headline": {
       "geography": "KR",
@@ -102,7 +102,19 @@
           "metric": "growth_yoy",
           "tier": null
         },
-        "cagr": null,
+        "cagr": {
+          "value": 5.6,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Expert Market Research (via ResearchAndMarkets)",
+          "url": "https://www.researchandmarkets.com/report/south-korea-skin-care-market",
+          "notes": "USD 9.69bn (2024) to USD 16.71bn (2034). Internally consistent (9.69 x 1.056^10 = 16.71). SCOPE CAVEAT: the USD 9.69bn 2024 base is ~1.9x the Euromonitor domestic retail figure already on file (KRW 7.653tn 2025 = ~USD 5.18bn @ 1478.40 pinned 2026-07-21) — the aggregator's 'skin care products' scope is materially wider than Euromonitor's domestic retail skincare, or is on a different value basis. The RATE is recorded; the aggregator's level figure is NOT claimed, since publishing it would create a >20% top-down/bottom-up gap against the Euromonitor series (CLAUDE.md rule 7).",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
         "export": {
           "value": 8.54,
           "unit": "usd_bn",
@@ -221,9 +233,47 @@
       },
       {
         "segment": "fragrances",
-        "size": null,
-        "growth": null,
-        "cagr": null,
+        "size": {
+          "value": 792.5,
+          "unit": "usd_mn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/south-korea-perfume-market",
+          "notes": "'The South Korea perfume market size reached USD 792.5 Million in 2025.' SCOPE CAVEAT: scope is 'perfume', which may be narrower than the full fragrances segment (fine fragrance only, excluding body mists/home fragrance); channel coverage and duty-free inclusion not stated on the page — see CLAUDE.md rule 12, duty-free is a distinct Korean channel and IMARC does not say whether it is in or out. cf Expert Market Research USD 485.19mn for the same geography and same year 2025 — 1.63x gap, definitional mismatch unresolved (IMARC says 'perfume', EMR says 'fragrances and perfume', so the wider-scope source is the SMALLER number, which rules out a simple scope explanation); do not average. NOTE: a search snippet circulated USD 754.71mn for this same IMARC page; the page as actually fetched on 2026-07-25 states USD 792.5mn, and the fetched value is the one recorded.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 0.7925,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": {
+          "value": 14.67,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2024",
+          "value_basis": "PRODUCTION",
+          "confidence": "ESTIMATE",
+          "source": "MFDS press release annex table 3 (derived)",
+          "url": "https://kcia.or.kr/inc/down.php?dir=BOARD&file_name=202505_174830652594232_2.pdf&rename=5.27+%ED%99%94%EC%9E%A5%ED%92%88%EC%A0%95%EC%B1%85%EA%B3%BC.pdf",
+          "notes": "Korean domestic fragrance PRODUCTION growth CY2024. Not a retail demand growth rate. All-cosmetics production grew +20.9% over the same period, so fragrance production grew materially slower than the category.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 4.62,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/south-korea-perfume-market",
+          "notes": "IMARC: USD 792.5mn (2025) to USD 1,204.3mn (2034), CAGR 4.62% during 2026-2034. Trajectory is internally consistent (792.5 x 1.0462^9 = 1,192, within rounding of 1,204.3).",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
         "export": {
           "value": 0.06,
           "unit": "usd_bn",
@@ -255,7 +305,19 @@
           "value_usd_bn": 1.8,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
+        "growth": {
+          "value": 5.3,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026",
+          "value_basis": "RETAIL",
+          "confidence": "ESTIMATE",
+          "source": "Derived from Mordor Intelligence",
+          "url": "https://www.mordorintelligence.com/industry-reports/south-korea-hair-care-market-industry",
+          "notes": "This is a FORECAST year-on-year rate, not an actual. No observed Korean-source YoY for domestic hair care could be verified on a fetchable page. Consistent with the same source's 5.42% CAGR (2026-2031). cf IMARC 3.23% CAGR (2026-2034) already on file — Mordor runs ~2pp hotter; the two aggregators also disagree on level (Mordor USD 1.32bn 2025 vs IMARC USD 1.8bn 2025, a 1.36x gap), definitional mismatch unresolved.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 3.23,
           "unit": "percent",
@@ -273,9 +335,47 @@
       },
       {
         "segment": "bath_shower",
-        "size": null,
-        "growth": null,
-        "cagr": null,
+        "size": {
+          "value": 357.35,
+          "unit": "usd_mn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "Expert Market Research",
+          "url": "https://www.expertmarketresearch.com/reports/south-korea-bath-products-market",
+          "notes": "'The South Korea market size for bath products reached a value of more than USD 357.35 Million in 2025.' SCOPE CAVEAT: EMR's 'bath products' scope (shower gel/bubble wash, bath salts, bar soap, bath bombs and capsules) is narrower than a full bath & shower segment and its relationship to the MFDS 인체 세정용 production line is unclear. Basis assumed retail sell-through; EMR does not state basis, channel coverage, or duty-free treatment. Do not compare with the MFDS KRW 2.077tn production figure without normalising — different measure (rule 11) and different scope.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 0.3574,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": {
+          "value": 9.88,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2024",
+          "value_basis": "PRODUCTION",
+          "confidence": "ESTIMATE",
+          "source": "MFDS press release annex table 3 (derived)",
+          "url": "https://kcia.or.kr/inc/down.php?dir=BOARD&file_name=202505_174830652594232_2.pdf&rename=5.27+%ED%99%94%EC%9E%A5%ED%92%88%EC%A0%95%EC%B1%85%EA%B3%BC.pdf",
+          "notes": "WARNING on a widely repeated misreading: the MFDS narrative text says 인체세정용 제품 grew '+30.0%, +2,045억원', but that +30.0% attaches to the 폼클렌저/기타 세정용 SUB-LINE (KRW 6,810억 to 8,855억), not to the 인체 세정용 type as a whole. The type total in annex table 3 grew 18,902억 to 20,770억 = +9.88%. Korean trade press (e.g. Cosmorning's write-up of the same release) reproduces the +30.0% against the whole type, which is wrong. 9.88% is the figure supported by the table.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 2.1,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2035",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Expert Market Research",
+          "url": "https://www.expertmarketresearch.com/reports/south-korea-bath-products-market",
+          "notes": "EMR: USD 357.35mn (2025) to USD 439.90mn (2035), CAGR 2.10% between 2026 and 2035. Trajectory is internally consistent (357.35 x 1.021^10 = 440). Low single-digit forecast contrasts with the +9.88% CY2024 production growth on the MFDS 인체 세정용 line — different measure and different scope, do not reconcile.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
         "export": {
           "value": 0.59,
           "unit": "usd_bn",
@@ -289,6 +389,82 @@
           "metric": "export_value",
           "tier": null
         }
+      },
+      {
+        "segment": "deodorants",
+        "size": {
+          "value": 63.7,
+          "unit": "krw_bn",
+          "currency": "KRW",
+          "period": "2018",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "Euromonitor International via Pharm News (파맄뉴스)",
+          "url": "https://www.pharmnews.com/news/articleView.html?idxno=98336",
+          "notes": "Korean domestic deodorant market 637억원 (KRW 63.7bn) in 2018, up from 593억원 (KRW 59.3bn) in 2017; figures attributed by the article to Euromonitor International's Beauty & Personal Care analysis. ~USD 43.1mn @ USD/KRW 1478.40 pinned 2026-07-21. SCOPE CAVEAT: domestic RETAIL sell-through, not export FOB or MFDS production value. STALE VINTAGE: 2018 is the most recent Korean-language figure that could be verified on a fetched page; no newer primary figure located. cf Actual Market Research >USD 160mn (2023) — 3.7x higher on a USD basis, definitional mismatch unresolved, do not average.",
+          "metric": "market_size",
+          "tier": null
+        },
+        "growth": {
+          "value": 7.0,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2018",
+          "value_basis": "NA",
+          "confidence": "MEDIUM",
+          "source": "Euromonitor International via Pharm News (파맄뉴스)",
+          "url": "https://www.pharmnews.com/news/articleView.html?idxno=98336",
+          "notes": "Article states the Korean deodorant market recorded growth 'in the 7% range' (7%대의 성장률) moving from 593억원 (2017) to 637억원 (2018); implied arithmetic growth is 7.4%. Attributed to Euromonitor. STALE VINTAGE: 2018. Growth is on domestic RETAIL value in KRW.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": null,
+        "export": null
+      },
+      {
+        "segment": "oral_care",
+        "size": {
+          "value": 892.82,
+          "unit": "usd_mn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "Deep Market Insights",
+          "url": "https://deepmarketinsights.com/vista/insights/oral-care-market/korea",
+          "notes": "'the Korea Oral Care Market stood at USD 892.82 Million in 2025.' cf Grand View (via Daxue) USD 975.9mn for 2024 — the earlier year carries the higher level, implying a ~1.19x gap once 2024-25 growth is allowed for; definitional mismatch unresolved, do not average. Basis assumed retail sell-through; the page does not state basis, channel coverage or duty-free treatment. NOTE: a search snippet circulated USD 561.15mn (2024) for this same publisher; the page as actually fetched on 2026-07-25 states USD 892.82mn (2025), and only the fetched value is recorded.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 0.8928,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": {
+          "value": -3.27,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2024",
+          "value_basis": "PRODUCTION",
+          "confidence": "ESTIMATE",
+          "source": "MFDS quasi-drug production statistics 2023 and 2024, via Medifonews (derived)",
+          "url": "https://www.medifonews.com/news/article.html?no=204402",
+          "notes": "CONTRARY SIGNAL, flagged deliberately. Korean domestic toothpaste PRODUCTION fell 3.27% in CY2024 while every aggregator on file forecasts Korean oral care growing 6.4-6.9% a year. These are not the same measure (rule 11): production is domestic factory-gate output of dentifrice only, whereas the aggregator figures are retail sell-through across the whole oral-care basket including mouthwash, brushes and imports. A domestic production decline alongside retail growth is consistent with import substitution and/or category mix shifting toward non-dentifrice formats, but that is a hypothesis, not a reconciled result — do NOT publish this as 'the' Korea oral care growth rate. Total quasi-drug production also fell over the same period (KRW 1조 6,822억 to 1조 6,037억).",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 6.9,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2030",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Grand View Research, relayed by Daxue Consulting",
+          "url": "https://daxueconsulting.com/south-korea-oral-care-mark/",
+          "notes": "'By 2030, the oral care market in Korea is expected to reach USD 1.5 billion, growing at a compound annual growth rate of 6.9% from 2025 to 2030', attributed to Grand View Research on the fetched Daxue page. Trajectory roughly consistent (975.9 x 1.069^6 = 1,455mn vs the 1.5bn stated). cf Deep Market Insights 6.41% (2026-2034); the two aggregators agree on pace to within ~0.5pp even though they disagree on level.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
       },
       {
         "segment": "mens_grooming",
@@ -307,7 +483,19 @@
           "value_usd_bn": 0.7846,
           "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
         },
-        "growth": null,
+        "growth": {
+          "value": 1.6,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2022",
+          "value_basis": "RETAIL",
+          "confidence": "ESTIMATE",
+          "source": "Derived from Euromonitor International via Jangup Shinmun (장업신문)",
+          "url": "https://www.jangup.com/news/articleView.html?idxno=92336",
+          "notes": "Article dated 2024-02-06. CROSS-VALIDATION: the 2022 value KRW 1.0923tn matches the KRW 1.09tn (2022) Euromonitor-via-Korea-Herald point already on file, confirming this is the same series and that the derivation is sound. SUBSTANTIVE FINDING: Korean domestic men's cosmetics is growing only ~1-2%/yr in nominal KRW — flat to negative in real terms — which contradicts the 'booming K-male grooming' narrative and sits far below the Future Market Insights 11.04% CAGR (2025-2035) forecast already on file. Growth is on domestic RETAIL, not export FOB and not MFDS production value.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 11.04,
           "unit": "percent",
@@ -324,20 +512,65 @@
         "export": null
       },
       {
-        "segment": "dermocosmetics",
+        "segment": "baby_child",
         "size": {
-          "value": 4.5,
-          "unit": "krw_tn",
-          "currency": "KRW",
-          "period": "2020",
+          "value": 746.89,
+          "unit": "usd_mn",
+          "currency": "USD",
+          "period": "2025",
           "value_basis": "RETAIL",
-          "confidence": "MEDIUM",
-          "source": "Samjong KPMG via The Korea Herald",
-          "url": "https://www.koreaherald.com/article/2897219",
-          "notes": "KR dermocosmetics market KRW 4.5tn in 2020, up 17.6% vs five years prior (Samjong KPMG). Article's own USD conversion ~US$3.1bn. Value basis not stated by source; assumed consumer sell-through. cf Korea Cosmeceutical Education & Research Institute KRW 1.2tn for same year 2020 (narrower definition) and KERI KRW 4.5tn for 2022 — Korean sources conflict on definition. Article dated 2022-06-23.",
+          "confidence": "LOW",
+          "source": "Expert Market Research",
+          "url": "https://www.expertmarketresearch.com/reports/south-korea-baby-products-market",
+          "notes": "SCOPE CAVEAT: scope stated as 'Baby Cosmetics and Toiletries, Baby Food, Baby Safety and Convenience, Others' — includes non-BPC categories, no BPC-only split disclosed. Value basis not stated; assumed consumer sell-through. cf BlueWeave USD 1.61bn (2024) on a stated-identical scope — 2.2x gap, definitional mismatch unresolved, do not average.",
           "metric": "market_size",
           "tier": null,
-          "value_usd_bn": 3.0438,
+          "value_usd_bn": 0.7469,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": {
+          "value": 6.21,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2024",
+          "value_basis": "PRODUCTION",
+          "confidence": "ESTIMATE",
+          "source": "MFDS (Korea Ministry of Food and Drug Safety) press release, 2025-05-27 -- 2024 cosmetics production and export statistics (record high)",
+          "url": "https://kcia.or.kr/inc/down.php?dir=BOARD&file_name=202505_174830652594232_2.pdf&rename=5.27+%ED%99%94%EC%9E%A5%ED%92%88%EC%A0%95%EC%B1%85%EA%B3%BC.pdf",
+          "notes": "SCOPE CAVEAT: PRODUCTION basis (factory-gate output value), not retail sell-through -- per rule 4 do not present as retail growth. USD equiv at pinned USD/KRW 1478.40: 2023 approx US 56.68mn, 2024 approx US 60.20mn (via fx tool). Source is MFDS official type classification (13 cosmetic types under Korean cosmetics law); PDF mirrored via KCIA industry association but content is the unmodified official MFDS press release.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 3.55,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2031",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "BlueWeave Consulting",
+          "url": "https://www.blueweaveconsulting.com/report/south-korea-baby-care-products-market",
+          "notes": "USD 1.61bn (2024) to USD 2.06bn (2031). Internally consistent (1.61 x 1.0355^7 = 2.05). SCOPE CAVEAT: includes baby food and baby safety/convenience alongside baby cosmetics & toiletries. cf Expert Market Research 6.20% (2026-2035) — 1.7x higher growth on a stated-identical scope; South Korea's falling birth rate makes the lower figure the more conservative read but neither is reconciled. Do not average.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
+        "segment": "dermocosmetics",
+        "size": {
+          "value": 5.5,
+          "unit": "krw_tn",
+          "currency": "KRW",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "한국기업평판연구소 (Korean Enterprise Reputation Research Institute) via Youth Daily (청년일보)",
+          "url": "https://www.youthdaily.co.kr/news/article.html?no=182976",
+          "notes": "PROJECTION: '올해는 5조5천억원을 넘어설 것으로 전망된다' — expected to EXCEED KRW 5.5tn in 2025 ('올해' = this year; article dated 2025-04-18). ~USD 3.720bn @ USD/KRW 1478.40 pinned 2026-07-21. Stated as a floor, not a point estimate. Independently corroborates the KRW 5.5tn 2025 projection already on file from Pharm Edaily. cf DailyBeautyDrop/cogonggo (2025-05-04) which states the softer '5조 원 돌파' (exceed KRW 5tn) for 2025 — same direction, lower threshold.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 3.7202,
           "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
         },
         "growth": {
@@ -353,7 +586,64 @@
           "metric": "growth_yoy",
           "tier": null
         },
-        "cagr": null,
+        "cagr": {
+          "value": 6.66,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2022-2025",
+          "value_basis": "NA",
+          "confidence": "ESTIMATE",
+          "source": "Derived from 한국기업평판연구소 via Youth Daily",
+          "url": "https://www.youthdaily.co.kr/news/article.html?no=182976",
+          "notes": "CORRIDOR WHITESPACE #5. Note the sharp deceleration versus the 2017-2022 formation phase (~55% CAGR derived) — the Korean dermocosmetics category is transitioning from explosive formation to mid-single-digit maturity. No publisher-stated forward CAGR for KR dermocosmetics could be verified on a fetchable page: Grand View Research's South Korea cosmeceutical horizon page (reportedly USD 556.4mn 2024 to USD 825.3mn 2030 at 6.7% CAGR 2025-2030) returned HTTP 403 and is therefore NOT cited. cf SPER Market Research 5.45% (2024-2033), also recorded here — both cluster mid-single-digit, which is the useful convergence.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
+        "segment": "emerging_adjacencies",
+        "size": {
+          "value": 2.0,
+          "unit": "krw_tn",
+          "currency": "KRW",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "MEDIUM",
+          "source": "신한금융투자 리서치센터 (Shinhan Financial Investment Research Center) via Seoul Finance (서울파이낸스)",
+          "url": "https://www.seoulfn.com/news/articleView.html?idxno=508509",
+          "notes": "PROJECTION made in Jan-2024: '2025년 2조원에 이를 것으로 전망하고 있다' — KRW 2.0tn expected by 2025. ~USD 1.353bn @ USD/KRW 1478.40 pinned 2026-07-21. Implies a doubling off the 2023 base in two years, far above the ~10%/yr pace actually observed 2019-2023; treat as an aggressive sell-side projection, not an outturn. No post-hoc 2025 actual could be verified. SCOPE CAVEAT: health-functional-food perimeter, see the 2023 row.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 1.3528,
+          "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
+        },
+        "growth": {
+          "value": 44.6,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2024",
+          "value_basis": "NET_REALISATION",
+          "confidence": "MEDIUM",
+          "source": "APR Corp official blog (company earnings announcement), 2025-02-10 -- 2024 annual results",
+          "url": "https://apr-blog.com/apr2024earning",
+          "notes": "SCOPE CAVEAT: company-level figure (APR Corp / Medicube AGE-R brand), not a category-wide beauty_devices market growth rate -- filed under emerging_adjacencies / beauty_devices sub-segment per brief guidance since no same-source two-year category series was found (category-wide snapshots from Clareate Corp and P&S Intelligence/ExpertMarketResearch conflict across years and cannot be safely combined -- do not average). APR is Koreas largest listed home beauty device player, so this is a leading-indicator proxy, not a market-wide figure. Direct quote: AGE-R beauty device division revenue KRW 312.6bn in 2024, +44.6% YoY. value_basis NET_REALISATION = company-reported consolidated segment revenue. For context only, APR total company FY2024 revenue was KRW 722.8bn (+38.0% YoY), not the value of this claim.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 13.8,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "Expert Market Research (via ResearchAndMarkets)",
+          "url": "https://www.researchandmarkets.com/report/south-korea-beauty-device-market",
+          "notes": "USD 1.32bn (2024) to USD 4.81bn (2034). Internally consistent (1.32 x 1.138^10 = 4.80). Sub-segment only (beauty_devices), not the emerging_adjacencies segment total. This is the fastest-growing KR adjacency for which a forecast could be verified — roughly 2.5x the pace of KR skincare (5.60%) and KR hair care (5.42%).",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
         "export": null
       }
     ],
@@ -419,7 +709,7 @@
         "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
         "Bottom-up base is inflated by non-pure-play conglomerates (LG H&H) reporting non-BPC revenue."
       ],
-      "date": "2026-07-25",
+      "date": "2026-07-26",
       "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
     }
   },
@@ -500,7 +790,19 @@
           "value_usd_bn": 9.06,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
+        "growth": {
+          "value": 3.0,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026",
+          "value_basis": "NA",
+          "confidence": "MEDIUM",
+          "source": "Statista Market Insights",
+          "url": "https://www.statista.com/outlook/cmo/beauty-personal-care/skin-care/india/",
+          "notes": "Statista Consumer Market Outlook 'Revenue Change (2026): 3.0%' for India Skin Care, against a projected 2026 revenue of US$10.63bn. Underlying basis is consumer sell-through (RETAIL); value_basis NA because the metric is a percentage. Organised/unorganised coverage not stated by Statista. SCOPE CAVEAT: Statista's own forward CAGR on the same page is only 2.76% (2026-2031), far below the 7-16% CAGRs aggregators publish for India skincare (IMARC 7.49% 2026-2034, TechSci 15.78% to 2030) - the YoY figure sits on a much more conservative revenue series, do not read it alongside those CAGRs without normalising.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 5.99,
           "unit": "percent",
@@ -572,13 +874,25 @@
           "confidence": "LOW",
           "source": "DMI",
           "url": null,
-          "notes": "Forecast CAGR 7.08%",
+          "notes": "Forecast CAGR 7.08%. CONFLICT, previously undocumented: Market Research Future puts India colour cosmetics at USD 5.55bn (2024, see companion claim) — 60% higher on the same nominal period; Markets and Data puts it at USD 4.80bn (FY24) — 39% higher. No shared definition confirmed across the three; do not average.",
           "metric": "market_size",
           "tier": null,
           "value_usd_bn": 3.46,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
+        "growth": {
+          "value": 6.13,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "NA",
+          "confidence": "ESTIMATE",
+          "source": "Market Research Future (derived)",
+          "url": "https://www.marketresearchfuture.com/reports/india-colour-cosmetics-market-47939",
+          "notes": "Organised/unorganised coverage not stated by the source. India colour cosmetics carries a significant unorganised and counterfeit tail that aggregator sizing typically excludes. Do not present as an audited market-growth reading.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 8.41,
           "unit": "percent",
@@ -611,8 +925,32 @@
           "value_usd_bn": 2.6,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
-        "cagr": null,
+        "growth": {
+          "value": 26.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY25",
+          "value_basis": "NET_REALISATION",
+          "confidence": "HIGH",
+          "source": "Titan Company Ltd -- Q4 and FY25 Earnings Presentation (BSE/NSE regulatory filing), dated 2025-05-08",
+          "url": "https://www.titancompany.in/sites/default/files/2025-05/Q4FY25%20-%20Earnings%20presentation%20Uploaded.pdf",
+          "notes": "SCOPE CAVEAT: company-level (Titans Fragrances division -- SKINN and Fastrack Perfumes brands), not a category-wide India fragrances market figure. Direct quote from source (Emerging Businesses: Quarterly Performance slide): Fragrances recorded a good growth of c.26% YoY primarily led by healthy growth in Fastrack perfumes; overall volume growth in both SKINN and Fastrack was in high double-digits. Period is Q4FY25 (Jan-Mar 2025). Fragrances sits within Titans Emerging Businesses division (blended division Total Income INR 102 Cr in Q4FY25, +5.2% YoY, which also includes Womens Bags +10% and Taneira -4%) -- Fragrances-specific absolute INR revenue not separately disclosed, only the YoY %. Organised-market only (listed company); Titan describes itself as Indias Leading Fine Fragrances Brand.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 5.36,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-perfume-market",
+          "notes": "PERFUME-ONLY scope, the closest match to the taxonomy 'fragrances' segment (premium/mass/niche perfume): IMARC India perfume USD 1,250.02mn (2025) to USD 1,999.32mn (2034), CAGR 5.36% 2026-2034. Page states no deodorant coverage. Organised/unorganised coverage not stated. cf the same publisher's perfumes-AND-deodorants page at 10.26% (2026-2034) on a USD 2,890.8mn (2025) base — deodorants roughly double the base and double the growth rate, so the two are not substitutes; do not average. Use this one when the cell must be perfume-only.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
         "export": null
       },
       {
@@ -626,23 +964,158 @@
           "confidence": "LOW",
           "source": "Mordor Intelligence",
           "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-          "notes": "India hair care; 'skinification' shift to actives/serums",
+          "notes": "'Hair care products market' valued USD 4.1bn in 2026, to USD 5.19bn by 2031. Cross-ref IMARC USD 4.30bn 2025 (similar base, divergent forecasts). Source attributes the trajectory to a 'skinification' shift toward actives and serums.",
           "metric": "market_size",
           "tier": null,
           "value_usd_bn": 4.1,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
-        "cagr": {
-          "value": 4.73,
+        "growth": {
+          "value": 4.57,
           "unit": "percent",
           "currency": "USD",
-          "period": "2026-2031",
+          "period": "2025",
+          "value_basis": "NA",
+          "confidence": "ESTIMATE",
+          "source": "Market Research Future (derived)",
+          "url": "https://www.marketresearchfuture.com/reports/india-hair-care-market-44328",
+          "notes": "SCOPE CAVEAT: MRF scope is hair styling, shampoo, hair colorant, conditioners and hair oil. India hair oil carries a large unorganised/loose-sold tail; organised vs unorganised coverage not stated by the source. Do not present as an audited market-growth reading.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 10.58,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
           "value_basis": "NA",
           "confidence": "LOW",
-          "source": "Mordor Intelligence",
-          "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-          "notes": "India hair care forecast CAGR",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-haircare-market",
+          "notes": "USD 4.30bn 2025 to USD 11.49bn 2034. Outlier vs Mordor 4.73% (2026-2031) — do not use without reconciliation.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
+        "segment": "bath_shower",
+        "size": {
+          "value": 1.8,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-bath-shower-products-market",
+          "notes": "SCOPE CAVEAT: IMARC states scope = bath soaps, body wash, bath additives, others (bar soap IS included). Organised/unorganised coverage not stated by the source. CONFLICT: IMARC's own separate India bath soap page puts bath soap ALONE at USD 3,406.3mn (2025) — 1.9x this whole-category figure, which is internally impossible if bath soap sits inside bath & shower products. Both recorded as separate claims; definitional mismatch unresolved, do not average.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 1.8,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": null,
+        "cagr": {
+          "value": 3.8,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-bath-shower-products-market",
+          "notes": "IMARC: USD 1.8bn (2025) to USD 2.5bn (2034), CAGR 3.80% 2026-2034. Organised/unorganised coverage not stated. cf IMARC bath-soap-only page 4.88% over the same 2026-2034 window — see the conflicting market_size pair on this segment.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
+        "segment": "deodorants",
+        "size": {
+          "value": 1.0,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-deodorants-market",
+          "notes": "SCOPE CAVEAT: IMARC scope = sprays, roll-ons, creams, gels, wipes, sticks and others. Organised/unorganised coverage not stated; the source notes competition from both organised and unorganised players but does not say which its sizing covers. Value is rounded to one decimal by the source (USD 1.0bn), so precision is low.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 1.0,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": {
+          "value": 17.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY25",
+          "value_basis": "NET_REALISATION",
+          "confidence": "MEDIUM",
+          "source": "Tracxn legal-entity financial profile (sourced from India MCA/ROC filings) -- Vini Cosmetics Pvt Ltd, maker of Fogg deodorants",
+          "url": "https://tracxn.com/d/legal-entities/india/vini-cosmetics-private-limited/__-x60HjqkHymaXvt00dylUXvxoMZxDIvUpOad67psKew",
+          "notes": "SCOPE CAVEAT: company-level (Vini Cosmetics Pvt Ltd, maker of Fogg -- Indias largest deodorant brand by volume share, ~15-16%), not a category-wide India deodorants market figure; used as proxy since Vini Cosmetics is a deodorant-focused company, unlike HUL/Godrej/ITC where deo is one line among many and no brand-level figure could be found in any fetchable source despite repeated attempts. Direct quote from source: VINI COSMETICS PRIVATE LIMITED generated more than INR 1,000 Cr in revenue for the financial year ending on Mar 31, 2025. The revenue has a compounded annual growth rate (CAGR) of 17% in the last 1 year. Tracxns 1-year CAGR is mathematically a single-year YoY growth rate (CAGR over exactly one year reduces to simple YoY), so this is not a CAGR-to-YoY substitution. Underlying data sourced by Tracxn from India MCA/ROC company filings; exact FY24 comparator and units not shown in free view. Corroborating datapoint, not a separate claim: McNroe Consumer Products (Wild Stone, #2 deodorant maker) shows a similar 1-year CAGR of 20% for FY25 on the same Tracxn platform -- consistent directionally, do not average. Organised-market only; no unorganised-market read implied.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 3.1,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-deodorants-market",
+          "notes": "IMARC: USD 1.0bn (2025) to USD 1.4bn (2034), CAGR 3.10% 2026-2034. Organised/unorganised coverage not stated.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
+        "segment": "oral_care",
+        "size": {
+          "value": 1.1,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-oral-care-market",
+          "notes": "SCOPE CAVEAT: IMARC scope = toothpaste, toothbrush, mouthwash, others; household + commercial applications. Organised/unorganised coverage not stated. CONFLICT: cf The India Watch INR 21,000 crore (~USD 2.18bn at the pinned USD/INR 96.23 of 2026-07-21) for the same category — a 2.0x gap. Definitional mismatch unresolved, do not average.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 1.1,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": {
+          "value": -5.2,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY25",
+          "value_basis": "RETAIL",
+          "confidence": "HIGH",
+          "source": "Dabur India Ltd -- Investor Presentation Q4 FY24-25 (BSE regulatory filing), dated 2025-05-07",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3e9ddd06-c1f0-4744-9109-070398d0c551.pdf",
+          "notes": "SCOPE CAVEAT: this is Daburs own Oral Care business value growth (secondary sales, i.e. sell-through basis), not the overall India oral care category/market across all players (Colgate, HUL, etc). No clean same-source category-wide two-year series was found; filed as the best verifiable primary-source proxy per brief technique 3 (company results commentary). Organised/unorganised coverage not stated -- covers Daburs own branded secondary sales only. Deck explicitly attributes the -5.2% to a high base effect: Q4FY24 oral care had grown 22% YoY; Meswak and Dabur Herbl portfolio performed well within the segment despite the headline decline. For context only (not this claims value): Daburs oral care business grew +5.3% YoY in Q2FY25 (Jul-Sep 2024) per company concall commentary (HDFC Securities note) -- do not average across quarters into an implied annual figure, quarterly volatility is real and base-effect driven.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 4.15,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-oral-care-market",
+          "notes": "IMARC: USD 1.1bn (2025) to USD 1.7bn (2034), CAGR 4.15% 2026-2034. Organised/unorganised coverage not stated. cf The India Watch 'CAGR 5-6%' for the same category on a roughly 2x larger base.",
           "metric": "cagr_forecast",
           "tier": null
         },
@@ -694,6 +1167,51 @@
         "export": null
       },
       {
+        "segment": "baby_child",
+        "size": {
+          "value": 4.82,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-baby-care-products-market",
+          "notes": "SCOPE CAVEAT: IMARC 'baby care products' spans baby skin care, baby hair care, baby toiletries (bath, fragrances, diapers, wipes) AND baby food & beverages. Baby food/beverages and diapers sit outside BPC scope, so this OVERSTATES the BPC baby & child segment; treat as an upper bound on a wider basket, not a BPC read. Organised/unorganised coverage not stated on the page. cf Maximize Market Research USD 14.17bn (2024) on a NARROWER basket (baby food explicitly excluded) — 2.9x higher despite covering less, an outright contradiction; definitional mismatch unresolved, do not average.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 4.82,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": {
+          "value": 35.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY25",
+          "value_basis": "NET_REALISATION",
+          "confidence": "MEDIUM",
+          "source": "dfupublications.com, quoting Rajesh Vohra (CEO, Chicco India / Artsana India), published 2025-12-31",
+          "url": "https://www.dfupublications.com/index.php/news/apparel/chicco-india-eyes-50-store-milestone-as-baby-care-market-hits-4-9-billion",
+          "notes": "SCOPE CAVEAT: company-level (Chicco India / Artsana India Pvt Ltd -- strollers, feeding, baby care products), not a category-wide India baby_child market figure. Direct quote: Operating since 2009, it recorded over 35 per cent growth last fiscal year (CEO Rajesh Vohra), with momentum well above 20 per cent in the current year also noted. Value recorded here (35.0%) is the stated floor/minimum -- source says over 35%, exact figure not disclosed, true growth may be higher. Period read as FY25 (Apr24-Mar25), the most recently completed full fiscal year as of the Dec-2025 publication date; source does not give an explicit date beyond last fiscal year. Organised, premium/imported baby-products segment only -- no unorganised-market read implied. A Tracxn profile (MCA filing based) for Artsana India Pvt Ltd was checked but only showed a revenue band (INR 100-500 Cr) in the free view, not exact FY24/FY25 figures, so no independent two-year same-source cross-check was possible; do not treat as corroborated by that source.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 9.17,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-baby-care-products-market",
+          "notes": "IMARC: USD 4.82bn (2025) to USD 10.62bn (2034), CAGR 9.17% 2026-2034. SCOPE CAVEAT: basket includes baby food & beverages and diapers/wipes, i.e. wider than BPC baby & child. Organised/unorganised coverage not stated. cf Maximize Market Research 14.35% (2024-2030) on a food-excluded basket — 1.6x gap, definitional mismatch unresolved, do not average.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
         "segment": "dermocosmetics",
         "size": {
           "value": 0.2803,
@@ -733,6 +1251,51 @@
           "source": "P&S Market Research (India Skincare Dermacosmetics)",
           "url": "https://www.psmarketresearch.com/market-analysis/india-skincare-dermacosmetics-market",
           "notes": "10.3% CAGR 2024-2030, reaching US$505.0mn by 2030 (from US$256.2mn 2023). Western region highest regional CAGR at 10.6%. Same narrow definition caveat as the P&S market_size claim.",
+          "metric": "cagr_forecast",
+          "tier": null
+        },
+        "export": null
+      },
+      {
+        "segment": "emerging_adjacencies",
+        "size": {
+          "value": 2.0,
+          "unit": "usd_bn",
+          "currency": "USD",
+          "period": "2025",
+          "value_basis": "RETAIL",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-ayurvedic-skincare-market",
+          "notes": "India ayurvedic SKINCARE only — facial care, body care, hair and scalp care, specialty (anti-ageing, acne). This is the cleanest BPC-scoped ayurvedic figure found; it does NOT cover ayurvedic oral care or colour cosmetics, so it under-covers the ayurvedic_herbal adjacency as a whole. Organised/unorganised coverage not stated on this page; note the same publisher's all-ayurvedic page puts organised at 70% / unorganised at 30% in 2025, and the ayurvedic personal-care tail (loose oils, regional herbal brands) is heavily unorganised.",
+          "metric": "market_size",
+          "tier": null,
+          "value_usd_bn": 2.0,
+          "fx_note": "identity (no conversion)"
+        },
+        "growth": {
+          "value": 20.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY26",
+          "value_basis": "NET_REALISATION",
+          "confidence": "HIGH",
+          "source": "Honasa Consumer Ltd (Mamaearth) -- Q4 and FY26 Investor Presentation, dated 2026-05-21, BSE regulatory filing",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/effd8f4c-874e-4947-8969-6cb61c158098.pdf",
+          "notes": "SCOPE CAVEAT: company-level, consolidated across Honasas full brand portfolio (Mamaearth, The Derma Co, Aqualogica, Dr. Sheths, BBlunt, Staze, Reginald Men), not a category-wide clean/vegan market figure -- no market-wide series exists. Filed under emerging_adjacencies/clean_vegan because Mamaearth (clean, toxin-free, Made Safe-certified positioning) is Honasas flagship and largest brand and anchors the portfolios identity, though some house brands (The Derma Co, Aqualogica) are actives/dermatology-positioned rather than clean-vegan specifically. Company-stated headline: Honasa delivered 20% YoY growth in FY26 (Apr25-Mar26); Revenue from Operations INR 2,479 Cr vs INR 2,067 Cr in FY25 (internally consistent, implies 19.9%). Covers organised-market listed-company sales (ecommerce + general/modern trade) only; no unorganised-market read implied or available.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
+        "cagr": {
+          "value": 11.98,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2026-2034",
+          "value_basis": "NA",
+          "confidence": "LOW",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-ayurvedic-skincare-market",
+          "notes": "IMARC: India ayurvedic skincare USD 2.0bn (2025) to USD 5.8bn (2034), CAGR 11.98% 2026-2034. SCOPE CAVEAT: ayurvedic skincare only, not the full ayurvedic/herbal BPC adjacency. cf the same publisher's all-ayurvedic-products CAGR of 15.52% — but that basket is 58% healthcare (medicines and nutraceuticals), which is outside BPC, so the two are not comparable and must not be averaged. Organised/unorganised coverage not stated.",
           "metric": "cagr_forecast",
           "tier": null
         },
@@ -808,7 +1371,7 @@
         "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
         "Bottom-up base is inflated by non-pure-play conglomerates (Godrej Consumer Products, Hindustan Unilever) reporting non-BPC revenue."
       ],
-      "date": "2026-07-25",
+      "date": "2026-07-26",
       "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
     }
   },
@@ -1072,6 +1635,20 @@
         "segment": "sun_care"
       },
       {
+        "value": 406.58,
+        "unit": "usd_mn",
+        "currency": "USD",
+        "period": "2023",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Credence Research",
+        "url": "https://www.credenceresearch.com/report/india-k-beauty-product-market",
+        "notes": "[CORRIDOR] India K-beauty product market, USD 406.58mn (2023), forecast USD 959.33mn by 2032. Organised/unorganised coverage not stated; grey-market/parallel-import K-beauty is a known and unmeasured channel in India, so any of these figures likely undercounts actual sell-through. cf MarkNtel USD 310mn (2025) — MarkNtel's later-year figure is 24% BELOW this earlier-year figure; the two cannot both be right, definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "emerging_adjacencies"
+      },
+      {
         "value": 0.14006,
         "unit": "usd_bn",
         "currency": "USD",
@@ -1142,6 +1719,20 @@
         "segment": "total_bpc"
       },
       {
+        "value": 400.0,
+        "unit": "usd_mn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "TheBK / Beauty Kyungjae (Korean beauty trade press)",
+        "url": "https://www.thebk.co.kr/news/articleView.html?idxno=306792",
+        "notes": "[CORRIDOR] K-beauty products consumed in India, USD 400M in 2024, extracted from the same TheBK/Beauty Kyungjae article as the per-capita-spend claims already on file (not previously promoted to its own claim). This is India-side retail sizing of K-beauty demand, not Korea's export FOB flow (contrast with the UN Comtrade KR-to-IN export_value claims filed under KR segments). Value basis not stated by source; assumed consumer sell-through. Sits well below The Report Cubes' USD 0.335bn (2026) and Expert Market Research's INR 3139.31cr (2025, ~USD 0.335bn) K-beauty-in-India figures already on file — directionally consistent (same order of magnitude, later base year is higher), not a conflict. Organised/unorganised coverage not stated. Cross-segment corridor estimate (not attributable to a single taxonomy segment on this source), filed under total_bpc.",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
         "value": 25.9,
         "unit": "percent",
         "currency": "USD",
@@ -1156,6 +1747,34 @@
         "segment": "total_bpc"
       },
       {
+        "value": 25.9,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2030",
+        "value_basis": "NA",
+        "confidence": "MEDIUM",
+        "source": "TheBK / Beauty Kyungjae (Korean beauty trade press)",
+        "url": "https://www.thebk.co.kr/news/articleView.html?idxno=306792",
+        "notes": "[CORRIDOR] K-beauty-in-India forecast growth rate 2024-2030. cf Expert Market Research 26.3% CAGR (2026-2035) and The Report Cubes 19.17% CAGR (to 2034) already on file — all cluster in the 19-26% range for K-beauty-in-India growth, a useful convergence despite different vendors and windows.",
+        "metric": "cagr_forecast",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 10.0,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2032",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Credence Research",
+        "url": "https://www.credenceresearch.com/report/india-k-beauty-product-market",
+        "notes": "[CORRIDOR] Credence: India K-beauty CAGR 10.00% 2024-2032 (USD 406.58mn 2023 to USD 959.33mn 2032). Organised/unorganised coverage not stated. cf MarkNtel 18.06% 2026-2032 — 1.8x gap, and the two size bases contradict each other outright; definitional mismatch unresolved, do not average.",
+        "metric": "cagr_forecast",
+        "tier": null,
+        "segment": "emerging_adjacencies"
+      },
+      {
         "value": 44.4,
         "unit": "usd_mn",
         "currency": "USD",
@@ -1168,6 +1787,20 @@
         "metric": "market_size",
         "tier": null,
         "segment": "skincare"
+      },
+      {
+        "value": 310.0,
+        "unit": "usd_mn",
+        "currency": "USD",
+        "period": "2025",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "MarkNtel Advisors",
+        "url": "https://www.marknteladvisors.com/research-library/india-k-beauty-products-market-report.html",
+        "notes": "[CORRIDOR] India K-beauty products market, USD 310mn (2025), forecast USD 872mn by 2032. Page also states facial skincare is ~65% of the K-beauty mix and female consumers ~80%. It cites India BPC at USD 28bn (2024) but does NOT compute K-beauty's share of that, so no share figure is claimed here. Organised/unorganised coverage not stated; grey-market and parallel-import K-beauty is a known unmeasured channel in India, so this likely undercounts sell-through. cf Credence Research USD 406.58mn (2023) — Credence's EARLIER-year level EXCEEDS this LATER-year level on a growing category, a direct contradiction; definitional mismatch unresolved, do not average.",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "emerging_adjacencies"
       },
       {
         "value": 3139.31,
@@ -1198,6 +1831,34 @@
         "segment": "total_bpc"
       },
       {
+        "value": 18.06,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2032",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "MarkNtel Advisors",
+        "url": "https://www.marknteladvisors.com/research-library/india-k-beauty-products-market-report.html",
+        "notes": "[CORRIDOR] MarkNtel: India K-beauty CAGR 18.06% 2026-2032 (USD 310mn 2025 to USD 872mn 2032). Organised/unorganised coverage not stated. cf Credence Research 10.00% 2024-2032 — a 1.8x gap on the growth rate on top of a contradictory size base; definitional mismatch unresolved, do not average.",
+        "metric": "cagr_forecast",
+        "tier": null,
+        "segment": "emerging_adjacencies"
+      },
+      {
+        "value": 11.1,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2026-2033",
+        "value_basis": "NA",
+        "confidence": "LOW",
+        "source": "Persistence Market Research",
+        "url": "https://www.persistencemarketresearch.com/market-research/skin-toner-market.asp",
+        "notes": "[CORRIDOR] India named the fastest-growing country in the global skin toner market at 11.1% CAGR 2026-2033, vs global 6.1% (global US$1.5bn 2026 to US$2.3bn 2033 on the same page). Toners/essences are a core K-beauty format and the India acceleration is attributed to younger consumers and e-commerce adoption. SCOPE CAVEAT: 'skin toner' scope - essences are not explicitly named as included. No India value figure is disclosed on the page, only the country CAGR. Organised/unorganised coverage not stated.",
+        "metric": "cagr_forecast",
+        "tier": null,
+        "segment": "skincare"
+      },
+      {
         "value": 26.3,
         "unit": "percent",
         "currency": "INR",
@@ -1221,6 +1882,20 @@
         "source": "Economic Times Retail (consulting estimate)",
         "url": "https://retail.economictimes.indiatimes.com/news/health-and-beauty/indias-k-beauty-market-forecast-15-billion-by-2030/123190386",
         "notes": "[CORRIDOR] K-beauty in India, 2030 forecast",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 1.6,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2030",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "TheBK / Beauty Kyungjae (Korean beauty trade press)",
+        "url": "https://www.thebk.co.kr/news/articleView.html?idxno=306792",
+        "notes": "[CORRIDOR] FORECAST VALUE: K-beauty products consumed in India, projected USD 1.6bn by 2030 (from USD 400M 2024), per the same article as the paired 2024 market_size claim. cf Expert Market Research INR 32,424cr by 2035 (already on file, ~USD 3.37bn at the pinned rate) for a later, larger horizon on a similar growth trajectory. Value basis assumed consumer sell-through, not stated by source.",
         "metric": "market_size",
         "tier": null,
         "segment": "total_bpc"
@@ -1397,6 +2072,20 @@
       }
     ],
     "trade": [
+      {
+        "value": 33.45,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2024",
+        "value_basis": "NA",
+        "confidence": "ESTIMATE",
+        "source": "MFDS (식품의약품안전처) 2024 cosmetics production statistics press release, via Korea Cosmetic Association",
+        "url": "https://kcia.or.kr/inc/down.php?dir=BOARD&file_name=202505_174830652594232_2.pdf&rename=5.27+%ED%99%94%EC%9E%A5%ED%92%88%EC%A0%95%EC%B1%85%EA%B3%BC.pdf",
+        "notes": "All pack/mask formats, not sheet-only. PRODUCTION basis, nominal KRW — the fastest-growing of the three MFDS skincare sub-types disclosed for 2024 (vs +29.52% lotion/cream/essence/oil and +30.03% foam cleanser). Growth is inflated by export-bound output; it is not evidence of domestic demand growth at that rate. [CORRIDOR] Pack/mask is the format most directly associated with K-beauty export flows, including into India.",
+        "metric": "growth_yoy",
+        "tier": null,
+        "segment": "skincare"
+      },
       {
         "value": 0.065624,
         "unit": "usd_bn",

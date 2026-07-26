@@ -14,6 +14,12 @@ supply_chain:
   - text: "Upstream, specialty-ingredient suppliers underpin the chain: Galaxy Surfactants (mild surfactants for cleansers) and Fine Organics (oleochemical specialty additives) are key Indian actives/ingredient makers."
     source: "Marcellus; GlobalData"
     url: "https://marcellus.in/newsletter/little-champs/spotlighting-galaxy-surfactants"
+  - text: "Speed-to-market is a distinct axis from customisation when choosing a manufacturing model: private-label routes (an existing formula sold under the client's brand) typically launch in 2-4 weeks, versus 4-8 weeks for full contract manufacturing with custom formulation — a tradeoff D2C founders weigh alongside MOQ when picking a manufacturing partner."
+    source: "Gorgeous Cosmos"
+    url: "https://gorgeouscosmos.in/news/cosmetic-contract-manufacturers-in-india"
+  - text: "India's D2C beauty 'moat' problem traces directly to its contract-manufacturing ecosystem: because hundreds of CMOs can replicate a similar formulation quickly and cheaply, brands that differentiate mainly through clean labels, packaging and a marketed 'hero' ingredient — rather than genuine formulation IP — look novel at launch but are easy for competitors to copy, leaving the underlying differentiation superficial."
+    source: "My PM Interview"
+    url: "https://www.mypminterview.com/p/case-study-why-indian-beauty-d2c-brands-fail"
 
 import_make:
   - text: "India skincare is ~91% domestically supplied by value (imports ~US$844m vs ~US$9bn market); imports concentrate in premium and K-beauty tiers. Korea 17% and China 22% of skincare imports."
@@ -25,6 +31,22 @@ import_make:
   - text: "Any imported cosmetic needs a CDSCO Import Registration (Form COS-1 -> COS-2 via SUGAM), plus manufacturing-site registration — the key lead-time/friction cost for K-beauty entrants."
     source: "PSR Compliance / CDSCO"
     url: "https://www.psrcompliance.com/cosmetic-import-license"
+
+pricing:
+  - text: "India's skincare market stratifies into five price tiers with distinct competitive archetypes rather than a single mass-to-premium continuum: legacy FMCG brands (Pond's, Nivea, Himalaya, Lakme, Garnier) dominate the sub-Rs200 mass tier through deep offline distribution, while D2C-first brands (Minimalist, Dot & Key, Plum, Foxtale, Pilgrim, mCaffeine) cluster in the Rs500-1,500 mid-premium band that is both online-led and the fastest-growing tier below premium."
+    source: "IMA Pro"
+    url: "https://gaurav.imapro.in/research/india-skincare-market-report"
+  - text: "Beauty's D2C unit economics are unusually forgiving relative to other Indian D2C categories — a serum costing Rs80-120 to manufacture typically sells for Rs500-700, leaving 55-70% true gross margin after packaging, shipping, returns and payment-gateway costs — which is cited as why acquirers can justify rich multiples (e.g. HUL's Minimalist deal) and why beauty D2C brands can sustain unusually heavy marketing spend relative to categories like food or fashion."
+    source: "The D2C Pulse"
+    url: "https://thed2cpulse.com/growth-strategy/gross-margins-for-d2c-brands-india"
+
+growth:
+  - text: "India's leading men's grooming D2C brands are sequencing international expansion around brand-building before volume: Beardo opened a flagship store in Sydney as a market statement rather than a soft test, and The Man Company built retail presence across the UAE, Southeast Asia and Western markets via Amazon Global and Nykaa Global — using low-commitment marketplace listings to earn the right to invest in higher-commitment physical presence, not the reverse."
+    source: "HavStrategy"
+    url: "https://www.havstrategy.com/male-grooming-brand-marketing-india-the-2026-playbook-havstrategy"
+  - text: "In hair care, natural/organic formulations are called out as growing faster than the category overall while still holding a minority share — read as a sign that credible, ingredient-transparent natural formulation (not just a 'natural' label claim) still has early-mover room, because India's research-heavy D2C buyers actively check ingredient substantiation rather than reward badge-washing."
+    source: "Arise Cosmetic"
+    url: "https://arisecosmetic.com/hair-care-trends-in-india"
 
 new_players:
   - text: "Consolidation by strategics: HUL acquired Minimalist (~Rs3,000cr) and Plum; Estee Lauder took Forest Essentials; Puig bought 85% of Kama Ayurveda; KKR owns 54% of Vini Cosmetics/Fogg (US$625m, US$1.2bn valuation)."
@@ -39,6 +61,15 @@ new_players:
   - text: "K-beauty brand owners are entering directly: APR launched Medicube on Nykaa; AmorePacific introduced dermocosmetic brand Illiyoon — accelerating India entry to offset SWANA-region volatility."
     source: "Personal Care Insights"
     url: "https://www.personalcareinsights.com/news/kbeauty-expands-india-market"
+  - text: "The HUL-Minimalist acquisition mirrors a global strategic pattern rather than an India-specific one: Shiseido's acquisition of Dr. Dennis Gross Skincare and Estee Lauder's acquisition of DECIEM follow the same logic — legacy beauty majors buying efficacy-led, ingredient-forward challenger brands to upgrade into higher-growth, 'results-first' skincare rather than building that credibility organically."
+    source: "Future Market Insights"
+    url: "https://www.futuremarketinsights.com/reports/skincare-market"
+  - text: "A parallel, less-visible consolidation wave is running through dermocosmetics specifically, led by pharma and pharma-adjacent acquirers rather than the FMCG/luxury strategics behind the marquee deals: Torrent Pharmaceuticals acquired derma player Curatio, Eris Lifesciences acquired nine cosmetic derma brands from Dr Reddy's and nine clinical derma brands from Glenmark, Encube acquired the commercial rights to Soframycin, and HUL separately acquired VWash to enter female intimate hygiene."
+    source: "KPMG"
+    url: "https://assets.kpmg.com/content/dam/kpmgsites/in/pdf/2026/01/dermatology-market-in-india.pdf"
+  - text: "New Indian fragrance launches increasingly lead with culturally-blended, founder- or celebrity-led storytelling rather than pure Western positioning: actress Rashmika Mandanna's 'Dear Diary' blends Indian ingredients (jasmine, pink lotus) with global-style scent construction, and Fraganta's 'Ganga' and 'Jogi' scents are built explicitly around Indian cultural references."
+    source: "Renub Research"
+    url: "https://www.renub.com/india-perfume-market-p.php"
 
 demand:
   - text: "Beauty is one of the fastest-rising quick-commerce categories: ~160% YoY growth (RedSeer); premium/high-end beauty is gaining on q-commerce, not just mass."
@@ -53,3 +84,12 @@ demand:
   - text: "'Skinification' is reshaping hair care (~US$4bn market): buyers want actives (niacinamide, ceramides, peptides) in serums/tonics; specialist D2C brands outperform legacy FMCG."
     source: "Entrepreneur India; Arise"
     url: "https://arisecosmetic.com/hair-care-trends-in-india"
+  - text: "India's three leading quick-commerce platforms compete on structurally different axes rather than just discounting for the same share: Blinkit leads decisively on gross order value and skews toward established FMCG and high-frequency replenishment SKUs, Zepto is the most aggressive at onboarding new categories such as beauty, and Swiggy Instamart's relative strength is concentrated in South Indian metros."
+    source: "Global Ecommerce Solutions"
+    url: "https://www.globalecommercesolutions.com/blog/quick-commerce-india"
+  - text: "In crowded, long-tail q-commerce categories like sunscreen, paid search visibility inside the app — not shelf space or brand loyalty — is described as the primary lever determining which brands actually get bought, since agile brands that react fastest to search trends and inventory gaps outmanoeuvre slower incumbents."
+    source: "LinkedIn (Samiran Mathur)"
+    url: "https://www.linkedin.com/posts/samiran-mathur_1ds-sunscreen-qcom-report-apr26-activity-7458503608859250688-2W9u"
+  - text: "Men's grooming demand growth is outrunning product depth in at least one sub-category: despite most Indian men preferring facial hair, beard care remains underdeveloped due to limited product innovation, and age-specific formulations are largely missing even as rising dry-skin complaints signal unmet demand for targeted men's skincare."
+    source: "Mintel"
+    url: "https://store.mintel.com/report/india-mens-grooming-market-report"

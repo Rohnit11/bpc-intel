@@ -1,7 +1,7 @@
 {
   "geography": "KR",
   "segment": "baby_child",
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-26",
   "data_points": [
     {
       "geography": "KR",
@@ -78,6 +78,25 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "USD 746.89mn (2025) to USD 1363.02mn (2035). Internally consistent (0.74689 x 1.062^10 = 1.363). SCOPE CAVEAT: includes baby food and safety/convenience. cf BlueWeave 3.55% (2025-2031) — 1.7x gap on a stated-identical scope, definitional mismatch unresolved, do not average."
+    },
+    {
+      "geography": "KR",
+      "segment": "baby_child",
+      "sub_segment": null,
+      "metric": "growth_yoy",
+      "value": 6.21,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "PRODUCTION",
+      "tier": null,
+      "source_name": "MFDS (Korea Ministry of Food and Drug Safety) press release, 2025-05-27 -- 2024 cosmetics production and export statistics (record high)",
+      "source_url": "https://kcia.or.kr/inc/down.php?dir=BOARD&file_name=202505_174830652594232_2.pdf&rename=5.27+%ED%99%94%EC%9E%A5%ED%92%88%EC%A0%95%EC%B1%85%EA%B3%BC.pdf",
+      "date_accessed": "2026-07-25",
+      "confidence": "ESTIMATE",
+      "methodology": "Two-year same-table derivation from MFDS cosmetics-by-type production table (page 8 of the press release PDF), row: baby/infant products type (children age 3 and under). 2023 production KRW 83.8bn (83,800,000,000) -> 2024 production KRW 89.0bn (89,000,000,000). YoY = (890-838)/838 = +6.21%. Both years read from the same table in the same fetched document -- one source_url covers both.",
+      "notes": "SCOPE CAVEAT: PRODUCTION basis (factory-gate output value), not retail sell-through -- per rule 4 do not present as retail growth. USD equiv at pinned USD/KRW 1478.40: 2023 approx US 56.68mn, 2024 approx US 60.20mn (via fx tool). Source is MFDS official type classification (13 cosmetic types under Korean cosmetics law); PDF mirrored via KCIA industry association but content is the unmodified official MFDS press release."
     }
   ]
 }

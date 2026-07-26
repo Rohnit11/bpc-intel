@@ -1,7 +1,7 @@
 {
   "geography": "IN",
   "segment": "emerging_adjacencies",
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-26",
   "data_points": [
     {
       "geography": "IN",
@@ -306,6 +306,25 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "[CORRIDOR] Credence: India K-beauty CAGR 10.00% 2024-2032 (USD 406.58mn 2023 to USD 959.33mn 2032). Organised/unorganised coverage not stated. cf MarkNtel 18.06% 2026-2032 — 1.8x gap, and the two size bases contradict each other outright; definitional mismatch unresolved, do not average."
+    },
+    {
+      "geography": "IN",
+      "segment": "emerging_adjacencies",
+      "sub_segment": "clean_vegan",
+      "metric": "growth_yoy",
+      "value": 20.0,
+      "unit": "percent",
+      "currency": "INR",
+      "period": "FY26",
+      "period_type": "FY",
+      "value_basis": "NET_REALISATION",
+      "tier": null,
+      "source_name": "Honasa Consumer Ltd (Mamaearth) -- Q4 and FY26 Investor Presentation, dated 2026-05-21, BSE regulatory filing",
+      "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/effd8f4c-874e-4947-8969-6cb61c158098.pdf",
+      "date_accessed": "2026-07-25",
+      "confidence": "HIGH",
+      "methodology": null,
+      "notes": "SCOPE CAVEAT: company-level, consolidated across Honasas full brand portfolio (Mamaearth, The Derma Co, Aqualogica, Dr. Sheths, BBlunt, Staze, Reginald Men), not a category-wide clean/vegan market figure -- no market-wide series exists. Filed under emerging_adjacencies/clean_vegan because Mamaearth (clean, toxin-free, Made Safe-certified positioning) is Honasas flagship and largest brand and anchors the portfolios identity, though some house brands (The Derma Co, Aqualogica) are actives/dermatology-positioned rather than clean-vegan specifically. Company-stated headline: Honasa delivered 20% YoY growth in FY26 (Apr25-Mar26); Revenue from Operations INR 2,479 Cr vs INR 2,067 Cr in FY25 (internally consistent, implies 19.9%). Covers organised-market listed-company sales (ecommerce + general/modern trade) only; no unorganised-market read implied or available."
     }
   ]
 }

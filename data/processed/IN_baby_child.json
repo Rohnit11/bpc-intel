@@ -1,7 +1,7 @@
 {
   "geography": "IN",
   "segment": "baby_child",
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-26",
   "data_points": [
     {
       "geography": "IN",
@@ -78,6 +78,25 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "Maximize: 'CAGR 14.35% from 2024 to 2030'; the same page shows USD 14.17bn (2024) to almost USD 41.42bn (2032), so the stated CAGR period and the stated endpoint year do not line up — the CAGR is recorded as stated and the 2032 endpoint treated as suspect. SCOPE CAVEAT: baby food excluded, diapers & wipes (>35% of value) included. Organised/unorganised coverage not stated. cf IMARC 9.17% (2026-2034) — 1.6x gap, definitional mismatch unresolved, do not average."
+    },
+    {
+      "geography": "IN",
+      "segment": "baby_child",
+      "sub_segment": null,
+      "metric": "growth_yoy",
+      "value": 35.0,
+      "unit": "percent",
+      "currency": "INR",
+      "period": "FY25",
+      "period_type": "FY",
+      "value_basis": "NET_REALISATION",
+      "tier": null,
+      "source_name": "dfupublications.com, quoting Rajesh Vohra (CEO, Chicco India / Artsana India), published 2025-12-31",
+      "source_url": "https://www.dfupublications.com/index.php/news/apparel/chicco-india-eyes-50-store-milestone-as-baby-care-market-hits-4-9-billion",
+      "date_accessed": "2026-07-25",
+      "confidence": "MEDIUM",
+      "methodology": null,
+      "notes": "SCOPE CAVEAT: company-level (Chicco India / Artsana India Pvt Ltd -- strollers, feeding, baby care products), not a category-wide India baby_child market figure. Direct quote: Operating since 2009, it recorded over 35 per cent growth last fiscal year (CEO Rajesh Vohra), with momentum well above 20 per cent in the current year also noted. Value recorded here (35.0%) is the stated floor/minimum -- source says over 35%, exact figure not disclosed, true growth may be higher. Period read as FY25 (Apr24-Mar25), the most recently completed full fiscal year as of the Dec-2025 publication date; source does not give an explicit date beyond last fiscal year. Organised, premium/imported baby-products segment only -- no unorganised-market read implied. A Tracxn profile (MCA filing based) for Artsana India Pvt Ltd was checked but only showed a revenue band (INR 100-500 Cr) in the free view, not exact FY24/FY25 figures, so no independent two-year same-source cross-check was possible; do not treat as corroborated by that source."
     }
   ]
 }

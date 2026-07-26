@@ -223,19 +223,6 @@
         "tier": null
       },
       {
-        "value": 2.45,
-        "unit": "usd_bn",
-        "currency": "USD",
-        "period": "2025",
-        "value_basis": "RETAIL",
-        "confidence": "LOW",
-        "source": "IMARC Group",
-        "url": "https://www.imarcgroup.com/india-male-grooming-products-market",
-        "notes": "India male grooming; corroborates baseline US$2.3bn (2024); CAGR 6.66%",
-        "metric": "market_size",
-        "tier": null
-      },
-      {
         "value": 12.2,
         "unit": "percent",
         "currency": "USD",

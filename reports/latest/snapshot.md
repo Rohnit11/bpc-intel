@@ -1,5 +1,5 @@
 # BPC Market Intelligence Snapshot — South Korea × India
-*Generated 2026-07-25 · every figure traces to data/sources.csv · basis and confidence shown inline*
+*Generated 2026-07-26 · every figure traces to data/sources.csv · basis and confidence shown inline*
 
 ---
 
@@ -21,14 +21,18 @@
 
 | Segment | Market size | YoY | Fcst CAGR | Exports (FOB) |
 |---|---|---|---|---|
-| skincare | 7.653 krw_tn (RETAIL, 2025, HIGH; Euromonitor International (via marketresearch.com)) | 1.0 percent (RETAIL, 2025, HIGH; Euromonitor International (via marketresearch.com)) | — | 8.54 usd_bn (EXPORT_FOB, 2025, HIGH; MFDS via Yonhap/Korea Herald) |
+| skincare | 7.653 krw_tn (RETAIL, 2025, HIGH; Euromonitor International (via marketresearch.com)) | 1.0 percent (RETAIL, 2025, HIGH; Euromonitor International (via marketresearch.com)) | 5.6 percent (NA, 2025-2034, LOW; Expert Market Research (via ResearchAndMarkets)) | 8.54 usd_bn (EXPORT_FOB, 2025, HIGH; MFDS via Yonhap/Korea Herald) |
 | sun care | 747.0 usd_mn (RETAIL, 2025, LOW; MarkNtel Advisors) | 43.0 percent (RETAIL, 2025, MEDIUM; Samsung Securities (via Korea Herald)) | 8.3 percent (NA, 2025-2033, LOW; Grand View Research (via ResearchAndMarkets listing)) | — |
 | colour cosmetics | 2.86 usd_bn (RETAIL, 2025, LOW; Expert Market Research) | 12.0 percent (EXPORT_FOB, 2025, HIGH; MFDS via Yonhap/Korea Herald) | 5.9 percent (NA, 2026-2035, LOW; Expert Market Research) | 1.51 usd_bn (EXPORT_FOB, 2025, HIGH; MFDS via Yonhap/Korea Herald) |
-| fragrances | — | — | — | 0.06 usd_bn (EXPORT_FOB, 2025, HIGH; MFDS via Yonhap/Korea Herald) |
-| hair care | 1.8 usd_bn (RETAIL, 2025, LOW; IMARC Group) | — | 3.23 percent (NA, 2026-2034, LOW; IMARC Group) | — |
-| bath shower | — | — | — | 0.59 usd_bn (EXPORT_FOB, 2025, HIGH; MFDS via Yonhap/Korea Herald) |
-| mens grooming | 1.16 krw_tn (RETAIL, 2025, MEDIUM; Korea Herald (citing Euromonitor International)) | — | 11.04 percent (NA, 2025-2035, LOW; Future Market Insights — Men's Skincare in Korea 2025-2035) | — |
-| dermocosmetics | 4.5 krw_tn (RETAIL, 2020, MEDIUM; Samjong KPMG via The Korea Herald) | 13.0 percent (RETAIL, 2024, HIGH; Euromonitor International) | — | — |
+| fragrances | 792.5 usd_mn (RETAIL, 2025, LOW; IMARC Group) | 14.67 percent (PRODUCTION, 2024, ESTIMATE; MFDS press release annex table 3 (derived)) | 4.62 percent (NA, 2026-2034, LOW; IMARC Group) | 0.06 usd_bn (EXPORT_FOB, 2025, HIGH; MFDS via Yonhap/Korea Herald) |
+| hair care | 1.8 usd_bn (RETAIL, 2025, LOW; IMARC Group) | 5.3 percent (RETAIL, 2026, ESTIMATE; Derived from Mordor Intelligence) | 3.23 percent (NA, 2026-2034, LOW; IMARC Group) | — |
+| bath shower | 357.35 usd_mn (RETAIL, 2025, LOW; Expert Market Research) | 9.88 percent (PRODUCTION, 2024, ESTIMATE; MFDS press release annex table 3 (derived)) | 2.1 percent (NA, 2026-2035, LOW; Expert Market Research) | 0.59 usd_bn (EXPORT_FOB, 2025, HIGH; MFDS via Yonhap/Korea Herald) |
+| deodorants | 63.7 krw_bn (RETAIL, 2018, MEDIUM; Euromonitor International via Pharm News (파맄뉴스)) | 7.0 percent (NA, 2018, MEDIUM; Euromonitor International via Pharm News (파맄뉴스)) | — | — |
+| oral care | 892.82 usd_mn (RETAIL, 2025, LOW; Deep Market Insights) | -3.27 percent (PRODUCTION, 2024, ESTIMATE; MFDS quasi-drug production statistics 2023 and 2024, via Medifonews (derived)) | 6.9 percent (NA, 2025-2030, LOW; Grand View Research, relayed by Daxue Consulting) | — |
+| mens grooming | 1.16 krw_tn (RETAIL, 2025, MEDIUM; Korea Herald (citing Euromonitor International)) | 1.6 percent (RETAIL, 2022, ESTIMATE; Derived from Euromonitor International via Jangup Shinmun (장업신문)) | 11.04 percent (NA, 2025-2035, LOW; Future Market Insights — Men's Skincare in Korea 2025-2035) | — |
+| baby child | 746.89 usd_mn (RETAIL, 2025, LOW; Expert Market Research) | 6.21 percent (PRODUCTION, 2024, ESTIMATE; MFDS (Korea Ministry of Food and Drug Safety) press release, 2025-05-27 -- 2024 cosmetics production and export statistics (record high)) | 3.55 percent (NA, 2025-2031, LOW; BlueWeave Consulting) | — |
+| dermocosmetics | 5.5 krw_tn (RETAIL, 2025, MEDIUM; 한국기업평판연구소 (Korean Enterprise Reputation Research Institute) via Youth Daily (청년일보)) | 13.0 percent (RETAIL, 2024, HIGH; Euromonitor International) | 6.66 percent (NA, 2022-2025, ESTIMATE; Derived from 한국기업평판연구소 via Youth Daily) | — |
+| emerging adjacencies | 2.0 krw_tn (RETAIL, 2025, MEDIUM; 신한금융투자 리서치센터 (Shinhan Financial Investment Research Center) via Seoul Finance (서울파이낸스)) | 44.6 percent (NET_REALISATION, 2024, MEDIUM; APR Corp official blog (company earnings announcement), 2025-02-10 -- 2024 annual results) | 13.8 percent (NA, 2025-2034, LOW; Expert Market Research (via ResearchAndMarkets)) | — |
 ### Korea — listed-player revenue shares
 Shares of summed revenue for 2 listed BRAND OWNERS (KRW krw_tn, NET_REALISATION). Does NOT include unorganised/unlisted players. Conglomerate members (HUL/Godrej/LG H&H) carry non-BPC revenue, so their shares overstate BPC position. Excluded as different value-chain levels (not brand shares): CJ Olive Young (retailer), Cosmax (odm), Kolmar Korea (odm). Excluded (different currency/unit): Innisfree.
 
@@ -42,13 +46,18 @@ Shares of summed revenue for 2 listed BRAND OWNERS (KRW krw_tn, NET_REALISATION)
 
 | Segment | Market size | YoY | Fcst CAGR |
 |---|---|---|---|
-| skincare | 9.06 usd_bn (RETAIL, 2025, LOW; IMARC Group) | — | 5.99 percent (NA, 2026-2034, LOW; IMARC Group) |
+| skincare | 9.06 usd_bn (RETAIL, 2025, LOW; IMARC Group) | 3.0 percent (NA, 2026, MEDIUM; Statista Market Insights) | 5.99 percent (NA, 2026-2034, LOW; IMARC Group) |
 | sun care | 0.5766 usd_bn (RETAIL, 2025, LOW; IMARC Group) | 170.0 percent (RETAIL, 2026, LOW; 1digitalstack / quick-commerce report) | 6.8 percent (RETAIL, 2024-2030, LOW; TechSci Research) |
-| colour cosmetics | 3.46 usd_bn (RETAIL, 2024, LOW; DMI) | — | 8.41 percent (NA, FY25-FY32, LOW; Markets and Data) |
-| fragrances | 2.6 usd_bn (RETAIL, 2024, LOW; Industry (FMCG analysis via LinkedIn)) | — | — |
-| hair care | 4.1 usd_bn (RETAIL, 2026, LOW; Mordor Intelligence) | — | 4.73 percent (NA, 2026-2031, LOW; Mordor Intelligence) |
+| colour cosmetics | 3.46 usd_bn (RETAIL, 2024, LOW; DMI) | 6.13 percent (NA, 2025, ESTIMATE; Market Research Future (derived)) | 8.41 percent (NA, FY25-FY32, LOW; Markets and Data) |
+| fragrances | 2.6 usd_bn (RETAIL, 2024, LOW; Industry (FMCG analysis via LinkedIn)) | 26.0 percent (NET_REALISATION, FY25, HIGH; Titan Company Ltd -- Q4 and FY25 Earnings Presentation (BSE/NSE regulatory filing), dated 2025-05-08) | 5.36 percent (NA, 2026-2034, LOW; IMARC Group) |
+| hair care | 4.1 usd_bn (RETAIL, 2026, LOW; Mordor Intelligence) | 4.57 percent (NA, 2025, ESTIMATE; Market Research Future (derived)) | 10.58 percent (NA, 2026-2034, LOW; IMARC Group) |
+| bath shower | 1.8 usd_bn (RETAIL, 2025, LOW; IMARC Group) | — | 3.8 percent (NA, 2026-2034, LOW; IMARC Group) |
+| deodorants | 1.0 usd_bn (RETAIL, 2025, LOW; IMARC Group) | 17.0 percent (NET_REALISATION, FY25, MEDIUM; Tracxn legal-entity financial profile (sourced from India MCA/ROC filings) -- Vini Cosmetics Pvt Ltd, maker of Fogg deodorants) | 3.1 percent (NA, 2026-2034, LOW; IMARC Group) |
+| oral care | 1.1 usd_bn (RETAIL, 2025, LOW; IMARC Group) | -5.2 percent (RETAIL, FY25, HIGH; Dabur India Ltd -- Investor Presentation Q4 FY24-25 (BSE regulatory filing), dated 2025-05-07) | 4.15 percent (NA, 2026-2034, LOW; IMARC Group) |
 | mens grooming | 186.3 inr_bn (RETAIL, 2025, HIGH; Euromonitor International) | 9.0 percent (RETAIL, 2025, HIGH; Euromonitor International) | 12.2 percent (RETAIL, 2025-2035, LOW; Future Market Insights) |
+| baby child | 4.82 usd_bn (RETAIL, 2025, LOW; IMARC Group) | 35.0 percent (NET_REALISATION, FY25, MEDIUM; dfupublications.com, quoting Rajesh Vohra (CEO, Chicco India / Artsana India), published 2025-12-31) | 9.17 percent (NA, 2026-2034, LOW; IMARC Group) |
 | dermocosmetics | 0.2803 usd_bn (RETAIL, 2024, LOW; P&S Market Research) | 60.0 percent (RETAIL, Jul-Sep 2025, MEDIUM; Nykaa quarterly earnings materials via Insight Korea) | 10.3 percent (RETAIL, 2024-2030, LOW; P&S Market Research (India Skincare Dermacosmetics)) |
+| emerging adjacencies | 2.0 usd_bn (RETAIL, 2025, LOW; IMARC Group) | 20.0 percent (NET_REALISATION, FY26, HIGH; Honasa Consumer Ltd (Mamaearth) -- Q4 and FY26 Investor Presentation, dated 2026-05-21, BSE regulatory filing) | 11.98 percent (NA, 2026-2034, LOW; IMARC Group) |
 ### India — sizing reconciliation (top-down vs bottom-up)
 - **Top-down:** 33.08 usd_bn (RETAIL, Statista (via China Briefing))- **Bottom-up:** 82038.0 inr_cr from Honasa Consumer, Hindustan Unilever, Godrej Consumer Products- **Gap:** not computed (bases not comparable) · **Publishable:** False
   - Unit/currency differ (top-down USD usd_bn vs bottom-up INR inr_cr) - convert before comparing.
@@ -73,22 +82,31 @@ Shares of summed revenue for 3 listed BRAND OWNERS (INR inr_cr, NET_REALISATION)
 | Segment | Value | Period | Basis | Confidence | Source |
 |---|---|---|---|---|---|
 | sun_care | 85.0 percent | 2023 | RETAIL | MEDIUM | Nykaa (via CosmeticsDesign-Asia, archived) |
+| emerging_adjacencies | 406.58 usd_mn | 2023 | RETAIL | LOW | Credence Research |
 | skincare | 0.14006 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
 | fragrances | 0.000135 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
 | oral_care | 0.000485 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
 | total_bpc | 0.4 usd_bn | 2024 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
 | total_bpc | 0.002055 usd_bn | 2024 | IMPORT_CIF | HIGH | UN Comtrade |
+| total_bpc | 400.0 usd_mn | 2024 | RETAIL | MEDIUM | TheBK / Beauty Kyungjae (Korean beauty trade press) |
 | total_bpc | 25.9 percent | 2024-2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
+| total_bpc | 25.9 percent | 2024-2030 | NA | MEDIUM | TheBK / Beauty Kyungjae (Korean beauty trade press) |
+| emerging_adjacencies | 10.0 percent | 2024-2032 | NA | LOW | Credence Research |
 | skincare | 44.4 usd_mn | 2025 | RETAIL | ESTIMATE | IMARC Group (derived) |
+| emerging_adjacencies | 310.0 usd_mn | 2025 | RETAIL | LOW | MarkNtel Advisors |
 | total_bpc | 3139.31 inr_cr | 2025 | RETAIL | LOW | Expert Market Research |
 | total_bpc | 0.335 usd_bn | 2026 | RETAIL | LOW | The Report Cubes |
+| emerging_adjacencies | 18.06 percent | 2026-2032 | NA | LOW | MarkNtel Advisors |
+| skincare | 11.1 percent | 2026-2033 | NA | LOW | Persistence Market Research |
 | total_bpc | 26.3 percent | 2026-2035 | RETAIL | LOW | Expert Market Research |
 | total_bpc | 1.5 usd_bn | 2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
+| total_bpc | 1.6 usd_bn | 2030 | RETAIL | MEDIUM | TheBK / Beauty Kyungjae (Korean beauty trade press) |
 | total_bpc | 32424.0 inr_cr | 2035 | RETAIL | LOW | Expert Market Research |
 | dermocosmetics | 60.0 percent | Jul-Sep 2025 | RETAIL | MEDIUM | Nykaa quarterly earnings materials via Insight Korea |
 ### Corridor trade flows (Korea → India, UN Comtrade)
 | Segment | Exports | Period | Source |
 |---|---|---|---|
+| skincare | 33.45 percent | 2024 | MFDS (식품의약품안전처) 2024 cosmetics production statistics press release, via Korea Cosmetic Association |
 | skincare | 0.065624 usd_bn | 2024 | UN Comtrade |
 | hair_care | 0.003277 usd_bn | 2024 | UN Comtrade |
 | total_bpc | 0.002497 usd_bn | 2024 | UN Comtrade |

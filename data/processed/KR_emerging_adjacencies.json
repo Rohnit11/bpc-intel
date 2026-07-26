@@ -1,7 +1,7 @@
 {
   "geography": "KR",
   "segment": "emerging_adjacencies",
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-26",
   "data_points": [
     {
       "geography": "KR",
@@ -97,6 +97,25 @@
       "confidence": "ESTIMATE",
       "methodology": "CAGR computed from the two endpoint values stated on the fetched page: KRW 0.7tn (2019) to KRW 1.0tn (2023), 4 years. (1.0/0.7)^(1/4)-1 = 9.33%. Assumptions: both endpoints same definition and same basis (not stated by source); the 4-year span is taken from the stated years, overriding the article's contradictory '3년 사이' phrasing. Sensitivity: if the span really were 3 years the CAGR is 12.6%; both endpoints are rounded to one significant figure ('약'), so on a 0.65-0.75 to 0.95-1.05 band the rate ranges 6.1-12.7%. Range 6-13%.",
       "notes": "Historical outturn, recorded as the reality check against the same source's KRW 2.0tn 2025 projection (which would require ~41% CAGR from 2023 — a 4x acceleration off this observed trend). The gap between observed and projected is the finding here, not either number alone."
+    },
+    {
+      "geography": "KR",
+      "segment": "emerging_adjacencies",
+      "sub_segment": "beauty_devices",
+      "metric": "growth_yoy",
+      "value": 44.6,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2024",
+      "period_type": "CY",
+      "value_basis": "NET_REALISATION",
+      "tier": null,
+      "source_name": "APR Corp official blog (company earnings announcement), 2025-02-10 -- 2024 annual results",
+      "source_url": "https://apr-blog.com/apr2024earning",
+      "date_accessed": "2026-07-25",
+      "confidence": "MEDIUM",
+      "methodology": null,
+      "notes": "SCOPE CAVEAT: company-level figure (APR Corp / Medicube AGE-R brand), not a category-wide beauty_devices market growth rate -- filed under emerging_adjacencies / beauty_devices sub-segment per brief guidance since no same-source two-year category series was found (category-wide snapshots from Clareate Corp and P&S Intelligence/ExpertMarketResearch conflict across years and cannot be safely combined -- do not average). APR is Koreas largest listed home beauty device player, so this is a leading-indicator proxy, not a market-wide figure. Direct quote: AGE-R beauty device division revenue KRW 312.6bn in 2024, +44.6% YoY. value_basis NET_REALISATION = company-reported consolidated segment revenue. For context only, APR total company FY2024 revenue was KRW 722.8bn (+38.0% YoY), not the value of this claim."
     }
   ]
 }

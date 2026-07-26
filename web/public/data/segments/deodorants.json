@@ -102,7 +102,19 @@
       "value_usd_bn": 1.0,
       "fx_note": "identity (no conversion)"
     },
-    "growth": null,
+    "growth": {
+      "value": 17.0,
+      "unit": "percent",
+      "currency": "INR",
+      "period": "FY25",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "Tracxn legal-entity financial profile (sourced from India MCA/ROC filings) -- Vini Cosmetics Pvt Ltd, maker of Fogg deodorants",
+      "url": "https://tracxn.com/d/legal-entities/india/vini-cosmetics-private-limited/__-x60HjqkHymaXvt00dylUXvxoMZxDIvUpOad67psKew",
+      "notes": "SCOPE CAVEAT: company-level (Vini Cosmetics Pvt Ltd, maker of Fogg -- Indias largest deodorant brand by volume share, ~15-16%), not a category-wide India deodorants market figure; used as proxy since Vini Cosmetics is a deodorant-focused company, unlike HUL/Godrej/ITC where deo is one line among many and no brand-level figure could be found in any fetchable source despite repeated attempts. Direct quote from source: VINI COSMETICS PRIVATE LIMITED generated more than INR 1,000 Cr in revenue for the financial year ending on Mar 31, 2025. The revenue has a compounded annual growth rate (CAGR) of 17% in the last 1 year. Tracxns 1-year CAGR is mathematically a single-year YoY growth rate (CAGR over exactly one year reduces to simple YoY), so this is not a CAGR-to-YoY substitution. Underlying data sourced by Tracxn from India MCA/ROC company filings; exact FY24 comparator and units not shown in free view. Corroborating datapoint, not a separate claim: McNroe Consumer Products (Wild Stone, #2 deodorant maker) shows a similar 1-year CAGR of 20% for FY25 on the same Tracxn platform -- consistent directionally, do not average. Organised-market only; no unorganised-market read implied.",
+      "metric": "growth_yoy",
+      "tier": null
+    },
     "cagr": {
       "value": 3.1,
       "unit": "percent",
@@ -168,6 +180,19 @@
         "url": "https://www.bonafideresearch.com/product/170410391/india-deodorant-market",
         "notes": "\"forecasted to grow at over 9.13% CAGR from 2024 to 2029\". Scope = spray, roll-on, gel, stick, creams, wipes, others; offline + online. No base-year value is disclosed on the teaser page, so no market_size claim is recorded from this source. Organised/unorganised coverage not stated. CONFLICT: cf IMARC 3.10% (2026-2034) and Expert Market Research 7.80% (2026-2035) — a ~3x spread between the extremes. 6Wresearch publishes the same 9.13% figure but states no year range on its page, so it is treated as the same underlying estimate rather than independent corroboration. Do not average.",
         "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": 17.0,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "FY25",
+        "value_basis": "NET_REALISATION",
+        "confidence": "MEDIUM",
+        "source": "Tracxn legal-entity financial profile (sourced from India MCA/ROC filings) -- Vini Cosmetics Pvt Ltd, maker of Fogg deodorants",
+        "url": "https://tracxn.com/d/legal-entities/india/vini-cosmetics-private-limited/__-x60HjqkHymaXvt00dylUXvxoMZxDIvUpOad67psKew",
+        "notes": "SCOPE CAVEAT: company-level (Vini Cosmetics Pvt Ltd, maker of Fogg -- Indias largest deodorant brand by volume share, ~15-16%), not a category-wide India deodorants market figure; used as proxy since Vini Cosmetics is a deodorant-focused company, unlike HUL/Godrej/ITC where deo is one line among many and no brand-level figure could be found in any fetchable source despite repeated attempts. Direct quote from source: VINI COSMETICS PRIVATE LIMITED generated more than INR 1,000 Cr in revenue for the financial year ending on Mar 31, 2025. The revenue has a compounded annual growth rate (CAGR) of 17% in the last 1 year. Tracxns 1-year CAGR is mathematically a single-year YoY growth rate (CAGR over exactly one year reduces to simple YoY), so this is not a CAGR-to-YoY substitution. Underlying data sourced by Tracxn from India MCA/ROC company filings; exact FY24 comparator and units not shown in free view. Corroborating datapoint, not a separate claim: McNroe Consumer Products (Wild Stone, #2 deodorant maker) shows a similar 1-year CAGR of 20% for FY25 on the same Tracxn platform -- consistent directionally, do not average. Organised-market only; no unorganised-market read implied.",
+        "metric": "growth_yoy",
         "tier": null
       }
     ]

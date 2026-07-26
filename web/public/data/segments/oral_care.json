@@ -168,7 +168,19 @@
       "value_usd_bn": 1.1,
       "fx_note": "identity (no conversion)"
     },
-    "growth": null,
+    "growth": {
+      "value": -5.2,
+      "unit": "percent",
+      "currency": "INR",
+      "period": "FY25",
+      "value_basis": "RETAIL",
+      "confidence": "HIGH",
+      "source": "Dabur India Ltd -- Investor Presentation Q4 FY24-25 (BSE regulatory filing), dated 2025-05-07",
+      "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3e9ddd06-c1f0-4744-9109-070398d0c551.pdf",
+      "notes": "SCOPE CAVEAT: this is Daburs own Oral Care business value growth (secondary sales, i.e. sell-through basis), not the overall India oral care category/market across all players (Colgate, HUL, etc). No clean same-source category-wide two-year series was found; filed as the best verifiable primary-source proxy per brief technique 3 (company results commentary). Organised/unorganised coverage not stated -- covers Daburs own branded secondary sales only. Deck explicitly attributes the -5.2% to a high base effect: Q4FY24 oral care had grown 22% YoY; Meswak and Dabur Herbl portfolio performed well within the segment despite the headline decline. For context only (not this claims value): Daburs oral care business grew +5.3% YoY in Q2FY25 (Jul-Sep 2024) per company concall commentary (HDFC Securities note) -- do not average across quarters into an implied annual figure, quarterly volatility is real and base-effect driven.",
+      "metric": "growth_yoy",
+      "tier": null
+    },
     "cagr": {
       "value": 4.15,
       "unit": "percent",
@@ -312,6 +324,19 @@
         "url": "https://www.researchandmarkets.com/reports/6054934/india-oral-care-market-report-product",
         "notes": "\"4.45% from 2026 to 2034\", USD 1.23bn (2025) to USD 1.82bn (2034). Organised/unorganised coverage not stated. cf IMARC 4.15% over the identical 2026-2034 window on a USD 1.1bn base — the two agree far better on rate than on level.",
         "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": -5.2,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "FY25",
+        "value_basis": "RETAIL",
+        "confidence": "HIGH",
+        "source": "Dabur India Ltd -- Investor Presentation Q4 FY24-25 (BSE regulatory filing), dated 2025-05-07",
+        "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3e9ddd06-c1f0-4744-9109-070398d0c551.pdf",
+        "notes": "SCOPE CAVEAT: this is Daburs own Oral Care business value growth (secondary sales, i.e. sell-through basis), not the overall India oral care category/market across all players (Colgate, HUL, etc). No clean same-source category-wide two-year series was found; filed as the best verifiable primary-source proxy per brief technique 3 (company results commentary). Organised/unorganised coverage not stated -- covers Daburs own branded secondary sales only. Deck explicitly attributes the -5.2% to a high base effect: Q4FY24 oral care had grown 22% YoY; Meswak and Dabur Herbl portfolio performed well within the segment despite the headline decline. For context only (not this claims value): Daburs oral care business grew +5.3% YoY in Q2FY25 (Jul-Sep 2024) per company concall commentary (HDFC Securities note) -- do not average across quarters into an implied annual figure, quarterly volatility is real and base-effect driven.",
+        "metric": "growth_yoy",
         "tier": null
       }
     ]

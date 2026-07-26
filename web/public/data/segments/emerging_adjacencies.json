@@ -17,7 +17,19 @@
       "value_usd_bn": 1.3528,
       "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
     },
-    "growth": null,
+    "growth": {
+      "value": 44.6,
+      "unit": "percent",
+      "currency": "KRW",
+      "period": "2024",
+      "value_basis": "NET_REALISATION",
+      "confidence": "MEDIUM",
+      "source": "APR Corp official blog (company earnings announcement), 2025-02-10 -- 2024 annual results",
+      "url": "https://apr-blog.com/apr2024earning",
+      "notes": "SCOPE CAVEAT: company-level figure (APR Corp / Medicube AGE-R brand), not a category-wide beauty_devices market growth rate -- filed under emerging_adjacencies / beauty_devices sub-segment per brief guidance since no same-source two-year category series was found (category-wide snapshots from Clareate Corp and P&S Intelligence/ExpertMarketResearch conflict across years and cannot be safely combined -- do not average). APR is Koreas largest listed home beauty device player, so this is a leading-indicator proxy, not a market-wide figure. Direct quote: AGE-R beauty device division revenue KRW 312.6bn in 2024, +44.6% YoY. value_basis NET_REALISATION = company-reported consolidated segment revenue. For context only, APR total company FY2024 revenue was KRW 722.8bn (+38.0% YoY), not the value of this claim.",
+      "metric": "growth_yoy",
+      "tier": null
+    },
     "cagr": {
       "value": 13.8,
       "unit": "percent",
@@ -97,6 +109,19 @@
         "notes": "Historical outturn, recorded as the reality check against the same source's KRW 2.0tn 2025 projection (which would require ~41% CAGR from 2023 — a 4x acceleration off this observed trend). The gap between observed and projected is the finding here, not either number alone.",
         "metric": "cagr_historical",
         "tier": null
+      },
+      {
+        "value": 44.6,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2024",
+        "value_basis": "NET_REALISATION",
+        "confidence": "MEDIUM",
+        "source": "APR Corp official blog (company earnings announcement), 2025-02-10 -- 2024 annual results",
+        "url": "https://apr-blog.com/apr2024earning",
+        "notes": "SCOPE CAVEAT: company-level figure (APR Corp / Medicube AGE-R brand), not a category-wide beauty_devices market growth rate -- filed under emerging_adjacencies / beauty_devices sub-segment per brief guidance since no same-source two-year category series was found (category-wide snapshots from Clareate Corp and P&S Intelligence/ExpertMarketResearch conflict across years and cannot be safely combined -- do not average). APR is Koreas largest listed home beauty device player, so this is a leading-indicator proxy, not a market-wide figure. Direct quote: AGE-R beauty device division revenue KRW 312.6bn in 2024, +44.6% YoY. value_basis NET_REALISATION = company-reported consolidated segment revenue. For context only, APR total company FY2024 revenue was KRW 722.8bn (+38.0% YoY), not the value of this claim.",
+        "metric": "growth_yoy",
+        "tier": null
       }
     ]
   },
@@ -117,7 +142,19 @@
       "value_usd_bn": 2.0,
       "fx_note": "identity (no conversion)"
     },
-    "growth": null,
+    "growth": {
+      "value": 20.0,
+      "unit": "percent",
+      "currency": "INR",
+      "period": "FY26",
+      "value_basis": "NET_REALISATION",
+      "confidence": "HIGH",
+      "source": "Honasa Consumer Ltd (Mamaearth) -- Q4 and FY26 Investor Presentation, dated 2026-05-21, BSE regulatory filing",
+      "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/effd8f4c-874e-4947-8969-6cb61c158098.pdf",
+      "notes": "SCOPE CAVEAT: company-level, consolidated across Honasas full brand portfolio (Mamaearth, The Derma Co, Aqualogica, Dr. Sheths, BBlunt, Staze, Reginald Men), not a category-wide clean/vegan market figure -- no market-wide series exists. Filed under emerging_adjacencies/clean_vegan because Mamaearth (clean, toxin-free, Made Safe-certified positioning) is Honasas flagship and largest brand and anchors the portfolios identity, though some house brands (The Derma Co, Aqualogica) are actives/dermatology-positioned rather than clean-vegan specifically. Company-stated headline: Honasa delivered 20% YoY growth in FY26 (Apr25-Mar26); Revenue from Operations INR 2,479 Cr vs INR 2,067 Cr in FY25 (internally consistent, implies 19.9%). Covers organised-market listed-company sales (ecommerce + general/modern trade) only; no unorganised-market read implied or available.",
+      "metric": "growth_yoy",
+      "tier": null
+    },
     "cagr": {
       "value": 11.98,
       "unit": "percent",
@@ -339,6 +376,19 @@
         "url": "https://www.credenceresearch.com/report/india-k-beauty-product-market",
         "notes": "[CORRIDOR] Credence: India K-beauty CAGR 10.00% 2024-2032 (USD 406.58mn 2023 to USD 959.33mn 2032). Organised/unorganised coverage not stated. cf MarkNtel 18.06% 2026-2032 — 1.8x gap, and the two size bases contradict each other outright; definitional mismatch unresolved, do not average.",
         "metric": "cagr_forecast",
+        "tier": null
+      },
+      {
+        "value": 20.0,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "FY26",
+        "value_basis": "NET_REALISATION",
+        "confidence": "HIGH",
+        "source": "Honasa Consumer Ltd (Mamaearth) -- Q4 and FY26 Investor Presentation, dated 2026-05-21, BSE regulatory filing",
+        "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/effd8f4c-874e-4947-8969-6cb61c158098.pdf",
+        "notes": "SCOPE CAVEAT: company-level, consolidated across Honasas full brand portfolio (Mamaearth, The Derma Co, Aqualogica, Dr. Sheths, BBlunt, Staze, Reginald Men), not a category-wide clean/vegan market figure -- no market-wide series exists. Filed under emerging_adjacencies/clean_vegan because Mamaearth (clean, toxin-free, Made Safe-certified positioning) is Honasas flagship and largest brand and anchors the portfolios identity, though some house brands (The Derma Co, Aqualogica) are actives/dermatology-positioned rather than clean-vegan specifically. Company-stated headline: Honasa delivered 20% YoY growth in FY26 (Apr25-Mar26); Revenue from Operations INR 2,479 Cr vs INR 2,067 Cr in FY25 (internally consistent, implies 19.9%). Covers organised-market listed-company sales (ecommerce + general/modern trade) only; no unorganised-market read implied or available.",
+        "metric": "growth_yoy",
         "tier": null
       }
     ]

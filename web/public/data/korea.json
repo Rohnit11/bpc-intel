@@ -527,7 +527,19 @@
         "value_usd_bn": 0.7469,
         "fx_note": "identity (no conversion)"
       },
-      "growth": null,
+      "growth": {
+        "value": 6.21,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2024",
+        "value_basis": "PRODUCTION",
+        "confidence": "ESTIMATE",
+        "source": "MFDS (Korea Ministry of Food and Drug Safety) press release, 2025-05-27 -- 2024 cosmetics production and export statistics (record high)",
+        "url": "https://kcia.or.kr/inc/down.php?dir=BOARD&file_name=202505_174830652594232_2.pdf&rename=5.27+%ED%99%94%EC%9E%A5%ED%92%88%EC%A0%95%EC%B1%85%EA%B3%BC.pdf",
+        "notes": "SCOPE CAVEAT: PRODUCTION basis (factory-gate output value), not retail sell-through -- per rule 4 do not present as retail growth. USD equiv at pinned USD/KRW 1478.40: 2023 approx US 56.68mn, 2024 approx US 60.20mn (via fx tool). Source is MFDS official type classification (13 cosmetic types under Korean cosmetics law); PDF mirrored via KCIA industry association but content is the unmodified official MFDS press release.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
       "cagr": {
         "value": 3.55,
         "unit": "percent",
@@ -605,7 +617,19 @@
         "value_usd_bn": 1.3528,
         "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
       },
-      "growth": null,
+      "growth": {
+        "value": 44.6,
+        "unit": "percent",
+        "currency": "KRW",
+        "period": "2024",
+        "value_basis": "NET_REALISATION",
+        "confidence": "MEDIUM",
+        "source": "APR Corp official blog (company earnings announcement), 2025-02-10 -- 2024 annual results",
+        "url": "https://apr-blog.com/apr2024earning",
+        "notes": "SCOPE CAVEAT: company-level figure (APR Corp / Medicube AGE-R brand), not a category-wide beauty_devices market growth rate -- filed under emerging_adjacencies / beauty_devices sub-segment per brief guidance since no same-source two-year category series was found (category-wide snapshots from Clareate Corp and P&S Intelligence/ExpertMarketResearch conflict across years and cannot be safely combined -- do not average). APR is Koreas largest listed home beauty device player, so this is a leading-indicator proxy, not a market-wide figure. Direct quote: AGE-R beauty device division revenue KRW 312.6bn in 2024, +44.6% YoY. value_basis NET_REALISATION = company-reported consolidated segment revenue. For context only, APR total company FY2024 revenue was KRW 722.8bn (+38.0% YoY), not the value of this claim.",
+        "metric": "growth_yoy",
+        "tier": null
+      },
       "cagr": {
         "value": 13.8,
         "unit": "percent",
@@ -684,7 +708,7 @@
       "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
       "Bottom-up base is inflated by non-pure-play conglomerates (LG H&H) reporting non-BPC revenue."
     ],
-    "date": "2026-07-25",
+    "date": "2026-07-26",
     "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
   }
 }

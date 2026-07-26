@@ -1,6 +1,6 @@
 {
   "segment": "colour_cosmetics",
-  "generated_at": "2026-07-24T16:40:00Z",
+  "generated_at": "2026-07-26T00:00:00Z",
   "KR": {
     "read": "Korea's colour cosmetics now has both a domestic anchor and a trade figure, on three distinct bases that must not be conflated. Domestic production (MFDS via Personal Care Insights/REACH24H) is KRW 2.68tn in 2024 and KRW 2.84tn in 2025 (MEDIUM, PRODUCTION basis) — roughly 15-16% of Korea's total cosmetics output. Retail-basis market sizes are two conflicting LOW aggregator estimates (Expert Market Research US$2.86bn 2025 vs Market Research Future US$2.22bn 2024). Exports are US$1.51bn (2025, EXPORT_FOB, HIGH, MFDS via Yonhap).",
     "trend": "Production growth was a striking +51.4% YoY in 2024 (MEDIUM, PRODUCTION) — an output surge, not necessarily domestic demand — moderating to lipstick/liner production +13.5% in 2025. Exports grew +12% YoY 2025 (HIGH). Retail forecast CAGRs are 5.9-6.2% (LOW). Production, export, and retail growth measure different things and should be read separately.",
@@ -8,7 +8,7 @@
   },
   "IN": {
     "read": "India's colour_cosmetics market size is put at US$3.46bn for 2024 (RETAIL/MRP-inclusive basis, LOW confidence, source DMI). A separate figure puts the mass tier at 79.55% of colour_cosmetics market share for 2025 (RETAIL basis, LOW confidence, Mordor Intelligence), suggesting the segment is currently mass-tier dominated by this estimate. New sub-segment sizings (face_makeup ~US$1.89bn, lip_colour ~US$1.39bn, nail ~US$0.83bn, 2024, MRFF LOW) now give a rough internal breakdown.",
-    "trend": "No whole-segment growth_yoy figure is present for India colour_cosmetics. The market-size note references a forecast CAGR of ~7.08%, and a lipstick-only sub read shows ~9.6% CAGR (TechSci/Markets and Data) — both forward-looking forecasts, not observed growth.",
+    "trend": "A growth_yoy figure now exists but is not an independent observed rate: derived from two consecutive Market Research Future values (US$5.55bn 2024 to US$5.89bn 2025), it works out to +6.13% (ESTIMATE confidence) — essentially the same number as MRF's own 6.18% forecast CAGR, since the 2025 value is modelled off that CAGR rather than separately observed. No independently-observed growth_yoy exists for India colour_cosmetics. Forecast CAGRs from other sources span 6.18-8.41% (LOW), and a lipstick-only sub read shows ~9.6% CAGR (TechSci/Markets and Data) — all forward-looking, not observed growth.",
     "caveats": "India figures are LOW-confidence aggregator estimates; the segment total and the sub-segment splits come from different houses on different definitions, so the parts will not sum cleanly to the whole, and organised-vs-unorganised coverage is unstated."
   },
   "combined": {

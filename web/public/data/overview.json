@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-25",
+  "generated": "2026-07-26",
   "korea": {
     "headline": {
       "geography": "KR",
@@ -528,7 +528,19 @@
           "value_usd_bn": 0.7469,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
+        "growth": {
+          "value": 6.21,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2024",
+          "value_basis": "PRODUCTION",
+          "confidence": "ESTIMATE",
+          "source": "MFDS (Korea Ministry of Food and Drug Safety) press release, 2025-05-27 -- 2024 cosmetics production and export statistics (record high)",
+          "url": "https://kcia.or.kr/inc/down.php?dir=BOARD&file_name=202505_174830652594232_2.pdf&rename=5.27+%ED%99%94%EC%9E%A5%ED%92%88%EC%A0%95%EC%B1%85%EA%B3%BC.pdf",
+          "notes": "SCOPE CAVEAT: PRODUCTION basis (factory-gate output value), not retail sell-through -- per rule 4 do not present as retail growth. USD equiv at pinned USD/KRW 1478.40: 2023 approx US 56.68mn, 2024 approx US 60.20mn (via fx tool). Source is MFDS official type classification (13 cosmetic types under Korean cosmetics law); PDF mirrored via KCIA industry association but content is the unmodified official MFDS press release.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 3.55,
           "unit": "percent",
@@ -606,7 +618,19 @@
           "value_usd_bn": 1.3528,
           "fx_note": "inverse of USD/KRW=1478.4 (2026-07-21)"
         },
-        "growth": null,
+        "growth": {
+          "value": 44.6,
+          "unit": "percent",
+          "currency": "KRW",
+          "period": "2024",
+          "value_basis": "NET_REALISATION",
+          "confidence": "MEDIUM",
+          "source": "APR Corp official blog (company earnings announcement), 2025-02-10 -- 2024 annual results",
+          "url": "https://apr-blog.com/apr2024earning",
+          "notes": "SCOPE CAVEAT: company-level figure (APR Corp / Medicube AGE-R brand), not a category-wide beauty_devices market growth rate -- filed under emerging_adjacencies / beauty_devices sub-segment per brief guidance since no same-source two-year category series was found (category-wide snapshots from Clareate Corp and P&S Intelligence/ExpertMarketResearch conflict across years and cannot be safely combined -- do not average). APR is Koreas largest listed home beauty device player, so this is a leading-indicator proxy, not a market-wide figure. Direct quote: AGE-R beauty device division revenue KRW 312.6bn in 2024, +44.6% YoY. value_basis NET_REALISATION = company-reported consolidated segment revenue. For context only, APR total company FY2024 revenue was KRW 722.8bn (+38.0% YoY), not the value of this claim.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 13.8,
           "unit": "percent",
@@ -685,7 +709,7 @@
         "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
         "Bottom-up base is inflated by non-pure-play conglomerates (LG H&H) reporting non-BPC revenue."
       ],
-      "date": "2026-07-25",
+      "date": "2026-07-26",
       "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
     }
   },
@@ -850,7 +874,7 @@
           "confidence": "LOW",
           "source": "DMI",
           "url": null,
-          "notes": "Forecast CAGR 7.08%",
+          "notes": "Forecast CAGR 7.08%. CONFLICT, previously undocumented: Market Research Future puts India colour cosmetics at USD 5.55bn (2024, see companion claim) — 60% higher on the same nominal period; Markets and Data puts it at USD 4.80bn (FY24) — 39% higher. No shared definition confirmed across the three; do not average.",
           "metric": "market_size",
           "tier": null,
           "value_usd_bn": 3.46,
@@ -901,7 +925,19 @@
           "value_usd_bn": 2.6,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
+        "growth": {
+          "value": 26.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY25",
+          "value_basis": "NET_REALISATION",
+          "confidence": "HIGH",
+          "source": "Titan Company Ltd -- Q4 and FY25 Earnings Presentation (BSE/NSE regulatory filing), dated 2025-05-08",
+          "url": "https://www.titancompany.in/sites/default/files/2025-05/Q4FY25%20-%20Earnings%20presentation%20Uploaded.pdf",
+          "notes": "SCOPE CAVEAT: company-level (Titans Fragrances division -- SKINN and Fastrack Perfumes brands), not a category-wide India fragrances market figure. Direct quote from source (Emerging Businesses: Quarterly Performance slide): Fragrances recorded a good growth of c.26% YoY primarily led by healthy growth in Fastrack perfumes; overall volume growth in both SKINN and Fastrack was in high double-digits. Period is Q4FY25 (Jan-Mar 2025). Fragrances sits within Titans Emerging Businesses division (blended division Total Income INR 102 Cr in Q4FY25, +5.2% YoY, which also includes Womens Bags +10% and Taneira -4%) -- Fragrances-specific absolute INR revenue not separately disclosed, only the YoY %. Organised-market only (listed company); Titan describes itself as Indias Leading Fine Fragrances Brand.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 5.36,
           "unit": "percent",
@@ -928,7 +964,7 @@
           "confidence": "LOW",
           "source": "Mordor Intelligence",
           "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-          "notes": "India hair care; 'skinification' shift to actives/serums",
+          "notes": "'Hair care products market' valued USD 4.1bn in 2026, to USD 5.19bn by 2031. Cross-ref IMARC USD 4.30bn 2025 (similar base, divergent forecasts). Source attributes the trajectory to a 'skinification' shift toward actives and serums.",
           "metric": "market_size",
           "tier": null,
           "value_usd_bn": 4.1,
@@ -948,15 +984,15 @@
           "tier": null
         },
         "cagr": {
-          "value": 4.73,
+          "value": 10.58,
           "unit": "percent",
           "currency": "USD",
-          "period": "2026-2031",
+          "period": "2026-2034",
           "value_basis": "NA",
           "confidence": "LOW",
-          "source": "Mordor Intelligence",
-          "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-          "notes": "India hair care forecast CAGR",
+          "source": "IMARC Group",
+          "url": "https://www.imarcgroup.com/india-haircare-market",
+          "notes": "USD 4.30bn 2025 to USD 11.49bn 2034. Outlier vs Mordor 4.73% (2026-2031) — do not use without reconciliation.",
           "metric": "cagr_forecast",
           "tier": null
         },
@@ -1012,7 +1048,19 @@
           "value_usd_bn": 1.0,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
+        "growth": {
+          "value": 17.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY25",
+          "value_basis": "NET_REALISATION",
+          "confidence": "MEDIUM",
+          "source": "Tracxn legal-entity financial profile (sourced from India MCA/ROC filings) -- Vini Cosmetics Pvt Ltd, maker of Fogg deodorants",
+          "url": "https://tracxn.com/d/legal-entities/india/vini-cosmetics-private-limited/__-x60HjqkHymaXvt00dylUXvxoMZxDIvUpOad67psKew",
+          "notes": "SCOPE CAVEAT: company-level (Vini Cosmetics Pvt Ltd, maker of Fogg -- Indias largest deodorant brand by volume share, ~15-16%), not a category-wide India deodorants market figure; used as proxy since Vini Cosmetics is a deodorant-focused company, unlike HUL/Godrej/ITC where deo is one line among many and no brand-level figure could be found in any fetchable source despite repeated attempts. Direct quote from source: VINI COSMETICS PRIVATE LIMITED generated more than INR 1,000 Cr in revenue for the financial year ending on Mar 31, 2025. The revenue has a compounded annual growth rate (CAGR) of 17% in the last 1 year. Tracxns 1-year CAGR is mathematically a single-year YoY growth rate (CAGR over exactly one year reduces to simple YoY), so this is not a CAGR-to-YoY substitution. Underlying data sourced by Tracxn from India MCA/ROC company filings; exact FY24 comparator and units not shown in free view. Corroborating datapoint, not a separate claim: McNroe Consumer Products (Wild Stone, #2 deodorant maker) shows a similar 1-year CAGR of 20% for FY25 on the same Tracxn platform -- consistent directionally, do not average. Organised-market only; no unorganised-market read implied.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 3.1,
           "unit": "percent",
@@ -1045,7 +1093,19 @@
           "value_usd_bn": 1.1,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
+        "growth": {
+          "value": -5.2,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY25",
+          "value_basis": "RETAIL",
+          "confidence": "HIGH",
+          "source": "Dabur India Ltd -- Investor Presentation Q4 FY24-25 (BSE regulatory filing), dated 2025-05-07",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3e9ddd06-c1f0-4744-9109-070398d0c551.pdf",
+          "notes": "SCOPE CAVEAT: this is Daburs own Oral Care business value growth (secondary sales, i.e. sell-through basis), not the overall India oral care category/market across all players (Colgate, HUL, etc). No clean same-source category-wide two-year series was found; filed as the best verifiable primary-source proxy per brief technique 3 (company results commentary). Organised/unorganised coverage not stated -- covers Daburs own branded secondary sales only. Deck explicitly attributes the -5.2% to a high base effect: Q4FY24 oral care had grown 22% YoY; Meswak and Dabur Herbl portfolio performed well within the segment despite the headline decline. For context only (not this claims value): Daburs oral care business grew +5.3% YoY in Q2FY25 (Jul-Sep 2024) per company concall commentary (HDFC Securities note) -- do not average across quarters into an implied annual figure, quarterly volatility is real and base-effect driven.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 4.15,
           "unit": "percent",
@@ -1123,7 +1183,19 @@
           "value_usd_bn": 4.82,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
+        "growth": {
+          "value": 35.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY25",
+          "value_basis": "NET_REALISATION",
+          "confidence": "MEDIUM",
+          "source": "dfupublications.com, quoting Rajesh Vohra (CEO, Chicco India / Artsana India), published 2025-12-31",
+          "url": "https://www.dfupublications.com/index.php/news/apparel/chicco-india-eyes-50-store-milestone-as-baby-care-market-hits-4-9-billion",
+          "notes": "SCOPE CAVEAT: company-level (Chicco India / Artsana India Pvt Ltd -- strollers, feeding, baby care products), not a category-wide India baby_child market figure. Direct quote: Operating since 2009, it recorded over 35 per cent growth last fiscal year (CEO Rajesh Vohra), with momentum well above 20 per cent in the current year also noted. Value recorded here (35.0%) is the stated floor/minimum -- source says over 35%, exact figure not disclosed, true growth may be higher. Period read as FY25 (Apr24-Mar25), the most recently completed full fiscal year as of the Dec-2025 publication date; source does not give an explicit date beyond last fiscal year. Organised, premium/imported baby-products segment only -- no unorganised-market read implied. A Tracxn profile (MCA filing based) for Artsana India Pvt Ltd was checked but only showed a revenue band (INR 100-500 Cr) in the free view, not exact FY24/FY25 figures, so no independent two-year same-source cross-check was possible; do not treat as corroborated by that source.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 9.17,
           "unit": "percent",
@@ -1201,7 +1273,19 @@
           "value_usd_bn": 2.0,
           "fx_note": "identity (no conversion)"
         },
-        "growth": null,
+        "growth": {
+          "value": 20.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY26",
+          "value_basis": "NET_REALISATION",
+          "confidence": "HIGH",
+          "source": "Honasa Consumer Ltd (Mamaearth) -- Q4 and FY26 Investor Presentation, dated 2026-05-21, BSE regulatory filing",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/effd8f4c-874e-4947-8969-6cb61c158098.pdf",
+          "notes": "SCOPE CAVEAT: company-level, consolidated across Honasas full brand portfolio (Mamaearth, The Derma Co, Aqualogica, Dr. Sheths, BBlunt, Staze, Reginald Men), not a category-wide clean/vegan market figure -- no market-wide series exists. Filed under emerging_adjacencies/clean_vegan because Mamaearth (clean, toxin-free, Made Safe-certified positioning) is Honasas flagship and largest brand and anchors the portfolios identity, though some house brands (The Derma Co, Aqualogica) are actives/dermatology-positioned rather than clean-vegan specifically. Company-stated headline: Honasa delivered 20% YoY growth in FY26 (Apr25-Mar26); Revenue from Operations INR 2,479 Cr vs INR 2,067 Cr in FY25 (internally consistent, implies 19.9%). Covers organised-market listed-company sales (ecommerce + general/modern trade) only; no unorganised-market read implied or available.",
+          "metric": "growth_yoy",
+          "tier": null
+        },
         "cagr": {
           "value": 11.98,
           "unit": "percent",
@@ -1287,7 +1371,7 @@
         "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
         "Bottom-up base is inflated by non-pure-play conglomerates (Godrej Consumer Products, Hindustan Unilever) reporting non-BPC revenue."
       ],
-      "date": "2026-07-25",
+      "date": "2026-07-26",
       "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
     }
   },
@@ -1635,6 +1719,20 @@
         "segment": "total_bpc"
       },
       {
+        "value": 400.0,
+        "unit": "usd_mn",
+        "currency": "USD",
+        "period": "2024",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "TheBK / Beauty Kyungjae (Korean beauty trade press)",
+        "url": "https://www.thebk.co.kr/news/articleView.html?idxno=306792",
+        "notes": "[CORRIDOR] K-beauty products consumed in India, USD 400M in 2024, extracted from the same TheBK/Beauty Kyungjae article as the per-capita-spend claims already on file (not previously promoted to its own claim). This is India-side retail sizing of K-beauty demand, not Korea's export FOB flow (contrast with the UN Comtrade KR-to-IN export_value claims filed under KR segments). Value basis not stated by source; assumed consumer sell-through. Sits well below The Report Cubes' USD 0.335bn (2026) and Expert Market Research's INR 3139.31cr (2025, ~USD 0.335bn) K-beauty-in-India figures already on file — directionally consistent (same order of magnitude, later base year is higher), not a conflict. Organised/unorganised coverage not stated. Cross-segment corridor estimate (not attributable to a single taxonomy segment on this source), filed under total_bpc.",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
         "value": 25.9,
         "unit": "percent",
         "currency": "USD",
@@ -1644,6 +1742,20 @@
         "source": "Economic Times Retail (consulting estimate)",
         "url": "https://retail.economictimes.indiatimes.com/news/health-and-beauty/indias-k-beauty-market-forecast-15-billion-by-2030/123190386",
         "notes": "[CORRIDOR] K-beauty in India forecast CAGR 2024-2030",
+        "metric": "cagr_forecast",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 25.9,
+        "unit": "percent",
+        "currency": "USD",
+        "period": "2024-2030",
+        "value_basis": "NA",
+        "confidence": "MEDIUM",
+        "source": "TheBK / Beauty Kyungjae (Korean beauty trade press)",
+        "url": "https://www.thebk.co.kr/news/articleView.html?idxno=306792",
+        "notes": "[CORRIDOR] K-beauty-in-India forecast growth rate 2024-2030. cf Expert Market Research 26.3% CAGR (2026-2035) and The Report Cubes 19.17% CAGR (to 2034) already on file — all cluster in the 19-26% range for K-beauty-in-India growth, a useful convergence despite different vendors and windows.",
         "metric": "cagr_forecast",
         "tier": null,
         "segment": "total_bpc"
@@ -1770,6 +1882,20 @@
         "source": "Economic Times Retail (consulting estimate)",
         "url": "https://retail.economictimes.indiatimes.com/news/health-and-beauty/indias-k-beauty-market-forecast-15-billion-by-2030/123190386",
         "notes": "[CORRIDOR] K-beauty in India, 2030 forecast",
+        "metric": "market_size",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 1.6,
+        "unit": "usd_bn",
+        "currency": "USD",
+        "period": "2030",
+        "value_basis": "RETAIL",
+        "confidence": "MEDIUM",
+        "source": "TheBK / Beauty Kyungjae (Korean beauty trade press)",
+        "url": "https://www.thebk.co.kr/news/articleView.html?idxno=306792",
+        "notes": "[CORRIDOR] FORECAST VALUE: K-beauty products consumed in India, projected USD 1.6bn by 2030 (from USD 400M 2024), per the same article as the paired 2024 market_size claim. cf Expert Market Research INR 32,424cr by 2035 (already on file, ~USD 3.37bn at the pinned rate) for a later, larger horizon on a similar growth trajectory. Value basis assumed consumer sell-through, not stated by source.",
         "metric": "market_size",
         "tier": null,
         "segment": "total_bpc"

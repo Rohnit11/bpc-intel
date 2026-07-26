@@ -412,7 +412,7 @@
         "confidence": "LOW",
         "source": "IMARC",
         "url": null,
-        "notes": "Skincare/sun care share of total BPC",
+        "notes": "Skincare/sun care share of total BPC. NOT COMPARABLE to Grand View Research's 49% (narrower 'cosmetics' basket denominator, not total BPC) or IMA Pro's 40% (a mass-TIER brand share within skincare, not a category share of BPC) — three different metrics that happen to land in a similar 35-49% range; do not treat as convergent estimates of the same thing.",
         "metric": "market_share",
         "tier": null
       },
@@ -425,7 +425,7 @@
         "confidence": "LOW",
         "source": "Grand View Research",
         "url": null,
-        "notes": "Share of narrower 'cosmetics' basket, not full BPC",
+        "notes": "Share of narrower 'cosmetics' basket, not full BPC. NOT COMPARABLE to IMARC's 35% (a wider total-BPC denominator) or IMA Pro's 40% (a mass-TIER brand share within skincare, not a category share) — three different metrics that happen to land in a similar 35-49% range; do not treat as convergent estimates of the same thing.",
         "metric": "market_share",
         "tier": null
       },
@@ -529,7 +529,7 @@
         "confidence": "LOW",
         "source": "IMA Pro research",
         "url": "https://gaurav.imapro.in/research/india-skincare-market-report",
-        "notes": "Mass tier (<Rs200) share; Pond's, Nivea, Himalaya, Lakme, Garnier",
+        "notes": "Mass tier (<Rs200) share; Pond's, Nivea, Himalaya, Lakme, Garnier. NOT COMPARABLE to IMARC's 35% (skincare's share of total BPC) or Grand View Research's 49% (share of a narrower 'cosmetics' basket) — this is a mass-tier brand share within skincare, a different metric entirely; the three happen to land in a similar 35-49% range but are not convergent estimates of the same thing.",
         "metric": "market_share",
         "tier": "mass"
       },

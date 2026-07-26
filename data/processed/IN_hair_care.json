@@ -1,7 +1,7 @@
 {
   "geography": "IN",
   "segment": "hair_care",
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-26",
   "data_points": [
     {
       "geography": "IN",
@@ -40,44 +40,6 @@
       "confidence": "HIGH",
       "methodology": null,
       "notes": "HS 3305 India imports from China (UN Comtrade, CIF USD)."
-    },
-    {
-      "geography": "IN",
-      "segment": "hair_care",
-      "sub_segment": null,
-      "metric": "market_size",
-      "value": 4.1,
-      "unit": "usd_bn",
-      "currency": "USD",
-      "period": "2026",
-      "period_type": "CY",
-      "value_basis": "RETAIL",
-      "tier": null,
-      "source_name": "Mordor Intelligence",
-      "source_url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-      "date_accessed": "2026-07-23",
-      "confidence": "LOW",
-      "methodology": null,
-      "notes": "India hair care; 'skinification' shift to actives/serums"
-    },
-    {
-      "geography": "IN",
-      "segment": "hair_care",
-      "sub_segment": null,
-      "metric": "cagr_forecast",
-      "value": 4.73,
-      "unit": "percent",
-      "currency": "USD",
-      "period": "2026-2031",
-      "period_type": "range",
-      "value_basis": "NA",
-      "tier": null,
-      "source_name": "Mordor Intelligence",
-      "source_url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-      "date_accessed": "2026-07-23",
-      "confidence": "LOW",
-      "methodology": null,
-      "notes": "India hair care forecast CAGR"
     },
     {
       "geography": "IN",
@@ -134,7 +96,7 @@
       "date_accessed": "2026-07-24",
       "confidence": "LOW",
       "methodology": null,
-      "notes": "'Hair care products market' valued USD 4.1bn in 2026, to USD 5.19bn by 2031. Cross-ref IMARC USD 4.30bn 2025 (similar base, divergent forecasts)."
+      "notes": "'Hair care products market' valued USD 4.1bn in 2026, to USD 5.19bn by 2031. Cross-ref IMARC USD 4.30bn 2025 (similar base, divergent forecasts). Source attributes the trajectory to a 'skinification' shift toward actives and serums."
     },
     {
       "geography": "IN",
@@ -267,7 +229,7 @@
       "date_accessed": "2026-07-24",
       "confidence": "LOW",
       "methodology": null,
-      "notes": "India HAIR SERUM market (repair serums largest type; 6.43% of global). Mapped to scalp_care per skinification axis — definitional overlap with conditioners_treatments. Forecast USD 317.12mn by 2034."
+      "notes": "India HAIR SERUM market (repair serums largest type; 6.43% of global). Mapped to scalp_care per skinification axis — definitional overlap with conditioners_treatments. Forecast USD 317.12mn by 2034. CONFLICT, previously undocumented: IMARC's India hair growth products figure (USD 824.8mn 2025, same period, see companion claim) runs 5.3x higher in the same scalp_care bucket — the two source different (and non-overlapping) product definitions; do not average or treat as convergent."
     },
     {
       "geography": "IN",
@@ -305,7 +267,7 @@
       "date_accessed": "2026-07-24",
       "confidence": "LOW",
       "methodology": null,
-      "notes": "India HAIR GROWTH PRODUCTS market (broader than RedSeer's alopecia-driven USD 267mn 2023 — includes general anti-hairfall products). Forecast USD 1,124.1mn by 2034, CAGR 3.33% (2026-2034). Definitional mismatch with RedSeer; do not merge."
+      "notes": "India HAIR GROWTH PRODUCTS market (broader than RedSeer's alopecia-driven USD 267mn 2023 — includes general anti-hairfall products). Forecast USD 1,124.1mn by 2034, CAGR 3.33% (2026-2034). Definitional mismatch with RedSeer; do not merge. Also 5.3x Deep Market Insights' hair-serum figure (USD 155.16mn 2025, same period, see companion claim) in the same scalp_care bucket — different product definitions, do not average or treat as convergent."
     },
     {
       "geography": "IN",

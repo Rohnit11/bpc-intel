@@ -8,64 +8,8 @@
     "suggested_source": "euromonitor_passport, bmi_research, statista"
   },
   {
-    "geography": "KR",
-    "segment": "baby_child",
-    "sub_segment": null,
-    "metric": "growth_yoy",
-    "status": "segment has ['cagr_forecast', 'market_size'] only",
-    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
-  },
-  {
-    "geography": "KR",
-    "segment": "emerging_adjacencies",
-    "sub_segment": null,
-    "metric": "growth_yoy",
-    "status": "segment has ['cagr_forecast', 'cagr_historical', 'market_size'] only",
-    "suggested_source": "euromonitor_passport, korea_mfds, tavily"
-  },
-  {
-    "geography": "IN",
-    "segment": "fragrances",
-    "sub_segment": null,
-    "metric": "growth_yoy",
-    "status": "segment has ['cagr_forecast', 'import_dependence', 'import_value', 'market_size', 'revenue'] only",
-    "suggested_source": "euromonitor_passport, tavily"
-  },
-  {
     "geography": "IN",
     "segment": "bath_shower",
-    "sub_segment": null,
-    "metric": "growth_yoy",
-    "status": "segment has ['cagr_forecast', 'market_size'] only",
-    "suggested_source": "euromonitor_passport, tavily"
-  },
-  {
-    "geography": "IN",
-    "segment": "deodorants",
-    "sub_segment": null,
-    "metric": "growth_yoy",
-    "status": "segment has ['cagr_forecast', 'market_size'] only",
-    "suggested_source": "euromonitor_passport, tavily"
-  },
-  {
-    "geography": "IN",
-    "segment": "oral_care",
-    "sub_segment": null,
-    "metric": "growth_yoy",
-    "status": "segment has ['cagr_forecast', 'import_value', 'market_size'] only",
-    "suggested_source": "euromonitor_passport, tavily"
-  },
-  {
-    "geography": "IN",
-    "segment": "baby_child",
-    "sub_segment": null,
-    "metric": "growth_yoy",
-    "status": "segment has ['cagr_forecast', 'market_size'] only",
-    "suggested_source": "euromonitor_passport, tavily"
-  },
-  {
-    "geography": "IN",
-    "segment": "emerging_adjacencies",
     "sub_segment": null,
     "metric": "growth_yoy",
     "status": "segment has ['cagr_forecast', 'market_size'] only",

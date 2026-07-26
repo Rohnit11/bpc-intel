@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-25",
+  "generated": "2026-07-26",
   "segments": [
     {
       "segment": "total_bpc",
@@ -119,6 +119,19 @@
           "url": "https://redseer.com/digests/quick-commerce-and-bpc-strategy-in-india/",
           "notes": "Channel: quick-commerce — BPC YoY growth within q-commerce ~140% (period stated as latest year in digest, taken as CY25; non-grocery growing ~1.6x faster than grocery). Cross-reference: 120%+ FY26 figure from same firm's Habit or Desire article.",
           "metric": "growth_yoy",
+          "tier": null
+        },
+        {
+          "value": 25.9,
+          "unit": "percent",
+          "currency": "USD",
+          "period": "2024-2030",
+          "value_basis": "NA",
+          "confidence": "MEDIUM",
+          "source": "TheBK / Beauty Kyungjae (Korean beauty trade press)",
+          "url": "https://www.thebk.co.kr/news/articleView.html?idxno=306792",
+          "notes": "[CORRIDOR] K-beauty-in-India forecast growth rate 2024-2030. cf Expert Market Research 26.3% CAGR (2026-2035) and The Report Cubes 19.17% CAGR (to 2034) already on file — all cluster in the 19-26% range for K-beauty-in-India growth, a useful convergence despite different vendors and windows.",
+          "metric": "cagr_forecast",
           "tier": null
         }
       ],
@@ -792,6 +805,19 @@
           "notes": "TechSci: India perfumes & deodorants USD 1,540.32mn (2024) to USD 2,965.62mn (2030), CAGR 11.54%. SCOPE CAVEAT: perfumes AND deodorants combined. cf IMARC 10.26% (2026-2034) on a USD 2,890.8mn (2025) base — ~1.9x gap on the size base, definitional mismatch unresolved, do not average. Page discusses organised retail expansion but does not state whether the sizing itself covers unorganised trade.",
           "metric": "cagr_forecast",
           "tier": null
+        },
+        {
+          "value": 26.0,
+          "unit": "percent",
+          "currency": "INR",
+          "period": "FY25",
+          "value_basis": "NET_REALISATION",
+          "confidence": "HIGH",
+          "source": "Titan Company Ltd -- Q4 and FY25 Earnings Presentation (BSE/NSE regulatory filing), dated 2025-05-08",
+          "url": "https://www.titancompany.in/sites/default/files/2025-05/Q4FY25%20-%20Earnings%20presentation%20Uploaded.pdf",
+          "notes": "SCOPE CAVEAT: company-level (Titans Fragrances division -- SKINN and Fastrack Perfumes brands), not a category-wide India fragrances market figure. Direct quote from source (Emerging Businesses: Quarterly Performance slide): Fragrances recorded a good growth of c.26% YoY primarily led by healthy growth in Fastrack perfumes; overall volume growth in both SKINN and Fastrack was in high double-digits. Period is Q4FY25 (Jan-Mar 2025). Fragrances sits within Titans Emerging Businesses division (blended division Total Income INR 102 Cr in Q4FY25, +5.2% YoY, which also includes Womens Bags +10% and Taneira -4%) -- Fragrances-specific absolute INR revenue not separately disclosed, only the YoY %. Organised-market only (listed company); Titan describes itself as Indias Leading Fine Fragrances Brand.",
+          "metric": "growth_yoy",
+          "tier": null
         }
       ],
       "imports": {
@@ -953,24 +979,11 @@
         "confidence": "LOW",
         "source": "Mordor Intelligence",
         "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-        "notes": "India hair care; 'skinification' shift to actives/serums",
+        "notes": "'Hair care products market' valued USD 4.1bn in 2026, to USD 5.19bn by 2031. Cross-ref IMARC USD 4.30bn 2025 (similar base, divergent forecasts). Source attributes the trajectory to a 'skinification' shift toward actives and serums.",
         "metric": "market_size",
         "tier": null
       },
       "growth": [
-        {
-          "value": 4.73,
-          "unit": "percent",
-          "currency": "USD",
-          "period": "2026-2031",
-          "value_basis": "NA",
-          "confidence": "LOW",
-          "source": "Mordor Intelligence",
-          "url": "https://www.mordorintelligence.com/industry-reports/india-hair-care-and-styling-products-market-industry",
-          "notes": "India hair care forecast CAGR",
-          "metric": "cagr_forecast",
-          "tier": null
-        },
         {
           "value": 10.58,
           "unit": "percent",

@@ -1,7 +1,7 @@
 {
   "geography": "IN",
   "segment": "colour_cosmetics",
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-26",
   "data_points": [
     {
       "geography": "IN",
@@ -20,7 +20,7 @@
       "date_accessed": "2026-07-21",
       "confidence": "LOW",
       "methodology": null,
-      "notes": "Forecast CAGR 7.08%"
+      "notes": "Forecast CAGR 7.08%. CONFLICT, previously undocumented: Market Research Future puts India colour cosmetics at USD 5.55bn (2024, see companion claim) — 60% higher on the same nominal period; Markets and Data puts it at USD 4.80bn (FY24) — 39% higher. No shared definition confirmed across the three; do not average."
     },
     {
       "geography": "IN",
@@ -96,7 +96,7 @@
       "date_accessed": "2026-07-24",
       "confidence": "LOW",
       "methodology": null,
-      "notes": "2025: USD 5.89bn; 2035: USD 10.73bn. Conflicts with Markets and Data USD 4.80bn FY24 (see companion claim). MRFF page shows template-like breakdowns; treat cautiously."
+      "notes": "2025: USD 5.89bn; 2035: USD 10.73bn. Conflicts with Markets and Data USD 4.80bn FY24 (see companion claim) and, previously undocumented, with DMI USD 3.46bn 2024 (see companion claim) — 60% lower on the same nominal period. MRFF page shows template-like breakdowns; treat cautiously."
     },
     {
       "geography": "IN",

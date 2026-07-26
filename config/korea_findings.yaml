@@ -1,0 +1,94 @@
+# config/korea_findings.yaml
+# Qualitative Korea BPC findings: supply chain/ODM-OEM, retail channels,
+# competitive structure, consumer demand drivers, and export orientation.
+# Sourced from fresh web research (WebSearch to find candidates, WebFetch to
+# verify against the live page itself -- a search snippet alone was never
+# treated as sufficient), accessed 2026-07-26. data/raw/ Korean content
+# (DART filings, Comtrade trade data) is structured, not narrative, so this
+# file has no raw/ mining precursor the way india_findings.yaml did.
+# Mirrors india_findings.yaml's shape and rules: each item is qualitative
+# context with a source and exact URL. Quantitative facts (market sizes,
+# shares, growth rates, prices, revenue) are DataPoints, not here (see
+# lib/ingest and data/sources.csv) -- notable figures are mentioned in prose
+# for context only, never as the finding itself.
+#
+# Per CLAUDE.md rules 11-12: Korea's domestic retail (~US$13bn), export FOB
+# (~US$11.4bn), and production value (KRW17.9tn) are three distinct measures
+# and are never conflated here. Duty-free is treated as its own channel
+# throughout, not folded into domestic retail.
+
+supply_chain:
+  - text: "Korea's ODM manufacturers (Cosmax, Kolmar Korea, Cosmecca and the wider ecosystem) function as manufacturing platforms that let an entrepreneur launch a brand without owning a factory or holding chemistry expertise -- an indie brand like Beauty of Joseon 'doesn't invent new molecules,' it sources formulation from the ODM and puts its own resources into trend identification, ingredient storytelling and packaging design instead."
+    source: "Georgetown Journal of International Affairs (Munseob Lee)"
+    url: "https://gjia.georgetown.edu/business-economics/the-k-beauty-trinity-manufacturing-logistics-and-the-rise-of-the-indie-brand/"
+  - text: "Korean ODMs can take a product from concept to shelf in under six months, versus years for a legacy Western brand, and now accept batches as small as 1,000 units -- collapsing the minimum-scale requirement that used to gate entry, and letting ODM-scale economies deliver what the author calls 'masstige' (prestige-grade quality at mass prices) for a brand that owns no manufacturing of its own."
+    source: "Georgetown Journal of International Affairs (Munseob Lee)"
+    url: "https://gjia.georgetown.edu/business-economics/the-k-beauty-trinity-manufacturing-logistics-and-the-rise-of-the-indie-brand/"
+  - text: "Sharing the same K-beauty demand boom does not guarantee the same profitability for Korea's big ODMs: Kolmar Korea posted a record operating margin as profit grew faster than revenue, while Cosmax's revenue grew faster than its operating profit, because newer clients tend to bring smaller, more frequent orders that run less efficiently for the manufacturer -- the same order-book growth can read as strength or as margin dilution depending on customer mix."
+    source: "Korea Biomedical Review"
+    url: "https://www.koreabiomed.com/news/articleView.html?idxno=31643"
+  - text: "Cosmecca Korea's growth was unusually lopsided by geography: both revenue and profit grew fastest among the big three ODMs on the strength of domestic Korean skincare demand and its U.S. operations, even as its China business contracted -- a sign that ODM fortunes are now tracking the same US/Europe pivot reshaping Korean brand exports, not China."
+    source: "Korea Biomedical Review"
+    url: "https://www.koreabiomed.com/news/articleView.html?idxno=31643"
+
+channels:
+  - text: "Olive Young controls more than 85% of South Korea's health-and-beauty store market through over 1,380 stores nationwide -- a concentration high enough that, because it controls where Korean consumers discover skincare, the retailer effectively decides which brands get shelf-driven scale and which stay niche; the piece describes it as having become 'less a store and more a kingmaker.'"
+    source: "Seoulz"
+    url: "https://www.seoulz.com/olive-young-global-2026/"
+  - text: "Olive Young's home-market dominance gives it leverage over the entire supply chain, functioning less like a retailer and more like an incubator that spots hits via real-time merchandising data -- a moat strong enough that Sephora and Ulta reportedly raced to lock up exclusive deals with major Korean brands specifically to blunt Olive Young's own overseas expansion."
+    source: "Seoulz"
+    url: "https://www.seoulz.com/olive-young-global-2026/"
+  - text: "Korea's beauty retail has structurally flipped from offline- to online-led in five years: e-commerce's share of Korea's cosmetics market rose from 39.1% in 2019 to 60.8% in 2024, with offline's share falling by the same margin in reverse -- a reversal significant enough that even legacy luxury houses (Chanel, Prada and Nars among those named) are now expanding onto Korean e-commerce platforms rather than staying department-store-first."
+    source: "Korea JoongAng Daily"
+    url: "https://www.koreajoongangdaily.com/business/global-luxury-beauty-brands-transform-strategy-with-ecommerce-push/12773721"
+  - text: "Luxury beauty brands frame their Korean e-commerce push as defensive as much as opportunistic: one industry source ties it directly to K-beauty's domestic rise, saying the category's growth 'has weakened brand loyalty toward overseas beauty brands, particularly among consumers in their 20s and 30s, making it necessary to secure new sales channels,' while a global beauty brand representative separately values Korea as a testing ground because 'consumers respond quickly to new products.'"
+    source: "Korea JoongAng Daily"
+    url: "https://www.koreajoongangdaily.com/business/global-luxury-beauty-brands-transform-strategy-with-ecommerce-push/12773721"
+  - text: "Live commerce has become a distinct beauty-specific channel layered on top of e-commerce and Olive Young: hosts demonstrate texture and application on camera and answer viewer questions in real time, which the format's proponents say resolves a shopper 'confidence gap' that static product pages can't -- and a live broadcast specifically on Olive Young is treated as a credibility signal ('shelf-placement legitimacy') for a foreign brand, not just a sales event."
+    source: "Seoulz"
+    url: "https://www.seoulz.com/korea-live-commerce-2026/"
+  - text: "The Chinese daigou (bulk-reseller) channel that once anchored Korean duty-free cosmetics sales is a genuinely distinct channel from domestic retail, and its decline has three compounding causes rather than one: younger Chinese travelers have shifted to independent travel and moved past a 'duty free equals bargain equals must-buy' mindset; the same Korean goods are now buyable on Chinese e-commerce or in China's own expanding duty-free zones (including a new island-wide zone on Hainan); and Beijing has directly cracked down on the daigou trade itself while expanding domestic alternatives to it."
+    source: "The Korea Times"
+    url: "https://www.koreatimes.co.kr/economy/20260114/why-are-chinese-tourists-no-longer-spending-big-in-duty-free-shops"
+  - text: "Duty-free's daigou channel is volatile and margin-driven rather than in simple one-way decline: Lotte Duty Free halted sales to Chinese bulk resellers in January 2025 to protect margins, then reversed course five months later once overall sales suffered and rival operators Shilla and Shinsegae kept serving daigou anyway -- Lotte now frames its return as selective, doing daigou deals 'only when profitability is assured' rather than chasing volume the way it did pre-pandemic, when daigou made up roughly half of duty-free sales."
+    source: "KED Global"
+    url: "https://www.kedglobal.com/travel-leisure/newsView/ked202509230011"
+
+competitive_structure:
+  - text: "AmorePacific and LG H&H's long-standing domestic duopoly is being challenged from below: both conglomerates have 'ceded market leadership' in growth terms to fast-rising challengers APR (Medicube's parent) and Goodai Global, and industry commentary now frames K-beauty's global success as defined by 'a growing number of smaller companies with competitive brands' rather than by the two incumbents."
+    source: "The Korea Times"
+    url: "https://www.koreatimes.co.kr/business/companies/20260721/amorepacific-lg-hh-streamline-portfolios-amid-rise-of-indie-k-beauty-brands"
+  - text: "Both incumbents are responding to indie-brand pressure by shedding non-cosmetics assets to refocus capital: AmorePacific is selling its Anseong health-supplement plant to 'manage our assets more efficiently,' and LG H&H is divesting its Haitai HTB beverage subsidiary to 'restructure our strategic portfolio' -- both moves read as freeing up capital to acquire indie brands and reinvest in cosmetics rather than raising cash for its own sake."
+    source: "The Korea Times"
+    url: "https://www.koreatimes.co.kr/business/companies/20260721/amorepacific-lg-hh-streamline-portfolios-amid-rise-of-indie-k-beauty-brands"
+  - text: "APR's rise past LG H&H (and its narrowing gap with AmorePacific) is attributed to structural agility rather than scale: its outsourced-manufacturing model supports small launches that pivot quickly to social-media-driven trends, and its e-commerce-first approach caught the US online shift that AmorePacific and LG H&H -- both historically offline-channel-heavy -- were slow to move on; legacy conglomerates are also described as carrying higher minimum production runs and being slower to discontinue underperforming products because of sunk costs."
+    source: "KED Global"
+    url: "https://www.kedglobal.com/beauty-cosmetics/newsView/ked202507270003"
+  - text: "The conglomerates have swapped the domestic #1 spot before: LG H&H overtook AmorePacific during the pandemic because its non-beauty product spread (toothpaste, detergent) buffered the shock, while AmorePacific's heavier reliance on physical stores and foreign-tourist footfall left it exposed -- it closed 661 brand stores between late 2018 and mid-2020 -- and LG H&H additionally out-executed AmorePacific in China's Singles' Day luxury sales over the same period, a precedent for how quickly relative position can shift when a channel or region turns."
+    source: "The Korea Herald"
+    url: "https://www.koreaherald.com/article/2555975"
+  - text: "AmorePacific's own leadership frames its response to indie competition as deliberately not racing indie brands to shelf speed: its CEO is quoted questioning indie sustainability ('they are sometimes only a few months old') and the company is described as playing a patient '10-year strategy' -- leaning on 400+ in-house researchers, owned ingredient farms, dermacosmetics retail education, and international expansion (17 European countries, Amazon) rather than competing on launch speed."
+    source: "BeautyMatter (Janna Mandell)"
+    url: "https://beautymatter.com/articles/k-beauty-showdown-amorepacific-ceo-reveals-steady-strategy"
+
+demand_drivers:
+  - text: "Domestic Korean skincare demand is shifting toward 'medical ingredient' skincare -- actives like PDRN, exosomes and tranexamic acid that read as clinically proven and dermatologist-trusted are mainstreaming -- alongside a stated expectation that efficacy alone is no longer enough: brands are also expected to deliver a distinctive sensory user experience, not just results."
+    source: "BeautyMatter (Janna Mandell)"
+    url: "https://beautymatter.com/articles/2026-k-beauty-forecast-top-7-data-backed-trends"
+  - text: "Korean beauty demand is blurring category lines in two directions at once: colour cosmetics (CC creams, concealers, tinted moisturizers) are being reformulated with active skincare ingredients so makeup does double duty as treatment, while skincare-style actives and routines are simultaneously migrating into hair and scalp care -- extending 'skinification' logic across categories rather than keeping it confined to the face."
+    source: "BeautyMatter (Janna Mandell)"
+    url: "https://beautymatter.com/articles/2026-k-beauty-forecast-top-7-data-backed-trends"
+  - text: "Alongside efficacy, Korean consumers are described as wanting products with 'playful cute design,' collectible packaging and a joyful brand experience, plus -- as a climate-linked trend -- formulations that deliver an immediate cooling sensation on the skin, signalling that functional/clinical positioning and playful sensory design are both live demand levers at once, not substitutes for each other."
+    source: "BeautyMatter (Janna Mandell)"
+    url: "https://beautymatter.com/articles/2026-k-beauty-forecast-top-7-data-backed-trends"
+
+export_orientation:
+  - text: "Korea's cosmetics export mix flipped in 2025: the United States became Korea's largest cosmetics export market for the first time, overtaking China (long the dominant destination), while exports to Europe were accelerating even faster through early 2026 -- a geographic reorientation an industry analyst expects to put Europe in the lead export-market position by the end of 2026. These are export figures specifically and should not be read as Korea's domestic retail size."
+    source: "Korea JoongAng Daily"
+    url: "https://www.koreajoongangdaily.com/business/are-indie-brands-kbeautys-chance-to-challenge-francenbsp/12727439"
+  - text: "Indie brands (APR, d'Alba, Beauty of Joseon, Anua and SKIN1004 among those named) are described as the engine of this export pivot, going direct to Western consumers via Amazon, TikTok Shop and other digital platforms rather than the department-store and offline-retail relationships the conglomerates built their earlier export era on -- the same social-first, e-commerce-first playbook pressuring the conglomerates at home is what's winning them share abroad."
+    source: "Korea JoongAng Daily"
+    url: "https://www.koreajoongangdaily.com/business/are-indie-brands-kbeautys-chance-to-challenge-francenbsp/12727439"
+  - text: "A Korea Federation of Small and Medium Business survey of roughly 1,300 firms found strong majorities of both cosmetics and bio/medical firms positive on 2026 export prospects, citing new product launches, quality gains, market diversification and favourable exchange rates as growth drivers -- but firms flagged China's low-price competitive strategy and tariff uncertainty as live headwinds, and are asking government for expanded export vouchers, tariff diplomacy and help with foreign regulatory compliance."
+    source: "The Korea Herald"
+    url: "https://www.koreaherald.com/article/10640820"

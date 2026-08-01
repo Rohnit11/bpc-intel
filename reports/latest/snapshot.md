@@ -1,5 +1,5 @@
 # BPC Market Intelligence Snapshot — South Korea × India
-*Generated 2026-07-26 · every figure traces to data/sources.csv · basis and confidence shown inline*
+*Generated 2026-08-01 · every figure traces to data/sources.csv · basis and confidence shown inline*
 
 ---
 

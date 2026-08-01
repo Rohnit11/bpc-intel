@@ -8,7 +8,9 @@ and a vector store. Instead it emits two retrieval surfaces:
                 url, period). A question like "India sunscreen market size"
                 should hit an exact fact, not a paraphrase of one.
   passages[]  — prose chunks (analyst reads, Porter rationales, RTM channel
-                notes, risks, qualitative findings) for the "why/how"
+                notes, risks, qualitative findings, plus heading-chunked
+                sections of the baseline research report, generated
+                reports/latest briefs, and docs/*.md) for the "why/how"
                 questions that no single DataPoint answers.
 
 Structured-first retrieval is the point: paraphrasing a number through a
@@ -19,6 +21,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from datetime import date
 from pathlib import Path
 
@@ -32,12 +35,18 @@ logger = logging.getLogger("bpc_intel.chat_index")
 INSIGHTS_DIR = PROJECT_ROOT / "data" / "manual" / "insights"
 ANALYSIS_DIR = PROJECT_ROOT / "data" / "manual" / "analysis"
 CONFIG_DIR = PROJECT_ROOT / "config"
+BASELINE_REPORT = PROJECT_ROOT / "data" / "baseline" / "deep-research-report.md"
+REPORTS_DIR = PROJECT_ROOT / "reports" / "latest"
+DOCS_DIR = PROJECT_ROOT / "docs"
 
 _SEGMENTS = [
     "skincare", "sun_care", "colour_cosmetics", "fragrances", "hair_care",
     "bath_shower", "deodorants", "oral_care", "mens_grooming", "baby_child",
     "dermocosmetics", "emerging_adjacencies", "total_bpc",
 ]
+# "total_bpc" reads as "total market" in prose and would tag nearly every
+# heading in the corpus — too generic to be a useful retrieval signal.
+_TAGGABLE_SEGMENTS = [s for s in _SEGMENTS if s != "total_bpc"]
 
 _GEO_NAME = {"KR": "South Korea", "IN": "India"}
 
@@ -99,6 +108,105 @@ def _passage(pid: str, title: str, text: str, ref: str, **extra) -> dict:
             "source_ref": ref, **extra}
 
 
+_HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$")
+
+
+def _split_markdown_sections(text: str) -> list[tuple[list[str], str]]:
+    """Split markdown into (heading_path, body) chunks at every heading line.
+
+    heading_path is the stack of enclosing heading titles by level, e.g.
+    ["2. South Korea Deep Dive", "2.1 The domestic market..."]. A heading
+    with no body text before its next (sub)heading is dropped — it's a pure
+    section header (or a parent whose only content is its subsections), not
+    indexable content on its own.
+    """
+    stack: list[tuple[int, str]] = []  # (level, title)
+    sections: list[tuple[list[str], str]] = []
+    body: list[str] = []
+
+    def flush() -> None:
+        joined = "\n".join(body).strip()
+        if joined:
+            sections.append(([title for _, title in stack], joined))
+        body.clear()
+
+    for line in text.splitlines():
+        m = _HEADING_RE.match(line)
+        if not m:
+            body.append(line)
+            continue
+        flush()
+        level = len(m.group(1))
+        while stack and stack[-1][0] >= level:
+            stack.pop()
+        stack.append((level, m.group(2).strip()))
+    flush()
+    return sections
+
+
+def _slug(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:60] or "section"
+
+
+def _md_geography(heading_path: list[str]) -> str | None:
+    """Geography signal from a chunk's own heading, inherited from its
+    nearest ancestor heading that actually states one. Corridor/K-beauty
+    headings are treated as inherently cross-cutting (never geo-tagged),
+    matching how config/corridor.yaml's own passages are never geo-tagged
+    below. A heading naming BOTH countries stops the climb — a section that
+    is explicitly comparative shouldn't inherit a single-country tag from an
+    ancestor further up.
+    """
+    for title in reversed(heading_path):
+        low = title.lower()
+        if "corridor" in low or "k-beauty" in low or "kbeauty" in low:
+            return None
+        has_kr, has_in = "korea" in low, "india" in low
+        if has_kr and has_in:
+            return None
+        if has_kr:
+            return "KR"
+        if has_in:
+            return "IN"
+    return None
+
+
+def _md_segment(heading: str) -> str | None:
+    """Segment signal from a chunk's own (deepest) heading only — no
+    inheritance, since a segment-named parent with generic-titled children
+    doesn't occur in this corpus and climbing risks mistagging a child that
+    covers a different segment. Requires exactly one distinct segment to
+    appear, so a heading spanning several segments is left untagged rather
+    than pinned to an arbitrary one."""
+    low = heading.lower()
+    hits = {s for s in _TAGGABLE_SEGMENTS if s.replace("_", " ") in low}
+    return hits.pop() if len(hits) == 1 else None
+
+
+def _markdown_passages(path: Path, id_prefix: str) -> list[dict]:
+    """Chunk one long-form markdown file by heading into prose passages."""
+    text = path.read_text(encoding="utf-8")
+    rel = path.relative_to(PROJECT_ROOT).as_posix()
+    out: list[dict] = []
+    for i, (heading_path, body) in enumerate(_split_markdown_sections(text)):
+        if heading_path:
+            crumbs = heading_path[1:][-2:]
+            title = f"{heading_path[0]} — {' › '.join(crumbs)}" if crumbs else heading_path[0]
+            anchor = _slug(heading_path[-1])
+        else:
+            title = path.stem.replace("-", " ").replace("_", " ")
+            anchor = _slug(path.stem)
+        kwargs: dict = {}
+        geo = _md_geography(heading_path)
+        if geo:
+            kwargs["geography"] = geo
+        seg = _md_segment(heading_path[-1]) if heading_path else None
+        if seg:
+            kwargs["segment"] = seg
+        out.append(_passage(f"{id_prefix}_{i}", title, body, f"{rel}#{anchor}", **kwargs))
+    return out
+
+
 def build_passages() -> list[dict]:
     """Prose chunks: analyst reads, analysis rationales, qualitative findings."""
     out: list[dict] = []
@@ -136,18 +244,27 @@ def build_passages() -> list[dict]:
                 continue
             out.extend(_passages_from_analysis(rel, data))
 
-    # --- Qualitative config findings ---
-    findings_path = CONFIG_DIR / "india_findings.yaml"
-    if findings_path.exists():
+    # --- Qualitative config findings: config/{name}_findings.yaml, globbed
+    # (not named) so korea_findings.yaml / corridor_findings.yaml / any future
+    # geography or theme's findings file is picked up with no code change. ---
+    for findings_path in sorted(CONFIG_DIR.glob("*_findings.yaml")):
+        stem = findings_path.stem  # e.g. "korea_findings"
+        key = stem.removesuffix("_findings")
+        geo = {"india": "IN", "korea": "KR"}.get(key)  # corridor -> None: cross-cutting
+        # Use the full geography name ("South Korea") so _passage()'s dedup
+        # check (below) recognises it's already in the title and doesn't
+        # append a second, redundant-looking "(South Korea)" suffix.
+        label = _GEO_NAME.get(geo, key.replace("_", " ").title())
+        geo_kwargs = {"geography": geo} if geo else {}
         findings = yaml.safe_load(findings_path.read_text(encoding="utf-8")) or {}
         for topic, items in findings.items():
             for i, item in enumerate(items or []):
                 out.append(_passage(
-                    f"finding_{topic}_{i}",
-                    f"India finding — {topic.replace('_',' ')}",
+                    f"finding_{stem}_{topic}_{i}",
+                    f"{label} finding — {topic.replace('_',' ')}",
                     f"{item.get('text','')} (Source: {item.get('source','')})",
-                    f"config/india_findings.yaml#{topic}",
-                    geography="IN"))
+                    f"config/{findings_path.name}#{topic}",
+                    **geo_kwargs))
 
     corridor_path = CONFIG_DIR / "corridor.yaml"
     if corridor_path.exists():
@@ -172,6 +289,21 @@ def build_passages() -> list[dict]:
                 f"Corridor conduit — {c.get('name')}",
                 f"{c.get('notes','')} Brands carried: {brands}",
                 "config/corridor.yaml#conduits"))
+
+    # --- Long-form markdown, chunked by heading (not indexed as one blob):
+    # the founding baseline research, generated reports/latest briefs, and
+    # process docs. Deliberately excludes data/raw/ — those are structured
+    # fetcher dumps (DART/Comtrade/gtrends JSON); indexing them as prose
+    # would flood retrieval with meaningless fragments, and their figures
+    # already exist as governed facts[] with basis/confidence attached. ---
+    if BASELINE_REPORT.exists():
+        out.extend(_markdown_passages(BASELINE_REPORT, "baseline"))
+    if REPORTS_DIR.exists():
+        for path in sorted(REPORTS_DIR.glob("*.md")):
+            out.extend(_markdown_passages(path, f"report_{path.stem}"))
+    if DOCS_DIR.exists():
+        for path in sorted(DOCS_DIR.glob("*.md")):
+            out.extend(_markdown_passages(path, f"doc_{path.stem}"))
 
     logger.info("Indexed %d passages", len(out))
     return out

@@ -1,5 +1,5 @@
 # K-beauty Corridor Brief — Korea → India
-*Generated 2026-08-01 · K-beauty inside India is a first-class research axis (config/corridor.yaml)*
+*Generated 2026-08-10 · K-beauty inside India is a first-class research axis (config/corridor.yaml)*
 
 ## The corridor in one line
 ~US$50m (H1 2025 basis), +44.7% YoY — small base, fast growth

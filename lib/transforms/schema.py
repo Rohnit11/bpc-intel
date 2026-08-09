@@ -33,6 +33,11 @@ class DataPoint(BaseModel):
         "operating_margin",    # operating profit / revenue, %
         "adspend_ratio",       # advertising & promotion / revenue, %
         "trade_margin",        # distributor + retailer markup, %
+        # Price-band metrics (premium-skincare thread). Both are SKU-population
+        # statistics, NOT market statistics: they describe an assortment sample,
+        # so they must never be read as market share or as a trade margin.
+        "assortment_share",    # share of a SKU population meeting a condition, %
+        "discount_depth",      # discount off list price, %
     ]
     value: float
     unit: str                           # "usd_bn", "krw_tn", "inr_cr", "percent", "usd", "inr"

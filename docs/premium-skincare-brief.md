@@ -172,6 +172,18 @@ discipline — do not carry findings between sessions in chat.**
 ### Phase 1 — Supply & competitive set: who is in the band, at what price?
 **Answers Q1 + the "who's already there" question.** Highest leverage, run first.
 
+> **DONE 2026-08-09. Output: `docs/premium-skincare-phase1.md`.** Read that, not
+> this section, for what was found. Headline: the band **holds** online — 79.6%
+> (Nykaa) / 87.3% (Tira) of in-band-by-MRP SKUs still transact in-band, median
+> discount 10%. Kill condition not met. The real risk is the **floor**:
+> retention is 50% for SKUs listing at Rs1,500-1,750 but 97% at Rs2,000-2,500.
+> Korean sunscreen — a hero product — sits against that floor and retains only
+> 41.7%. Phase 2 should assume a Rs1,900+ list price, not Rs1,500-1,700.
+> Two corrections to this brief's own assumptions are recorded there: the named
+> homegrown D2C brands are absent above Rs1,200 (only Forest Essentials and Kama
+> Ayurveda hold the band, at 100% of list), and the competitive set is 64 brands,
+> not the 33 named below.
+
 Three brand groups, all of them, not just Korean:
 - **Korean** — start from `config/corridor.yaml` (Anua, Beauty of Joseon, COSRX,
   Innisfree, Laneige, Etude, Medicube, TirTir, Mixsoon, Hince, Dr. Melaxin,
@@ -306,8 +318,13 @@ Only after there is real data to show.
 |---|---|---|
 | Quantitative claims | `data/sources.csv` (mandatory) | `[PREMIUM-SKIN]` in notes |
 | Qualitative findings | `config/premium_skin_fit_findings.yaml` | — |
+| Phase 1 prices + verdict | `data/manual/analysis/premium_skin_band.json`, `docs/premium-skincare-phase1.md` | `[PREMIUM-SKIN]` |
 | Entry analysis | `data/manual/analysis/premium_skin_entry.json` | — |
 | Dashboard | `web/app/premium-skincare/` | — |
+
+Phase 1 also added two re-runnable scripts: `lib/fetchers/premium_skin_prices.py`
+(Nykaa/Tira/Amazon price sweep, ~25 min) and `lib/transforms/premium_skin_band.py`
+(band arithmetic). Re-run both off-sale before Phase 4 prices anything.
 
 Nothing here overwrites corridor or skincare files. The `[PREMIUM-SKIN]` tag
 mirrors the existing `[CORRIDOR]` convention so this thread stays filterable and

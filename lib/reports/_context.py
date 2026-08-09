@@ -25,6 +25,50 @@ _SEGMENTS = [
 ]
 
 
+# A brief summarises; the ledger enumerates. A single price sweep can add
+# hundreds of SKU-level observations, which would turn the value-chain brief's
+# pricing section into a product catalogue. Past this many points a segment
+# collapses to a per-basis summary plus a sample, and readers are pointed at
+# data/sources.csv for the full set.
+PRICE_SAMPLE_LIMIT = 8
+
+
+def _price_view(points: list[DataPoint]) -> dict:
+    """A bounded view of a segment's retail prices.
+
+    Args:
+        points: That segment's retail_price DataPoints, in ledger order.
+
+    Returns:
+        {"examples": [...], "summary": [...], "omitted": int}. Under the limit
+        every point is an example and the summary is empty, so small segments
+        render exactly as before. Over it, the summary reports how many points
+        exist and the span they cover, grouped by (currency, value_basis) —
+        never across bases, per CLAUDE.md rule 3. Only count and span are
+        reported: these are query-driven assortment samples, not a census, so a
+        central figure would invite being quoted as "the" price.
+    """
+    if len(points) <= PRICE_SAMPLE_LIMIT:
+        return {"examples": [_fmt(dp) for dp in points], "summary": [], "omitted": 0}
+
+    groups: dict[tuple[str, str], list[DataPoint]] = {}
+    for dp in points:
+        groups.setdefault((dp.currency, dp.value_basis), []).append(dp)
+
+    summary = []
+    for (currency, basis), grp in sorted(groups.items()):
+        values = sorted(dp.value for dp in grp)
+        summary.append({
+            "currency": currency, "value_basis": basis, "unit": grp[0].unit,
+            "count": len(grp), "low": values[0], "high": values[-1],
+        })
+    return {
+        "examples": [_fmt(dp) for dp in points[:PRICE_SAMPLE_LIMIT]],
+        "summary": summary,
+        "omitted": len(points) - PRICE_SAMPLE_LIMIT,
+    }
+
+
 def _fmt(dp: DataPoint) -> dict:
     """Flatten a DataPoint to a template-friendly dict."""
     return {
@@ -157,7 +201,7 @@ def india_value_chain_context() -> dict:
             "growth": [_fmt(dp) for dp in pts if dp.metric in ("growth_yoy", "cagr_forecast")],
             "imports": imports,
             "import_dependence": next((_fmt(dp) for dp in pts if dp.metric == "import_dependence"), None),
-            "prices": [_fmt(dp) for dp in pts if dp.metric == "retail_price"],
+            "prices": _price_view([dp for dp in pts if dp.metric == "retail_price"]),
             "margins": [_fmt(dp) for dp in pts if dp.metric in ("gross_margin",)],
         })
 

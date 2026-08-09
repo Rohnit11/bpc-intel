@@ -92,13 +92,36 @@ SKU observations, Medicube 21, COSRX 16, Beauty of Joseon 16, Mixsoon 14, The
 Face Shop 13. The deck's "competitive intensity: Low" reading does not survive
 contact with the shelf — see §5.
 
-**(b) The named homegrown D2C brands are not in this band at all.** Of 29
-homegrown SKUs at Rs1,200+, **Forest Essentials (15) and Kama Ayurveda (12)
-account for 27**; Minimalist contributes one SKU and Plum one. Minimalist, Dot &
-Key, Foxtale, Pilgrim, Deconstruct and Earth Rhythm are essentially absent above
-Rs1,200. The Indian brands that *are* in the band are premium Ayurveda, they
-hold **100% of list price**, and they discount nothing. That is a different
-competitor with a different model, not a D2C price fight.
+**(b) Not one named Indian D2C brand sells a single product inside this band.**
+This is the sharpest finding in Phase 1 and it is categorical, not directional.
+Zero single-unit SKUs from Minimalist, Dot & Key, Foxtale, Pilgrim, Plum,
+Deconstruct or Earth Rhythm list anywhere inside Rs1,500-3,000. Their ceilings:
+
+| Brand | Highest single-SKU MRP observed |
+|---|---|
+| Minimalist | Rs1,347 (Dark Spots Solution) |
+| Deconstruct | Rs799 |
+| Pilgrim / Foxtale | Rs695 |
+| Dot & Key / Earth Rhythm | Rs599 |
+
+They reach the band **only by bundling**: all 12 observations of these brands
+above Rs1,500 are multi-product combos — Minimalist Glow & Repair Combo
+(cleanser + serum + moisturiser + sunscreen + eye cream, Rs2,395), Minimalist
+Tranexamic Acid Serum "Combo of 3" (Rs1,947), Pilgrim Retinol Night Cream "Pack
+of 3" (Rs1,950), Dot & Key CSMS Combo (Rs1,734). A basket is not a price point,
+and a Rs2,395 five-product combo is a Rs479 product.
+
+The Indian brands that hold the band with single SKUs are premium Ayurveda —
+Forest Essentials (15 SKUs ≥Rs1,200) and Kama Ayurveda (12) — at **100% of list
+price, zero discount**. That is a different competitor with a different model,
+not a D2C price fight.
+
+**Read against Q3, this cuts both ways.** The band is not being closed
+domestically by the D2C names the brief worried about: they are a full price
+tier below it and get there only by stapling products together. But the reason
+may be that Indian consumers will pay Rs1,500+ for a *routine*, not for one
+bottle — which is an argument for the range-led launch the brief already
+specifies, and against a hero-SKU-first entry.
 
 **(c) The band contains many brands the brief never named** — 92 in-band SKU
 observations, 28% of the total, across 40 brands. By in-band SKU count: Celimax (6), RAS Luxury
@@ -237,6 +260,27 @@ membership of the SKU.
 - **Nothing here says anyone is making money at these prices.** Retention is a
   price-realisation statistic, not a margin statistic. Phase 4 owns the P&L.
 
+### Coverage gaps in the named set (2 of 33 brands)
+
+Stated plainly rather than papered over, since a standing gap is information:
+
+- **Some By Mi (Korean) — not covered.** Nykaa failed to render its page on
+  every attempt (`ERR_HTTP2_PROTOCOL_ERROR` on retry, after two full sweeps had
+  already run — most likely rate limiting on our side, not absence of stock).
+  Tira's brand query returned products but none attributable to the brand. The
+  only observations are 7 Amazon marketplace listings at Rs999-3,905 street,
+  all with seller-set MRPs excluded as untrusted. **No conclusion should be
+  drawn about whether Nykaa or Tira stock this brand.** Re-run the fetcher for
+  this one brand when Nykaa is not rate-limiting.
+- **Limese (homegrown) — not observed.** Brand queries returned results on both
+  platforms, but none attributable to Limese, so the platform served fallback
+  matches. Consistent with the brand not being carried under that name, but not
+  evidence of it.
+
+Neither gap moves the headline: both brands contribute zero in-band SKUs to a
+population of 327, and the D2C finding in §2(b) is unaffected because Limese's
+absence cannot create a single-SKU listing where none was found.
+
 ## 7. Where the data lives
 
 | Artifact | Path |
@@ -273,5 +317,9 @@ have made it read as a market statistic it is not. No existing data is affected.
    domestic competitor in-band** — but it does have an unnamed one (RAS, Suganda,
    BiE, Yuderma, Biluma, Ethiglo). Phase 2's complaint mining should cover those
    listings, not only the Korean ones.
+5. **Test the routine-vs-SKU question in Phase 2/3.** Indian D2C reaches
+   Rs1,500-3,000 only by bundling (§2b). If the Indian premium buyer pays that
+   for a multi-step routine rather than one bottle, the launch set matters more
+   than the hero SKU, and the brief's range-led framing is already right.
 4. **Watch the platform, not just the brand.** MRP differs by platform on the
    same pack, and Amazon leaks ~20% below the authorised channel.

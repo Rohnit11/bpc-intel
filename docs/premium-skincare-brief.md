@@ -179,10 +179,11 @@ discipline — do not carry findings between sessions in chat.**
 > retention is 50% for SKUs listing at Rs1,500-1,750 but 97% at Rs2,000-2,500.
 > Korean sunscreen — a hero product — sits against that floor and retains only
 > 41.7%. Phase 2 should assume a Rs1,900+ list price, not Rs1,500-1,700.
-> Two corrections to this brief's own assumptions are recorded there: the named
-> homegrown D2C brands are absent above Rs1,200 (only Forest Essentials and Kama
-> Ayurveda hold the band, at 100% of list), and the competitive set is 64 brands,
-> not the 33 named below.
+> Two corrections to this brief's own assumptions are recorded there: **not one
+> named Indian D2C brand sells a single SKU inside the band** — they reach it
+> only via multi-product combos, and only Forest Essentials and Kama Ayurveda
+> hold it with real SKUs, at 100% of list — and the competitive set is 64
+> brands, not the 33 named below. Coverage gaps: Some By Mi and Limese.
 
 Three brand groups, all of them, not just Korean:
 - **Korean** — start from `config/corridor.yaml` (Anua, Beauty of Joseon, COSRX,

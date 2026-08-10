@@ -34,6 +34,15 @@ data/manual/*
 # Entry-analysis artifacts likewise (see commands/entry-analysis.md)
 !data/manual/analysis/
 !data/manual/analysis/**
+# Research drops stay ignored as a class (the ledger is data/sources.csv), with
+# one exception: the premium-skincare Phase 3 drop is committed so its 14
+# externally-sourced claims — Nykaa filings, the MOFSL note, the affordability
+# ESTIMATEs and their methodology — are diffable next to the phase doc that
+# argues from them. Re-ignoring the directory contents on the line below keeps
+# the other drops out; drop the `*` line to track them all.
+!data/manual/research_drops/
+data/manual/research_drops/*
+!data/manual/research_drops/premium_skin_demand.json
 
 # Report archives — regenerable dev churn
 reports/archive/

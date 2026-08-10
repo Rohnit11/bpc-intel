@@ -1,0 +1,3968 @@
+{
+  "coverage": {
+    "skus_targeted": 109,
+    "skus_with_any_review": 95,
+    "skus_with_zero_reviews": 14,
+    "skus_errored": 0,
+    "reviews_analysed": 3287,
+    "reviews_negative_frame": 651,
+    "reviews_most_useful_frame": 2676,
+    "reviews_with_declared_skin_tone": 1275,
+    "reviews_with_declared_skin_type": 1352,
+    "verified_buyer_share_pct": 100.0
+  },
+  "rating_distribution": {
+    "skus_with_reviews": 95,
+    "overall": {
+      "counts": {
+        "1": 484,
+        "2": 259,
+        "3": 547,
+        "4": 1796,
+        "5": 8700
+      },
+      "written_reviews": 11786,
+      "negative_1_2_star": 743,
+      "negative_share_pct": 6.3
+    },
+    "by_brand_group": {
+      "other_observed": {
+        "counts": {
+          "1": 77,
+          "2": 44,
+          "3": 84,
+          "4": 289,
+          "5": 2155
+        },
+        "written_reviews": 2649,
+        "negative_1_2_star": 121,
+        "negative_share_pct": 4.6
+      },
+      "korean": {
+        "counts": {
+          "1": 337,
+          "2": 174,
+          "3": 416,
+          "4": 1388,
+          "5": 6109
+        },
+        "written_reviews": 8424,
+        "negative_1_2_star": 511,
+        "negative_share_pct": 6.1
+      },
+      "other_foreign": {
+        "counts": {
+          "1": 48,
+          "2": 20,
+          "3": 20,
+          "4": 52,
+          "5": 166
+        },
+        "written_reviews": 306,
+        "negative_1_2_star": 68,
+        "negative_share_pct": 22.2
+      },
+      "homegrown": {
+        "counts": {
+          "1": 22,
+          "2": 21,
+          "3": 27,
+          "4": 67,
+          "5": 270
+        },
+        "written_reviews": 407,
+        "negative_1_2_star": 43,
+        "negative_share_pct": 10.6
+      }
+    },
+    "by_format": {
+      "serum_pigmentation_brightening": {
+        "counts": {
+          "1": 44,
+          "2": 27,
+          "3": 77,
+          "4": 239,
+          "5": 1408
+        },
+        "written_reviews": 1795,
+        "negative_1_2_star": 71,
+        "negative_share_pct": 4.0
+      },
+      "moisturiser": {
+        "counts": {
+          "1": 210,
+          "2": 102,
+          "3": 204,
+          "4": 666,
+          "5": 2893
+        },
+        "written_reviews": 4075,
+        "negative_1_2_star": 312,
+        "negative_share_pct": 7.7
+      },
+      "sunscreen": {
+        "counts": {
+          "1": 211,
+          "2": 116,
+          "3": 236,
+          "4": 769,
+          "5": 3918
+        },
+        "written_reviews": 5250,
+        "negative_1_2_star": 327,
+        "negative_share_pct": 6.2
+      },
+      "toner_essence": {
+        "counts": {
+          "1": 19,
+          "2": 14,
+          "3": 30,
+          "4": 122,
+          "5": 481
+        },
+        "written_reviews": 666,
+        "negative_1_2_star": 33,
+        "negative_share_pct": 5.0
+      }
+    }
+  },
+  "negative_frame": {
+    "overall": {
+      "n_reviews": 651,
+      "themes": {
+        "white_cast": {
+          "asserted": 38,
+          "negated": 10,
+          "mentioned": 48,
+          "asserted_pct": 5.8,
+          "negated_pct": 1.5,
+          "mentioned_pct": 7.4
+        },
+        "tone_mismatch": {
+          "asserted": 3,
+          "negated": 1,
+          "mentioned": 4,
+          "asserted_pct": 0.5,
+          "negated_pct": 0.2,
+          "mentioned_pct": 0.6
+        },
+        "breakout_acne": {
+          "asserted": 89,
+          "negated": 11,
+          "mentioned": 100,
+          "asserted_pct": 13.7,
+          "negated_pct": 1.7,
+          "mentioned_pct": 15.4
+        },
+        "heavy_greasy_humid": {
+          "asserted": 90,
+          "negated": 13,
+          "mentioned": 103,
+          "asserted_pct": 13.8,
+          "negated_pct": 2.0,
+          "mentioned_pct": 15.8
+        },
+        "pilling": {
+          "asserted": 8,
+          "negated": 0,
+          "mentioned": 8,
+          "asserted_pct": 1.2,
+          "negated_pct": 0.0,
+          "mentioned_pct": 1.2
+        },
+        "irritation": {
+          "asserted": 113,
+          "negated": 8,
+          "mentioned": 121,
+          "asserted_pct": 17.4,
+          "negated_pct": 1.2,
+          "mentioned_pct": 18.6
+        },
+        "no_efficacy_pigmentation": {
+          "asserted": 53,
+          "negated": 3,
+          "mentioned": 56,
+          "asserted_pct": 8.1,
+          "negated_pct": 0.5,
+          "mentioned_pct": 8.6
+        },
+        "fragrance": {
+          "asserted": 14,
+          "negated": 0,
+          "mentioned": 14,
+          "asserted_pct": 2.2,
+          "negated_pct": 0.0,
+          "mentioned_pct": 2.2
+        },
+        "value_for_money": {
+          "asserted": 106,
+          "negated": 11,
+          "mentioned": 117,
+          "asserted_pct": 16.3,
+          "negated_pct": 1.7,
+          "mentioned_pct": 18.0
+        },
+        "authenticity": {
+          "asserted": 4,
+          "negated": 0,
+          "mentioned": 4,
+          "asserted_pct": 0.6,
+          "negated_pct": 0.0,
+          "mentioned_pct": 0.6
+        },
+        "packaging": {
+          "asserted": 0,
+          "negated": 1,
+          "mentioned": 1,
+          "asserted_pct": 0.0,
+          "negated_pct": 0.2,
+          "mentioned_pct": 0.2
+        }
+      }
+    },
+    "by_brand_group": {
+      "korean": {
+        "n_reviews": 432,
+        "themes": {
+          "white_cast": {
+            "asserted": 19,
+            "negated": 3,
+            "mentioned": 22,
+            "asserted_pct": 4.4,
+            "negated_pct": 0.7,
+            "mentioned_pct": 5.1
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 74,
+            "negated": 7,
+            "mentioned": 81,
+            "asserted_pct": 17.1,
+            "negated_pct": 1.6,
+            "mentioned_pct": 18.8
+          },
+          "heavy_greasy_humid": {
+            "asserted": 44,
+            "negated": 9,
+            "mentioned": 53,
+            "asserted_pct": 10.2,
+            "negated_pct": 2.1,
+            "mentioned_pct": 12.3
+          },
+          "pilling": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 0.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.5
+          },
+          "irritation": {
+            "asserted": 74,
+            "negated": 5,
+            "mentioned": 79,
+            "asserted_pct": 17.1,
+            "negated_pct": 1.2,
+            "mentioned_pct": 18.3
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 40,
+            "negated": 3,
+            "mentioned": 43,
+            "asserted_pct": 9.3,
+            "negated_pct": 0.7,
+            "mentioned_pct": 10.0
+          },
+          "fragrance": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "asserted_pct": 1.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.9
+          },
+          "value_for_money": {
+            "asserted": 63,
+            "negated": 5,
+            "mentioned": 68,
+            "asserted_pct": 14.6,
+            "negated_pct": 1.2,
+            "mentioned_pct": 15.7
+          },
+          "authenticity": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 0.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.7
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "other_observed": {
+        "n_reviews": 111,
+        "themes": {
+          "white_cast": {
+            "asserted": 12,
+            "negated": 5,
+            "mentioned": 17,
+            "asserted_pct": 10.8,
+            "negated_pct": 4.5,
+            "mentioned_pct": 15.3
+          },
+          "tone_mismatch": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 1.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.8
+          },
+          "breakout_acne": {
+            "asserted": 7,
+            "negated": 4,
+            "mentioned": 11,
+            "asserted_pct": 6.3,
+            "negated_pct": 3.6,
+            "mentioned_pct": 9.9
+          },
+          "heavy_greasy_humid": {
+            "asserted": 14,
+            "negated": 2,
+            "mentioned": 16,
+            "asserted_pct": 12.6,
+            "negated_pct": 1.8,
+            "mentioned_pct": 14.4
+          },
+          "pilling": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 2.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 2.7
+          },
+          "irritation": {
+            "asserted": 21,
+            "negated": 1,
+            "mentioned": 22,
+            "asserted_pct": 18.9,
+            "negated_pct": 0.9,
+            "mentioned_pct": 19.8
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "asserted_pct": 8.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 8.1
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 25,
+            "negated": 5,
+            "mentioned": 30,
+            "asserted_pct": 22.5,
+            "negated_pct": 4.5,
+            "mentioned_pct": 27.0
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "other_foreign": {
+        "n_reviews": 65,
+        "themes": {
+          "white_cast": {
+            "asserted": 5,
+            "negated": 1,
+            "mentioned": 6,
+            "asserted_pct": 7.7,
+            "negated_pct": 1.5,
+            "mentioned_pct": 9.2
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 1.5,
+            "mentioned_pct": 1.5
+          },
+          "breakout_acne": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "asserted_pct": 9.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 9.2
+          },
+          "heavy_greasy_humid": {
+            "asserted": 19,
+            "negated": 1,
+            "mentioned": 20,
+            "asserted_pct": 29.2,
+            "negated_pct": 1.5,
+            "mentioned_pct": 30.8
+          },
+          "pilling": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 4.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.6
+          },
+          "irritation": {
+            "asserted": 6,
+            "negated": 2,
+            "mentioned": 8,
+            "asserted_pct": 9.2,
+            "negated_pct": 3.1,
+            "mentioned_pct": 12.3
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 3.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.1
+          },
+          "fragrance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.5
+          },
+          "value_for_money": {
+            "asserted": 10,
+            "negated": 1,
+            "mentioned": 11,
+            "asserted_pct": 15.4,
+            "negated_pct": 1.5,
+            "mentioned_pct": 16.9
+          },
+          "authenticity": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.5
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 1.5,
+            "mentioned_pct": 1.5
+          }
+        }
+      },
+      "homegrown": {
+        "n_reviews": 43,
+        "themes": {
+          "white_cast": {
+            "asserted": 2,
+            "negated": 1,
+            "mentioned": 3,
+            "asserted_pct": 4.7,
+            "negated_pct": 2.3,
+            "mentioned_pct": 7.0
+          },
+          "tone_mismatch": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 2.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 2.3
+          },
+          "breakout_acne": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 4.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.7
+          },
+          "heavy_greasy_humid": {
+            "asserted": 13,
+            "negated": 1,
+            "mentioned": 14,
+            "asserted_pct": 30.2,
+            "negated_pct": 2.3,
+            "mentioned_pct": 32.6
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "asserted_pct": 27.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 27.9
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 4.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.7
+          },
+          "fragrance": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "asserted_pct": 11.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 11.6
+          },
+          "value_for_money": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "asserted_pct": 18.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 18.6
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      }
+    },
+    "by_format": {
+      "moisturiser": {
+        "n_reviews": 294,
+        "themes": {
+          "white_cast": {
+            "asserted": 13,
+            "negated": 0,
+            "mentioned": 13,
+            "asserted_pct": 4.4,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.4
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 52,
+            "negated": 5,
+            "mentioned": 57,
+            "asserted_pct": 17.7,
+            "negated_pct": 1.7,
+            "mentioned_pct": 19.4
+          },
+          "heavy_greasy_humid": {
+            "asserted": 29,
+            "negated": 7,
+            "mentioned": 36,
+            "asserted_pct": 9.9,
+            "negated_pct": 2.4,
+            "mentioned_pct": 12.2
+          },
+          "pilling": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.3
+          },
+          "irritation": {
+            "asserted": 49,
+            "negated": 4,
+            "mentioned": 53,
+            "asserted_pct": 16.7,
+            "negated_pct": 1.4,
+            "mentioned_pct": 18.0
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 29,
+            "negated": 3,
+            "mentioned": 32,
+            "asserted_pct": 9.9,
+            "negated_pct": 1.0,
+            "mentioned_pct": 10.9
+          },
+          "fragrance": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "asserted_pct": 2.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 2.0
+          },
+          "value_for_money": {
+            "asserted": 47,
+            "negated": 4,
+            "mentioned": 51,
+            "asserted_pct": 16.0,
+            "negated_pct": 1.4,
+            "mentioned_pct": 17.3
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "sunscreen": {
+        "n_reviews": 267,
+        "themes": {
+          "white_cast": {
+            "asserted": 25,
+            "negated": 10,
+            "mentioned": 35,
+            "asserted_pct": 9.4,
+            "negated_pct": 3.7,
+            "mentioned_pct": 13.1
+          },
+          "tone_mismatch": {
+            "asserted": 3,
+            "negated": 1,
+            "mentioned": 4,
+            "asserted_pct": 1.1,
+            "negated_pct": 0.4,
+            "mentioned_pct": 1.5
+          },
+          "breakout_acne": {
+            "asserted": 18,
+            "negated": 4,
+            "mentioned": 22,
+            "asserted_pct": 6.7,
+            "negated_pct": 1.5,
+            "mentioned_pct": 8.2
+          },
+          "heavy_greasy_humid": {
+            "asserted": 53,
+            "negated": 5,
+            "mentioned": 58,
+            "asserted_pct": 19.9,
+            "negated_pct": 1.9,
+            "mentioned_pct": 21.7
+          },
+          "pilling": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "asserted_pct": 2.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 2.6
+          },
+          "irritation": {
+            "asserted": 52,
+            "negated": 2,
+            "mentioned": 54,
+            "asserted_pct": 19.5,
+            "negated_pct": 0.7,
+            "mentioned_pct": 20.2
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 11,
+            "negated": 0,
+            "mentioned": 11,
+            "asserted_pct": 4.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.1
+          },
+          "fragrance": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "asserted_pct": 3.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.0
+          },
+          "value_for_money": {
+            "asserted": 47,
+            "negated": 4,
+            "mentioned": 51,
+            "asserted_pct": 17.6,
+            "negated_pct": 1.5,
+            "mentioned_pct": 19.1
+          },
+          "authenticity": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 1.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.1
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.4,
+            "mentioned_pct": 0.4
+          }
+        }
+      },
+      "serum_pigmentation_brightening": {
+        "n_reviews": 59,
+        "themes": {
+          "white_cast": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 11,
+            "negated": 2,
+            "mentioned": 13,
+            "asserted_pct": 18.6,
+            "negated_pct": 3.4,
+            "mentioned_pct": 22.0
+          },
+          "heavy_greasy_humid": {
+            "asserted": 7,
+            "negated": 1,
+            "mentioned": 8,
+            "asserted_pct": 11.9,
+            "negated_pct": 1.7,
+            "mentioned_pct": 13.6
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 7,
+            "negated": 1,
+            "mentioned": 8,
+            "asserted_pct": 11.9,
+            "negated_pct": 1.7,
+            "mentioned_pct": 13.6
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 10,
+            "negated": 0,
+            "mentioned": 10,
+            "asserted_pct": 16.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 16.9
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 6,
+            "negated": 2,
+            "mentioned": 8,
+            "asserted_pct": 10.2,
+            "negated_pct": 3.4,
+            "mentioned_pct": 13.6
+          },
+          "authenticity": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.7
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "toner_essence": {
+        "n_reviews": 31,
+        "themes": {
+          "white_cast": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "asserted_pct": 25.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 25.8
+          },
+          "heavy_greasy_humid": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 3.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.2
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 5,
+            "negated": 1,
+            "mentioned": 6,
+            "asserted_pct": 16.1,
+            "negated_pct": 3.2,
+            "mentioned_pct": 19.4
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 9.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 9.7
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 6,
+            "negated": 1,
+            "mentioned": 7,
+            "asserted_pct": 19.4,
+            "negated_pct": 3.2,
+            "mentioned_pct": 22.6
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      }
+    },
+    "by_brand": {
+      "COSRX": {
+        "n_reviews": 170,
+        "themes": {
+          "white_cast": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 35,
+            "negated": 5,
+            "mentioned": 40,
+            "asserted_pct": 20.6,
+            "negated_pct": 2.9,
+            "mentioned_pct": 23.5
+          },
+          "heavy_greasy_humid": {
+            "asserted": 8,
+            "negated": 4,
+            "mentioned": 12,
+            "asserted_pct": 4.7,
+            "negated_pct": 2.4,
+            "mentioned_pct": 7.1
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 35,
+            "negated": 3,
+            "mentioned": 38,
+            "asserted_pct": 20.6,
+            "negated_pct": 1.8,
+            "mentioned_pct": 22.4
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 19,
+            "negated": 2,
+            "mentioned": 21,
+            "asserted_pct": 11.2,
+            "negated_pct": 1.2,
+            "mentioned_pct": 12.4
+          },
+          "fragrance": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 1.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.8
+          },
+          "value_for_money": {
+            "asserted": 33,
+            "negated": 2,
+            "mentioned": 35,
+            "asserted_pct": 19.4,
+            "negated_pct": 1.2,
+            "mentioned_pct": 20.6
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "Beauty of Joseon": {
+        "n_reviews": 116,
+        "themes": {
+          "white_cast": {
+            "asserted": 4,
+            "negated": 3,
+            "mentioned": 7,
+            "asserted_pct": 3.4,
+            "negated_pct": 2.6,
+            "mentioned_pct": 6.0
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 15,
+            "negated": 2,
+            "mentioned": 17,
+            "asserted_pct": 12.9,
+            "negated_pct": 1.7,
+            "mentioned_pct": 14.7
+          },
+          "heavy_greasy_humid": {
+            "asserted": 17,
+            "negated": 3,
+            "mentioned": 20,
+            "asserted_pct": 14.7,
+            "negated_pct": 2.6,
+            "mentioned_pct": 17.2
+          },
+          "pilling": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.9
+          },
+          "irritation": {
+            "asserted": 15,
+            "negated": 1,
+            "mentioned": 16,
+            "asserted_pct": 12.9,
+            "negated_pct": 0.9,
+            "mentioned_pct": 13.8
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "asserted_pct": 6.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 6.0
+          },
+          "fragrance": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 1.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.7
+          },
+          "value_for_money": {
+            "asserted": 13,
+            "negated": 1,
+            "mentioned": 14,
+            "asserted_pct": 11.2,
+            "negated_pct": 0.9,
+            "mentioned_pct": 12.1
+          },
+          "authenticity": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 1.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.7
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "Bioderma": {
+        "n_reviews": 63,
+        "themes": {
+          "white_cast": {
+            "asserted": 3,
+            "negated": 1,
+            "mentioned": 4,
+            "asserted_pct": 4.8,
+            "negated_pct": 1.6,
+            "mentioned_pct": 6.3
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 1.6,
+            "mentioned_pct": 1.6
+          },
+          "breakout_acne": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "asserted_pct": 9.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 9.5
+          },
+          "heavy_greasy_humid": {
+            "asserted": 18,
+            "negated": 1,
+            "mentioned": 19,
+            "asserted_pct": 28.6,
+            "negated_pct": 1.6,
+            "mentioned_pct": 30.2
+          },
+          "pilling": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 4.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.8
+          },
+          "irritation": {
+            "asserted": 6,
+            "negated": 2,
+            "mentioned": 8,
+            "asserted_pct": 9.5,
+            "negated_pct": 3.2,
+            "mentioned_pct": 12.7
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 3.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.2
+          },
+          "fragrance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.6
+          },
+          "value_for_money": {
+            "asserted": 10,
+            "negated": 1,
+            "mentioned": 11,
+            "asserted_pct": 15.9,
+            "negated_pct": 1.6,
+            "mentioned_pct": 17.5
+          },
+          "authenticity": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.6
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 1.6,
+            "mentioned_pct": 1.6
+          }
+        }
+      },
+      "The Face Shop": {
+        "n_reviews": 53,
+        "themes": {
+          "white_cast": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.9
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "asserted_pct": 9.4,
+            "negated_pct": 0.0,
+            "mentioned_pct": 9.4
+          },
+          "heavy_greasy_humid": {
+            "asserted": 9,
+            "negated": 1,
+            "mentioned": 10,
+            "asserted_pct": 17.0,
+            "negated_pct": 1.9,
+            "mentioned_pct": 18.9
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 11,
+            "negated": 0,
+            "mentioned": 11,
+            "asserted_pct": 20.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 20.8
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "asserted_pct": 11.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 11.3
+          },
+          "fragrance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.9
+          },
+          "value_for_money": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "asserted_pct": 13.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 13.2
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "Innisfree": {
+        "n_reviews": 44,
+        "themes": {
+          "white_cast": {
+            "asserted": 14,
+            "negated": 0,
+            "mentioned": 14,
+            "asserted_pct": 31.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 31.8
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 6.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 6.8
+          },
+          "heavy_greasy_humid": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 4.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.5
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 3,
+            "negated": 1,
+            "mentioned": 4,
+            "asserted_pct": 6.8,
+            "negated_pct": 2.3,
+            "mentioned_pct": 9.1
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 6.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 6.8
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 3,
+            "negated": 1,
+            "mentioned": 4,
+            "asserted_pct": 6.8,
+            "negated_pct": 2.3,
+            "mentioned_pct": 9.1
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "Forest Essentials": {
+        "n_reviews": 43,
+        "themes": {
+          "white_cast": {
+            "asserted": 2,
+            "negated": 1,
+            "mentioned": 3,
+            "asserted_pct": 4.7,
+            "negated_pct": 2.3,
+            "mentioned_pct": 7.0
+          },
+          "tone_mismatch": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 2.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 2.3
+          },
+          "breakout_acne": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 4.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.7
+          },
+          "heavy_greasy_humid": {
+            "asserted": 13,
+            "negated": 1,
+            "mentioned": 14,
+            "asserted_pct": 30.2,
+            "negated_pct": 2.3,
+            "mentioned_pct": 32.6
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "asserted_pct": 27.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 27.9
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 4.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.7
+          },
+          "fragrance": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "asserted_pct": 11.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 11.6
+          },
+          "value_for_money": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "asserted_pct": 18.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 18.6
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "Anua": {
+        "n_reviews": 25,
+        "themes": {
+          "white_cast": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 11,
+            "negated": 0,
+            "mentioned": 11,
+            "asserted_pct": 44.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 44.0
+          },
+          "heavy_greasy_humid": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 8.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 8.0
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "asserted_pct": 28.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 28.0
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "asserted_pct": 20.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 20.0
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "asserted_pct": 16.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 16.0
+          },
+          "authenticity": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 4.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "Laneige": {
+        "n_reviews": 18,
+        "themes": {
+          "white_cast": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 11.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 11.1
+          },
+          "heavy_greasy_humid": {
+            "asserted": 4,
+            "negated": 1,
+            "mentioned": 5,
+            "asserted_pct": 22.2,
+            "negated_pct": 5.6,
+            "mentioned_pct": 27.8
+          },
+          "pilling": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 5.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 5.6
+          },
+          "irritation": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 16.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 16.7
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 5.6,
+            "mentioned_pct": 5.6
+          },
+          "fragrance": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 11.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 11.1
+          },
+          "value_for_money": {
+            "asserted": 3,
+            "negated": 1,
+            "mentioned": 4,
+            "asserted_pct": 16.7,
+            "negated_pct": 5.6,
+            "mentioned_pct": 22.2
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      }
+    },
+    "by_tone_group": {
+      "fair": {
+        "n_reviews": 124,
+        "themes": {
+          "white_cast": {
+            "asserted": 5,
+            "negated": 3,
+            "mentioned": 8,
+            "asserted_pct": 4.0,
+            "negated_pct": 2.4,
+            "mentioned_pct": 6.5
+          },
+          "tone_mismatch": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.8
+          },
+          "breakout_acne": {
+            "asserted": 20,
+            "negated": 2,
+            "mentioned": 22,
+            "asserted_pct": 16.1,
+            "negated_pct": 1.6,
+            "mentioned_pct": 17.7
+          },
+          "heavy_greasy_humid": {
+            "asserted": 14,
+            "negated": 1,
+            "mentioned": 15,
+            "asserted_pct": 11.3,
+            "negated_pct": 0.8,
+            "mentioned_pct": 12.1
+          },
+          "pilling": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "asserted_pct": 3.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.2
+          },
+          "irritation": {
+            "asserted": 23,
+            "negated": 1,
+            "mentioned": 24,
+            "asserted_pct": 18.5,
+            "negated_pct": 0.8,
+            "mentioned_pct": 19.4
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 10,
+            "negated": 1,
+            "mentioned": 11,
+            "asserted_pct": 8.1,
+            "negated_pct": 0.8,
+            "mentioned_pct": 8.9
+          },
+          "fragrance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.8
+          },
+          "value_for_money": {
+            "asserted": 27,
+            "negated": 2,
+            "mentioned": 29,
+            "asserted_pct": 21.8,
+            "negated_pct": 1.6,
+            "mentioned_pct": 23.4
+          },
+          "authenticity": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.8
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "wheatish": {
+        "n_reviews": 66,
+        "themes": {
+          "white_cast": {
+            "asserted": 6,
+            "negated": 4,
+            "mentioned": 10,
+            "asserted_pct": 9.1,
+            "negated_pct": 6.1,
+            "mentioned_pct": 15.2
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 11,
+            "negated": 1,
+            "mentioned": 12,
+            "asserted_pct": 16.7,
+            "negated_pct": 1.5,
+            "mentioned_pct": 18.2
+          },
+          "heavy_greasy_humid": {
+            "asserted": 14,
+            "negated": 1,
+            "mentioned": 15,
+            "asserted_pct": 21.2,
+            "negated_pct": 1.5,
+            "mentioned_pct": 22.7
+          },
+          "pilling": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.5
+          },
+          "irritation": {
+            "asserted": 13,
+            "negated": 1,
+            "mentioned": 14,
+            "asserted_pct": 19.7,
+            "negated_pct": 1.5,
+            "mentioned_pct": 21.2
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 4.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.5
+          },
+          "fragrance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.5
+          },
+          "value_for_money": {
+            "asserted": 11,
+            "negated": 2,
+            "mentioned": 13,
+            "asserted_pct": 16.7,
+            "negated_pct": 3.0,
+            "mentioned_pct": 19.7
+          },
+          "authenticity": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.5
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "dusky": {
+        "n_reviews": 16,
+        "themes": {
+          "white_cast": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "heavy_greasy_humid": {
+            "asserted": 4,
+            "negated": 2,
+            "mentioned": 6,
+            "asserted_pct": 25.0,
+            "negated_pct": 12.5,
+            "mentioned_pct": 37.5
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 18.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 18.8
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 6.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 6.2
+          },
+          "fragrance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 6.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 6.2
+          },
+          "value_for_money": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "asserted_pct": 25.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 25.0
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      }
+    },
+    "by_skin_type": {
+      "Oily": {
+        "n_reviews": 87,
+        "themes": {
+          "white_cast": {
+            "asserted": 4,
+            "negated": 2,
+            "mentioned": 6,
+            "asserted_pct": 4.6,
+            "negated_pct": 2.3,
+            "mentioned_pct": 6.9
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 19,
+            "negated": 0,
+            "mentioned": 19,
+            "asserted_pct": 21.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 21.8
+          },
+          "heavy_greasy_humid": {
+            "asserted": 14,
+            "negated": 3,
+            "mentioned": 17,
+            "asserted_pct": 16.1,
+            "negated_pct": 3.4,
+            "mentioned_pct": 19.5
+          },
+          "pilling": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 2.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 2.3
+          },
+          "irritation": {
+            "asserted": 13,
+            "negated": 1,
+            "mentioned": 14,
+            "asserted_pct": 14.9,
+            "negated_pct": 1.1,
+            "mentioned_pct": 16.1
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "asserted_pct": 5.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 5.7
+          },
+          "fragrance": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "asserted_pct": 4.6,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.6
+          },
+          "value_for_money": {
+            "asserted": 17,
+            "negated": 1,
+            "mentioned": 18,
+            "asserted_pct": 19.5,
+            "negated_pct": 1.1,
+            "mentioned_pct": 20.7
+          },
+          "authenticity": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.1
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "Dry": {
+        "n_reviews": 69,
+        "themes": {
+          "white_cast": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 2.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 2.9
+          },
+          "tone_mismatch": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.4,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.4
+          },
+          "breakout_acne": {
+            "asserted": 7,
+            "negated": 1,
+            "mentioned": 8,
+            "asserted_pct": 10.1,
+            "negated_pct": 1.4,
+            "mentioned_pct": 11.6
+          },
+          "heavy_greasy_humid": {
+            "asserted": 5,
+            "negated": 1,
+            "mentioned": 6,
+            "asserted_pct": 7.2,
+            "negated_pct": 1.4,
+            "mentioned_pct": 8.7
+          },
+          "pilling": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 2.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 2.9
+          },
+          "irritation": {
+            "asserted": 17,
+            "negated": 1,
+            "mentioned": 18,
+            "asserted_pct": 24.6,
+            "negated_pct": 1.4,
+            "mentioned_pct": 26.1
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 6,
+            "negated": 2,
+            "mentioned": 8,
+            "asserted_pct": 8.7,
+            "negated_pct": 2.9,
+            "mentioned_pct": 11.6
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 13,
+            "negated": 2,
+            "mentioned": 15,
+            "asserted_pct": 18.8,
+            "negated_pct": 2.9,
+            "mentioned_pct": 21.7
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "Balanced": {
+        "n_reviews": 55,
+        "themes": {
+          "white_cast": {
+            "asserted": 4,
+            "negated": 3,
+            "mentioned": 7,
+            "asserted_pct": 7.3,
+            "negated_pct": 5.5,
+            "mentioned_pct": 12.7
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 5,
+            "negated": 2,
+            "mentioned": 7,
+            "asserted_pct": 9.1,
+            "negated_pct": 3.6,
+            "mentioned_pct": 12.7
+          },
+          "heavy_greasy_humid": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "asserted_pct": 16.4,
+            "negated_pct": 0.0,
+            "mentioned_pct": 16.4
+          },
+          "pilling": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.8
+          },
+          "irritation": {
+            "asserted": 10,
+            "negated": 0,
+            "mentioned": 10,
+            "asserted_pct": 18.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 18.2
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 5.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 5.5
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 11,
+            "negated": 1,
+            "mentioned": 12,
+            "asserted_pct": 20.0,
+            "negated_pct": 1.8,
+            "mentioned_pct": 21.8
+          },
+          "authenticity": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.8
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "Combination": {
+        "n_reviews": 26,
+        "themes": {
+          "white_cast": {
+            "asserted": 2,
+            "negated": 2,
+            "mentioned": 4,
+            "asserted_pct": 7.7,
+            "negated_pct": 7.7,
+            "mentioned_pct": 15.4
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "asserted_pct": 23.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 23.1
+          },
+          "heavy_greasy_humid": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "asserted_pct": 19.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 19.2
+          },
+          "pilling": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 3.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.8
+          },
+          "irritation": {
+            "asserted": 2,
+            "negated": 2,
+            "mentioned": 4,
+            "asserted_pct": 7.7,
+            "negated_pct": 7.7,
+            "mentioned_pct": 15.4
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 7.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 7.7
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 4,
+            "negated": 2,
+            "mentioned": 6,
+            "asserted_pct": 15.4,
+            "negated_pct": 7.7,
+            "mentioned_pct": 23.1
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      }
+    }
+  },
+  "most_useful_frame": {
+    "overall": {
+      "n_reviews": 2676,
+      "themes": {
+        "white_cast": {
+          "asserted": 51,
+          "negated": 198,
+          "mentioned": 249,
+          "asserted_pct": 1.9,
+          "negated_pct": 7.4,
+          "mentioned_pct": 9.3
+        },
+        "tone_mismatch": {
+          "asserted": 2,
+          "negated": 2,
+          "mentioned": 4,
+          "asserted_pct": 0.1,
+          "negated_pct": 0.1,
+          "mentioned_pct": 0.1
+        },
+        "breakout_acne": {
+          "asserted": 48,
+          "negated": 44,
+          "mentioned": 92,
+          "asserted_pct": 1.8,
+          "negated_pct": 1.6,
+          "mentioned_pct": 3.4
+        },
+        "heavy_greasy_humid": {
+          "asserted": 156,
+          "negated": 208,
+          "mentioned": 364,
+          "asserted_pct": 5.8,
+          "negated_pct": 7.8,
+          "mentioned_pct": 13.6
+        },
+        "pilling": {
+          "asserted": 3,
+          "negated": 3,
+          "mentioned": 6,
+          "asserted_pct": 0.1,
+          "negated_pct": 0.1,
+          "mentioned_pct": 0.2
+        },
+        "irritation": {
+          "asserted": 165,
+          "negated": 62,
+          "mentioned": 227,
+          "asserted_pct": 6.2,
+          "negated_pct": 2.3,
+          "mentioned_pct": 8.5
+        },
+        "no_efficacy_pigmentation": {
+          "asserted": 8,
+          "negated": 0,
+          "mentioned": 8,
+          "asserted_pct": 0.3,
+          "negated_pct": 0.0,
+          "mentioned_pct": 0.3
+        },
+        "fragrance": {
+          "asserted": 6,
+          "negated": 6,
+          "mentioned": 12,
+          "asserted_pct": 0.2,
+          "negated_pct": 0.2,
+          "mentioned_pct": 0.4
+        },
+        "value_for_money": {
+          "asserted": 100,
+          "negated": 3,
+          "mentioned": 103,
+          "asserted_pct": 3.7,
+          "negated_pct": 0.1,
+          "mentioned_pct": 3.8
+        },
+        "authenticity": {
+          "asserted": 0,
+          "negated": 1,
+          "mentioned": 1,
+          "asserted_pct": 0.0,
+          "negated_pct": 0.0,
+          "mentioned_pct": 0.0
+        },
+        "packaging": {
+          "asserted": 0,
+          "negated": 0,
+          "mentioned": 0,
+          "asserted_pct": 0.0,
+          "negated_pct": 0.0,
+          "mentioned_pct": 0.0
+        }
+      }
+    },
+    "by_brand_group": {
+      "korean": {
+        "n_reviews": 1604,
+        "themes": {
+          "white_cast": {
+            "asserted": 14,
+            "negated": 72,
+            "mentioned": 86,
+            "asserted_pct": 0.9,
+            "negated_pct": 4.5,
+            "mentioned_pct": 5.4
+          },
+          "tone_mismatch": {
+            "asserted": 1,
+            "negated": 1,
+            "mentioned": 2,
+            "asserted_pct": 0.1,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.1
+          },
+          "breakout_acne": {
+            "asserted": 31,
+            "negated": 29,
+            "mentioned": 60,
+            "asserted_pct": 1.9,
+            "negated_pct": 1.8,
+            "mentioned_pct": 3.7
+          },
+          "heavy_greasy_humid": {
+            "asserted": 101,
+            "negated": 95,
+            "mentioned": 196,
+            "asserted_pct": 6.3,
+            "negated_pct": 5.9,
+            "mentioned_pct": 12.2
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.1
+          },
+          "irritation": {
+            "asserted": 114,
+            "negated": 37,
+            "mentioned": 151,
+            "asserted_pct": 7.1,
+            "negated_pct": 2.3,
+            "mentioned_pct": 9.4
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "asserted_pct": 0.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.2
+          },
+          "fragrance": {
+            "asserted": 4,
+            "negated": 3,
+            "mentioned": 7,
+            "asserted_pct": 0.2,
+            "negated_pct": 0.2,
+            "mentioned_pct": 0.4
+          },
+          "value_for_money": {
+            "asserted": 62,
+            "negated": 0,
+            "mentioned": 62,
+            "asserted_pct": 3.9,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.9
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.1
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "other_observed": {
+        "n_reviews": 916,
+        "themes": {
+          "white_cast": {
+            "asserted": 29,
+            "negated": 100,
+            "mentioned": 129,
+            "asserted_pct": 3.2,
+            "negated_pct": 10.9,
+            "mentioned_pct": 14.1
+          },
+          "tone_mismatch": {
+            "asserted": 1,
+            "negated": 1,
+            "mentioned": 2,
+            "asserted_pct": 0.1,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.2
+          },
+          "breakout_acne": {
+            "asserted": 15,
+            "negated": 13,
+            "mentioned": 28,
+            "asserted_pct": 1.6,
+            "negated_pct": 1.4,
+            "mentioned_pct": 3.1
+          },
+          "heavy_greasy_humid": {
+            "asserted": 43,
+            "negated": 96,
+            "mentioned": 139,
+            "asserted_pct": 4.7,
+            "negated_pct": 10.5,
+            "mentioned_pct": 15.2
+          },
+          "pilling": {
+            "asserted": 3,
+            "negated": 2,
+            "mentioned": 5,
+            "asserted_pct": 0.3,
+            "negated_pct": 0.2,
+            "mentioned_pct": 0.5
+          },
+          "irritation": {
+            "asserted": 44,
+            "negated": 22,
+            "mentioned": 66,
+            "asserted_pct": 4.8,
+            "negated_pct": 2.4,
+            "mentioned_pct": 7.2
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "asserted_pct": 0.5,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.5
+          },
+          "fragrance": {
+            "asserted": 2,
+            "negated": 2,
+            "mentioned": 4,
+            "asserted_pct": 0.2,
+            "negated_pct": 0.2,
+            "mentioned_pct": 0.4
+          },
+          "value_for_money": {
+            "asserted": 29,
+            "negated": 3,
+            "mentioned": 32,
+            "asserted_pct": 3.2,
+            "negated_pct": 0.3,
+            "mentioned_pct": 3.5
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "other_foreign": {
+        "n_reviews": 96,
+        "themes": {
+          "white_cast": {
+            "asserted": 5,
+            "negated": 13,
+            "mentioned": 18,
+            "asserted_pct": 5.2,
+            "negated_pct": 13.5,
+            "mentioned_pct": 18.8
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 1,
+            "negated": 1,
+            "mentioned": 2,
+            "asserted_pct": 1.0,
+            "negated_pct": 1.0,
+            "mentioned_pct": 2.1
+          },
+          "heavy_greasy_humid": {
+            "asserted": 9,
+            "negated": 8,
+            "mentioned": 17,
+            "asserted_pct": 9.4,
+            "negated_pct": 8.3,
+            "mentioned_pct": 17.7
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 5,
+            "negated": 3,
+            "mentioned": 8,
+            "asserted_pct": 5.2,
+            "negated_pct": 3.1,
+            "mentioned_pct": 8.3
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 1.0,
+            "mentioned_pct": 1.0
+          },
+          "value_for_money": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "asserted_pct": 8.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 8.3
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "homegrown": {
+        "n_reviews": 60,
+        "themes": {
+          "white_cast": {
+            "asserted": 3,
+            "negated": 13,
+            "mentioned": 16,
+            "asserted_pct": 5.0,
+            "negated_pct": 21.7,
+            "mentioned_pct": 26.7
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 1,
+            "negated": 1,
+            "mentioned": 2,
+            "asserted_pct": 1.7,
+            "negated_pct": 1.7,
+            "mentioned_pct": 3.3
+          },
+          "heavy_greasy_humid": {
+            "asserted": 3,
+            "negated": 9,
+            "mentioned": 12,
+            "asserted_pct": 5.0,
+            "negated_pct": 15.0,
+            "mentioned_pct": 20.0
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 3.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.3
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.7
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      }
+    },
+    "by_format": {
+      "sunscreen": {
+        "n_reviews": 894,
+        "themes": {
+          "white_cast": {
+            "asserted": 44,
+            "negated": 191,
+            "mentioned": 235,
+            "asserted_pct": 4.9,
+            "negated_pct": 21.4,
+            "mentioned_pct": 26.3
+          },
+          "tone_mismatch": {
+            "asserted": 2,
+            "negated": 1,
+            "mentioned": 3,
+            "asserted_pct": 0.2,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.3
+          },
+          "breakout_acne": {
+            "asserted": 5,
+            "negated": 12,
+            "mentioned": 17,
+            "asserted_pct": 0.6,
+            "negated_pct": 1.3,
+            "mentioned_pct": 1.9
+          },
+          "heavy_greasy_humid": {
+            "asserted": 64,
+            "negated": 116,
+            "mentioned": 180,
+            "asserted_pct": 7.2,
+            "negated_pct": 13.0,
+            "mentioned_pct": 20.1
+          },
+          "pilling": {
+            "asserted": 3,
+            "negated": 3,
+            "mentioned": 6,
+            "asserted_pct": 0.3,
+            "negated_pct": 0.3,
+            "mentioned_pct": 0.7
+          },
+          "irritation": {
+            "asserted": 37,
+            "negated": 17,
+            "mentioned": 54,
+            "asserted_pct": 4.1,
+            "negated_pct": 1.9,
+            "mentioned_pct": 6.0
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.1
+          },
+          "fragrance": {
+            "asserted": 2,
+            "negated": 3,
+            "mentioned": 5,
+            "asserted_pct": 0.2,
+            "negated_pct": 0.3,
+            "mentioned_pct": 0.6
+          },
+          "value_for_money": {
+            "asserted": 45,
+            "negated": 1,
+            "mentioned": 46,
+            "asserted_pct": 5.0,
+            "negated_pct": 0.1,
+            "mentioned_pct": 5.1
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "moisturiser": {
+        "n_reviews": 840,
+        "themes": {
+          "white_cast": {
+            "asserted": 7,
+            "negated": 6,
+            "mentioned": 13,
+            "asserted_pct": 0.8,
+            "negated_pct": 0.7,
+            "mentioned_pct": 1.5
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.1
+          },
+          "breakout_acne": {
+            "asserted": 19,
+            "negated": 20,
+            "mentioned": 39,
+            "asserted_pct": 2.3,
+            "negated_pct": 2.4,
+            "mentioned_pct": 4.6
+          },
+          "heavy_greasy_humid": {
+            "asserted": 63,
+            "negated": 48,
+            "mentioned": 111,
+            "asserted_pct": 7.5,
+            "negated_pct": 5.7,
+            "mentioned_pct": 13.2
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 65,
+            "negated": 13,
+            "mentioned": 78,
+            "asserted_pct": 7.7,
+            "negated_pct": 1.5,
+            "mentioned_pct": 9.3
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.1
+          },
+          "fragrance": {
+            "asserted": 3,
+            "negated": 1,
+            "mentioned": 4,
+            "asserted_pct": 0.4,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.5
+          },
+          "value_for_money": {
+            "asserted": 31,
+            "negated": 0,
+            "mentioned": 31,
+            "asserted_pct": 3.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.7
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.1
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "serum_pigmentation_brightening": {
+        "n_reviews": 693,
+        "themes": {
+          "white_cast": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 18,
+            "negated": 5,
+            "mentioned": 23,
+            "asserted_pct": 2.6,
+            "negated_pct": 0.7,
+            "mentioned_pct": 3.3
+          },
+          "heavy_greasy_humid": {
+            "asserted": 21,
+            "negated": 40,
+            "mentioned": 61,
+            "asserted_pct": 3.0,
+            "negated_pct": 5.8,
+            "mentioned_pct": 8.8
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 39,
+            "negated": 25,
+            "mentioned": 64,
+            "asserted_pct": 5.6,
+            "negated_pct": 3.6,
+            "mentioned_pct": 9.2
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "asserted_pct": 0.7,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.7
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.1
+          },
+          "value_for_money": {
+            "asserted": 16,
+            "negated": 2,
+            "mentioned": 18,
+            "asserted_pct": 2.3,
+            "negated_pct": 0.3,
+            "mentioned_pct": 2.6
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "toner_essence": {
+        "n_reviews": 249,
+        "themes": {
+          "white_cast": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.4,
+            "mentioned_pct": 0.4
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 6,
+            "negated": 7,
+            "mentioned": 13,
+            "asserted_pct": 2.4,
+            "negated_pct": 2.8,
+            "mentioned_pct": 5.2
+          },
+          "heavy_greasy_humid": {
+            "asserted": 8,
+            "negated": 4,
+            "mentioned": 12,
+            "asserted_pct": 3.2,
+            "negated_pct": 1.6,
+            "mentioned_pct": 4.8
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 24,
+            "negated": 7,
+            "mentioned": 31,
+            "asserted_pct": 9.6,
+            "negated_pct": 2.8,
+            "mentioned_pct": 12.4
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.4,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.4
+          },
+          "fragrance": {
+            "asserted": 1,
+            "negated": 1,
+            "mentioned": 2,
+            "asserted_pct": 0.4,
+            "negated_pct": 0.4,
+            "mentioned_pct": 0.8
+          },
+          "value_for_money": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "asserted_pct": 3.2,
+            "negated_pct": 0.0,
+            "mentioned_pct": 3.2
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      }
+    },
+    "by_tone_group": {
+      "fair": {
+        "n_reviews": 705,
+        "themes": {
+          "white_cast": {
+            "asserted": 16,
+            "negated": 63,
+            "mentioned": 79,
+            "asserted_pct": 2.3,
+            "negated_pct": 8.9,
+            "mentioned_pct": 11.2
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 2,
+            "mentioned": 2,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.3,
+            "mentioned_pct": 0.3
+          },
+          "breakout_acne": {
+            "asserted": 7,
+            "negated": 10,
+            "mentioned": 17,
+            "asserted_pct": 1.0,
+            "negated_pct": 1.4,
+            "mentioned_pct": 2.4
+          },
+          "heavy_greasy_humid": {
+            "asserted": 60,
+            "negated": 46,
+            "mentioned": 106,
+            "asserted_pct": 8.5,
+            "negated_pct": 6.5,
+            "mentioned_pct": 15.0
+          },
+          "pilling": {
+            "asserted": 1,
+            "negated": 1,
+            "mentioned": 2,
+            "asserted_pct": 0.1,
+            "negated_pct": 0.1,
+            "mentioned_pct": 0.3
+          },
+          "irritation": {
+            "asserted": 47,
+            "negated": 17,
+            "mentioned": 64,
+            "asserted_pct": 6.7,
+            "negated_pct": 2.4,
+            "mentioned_pct": 9.1
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.1,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.1
+          },
+          "fragrance": {
+            "asserted": 2,
+            "negated": 2,
+            "mentioned": 4,
+            "asserted_pct": 0.3,
+            "negated_pct": 0.3,
+            "mentioned_pct": 0.6
+          },
+          "value_for_money": {
+            "asserted": 30,
+            "negated": 0,
+            "mentioned": 30,
+            "asserted_pct": 4.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 4.3
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "wheatish": {
+        "n_reviews": 302,
+        "themes": {
+          "white_cast": {
+            "asserted": 7,
+            "negated": 22,
+            "mentioned": 29,
+            "asserted_pct": 2.3,
+            "negated_pct": 7.3,
+            "mentioned_pct": 9.6
+          },
+          "tone_mismatch": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "breakout_acne": {
+            "asserted": 7,
+            "negated": 5,
+            "mentioned": 12,
+            "asserted_pct": 2.3,
+            "negated_pct": 1.7,
+            "mentioned_pct": 4.0
+          },
+          "heavy_greasy_humid": {
+            "asserted": 25,
+            "negated": 26,
+            "mentioned": 51,
+            "asserted_pct": 8.3,
+            "negated_pct": 8.6,
+            "mentioned_pct": 16.9
+          },
+          "pilling": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.3
+          },
+          "irritation": {
+            "asserted": 20,
+            "negated": 9,
+            "mentioned": 29,
+            "asserted_pct": 6.6,
+            "negated_pct": 3.0,
+            "mentioned_pct": 9.6
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 0.3,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.3
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 2,
+            "mentioned": 2,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.7,
+            "mentioned_pct": 0.7
+          },
+          "value_for_money": {
+            "asserted": 15,
+            "negated": 0,
+            "mentioned": 15,
+            "asserted_pct": 5.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 5.0
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      },
+      "dusky": {
+        "n_reviews": 72,
+        "themes": {
+          "white_cast": {
+            "asserted": 3,
+            "negated": 7,
+            "mentioned": 10,
+            "asserted_pct": 4.2,
+            "negated_pct": 9.7,
+            "mentioned_pct": 13.9
+          },
+          "tone_mismatch": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "asserted_pct": 1.4,
+            "negated_pct": 0.0,
+            "mentioned_pct": 1.4
+          },
+          "breakout_acne": {
+            "asserted": 0,
+            "negated": 2,
+            "mentioned": 2,
+            "asserted_pct": 0.0,
+            "negated_pct": 2.8,
+            "mentioned_pct": 2.8
+          },
+          "heavy_greasy_humid": {
+            "asserted": 5,
+            "negated": 7,
+            "mentioned": 12,
+            "asserted_pct": 6.9,
+            "negated_pct": 9.7,
+            "mentioned_pct": 16.7
+          },
+          "pilling": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "irritation": {
+            "asserted": 4,
+            "negated": 2,
+            "mentioned": 6,
+            "asserted_pct": 5.6,
+            "negated_pct": 2.8,
+            "mentioned_pct": 8.3
+          },
+          "no_efficacy_pigmentation": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "fragrance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "value_for_money": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "asserted_pct": 2.8,
+            "negated_pct": 0.0,
+            "mentioned_pct": 2.8
+          },
+          "authenticity": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          },
+          "packaging": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "asserted_pct": 0.0,
+            "negated_pct": 0.0,
+            "mentioned_pct": 0.0
+          }
+        }
+      }
+    }
+  },
+  "population_floors_by_brand_group": {
+    "other_observed": {
+      "negative_share_of_written_reviews_pct": 4.6,
+      "n_negative_reviews_analysed": 111,
+      "themes": {
+        "white_cast": {
+          "asserted_pct_within_negatives": 10.8,
+          "population_floor_pct": 0.5
+        },
+        "tone_mismatch": {
+          "asserted_pct_within_negatives": 1.8,
+          "population_floor_pct": 0.08
+        },
+        "breakout_acne": {
+          "asserted_pct_within_negatives": 6.3,
+          "population_floor_pct": 0.29
+        },
+        "heavy_greasy_humid": {
+          "asserted_pct_within_negatives": 12.6,
+          "population_floor_pct": 0.58
+        },
+        "pilling": {
+          "asserted_pct_within_negatives": 2.7,
+          "population_floor_pct": 0.12
+        },
+        "irritation": {
+          "asserted_pct_within_negatives": 18.9,
+          "population_floor_pct": 0.87
+        },
+        "no_efficacy_pigmentation": {
+          "asserted_pct_within_negatives": 8.1,
+          "population_floor_pct": 0.37
+        },
+        "value_for_money": {
+          "asserted_pct_within_negatives": 22.5,
+          "population_floor_pct": 1.03
+        }
+      }
+    },
+    "korean": {
+      "negative_share_of_written_reviews_pct": 6.1,
+      "n_negative_reviews_analysed": 432,
+      "themes": {
+        "white_cast": {
+          "asserted_pct_within_negatives": 4.4,
+          "population_floor_pct": 0.27
+        },
+        "breakout_acne": {
+          "asserted_pct_within_negatives": 17.1,
+          "population_floor_pct": 1.04
+        },
+        "heavy_greasy_humid": {
+          "asserted_pct_within_negatives": 10.2,
+          "population_floor_pct": 0.62
+        },
+        "pilling": {
+          "asserted_pct_within_negatives": 0.5,
+          "population_floor_pct": 0.03
+        },
+        "irritation": {
+          "asserted_pct_within_negatives": 17.1,
+          "population_floor_pct": 1.04
+        },
+        "no_efficacy_pigmentation": {
+          "asserted_pct_within_negatives": 9.3,
+          "population_floor_pct": 0.57
+        },
+        "fragrance": {
+          "asserted_pct_within_negatives": 1.9,
+          "population_floor_pct": 0.12
+        },
+        "value_for_money": {
+          "asserted_pct_within_negatives": 14.6,
+          "population_floor_pct": 0.89
+        },
+        "authenticity": {
+          "asserted_pct_within_negatives": 0.7,
+          "population_floor_pct": 0.04
+        }
+      }
+    },
+    "other_foreign": {
+      "negative_share_of_written_reviews_pct": 22.2,
+      "n_negative_reviews_analysed": 65,
+      "themes": {
+        "white_cast": {
+          "asserted_pct_within_negatives": 7.7,
+          "population_floor_pct": 1.71
+        },
+        "breakout_acne": {
+          "asserted_pct_within_negatives": 9.2,
+          "population_floor_pct": 2.04
+        },
+        "heavy_greasy_humid": {
+          "asserted_pct_within_negatives": 29.2,
+          "population_floor_pct": 6.48
+        },
+        "pilling": {
+          "asserted_pct_within_negatives": 4.6,
+          "population_floor_pct": 1.02
+        },
+        "irritation": {
+          "asserted_pct_within_negatives": 9.2,
+          "population_floor_pct": 2.04
+        },
+        "no_efficacy_pigmentation": {
+          "asserted_pct_within_negatives": 3.1,
+          "population_floor_pct": 0.69
+        },
+        "fragrance": {
+          "asserted_pct_within_negatives": 1.5,
+          "population_floor_pct": 0.33
+        },
+        "value_for_money": {
+          "asserted_pct_within_negatives": 15.4,
+          "population_floor_pct": 3.42
+        },
+        "authenticity": {
+          "asserted_pct_within_negatives": 1.5,
+          "population_floor_pct": 0.33
+        }
+      }
+    },
+    "homegrown": {
+      "negative_share_of_written_reviews_pct": 10.6,
+      "n_negative_reviews_analysed": 43,
+      "themes": {
+        "white_cast": {
+          "asserted_pct_within_negatives": 4.7,
+          "population_floor_pct": 0.5
+        },
+        "tone_mismatch": {
+          "asserted_pct_within_negatives": 2.3,
+          "population_floor_pct": 0.24
+        },
+        "breakout_acne": {
+          "asserted_pct_within_negatives": 4.7,
+          "population_floor_pct": 0.5
+        },
+        "heavy_greasy_humid": {
+          "asserted_pct_within_negatives": 30.2,
+          "population_floor_pct": 3.2
+        },
+        "irritation": {
+          "asserted_pct_within_negatives": 27.9,
+          "population_floor_pct": 2.96
+        },
+        "no_efficacy_pigmentation": {
+          "asserted_pct_within_negatives": 4.7,
+          "population_floor_pct": 0.5
+        },
+        "fragrance": {
+          "asserted_pct_within_negatives": 11.6,
+          "population_floor_pct": 1.23
+        },
+        "value_for_money": {
+          "asserted_pct_within_negatives": 18.6,
+          "population_floor_pct": 1.97
+        }
+      }
+    }
+  },
+  "korean_sunscreen": {
+    "n_reviews": 365,
+    "themes": {
+      "white_cast": {
+        "asserted": 11,
+        "negated": 68,
+        "mentioned": 79,
+        "asserted_pct": 3.0,
+        "negated_pct": 18.6,
+        "mentioned_pct": 21.6
+      },
+      "tone_mismatch": {
+        "asserted": 1,
+        "negated": 0,
+        "mentioned": 1,
+        "asserted_pct": 0.3,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.3
+      },
+      "breakout_acne": {
+        "asserted": 7,
+        "negated": 3,
+        "mentioned": 10,
+        "asserted_pct": 1.9,
+        "negated_pct": 0.8,
+        "mentioned_pct": 2.7
+      },
+      "heavy_greasy_humid": {
+        "asserted": 38,
+        "negated": 34,
+        "mentioned": 72,
+        "asserted_pct": 10.4,
+        "negated_pct": 9.3,
+        "mentioned_pct": 19.7
+      },
+      "pilling": {
+        "asserted": 1,
+        "negated": 1,
+        "mentioned": 2,
+        "asserted_pct": 0.3,
+        "negated_pct": 0.3,
+        "mentioned_pct": 0.5
+      },
+      "irritation": {
+        "asserted": 25,
+        "negated": 7,
+        "mentioned": 32,
+        "asserted_pct": 6.8,
+        "negated_pct": 1.9,
+        "mentioned_pct": 8.8
+      },
+      "no_efficacy_pigmentation": {
+        "asserted": 4,
+        "negated": 0,
+        "mentioned": 4,
+        "asserted_pct": 1.1,
+        "negated_pct": 0.0,
+        "mentioned_pct": 1.1
+      },
+      "fragrance": {
+        "asserted": 2,
+        "negated": 1,
+        "mentioned": 3,
+        "asserted_pct": 0.5,
+        "negated_pct": 0.3,
+        "mentioned_pct": 0.8
+      },
+      "value_for_money": {
+        "asserted": 17,
+        "negated": 0,
+        "mentioned": 17,
+        "asserted_pct": 4.7,
+        "negated_pct": 0.0,
+        "mentioned_pct": 4.7
+      },
+      "authenticity": {
+        "asserted": 2,
+        "negated": 0,
+        "mentioned": 2,
+        "asserted_pct": 0.5,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.5
+      },
+      "packaging": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "asserted_pct": 0.0,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.0
+      }
+    }
+  },
+  "korean_sunscreen_negative": {
+    "n_reviews": 78,
+    "themes": {
+      "white_cast": {
+        "asserted": 6,
+        "negated": 3,
+        "mentioned": 9,
+        "asserted_pct": 7.7,
+        "negated_pct": 3.8,
+        "mentioned_pct": 11.5
+      },
+      "tone_mismatch": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "asserted_pct": 0.0,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.0
+      },
+      "breakout_acne": {
+        "asserted": 6,
+        "negated": 2,
+        "mentioned": 8,
+        "asserted_pct": 7.7,
+        "negated_pct": 2.6,
+        "mentioned_pct": 10.3
+      },
+      "heavy_greasy_humid": {
+        "asserted": 12,
+        "negated": 2,
+        "mentioned": 14,
+        "asserted_pct": 15.4,
+        "negated_pct": 2.6,
+        "mentioned_pct": 17.9
+      },
+      "pilling": {
+        "asserted": 1,
+        "negated": 0,
+        "mentioned": 1,
+        "asserted_pct": 1.3,
+        "negated_pct": 0.0,
+        "mentioned_pct": 1.3
+      },
+      "irritation": {
+        "asserted": 15,
+        "negated": 0,
+        "mentioned": 15,
+        "asserted_pct": 19.2,
+        "negated_pct": 0.0,
+        "mentioned_pct": 19.2
+      },
+      "no_efficacy_pigmentation": {
+        "asserted": 4,
+        "negated": 0,
+        "mentioned": 4,
+        "asserted_pct": 5.1,
+        "negated_pct": 0.0,
+        "mentioned_pct": 5.1
+      },
+      "fragrance": {
+        "asserted": 2,
+        "negated": 0,
+        "mentioned": 2,
+        "asserted_pct": 2.6,
+        "negated_pct": 0.0,
+        "mentioned_pct": 2.6
+      },
+      "value_for_money": {
+        "asserted": 8,
+        "negated": 0,
+        "mentioned": 8,
+        "asserted_pct": 10.3,
+        "negated_pct": 0.0,
+        "mentioned_pct": 10.3
+      },
+      "authenticity": {
+        "asserted": 2,
+        "negated": 0,
+        "mentioned": 2,
+        "asserted_pct": 2.6,
+        "negated_pct": 0.0,
+        "mentioned_pct": 2.6
+      },
+      "packaging": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "asserted_pct": 0.0,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.0
+      }
+    }
+  },
+  "pigmentation_serum_negative": {
+    "n_reviews": 59,
+    "themes": {
+      "white_cast": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "asserted_pct": 0.0,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.0
+      },
+      "tone_mismatch": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "asserted_pct": 0.0,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.0
+      },
+      "breakout_acne": {
+        "asserted": 11,
+        "negated": 2,
+        "mentioned": 13,
+        "asserted_pct": 18.6,
+        "negated_pct": 3.4,
+        "mentioned_pct": 22.0
+      },
+      "heavy_greasy_humid": {
+        "asserted": 7,
+        "negated": 1,
+        "mentioned": 8,
+        "asserted_pct": 11.9,
+        "negated_pct": 1.7,
+        "mentioned_pct": 13.6
+      },
+      "pilling": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "asserted_pct": 0.0,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.0
+      },
+      "irritation": {
+        "asserted": 7,
+        "negated": 1,
+        "mentioned": 8,
+        "asserted_pct": 11.9,
+        "negated_pct": 1.7,
+        "mentioned_pct": 13.6
+      },
+      "no_efficacy_pigmentation": {
+        "asserted": 10,
+        "negated": 0,
+        "mentioned": 10,
+        "asserted_pct": 16.9,
+        "negated_pct": 0.0,
+        "mentioned_pct": 16.9
+      },
+      "fragrance": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "asserted_pct": 0.0,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.0
+      },
+      "value_for_money": {
+        "asserted": 6,
+        "negated": 2,
+        "mentioned": 8,
+        "asserted_pct": 10.2,
+        "negated_pct": 3.4,
+        "mentioned_pct": 13.6
+      },
+      "authenticity": {
+        "asserted": 1,
+        "negated": 0,
+        "mentioned": 1,
+        "asserted_pct": 1.7,
+        "negated_pct": 0.0,
+        "mentioned_pct": 1.7
+      },
+      "packaging": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "asserted_pct": 0.0,
+        "negated_pct": 0.0,
+        "mentioned_pct": 0.0
+      }
+    }
+  },
+  "tone_declaration_by_group": {
+    "other_foreign": {
+      "fair": 49,
+      "undeclared": 89,
+      "wheatish": 18,
+      "dusky": 3
+    },
+    "other_observed": {
+      "undeclared": 671,
+      "wheatish": 107,
+      "fair": 204,
+      "dusky": 26
+    },
+    "korean": {
+      "wheatish": 224,
+      "fair": 546,
+      "undeclared": 1196,
+      "dusky": 51
+    },
+    "homegrown": {
+      "wheatish": 15,
+      "fair": 26,
+      "undeclared": 56,
+      "dusky": 6
+    }
+  },
+  "generated_at": "20260810T022519Z",
+  "source_raw_file": "premium_skin_reviews_20260810T022519Z.json",
+  "geography": "IN",
+  "scope": "ONLINE ONLY (Nykaa written reviews). Tira exposes no review API and Amazon.in gates review pagination behind a login, so neither is sampled — see docs/premium-skincare-phase2.md for what that leaves unanswered. Organised retail only. Statistics describe REVIEWS, not users or buyers."
+}

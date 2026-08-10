@@ -38,6 +38,11 @@ class DataPoint(BaseModel):
         # so they must never be read as market share or as a trade margin.
         "assortment_share",    # share of a SKU population meeting a condition, %
         "discount_depth",      # discount off list price, %
+        # Review-corpus metric (premium-skincare thread, Phase 2). A statistic
+        # about a sample of consumer reviews, NOT about consumers, buyers or
+        # the market: it says what share of REVIEWS raise a given complaint,
+        # never what share of users experienced it.
+        "complaint_share",     # share of a review population raising a theme, %
     ]
     value: float
     unit: str                           # "usd_bn", "krw_tn", "inr_cr", "percent", "usd", "inr"

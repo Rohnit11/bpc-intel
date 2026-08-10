@@ -219,6 +219,25 @@ discount-heaviest in the market, so the verdict below is an online verdict.
 **Answers Q2.** The greenfield half. Most novel, most defensible output.
 Owner's call: cover **both** efficacy and shade, **weighted to efficacy**.
 
+> **DONE 2026-08-10. Output: `docs/premium-skincare-phase2.md`.** Read that, not
+> this section, for what was found. Headline: **this brief's white-cast premise
+> below is wrong.** Across 3,287 Nykaa reviews of in-band SKUs, buyers mention
+> white cast on Korean sunscreen 6x more often to say it is ABSENT (68 mentions)
+> than to complain of it (11). Korean sunscreen has a reputation for having
+> solved white cast, not a white-cast problem — Innisfree excepted, at 31.8% of
+> its negative reviews. The real complaints are **irritation (19.2% of Korean
+> sunscreen negatives) and heaviness in humidity (15.4%)**, so the "climate /
+> texture mismatch" this brief called under-researched is the live failure mode.
+> Pigmentation serums fail differently: breakouts (18.6%) and no visible effect
+> (16.9%) top their negatives. **Shade is a non-question** — tone mismatch fired
+> once in 3,287 reviews, because only 10 of 327 in-band SKUs are tinted at all.
+> The skin-tone argument that survives is **visible-light photoprotection**
+> (tinted iron-oxide formulas: 78% vs 62% MASI reduction), which consumers
+> cannot perceive and show zero pull for. New skin-tone data: 1,275 reviews
+> carry a self-declared tone and only **6.7% are Dark/Deep** — the band's
+> visible buyer base skews fair. Regulatory: India restricts neither the UV
+> filters nor the brightening actives; it restricts the **claim language**.
+
 - **Actives mapping (primary).** What Korean premium formulations actually
   target (barrier repair, brightening, hydration) vs India's dominant concerns
   (hyperpigmentation, melasma, tanning, oily/humid-climate acne, sensitivity to
@@ -320,12 +339,19 @@ Only after there is real data to show.
 | Quantitative claims | `data/sources.csv` (mandatory) | `[PREMIUM-SKIN]` in notes |
 | Qualitative findings | `config/premium_skin_fit_findings.yaml` | — |
 | Phase 1 prices + verdict | `data/manual/analysis/premium_skin_band.json`, `docs/premium-skincare-phase1.md` | `[PREMIUM-SKIN]` |
+| Phase 2 complaints + verdict | `data/manual/analysis/premium_skin_fit.json`, `docs/premium-skincare-phase2.md` | `[PREMIUM-SKIN]` |
 | Entry analysis | `data/manual/analysis/premium_skin_entry.json` | — |
 | Dashboard | `web/app/premium-skincare/` | — |
 
 Phase 1 also added two re-runnable scripts: `lib/fetchers/premium_skin_prices.py`
 (Nykaa/Tira/Amazon price sweep, ~25 min) and `lib/transforms/premium_skin_band.py`
 (band arithmetic). Re-run both off-sale before Phase 4 prices anything.
+
+Phase 2 added two more: `lib/fetchers/premium_skin_reviews.py` (Nykaa review
+API mining, ~30 min, carries self-declared skin tone) and
+`lib/transforms/premium_skin_fit.py` (complaint classification with negation
+handling — "no white cast" is praise, and treating it as a complaint inverts the
+Phase 2 headline).
 
 Nothing here overwrites corridor or skincare files. The `[PREMIUM-SKIN]` tag
 mirrors the existing `[CORRIDOR]` convention so this thread stays filterable and

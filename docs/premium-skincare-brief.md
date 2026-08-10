@@ -267,6 +267,32 @@ Owner's call: cover **both** efficacy and shade, **weighted to efficacy**.
 ### Phase 3 — Demand: is "Korean" load-bearing?
 **Answers Q3.**
 
+> **DONE 2026-08-10. Output: `docs/premium-skincare-phase3.md`.** Read that, not
+> this section, for what was found. Headline: **"Korean" is not load-bearing — it
+> is barely spoken.** Korean provenance is invoked in 2.2% of 2,676 positive-frame
+> reviews of in-band SKUs, behind repurchase intent (10.8%), pigmentation concern
+> (10.8%), actives (9.9%), results (7.7%) and price (6.5%). On Korean-origin SKUs
+> it reaches 2.6% against 11.3% naming an active (4.3x); on Indian-origin SKUs it
+> is **0 of 333** — Korea is not a benchmark buyers reach for. Search agrees:
+> `korean skincare` indexes 0.6 against `niacinamide` 12.1 and `dermatologist`
+> 15.6 in India, and `glass skin` outsearches every Korea term. So Korea becomes a
+> **manufacturing-quality decision**, and the brand leads on concern + mechanism +
+> repurchase — the outcome this brief said would follow either answer.
+> Two findings outrank that: **(1) the band is a budget event** — Nykaa's Beauty
+> AOV is Rs2,173 (HIGH), and India's top income cohort spends USD140/yr on ALL
+> BPC across 18 occasions (~Rs748 each), so a Rs1,900 SKU is 2.5x an occasion and
+> 14.1% of that cohort's annual budget, and a 4-SKU routine is 56.4% of it — the
+> range-economics consequence in §0.3 holds for MOQs and does NOT transfer to the
+> consumer, so model sequential single-SKU trial. **(2) The Korean-ODM +
+> Indian-brand lane already has incumbents**: D'you (2020, Rs1,680-3,500, zero
+> discount) and Put Simply (2022, Rs825-1,699, "Made in Korea" third in its trust
+> stack), plus Quench. Also: twelve Indian-origin brands DO hold in-band single
+> SKUs (RAS Luxury Oils, Suganda, Yuderma, Ethiglo, WildGlow, BiE, The Derma Co,
+> TBC, Miduty, Fixderma, Aminu, Forest Essentials) and hold price better than the
+> Korean cluster (88% vs 79% band retention) — Phase 1's finding was true of the
+> named D2C brands only. **Correction: Limese is a K-beauty importer/retailer, not
+> a homegrown brand** — move it to `config/corridor.yaml` conduits.
+
 - Who buys India premium skincare at Rs1,500-3,000: income cohort, metro vs
   Tier 2/3, age, channel.
 - Is the purchase driver "Korean" specifically, or efficacy/ingredient/derm-cred
@@ -337,9 +363,12 @@ Only after there is real data to show.
 | Output | Destination | Tag |
 |---|---|---|
 | Quantitative claims | `data/sources.csv` (mandatory) | `[PREMIUM-SKIN]` in notes |
-| Qualitative findings | `config/premium_skin_fit_findings.yaml` | — |
+| Qualitative findings (Phase 2, fit) | `config/premium_skin_fit_findings.yaml` | — |
+| Qualitative findings (Phase 3, demand) | `config/premium_skin_demand_findings.yaml` | — |
 | Phase 1 prices + verdict | `data/manual/analysis/premium_skin_band.json`, `docs/premium-skincare-phase1.md` | `[PREMIUM-SKIN]` |
 | Phase 2 complaints + verdict | `data/manual/analysis/premium_skin_fit.json`, `docs/premium-skincare-phase2.md` | `[PREMIUM-SKIN]` |
+| Phase 3 demand + verdict | `data/manual/analysis/premium_skin_demand.json`, `docs/premium-skincare-phase3.md` | `[PREMIUM-SKIN]` |
+| Phase 3 sourced demand claims | `data/manual/research_drops/premium_skin_demand.json` | `[PREMIUM-SKIN]` |
 | Entry analysis | `data/manual/analysis/premium_skin_entry.json` | — |
 | Dashboard | `web/app/premium-skincare/` | — |
 
@@ -352,6 +381,16 @@ API mining, ~30 min, carries self-declared skin tone) and
 `lib/transforms/premium_skin_fit.py` (complaint classification with negation
 handling — "no white cast" is praise, and treating it as a complaint inverts the
 Phase 2 headline).
+
+Phase 3 added two more: `lib/transforms/premium_skin_demand.py` (purchase-driver
+mining over the same review corpus, re-keyed to manufacturer ORIGIN because
+Phase 1's `brand_group` mixes Korean and European brands in `other_observed`;
+also carries the in-band-by-origin encroachment count off the Phase 1 price
+sweep) and `lib/fetchers/premium_skin_demand_trends.py` (comparative Google
+Trends baskets — one payload per basket so the indices are actually comparable,
+unlike `trends_google.py` which fetches each keyword separately; Google
+rate-limits hard, so it takes a basket list as CLI args to finish an interrupted
+sweep). Schema gained `driver_share` and `spend_ratio` metrics.
 
 Nothing here overwrites corridor or skincare files. The `[PREMIUM-SKIN]` tag
 mirrors the existing `[CORRIDOR]` convention so this thread stays filterable and

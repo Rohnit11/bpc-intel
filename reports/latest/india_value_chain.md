@@ -21,6 +21,8 @@ _Import values are UN Comtrade CIF (2024); import-dependence is derived (imports
 
 ## 2. Cost & margin structure
 **Pricing / cost-of-making**
+- total bpc: [PREMIUM-SKIN] AVERAGE ORDER VALUE, not a product price: Nykaa Beauty AOV Rs2,173 for the quarter ended 31-Dec-2025 (Rs2,127 in Q3FY25, +2% YoY), company-defined as GMV across websites, apps and physical stores divided by orders. ORGANISED retail, omnichannel (online + Nykaa's own stores). Transaction value after discount, NOT MRP. Reference point for the Rs1,500-3,000 band: one in-band SKU is approximately one whole average beauty order. Basket spans all BPC categories including mass. — Nykaa (FSN E-Commerce Ventures) Q3FY26 investor presentation, Key Performance Metrics
+- total bpc: [PREMIUM-SKIN] AVERAGE ORDER VALUE: Nykaa Beauty AOV Rs2,009 in Q1FY26 vs Rs1,924 in Q1FY25 (+4% YoY). Nykaa attributes the rise to premiumisation. ORGANISED omnichannel retail; post-discount transaction value, not MRP. Trend companion to the Q3FY26 figure. — Nykaa (FSN E-Commerce Ventures) Q1FY26 investor presentation, Key Operational Metrics
 - skincare: 282 recorded MRP price points in INR, spanning 600.0-3000.0 inr. Full list in data/sources.csv.
 - skincare: 30ml serum MRP typically Rs500-700 (midpoint 600); manufacturing cost Rs80-120/unit — The D2C Pulse
 - skincare: [CORRIDOR] COSRX Advanced Snail 96 Mucin Power Essence 100ml; MRP Rs1490, Nykaa sale Rs969 (35% off), Amazon ~Rs949 as of 2026-07-23; hero SKU; promo-dependent — Nykaa (retailer listing)

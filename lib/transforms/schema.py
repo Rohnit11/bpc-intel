@@ -43,6 +43,19 @@ class DataPoint(BaseModel):
         # the market: it says what share of REVIEWS raise a given complaint,
         # never what share of users experienced it.
         "complaint_share",     # share of a review population raising a theme, %
+        # Review-corpus metric (premium-skincare thread, Phase 3). The mirror of
+        # complaint_share on the demand side: what share of REVIEWS invoke a
+        # given purchase driver (Korean provenance, actives, derm authority,
+        # repurchase). It measures the SALIENCE of a driver in review language,
+        # never the share of buyers motivated by it — reviews report experience,
+        # not the reason for the purchase.
+        "driver_share",        # share of a review population citing a driver, %
+        # Affordability metric (premium-skincare thread, Phase 3). What share of
+        # a consumer's ANNUAL category spend one purchase absorbs. Always an
+        # ESTIMATE: it divides a disclosed annual per-consumer spend by a shelf
+        # price, so the numerator and denominator come from different sources
+        # and the category scopes differ — the methodology field must say so.
+        "spend_ratio",         # one purchase as % of annual per-consumer spend
     ]
     value: float
     unit: str                           # "usd_bn", "krw_tn", "inr_cr", "percent", "usd", "inr"

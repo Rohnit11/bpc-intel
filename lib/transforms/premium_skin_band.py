@@ -86,12 +86,39 @@ _register("homegrown", "Minimalist")
 _register("homegrown", "Dot & Key", "Dot and Key", "Dot&Key")
 _register("homegrown", "Foxtale", "FoxTale")
 _register("homegrown", "Pilgrim")
-_register("homegrown", "Limese")
 _register("homegrown", "Plum")
 _register("homegrown", "Forest Essentials")
 _register("homegrown", "Kama Ayurveda", "Kama")
 _register("homegrown", "Deconstruct")
 _register("homegrown", "Earth Rhythm")
+
+# Phase 4 correction (2026-08-10), per docs/premium-skincare-phase3.md §5 + §9.7.
+# Limese is deliberately NOT here: Phase 3 established it is a K-beauty importer
+# and multi-brand retailer, so it is a corridor conduit, not a homegrown brand.
+# The twelve below are the Indian-origin brands that actually hold in-band single
+# SKUs — Phase 1 recorded them under `other_observed` because the brief never
+# named them, which understated homegrown presence in the band.
+_register("homegrown", "RAS Luxury Oils", "RAS Luxury", "R.A.S Luxury Oils")
+_register("homegrown", "Suganda")
+_register("homegrown", "Yuderma")
+_register("homegrown", "Ethiglo")
+_register("homegrown", "WildGlow", "Wild Glow")
+_register("homegrown", "BiE", "BiE Beauty")
+_register("homegrown", "The Derma Co", "The Derma Co.", "TheDermaCo")
+_register("homegrown", "TBC The Bath & Care", "TBC By Nature", "The Bath & Care")
+_register("homegrown", "Miduty")
+_register("homegrown", "Fixderma")
+_register("homegrown", "Aminu")
+
+# The Korean-ODM + Indian-brand incumbents (Phase 3 §5). Same lane this thread is
+# costing, so their shelf prices are the closest thing to a comparable P&L input.
+_register("homegrown", "D'you", "Dyou", "D you")
+_register("homegrown", "Put Simply")
+# No bare "Quench" alias: it is an ordinary English word in skincare copy and
+# the first frame-2 run mis-attributed a Thalgo "Moisture Quenching Serum" and a
+# TBC "Yoga Quench Water Cream" to the brand. A brand alias short enough to be a
+# product-description word attributes competitors' product to it.
+_register("homegrown", "Quench Botanics")
 
 _register("other_foreign", "Cetaphil")
 _register("other_foreign", "La Roche-Posay", "La Roche Posay", "LaRoche-Posay")
@@ -141,6 +168,17 @@ _OUT_OF_SCOPE: list[tuple[str, re.Pattern]] = [
     ("other_non_skincare", re.compile(
         r"\b(toothpaste|mouthwash|supplement|capsules?|tablets?|gummies|"
         r"effervescent|sanitary|condom|diaper|candle|diffuser)\b", re.I)),
+    # Ingestible "beauty from within" SKUs. Added for Phase 4 (2026-08-10):
+    # widening the brand list to the Indian in-band cohort pulled in Miduty,
+    # which is largely a nutraceutical brand, and its softgels were being
+    # counted as face skincare. Matched on unambiguous dosage forms and oral-
+    # only actives — never on ingredient words that also appear topically
+    # ("collagen", "probiotics" and "omega" all occur on creams and sunscreens,
+    # so a bare match on those would delete real in-scope product).
+    ("ingestible", re.compile(
+        r"\b(softgels?|sachets?|drink mix|oral strips?|liposomal|nmn\b|"
+        r"nad\+|krill|milk thistle|marine collagen|liver detox|"
+        r"protein powder|multivitamin)\b", re.I)),
 ]
 
 

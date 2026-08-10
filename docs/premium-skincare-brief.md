@@ -311,6 +311,39 @@ Owner's call: cover **both** efficacy and shade, **weighted to efficacy**.
 Runs only after 1-3. Owner is building here, so this phase carries real numbers,
 not a framework tour.
 
+> **DONE 2026-08-10. Output: `docs/premium-skincare-phase4.md`.** Read that, not
+> this section, for what was found. Headline: **the band is real and the product
+> is cheap enough to make — the plan fails on order size, then on cost of
+> demand.** At the 4-SKU-at-1,000-unit-MOQ shape §0.3 assumes, landed COGS is
+> **80.4% of a Rs2,400 MRP for the serum and 107.3% for the sunscreen**: the unit
+> loses money at full price, zero discount, no marketing. At 5,000 units/SKU the
+> same SKUs land at 38.4% / 37.2% and break even before marketing at a 28-30%
+> discount. **Order size swings contribution margin 57.3pp — more than every
+> unresolved research question combined, and it is a decision, not an unknown.**
+> Then acquisition kills it: of 36 modelled price × volume × duty cells, exactly
+> **one** clears Honasa Consumer's FY25 advertising intensity (Rs743.65cr on
+> Rs2,067cr revenue = **36%**). Lane ratings: **(a) import a Korean brand — NOT
+> RECOMMENDED** (widens the 90%-foreign stat, worst price retention of any origin
+> group); **(b) India manufacture — STRUCTURALLY FAVOURED**, because it deletes
+> duty (11.0pp), freight (8.5pp), CDSCO import registration and the ODM's
+> site-registration lock-in, blocked only on whether an Indian maker can do the
+> sunscreen; **(c) Korean ODM + own brand — VIABLE ONLY ABOVE ~5,000 UNITS/SKU
+> AND AT LOW CAC**; **(d) JV/licence — INSUFFICIENT, unrated.** Porter re-rated at
+> band level: 1b.1 **resolved against the deck** (rivalry HIGH), supplier power
+> upgraded LOW→**MEDIUM** (one-off costs sink with one manufacturer; sunscreen
+> non-recurring cost is 2.7x its goods cost on SPF testing alone), and substitutes
+> — which the category Porter could not rate — is now **HIGH** (Indian D2C a tier
+> below, plus the same Korean SKU leaking 20% cheaper on Amazon).
+> **Price re-sweep done** (frame 2, less-discounted): band holds at 83.5% Nykaa,
+> the **Rs1,900 floor is confirmed** (55.1% retention at Rs1,500-1,750 vs 96.8% at
+> Rs2,000-2,500), homegrown in-band SKUs go **13 → 74** once the right brands are
+> swept, and **D'you lists on both Nykaa and Tira at Rs2,100-3,500 with zero
+> discount on all 14 observations** — closing Phase 3's open question.
+> **Offline remains only partially researched and is still the largest open risk**
+> — the pass commissioned for it did not complete, so §6 names what is missing
+> rather than modelling it. Top open item: **can an Indian manufacturer make a
+> competitive sunscreen?** That one question decides between lanes (b) and (c).
+
 - Porter at **band level** — resolve the deck-vs-`porter_skincare.json`
   contradiction (item 1b.1).
 - **Primary lane, pressure-tested hardest: (c) Korean ODM manufacture + own
@@ -370,6 +403,9 @@ Only after there is real data to show.
 | Phase 3 demand + verdict | `data/manual/analysis/premium_skin_demand.json`, `docs/premium-skincare-phase3.md` | `[PREMIUM-SKIN]` |
 | Phase 3 sourced demand claims | `data/manual/research_drops/premium_skin_demand.json` | `[PREMIUM-SKIN]` |
 | Entry analysis | `data/manual/analysis/premium_skin_entry.json` | — |
+| Phase 4 unit economics (model output) | `data/manual/analysis/premium_skin_unit_economics.json` | `[PREMIUM-SKIN]` |
+| Phase 4 price frame 2 | `data/manual/analysis/premium_skin_band_frame2.json`, `docs/premium-skincare-phase4.md` | `[PREMIUM-SKIN]` |
+| Phase 4 sourced entry claims | `data/manual/research_drops/premium_skin_entry.json` | `[PREMIUM-SKIN]` |
 | Dashboard | `web/app/premium-skincare/` | — |
 
 Phase 1 also added two re-runnable scripts: `lib/fetchers/premium_skin_prices.py`
@@ -391,6 +427,22 @@ Trends baskets — one payload per basket so the indices are actually comparable
 unlike `trends_google.py` which fetches each keyword separately; Google
 rate-limits hard, so it takes a basket list as CLI args to finish an interrupted
 sweep). Schema gained `driver_share` and `spend_ratio` metrics.
+
+Phase 4 added one more: `lib/transforms/premium_skin_entry.py` (the unit-economics
+model — landed-cost waterfall, closed-form break-even discount, max sustainable
+CAC, launch cash at risk, and a sensitivity ranking that sweeps every input that
+could not be sourced instead of plugging it). Inputs that stayed unresolved are
+listed in the artifact's `unresolved_inputs` and are swept, not guessed. Three
+pipeline corrections landed with it, all recorded in phase4 §3.2: Limese dropped
+as a brand (it is a conduit), a too-short `Quench` alias removed after it matched
+competitors' product, and an `ingestible` scope exclusion added so nutraceutical
+SKUs stop counting as face skincare.
+
+**Caution when re-running:** `lib/transforms/premium_skin_band.run()` writes to
+`premium_skin_band.json` as a side effect regardless of which raw file it is
+given, so a frame-2 run clobbers the Phase 1 artifact. Restore it from git after
+(`git checkout -- data/manual/analysis/premium_skin_band.json`) or write the new
+frame to its own path first, as Phase 4 did.
 
 Nothing here overwrites corridor or skincare files. The `[PREMIUM-SKIN]` tag
 mirrors the existing `[CORRIDOR]` convention so this thread stays filterable and

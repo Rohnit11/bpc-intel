@@ -72,6 +72,17 @@ _READY_SELECTOR = {
 
 # Phase 1 competitive set: all three groups, per docs/premium-skincare-brief.md.
 # Korean list seeded from config/corridor.yaml's carried brands.
+#
+# Revised for Phase 4 (2026-08-10) on docs/premium-skincare-phase3.md §9.7:
+# - Limese dropped. Phase 3 established it is a K-beauty importer/multi-brand
+#   retailer, not a homegrown brand — it belongs in config/corridor.yaml's
+#   conduits, and querying it as a brand can only return other people's product.
+# - The twelve Indian-origin brands that actually hold in-band single SKUs
+#   (Phase 3 §5) added. Phase 1 swept the wrong domestic brands: Minimalist et
+#   al. top out below the band, while these were only ever caught incidentally
+#   by concern-led format queries, never by a brand query.
+# - D'you, Put Simply and Quench added. All three already run the Korean-ODM +
+#   Indian-brand lane this thread is costing, and none was ever queried.
 BRAND_GROUPS: dict[str, list[str]] = {
     "korean": [
         "Anua", "Beauty of Joseon", "COSRX", "Innisfree", "Laneige", "Etude",
@@ -79,8 +90,13 @@ BRAND_GROUPS: dict[str, list[str]] = {
         "Some By Mi", "Dr.Jart+", "The Face Shop",
     ],
     "homegrown": [
-        "Minimalist", "Dot & Key", "Foxtale", "Pilgrim", "Limese", "Plum",
+        "Minimalist", "Dot & Key", "Foxtale", "Pilgrim", "Plum",
         "Forest Essentials", "Kama Ayurveda", "Deconstruct", "Earth Rhythm",
+        # Phase 3 §5 — Indian-origin brands with in-band single SKUs.
+        "RAS Luxury Oils", "Suganda", "Yuderma", "Ethiglo", "WildGlow", "BiE",
+        "The Derma Co", "Miduty", "Fixderma", "Aminu",
+        # Phase 3 §5 — the Korean-ODM + Indian-brand incumbents.
+        "D'you", "Put Simply", "Quench Botanics",
     ],
     "other_foreign": [
         "Cetaphil", "La Roche-Posay", "The Ordinary", "Paula's Choice",

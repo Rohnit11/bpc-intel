@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-01",
+  "generated": "2026-08-10",
   "korea": {
     "headline": {
       "geography": "KR",
@@ -709,7 +709,7 @@
         "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
         "Bottom-up base is inflated by non-pure-play conglomerates (LG H&H) reporting non-BPC revenue."
       ],
-      "date": "2026-08-01",
+      "date": "2026-08-10",
       "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
     }
   },
@@ -1371,7 +1371,7 @@
         "Value basis differs (top-down RETAIL vs bottom-up NET_REALISATION). India RETAIL vs NET_REALISATION differ by the MRP trade margin (lib/transforms/mrp_normalise.py).",
         "Bottom-up base is inflated by non-pure-play conglomerates (Godrej Consumer Products, Hindustan Unilever) reporting non-BPC revenue."
       ],
-      "date": "2026-08-01",
+      "date": "2026-08-10",
       "note": "Numeric gap not computed: bases are not directly comparable (see mismatches). Bottom-up here is a coverage indicator, not a market-size cross-check."
     }
   },
@@ -1868,6 +1868,20 @@
         "source": "Expert Market Research",
         "url": "https://www.expertmarketresearch.com/reports/india-k-beauty-products-market",
         "notes": "[CORRIDOR] India K-beauty products market forecast CAGR 2026-2035; fastest-growing beauty sub-trend, K-pop/K-drama pull",
+        "metric": "cagr_forecast",
+        "tier": null,
+        "segment": "total_bpc"
+      },
+      {
+        "value": 7.4,
+        "unit": "percent",
+        "currency": "INR",
+        "period": "2026-2036",
+        "value_basis": "RETAIL",
+        "confidence": "LOW",
+        "source": "Future Market Insights — K-Beauty Product Market (India country table)",
+        "url": "https://www.futuremarketinsights.com/reports/k-beauty-product-market",
+        "notes": "[CORRIDOR][PREMIUM-SKIN] India K-beauty forecast CAGR 7.4% (2026-36) — recorded as an OUTLIER TO DISCARD, not as a candidate base case. Filed at total_bpc because K-beauty spans BPC, not skincare alone, and to sit beside the four K-beauty-in-India estimates the repo already holds: TheBK/Beauty Kyungjae USD400m 2024 growing 25.9% to USD1.6bn by 2030 (MEDIUM), Economic Times Retail 25.9% 2024-30 (MEDIUM), Expert Market Research INR3,139cr 2025 at 26.3% 2026-35 (LOW), The Report Cubes USD335m 2026 at 19.17% (LOW). Those four cluster on LEVEL (~USD326-400m) and on GROWTH (19-26%); FMI's 7.4% is roughly a third of the bottom of that range. Its disclosed method explains why — a 'proprietary forecasting model based on Korean cosmetics export data (KITA), global Sephora K-beauty shelf space allocation, and social commerce GMV tracking', i.e. a global shelf-space model apportioned to a country rather than an India measurement. Channel and organised/unorganised coverage not stated.",
         "metric": "cagr_forecast",
         "tier": null,
         "segment": "total_bpc"

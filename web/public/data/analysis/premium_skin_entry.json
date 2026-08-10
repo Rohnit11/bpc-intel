@@ -1,0 +1,318 @@
+{
+  "generated_at": "2026-08-10T00:00:00Z",
+  "geography": "IN",
+  "segment": "skincare",
+  "band_inr": [
+    1500,
+    3000
+  ],
+  "namespace": "[PREMIUM-SKIN]",
+  "scope": "Market entry into India face skincare and sun care at Rs1,500-3,000 MRP with Korean-formulated product under Indian brand ownership. Phase 4 of docs/premium-skincare-brief.md. Ratings follow the shape used by porter_skincare.json: rating + rationale + evidence + evidence_strength, with INSUFFICIENT rendering as 'research needed' rather than a hedged guess.",
+  "method_note": "Porter is re-rated at BAND level, not category level, which is the contradiction item 1b.1 asked us to resolve. Every quantitative claim traces to Phases 1-3 on disk, to the 2026-08-10 re-sweep in premium_skin_band_frame2.json, or to the unit-economics model in premium_skin_unit_economics.json (all [ESTIMATE], methodology and swept inputs recorded there). Judgment calls are allowed here per CLAUDE.md's entry-analysis rules; unsourced numbers are not.",
+  "porter_band_level": {
+    "rivalry": {
+      "rating": "HIGH",
+      "rationale": "Resolves contradiction 1b.1 in favour of porter_skincare.json and against the deck. The band is not thinly served: the 2026-08-10 re-sweep finds 385 in-band-by-MRP SKU observations across Nykaa and Tira from 60+ distinct brands, with Korean brands supplying 171 of them. A tier the deck describes as served only by 'Emerging' players carries Anua, Medicube, COSRX, Beauty of Joseon, Mixsoon and The Face Shop at assortment depth. The deck's 'competitive intensity: Low' is a statement about INDIAN OWNERSHIP of the tier, not about competition in it, and the two were being conflated. Qualification that matters for pricing: rivalry is currently expressed through assortment breadth rather than price war — median discount 10% (Nykaa) / 5% (Tira) and 37-38% of in-band SKUs at zero discount on the second frame. The exception is sunscreen, where Dr.Jart+ discounts 60% and Mixsoon 50%, so the one lane the concept treats as a hero is also the one lane where rivalry is disorderly.",
+      "evidence": [
+        "premium_skin_band_frame2.json:headline_by_platform (Nykaa 272 in-band, 83.5% retention; Tira 113, 84.1%)",
+        "premium_skin_band_frame2.json:by_brand_group (korean 171 in-band SKUs)",
+        "docs/premium-skincare-phase1.md §2 (64 distinct brands; Anua 33, Medicube 21, COSRX 16)",
+        "premium_skin_band_frame2.json:hero_formats_by_group.sunscreen (Dr.Jart+ 60% off, Mixsoon 50% off)"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    "buyer_power": {
+      "rating": "HIGH",
+      "rationale": "Two distinct buyers, both powerful. The CHANNEL buyer: Nykaa takes 22-26% commission on skincare (LOW, on file) plus 18% GST, and Phase 1 established that the platform — not the brand — sets the MRP, with Beauty of Joseon Relief Sun listing at Rs1,570 on Nykaa and Rs1,500 on Tira for a size-verified identical 50ml pack. Whoever controls the listing controls whether the SKU is in the band at all, which for an imported brand means band membership is not a brand decision. The CONSUMER buyer: Phase 3 priced a Rs1,900 SKU at 14.1% of the highest income cohort's entire annual BPC budget and 2.5x an average purchase occasion, and found price resistance more than doubling above Rs2,500 (3.1% to 7.9% of positive reviews by MRP third).",
+      "evidence": [
+        "data/sources.csv — IN skincare trade_margin 24% (Sylvr, Nykaa commission guide, LOW)",
+        "docs/premium-skincare-phase1.md §5 (platform-set MRP; Nykaa Rs1,570 vs Tira Rs1,500, size verified on PDP)",
+        "docs/premium-skincare-phase3.md §3 (Rs1,900 = 14.1% of top-cohort annual BPC spend, ESTIMATE)",
+        "docs/premium-skincare-phase3.md §2b (price resistance 3.1%/3.2%/7.9% by MRP third)"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    "supplier_power": {
+      "rating": "MEDIUM",
+      "rationale": "An upgrade from porter_skincare.json's category-level LOW, and the upgrade is specific to the entry shape this thread is costing. The ODM base is genuinely commoditised — Cosmax, Kolmar Korea and Cosmecca all compete, and two independent sourcing agencies quote MOQs from 1,000 units. But at the volumes an entrant would actually place, three things hand the supplier leverage the category view misses. (1) The one-off block dominates: at a 1,000-unit MOQ, development, stability, patch and certification testing land at roughly Rs606,000 per ordinary SKU and Rs1,568,000 for the sunscreen once SPF testing (USD5,000-15,000 per formula) is included, so the sunscreen's non-recurring cost is 2.7x its goods cost. Those are sunk with one manufacturer. (2) Per-unit cost falls 20-40% from 1,000 to 5,000 units, so the supplier's price is a function of a commitment the entrant cannot make on day one. (3) Switching is not free downstream either: CDSCO registration is tied to the manufacturing site, so changing ODM means re-registering. Rated MEDIUM rather than HIGH because the ex-works price itself remains competitive and multiple vendors will quote.",
+      "evidence": [
+        "premium_skin_unit_economics.json:assumptions.spf_test_usd_per_formula (USD5,000-15,000, OEMKorea, LOW)",
+        "premium_skin_unit_economics.json:launch_cash_at_risk.moq_1000_no_cepa (sunscreen oneoff Rs1,568,549 vs goods Rs577,380)",
+        "premium_skin_unit_economics.json:assumptions.volume_discount_5k (20-40% from 1,000 to 5,000 units)",
+        "config/corridor.yaml:regulation (CDSCO site registration required)",
+        "config/korea_findings.yaml:supply_chain (Cosmax/Kolmar/Cosmecca; batches from 1,000 units)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "Actual quoted MOQ, per-unit cost and exclusivity terms from a named ODM at 1,000/5,000/10,000 units. Every cost input here comes from sourcing-agency marketing pages (LOW) rather than a quote, and whether a formula can be made exclusive — and at what volume commitment — could not be established from any fetched source."
+    },
+    "new_entrant_threat": {
+      "rating": "HIGH",
+      "rationale": "Entry is cheap, continuous, and increasingly comes from the gatekeeper itself. Phase 3 recorded 800+ D2C BPC brands launched in India since 2020 and D2C compounding 22-27% to 2030. The supply of Korean competitors into this specific band is driven by Korean export diversification rather than Indian demand — four of the nine global brands Nykaa featured in Q3FY26 are Korean — so it can intensify faster than the market grows. The sharpest form of the threat is that the channel is also the competitor: Dot & Key is Nykaa-owned, runs a Rs1,500cr+ GMV rate and ranks #1 in skin, moisturiser and sunscreen on the platform an entrant depends on for discovery.",
+      "evidence": [
+        "docs/premium-skincare-phase3.md §5 (800+ D2C brands since 2020; Dot & Key Nykaa-owned, #1 in skin/moisturiser/sunscreen)",
+        "docs/premium-skincare-phase3.md §4.3 (4 of 9 Nykaa global launches Q3FY26 Korean; Korean firms accelerating into India to offset SWANA volatility)",
+        "premium_skin_unit_economics.json:assumptions.moq_units_per_sku (1,000-unit entry ticket)"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    "substitutes": {
+      "rating": "HIGH",
+      "rationale": "porter_skincare.json left this force unrated at category level for want of cross-category substitution evidence. At BAND level it is rateable, because the substitute for a Rs1,900 in-band SKU is not another category — it is the same benefit bought cheaper, by two routes the price sweep measures directly. VERTICAL: the Indian D2C field sells the same actives a full tier below, with Minimalist topping out at Rs1,347, Deconstruct at Rs799 and Pilgrim/Foxtale at Rs695, and Phase 3 found `foxtale` outsearching `beauty of joseon` and `cosrx` by ~4.5x from below the band. CHANNEL/GREY: the identical Korean SKU leaks ~20% below the authorised channel on Amazon (Beauty of Joseon Relief Sun 50ml at Rs1,125 against Rs1,413 Nykaa), with near-miss counterfeits beneath that at Rs666. A brand cannot price against a competitor that is its own product.",
+      "evidence": [
+        "docs/premium-skincare-phase1.md §2b (Minimalist Rs1,347 ceiling; Deconstruct Rs799; Pilgrim/Foxtale Rs695)",
+        "docs/premium-skincare-phase1.md §6 (Amazon Rs1,125 vs Nykaa Rs1,413; lookalikes at Rs666, ASIN B0H5Q59V69)",
+        "docs/premium-skincare-phase3.md §4.2 (foxtale search index 6.7 vs beauty of joseon 1.5, cosrx 1.4)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "Volume flowing through the grey/marketplace channel. The price gap is measured; the share of category demand it captures is not."
+    },
+    "overall": {
+      "rating": "UNATTRACTIVE at the launch shape the brief specifies; conditionally attractive at scale",
+      "rationale": "Four of five forces are HIGH and the fifth was upgraded, so the band is structurally hostile — but the binding constraint found in Phase 4 is not structural, it is arithmetic. At the 1,000-unit MOQ the brief's range-economics consequence assumes, landed cost is 80% of a Rs2,400 MRP for the pigmentation serum and 107% for the sunscreen: the unit loses money at full price with zero discount and no marketing at all. The same product at 5,000 units per SKU lands at 38% and 37% of MRP and clears before marketing. The entry question is therefore not 'is the band attractive' but 'can this brand commit to volume before it has demand', and Phase 3 already established demand enters via a concern (acne, 3x pigmentation in search) the brand does not own, against incumbents (RAS Luxury Oils, Suganda) who already speak the concern-and-proof language at Rs1,599-1,990.",
+      "evidence": [
+        "premium_skin_unit_economics.json:scenarios (cepa_no_units_1000 vs cepa_no_units_5000)",
+        "premium_skin_unit_economics.json:decision_sensitivity (units_per_sku swings contribution margin 57.3pp)",
+        "docs/premium-skincare-phase3.md §4.2 + §5"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": null
+    }
+  },
+  "entry_lanes": [
+    {
+      "lane": "a",
+      "label": "Import an existing Korean brand via a conduit",
+      "rating": "NOT RECOMMENDED",
+      "rationale": "This is the lane the band is already saturated with, and the evidence says it is the weakest position in it. Korean-origin in-band SKUs retain the band at 81.3% against 87.8% for Indian-origin ones on the 2026-08-10 frame — the discount pressure in this band is Korean pressure, and an importer inherits it without owning the formula, the pricing or the listing. It also fails the brief's own ownership test (1b.3): a Korean brand imported into India widens the deck's '90% foreign-owned' statistic rather than addressing it. The lane's one genuine advantage — a ready brand — is worth least here, because Phase 3 established Korean provenance is invoked in 2.2% of positive reviews and indexes 0.6 in search against 12.1 for `niacinamide`.",
+      "evidence": [
+        "premium_skin_band_frame2.json:by_brand_group (korean 81.3% vs homegrown 87.8% band retention)",
+        "docs/premium-skincare-phase3.md §0 (Korean provenance 2.2% of positive reviews; korean skincare 0.6 vs niacinamide 12.1)",
+        "docs/premium-skincare-brief.md §1b.3 (ownership logic)"
+      ],
+      "evidence_strength": "STRONG",
+      "research_needed": null
+    },
+    {
+      "lane": "b",
+      "label": "India-manufactured Korean-formulation own brand",
+      "rating": "STRUCTURALLY FAVOURED, BLOCKED ON ONE CAPABILITY QUESTION",
+      "rationale": "Every cost the model shows to be decision-relevant on the import lane is one this lane deletes. Basic customs duty plus surcharge is worth 11.0 percentage points of contribution margin in the sensitivity ranking; freight and clearing a further 8.5pp across their swept range; and CDSCO IMPORT registration with its 3-6 month lead time disappears along with the manufacturing-site lock-in that gives the Korean ODM its switching leverage. It is also the lane the evidence shows working: the twelve Indian-origin brands holding in-band single SKUs hold price better than the Korean cluster, and Phase 3 found RAS Luxury Oils and Suganda already own the concern-and-proof review vocabulary at Rs1,599-1,990. Like lane (c) it satisfies the ownership test. It is not rated FAVOURED outright for one reason: whether an Indian manufacturer can actually make the sunscreen hero to Korean texture and filter standards is unverified, and that is precisely the SKU whose failure modes Phase 2 identified as live.",
+      "evidence": [
+        "premium_skin_unit_economics.json:decision_sensitivity (cepa_bcd_rate 11.0pp; freight 8.5pp)",
+        "premium_skin_band_frame2.json:by_brand_group (homegrown 87.8% retention, 54.1% zero-discount)",
+        "docs/premium-skincare-phase3.md §5 (RAS Luxury Oils 50.0% pigmentation concern / 30.1% result vs COSRX 16.0%/8.2%)",
+        "config/india_findings.yaml:supply_chain (contract manufacturing, MOQ ~500 units)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "Whether any Indian contract manufacturer can formulate a competitive sunscreen — specifically which UV filters are permitted and available in India versus Korea, and whether the lightweight textures Phase 2 identified as the live failure mode are achievable domestically. Also: named Indian premium contract manufacturers, their MOQs and per-unit costs. No fetched source in this phase establishes any of it."
+    },
+    {
+      "lane": "c",
+      "label": "Korean ODM manufacture + own India brand (the brief's primary lane)",
+      "rating": "VIABLE ONLY ABOVE ~5,000 UNITS PER SKU, AND ONLY AT LOW ACQUISITION COST",
+      "rationale": "Pressure-tested hardest per the brief, and it does not survive at the shape the brief assumes. At 1,000 units per SKU the pigmentation serum lands at Rs1,929 against a Rs2,400 MRP (80.4%) and the sunscreen at Rs2,576 (107.3%): break-even discount is negative before any marketing spend, meaning the unit cannot clear at full MRP. At 5,000 units the same SKUs land at 38.4% and 37.2% of MRP and break even before marketing at a 28-30% discount, which is deeper than the 10% median the band actually charges. The lane therefore works — but only as a volume commitment, and the volume decision swings contribution margin by 57.3 percentage points, more than every unresolved research question in the model combined. The second constraint is acquisition: of 36 modelled price/volume/duty cells for the two heroes, exactly ONE clears Honasa Consumer's FY25 advertising intensity of 36% of revenue (sunscreen, CEPA claimed, 10,000 units, Rs2,900 MRP, 10% discount). The lane is not killed by cost of goods; it is killed by cost of demand.",
+      "evidence": [
+        "premium_skin_unit_economics.json:scenarios.cepa_no_units_1000 (serum 80.4%, sunscreen 107.3% of MRP2400)",
+        "premium_skin_unit_economics.json:scenarios.cepa_no_units_5000 (38.4% / 37.2%)",
+        "premium_skin_unit_economics.json:max_sustainable_cac (1 of 36 cells clears 36%)",
+        "premium_skin_unit_economics.json:decision_sensitivity (units_per_sku 57.3pp)",
+        "Honasa Consumer FY25: Rs743.65cr advertising on Rs2,067cr revenue = 36% (Storyboard18, MEDIUM)"
+      ],
+      "evidence_strength": "PARTIAL",
+      "research_needed": "A real ODM quote. Every cost input is sourcing-agency marketing content (LOW) and the model's verdict turns on the volume-discount curve, which no primary source confirms."
+    },
+    {
+      "lane": "d",
+      "label": "JV or licence with a Korean brand",
+      "rating": "INSUFFICIENT",
+      "rationale": "No fetched source in this phase established a single India-Korea beauty JV or licensing precedent, a royalty rate, a minimum guarantee, or a term structure. The research pass that was to cover it did not complete. Rating withheld rather than inferred from the other three lanes, per the brief's instruction that INSUFFICIENT renders as research needed and never as a hedged guess.",
+      "evidence": [],
+      "evidence_strength": "INSUFFICIENT",
+      "research_needed": "India-Korea beauty JV/licensing precedents and their commercial terms: royalty rates on net sales, minimum guarantees, territory and term, and whether any Korean brand has licensed India manufacture rather than exporting finished goods. AmorePacific's Nykaa partnership structure is the most likely documented starting point."
+    }
+  ],
+  "case_against_the_primary_lane": {
+    "summary": "The brief asks for the case against lane (c) to be built honestly, on the ground that an entry analysis which only supports the owner's prior is worthless. Seven arguments, all evidenced, in descending force.",
+    "arguments": [
+      {
+        "argument": "The asset the lane buys has no measured demand pull.",
+        "detail": "Lane (c) pays an import cost stack — duty, freight, FX, CDSCO, longer cash cycle — to obtain Korean manufacture. Phase 3 established Korean provenance is invoked in 2.2% of 2,676 positive reviews, 0 of 333 reviews of Indian-origin SKUs, and indexes 0.6 in Indian search against 12.1 for `niacinamide` and 15.6 for `dermatologist`. The founder who has run this exact lane longest says so directly: 'With an influx of Korean brands that are so readily available, being made in Korea is hardly an edge anymore' (Shamika Haldipurkar, D'you).",
+        "evidence": [
+          "docs/premium-skincare-phase3.md §0, §4.1, §4.2"
+        ]
+      },
+      {
+        "argument": "The economics do not work at the order size the brief assumes.",
+        "detail": "Landed COGS is 80.4% of MRP for the serum and 107.3% for the sunscreen at 1,000 units per SKU. The required ex-works cost to reach a 40% contribution margin at that volume is NEGATIVE at every price in the band — the target is unreachable with free product.",
+        "evidence": [
+          "premium_skin_unit_economics.json:scenarios, required_exw_for_40pct_contribution_usd"
+        ]
+      },
+      {
+        "argument": "The lane already has better-funded incumbents, and the re-sweep confirms they are on the shelf.",
+        "detail": "D'you (2020) now shows 14 priced SKU observations across Nykaa AND Tira at Rs2,100-3,500 with ZERO discount on every one — closing Phase 3's open question of whether it lists on the platforms at all. Put Simply (2022) appears at Rs1,499-1,699 discounting 20-25%. Two brands, same manufacturing geography, opposite price architectures, both ahead of a new entrant.",
+        "evidence": [
+          "premium_skin_band_frame2.json:all_priced_skus (D'you 14 obs, 0% discount; Put Simply 20-25% off)"
+        ]
+      },
+      {
+        "argument": "The sunscreen hero carries a one-off cost the serum does not, and it is the larger number.",
+        "detail": "SPF testing at USD5,000-15,000 per formula makes the sunscreen's non-recurring cost Rs1,568,549 against Rs577,380 of goods at a 1,000-unit order — 2.7x. The hero product that best expresses the skin-tone thesis is the one the MOQ economics punish hardest.",
+        "evidence": [
+          "premium_skin_unit_economics.json:launch_cash_at_risk.moq_1000_no_cepa"
+        ]
+      },
+      {
+        "argument": "Formula exclusivity is unestablished, so the ODM may make the same base for a competitor.",
+        "detail": "Neither sourcing source discusses formula ownership or exclusivity. The category-level Porter reads Korea's ODM depth as what ENABLES indie proliferation — the same mechanism that would let a competitor buy a near-identical product.",
+        "evidence": [
+          "premium_skin_unit_economics.json:assumptions (formula ownership NOT DISCUSSED)",
+          "data/manual/analysis/porter_skincare.json:KR.supplier_power"
+        ]
+      },
+      {
+        "argument": "Korean formulation increases exposure to the failure mode Phase 2 actually found.",
+        "detail": "Phase 2 killed the white-cast premise and found the live complaints are irritation (19.2% of Korean sunscreen negatives) and heaviness in humidity (15.4%) — a temperate-market formulation meeting a hot, humid one. Sourcing from Korea does not fix that unless the ODM genuinely reformulates, and whether an ODM will formulate for Indian conditions rather than adapt an existing base is unverified.",
+        "evidence": [
+          "docs/premium-skincare-phase2.md (irritation 19.2%, humidity 15.4%)"
+        ]
+      },
+      {
+        "argument": "The skin-tone argument that survives is one consumers cannot perceive.",
+        "detail": "Phase 2 found tone mismatch fired once in 3,287 reviews and only 10 of 327 in-band SKUs are tinted at all. The defensible skin-tone claim is visible-light photoprotection via tinted iron oxides (78% vs 62% MASI reduction) — invisible to the buyer and showing zero pull. The differentiator is real and unsellable at the same time.",
+        "evidence": [
+          "docs/premium-skincare-phase2.md"
+        ]
+      }
+    ],
+    "strongest_counter_argument_for_the_lane": "Sunscreen formulation capability is the one thing Korea plausibly supplies that India may not, and it is the lane's only unhedged advantage. It is also unverified in both directions — nothing fetched in this phase establishes that Indian manufacturers cannot match it. That single question decides between lanes (b) and (c), and it is the highest-value open research item in the thread."
+  },
+  "unit_economics": {
+    "artifact": "data/manual/analysis/premium_skin_unit_economics.json",
+    "model": "lib/transforms/premium_skin_entry.py",
+    "tests": "tests/test_premium_skin_entry.py",
+    "headline": "At 1,000 units/SKU the launch is under water at every price in the band; at 5,000 it clears before marketing but not after it. Order size swings contribution margin 57.3pp — more than every unresolved research question combined.",
+    "launch_cash_at_risk_inr": {
+      "4_skus_at_1000_units": 6258474,
+      "4_skus_at_1000_units_if_cepa_applies": 5740721,
+      "4_skus_at_5000_units": 13436420,
+      "note": "Goods + freight + sticking duty + development/testing only. Excludes CDSCO registration (fee not retrievable), India entity setup, warehousing, launch marketing and working capital between landing stock and platform payment. A floor on the cheque, not the cheque."
+    },
+    "value_basis_note": "MRP-basis retail down to net_revenue, NET_REALISATION below it. MRP is GST-inclusive so revenue is MRP/(1+GST). Import IGST and GST on platform commission are input tax credits, excluded from margin and reported as working capital; only BCD and Social Welfare Surcharge stick."
+  },
+  "offline": {
+    "status": "PARTIALLY RESEARCHED — deferred from Phase 1, and it remains the thread's largest open risk",
+    "rationale": "Phase 3 concluded offline must be treated as primary in Phase 4, because premium concentrates in the channel this thread has never observed: about two-thirds of Nykaa store GMV is premium brands, offline rose from 3.4% (1QFY22) to 9.0% (3QFY25) of Nykaa BPC GMV, and 52% of India's BPC is still unorganised offline against 20% online. The offline research pass commissioned for this phase did not complete, so the channel is documented here only to the extent the repo already held it plus what could be verified directly. What is NOT established: retailer and distributor margins on premium skincare, listing or slotting fees, minimum volume commitments, consignment versus outright purchase terms, beauty-advisor staffing cost, and which Phase 1 competitive-set brands have physical distribution and where. None of it is inferred.",
+    "what_is_on_file": [
+      "Nykaa operates 116 multi-brand Beauty stores, 56% in Tier 2/3 cities (Phase 3, HIGH)",
+      "~two-thirds of Nykaa store GMV is premium brands (Phase 3)",
+      "Nykaa offline 3.4% (1QFY22) to 9.0% (3QFY25) of BPC GMV (Phase 3)",
+      "India BPC channel mix FY25: 52% unorganised offline / 28% organised offline / 20% online (Redseer via MOFSL, MEDIUM)",
+      "~88% of House of Nykaa eB2B GMV from Tier 2+ cities (Phase 3)"
+    ],
+    "evidence_strength": "INSUFFICIENT",
+    "research_needed": "The whole offline economics block: trade margin taken by Nykaa Luxe / Tira stores / Shoppers Stop / Health & Glow on premium skincare; listing and slotting fees for a new brand; minimum volumes; payment and return terms; beauty-advisor cost and who bears it; chemist and dermatologist-detailing channel economics. Plus the brand-by-chain physical presence map for the Phase 1 competitive set. Most of this is not web-accessible and needs trade conversations rather than desk research — which is itself the finding, and the reason it should not be modelled.",
+    "consequence_for_the_verdict": "Phase 1's discount verdict remains an ONLINE verdict. Because offline typically holds closer to MRP, the band's price realisation is more likely to be understated than overstated by this thread — but the cost side moves the other way, since offline adds retailer margin on top of the platform commission already in the model. The two effects are not netted here because neither is measured."
+  },
+  "risk_register": [
+    {
+      "risk": "Order-size trap",
+      "severity": "HIGH",
+      "rationale": "The launch shape the brief specifies — a 4-SKU range at MOQ — is the shape the model says cannot work: landed cost 80-107% of MRP. Viability requires committing to ~5,000 units per SKU before there is any demand evidence, roughly Rs13.4m of goods and one-offs. Volume is simultaneously the only real margin lever (57.3pp) and the largest source of inventory risk.",
+      "mitigation": "Sequence rather than launch a range. Phase 3 already established consumer demand is sequential single-SKU trial, not routine adoption, so the range exists for MOQ and shelf reasons only. Committing one hero at 5,000 units beats four at 1,000."
+    },
+    {
+      "risk": "Cost of demand exceeds cost of goods",
+      "severity": "HIGH",
+      "rationale": "One of 36 modelled cells clears Honasa's 36%-of-revenue advertising intensity. Demand enters the category via acne (3x pigmentation in search), the concern-and-proof vocabulary is already owned by RAS Luxury Oils and Suganda at Rs1,599-1,990, and hype-acquired buyers are 4.7x over-represented among 1-star reviews — so bought attention converts into bad reviews in this band.",
+      "mitigation": "Treat CAC as the binding constraint, not COGS. The model's max_sustainable_cac block gives the ceiling at each price and volume; any plan whose acquisition cost exceeds it is not a pricing problem but a business-model problem."
+    },
+    {
+      "risk": "CEPA duty treatment unverified",
+      "severity": "MEDIUM",
+      "rationale": "Whether Korean-origin cosmetics enter India duty-free under the India-Korea CEPA could not be verified against any fetchable authoritative page, and the difference is 11.0pp of contribution margin. Modelled both ways rather than assumed.",
+      "mitigation": "One customs-broker conversation resolves it. Until then no plan should be costed on the CEPA case."
+    },
+    {
+      "risk": "Marketplace leakage and counterfeiting",
+      "severity": "MEDIUM",
+      "rationale": "Phase 1 found the genuine Beauty of Joseon Relief Sun transacting ~20% below the authorised channel on Amazon, with near-miss brand-name lookalikes at Rs666. An imported brand cannot control the price of its own product across channels.",
+      "mitigation": "Lane (b) or (c) with Indian brand ownership gives trademark standing to act; lane (a) does not."
+    },
+    {
+      "risk": "ODM formulates the same base for a competitor",
+      "severity": "MEDIUM",
+      "rationale": "Exclusivity terms are unestablished, and Korea's ODM depth is exactly what lets competitors launch quickly.",
+      "mitigation": "Make exclusivity a term of the first quote request; price the volume commitment it requires."
+    },
+    {
+      "risk": "Korean competitive supply intensifies faster than Indian demand",
+      "severity": "MEDIUM",
+      "rationale": "Korean brands are entering India to offset SWANA volatility and EU regulatory tightening, arriving through Nykaa's prestige slate — the Rs1,500-3,000 rung precisely. Supply is a function of Korean export strategy, not Indian demand growth.",
+      "mitigation": "Do not build a plan whose defensibility is 'Korean'."
+    },
+    {
+      "risk": "The band's floor is porous",
+      "severity": "MEDIUM",
+      "rationale": "Confirmed on a second, less-discounted frame: SKUs listing Rs1,500-1,750 hold the band only 55.1% of the time against 96.8% at Rs2,000-2,500. Korean sunscreen still retains only 48.0%.",
+      "mitigation": "List at Rs1,900+, as Phase 1 concluded and Phase 3 independently corroborated on affordability grounds."
+    },
+    {
+      "risk": "Indian brands close the band first",
+      "severity": "MEDIUM",
+      "rationale": "Fifteen Indian-origin brands now hold in-band single SKUs on the second frame, at 87.8% band retention and 54.1% zero-discount against the Korean cluster's 81.3% and 22.8%. They hold price better and speak the demand vocabulary better.",
+      "mitigation": "Compete on the concern and the proof, which is where they are strong and where Korean provenance is irrelevant."
+    },
+    {
+      "risk": "Climate/texture mismatch surfaces post-launch",
+      "severity": "MEDIUM",
+      "rationale": "Phase 2's live failure modes for Korean sunscreen in India are irritation (19.2%) and heaviness in humidity (15.4%), not white cast. A Korean-sourced formulation inherits this unless deliberately reformulated.",
+      "mitigation": "Make humid-climate wear a formulation requirement and a testing gate, not a marketing claim."
+    },
+    {
+      "risk": "Every cost input is LOW confidence",
+      "severity": "HIGH",
+      "rationale": "The ODM cost band, the duty stack and the platform commission are all sourcing-agency, stale-page or aggregator sources. The model's arithmetic is tested; its inputs are not audited.",
+      "mitigation": "Re-run the model against a real quote and a current CBIC tariff before any capital is committed. The model is built to be re-run, not to be believed."
+    }
+  ],
+  "price_frame_comparison": {
+    "note": "The brief required the Phase 1 sweep to be re-run off-sale before Phase 4 priced anything. Frame 2 was collected 2026-08-10 with the corrected brand list from Phase 3 §9.7.",
+    "frame_1": {
+      "date": "2026-08-09",
+      "raw": "premium_skin_prices_20260809T184135Z.json",
+      "nykaa_retention_pct": 79.6,
+      "tira_retention_pct": 87.3,
+      "nykaa_zero_discount_pct": 27.1,
+      "tira_median_discount_pct": 10.0
+    },
+    "frame_2": {
+      "date": "2026-08-10",
+      "raw": "premium_skin_prices_20260810T042850Z.json",
+      "nykaa_retention_pct": 83.5,
+      "tira_retention_pct": 84.1,
+      "nykaa_zero_discount_pct": 37.9,
+      "tira_median_discount_pct": 5.0
+    },
+    "verdict": "The band holds on a second, materially less-discounted frame. Zero-discount SKUs rose from 27.1% to 37.9% on Nykaa and 21.6% to 37.2% on Tira, and Tira's median discount halved — consistent with the Freedom Sale that was live during frame 1 winding down. Phase 1's floor finding survives unchanged: Rs1,500-1,750 retains 55.1% (was 50.0%) against 96.8% at Rs2,000-2,500 (was 97.2%). The Rs1,900 list-price floor is confirmed on independent data.",
+    "corrections_made": [
+      "Limese removed from the homegrown brand list — Phase 3 established it is a K-beauty importer and conduit, not a brand.",
+      "Twelve Indian-origin in-band brands plus D'you, Put Simply and Quench Botanics added to the sweep and to the transform's attribution map.",
+      "A bare 'Quench' alias was registered and then removed: it matched a Thalgo 'Moisture Quenching Serum' and a TBC 'Yoga Quench Water Cream'. Quench Botanics is NOT carried on Nykaa or Tira under that name.",
+      "An `ingestible` scope-exclusion pattern was added to lib/transforms/premium_skin_band.py: widening the brand list pulled in Miduty, largely a nutraceutical brand, whose softgels and collagen SKUs were being counted as face skincare. 27 SKUs now excluded."
+    ]
+  },
+  "research_needed_ranked": [
+    "Can an Indian contract manufacturer make a competitive sunscreen? Permitted UV filters in India vs Korea, and achievable textures. This single question decides between lanes (b) and (c).",
+    "A real ODM quote at 1,000 / 5,000 / 10,000 units, with exclusivity terms and whether they will formulate for Indian conditions or adapt a base.",
+    "Offline economics in full — retailer margin, listing fees, minimum volumes, terms. Not web-accessible; needs trade conversations.",
+    "India-Korea CEPA treatment of HS 3304, verified against a current CBIC notification or tariff lookup. Worth 11.0pp of contribution margin.",
+    "Current BCD/SWS/GST on HS 3304 for 2026 — the only rates retrievable were dated 2018 and pre-date the Sept-2025 GST restructure.",
+    "CDSCO registration fee schedule and realistic lead time under the Cosmetics Rules 2020.",
+    "India D2C beauty CAC benchmarks beyond an advertising-to-revenue ratio, and contribution margins for premium (not mass) Indian brands.",
+    "JV/licence precedents and terms for lane (d), which remains entirely unrated."
+  ]
+}

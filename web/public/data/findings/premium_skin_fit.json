@@ -1,0 +1,114 @@
+{
+  "indian_dermatological_concerns": [
+    {
+      "text": "Melasma and post-inflammatory hyperpigmentation (PIH) are the two most common presentations of hyperpigmentation in Indian clinical practice — a 2024 pan-India survey of 409 dermatologists put them at 50.2 percent and 49.8 percent of hyperpigmentation cases respectively, with most dermatologists reporting melasma in 21-30 percent of their patient population, and states that more than 80 percent of the Indian population exhibits facial pigmentation heterogeneity. This is the demand-side fact the whole thesis rests on: the dominant Indian skincare concern is pigmentation, not the barrier repair and hydration that Korean premium ranges lead with.",
+      "source": "Athenaeum Scientific Publishers — Hyperpigmentation Management Perspectives: A Nationwide Survey of Indian Dermatologists (published 2026-02-21)",
+      "url": "https://athenaeumpub.com/hyperpigmentation-management-perspectives-a-nationwide-survey-of-indian-dermatologists"
+    },
+    {
+      "text": "PIH in India is overwhelmingly acne-driven and it starts young: more than 70 percent of Indian subjects with an acne history carry pigmented post-inflammatory marks before the age of 35, in both women and men, falling to under 10 percent above 50. The same review records that in a study of more than 300 Indian melasma patients only about 10 percent used sunscreen at all, and that periorbital hyperpigmentation affects roughly 50 percent of Indian women at moderate-to-severe grade. The operator reading: the Indian pigmentation problem is a young, acne-adjacent, sunscreen-naive one, which is a different customer from the mature-melasma patient a Korean brightening line implicitly addresses.",
+      "source": "Indian Journal of Dermatology (Nouveau et al., 2016) — Skin Hyperpigmentation in Indian Population: Insights and Best Practice",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5029232"
+    },
+    {
+      "text": "Treatment evidence for melasma in darker skin types is thin at the deepest end of the tone range: a scoping review of melasma treatment in skin of colour found the included studies were carried out on Fitzpatrick types IV-VI but only four investigated type VI at all, with sample sizes from 20 to 100. Broad-spectrum SPF50+ was recommended throughout, and an Indian multi-centric clinico-epidemiological study is cited for a strong correlation between family history and melasma prevalence. A brand claiming formulation for Indian skin tone is therefore claiming something the clinical literature itself has only sparsely tested at the deeper end — a defensible place to generate proprietary evidence, and a risk if the claim outruns it.",
+      "source": "Cosmetics (MDPI, 2023) — Treatment of Melasma on Darker Skin Types: A Scoping Review",
+      "url": "https://www.mdpi.com/2079-9284/10/1/25"
+    }
+  ],
+  "photoprotection_and_skin_tone": [
+    {
+      "text": "The core mechanism finding, and the one that reframes the whole sunscreen thesis: visible light (400-700 nm), not just UV, drives pigmentation and melasma relapse in skin of colour, and conventional broad-spectrum sunscreens do not block it. Protection against visible light requires an OPAQUE film — 'compounds must be opaque to filter VL' — supplied by iron oxides plus PIGMENTARY-grade (non-micronized) titanium dioxide. Micronized/nano inorganic filters, the ones used precisely because they are cosmetically invisible, do not deliver it. Iron oxides are not classed as UV filters and appear under 'inactive ingredients', so a product can be SPF 50+ PA++++ and still offer no visible-light protection at all.",
+      "source": "Dermatology and Therapy — Sunscreens and Photoaging: A Review of Current Literature",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8361399"
+    },
+    {
+      "text": "The clinical size of the effect: in a randomised comparison in melasma patients on 4 percent hydroquinone, an ordinary SPF-50 sunscreen produced a 62 percent mean MASI reduction against 78 percent for a broad-spectrum tinted sunscreen with iron oxide giving greater UVA and visible-light protection. A tinted iron-oxide sunscreen also reduced post-treatment melasma relapse in a French cohort. For context on the Indian baseline, 12 weeks of a broad-spectrum SPF19 PA+++ sunscreen produced a 26.9 percent MASI reduction in India. The tint is not a cosmetic preference; it is a measurable share of the clinical outcome.",
+      "source": "Dermatology and Therapy (Cassiano et al., 2022) — Update on Melasma, Part II: Treatment",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464276"
+    },
+    {
+      "text": "Tinted iron-oxide formulations are the consensus recommendation for photoprotection in skin of colour and for patients at risk of PIH (Fitzpatrick III-VI), because they attenuate visible light including high-energy blue light that standard untinted sunscreens often fail to block, while also improving cosmetic acceptability and therefore adherence.",
+      "source": "Literature review — Importance of Using Sunscreen After Light or Laser Facial Treatment",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12471997"
+    },
+    {
+      "text": "The honest counter-case, from the same literature: tinted sunscreens are limited by inadequate shade matching across diverse skin tones and by higher cost, the optimal iron-oxide concentration for visible-light protection is not settled, and non-nanosized TiO2/ZnO alone are described as 'cosmetically unacceptable in SOC individuals due to thick texture and white hue'. The reviewers call for effective NON-pigmented visible-light-protective agents for people who prefer untinted formulations. So 'just make it tinted' is not a free win — it trades an invisible finish for a shade-matching problem that a single SKU cannot solve, which is a range-architecture decision, not a formulation tweak.",
+      "source": "Visible Light Protection Strategies for Diverse Populations",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12936234"
+    },
+    {
+      "text": "Iron oxides (red Fe2O3, yellow Fe(OH)3/FeOOH, black Fe3O4) attenuate high-energy visible light, whereas sunscreens containing titanium dioxide and zinc oxide alone 'provide limited protection against HEV light'. Tinted mineral sunscreens are therefore more protective than non-tinted ones because they cover UV and visible light together.",
+      "source": "Journal of Cosmetic Dermatology (Bernstein et al., 2020) — Iron oxides in novel skin care formulations attenuate blue light",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7894303"
+    },
+    {
+      "text": "A directly comparable market-availability audit, run in the US rather than India: of 410 commercially available sunscreen products catalogued, only 1.7 percent of facial sunscreens contained iron oxides and 0.5 percent of non-lip products offered shade matching. Every tinted facial product found was built exclusively on inorganic filters, which the authors read as evidence that the tint is there to cancel mineral white cast and drive compliance rather than to deliver visible-light protection. They also cite appearance of sunscreen on the skin as a barrier to use for 33.7 percent of people. This is the same gap this thread found on Indian shelves (10 of 327 in-band SKUs carry any tint or shade word) arrived at independently, in another market, by another method.",
+      "source": "Availability of Adequate Photoprotection for Skin of Color",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10470041"
+    },
+    {
+      "text": "A 2025 randomised investigator-blinded study compared a visible-light-protective tinted sunscreen (iron oxides plus pigmentary titanium dioxide, stated visible-light protection factor 66; SPF 65, UVA-PF 35) against an untinted sunscreen matched on UV protection (SPF 64, UVA-PF 36) for melasma relapse prevention over a summer. The design is the cleanest available proof that the variable under test is the visible-light tint and not the SPF number — the arms were deliberately equalised on UV.",
+      "source": "Journal of Cosmetic Dermatology (2025) — Comparison of Visible Light-Protective Tinted Sunscreen to Untinted Sunscreen to Protect Melasma Patients During Summer",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12475913"
+    }
+  ],
+  "korean_formulation_targets": [
+    {
+      "text": "Korea's regulator defines what a Korean 'brightening' product is legally allowed to be, and the definition is tone-evening, not pigmentation therapy. MFDS 'functional cosmetics' for skin are: products aiding in the whitening of the skin; improving wrinkles; tanning gently or protecting from UV; alleviating acne breakouts; alleviating dryness from atopic-prone skin; and thinning stretch-mark red lines. Evaluation costs 189,000 KRW electronically and takes 60 days, and a product whose active ingredients, function and specifications match an MFDS-notified (KFCC) item is exempt from evaluation entirely. Melasma, post-inflammatory hyperpigmentation and photoprotection against visible light are not categories in that list — the framework has no slot for the concern that dominates Indian dermatology.",
+      "source": "Ministry of Food and Drug Safety (Korea) — Approval Process, Cosmetics: Functional Cosmetics",
+      "url": "https://www.mfds.go.kr/eng/wpge/m_24/de011014l001.do"
+    },
+    {
+      "text": "Where Korean functional-cosmetic development effort actually goes, from the regulator's own evaluation counts: of 572 functional cosmetics evaluated by NIFDS in H1 2024, UV filters were the largest single category at 169 cases (40.9 percent) and hair dyes 143 (34.7 percent), while single-efficacy WHITENING was 21 cases (5.1 percent) and wrinkle improvement 19 (4.6 percent). Two caveats before this is leaned on: it counts regulatory evaluations, not products sold or revenue, and items matching an already-notified KFCC formula are exempt from evaluation altogether, so routine whitening products can bypass the count. Read as a directional signal about where novel formulation work is being registered, not as a market share.",
+      "source": "REACH24H / ChemLinked, reporting NIFDS 'Functional Cosmetics Evaluation Status in 2024 H1' (released 2024-07-30)",
+      "url": "https://en.reach24h.com/news/industry-news/cosmetic/south-koreas-functional-cosmetic-evaluation-overview-for-the-first-half-of-2024"
+    }
+  ],
+  "climate_fit": [
+    {
+      "text": "The temperature-texture mismatch has a measured coefficient. A review of environmental influences on acne cites Williams et al. for sebum excretion rate rising roughly 10 percent for every 1 degree Celsius increase in local temperature, reports acne significantly more frequent in hot or humid regions, and cites an Indian study in which 82 of 171 acne patients (47.95 percent) reported seasonal variation in severity, significantly worse in summer (average 32.2 C) than in the rainy or winter seasons. The review is explicit that the humidity relationship specifically still needs quantitative work, so heat is the better-evidenced driver of the two. A formulation whose occlusivity was tuned for a temperate winter market is being asked to sit on skin producing materially more sebum for most of the Indian year.",
+      "source": "Frontiers in Public Health (Yang et al., 2020) — A Review of Advancement on Influencing Factors of Acne: An Emphasis on Environment Characteristics",
+      "url": "https://www.frontiersin.org/articles/10.3389/fpubh.2020.00450/full"
+    }
+  ],
+  "regulatory_envelope": [
+    {
+      "text": "India's UV-filter list is not a barrier to a Korean sunscreen formulation, and this kills a plausible-sounding objection. IS 4707 (Part 4):2022, the fifth revision, was updated 'in line with the latest EC 1223/2009' and lists 29 permitted UV filters — including the modern filters Korean and European sunscreens are built on: bemotrizinol/Tinosorb S (Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine) at 10 percent, bisoctrizole/Tinosorb M at 10 percent, Uvinul A Plus (Diethylamino Hydroxybenzoyl Hexyl Benzoate) at 10 percent, ethylhexyl triazone at 5 percent, drometrizole trisiloxane at 15 percent, titanium dioxide and zinc oxide at 25 percent each. A Korean SPF formula can be brought to India as-is on filter grounds; the constraint on Korean sunscreen in India is commercial and formulational, not regulatory.",
+      "source": "Bureau of Indian Standards — IS 4707 (Part 4):2022, Classification of Cosmetic Raw Materials and Adjuncts, Part 4: List of U.V. filters Allowed in Cosmetics with Restriction (fifth revision), read via Internet Archive",
+      "url": "https://archive.org/download/gov.in.is.4707.4.2022/IS4707%3APart4%3A2022_djvu.txt"
+    },
+    {
+      "text": "The brightening actives are not constrained either. IS 4707 (Part 2):2017, India's list of ingredients that must not form part of a cosmetic (and those restricted), contains no entry for arbutin, kojic acid, tranexamic acid, glutathione, niacinamide or retinol. Hydroquinone appears only in narrow contexts — prohibited as a substance in hair-dye products, and restricted to 0.02 percent after mixing in professional-use artificial nail systems — not as a general skin-lightening permission. BOUND ON THIS FINDING: the text read was the 2017 fourth revision plus its four published amendments; secondary sources report a fifth revision, IS 4707 (Part 2):2025, which was not obtainable, so this is current as of the 2017 text and should be re-checked against the 2025 revision before anything is costed.",
+      "source": "Bureau of Indian Standards — IS 4707 (Part 2):2017, List of ingredients which must not form part of the composition of cosmetic products, read via Internet Archive",
+      "url": "https://archive.org/download/gov.in.is.4707.2.2017/IS4707%3APart2%3A2017_djvu.txt"
+    },
+    {
+      "text": "The import mechanics, from the primary rules rather than a consultancy summary: under the Cosmetics Rules, 2020, an import registration certificate 'shall remain valid in perpetuity, subject to payment of registration certificate retention fee ... before completion of the period of five years from the date of its issue' — so it is a five-yearly retention payment, not a three-year expiry as several secondary sources state. Every imported cosmetic must conform to the BIS standards referenced in the Ninth Schedule; no cosmetic tested on animals may be imported; and any change to labelling, composition, testing or specification must be notified to the Licensing Authority within thirty days with an undertaking of continued BIS compliance. That last clause is the one that bites an ODM-led range: a reformulation is a regulatory event, not just a supply-chain one.",
+      "source": "Central Drugs Standard Control Organization, Ministry of Health and Family Welfare — Cosmetics Rules, 2020",
+      "url": "https://www.drugscontrol.org/pdf/Cosmetics%20Rules%202020.pdf"
+    },
+    {
+      "text": "Claim language, not ingredients, is where India constrains a Korean brightening proposition. ASCI's Guidelines for Advertising of Skin Lightening or Fairness Improvement Products state that advertising must not communicate discrimination as a result of skin colour, must not show people with darker skin as unattractive, unhappy, depressed or concerned, must not associate darker or lighter skin with socio-economic strata, caste, community, religion, profession or ethnicity, and must not perpetuate gender-based discrimination because of skin colour. Korea's regulator, by contrast, grants 'whitening' as an approvable product function. The same formulation therefore cannot carry the same story in both markets, and an efficacy-on-pigmentation claim is the transferable one while a whitening/fairness claim is not. NOT VERIFIED: a Drugs and Magic Remedies (Objectionable Advertisements) (Amendment) Bill, 2020 proposed adding 'fairness of the skin' to the Act's Schedule; its current legislative status was not established here and should be checked before any claim architecture is fixed.",
+      "source": "Advertising Standards Council of India — ASCI Code Guidelines (skin lightening / fairness improvement products)",
+      "url": "https://www.ascionline.in/the-asci-code-guidelines"
+    }
+  ],
+  "what_this_phase_did_not_establish": [
+    {
+      "text": "No shade-ladder analysis was possible inside the band, because there is almost nothing to analyse. Only 10 of the 327 in-band-by-MRP SKUs recorded in Phase 1 carry any tint, shade, cushion, BB/CC or colour-correcting word in the product name, and 7 of those are sunscreens. The named Korean contribution is a TONE-UP sunscreen (d'Alba Waterfull Tone-Up) and Dr.Jart+ Cicapair colour-correcting SPF; the tinted sunscreens in the band are mostly Bioderma's. Within Rs1,500-3,000 face skincare, 'shade range' is therefore a near-empty question and white cast is the whole of the appearance problem — which is why Phase 2 weighted to efficacy and appearance rather than shade, as the brief allowed. Source is the repo's own Phase 1 artifact, not an external claim.",
+      "source": "bpc-intel Phase 1 band analysis (data/manual/analysis/premium_skin_band.json)",
+      "url": null
+    },
+    {
+      "text": "No Indian clinical or instrumental evidence was found or generated on whether specific Korean formulations perform differently on Fitzpatrick IV-VI skin. Everything above is mechanism-level (visible light, iron oxides, sebum and temperature) plus consumer-reported evidence from the review corpus. Nobody has tested these particular products on these particular skin types and published it, and this phase did not do so either. That is a genuine standing gap and the honest basis for a Phase 4 decision is: the mechanism argument is strong, the product-specific proof does not exist and would have to be created.",
+      "source": "bpc-intel Phase 2 — standing gap, no external source exists",
+      "url": null
+    },
+    {
+      "text": "Only Nykaa's review corpus was mined. Tira exposes no comparable review endpoint and Amazon.in gates review pagination behind a login, so the consumer evidence is single-platform. Amazon matters disproportionately here because Phase 1 found it undercuts the authorised channel by roughly 20 percent and carries counterfeit-adjacent listings, so its reviews would be the ones most likely to contain authenticity complaints. Their absence means the authenticity theme in this phase is understated by construction, not measured as low.",
+      "source": "bpc-intel Phase 2 — coverage limit of this sweep",
+      "url": null
+    }
+  ]
+}

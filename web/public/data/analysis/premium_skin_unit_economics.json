@@ -1,0 +1,2932 @@
+{
+  "generated_at": "2026-08-10",
+  "geography": "IN",
+  "segment": "skincare",
+  "lane": "c_korean_odm_own_india_brand",
+  "band_inr": [
+    1500,
+    3000
+  ],
+  "fx": {
+    "inr_per_usd": 96.23,
+    "pinned": "2026-07-21",
+    "source": "config/exchange_rates.yaml"
+  },
+  "assumptions": {
+    "exw_serum_usd": {
+      "value": 8.5,
+      "unit": "usd_per_unit",
+      "low": 5.0,
+      "high": 12.0,
+      "source": "OEMKorea, Korean OEM Pricing Explained",
+      "url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "confidence": "LOW",
+      "note": "Serum with PREMIUM actives, ex-factory, mid-tier manufacturer at 1,000-3,000 MOQ with stock packaging. The commodity-actives band is $2.50-5.50; the pigmentation hero is a premium-actives product so the higher band applies. Cross-checked against Altameet's $5-10 for a 30ml serum, which overlaps. Stock packaging is stated as INCLUDED, so no separate packaging line is added — OEMKorea notes packaging alone is $1.20-2.50 on a 30ml dropper and is 'sometimes more than the formula itself', i.e. it is a breakdown of this figure, not an addition to it."
+    },
+    "exw_sunscreen_usd": {
+      "value": 6.0,
+      "unit": "usd_per_unit",
+      "low": 3.0,
+      "high": 9.0,
+      "source": "OEMKorea + Altameet (union of two independent ranges)",
+      "url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "confidence": "LOW",
+      "note": "OEMKorea $3.00-8.00; Altameet $4-9 for 50ml. Union taken because neither publishes a method and the overlap is the only corroboration available."
+    },
+    "exw_cleanser_usd": {
+      "value": 3.5,
+      "unit": "usd_per_unit",
+      "low": 1.2,
+      "high": 6.0,
+      "source": "OEMKorea + Altameet",
+      "url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "confidence": "LOW",
+      "note": ""
+    },
+    "exw_moisturiser_usd": {
+      "value": 4.75,
+      "unit": "usd_per_unit",
+      "low": 2.0,
+      "high": 8.0,
+      "source": "OEMKorea + Altameet",
+      "url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "confidence": "LOW",
+      "note": ""
+    },
+    "moq_units_per_sku": {
+      "value": 1000,
+      "unit": "units",
+      "low": 1000,
+      "high": 3000,
+      "source": "OEMKorea; Altameet; corroborated by Georgetown Journal of International Affairs already on file in korea_findings.yaml",
+      "url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "confidence": "LOW",
+      "note": "The repo's existing Georgetown citation ('batches as small as 1,000 units') is the strongest support for the floor. Modelled at the floor because a first-time foreign brand has no leverage."
+    },
+    "volume_discount_5k": {
+      "value": 0.3,
+      "unit": "fraction",
+      "low": 0.2,
+      "high": 0.4,
+      "source": "OEMKorea",
+      "url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "confidence": "LOW",
+      "note": "Per-unit cost drop from a 1,000-unit to a 5,000-unit order. A further 10-20% from 5,000 to 10,000. This is the single largest controllable lever on landed cost and it argues against the 4-SKU-at-MOQ launch shape."
+    },
+    "dev_fee_usd_per_formula": {
+      "value": 1250.0,
+      "unit": "usd",
+      "low": 500.0,
+      "high": 2000.0,
+      "source": "Altameet (corroborated by OEMKorea)",
+      "url": "https://altameet.com/blog/how-much-does-it-cost-to-manufacture-cosmetics-in-korea-2026-complete-guide",
+      "confidence": "LOW",
+      "note": ""
+    },
+    "stability_test_usd_per_formula": {
+      "value": 550.0,
+      "unit": "usd",
+      "low": 300.0,
+      "high": 800.0,
+      "source": "Altameet",
+      "url": "https://altameet.com/blog/how-much-does-it-cost-to-manufacture-cosmetics-in-korea-2026-complete-guide",
+      "confidence": "LOW",
+      "note": ""
+    },
+    "cert_test_usd_per_sku": {
+      "value": 2000.0,
+      "unit": "usd",
+      "low": 1000.0,
+      "high": 3000.0,
+      "source": "Altameet",
+      "url": "https://altameet.com/blog/how-much-does-it-cost-to-manufacture-cosmetics-in-korea-2026-complete-guide",
+      "confidence": "LOW",
+      "note": "Testing and certifications, total per SKU, excluding SPF."
+    },
+    "patch_test_usd_per_sku": {
+      "value": 2500.0,
+      "unit": "usd",
+      "low": 1500.0,
+      "high": 3500.0,
+      "source": "OEMKorea",
+      "url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "confidence": "LOW",
+      "note": ""
+    },
+    "spf_test_usd_per_formula": {
+      "value": 10000.0,
+      "unit": "usd",
+      "low": 5000.0,
+      "high": 15000.0,
+      "source": "OEMKorea",
+      "url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "confidence": "LOW",
+      "note": "SUNSCREEN ONLY, and the largest single one-off in the launch. At a 1,000-unit MOQ this is $5-15 a unit — on a product whose whole ex-works cost is $3-9. It is the reason the sunscreen hero cannot be launched at the same order size as the serum."
+    },
+    "custom_mould_usd": {
+      "value": null,
+      "unit": "usd",
+      "low": 2000.0,
+      "high": 8000.0,
+      "source": "Altameet",
+      "url": "https://altameet.com/blog/how-much-does-it-cost-to-manufacture-cosmetics-in-korea-2026-complete-guide",
+      "confidence": "LOW",
+      "note": "Excluded from the base case: stock packaging is assumed, which is what the ex-works quotes are priced on. Carried so the cost of choosing bespoke packaging is visible."
+    },
+    "lead_time_months": {
+      "value": 4.5,
+      "unit": "months",
+      "low": 3.0,
+      "high": 6.0,
+      "source": "Altameet (development, sampling, production, testing, shipping)",
+      "url": "https://altameet.com/blog/how-much-does-it-cost-to-manufacture-cosmetics-in-korea-2026-complete-guide",
+      "confidence": "LOW",
+      "note": "Excludes CDSCO registration, which the same research put at 3-6 months and which can only partly run in parallel."
+    },
+    "bcd_rate": {
+      "value": 0.2,
+      "unit": "fraction",
+      "low": 0.2,
+      "high": 0.2,
+      "source": "EximGuru, Indian customs duty for tariff item 33049910",
+      "url": "https://www.eximguru.com/indian-customs-duty/33049910-face-creams.aspx",
+      "confidence": "LOW",
+      "note": "STALE: the page's most recent entry is dated 02-Feb-2018 (BCD raised from 10% to 20%). Not verified against a current CBIC notification. Treated as the MFN/no-preference scenario."
+    },
+    "swc_rate": {
+      "value": 0.1,
+      "unit": "fraction",
+      "low": 0.1,
+      "high": 0.1,
+      "source": "EximGuru (Social Welfare Surcharge, levied on the BCD)",
+      "url": "https://www.eximguru.com/indian-customs-duty/33049910-face-creams.aspx",
+      "confidence": "LOW",
+      "note": "Same staleness caveat as bcd_rate."
+    },
+    "igst_import_rate": {
+      "value": 0.18,
+      "unit": "fraction",
+      "low": 0.18,
+      "high": 0.18,
+      "source": "EximGuru",
+      "url": "https://www.eximguru.com/indian-customs-duty/33049910-face-creams.aspx",
+      "confidence": "LOW",
+      "note": "Creditable. Affects working capital, never margin."
+    },
+    "gst_output_rate": {
+      "value": 0.18,
+      "unit": "fraction",
+      "low": 0.18,
+      "high": 0.18,
+      "source": "EximGuru (IGST at import on 33049910 implies the domestic rate)",
+      "url": "https://www.eximguru.com/indian-customs-duty/33049910-face-creams.aspx",
+      "confidence": "LOW",
+      "note": "Embedded in MRP. NOT re-verified against the Sept-2025 GST slab restructure — a slab move would change every revenue line here."
+    },
+    "cepa_bcd_rate": {
+      "value": null,
+      "unit": "fraction",
+      "low": 0.0,
+      "high": 0.2,
+      "source": "UNVERIFIED — see note",
+      "url": null,
+      "confidence": "ESTIMATE",
+      "note": "India-Korea CEPA (in force 2010, Notification 152/2009-Customs) grants preferential duty on Korean-origin goods against a Form AK certificate of origin. Multiple secondary pages assert HS 3304 enters DUTY-FREE under it, but no page stating a 3304 rate could actually be fetched and verified: statura.in confirms only the mechanism, sunshinecargo.in covers other chapters, the worldtradescanner notification text timed out and cybex/nkgabc returned 403/409. So the rate is swept 0-20%, not assumed. This is the single largest unresolved swing factor in the model."
+    },
+    "cdsco_reg_cost_inr": {
+      "value": null,
+      "unit": "inr",
+      "low": 0.0,
+      "high": 500000.0,
+      "source": "NOT FOUND — fee schedule not retrieved",
+      "url": "https://cepaindia.com/how-to-import-cosmetics-from-korea-into-india/",
+      "confidence": "ESTIMATE",
+      "note": "Lead time 3-6 months per CEPA India (LOW, and the page cites the superseded Form 42/43 rather than the Cosmetics Rules 2020 COS-1/COS-2 the repo already records, so it is partly out of date). No government fee schedule was retrievable. Swept."
+    },
+    "freight_clearing_pct_of_exw": {
+      "value": null,
+      "unit": "fraction",
+      "low": 0.0,
+      "high": 0.15,
+      "source": "NOT FOUND — no fetchable Korea-India rate for 2026",
+      "url": null,
+      "confidence": "ESTIMATE",
+      "note": "Swept rather than invented. The sweep's purpose is to show whether freight is decision-relevant at all, which is a more honest output than a plausible-looking point estimate."
+    },
+    "channel_take_rate": {
+      "value": 0.24,
+      "unit": "fraction",
+      "low": 0.22,
+      "high": 0.26,
+      "source": "Sylvr (Nykaa commission guide), already on file in data/sources.csv as IN skincare trade_margin",
+      "url": null,
+      "confidence": "LOW",
+      "note": "Repo figure, not re-fetched. 18% GST on the commission is creditable and excluded."
+    },
+    "adspend_ratio": {
+      "value": 0.36,
+      "unit": "fraction",
+      "low": 0.36,
+      "high": 0.36,
+      "source": "Storyboard18 reporting Honasa Consumer FY25 results",
+      "url": "https://www.storyboard18.com/advertising/mamaearth-parent-ups-marketing-spend-to-rs-744-crore-in-fy25-eyes-rs-5000-crore-arr-milestone-80137.htm",
+      "confidence": "MEDIUM",
+      "note": "Rs743.65cr advertising on Rs2,067cr revenue, FY25 (FY24: Rs661.28cr, +12.5%). A listed, scaled Indian beauty company with an established brand portfolio spends 36 paise of every revenue rupee on advertising — and still saw PAT fall 34% to Rs72.6cr. This is a FLOOR for an unknown premium entrant, not a target. Basis mismatch stated: it is an advertising-to-revenue ratio for a mass-market portfolio, not a CAC for a premium single-SKU trial, and Honasa's revenue is NET_REALISATION."
+    },
+    "returns_rate": {
+      "value": null,
+      "unit": "fraction",
+      "low": 0.02,
+      "high": 0.15,
+      "source": "NOT FOUND — no India online beauty return rate retrieved",
+      "url": null,
+      "confidence": "ESTIMATE",
+      "note": "Swept."
+    },
+    "logistics_per_unit_inr": {
+      "value": null,
+      "unit": "inr",
+      "low": 40.0,
+      "high": 120.0,
+      "source": "NOT FOUND — no India 3PL beauty rate card retrieved",
+      "url": null,
+      "confidence": "ESTIMATE",
+      "note": "Swept."
+    }
+  },
+  "unresolved_inputs": [
+    "custom_mould_usd",
+    "cepa_bcd_rate",
+    "cdsco_reg_cost_inr",
+    "freight_clearing_pct_of_exw",
+    "returns_rate",
+    "logistics_per_unit_inr"
+  ],
+  "scenarios": {
+    "cepa_yes_units_1000": {
+      "pigmentation_serum": {
+        "landed_cogs_inr": 1736.0,
+        "cogs_pct_of_mrp_2400": 72.3,
+        "breakeven_discount_pct_after_cac": -80.3,
+        "breakeven_discount_pct_before_cac": -30.1,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -36.1,
+            "contribution_margin_pct": -91.6,
+            "contribution_inr": -1474.15
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -48.1,
+            "contribution_margin_pct": -109.7,
+            "contribution_inr": -1589.56
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -63.1,
+            "contribution_margin_pct": -132.4,
+            "contribution_inr": -1704.98
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -82.3,
+            "contribution_margin_pct": -161.5,
+            "contribution_inr": -1820.4
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -13.7,
+            "contribution_margin_pct": -57.5,
+            "contribution_inr": -1170.42
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -23.1,
+            "contribution_margin_pct": -71.9,
+            "contribution_inr": -1316.21
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -35.0,
+            "contribution_margin_pct": -89.9,
+            "contribution_inr": -1462.0
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -50.2,
+            "contribution_margin_pct": -112.9,
+            "contribution_inr": -1607.79
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 1.1,
+            "contribution_margin_pct": -35.3,
+            "contribution_inr": -866.69
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -6.8,
+            "contribution_margin_pct": -47.1,
+            "contribution_inr": -1042.85
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -16.6,
+            "contribution_margin_pct": -62.0,
+            "contribution_inr": -1219.01
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -29.2,
+            "contribution_margin_pct": -81.1,
+            "contribution_inr": -1395.18
+          }
+        ]
+      },
+      "sunscreen": {
+        "landed_cogs_inr": 2439.0,
+        "cogs_pct_of_mrp_2400": 101.6,
+        "breakeven_discount_pct_after_cac": -130.6,
+        "breakeven_discount_pct_before_cac": -80.4,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -79.8,
+            "contribution_margin_pct": -137.1,
+            "contribution_inr": -2207.73
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -96.6,
+            "contribution_margin_pct": -160.3,
+            "contribution_inr": -2323.15
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -117.7,
+            "contribution_margin_pct": -189.3,
+            "contribution_inr": -2438.57
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -144.7,
+            "contribution_margin_pct": -226.6,
+            "contribution_inr": -2553.98
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -48.2,
+            "contribution_margin_pct": -93.6,
+            "contribution_inr": -1904.0
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -61.6,
+            "contribution_margin_pct": -112.0,
+            "contribution_inr": -2049.79
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -78.2,
+            "contribution_margin_pct": -134.9,
+            "contribution_inr": -2195.58
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -99.6,
+            "contribution_margin_pct": -164.5,
+            "contribution_inr": -2341.37
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -27.6,
+            "contribution_margin_pct": -65.1,
+            "contribution_inr": -1600.28
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -38.6,
+            "contribution_margin_pct": -80.3,
+            "contribution_inr": -1776.44
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -52.4,
+            "contribution_margin_pct": -99.3,
+            "contribution_inr": -1952.6
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -70.1,
+            "contribution_margin_pct": -123.7,
+            "contribution_inr": -2128.76
+          }
+        ]
+      },
+      "cleanser": {
+        "landed_cogs_inr": 1218.0,
+        "cogs_pct_of_mrp_2400": 50.8,
+        "breakeven_discount_pct_after_cac": -43.3,
+        "breakeven_discount_pct_before_cac": 6.9,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -4.0,
+            "contribution_margin_pct": -58.1,
+            "contribution_inr": -934.93
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -12.4,
+            "contribution_margin_pct": -72.5,
+            "contribution_inr": -1050.34
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -22.9,
+            "contribution_margin_pct": -90.5,
+            "contribution_inr": -1165.76
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -36.4,
+            "contribution_margin_pct": -113.7,
+            "contribution_inr": -1281.18
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 11.8,
+            "contribution_margin_pct": -31.0,
+            "contribution_inr": -631.2
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 5.1,
+            "contribution_margin_pct": -42.4,
+            "contribution_inr": -776.99
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -3.2,
+            "contribution_margin_pct": -56.7,
+            "contribution_inr": -922.78
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -13.9,
+            "contribution_margin_pct": -75.1,
+            "contribution_inr": -1068.57
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 22.1,
+            "contribution_margin_pct": -13.3,
+            "contribution_inr": -327.47
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 16.6,
+            "contribution_margin_pct": -22.8,
+            "contribution_inr": -503.63
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 9.7,
+            "contribution_margin_pct": -34.6,
+            "contribution_inr": -679.79
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 0.9,
+            "contribution_margin_pct": -49.8,
+            "contribution_inr": -855.96
+          }
+        ]
+      },
+      "moisturiser": {
+        "landed_cogs_inr": 1348.0,
+        "cogs_pct_of_mrp_2400": 56.2,
+        "breakeven_discount_pct_after_cac": -52.5,
+        "breakeven_discount_pct_before_cac": -2.3,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -12.0,
+            "contribution_margin_pct": -66.4,
+            "contribution_inr": -1069.73
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -21.3,
+            "contribution_margin_pct": -81.8,
+            "contribution_inr": -1185.15
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -32.9,
+            "contribution_margin_pct": -101.0,
+            "contribution_inr": -1300.57
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -47.9,
+            "contribution_margin_pct": -125.6,
+            "contribution_inr": -1415.98
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 5.4,
+            "contribution_margin_pct": -37.7,
+            "contribution_inr": -766.0
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -1.9,
+            "contribution_margin_pct": -49.8,
+            "contribution_inr": -911.79
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -11.1,
+            "contribution_margin_pct": -65.0,
+            "contribution_inr": -1057.58
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -23.0,
+            "contribution_margin_pct": -84.5,
+            "contribution_inr": -1203.37
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 16.8,
+            "contribution_margin_pct": -18.8,
+            "contribution_inr": -462.27
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 10.8,
+            "contribution_margin_pct": -28.9,
+            "contribution_inr": -638.44
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 3.1,
+            "contribution_margin_pct": -41.4,
+            "contribution_inr": -814.6
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -6.7,
+            "contribution_margin_pct": -57.6,
+            "contribution_inr": -990.76
+          }
+        ]
+      }
+    },
+    "cepa_yes_units_5000": {
+      "pigmentation_serum": {
+        "landed_cogs_inr": 787.0,
+        "cogs_pct_of_mrp_2400": 32.8,
+        "breakeven_discount_pct_after_cac": -12.4,
+        "breakeven_discount_pct_before_cac": 37.8,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 22.8,
+            "contribution_margin_pct": -30.1,
+            "contribution_inr": -485.03
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 17.4,
+            "contribution_margin_pct": -41.4,
+            "contribution_inr": -600.45
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 10.6,
+            "contribution_margin_pct": -55.6,
+            "contribution_inr": -715.87
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": 1.9,
+            "contribution_margin_pct": -73.8,
+            "contribution_inr": -831.28
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 33.0,
+            "contribution_margin_pct": -8.9,
+            "contribution_inr": -181.3
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 28.7,
+            "contribution_margin_pct": -17.9,
+            "contribution_inr": -327.09
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 23.3,
+            "contribution_margin_pct": -29.1,
+            "contribution_inr": -472.88
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 16.4,
+            "contribution_margin_pct": -43.5,
+            "contribution_inr": -618.67
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 39.7,
+            "contribution_margin_pct": 5.0,
+            "contribution_inr": 122.43
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 36.1,
+            "contribution_margin_pct": -2.4,
+            "contribution_inr": -53.74
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 31.7,
+            "contribution_margin_pct": -11.7,
+            "contribution_inr": -229.9
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 25.9,
+            "contribution_margin_pct": -23.6,
+            "contribution_inr": -406.06
+          }
+        ]
+      },
+      "sunscreen": {
+        "landed_cogs_inr": 798.0,
+        "cogs_pct_of_mrp_2400": 33.3,
+        "breakeven_discount_pct_after_cac": -13.3,
+        "breakeven_discount_pct_before_cac": 37.0,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 22.1,
+            "contribution_margin_pct": -30.9,
+            "contribution_inr": -496.95
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 16.6,
+            "contribution_margin_pct": -42.3,
+            "contribution_inr": -612.36
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 9.7,
+            "contribution_margin_pct": -56.5,
+            "contribution_inr": -727.78
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": 0.9,
+            "contribution_margin_pct": -74.8,
+            "contribution_inr": -843.2
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 32.4,
+            "contribution_margin_pct": -9.5,
+            "contribution_inr": -193.22
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 28.1,
+            "contribution_margin_pct": -18.5,
+            "contribution_inr": -339.01
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 22.6,
+            "contribution_margin_pct": -29.8,
+            "contribution_inr": -484.8
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 15.6,
+            "contribution_margin_pct": -44.3,
+            "contribution_inr": -630.59
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 39.2,
+            "contribution_margin_pct": 4.5,
+            "contribution_inr": 110.51
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 35.6,
+            "contribution_margin_pct": -3.0,
+            "contribution_inr": -65.65
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 31.1,
+            "contribution_margin_pct": -12.3,
+            "contribution_inr": -241.81
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 25.3,
+            "contribution_margin_pct": -24.3,
+            "contribution_inr": -417.98
+          }
+        ]
+      },
+      "cleanser": {
+        "landed_cogs_inr": 425.0,
+        "cogs_pct_of_mrp_2400": 17.7,
+        "breakeven_discount_pct_after_cac": 13.5,
+        "breakeven_discount_pct_before_cac": 63.7,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 45.3,
+            "contribution_margin_pct": -6.7,
+            "contribution_inr": -107.58
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 42.4,
+            "contribution_margin_pct": -15.4,
+            "contribution_inr": -223.0
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 38.7,
+            "contribution_margin_pct": -26.3,
+            "contribution_inr": -338.41
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": 34.0,
+            "contribution_margin_pct": -40.3,
+            "contribution_inr": -453.83
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 50.8,
+            "contribution_margin_pct": 9.6,
+            "contribution_inr": 196.15
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 48.5,
+            "contribution_margin_pct": 2.8,
+            "contribution_inr": 50.36
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 45.6,
+            "contribution_margin_pct": -5.9,
+            "contribution_inr": -95.43
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 41.9,
+            "contribution_margin_pct": -16.9,
+            "contribution_inr": -241.22
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 54.4,
+            "contribution_margin_pct": 20.3,
+            "contribution_inr": 499.88
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 52.5,
+            "contribution_margin_pct": 14.6,
+            "contribution_inr": 323.72
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 50.1,
+            "contribution_margin_pct": 7.5,
+            "contribution_inr": 147.55
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 47.0,
+            "contribution_margin_pct": -1.7,
+            "contribution_inr": -28.61
+          }
+        ]
+      },
+      "moisturiser": {
+        "landed_cogs_inr": 515.0,
+        "cogs_pct_of_mrp_2400": 21.5,
+        "breakeven_discount_pct_after_cac": 7.0,
+        "breakeven_discount_pct_before_cac": 57.2,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 39.7,
+            "contribution_margin_pct": -12.5,
+            "contribution_inr": -201.94
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 36.1,
+            "contribution_margin_pct": -21.9,
+            "contribution_inr": -317.36
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 31.7,
+            "contribution_margin_pct": -33.6,
+            "contribution_inr": -432.78
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": 26.0,
+            "contribution_margin_pct": -48.6,
+            "contribution_inr": -548.19
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 46.3,
+            "contribution_margin_pct": 5.0,
+            "contribution_inr": 101.79
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 43.5,
+            "contribution_margin_pct": -2.4,
+            "contribution_inr": -44.0
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 40.0,
+            "contribution_margin_pct": -11.7,
+            "contribution_inr": -189.79
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 35.5,
+            "contribution_margin_pct": -23.6,
+            "contribution_inr": -335.58
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 50.7,
+            "contribution_margin_pct": 16.5,
+            "contribution_inr": 405.52
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 48.4,
+            "contribution_margin_pct": 10.4,
+            "contribution_inr": 229.35
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 45.5,
+            "contribution_margin_pct": 2.7,
+            "contribution_inr": 53.19
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 41.7,
+            "contribution_margin_pct": -7.1,
+            "contribution_inr": -122.97
+          }
+        ]
+      }
+    },
+    "cepa_no_units_1000": {
+      "pigmentation_serum": {
+        "landed_cogs_inr": 1929.0,
+        "cogs_pct_of_mrp_2400": 80.4,
+        "breakeven_discount_pct_after_cac": -94.1,
+        "breakeven_discount_pct_before_cac": -43.9,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -48.1,
+            "contribution_margin_pct": -104.1,
+            "contribution_inr": -1675.81
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -61.4,
+            "contribution_margin_pct": -123.6,
+            "contribution_inr": -1791.23
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -78.1,
+            "contribution_margin_pct": -148.0,
+            "contribution_inr": -1906.65
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -99.5,
+            "contribution_margin_pct": -179.4,
+            "contribution_inr": -2022.06
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -23.2,
+            "contribution_margin_pct": -67.5,
+            "contribution_inr": -1372.08
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -33.7,
+            "contribution_margin_pct": -82.9,
+            "contribution_inr": -1517.87
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -46.9,
+            "contribution_margin_pct": -102.2,
+            "contribution_inr": -1663.66
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -63.8,
+            "contribution_margin_pct": -127.1,
+            "contribution_inr": -1809.45
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -6.8,
+            "contribution_margin_pct": -43.5,
+            "contribution_inr": -1068.36
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -15.5,
+            "contribution_margin_pct": -56.3,
+            "contribution_inr": -1244.52
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -26.4,
+            "contribution_margin_pct": -72.3,
+            "contribution_inr": -1420.68
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -40.4,
+            "contribution_margin_pct": -92.8,
+            "contribution_inr": -1596.84
+          }
+        ]
+      },
+      "sunscreen": {
+        "landed_cogs_inr": 2576.0,
+        "cogs_pct_of_mrp_2400": 107.3,
+        "breakeven_discount_pct_after_cac": -140.4,
+        "breakeven_discount_pct_before_cac": -90.1,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -88.3,
+            "contribution_margin_pct": -146.0,
+            "contribution_inr": -2350.09
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -106.1,
+            "contribution_margin_pct": -170.1,
+            "contribution_inr": -2465.5
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -128.3,
+            "contribution_margin_pct": -200.4,
+            "contribution_inr": -2580.92
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -156.8,
+            "contribution_margin_pct": -239.2,
+            "contribution_inr": -2696.34
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -55.0,
+            "contribution_margin_pct": -100.6,
+            "contribution_inr": -2046.36
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -69.0,
+            "contribution_margin_pct": -119.8,
+            "contribution_inr": -2192.15
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -86.6,
+            "contribution_margin_pct": -143.7,
+            "contribution_inr": -2337.94
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -109.2,
+            "contribution_margin_pct": -174.5,
+            "contribution_inr": -2483.73
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -33.1,
+            "contribution_margin_pct": -70.9,
+            "contribution_inr": -1742.63
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -44.8,
+            "contribution_margin_pct": -86.8,
+            "contribution_inr": -1918.79
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -59.3,
+            "contribution_margin_pct": -106.6,
+            "contribution_inr": -2094.96
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -78.0,
+            "contribution_margin_pct": -132.0,
+            "contribution_inr": -2271.12
+          }
+        ]
+      },
+      "cleanser": {
+        "landed_cogs_inr": 1298.0,
+        "cogs_pct_of_mrp_2400": 54.1,
+        "breakeven_discount_pct_after_cac": -49.0,
+        "breakeven_discount_pct_before_cac": 1.2,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -8.9,
+            "contribution_margin_pct": -63.2,
+            "contribution_inr": -1017.97
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -17.9,
+            "contribution_margin_pct": -78.2,
+            "contribution_inr": -1133.38
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -29.1,
+            "contribution_margin_pct": -96.9,
+            "contribution_inr": -1248.8
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -43.5,
+            "contribution_margin_pct": -121.0,
+            "contribution_inr": -1364.22
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 7.9,
+            "contribution_margin_pct": -35.1,
+            "contribution_inr": -714.24
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 0.8,
+            "contribution_margin_pct": -47.0,
+            "contribution_inr": -860.03
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -8.1,
+            "contribution_margin_pct": -61.8,
+            "contribution_inr": -1005.82
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -19.5,
+            "contribution_margin_pct": -80.9,
+            "contribution_inr": -1151.61
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 18.9,
+            "contribution_margin_pct": -16.7,
+            "contribution_inr": -410.51
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 13.0,
+            "contribution_margin_pct": -26.5,
+            "contribution_inr": -586.67
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 5.7,
+            "contribution_margin_pct": -38.8,
+            "contribution_inr": -762.83
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -3.8,
+            "contribution_margin_pct": -54.6,
+            "contribution_inr": -939.0
+          }
+        ]
+      },
+      "moisturiser": {
+        "landed_cogs_inr": 1456.0,
+        "cogs_pct_of_mrp_2400": 60.7,
+        "breakeven_discount_pct_after_cac": -60.3,
+        "breakeven_discount_pct_before_cac": -10.0,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -18.7,
+            "contribution_margin_pct": -73.4,
+            "contribution_inr": -1182.43
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -28.8,
+            "contribution_margin_pct": -89.6,
+            "contribution_inr": -1297.85
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -41.3,
+            "contribution_margin_pct": -109.7,
+            "contribution_inr": -1413.26
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -57.5,
+            "contribution_margin_pct": -135.6,
+            "contribution_inr": -1528.68
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 0.1,
+            "contribution_margin_pct": -43.2,
+            "contribution_inr": -878.7
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -7.8,
+            "contribution_margin_pct": -56.0,
+            "contribution_inr": -1024.49
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -17.8,
+            "contribution_margin_pct": -71.9,
+            "contribution_inr": -1170.28
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -30.6,
+            "contribution_margin_pct": -92.4,
+            "contribution_inr": -1316.07
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 12.4,
+            "contribution_margin_pct": -23.4,
+            "contribution_inr": -574.97
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 5.9,
+            "contribution_margin_pct": -34.0,
+            "contribution_inr": -751.13
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -2.4,
+            "contribution_margin_pct": -47.2,
+            "contribution_inr": -927.3
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": -12.9,
+            "contribution_margin_pct": -64.1,
+            "contribution_inr": -1103.46
+          }
+        ]
+      }
+    },
+    "cepa_no_units_5000": {
+      "pigmentation_serum": {
+        "landed_cogs_inr": 922.0,
+        "cogs_pct_of_mrp_2400": 38.4,
+        "breakeven_discount_pct_after_cac": -22.1,
+        "breakeven_discount_pct_before_cac": 28.1,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 14.4,
+            "contribution_margin_pct": -38.9,
+            "contribution_inr": -626.2
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 8.0,
+            "contribution_margin_pct": -51.2,
+            "contribution_inr": -741.62
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 0.1,
+            "contribution_margin_pct": -66.5,
+            "contribution_inr": -857.03
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -10.1,
+            "contribution_margin_pct": -86.3,
+            "contribution_inr": -972.45
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 26.3,
+            "contribution_margin_pct": -15.9,
+            "contribution_inr": -322.47
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 21.3,
+            "contribution_margin_pct": -25.6,
+            "contribution_inr": -468.26
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 15.0,
+            "contribution_margin_pct": -37.7,
+            "contribution_inr": -614.05
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 6.9,
+            "contribution_margin_pct": -53.4,
+            "contribution_inr": -759.84
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 34.2,
+            "contribution_margin_pct": -0.8,
+            "contribution_inr": -18.74
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 30.0,
+            "contribution_margin_pct": -8.8,
+            "contribution_inr": -194.9
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 24.8,
+            "contribution_margin_pct": -18.9,
+            "contribution_inr": -371.07
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 18.1,
+            "contribution_margin_pct": -31.8,
+            "contribution_inr": -547.23
+          }
+        ]
+      },
+      "sunscreen": {
+        "landed_cogs_inr": 894.0,
+        "cogs_pct_of_mrp_2400": 37.2,
+        "breakeven_discount_pct_after_cac": -20.1,
+        "breakeven_discount_pct_before_cac": 30.1,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 16.2,
+            "contribution_margin_pct": -37.1,
+            "contribution_inr": -596.59
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 10.0,
+            "contribution_margin_pct": -49.1,
+            "contribution_inr": -712.01
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 2.3,
+            "contribution_margin_pct": -64.2,
+            "contribution_inr": -827.43
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": -7.6,
+            "contribution_margin_pct": -83.7,
+            "contribution_inr": -942.84
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 27.7,
+            "contribution_margin_pct": -14.4,
+            "contribution_inr": -292.86
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 22.9,
+            "contribution_margin_pct": -24.0,
+            "contribution_inr": -438.65
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 16.8,
+            "contribution_margin_pct": -35.9,
+            "contribution_inr": -584.44
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 8.9,
+            "contribution_margin_pct": -51.3,
+            "contribution_inr": -730.23
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 35.3,
+            "contribution_margin_pct": 0.4,
+            "contribution_inr": 10.86
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 31.3,
+            "contribution_margin_pct": -7.5,
+            "contribution_inr": -165.3
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 26.2,
+            "contribution_margin_pct": -17.4,
+            "contribution_inr": -341.46
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 19.7,
+            "contribution_margin_pct": -30.1,
+            "contribution_inr": -517.62
+          }
+        ]
+      },
+      "cleanser": {
+        "landed_cogs_inr": 480.0,
+        "cogs_pct_of_mrp_2400": 20.0,
+        "breakeven_discount_pct_after_cac": 9.5,
+        "breakeven_discount_pct_before_cac": 59.7,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 41.8,
+            "contribution_margin_pct": -10.3,
+            "contribution_inr": -165.71
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 38.5,
+            "contribution_margin_pct": -19.4,
+            "contribution_inr": -281.12
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 34.4,
+            "contribution_margin_pct": -30.8,
+            "contribution_inr": -396.54
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": 29.1,
+            "contribution_margin_pct": -45.4,
+            "contribution_inr": -511.96
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 48.1,
+            "contribution_margin_pct": 6.8,
+            "contribution_inr": 138.02
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 45.4,
+            "contribution_margin_pct": -0.4,
+            "contribution_inr": -7.77
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 42.2,
+            "contribution_margin_pct": -9.4,
+            "contribution_inr": -153.56
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 37.9,
+            "contribution_margin_pct": -21.0,
+            "contribution_inr": -299.35
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 52.1,
+            "contribution_margin_pct": 18.0,
+            "contribution_inr": 441.75
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 50.0,
+            "contribution_margin_pct": 12.0,
+            "contribution_inr": 265.59
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 47.2,
+            "contribution_margin_pct": 4.5,
+            "contribution_inr": 89.43
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 43.8,
+            "contribution_margin_pct": -5.0,
+            "contribution_inr": -86.74
+          }
+        ]
+      },
+      "moisturiser": {
+        "landed_cogs_inr": 591.0,
+        "cogs_pct_of_mrp_2400": 24.6,
+        "breakeven_discount_pct_after_cac": 1.6,
+        "breakeven_discount_pct_before_cac": 51.8,
+        "grid": [
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 0.0,
+            "street_inr": 1900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 35.0,
+            "contribution_margin_pct": -17.4,
+            "contribution_inr": -280.83
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 10.0,
+            "street_inr": 1710.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 30.9,
+            "contribution_margin_pct": -27.3,
+            "contribution_inr": -396.25
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 20.0,
+            "street_inr": 1520.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 25.8,
+            "contribution_margin_pct": -39.7,
+            "contribution_inr": -511.66
+          },
+          {
+            "mrp_inr": 1900.0,
+            "discount_pct": 30.0,
+            "street_inr": 1330.0,
+            "in_band_at_street": false,
+            "gross_margin_pct": 19.3,
+            "contribution_margin_pct": -55.6,
+            "contribution_inr": -627.08
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 0.0,
+            "street_inr": 2400.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 42.6,
+            "contribution_margin_pct": 1.1,
+            "contribution_inr": 22.9
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 10.0,
+            "street_inr": 2160.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 39.4,
+            "contribution_margin_pct": -6.7,
+            "contribution_inr": -122.89
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 20.0,
+            "street_inr": 1920.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 35.4,
+            "contribution_margin_pct": -16.5,
+            "contribution_inr": -268.68
+          },
+          {
+            "mrp_inr": 2400.0,
+            "discount_pct": 30.0,
+            "street_inr": 1680.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 30.2,
+            "contribution_margin_pct": -29.1,
+            "contribution_inr": -414.47
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 0.0,
+            "street_inr": 2900.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 47.6,
+            "contribution_margin_pct": 13.3,
+            "contribution_inr": 326.63
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 10.0,
+            "street_inr": 2610.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 45.0,
+            "contribution_margin_pct": 6.8,
+            "contribution_inr": 150.46
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 20.0,
+            "street_inr": 2320.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 41.6,
+            "contribution_margin_pct": -1.3,
+            "contribution_inr": -25.7
+          },
+          {
+            "mrp_inr": 2900.0,
+            "discount_pct": 30.0,
+            "street_inr": 2030.0,
+            "in_band_at_street": true,
+            "gross_margin_pct": 37.3,
+            "contribution_margin_pct": -11.7,
+            "contribution_inr": -201.86
+          }
+        ]
+      }
+    }
+  },
+  "decision_sensitivity": [
+    {
+      "input": "units_per_sku (a decision, not an unknown)",
+      "low": 1000,
+      "high": 5000,
+      "contribution_margin_at_low_pct": -82.9,
+      "contribution_margin_at_high_pct": -25.6,
+      "swing_pp": 57.3,
+      "resolved": true
+    },
+    {
+      "input": "cdsco_reg_cost_inr",
+      "low": 0.0,
+      "high": 500000.0,
+      "contribution_margin_at_low_pct": -68.7,
+      "contribution_margin_at_high_pct": -97.2,
+      "swing_pp": 28.5,
+      "resolved": false
+    },
+    {
+      "input": "cepa_bcd_rate",
+      "low": "0% (CEPA claimed)",
+      "high": "20% (MFN, no preference)",
+      "contribution_margin_at_low_pct": -71.9,
+      "contribution_margin_at_high_pct": -82.9,
+      "swing_pp": 11.0,
+      "resolved": false
+    },
+    {
+      "input": "freight_clearing_pct_of_exw",
+      "low": 0.0,
+      "high": 0.15,
+      "contribution_margin_at_low_pct": -78.7,
+      "contribution_margin_at_high_pct": -87.2,
+      "swing_pp": 8.5,
+      "resolved": false
+    },
+    {
+      "input": "returns_rate",
+      "low": 0.02,
+      "high": 0.15,
+      "contribution_margin_at_low_pct": -79.2,
+      "contribution_margin_at_high_pct": -86.6,
+      "swing_pp": 7.4,
+      "resolved": false
+    },
+    {
+      "input": "logistics_per_unit_inr",
+      "low": 40.0,
+      "high": 120.0,
+      "contribution_margin_at_low_pct": -80.5,
+      "contribution_margin_at_high_pct": -85.3,
+      "swing_pp": 4.8,
+      "resolved": false
+    }
+  ],
+  "launch_cash_at_risk": {
+    "moq_1000_no_cepa": {
+      "units_per_sku": 1000,
+      "cepa_assumed": false,
+      "by_sku": [
+        {
+          "sku": "pigmentation_serum",
+          "units": 1000,
+          "exw_unit_inr": 818.0,
+          "goods_inr": 817955.0,
+          "freight_inr": 61347.0,
+          "sticking_duty_inr": 193446.0,
+          "oneoff_dev_test_inr": 606249.0,
+          "total_inr": 1678997.0
+        },
+        {
+          "sku": "sunscreen",
+          "units": 1000,
+          "exw_unit_inr": 577.0,
+          "goods_inr": 577380.0,
+          "freight_inr": 43304.0,
+          "sticking_duty_inr": 136550.0,
+          "oneoff_dev_test_inr": 1568549.0,
+          "total_inr": 2325783.0
+        },
+        {
+          "sku": "cleanser",
+          "units": 1000,
+          "exw_unit_inr": 337.0,
+          "goods_inr": 336805.0,
+          "freight_inr": 25260.0,
+          "sticking_duty_inr": 79654.0,
+          "oneoff_dev_test_inr": 606249.0,
+          "total_inr": 1047969.0
+        },
+        {
+          "sku": "moisturiser",
+          "units": 1000,
+          "exw_unit_inr": 457.0,
+          "goods_inr": 457093.0,
+          "freight_inr": 34282.0,
+          "sticking_duty_inr": 108102.0,
+          "oneoff_dev_test_inr": 606249.0,
+          "total_inr": 1205726.0
+        }
+      ],
+      "total_inr": 6258474.0,
+      "total_usd": 65037.0,
+      "creditable_igst_outlay_inr": 516812.0,
+      "cash_including_creditable_igst_inr": 6775287.0,
+      "note": "Excludes CDSCO registration (fee not retrievable), India entity setup, warehousing deposits, launch marketing and any working capital between landing stock and being paid by the platform. It is a floor on the cheque, not the cheque."
+    },
+    "moq_1000_cepa": {
+      "units_per_sku": 1000,
+      "cepa_assumed": true,
+      "by_sku": [
+        {
+          "sku": "pigmentation_serum",
+          "units": 1000,
+          "exw_unit_inr": 818.0,
+          "goods_inr": 817955.0,
+          "freight_inr": 61347.0,
+          "sticking_duty_inr": 0.0,
+          "oneoff_dev_test_inr": 606249.0,
+          "total_inr": 1485551.0
+        },
+        {
+          "sku": "sunscreen",
+          "units": 1000,
+          "exw_unit_inr": 577.0,
+          "goods_inr": 577380.0,
+          "freight_inr": 43304.0,
+          "sticking_duty_inr": 0.0,
+          "oneoff_dev_test_inr": 1568549.0,
+          "total_inr": 2189232.0
+        },
+        {
+          "sku": "cleanser",
+          "units": 1000,
+          "exw_unit_inr": 337.0,
+          "goods_inr": 336805.0,
+          "freight_inr": 25260.0,
+          "sticking_duty_inr": 0.0,
+          "oneoff_dev_test_inr": 606249.0,
+          "total_inr": 968314.0
+        },
+        {
+          "sku": "moisturiser",
+          "units": 1000,
+          "exw_unit_inr": 457.0,
+          "goods_inr": 457093.0,
+          "freight_inr": 34282.0,
+          "sticking_duty_inr": 0.0,
+          "oneoff_dev_test_inr": 606249.0,
+          "total_inr": 1097623.0
+        }
+      ],
+      "total_inr": 5740721.0,
+      "total_usd": 59656.0,
+      "creditable_igst_outlay_inr": 423616.0,
+      "cash_including_creditable_igst_inr": 6164337.0,
+      "note": "Excludes CDSCO registration (fee not retrievable), India entity setup, warehousing deposits, launch marketing and any working capital between landing stock and being paid by the platform. It is a floor on the cheque, not the cheque."
+    },
+    "moq_5000_no_cepa": {
+      "units_per_sku": 5000,
+      "cepa_assumed": false,
+      "by_sku": [
+        {
+          "sku": "pigmentation_serum",
+          "units": 5000,
+          "exw_unit_inr": 573.0,
+          "goods_inr": 2862842.0,
+          "freight_inr": 214713.0,
+          "sticking_duty_inr": 677062.0,
+          "oneoff_dev_test_inr": 606249.0,
+          "total_inr": 4360867.0
+        },
+        {
+          "sku": "sunscreen",
+          "units": 5000,
+          "exw_unit_inr": 404.0,
+          "goods_inr": 2020830.0,
+          "freight_inr": 151562.0,
+          "sticking_duty_inr": 477926.0,
+          "oneoff_dev_test_inr": 1568549.0,
+          "total_inr": 4218868.0
+        },
+        {
+          "sku": "cleanser",
+          "units": 5000,
+          "exw_unit_inr": 236.0,
+          "goods_inr": 1178818.0,
+          "freight_inr": 88411.0,
+          "sticking_duty_inr": 278790.0,
+          "oneoff_dev_test_inr": 606249.0,
+          "total_inr": 2152268.0
+        },
+        {
+          "sku": "moisturiser",
+          "units": 5000,
+          "exw_unit_inr": 320.0,
+          "goods_inr": 1599824.0,
+          "freight_inr": 119987.0,
+          "sticking_duty_inr": 378358.0,
+          "oneoff_dev_test_inr": 606249.0,
+          "total_inr": 2704418.0
+        }
+      ],
+      "total_inr": 13436420.0,
+      "total_usd": 139628.0,
+      "creditable_igst_outlay_inr": 1808842.0,
+      "cash_including_creditable_igst_inr": 15245263.0,
+      "note": "Excludes CDSCO registration (fee not retrievable), India entity setup, warehousing deposits, launch marketing and any working capital between landing stock and being paid by the platform. It is a floor on the cheque, not the cheque."
+    }
+  },
+  "max_sustainable_cac": {
+    "pigmentation_serum_cepa_yes_units_1000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -742.0,
+      "max_cac_as_pct_of_net_revenue": -46.1,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_1000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -857.0,
+      "max_cac_as_pct_of_net_revenue": -59.2,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_1000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -438.0,
+      "max_cac_as_pct_of_net_revenue": -21.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_1000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -584.0,
+      "max_cac_as_pct_of_net_revenue": -31.9,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_1000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -134.0,
+      "max_cac_as_pct_of_net_revenue": -5.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_1000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -311.0,
+      "max_cac_as_pct_of_net_revenue": -14.0,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_5000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 247.0,
+      "max_cac_as_pct_of_net_revenue": 15.4,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_5000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 132.0,
+      "max_cac_as_pct_of_net_revenue": 9.1,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_5000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 551.0,
+      "max_cac_as_pct_of_net_revenue": 27.1,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_5000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 405.0,
+      "max_cac_as_pct_of_net_revenue": 22.1,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_5000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 855.0,
+      "max_cac_as_pct_of_net_revenue": 34.8,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_5000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 678.0,
+      "max_cac_as_pct_of_net_revenue": 30.7,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_10000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 336.0,
+      "max_cac_as_pct_of_net_revenue": 20.9,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_10000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 221.0,
+      "max_cac_as_pct_of_net_revenue": 15.3,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_10000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 640.0,
+      "max_cac_as_pct_of_net_revenue": 31.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_10000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 494.0,
+      "max_cac_as_pct_of_net_revenue": 27.0,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_yes_units_10000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 944.0,
+      "max_cac_as_pct_of_net_revenue": 38.4,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": true
+    },
+    "pigmentation_serum_cepa_yes_units_10000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 768.0,
+      "max_cac_as_pct_of_net_revenue": 34.7,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_1000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -944.0,
+      "max_cac_as_pct_of_net_revenue": -58.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_1000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -1059.0,
+      "max_cac_as_pct_of_net_revenue": -73.1,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_1000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -640.0,
+      "max_cac_as_pct_of_net_revenue": -31.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_1000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -786.0,
+      "max_cac_as_pct_of_net_revenue": -42.9,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_1000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -336.0,
+      "max_cac_as_pct_of_net_revenue": -13.7,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_1000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -512.0,
+      "max_cac_as_pct_of_net_revenue": -23.2,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_5000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 106.0,
+      "max_cac_as_pct_of_net_revenue": 6.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_5000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -9.0,
+      "max_cac_as_pct_of_net_revenue": -0.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_5000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 410.0,
+      "max_cac_as_pct_of_net_revenue": 20.1,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_5000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 264.0,
+      "max_cac_as_pct_of_net_revenue": 14.4,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_5000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 713.0,
+      "max_cac_as_pct_of_net_revenue": 29.0,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_5000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 537.0,
+      "max_cac_as_pct_of_net_revenue": 24.3,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_10000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 195.0,
+      "max_cac_as_pct_of_net_revenue": 12.1,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_10000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 80.0,
+      "max_cac_as_pct_of_net_revenue": 5.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_10000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 499.0,
+      "max_cac_as_pct_of_net_revenue": 24.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_10000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 353.0,
+      "max_cac_as_pct_of_net_revenue": 19.3,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_10000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 803.0,
+      "max_cac_as_pct_of_net_revenue": 32.7,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "pigmentation_serum_cepa_no_units_10000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 627.0,
+      "max_cac_as_pct_of_net_revenue": 28.3,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_1000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -1476.0,
+      "max_cac_as_pct_of_net_revenue": -91.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_1000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -1591.0,
+      "max_cac_as_pct_of_net_revenue": -109.8,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_1000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -1172.0,
+      "max_cac_as_pct_of_net_revenue": -57.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_1000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -1318.0,
+      "max_cac_as_pct_of_net_revenue": -72.0,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_1000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -868.0,
+      "max_cac_as_pct_of_net_revenue": -35.3,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_1000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -1044.0,
+      "max_cac_as_pct_of_net_revenue": -47.2,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_5000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 235.0,
+      "max_cac_as_pct_of_net_revenue": 14.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_5000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 120.0,
+      "max_cac_as_pct_of_net_revenue": 8.3,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_5000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 539.0,
+      "max_cac_as_pct_of_net_revenue": 26.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_5000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 393.0,
+      "max_cac_as_pct_of_net_revenue": 21.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_5000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 843.0,
+      "max_cac_as_pct_of_net_revenue": 34.3,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_5000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 667.0,
+      "max_cac_as_pct_of_net_revenue": 30.1,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_10000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 425.0,
+      "max_cac_as_pct_of_net_revenue": 26.4,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_10000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 309.0,
+      "max_cac_as_pct_of_net_revenue": 21.4,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_10000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 729.0,
+      "max_cac_as_pct_of_net_revenue": 35.8,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_10000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 583.0,
+      "max_cac_as_pct_of_net_revenue": 31.8,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_yes_units_10000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 1032.0,
+      "max_cac_as_pct_of_net_revenue": 42.0,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": true
+    },
+    "sunscreen_cepa_yes_units_10000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 856.0,
+      "max_cac_as_pct_of_net_revenue": 38.7,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": true
+    },
+    "sunscreen_cepa_no_units_1000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -1618.0,
+      "max_cac_as_pct_of_net_revenue": -100.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_1000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -1733.0,
+      "max_cac_as_pct_of_net_revenue": -119.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_1000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -1314.0,
+      "max_cac_as_pct_of_net_revenue": -64.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_1000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -1460.0,
+      "max_cac_as_pct_of_net_revenue": -79.8,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_1000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": -1010.0,
+      "max_cac_as_pct_of_net_revenue": -41.1,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_1000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": -1187.0,
+      "max_cac_as_pct_of_net_revenue": -53.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_5000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 136.0,
+      "max_cac_as_pct_of_net_revenue": 8.4,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_5000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 20.0,
+      "max_cac_as_pct_of_net_revenue": 1.4,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_5000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 439.0,
+      "max_cac_as_pct_of_net_revenue": 21.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_5000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 294.0,
+      "max_cac_as_pct_of_net_revenue": 16.0,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_5000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 743.0,
+      "max_cac_as_pct_of_net_revenue": 30.2,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_5000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 567.0,
+      "max_cac_as_pct_of_net_revenue": 25.6,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_10000_mrp_1900_disc_0": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 325.0,
+      "max_cac_as_pct_of_net_revenue": 20.2,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_10000_mrp_1900_disc_10": {
+      "mrp_inr": 1900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 210.0,
+      "max_cac_as_pct_of_net_revenue": 14.5,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_10000_mrp_2400_disc_0": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 629.0,
+      "max_cac_as_pct_of_net_revenue": 30.9,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_10000_mrp_2400_disc_10": {
+      "mrp_inr": 2400.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 483.0,
+      "max_cac_as_pct_of_net_revenue": 26.4,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    },
+    "sunscreen_cepa_no_units_10000_mrp_2900_disc_0": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 0.0,
+      "max_cac_inr": 933.0,
+      "max_cac_as_pct_of_net_revenue": 37.9,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": true
+    },
+    "sunscreen_cepa_no_units_10000_mrp_2900_disc_10": {
+      "mrp_inr": 2900.0,
+      "discount_pct": 10.0,
+      "max_cac_inr": 756.0,
+      "max_cac_as_pct_of_net_revenue": 34.2,
+      "honasa_fy25_adspend_ratio_pct": 36.0,
+      "clears_at_honasa_intensity": false
+    }
+  },
+  "required_exw_for_40pct_contribution_usd": {
+    "mrp_1900_disc_0": -11.26,
+    "mrp_1900_disc_10": -11.69,
+    "mrp_1900_disc_20": -12.13,
+    "mrp_2400_disc_0": -10.12,
+    "mrp_2400_disc_10": -10.67,
+    "mrp_2400_disc_20": -11.21,
+    "mrp_2900_disc_0": -8.97,
+    "mrp_2900_disc_10": -9.64,
+    "mrp_2900_disc_20": -10.3
+  },
+  "method_note": "Every figure is [ESTIMATE] under CLAUDE.md rule 1(d): a model, not a measurement. Inputs carry a source, a confidence and a range in `assumptions`; inputs that could not be sourced are listed in `unresolved_inputs` and are SWEPT across a plausible range rather than plugged with a point value, with `decision_sensitivity` ranking how much each one actually moves the answer. MRP is GST-inclusive so revenue is MRP/(1+GST); import IGST and the GST on platform commission are input tax credits and are excluded from margin (reported separately as working capital); only BCD and the Social Welfare Surcharge stick. Arithmetic is covered by tests/test_premium_skin_entry.py."
+}

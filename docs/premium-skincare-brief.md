@@ -382,6 +382,29 @@ not a framework tour.
 ### Phase 5 — Dashboard section
 Only after there is real data to show.
 
+> **DONE 2026-08-10. Output: `docs/premium-skincare-phase5.md`.** Read that, not
+> this section, for what shipped. Headline: the section is live at
+> `/premium-skincare`, sixth in the nav, rendering all four phases as one
+> argument — the read, band retention, complaint themes, purchase drivers, unit
+> economics, the four lanes, band-level Porter, and the open risks. **The page
+> derives no figure of its own**; every number is read from an artifact Python
+> wrote, which is the same contract `web_export.py` already states, applied one
+> layer up. Two consequences recorded there: the Rs1,900 floor renders as prose
+> because the retention-by-MRP-rung cut is **not a field in
+> `premium_skin_band_frame2.json`** (it was computed ad hoc in Phase 4 — if it
+> should be a panel, fix `lib/transforms/premium_skin_band.py`, not the web
+> layer), and launch cash is read from the artifact after a first draft that
+> summed `by_sku` diverged from it by a rupee. Export gained one function:
+> `build_findings()` globs `config/*_findings.yaml` into
+> `web/public/data/findings/` — analysis artifacts needed no code change, since
+> `build_analysis()` already rglobs them. Re-running the export also caught the
+> bundle up on four phases of backlog: **402 `[PREMIUM-SKIN]` rows** newly
+> reached `sources.json`. One colour decision was changed by validation: the
+> complaint chart's obvious red/green fails colourblind separation (ΔE 4.1
+> deutan) and ships as red/blue. **Not done: the deploy.** This work is on
+> `feat/premium-skincare-brief`, not merged or pushed — the two Vercel projects
+> still serve the pre-Phase-5 bundle.
+
 - New route `web/app/premium-skincare/`, new nav entry in
   `web/components/nav-bar.tsx` (currently 1 line per section — additive, low risk).
 - Section label: **Premium Skincare**.
@@ -406,7 +429,10 @@ Only after there is real data to show.
 | Phase 4 unit economics (model output) | `data/manual/analysis/premium_skin_unit_economics.json` | `[PREMIUM-SKIN]` |
 | Phase 4 price frame 2 | `data/manual/analysis/premium_skin_band_frame2.json`, `docs/premium-skincare-phase4.md` | `[PREMIUM-SKIN]` |
 | Phase 4 sourced entry claims | `data/manual/research_drops/premium_skin_entry.json` | `[PREMIUM-SKIN]` |
-| Dashboard | `web/app/premium-skincare/` | — |
+| Dashboard section + verdict | `web/app/premium-skincare/`, `docs/premium-skincare-phase5.md` | — |
+| Dashboard components (4 charts, band table, lanes, findings, tile) | `web/components/premium-skin/` | — |
+| Artifact shapes for the web layer | `web/types/premium-skin.ts` | — |
+| Findings in the web bundle (exported from `config/*_findings.yaml`) | `web/public/data/findings/` | — |
 
 Phase 1 also added two re-runnable scripts: `lib/fetchers/premium_skin_prices.py`
 (Nykaa/Tira/Amazon price sweep, ~25 min) and `lib/transforms/premium_skin_band.py`
@@ -437,6 +463,11 @@ pipeline corrections landed with it, all recorded in phase4 §3.2: Limese droppe
 as a brand (it is a conduit), a too-short `Quench` alias removed after it matched
 competitors' product, and an `ingestible` scope exclusion added so nutraceutical
 SKUs stop counting as face skincare.
+
+Phase 5 added no script. It added `build_findings()` to `lib/web_export.py`,
+which globs `config/*_findings.yaml` into `web/public/data/findings/` — so a
+Phase 6 findings file needs no export code. Analysis artifacts were already
+picked up by `build_analysis()`'s rglob and needed nothing.
 
 **Caution when re-running:** `lib/transforms/premium_skin_band.run()` writes to
 `premium_skin_band.json` as a side effect regardless of which raw file it is

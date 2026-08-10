@@ -8,6 +8,7 @@ const LINKS = [
   { href: "/india", label: "India" },
   { href: "/india/value-chain", label: "India value chain" },
   { href: "/corridor", label: "Corridor" },
+  { href: "/premium-skincare", label: "Premium Skincare" },
   { href: "/players", label: "Players" },
   { href: "/sources", label: "Sources" },
   { href: "/gaps", label: "Gaps" },

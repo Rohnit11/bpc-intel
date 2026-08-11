@@ -1,7 +1,7 @@
 {
   "geography": "KR",
   "segment": "sun_care",
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-08-10",
   "data_points": [
     {
       "geography": "KR",
@@ -173,6 +173,44 @@
       "confidence": "MEDIUM",
       "methodology": null,
       "notes": "Projected +43% on-year surge in US e-commerce sales of Korean sun care products in 2025 (Samsung Securities report). Export-demand indicator for Korean sun care, NOT KR domestic retail growth - destination market is the US, e-commerce channel only. Same article: Kolmar Korea saw +88% on-year surge in US-bound OTC sunscreen products in 2024. No sunscreen-specific customs export value published (sunscreen has no separate HS line; sits inside skincare, which was 74.7% of the USD 11.4bn CY2025 cosmetics export total)."
+    },
+    {
+      "geography": "KR",
+      "segment": "sun_care",
+      "sub_segment": null,
+      "metric": "retail_price",
+      "value": 6.0,
+      "unit": "usd",
+      "currency": "USD",
+      "period": "2026",
+      "period_type": "CY",
+      "value_basis": "PRODUCTION",
+      "tier": null,
+      "source_name": "OEMKorea (USD3.00-8.00) cross-checked against Altameet (USD4-9, 50ml)",
+      "source_url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "date_accessed": "2026-08-10",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "[PREMIUM-SKIN] EX-WORKS factory cost per unit for a Korean-manufactured SUNSCREEN. Union of two independently quoted ranges (OEMKorea USD3.00-8.00; Altameet USD4-9 for 50ml) taken because neither publishes a method and the overlap is the only corroboration available; midpoint 6.00 recorded. Stock packaging included, 1,000-3,000 unit MOQ. value_basis PRODUCTION (factory gate). LOW confidence — sourcing-agency marketing content, not a quote."
+    },
+    {
+      "geography": "KR",
+      "segment": "sun_care",
+      "sub_segment": null,
+      "metric": "retail_price",
+      "value": 10000.0,
+      "unit": "usd",
+      "currency": "USD",
+      "period": "2026",
+      "period_type": "CY",
+      "value_basis": "PRODUCTION",
+      "tier": null,
+      "source_name": "OEMKorea, 'Korean OEM Pricing Explained: What Drives Per-Unit Cost'",
+      "source_url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "date_accessed": "2026-08-10",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "[PREMIUM-SKIN] SPF TESTING cost per formula, quoted USD5,000-15,000; midpoint 10,000 recorded. A NON-RECURRING per-formula cost, not a per-unit cost — recorded here because it is the single largest one-off in a Korean-sourced launch and it falls entirely on the sunscreen SKU. At a 1,000-unit order it is USD5-15 a unit on a product whose whole ex-works cost is USD3-9, making the sunscreen's non-recurring cost roughly 2.7x its goods cost. It is the reason the sunscreen hero cannot be launched at the same order size as the serum. Same page also quotes patch testing USD1,500-3,500 per product. LOW confidence — sourcing-agency marketing content."
     }
   ]
 }

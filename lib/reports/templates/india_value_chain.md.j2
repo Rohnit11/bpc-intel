@@ -24,9 +24,15 @@ _Import values are UN Comtrade CIF (2024); import-dependence is derived (imports
 ## 2. Cost & margin structure
 **Pricing / cost-of-making**
 {% for s in ctx.segments -%}
-{% for p in s.prices -%}
+{% for g in s.prices.summary -%}
+- {{ s.segment.replace('_',' ') }}: {{ g.count }} recorded {{ g.value_basis }} price points in {{ g.currency }}, spanning {{ g.low }}-{{ g.high }} {{ g.unit }}. Full list in data/sources.csv.
+{% endfor -%}
+{% for p in s.prices.examples -%}
 - {{ s.segment.replace('_',' ') }}: {{ p.notes }} — {{ p.source }}
 {% endfor -%}
+{% if s.prices.omitted -%}
+- _{{ s.segment.replace('_',' ') }}: {{ s.prices.omitted }} further price points not listed here — see data/sources.csv._
+{% endif -%}
 {% for m in s.margins -%}
 - {{ s.segment.replace('_',' ') }} gross margin {{ m.value }}% — {{ m.notes }} ({{ m.source }})
 {% endfor -%}

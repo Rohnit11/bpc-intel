@@ -1,5 +1,5 @@
 # India Beauty & Personal Care — Value-Chain Brief
-*Generated 2026-08-01 · segments: skincare/sun/derma, fragrances, men's grooming, hair care, K-beauty corridor*
+*Generated 2026-08-10 · segments: skincare/sun/derma, fragrances, men's grooming, hair care, K-beauty corridor*
 *Every figure traces to data/sources.csv; qualitative findings cite their source inline.*
 
 ## Executive read
@@ -21,6 +21,9 @@ _Import values are UN Comtrade CIF (2024); import-dependence is derived (imports
 
 ## 2. Cost & margin structure
 **Pricing / cost-of-making**
+- total bpc: [PREMIUM-SKIN] AVERAGE ORDER VALUE, not a product price: Nykaa Beauty AOV Rs2,173 for the quarter ended 31-Dec-2025 (Rs2,127 in Q3FY25, +2% YoY), company-defined as GMV across websites, apps and physical stores divided by orders. ORGANISED retail, omnichannel (online + Nykaa's own stores). Transaction value after discount, NOT MRP. Reference point for the Rs1,500-3,000 band: one in-band SKU is approximately one whole average beauty order. Basket spans all BPC categories including mass. — Nykaa (FSN E-Commerce Ventures) Q3FY26 investor presentation, Key Performance Metrics
+- total bpc: [PREMIUM-SKIN] AVERAGE ORDER VALUE: Nykaa Beauty AOV Rs2,009 in Q1FY26 vs Rs1,924 in Q1FY25 (+4% YoY). Nykaa attributes the rise to premiumisation. ORGANISED omnichannel retail; post-discount transaction value, not MRP. Trend companion to the Q3FY26 figure. — Nykaa (FSN E-Commerce Ventures) Q1FY26 investor presentation, Key Operational Metrics
+- skincare: 282 recorded MRP price points in INR, spanning 600.0-3000.0 inr. Full list in data/sources.csv.
 - skincare: 30ml serum MRP typically Rs500-700 (midpoint 600); manufacturing cost Rs80-120/unit — The D2C Pulse
 - skincare: [CORRIDOR] COSRX Advanced Snail 96 Mucin Power Essence 100ml; MRP Rs1490, Nykaa sale Rs969 (35% off), Amazon ~Rs949 as of 2026-07-23; hero SKU; promo-dependent — Nykaa (retailer listing)
 - skincare: [CORRIDOR] Anua Heartleaf 77% Soothing Toner 250ml; Nykaa list Rs2050 (sale Rs1743); Amazon MRP Rs2999/buy Rs1999 as of 2026-07-23; MRP varies by platform — Nykaa (retailer listing)
@@ -29,10 +32,18 @@ _Import values are UN Comtrade CIF (2024); import-dependence is derived (imports
 - skincare: [CORRIDOR] The Face Shop Rice Water Bright Foaming Cleanser 100ml; Blinkit Rs625 in stock as of 2026-07-23; entry-price K-beauty on the q-commerce rail — Blinkit (q-commerce snapshot)
 - skincare: [CORRIDOR] Laneige Water Sleeping Mask 25ml; MRP Rs850, Blinkit Rs765 as of 2026-07-23 — Blinkit (q-commerce snapshot)
 - skincare: [CORRIDOR] Innisfree Green Tea Seed Hyaluronic Face Serum 30ml; MRP Rs850, Blinkit Rs680 as of 2026-07-23 (distinct from the larger Green Tea Seed Serum ~Rs2200) — Blinkit (q-commerce snapshot)
-- skincare: [CORRIDOR] Etude SoonJung Hydro Barrier Face Cream 75ml (derma); MRP Rs1600, Blinkit Rs1200 as of 2026-07-23 — Blinkit (q-commerce snapshot)
-- skincare: [CORRIDOR] Beauty of Joseon Ginseng Skin Essence Water 150ml; Blinkit Rs1500 in stock as of 2026-07-23 — Blinkit (q-commerce snapshot)
+- _skincare: 274 further price points not listed here — see data/sources.csv._
 - skincare gross margin 80.0% — Serum gross markup 75-85% pre-deductions (COGS Rs80-120 vs MRP Rs500-700); true margin lower after packaging/shipping/returns (The D2C Pulse)
+- sun care: 56 recorded MRP price points in INR, spanning 1500.0-2895.0 inr. Full list in data/sources.csv.
 - sun care: [CORRIDOR] Beauty of Joseon Relief Sunscreen SPF50+; MRP Rs1570, Nykaa sale Rs1256 (20% off) as of 2026-07-23; category bestseller; promo-dependent — Nykaa (retailer listing)
+- sun care: [PREMIUM-SKIN] Kama Ayurveda Amsuman Daily Shield Sunscreen SPF 50 PA++++ - Nykaa. LIST Rs2895 (=US$30.08 at 96.23 INR/USD pinned 2026-07-21); STREET Rs2895 on 2026-08-09 (0.0% off list). Brand group: homegrown (Kama Ayurveda). Format: sunscreen. ORGANISED online retail. MRP embeds 25-45% trade margin (CLAUDE.md rule 10) - normalise before reconciling against net realisation. — Nykaa product listing
+- sun care: [PREMIUM-SKIN] ISDIN Fotoprotector Fusion Water Magic SPF 50 PA ++++ - Nykaa. LIST Rs2850 (=US$29.62 at 96.23 INR/USD pinned 2026-07-21); STREET Rs2850 on 2026-08-09 (0.0% off list). Brand group: other_observed. Format: sunscreen. ORGANISED online retail. MRP embeds 25-45% trade margin (CLAUDE.md rule 10) - normalise before reconciling against net realisation. — Nykaa product listing
+- sun care: [PREMIUM-SKIN] Celimax Pore + Dark Spot Brightening Care Sunscreen SPF 50+ PA++++,Corrects,Fights Hyperpigmentation - Nykaa. LIST Rs2599 (=US$27.01 at 96.23 INR/USD pinned 2026-07-21); STREET Rs2209 on 2026-08-09 (15.0% off list). Brand group: other_observed. Format: sunscreen. ORGANISED online retail. MRP embeds 25-45% trade margin (CLAUDE.md rule 10) - normalise before reconciling against net realisation. — Nykaa product listing
+- sun care: [PREMIUM-SKIN] Bioderma Pigmentbio Daily Care SPF 50+ Brightening Sunscreen (40ml) - Tira. LIST Rs2499 (=US$25.97 at 96.23 INR/USD pinned 2026-07-21); STREET Rs2499 on 2026-08-09 (0.0% off list). Brand group: other_foreign (Bioderma). Format: sunscreen. ORGANISED online retail. MRP embeds 25-45% trade margin (CLAUDE.md rule 10) - normalise before reconciling against net realisation. — Tira product listing
+- sun care: [PREMIUM-SKIN] Dr.Jart+ Every Sun Day Ultra-Sheer Priming Sunscreen Stick SPF 30 with Hyaluronic Acid (19 g) - Tira. LIST Rs2450 (=US$25.46 at 96.23 INR/USD pinned 2026-07-21); STREET Rs980 on 2026-08-09 (60.0% off list). Brand group: korean (Dr.Jart+). Format: sunscreen. ORGANISED online retail. MRP embeds 25-45% trade margin (CLAUDE.md rule 10) - normalise before reconciling against net realisation. — Tira product listing
+- sun care: [PREMIUM-SKIN] Dr Jart Every Sun Day Ultra Sheer Priming Sunscreen Stick Spf 30 With Hyaluronic Acid - Nykaa. LIST Rs2400 (=US$24.94 at 96.23 INR/USD pinned 2026-07-21); STREET Rs960 on 2026-08-09 (60.0% off list). Brand group: korean (Dr.Jart+). Format: sunscreen. ORGANISED online retail. MRP embeds 25-45% trade margin (CLAUDE.md rule 10) - normalise before reconciling against net realisation. — Nykaa product listing
+- sun care: [PREMIUM-SKIN] Mixsoon Bean Sunstick Invisible Spf50 Pa With Fermented Bean Extract - Nykaa. LIST Rs2399 (=US$24.93 at 96.23 INR/USD pinned 2026-07-21); STREET Rs1200 on 2026-08-09 (50.0% off list). Brand group: korean (Mixsoon). Format: sunscreen. ORGANISED online retail. MRP embeds 25-45% trade margin (CLAUDE.md rule 10) - normalise before reconciling against net realisation. — Nykaa product listing
+- _sun care: 48 further price points not listed here — see data/sources.csv._
 
 **Listed-player operating margins (cost-efficiency proxy, latest FY)**
 | Company | Operating margin |

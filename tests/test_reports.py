@@ -19,6 +19,50 @@ def _rev(company, period, value, geo="KR", currency="KRW", unit="krw_tn", conf="
     )
 
 
+def _price(value, currency="INR", unit="inr", basis="MRP", notes="a price"):
+    return DataPoint(
+        geography="IN", segment="skincare", metric="retail_price", value=value,
+        unit=unit, currency=currency, period="2026", period_type="CY",
+        value_basis=basis, source_name="Test listing",
+        date_accessed=date(2026, 8, 9), confidence="HIGH", notes=notes,
+    )
+
+
+class TestPriceView:
+    def test_small_segment_renders_every_point(self):
+        from lib.reports._context import PRICE_SAMPLE_LIMIT, _price_view
+        pts = [_price(100 + i) for i in range(PRICE_SAMPLE_LIMIT)]
+        view = _price_view(pts)
+        assert len(view["examples"]) == PRICE_SAMPLE_LIMIT
+        assert view["summary"] == []
+        assert view["omitted"] == 0
+
+    def test_bulk_sku_drop_is_bounded_and_counted(self):
+        # A price sweep adding hundreds of SKUs must not become a catalogue.
+        from lib.reports._context import PRICE_SAMPLE_LIMIT, _price_view
+        view = _price_view([_price(1000 + i) for i in range(327)])
+        assert len(view["examples"]) == PRICE_SAMPLE_LIMIT
+        assert view["omitted"] == 327 - PRICE_SAMPLE_LIMIT
+        assert len(view["summary"]) == 1
+        assert view["summary"][0]["count"] == 327
+        assert view["summary"][0]["low"] == 1000
+        assert view["summary"][0]["high"] == 1326
+
+    def test_spans_never_cross_value_basis_or_currency(self):
+        # CLAUDE.md rule 3: a span across mixed bases is meaningless.
+        from lib.reports._context import _price_view
+        pts = ([_price(1000 + i, basis="MRP") for i in range(20)]
+               + [_price(50 + i, basis="WHOLESALE") for i in range(20)]
+               + [_price(10 + i, currency="USD", unit="usd") for i in range(20)])
+        summary = _price_view(pts)["summary"]
+        assert len(summary) == 3
+        keys = {(g["currency"], g["value_basis"]) for g in summary}
+        assert keys == {("INR", "MRP"), ("INR", "WHOLESALE"), ("USD", "MRP")}
+        for g in summary:
+            assert g["count"] == 20
+            assert g["low"] < g["high"]
+
+
 class TestCompanyNameCleaning:
     def test_strips_trailing_descriptor(self):
         dp = _rev("LG H&H, -6.7% YoY", "2025", 6.36)

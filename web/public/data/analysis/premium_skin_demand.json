@@ -1,0 +1,5828 @@
+{
+  "domestic_encroachment": {
+    "method": "In-band-by-MRP (Rs1,500-3,000) single-unit SKU observations from the Phase 1 price sweep, multipacks and untrusted MRPs excluded, keyed to manufacturer origin. 'brand_neutral_queries' uses only the format/concern queries, which name no brand and are therefore the only part of the sweep whose origin composition means anything.",
+    "brand_neutral_queries": {
+      "n_queries": 36,
+      "query_terms": [
+        "alpha arbutin serum",
+        "brightening serum",
+        "dark spot correcting serum",
+        "korean skincare serum",
+        "korean sunscreen",
+        "melasma serum",
+        "niacinamide serum",
+        "pigmentation serum",
+        "sunscreen no white cast",
+        "sunscreen spf 50",
+        "tranexamic acid serum",
+        "vitamin c serum"
+      ],
+      "by_origin": {
+        "KR": {
+          "in_band_observations": 126,
+          "distinct_brands": [
+            "A'pieu",
+            "Aestura",
+            "Anua",
+            "Arencia",
+            "Axis-Y",
+            "Beauty of Joseon",
+            "Bioheal Boh",
+            "COSRX",
+            "Celimax",
+            "Dr. Althea",
+            "Dr. Melaxin",
+            "House of HUR",
+            "Innisfree",
+            "Isntree",
+            "Klairs",
+            "Medicube",
+            "Missha",
+            "Numbuzin",
+            "One Thing",
+            "Round Lab",
+            "SKIN1004",
+            "Sulwhasoo",
+            "Thank You Farmer",
+            "The Face Shop",
+            "TirTir",
+            "TonyMoly",
+            "Torriden",
+            "belif",
+            "d'Alba"
+          ],
+          "median_mrp": 2000.0,
+          "held_band_by_street_price": 99,
+          "held_band_pct": 78.6,
+          "examples": [
+            {
+              "brand": "Dr. Melaxin",
+              "name": "Dr.Melaxin Tx-Serum Korean Dark Spot Brightening Serum with Tranexamic Acid & Niacinamide (30 ml)",
+              "mrp": 3000.0,
+              "street_price": 2700.0,
+              "in_band_by_street": true,
+              "discount_pct": 10,
+              "platform": "tira",
+              "query": "dark spot correcting serum"
+            },
+            {
+              "brand": "Dr. Melaxin",
+              "name": "Dr.Melaxin Tx-Serum Korean Dark Spot Brightening Serum with Tranexamic Acid & Niacinamide (30 ml)",
+              "mrp": 3000.0,
+              "street_price": 2700.0,
+              "in_band_by_street": true,
+              "discount_pct": 10,
+              "platform": "tira",
+              "query": "melasma serum"
+            },
+            {
+              "brand": "Dr. Melaxin",
+              "name": "Dr.Melaxin Tx-Serum Korean Dark Spot Brightening Serum with Tranexamic Acid & Niacinamide (30 ml)",
+              "mrp": 3000.0,
+              "street_price": 2700.0,
+              "in_band_by_street": true,
+              "discount_pct": 10,
+              "platform": "tira",
+              "query": "brightening serum"
+            },
+            {
+              "brand": "Dr. Melaxin",
+              "name": "Dr.Melaxin Tx-Serum Korean Dark Spot Brightening Serum with Tranexamic Acid & Niacinamide (30 ml)",
+              "mrp": 3000.0,
+              "street_price": 2700.0,
+              "in_band_by_street": true,
+              "discount_pct": 10,
+              "platform": "tira",
+              "query": "tranexamic acid serum"
+            },
+            {
+              "brand": "Dr. Melaxin",
+              "name": "Dr.Melaxin Tx-Serum Korean Dark Spot Brightening Serum with Tranexamic Acid & Niacinamide (30 ml)",
+              "mrp": 3000.0,
+              "street_price": 2700.0,
+              "in_band_by_street": true,
+              "discount_pct": 10,
+              "platform": "tira",
+              "query": "korean skincare serum"
+            },
+            {
+              "brand": "Celimax",
+              "name": "Celimax Pore Dark Spot Brightening Serum",
+              "mrp": 2999.0,
+              "street_price": 2549.0,
+              "in_band_by_street": true,
+              "discount_pct": 15,
+              "platform": "nykaa",
+              "query": "pigmentation serum"
+            }
+          ]
+        },
+        "IN": {
+          "in_band_observations": 34,
+          "distinct_brands": [
+            "Aminu",
+            "BiE",
+            "Ethiglo",
+            "Fixderma",
+            "Forest Essentials",
+            "Miduty",
+            "RAS Luxury Oils",
+            "Suganda",
+            "TBC The Bath & Care",
+            "The Derma Co",
+            "WildGlow",
+            "Yuderma"
+          ],
+          "median_mrp": 1800.0,
+          "held_band_by_street_price": 30,
+          "held_band_pct": 88.2,
+          "examples": [
+            {
+              "brand": "Forest Essentials",
+              "name": "Forest Essentials Advanced Soundarya Age Defying Facial Serum With 24k Gold",
+              "mrp": 2650.0,
+              "street_price": 2650.0,
+              "in_band_by_street": true,
+              "discount_pct": 0,
+              "platform": "nykaa",
+              "query": "melasma serum"
+            },
+            {
+              "brand": "WildGlow",
+              "name": "WILDGLOW Brightening Serum",
+              "mrp": 2499.0,
+              "street_price": 1874.0,
+              "in_band_by_street": true,
+              "discount_pct": 25,
+              "platform": "nykaa",
+              "query": "korean skincare serum"
+            },
+            {
+              "brand": "Aminu",
+              "name": "Aminu Skin Perfecting Serum - Pores, Acne Marks, Smoothes Texture - Willow Bark, PAD Epigenetic Tech",
+              "mrp": 2450.0,
+              "street_price": 2450.0,
+              "in_band_by_street": true,
+              "discount_pct": 0,
+              "platform": "nykaa",
+              "query": "dark spot correcting serum"
+            },
+            {
+              "brand": "Aminu",
+              "name": "Aminu Skin Perfecting Serum For Acne Scars Pores Minimizing",
+              "mrp": 2450.0,
+              "street_price": 2450.0,
+              "in_band_by_street": true,
+              "discount_pct": 0,
+              "platform": "nykaa",
+              "query": "melasma serum"
+            },
+            {
+              "brand": "TBC The Bath & Care",
+              "name": "Tbc The Bath And Care Centi Bright Tx Radiance Boost Ampoule",
+              "mrp": 2199.0,
+              "street_price": 2199.0,
+              "in_band_by_street": true,
+              "discount_pct": 0,
+              "platform": "nykaa",
+              "query": "tranexamic acid serum"
+            },
+            {
+              "brand": "RAS Luxury Oils",
+              "name": "Ras Luxury Oils Brightening Anti Pigmentation Advanced Booster Serum",
+              "mrp": 1990.0,
+              "street_price": 1552.0,
+              "in_band_by_street": true,
+              "discount_pct": 22,
+              "platform": "nykaa",
+              "query": "pigmentation serum"
+            }
+          ]
+        },
+        "unclassified": {
+          "in_band_observations": 16,
+          "distinct_brands": [
+            "ALBIZZIA",
+            "Biluma",
+            "Eternal Bright",
+            "Gunam",
+            "LuxaDerme",
+            "Unknown"
+          ],
+          "median_mrp": 1980.0,
+          "held_band_by_street_price": 8,
+          "held_band_pct": 50.0,
+          "examples": [
+            {
+              "brand": "ALBIZZIA",
+              "name": "ALBIZZIA Brightening & Correcting Face Serum",
+              "mrp": 2500.0,
+              "street_price": 799.0,
+              "in_band_by_street": false,
+              "discount_pct": 68,
+              "platform": "nykaa",
+              "query": "dark spot correcting serum"
+            },
+            {
+              "brand": "Gunam",
+              "name": "Gunam Active Brightening Complex Azelaic Tranexamic Acid Serum",
+              "mrp": 2400.0,
+              "street_price": 1920.0,
+              "in_band_by_street": true,
+              "discount_pct": 20,
+              "platform": "nykaa",
+              "query": "tranexamic acid serum"
+            },
+            {
+              "brand": "Unknown",
+              "name": "FCL Skin Brightening Complex Cream, Improves Skin Texture, Hyaluronic Acid, Alpha Arbutin",
+              "mrp": 2200.0,
+              "street_price": 1980.0,
+              "in_band_by_street": true,
+              "discount_pct": 10,
+              "platform": "nykaa",
+              "query": "pigmentation serum"
+            },
+            {
+              "brand": "Unknown",
+              "name": "FCL Skin Brightening Complex Cream, Improves Skin Texture, Hyaluronic Acid, Alpha Arbutin",
+              "mrp": 2200.0,
+              "street_price": 1980.0,
+              "in_band_by_street": true,
+              "discount_pct": 10,
+              "platform": "nykaa",
+              "query": "brightening serum"
+            },
+            {
+              "brand": "LuxaDerme",
+              "name": "LuxaDerme Ultra Brightening Face Serum",
+              "mrp": 2200.0,
+              "street_price": 2002.0,
+              "in_band_by_street": true,
+              "discount_pct": 9,
+              "platform": "nykaa",
+              "query": "brightening serum"
+            },
+            {
+              "brand": "Unknown",
+              "name": "FCL Skin Brightening Complex Cream, Improves Skin Texture, Hyaluronic Acid, Alpha Arbutin",
+              "mrp": 2200.0,
+              "street_price": 1980.0,
+              "in_band_by_street": true,
+              "discount_pct": 10,
+              "platform": "nykaa",
+              "query": "alpha arbutin serum"
+            }
+          ]
+        },
+        "other_foreign": {
+          "in_band_observations": 15,
+          "distinct_brands": [
+            "Bobbi Brown",
+            "Eucerin",
+            "Heliocare",
+            "ISDIN",
+            "Mario Badescu",
+            "Murad",
+            "Palmer's",
+            "Uriage"
+          ],
+          "median_mrp": 2700.0,
+          "held_band_by_street_price": 14,
+          "held_band_pct": 93.3,
+          "examples": [
+            {
+              "brand": "Uriage",
+              "name": "Uriage Depiderm Anti Dark Spot Serum Brightening Booster",
+              "mrp": 3000.0,
+              "street_price": 2550.0,
+              "in_band_by_street": true,
+              "discount_pct": 15,
+              "platform": "nykaa",
+              "query": "dark spot correcting serum"
+            },
+            {
+              "brand": "Uriage",
+              "name": "Uriage Depiderm Anti Dark Spot Serum Brightening Booster",
+              "mrp": 3000.0,
+              "street_price": 2550.0,
+              "in_band_by_street": true,
+              "discount_pct": 15,
+              "platform": "nykaa",
+              "query": "melasma serum"
+            },
+            {
+              "brand": "Uriage",
+              "name": "Uriage Hyseac Skin Anti Blemish Serum",
+              "mrp": 3000.0,
+              "street_price": 2550.0,
+              "in_band_by_street": true,
+              "discount_pct": 15,
+              "platform": "nykaa",
+              "query": "melasma serum"
+            },
+            {
+              "brand": "Uriage",
+              "name": "Uriage Hyseac Skin Anti-Blemish Serum 5.8% AHA for Hormonal Peak & Stress Acne Dermat Recommended",
+              "mrp": 3000.0,
+              "street_price": 2550.0,
+              "in_band_by_street": true,
+              "discount_pct": 15,
+              "platform": "nykaa",
+              "query": "tranexamic acid serum"
+            },
+            {
+              "brand": "ISDIN",
+              "name": "ISDIN Fotoprotector Fusion Water Magic SPF 50 PA ++++",
+              "mrp": 2850.0,
+              "street_price": 2850.0,
+              "in_band_by_street": true,
+              "discount_pct": 0,
+              "platform": "nykaa",
+              "query": "korean sunscreen"
+            },
+            {
+              "brand": "Uriage",
+              "name": "Uriage Eau Thermale H A Booster Serum",
+              "mrp": 2800.0,
+              "street_price": 2380.0,
+              "in_band_by_street": true,
+              "discount_pct": 15,
+              "platform": "nykaa",
+              "query": "tranexamic acid serum"
+            }
+          ]
+        }
+      }
+    },
+    "whole_sweep_floor": {
+      "n_queries": 117,
+      "note": "Brand queries were 45 Korean / 20 homegrown / 16 other foreign by design, so these counts are a FLOOR on each origin's in-band presence, not a share of the band.",
+      "by_origin": {
+        "KR": {
+          "in_band_observations": 319,
+          "distinct_brands": [
+            "A'pieu",
+            "Aestura",
+            "Anua",
+            "Arencia",
+            "Axis-Y",
+            "Beauty of Joseon",
+            "Bioheal Boh",
+            "COSRX",
+            "Celimax",
+            "Dr. Althea",
+            "Dr. Melaxin",
+            "Dr.Jart+",
+            "Etude",
+            "House of HUR",
+            "Innisfree",
+            "Isntree",
+            "Klairs",
+            "Laneige",
+            "Medicube",
+            "Missha",
+            "Mixsoon",
+            "Mizon",
+            "Numbuzin",
+            "One Thing",
+            "Round Lab",
+            "SKIN1004",
+            "Sulwhasoo",
+            "Thank You Farmer",
+            "The Face Shop",
+            "TirTir",
+            "TonyMoly",
+            "Torriden",
+            "belif",
+            "d'Alba",
+            "hince"
+          ],
+          "median_mrp": 2000.0,
+          "held_band_by_street_price": 254,
+          "held_band_pct": 79.6
+        },
+        "other_foreign": {
+          "in_band_observations": 89,
+          "distinct_brands": [
+            "Bioderma",
+            "Bobbi Brown",
+            "Cetaphil",
+            "Clinique",
+            "Depiwhite",
+            "Eucerin",
+            "Heliocare",
+            "ISDIN",
+            "Kiehl's",
+            "La Roche-Posay",
+            "Mario Badescu",
+            "Murad",
+            "Nudestix",
+            "Palmer's",
+            "Paula's Choice",
+            "Sebamed",
+            "The Ordinary",
+            "Uriage"
+          ],
+          "median_mrp": 2150.0,
+          "held_band_by_street_price": 81,
+          "held_band_pct": 91.0
+        },
+        "IN": {
+          "in_band_observations": 65,
+          "distinct_brands": [
+            "Aminu",
+            "BiE",
+            "Ethiglo",
+            "Fixderma",
+            "Forest Essentials",
+            "Kama Ayurveda",
+            "Miduty",
+            "RAS Luxury Oils",
+            "Suganda",
+            "TBC The Bath & Care",
+            "The Derma Co",
+            "WildGlow",
+            "Yuderma"
+          ],
+          "median_mrp": 1800.0,
+          "held_band_by_street_price": 60,
+          "held_band_pct": 92.3
+        },
+        "unclassified": {
+          "in_band_observations": 25,
+          "distinct_brands": [
+            "ALBIZZIA",
+            "Biluma",
+            "Eternal Bright",
+            "Gunam",
+            "LuxaDerme",
+            "Unknown"
+          ],
+          "median_mrp": 1995.0,
+          "held_band_by_street_price": 13,
+          "held_band_pct": 52.0
+        }
+      }
+    }
+  },
+  "corpus": {
+    "reviews": 3287,
+    "skus_targeted": 109,
+    "skus_with_any_review": 95,
+    "by_origin": {
+      "other_foreign": 276,
+      "KR": 2609,
+      "unclassified": 21,
+      "IN": 381
+    },
+    "by_frame": {
+      "most_useful": 2636,
+      "negative": 611,
+      "both": 40
+    },
+    "by_year": {
+      "2018": 4,
+      "2019": 35,
+      "2020": 132,
+      "2021": 174,
+      "2022": 243,
+      "2023": 429,
+      "2024": 790,
+      "2025": 608,
+      "2026": 872
+    },
+    "verified_buyer_share_pct": 100.0,
+    "median_word_count": 24,
+    "reviews_with_declared_tone": 1275,
+    "fields_absent_from_platform": [
+      "income",
+      "city",
+      "state",
+      "age",
+      "channel",
+      "purchase_price_paid"
+    ]
+  },
+  "origin_map": [
+    {
+      "brand": "Beauty of Joseon",
+      "origin": "KR"
+    },
+    {
+      "brand": "Beauty of Joseon",
+      "origin": "KR"
+    },
+    {
+      "brand": "Thank You Farmer",
+      "origin": "KR"
+    },
+    {
+      "brand": "The Face Shop",
+      "origin": "KR"
+    },
+    {
+      "brand": "Round Lab",
+      "origin": "KR"
+    },
+    {
+      "brand": "Dr. Althea",
+      "origin": "KR"
+    },
+    {
+      "brand": "Dr.Jart+",
+      "origin": "KR"
+    },
+    {
+      "brand": "Dr.Jart+",
+      "origin": "KR"
+    },
+    {
+      "brand": "House of HUR",
+      "origin": "KR"
+    },
+    {
+      "brand": "d'Alba",
+      "origin": "KR"
+    },
+    {
+      "brand": "d'Alba",
+      "origin": "KR"
+    },
+    {
+      "brand": "SKIN1004",
+      "origin": "KR"
+    },
+    {
+      "brand": "Aestura",
+      "origin": "KR"
+    },
+    {
+      "brand": "A'pieu",
+      "origin": "KR"
+    },
+    {
+      "brand": "Celimax",
+      "origin": "KR"
+    },
+    {
+      "brand": "Klairs",
+      "origin": "KR"
+    },
+    {
+      "brand": "Torriden",
+      "origin": "KR"
+    },
+    {
+      "brand": "belif",
+      "origin": "KR"
+    },
+    {
+      "brand": "Innisfree",
+      "origin": "KR"
+    },
+    {
+      "brand": "Isntree",
+      "origin": "KR"
+    },
+    {
+      "brand": "Laneige",
+      "origin": "KR"
+    },
+    {
+      "brand": "Medicube",
+      "origin": "KR"
+    },
+    {
+      "brand": "Mixsoon",
+      "origin": "KR"
+    },
+    {
+      "brand": "TirTir",
+      "origin": "KR"
+    },
+    {
+      "brand": "COSRX",
+      "origin": "KR"
+    },
+    {
+      "brand": "Etude",
+      "origin": "KR"
+    },
+    {
+      "brand": "Anua",
+      "origin": "KR"
+    },
+    {
+      "brand": "Dr. Althea",
+      "origin": "KR"
+    },
+    {
+      "brand": "Dr. Melaxin",
+      "origin": "KR"
+    },
+    {
+      "brand": "Dr. Melaxin",
+      "origin": "KR"
+    },
+    {
+      "brand": "Axis-Y",
+      "origin": "KR"
+    },
+    {
+      "brand": "TonyMoly",
+      "origin": "KR"
+    },
+    {
+      "brand": "TonyMoly",
+      "origin": "KR"
+    },
+    {
+      "brand": "Sulwhasoo",
+      "origin": "KR"
+    },
+    {
+      "brand": "Numbuzin",
+      "origin": "KR"
+    },
+    {
+      "brand": "Some By Mi",
+      "origin": "KR"
+    },
+    {
+      "brand": "hince",
+      "origin": "KR"
+    },
+    {
+      "brand": "Mizon",
+      "origin": "KR"
+    },
+    {
+      "brand": "Missha",
+      "origin": "KR"
+    },
+    {
+      "brand": "Arencia",
+      "origin": "KR"
+    },
+    {
+      "brand": "Bioheal Boh",
+      "origin": "KR"
+    },
+    {
+      "brand": "One Thing",
+      "origin": "KR"
+    },
+    {
+      "brand": "Mediheal",
+      "origin": "KR"
+    },
+    {
+      "brand": "Laneige",
+      "origin": "KR"
+    },
+    {
+      "brand": "Forest Essentials",
+      "origin": "IN"
+    },
+    {
+      "brand": "Kama Ayurveda",
+      "origin": "IN"
+    },
+    {
+      "brand": "RAS Luxury Oils",
+      "origin": "IN"
+    },
+    {
+      "brand": "The Derma Co",
+      "origin": "IN"
+    },
+    {
+      "brand": "TBC The Bath & Care",
+      "origin": "IN"
+    },
+    {
+      "brand": "Suganda",
+      "origin": "IN"
+    },
+    {
+      "brand": "Ethiglo",
+      "origin": "IN"
+    },
+    {
+      "brand": "WildGlow",
+      "origin": "IN"
+    },
+    {
+      "brand": "Yuderma",
+      "origin": "IN"
+    },
+    {
+      "brand": "Miduty",
+      "origin": "IN"
+    },
+    {
+      "brand": "BiE",
+      "origin": "IN"
+    },
+    {
+      "brand": "BiE",
+      "origin": "IN"
+    },
+    {
+      "brand": "Fixderma",
+      "origin": "IN"
+    },
+    {
+      "brand": "Aminu",
+      "origin": "IN"
+    },
+    {
+      "brand": "Minimalist",
+      "origin": "IN"
+    },
+    {
+      "brand": "Dot & Key",
+      "origin": "IN"
+    },
+    {
+      "brand": "Dot & Key",
+      "origin": "IN"
+    },
+    {
+      "brand": "Foxtale",
+      "origin": "IN"
+    },
+    {
+      "brand": "Pilgrim",
+      "origin": "IN"
+    },
+    {
+      "brand": "Deconstruct",
+      "origin": "IN"
+    },
+    {
+      "brand": "Earth Rhythm",
+      "origin": "IN"
+    },
+    {
+      "brand": "Plum",
+      "origin": "IN"
+    },
+    {
+      "brand": "Limese",
+      "origin": "IN"
+    },
+    {
+      "brand": "La Roche-Posay",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Paula's Choice",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Paula's Choice",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Clinique",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Bobbi Brown",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Cetaphil",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Kiehl's",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Mario Badescu",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Murad",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Nudestix",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Heliocare",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Depiwhite",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Bioderma",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "The Ordinary",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Sebamed",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Eucerin",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "ISDIN",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Uriage",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "Palmer's",
+      "origin": "other_foreign"
+    },
+    {
+      "brand": "ALBIZZIA",
+      "origin": "unclassified"
+    },
+    {
+      "brand": "Biluma",
+      "origin": "unclassified"
+    },
+    {
+      "brand": "Eternal Bright",
+      "origin": "unclassified"
+    },
+    {
+      "brand": "Gunam",
+      "origin": "unclassified"
+    },
+    {
+      "brand": "LuxaDerme",
+      "origin": "unclassified"
+    }
+  ],
+  "most_useful_frame": {
+    "note": "Nykaa's default ordering, overwhelmingly 5-star. The frame that answers Q3: what satisfied buyers volunteer.",
+    "n_reviews": 2676,
+    "driver_ranking": [
+      {
+        "driver": "repurchase_loyalty",
+        "mentioned": 289,
+        "mentioned_pct": 10.8,
+        "asserted": 286,
+        "negated": 3
+      },
+      {
+        "driver": "pigmentation_concern",
+        "mentioned": 288,
+        "mentioned_pct": 10.8,
+        "asserted": 273,
+        "negated": 15
+      },
+      {
+        "driver": "ingredient_actives",
+        "mentioned": 264,
+        "mentioned_pct": 9.9,
+        "asserted": 254,
+        "negated": 10
+      },
+      {
+        "driver": "efficacy_result",
+        "mentioned": 207,
+        "mentioned_pct": 7.7,
+        "asserted": 200,
+        "negated": 7
+      },
+      {
+        "driver": "price_worth",
+        "mentioned": 173,
+        "mentioned_pct": 6.5,
+        "asserted": 170,
+        "negated": 3
+      },
+      {
+        "driver": "routine_multistep",
+        "mentioned": 103,
+        "mentioned_pct": 3.8,
+        "asserted": 97,
+        "negated": 6
+      },
+      {
+        "driver": "price_resistance",
+        "mentioned": 99,
+        "mentioned_pct": 3.7,
+        "asserted": 98,
+        "negated": 1
+      },
+      {
+        "driver": "korea_origin",
+        "mentioned": 59,
+        "mentioned_pct": 2.2,
+        "asserted": 55,
+        "negated": 4
+      },
+      {
+        "driver": "climate_context",
+        "mentioned": 54,
+        "mentioned_pct": 2.0,
+        "asserted": 39,
+        "negated": 15
+      },
+      {
+        "driver": "social_hype",
+        "mentioned": 51,
+        "mentioned_pct": 1.9,
+        "asserted": 50,
+        "negated": 1
+      },
+      {
+        "driver": "derm_authority",
+        "mentioned": 29,
+        "mentioned_pct": 1.1,
+        "asserted": 29,
+        "negated": 0
+      },
+      {
+        "driver": "korean_aesthetic",
+        "mentioned": 27,
+        "mentioned_pct": 1.0,
+        "asserted": 27,
+        "negated": 0
+      },
+      {
+        "driver": "discount_mention",
+        "mentioned": 23,
+        "mentioned_pct": 0.9,
+        "asserted": 22,
+        "negated": 1
+      },
+      {
+        "driver": "word_of_mouth",
+        "mentioned": 7,
+        "mentioned_pct": 0.3,
+        "asserted": 7,
+        "negated": 0
+      },
+      {
+        "driver": "other_origin",
+        "mentioned": 1,
+        "mentioned_pct": 0.0,
+        "asserted": 1,
+        "negated": 0
+      }
+    ],
+    "origin_contrast": {
+      "KR": {
+        "n_reviews": 2143,
+        "korea_origin_mentions": 56,
+        "korea_origin_pct": 2.6,
+        "korean_aesthetic_mentions": 25,
+        "korean_aesthetic_pct": 1.2,
+        "other_origin_mentions": 1,
+        "other_origin_pct": 0.0,
+        "ingredient_actives_pct": 11.3,
+        "actives_to_origin_ratio": 4.3
+      },
+      "IN": {
+        "n_reviews": 333,
+        "korea_origin_mentions": 0,
+        "korea_origin_pct": 0.0,
+        "korean_aesthetic_mentions": 0,
+        "korean_aesthetic_pct": 0.0,
+        "other_origin_mentions": 0,
+        "other_origin_pct": 0.0,
+        "ingredient_actives_pct": 4.5,
+        "actives_to_origin_ratio": null
+      },
+      "other_foreign": {
+        "n_reviews": 179,
+        "korea_origin_mentions": 2,
+        "korea_origin_pct": 1.1,
+        "korean_aesthetic_mentions": 2,
+        "korean_aesthetic_pct": 1.1,
+        "other_origin_mentions": 0,
+        "other_origin_pct": 0.0,
+        "ingredient_actives_pct": 3.4,
+        "actives_to_origin_ratio": 3.0
+      },
+      "unclassified": {
+        "n_reviews": 21,
+        "korea_origin_mentions": 1,
+        "korea_origin_pct": 4.8,
+        "korean_aesthetic_mentions": 0,
+        "korean_aesthetic_pct": 0.0,
+        "other_origin_mentions": 0,
+        "other_origin_pct": 0.0,
+        "ingredient_actives_pct": 4.8,
+        "actives_to_origin_ratio": 1.0
+      }
+    },
+    "provenance_only": {
+      "n_reviews": 2676,
+      "origin_citing_reviews": 81,
+      "origin_citing_pct_of_corpus": 3.0,
+      "origin_plus_mechanism": 14,
+      "origin_only": 67,
+      "origin_only_pct_of_citing": 82.7,
+      "origin_only_pct_of_corpus": 2.5
+    },
+    "by_origin": {
+      "KR": {
+        "n_reviews": 2143,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 52,
+            "negated": 4,
+            "mentioned": 56,
+            "mentioned_pct": 2.6,
+            "asserted_pct": 2.4,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 25,
+            "negated": 0,
+            "mentioned": 25,
+            "mentioned_pct": 1.2,
+            "asserted_pct": 1.2,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 232,
+            "negated": 10,
+            "mentioned": 242,
+            "mentioned_pct": 11.3,
+            "asserted_pct": 10.8,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 127,
+            "negated": 5,
+            "mentioned": 132,
+            "mentioned_pct": 6.2,
+            "asserted_pct": 5.9,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 0.3,
+            "asserted_pct": 0.3,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 46,
+            "negated": 1,
+            "mentioned": 47,
+            "mentioned_pct": 2.2,
+            "asserted_pct": 2.1,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 0.3,
+            "asserted_pct": 0.3,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 37,
+            "negated": 14,
+            "mentioned": 51,
+            "mentioned_pct": 2.4,
+            "asserted_pct": 1.7,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 134,
+            "negated": 1,
+            "mentioned": 135,
+            "mentioned_pct": 6.3,
+            "asserted_pct": 6.3,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 81,
+            "negated": 0,
+            "mentioned": 81,
+            "mentioned_pct": 3.8,
+            "asserted_pct": 3.8,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 22,
+            "negated": 0,
+            "mentioned": 22,
+            "mentioned_pct": 1.0,
+            "asserted_pct": 1.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 239,
+            "negated": 2,
+            "mentioned": 241,
+            "mentioned_pct": 11.2,
+            "asserted_pct": 11.2,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 82,
+            "negated": 6,
+            "mentioned": 88,
+            "mentioned_pct": 4.1,
+            "asserted_pct": 3.8,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 137,
+            "negated": 11,
+            "mentioned": 148,
+            "mentioned_pct": 6.9,
+            "asserted_pct": 6.4,
+            "polarity_material": false
+          }
+        }
+      },
+      "IN": {
+        "n_reviews": 333,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 15,
+            "negated": 0,
+            "mentioned": 15,
+            "mentioned_pct": 4.5,
+            "asserted_pct": 4.5,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 64,
+            "negated": 2,
+            "mentioned": 66,
+            "mentioned_pct": 19.8,
+            "asserted_pct": 19.2,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 1.2,
+            "asserted_pct": 1.2,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.6,
+            "asserted_pct": 0.6,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.3,
+            "asserted_pct": 0.3,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 16,
+            "negated": 1,
+            "mentioned": 17,
+            "mentioned_pct": 5.1,
+            "asserted_pct": 4.8,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.6,
+            "asserted_pct": 0.6,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "mentioned_pct": 0.3,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 28,
+            "negated": 0,
+            "mentioned": 28,
+            "mentioned_pct": 8.4,
+            "asserted_pct": 8.4,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "mentioned_pct": 2.7,
+            "asserted_pct": 2.7,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 120,
+            "negated": 3,
+            "mentioned": 123,
+            "mentioned_pct": 36.9,
+            "asserted_pct": 36.0,
+            "polarity_material": false
+          }
+        }
+      },
+      "other_foreign": {
+        "n_reviews": 179,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 3.4,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 16,
+            "negated": 0,
+            "mentioned": 16,
+            "mentioned_pct": 8.9,
+            "asserted_pct": 8.9,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 2,
+            "negated": 1,
+            "mentioned": 3,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.1,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 17,
+            "negated": 1,
+            "mentioned": 18,
+            "mentioned_pct": 10.1,
+            "asserted_pct": 9.5,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 14,
+            "negated": 1,
+            "mentioned": 15,
+            "mentioned_pct": 8.4,
+            "asserted_pct": 7.8,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 18,
+            "negated": 1,
+            "mentioned": 19,
+            "mentioned_pct": 10.6,
+            "asserted_pct": 10.1,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 10,
+            "negated": 1,
+            "mentioned": 11,
+            "mentioned_pct": 6.1,
+            "asserted_pct": 5.6,
+            "polarity_material": false
+          }
+        }
+      }
+    },
+    "by_format": {
+      "sunscreen": {
+        "n_reviews": 894,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 22,
+            "negated": 4,
+            "mentioned": 26,
+            "mentioned_pct": 2.9,
+            "asserted_pct": 2.5,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "mentioned_pct": 1.3,
+            "asserted_pct": 1.3,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 50,
+            "negated": 6,
+            "mentioned": 56,
+            "mentioned_pct": 6.3,
+            "asserted_pct": 5.6,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 26,
+            "negated": 1,
+            "mentioned": 27,
+            "mentioned_pct": 3.0,
+            "asserted_pct": 2.9,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 16,
+            "negated": 0,
+            "mentioned": 16,
+            "mentioned_pct": 1.8,
+            "asserted_pct": 1.8,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 19,
+            "negated": 0,
+            "mentioned": 19,
+            "mentioned_pct": 2.1,
+            "asserted_pct": 2.1,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.2,
+            "asserted_pct": 0.2,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 23,
+            "negated": 11,
+            "mentioned": 34,
+            "mentioned_pct": 3.8,
+            "asserted_pct": 2.6,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 63,
+            "negated": 1,
+            "mentioned": 64,
+            "mentioned_pct": 7.2,
+            "asserted_pct": 7.0,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 44,
+            "negated": 1,
+            "mentioned": 45,
+            "mentioned_pct": 5.0,
+            "asserted_pct": 4.9,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 7,
+            "negated": 1,
+            "mentioned": 8,
+            "mentioned_pct": 0.9,
+            "asserted_pct": 0.8,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 105,
+            "negated": 1,
+            "mentioned": 106,
+            "mentioned_pct": 11.9,
+            "asserted_pct": 11.7,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 17,
+            "negated": 4,
+            "mentioned": 21,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 1.9,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 23,
+            "negated": 5,
+            "mentioned": 28,
+            "mentioned_pct": 3.1,
+            "asserted_pct": 2.6,
+            "polarity_material": false
+          }
+        }
+      },
+      "moisturiser": {
+        "n_reviews": 840,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 14,
+            "negated": 0,
+            "mentioned": 14,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 0.8,
+            "asserted_pct": 0.8,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 88,
+            "negated": 2,
+            "mentioned": 90,
+            "mentioned_pct": 10.7,
+            "asserted_pct": 10.5,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 49,
+            "negated": 2,
+            "mentioned": 51,
+            "mentioned_pct": 6.1,
+            "asserted_pct": 5.8,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 0.5,
+            "asserted_pct": 0.5,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 11,
+            "negated": 0,
+            "mentioned": 11,
+            "mentioned_pct": 1.3,
+            "asserted_pct": 1.3,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 14,
+            "negated": 4,
+            "mentioned": 18,
+            "mentioned_pct": 2.1,
+            "asserted_pct": 1.7,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 41,
+            "negated": 0,
+            "mentioned": 41,
+            "mentioned_pct": 4.9,
+            "asserted_pct": 4.9,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 30,
+            "negated": 0,
+            "mentioned": 30,
+            "mentioned_pct": 3.6,
+            "asserted_pct": 3.6,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 105,
+            "negated": 1,
+            "mentioned": 106,
+            "mentioned_pct": 12.6,
+            "asserted_pct": 12.5,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 30,
+            "negated": 1,
+            "mentioned": 31,
+            "mentioned_pct": 3.7,
+            "asserted_pct": 3.6,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 58,
+            "negated": 2,
+            "mentioned": 60,
+            "mentioned_pct": 7.1,
+            "asserted_pct": 6.9,
+            "polarity_material": false
+          }
+        }
+      },
+      "serum_pigmentation_brightening": {
+        "n_reviews": 693,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 14,
+            "negated": 0,
+            "mentioned": 14,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 1.0,
+            "asserted_pct": 1.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 87,
+            "negated": 2,
+            "mentioned": 89,
+            "mentioned_pct": 12.8,
+            "asserted_pct": 12.6,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 113,
+            "negated": 3,
+            "mentioned": 116,
+            "mentioned_pct": 16.7,
+            "asserted_pct": 16.3,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "mentioned_pct": 1.3,
+            "asserted_pct": 1.3,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 14,
+            "negated": 0,
+            "mentioned": 14,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.1,
+            "asserted_pct": 0.1,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.3,
+            "asserted_pct": 0.3,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 45,
+            "negated": 1,
+            "mentioned": 46,
+            "mentioned_pct": 6.6,
+            "asserted_pct": 6.5,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 15,
+            "negated": 0,
+            "mentioned": 15,
+            "mentioned_pct": 2.2,
+            "asserted_pct": 2.2,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 53,
+            "negated": 0,
+            "mentioned": 53,
+            "mentioned_pct": 7.6,
+            "asserted_pct": 7.6,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 37,
+            "negated": 1,
+            "mentioned": 38,
+            "mentioned_pct": 5.5,
+            "asserted_pct": 5.3,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 184,
+            "negated": 8,
+            "mentioned": 192,
+            "mentioned_pct": 27.7,
+            "asserted_pct": 26.6,
+            "polarity_material": false
+          }
+        }
+      },
+      "toner_essence": {
+        "n_reviews": 249,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 29,
+            "negated": 0,
+            "mentioned": 29,
+            "mentioned_pct": 11.6,
+            "asserted_pct": 11.6,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 12,
+            "negated": 1,
+            "mentioned": 13,
+            "mentioned_pct": 5.2,
+            "asserted_pct": 4.8,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 6,
+            "negated": 1,
+            "mentioned": 7,
+            "mentioned_pct": 2.8,
+            "asserted_pct": 2.4,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 21,
+            "negated": 1,
+            "mentioned": 22,
+            "mentioned_pct": 8.8,
+            "asserted_pct": 8.4,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "mentioned_pct": 3.6,
+            "asserted_pct": 3.6,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 1.2,
+            "asserted_pct": 1.2,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 23,
+            "negated": 1,
+            "mentioned": 24,
+            "mentioned_pct": 9.6,
+            "asserted_pct": 9.2,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 13,
+            "negated": 0,
+            "mentioned": 13,
+            "mentioned_pct": 5.2,
+            "asserted_pct": 5.2,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 3.2,
+            "asserted_pct": 3.2,
+            "polarity_material": false
+          }
+        }
+      }
+    },
+    "by_mrp_band": {
+      "1500_1999": {
+        "n_reviews": 1591,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 25,
+            "negated": 4,
+            "mentioned": 29,
+            "mentioned_pct": 1.8,
+            "asserted_pct": 1.6,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 0.5,
+            "asserted_pct": 0.5,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.1,
+            "asserted_pct": 0.1,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 122,
+            "negated": 2,
+            "mentioned": 124,
+            "mentioned_pct": 7.8,
+            "asserted_pct": 7.7,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 111,
+            "negated": 4,
+            "mentioned": 115,
+            "mentioned_pct": 7.2,
+            "asserted_pct": 7.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "mentioned_pct": 0.8,
+            "asserted_pct": 0.8,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 31,
+            "negated": 1,
+            "mentioned": 32,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 1.9,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 0.3,
+            "asserted_pct": 0.3,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 25,
+            "negated": 6,
+            "mentioned": 31,
+            "mentioned_pct": 1.9,
+            "asserted_pct": 1.6,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 91,
+            "negated": 2,
+            "mentioned": 93,
+            "mentioned_pct": 5.8,
+            "asserted_pct": 5.7,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 50,
+            "negated": 0,
+            "mentioned": 50,
+            "mentioned_pct": 3.1,
+            "asserted_pct": 3.1,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 13,
+            "negated": 1,
+            "mentioned": 14,
+            "mentioned_pct": 0.9,
+            "asserted_pct": 0.8,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 184,
+            "negated": 1,
+            "mentioned": 185,
+            "mentioned_pct": 11.6,
+            "asserted_pct": 11.6,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 54,
+            "negated": 2,
+            "mentioned": 56,
+            "mentioned_pct": 3.5,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 195,
+            "negated": 10,
+            "mentioned": 205,
+            "mentioned_pct": 12.9,
+            "asserted_pct": 12.3,
+            "polarity_material": false
+          }
+        }
+      },
+      "2000_2499": {
+        "n_reviews": 781,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 25,
+            "negated": 0,
+            "mentioned": 25,
+            "mentioned_pct": 3.2,
+            "asserted_pct": 3.2,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 17,
+            "negated": 0,
+            "mentioned": 17,
+            "mentioned_pct": 2.2,
+            "asserted_pct": 2.2,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 99,
+            "negated": 8,
+            "mentioned": 107,
+            "mentioned_pct": 13.7,
+            "asserted_pct": 12.7,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 77,
+            "negated": 3,
+            "mentioned": 80,
+            "mentioned_pct": 10.2,
+            "asserted_pct": 9.9,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 0.5,
+            "asserted_pct": 0.5,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 16,
+            "negated": 0,
+            "mentioned": 16,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.1,
+            "asserted_pct": 0.1,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 9,
+            "negated": 8,
+            "mentioned": 17,
+            "mentioned_pct": 2.2,
+            "asserted_pct": 1.2,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 52,
+            "negated": 0,
+            "mentioned": 52,
+            "mentioned_pct": 6.7,
+            "asserted_pct": 6.7,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 25,
+            "negated": 0,
+            "mentioned": 25,
+            "mentioned_pct": 3.2,
+            "asserted_pct": 3.2,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 0.8,
+            "asserted_pct": 0.8,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 70,
+            "negated": 1,
+            "mentioned": 71,
+            "mentioned_pct": 9.1,
+            "asserted_pct": 9.0,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 29,
+            "negated": 4,
+            "mentioned": 33,
+            "mentioned_pct": 4.2,
+            "asserted_pct": 3.7,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 53,
+            "negated": 2,
+            "mentioned": 55,
+            "mentioned_pct": 7.0,
+            "asserted_pct": 6.8,
+            "polarity_material": false
+          }
+        }
+      },
+      "2500_3000": {
+        "n_reviews": 304,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.6,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.7,
+            "asserted_pct": 0.7,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 33,
+            "negated": 0,
+            "mentioned": 33,
+            "mentioned_pct": 10.9,
+            "asserted_pct": 10.9,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "mentioned_pct": 3.9,
+            "asserted_pct": 3.9,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 13,
+            "negated": 0,
+            "mentioned": 13,
+            "mentioned_pct": 4.3,
+            "asserted_pct": 4.3,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 1.0,
+            "asserted_pct": 1.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.3,
+            "asserted_pct": 0.3,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 5,
+            "negated": 1,
+            "mentioned": 6,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 1.6,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 27,
+            "negated": 1,
+            "mentioned": 28,
+            "mentioned_pct": 9.2,
+            "asserted_pct": 8.9,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 23,
+            "negated": 1,
+            "mentioned": 24,
+            "mentioned_pct": 7.9,
+            "asserted_pct": 7.6,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 1.0,
+            "asserted_pct": 1.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 32,
+            "negated": 1,
+            "mentioned": 33,
+            "mentioned_pct": 10.9,
+            "asserted_pct": 10.5,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 14,
+            "negated": 0,
+            "mentioned": 14,
+            "mentioned_pct": 4.6,
+            "asserted_pct": 4.6,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 25,
+            "negated": 3,
+            "mentioned": 28,
+            "mentioned_pct": 9.2,
+            "asserted_pct": 8.2,
+            "polarity_material": false
+          }
+        }
+      }
+    },
+    "by_brand": {
+      "Beauty of Joseon": {
+        "n_reviews": 379,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 12,
+            "negated": 2,
+            "mentioned": 14,
+            "mentioned_pct": 3.7,
+            "asserted_pct": 3.2,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 20,
+            "negated": 0,
+            "mentioned": 20,
+            "mentioned_pct": 5.3,
+            "asserted_pct": 5.3,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 2.1,
+            "asserted_pct": 2.1,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 14,
+            "negated": 1,
+            "mentioned": 15,
+            "mentioned_pct": 4.0,
+            "asserted_pct": 3.7,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.3,
+            "asserted_pct": 0.3,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 13,
+            "negated": 3,
+            "mentioned": 16,
+            "mentioned_pct": 4.2,
+            "asserted_pct": 3.4,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 30,
+            "negated": 1,
+            "mentioned": 31,
+            "mentioned_pct": 8.2,
+            "asserted_pct": 7.9,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.6,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 0.8,
+            "asserted_pct": 0.8,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 44,
+            "negated": 0,
+            "mentioned": 44,
+            "mentioned_pct": 11.6,
+            "asserted_pct": 11.6,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "mentioned_pct": 3.2,
+            "asserted_pct": 3.2,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "mentioned_pct": 2.4,
+            "asserted_pct": 2.4,
+            "polarity_material": false
+          }
+        }
+      },
+      "COSRX": {
+        "n_reviews": 318,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 2.5,
+            "asserted_pct": 2.5,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 1.3,
+            "asserted_pct": 1.3,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 63,
+            "negated": 0,
+            "mentioned": 63,
+            "mentioned_pct": 19.8,
+            "asserted_pct": 19.8,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 25,
+            "negated": 1,
+            "mentioned": 26,
+            "mentioned_pct": 8.2,
+            "asserted_pct": 7.9,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.6,
+            "asserted_pct": 0.6,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 10,
+            "negated": 0,
+            "mentioned": 10,
+            "mentioned_pct": 3.1,
+            "asserted_pct": 3.1,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 3,
+            "negated": 1,
+            "mentioned": 4,
+            "mentioned_pct": 1.3,
+            "asserted_pct": 0.9,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 26,
+            "negated": 0,
+            "mentioned": 26,
+            "mentioned_pct": 8.2,
+            "asserted_pct": 8.2,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 20,
+            "negated": 0,
+            "mentioned": 20,
+            "mentioned_pct": 6.3,
+            "asserted_pct": 6.3,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.6,
+            "asserted_pct": 0.6,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 40,
+            "negated": 1,
+            "mentioned": 41,
+            "mentioned_pct": 12.9,
+            "asserted_pct": 12.6,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 21,
+            "negated": 0,
+            "mentioned": 21,
+            "mentioned_pct": 6.6,
+            "asserted_pct": 6.6,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 49,
+            "negated": 2,
+            "mentioned": 51,
+            "mentioned_pct": 16.0,
+            "asserted_pct": 15.4,
+            "polarity_material": false
+          }
+        }
+      },
+      "Anua": {
+        "n_reviews": 232,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 3,
+            "negated": 1,
+            "mentioned": 4,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.3,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.9,
+            "asserted_pct": 0.9,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 27,
+            "negated": 1,
+            "mentioned": 28,
+            "mentioned_pct": 12.1,
+            "asserted_pct": 11.6,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 24,
+            "negated": 1,
+            "mentioned": 25,
+            "mentioned_pct": 10.8,
+            "asserted_pct": 10.3,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.9,
+            "asserted_pct": 0.9,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 3.4,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.9,
+            "asserted_pct": 0.9,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 18,
+            "negated": 0,
+            "mentioned": 18,
+            "mentioned_pct": 7.8,
+            "asserted_pct": 7.8,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "mentioned_pct": 3.9,
+            "asserted_pct": 3.9,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 18,
+            "negated": 1,
+            "mentioned": 19,
+            "mentioned_pct": 8.2,
+            "asserted_pct": 7.8,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 13,
+            "negated": 0,
+            "mentioned": 13,
+            "mentioned_pct": 5.6,
+            "asserted_pct": 5.6,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 28,
+            "negated": 1,
+            "mentioned": 29,
+            "mentioned_pct": 12.5,
+            "asserted_pct": 12.1,
+            "polarity_material": false
+          }
+        }
+      },
+      "Innisfree": {
+        "n_reviews": 226,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.9,
+            "asserted_pct": 0.9,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.9,
+            "asserted_pct": 0.9,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 29,
+            "negated": 0,
+            "mentioned": 29,
+            "mentioned_pct": 12.8,
+            "asserted_pct": 12.8,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 11,
+            "negated": 1,
+            "mentioned": 12,
+            "mentioned_pct": 5.3,
+            "asserted_pct": 4.9,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 1.8,
+            "asserted_pct": 1.8,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 1.8,
+            "asserted_pct": 1.8,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 3.5,
+            "asserted_pct": 3.5,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 13,
+            "negated": 0,
+            "mentioned": 13,
+            "mentioned_pct": 5.8,
+            "asserted_pct": 5.8,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.9,
+            "asserted_pct": 0.9,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 38,
+            "negated": 0,
+            "mentioned": 38,
+            "mentioned_pct": 16.8,
+            "asserted_pct": 16.8,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 7,
+            "negated": 1,
+            "mentioned": 8,
+            "mentioned_pct": 3.5,
+            "asserted_pct": 3.1,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 10,
+            "negated": 2,
+            "mentioned": 12,
+            "mentioned_pct": 5.3,
+            "asserted_pct": 4.4,
+            "polarity_material": false
+          }
+        }
+      },
+      "The Face Shop": {
+        "n_reviews": 197,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 4.1,
+            "asserted_pct": 4.1,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 1.0,
+            "asserted_pct": 1.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 19,
+            "negated": 1,
+            "mentioned": 20,
+            "mentioned_pct": 10.2,
+            "asserted_pct": 9.6,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 23,
+            "negated": 1,
+            "mentioned": 24,
+            "mentioned_pct": 12.2,
+            "asserted_pct": 11.7,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.5,
+            "asserted_pct": 0.5,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 1.0,
+            "asserted_pct": 1.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "mentioned_pct": 6.1,
+            "asserted_pct": 6.1,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 1.0,
+            "asserted_pct": 1.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 25,
+            "negated": 0,
+            "mentioned": 25,
+            "mentioned_pct": 12.7,
+            "asserted_pct": 12.7,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 3.6,
+            "asserted_pct": 3.6,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 4.1,
+            "asserted_pct": 4.1,
+            "polarity_material": false
+          }
+        }
+      },
+      "RAS Luxury Oils": {
+        "n_reviews": 176,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 2.8,
+            "asserted_pct": 2.8,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 51,
+            "negated": 2,
+            "mentioned": 53,
+            "mentioned_pct": 30.1,
+            "asserted_pct": 29.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.6,
+            "asserted_pct": 0.6,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "mentioned_pct": 5.1,
+            "asserted_pct": 5.1,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.6,
+            "asserted_pct": 0.6,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 10,
+            "negated": 0,
+            "mentioned": 10,
+            "mentioned_pct": 5.7,
+            "asserted_pct": 5.7,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 88,
+            "negated": 0,
+            "mentioned": 88,
+            "mentioned_pct": 50.0,
+            "asserted_pct": 50.0,
+            "polarity_material": false
+          }
+        }
+      },
+      "d'Alba": {
+        "n_reviews": 120,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 5.0,
+            "asserted_pct": 5.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 3.3,
+            "asserted_pct": 3.3,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 21,
+            "negated": 6,
+            "mentioned": 27,
+            "mentioned_pct": 22.5,
+            "asserted_pct": 17.5,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 17,
+            "negated": 1,
+            "mentioned": 18,
+            "mentioned_pct": 15.0,
+            "asserted_pct": 14.2,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.8,
+            "asserted_pct": 0.8,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 3,
+            "negated": 5,
+            "mentioned": 8,
+            "mentioned_pct": 6.7,
+            "asserted_pct": 2.5,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 4.2,
+            "asserted_pct": 4.2,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "mentioned_pct": 7.5,
+            "asserted_pct": 7.5,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 5,
+            "negated": 3,
+            "mentioned": 8,
+            "mentioned_pct": 6.7,
+            "asserted_pct": 4.2,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          }
+        }
+      },
+      "Isntree": {
+        "n_reviews": 94,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 10,
+            "negated": 0,
+            "mentioned": 10,
+            "mentioned_pct": 10.6,
+            "asserted_pct": 10.6,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.1,
+            "asserted_pct": 2.1,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.1,
+            "asserted_pct": 2.1,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 3.2,
+            "asserted_pct": 3.2,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 7.4,
+            "asserted_pct": 7.4,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.1,
+            "asserted_pct": 2.1,
+            "polarity_material": false
+          }
+        }
+      },
+      "Laneige": {
+        "n_reviews": 87,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 3.4,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 3.4,
+            "asserted_pct": 3.4,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 4.6,
+            "asserted_pct": 4.6,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 8.0,
+            "asserted_pct": 8.0,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 10,
+            "negated": 0,
+            "mentioned": 10,
+            "mentioned_pct": 11.5,
+            "asserted_pct": 11.5,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 2.3,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 2.3,
+            "polarity_material": false
+          }
+        }
+      },
+      "Thank You Farmer": {
+        "n_reviews": 87,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 3.4,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 2.3,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 4.6,
+            "asserted_pct": 4.6,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 3,
+            "negated": 2,
+            "mentioned": 5,
+            "mentioned_pct": 5.7,
+            "asserted_pct": 3.4,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 9.2,
+            "asserted_pct": 9.2,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "mentioned_pct": 13.8,
+            "asserted_pct": 13.8,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 2.3,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 8.0,
+            "asserted_pct": 8.0,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 1,
+            "negated": 1,
+            "mentioned": 2,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          }
+        }
+      },
+      "Celimax": {
+        "n_reviews": 86,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 5.8,
+            "asserted_pct": 5.8,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 3.5,
+            "asserted_pct": 3.5,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "mentioned_pct": 14.0,
+            "asserted_pct": 14.0,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 3.5,
+            "asserted_pct": 3.5,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 3.5,
+            "asserted_pct": 3.5,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 4.7,
+            "asserted_pct": 4.7,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.2,
+            "asserted_pct": 1.2,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.2,
+            "asserted_pct": 1.2,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 5.8,
+            "asserted_pct": 5.8,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.2,
+            "asserted_pct": 1.2,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 4.7,
+            "asserted_pct": 4.7,
+            "polarity_material": false
+          }
+        }
+      },
+      "Bioderma": {
+        "n_reviews": 64,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.6,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.1,
+            "asserted_pct": 3.1,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.1,
+            "asserted_pct": 3.1,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 4.7,
+            "asserted_pct": 4.7,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.6,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.6,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 7.8,
+            "asserted_pct": 7.8,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 10.9,
+            "asserted_pct": 10.9,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 10.9,
+            "asserted_pct": 10.9,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.6,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.6,
+            "polarity_material": false
+          }
+        }
+      },
+      "ISDIN": {
+        "n_reviews": 60,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.3,
+            "asserted_pct": 3.3,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 12,
+            "negated": 0,
+            "mentioned": 12,
+            "mentioned_pct": 20.0,
+            "asserted_pct": 20.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 12,
+            "negated": 1,
+            "mentioned": 13,
+            "mentioned_pct": 21.7,
+            "asserted_pct": 20.0,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 6,
+            "negated": 1,
+            "mentioned": 7,
+            "mentioned_pct": 11.7,
+            "asserted_pct": 10.0,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 8,
+            "negated": 1,
+            "mentioned": 9,
+            "mentioned_pct": 15.0,
+            "asserted_pct": 13.3,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          }
+        }
+      },
+      "belif": {
+        "n_reviews": 60,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.3,
+            "asserted_pct": 3.3,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.3,
+            "asserted_pct": 3.3,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 6.7,
+            "asserted_pct": 6.7,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 10.0,
+            "asserted_pct": 10.0,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 4,
+            "negated": 1,
+            "mentioned": 5,
+            "mentioned_pct": 8.3,
+            "asserted_pct": 6.7,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 3,
+            "negated": 1,
+            "mentioned": 4,
+            "mentioned_pct": 6.7,
+            "asserted_pct": 5.0,
+            "polarity_material": false
+          }
+        }
+      },
+      "Klairs": {
+        "n_reviews": 60,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 1,
+            "negated": 1,
+            "mentioned": 2,
+            "mentioned_pct": 3.3,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.3,
+            "asserted_pct": 3.3,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 5.0,
+            "asserted_pct": 5.0,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.3,
+            "asserted_pct": 3.3,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 15,
+            "negated": 0,
+            "mentioned": 15,
+            "mentioned_pct": 25.0,
+            "asserted_pct": 25.0,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 8,
+            "negated": 2,
+            "mentioned": 10,
+            "mentioned_pct": 16.7,
+            "asserted_pct": 13.3,
+            "polarity_material": false
+          }
+        }
+      },
+      "Forest Essentials": {
+        "n_reviews": 60,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.3,
+            "asserted_pct": 3.3,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 5.0,
+            "asserted_pct": 5.0,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 9,
+            "negated": 0,
+            "mentioned": 9,
+            "mentioned_pct": 15.0,
+            "asserted_pct": 15.0,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 2,
+            "negated": 1,
+            "mentioned": 3,
+            "mentioned_pct": 5.0,
+            "asserted_pct": 3.3,
+            "polarity_material": false
+          }
+        }
+      },
+      "SKIN1004": {
+        "n_reviews": 59,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 5.1,
+            "asserted_pct": 5.1,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 3,
+            "negated": 2,
+            "mentioned": 5,
+            "mentioned_pct": 8.5,
+            "asserted_pct": 5.1,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 5.1,
+            "asserted_pct": 5.1,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 13.6,
+            "asserted_pct": 13.6,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 2,
+            "negated": 2,
+            "mentioned": 4,
+            "mentioned_pct": 6.8,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          }
+        }
+      },
+      "Suganda": {
+        "n_reviews": 44,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 4.5,
+            "asserted_pct": 4.5,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 15.9,
+            "asserted_pct": 15.9,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 2.3,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 2.3,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 1,
+            "negated": 1,
+            "mentioned": 2,
+            "mentioned_pct": 4.5,
+            "asserted_pct": 2.3,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 18.2,
+            "asserted_pct": 18.2,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 4.5,
+            "asserted_pct": 4.5,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 20,
+            "negated": 2,
+            "mentioned": 22,
+            "mentioned_pct": 50.0,
+            "asserted_pct": 45.5,
+            "polarity_material": false
+          }
+        }
+      },
+      "Dr. Althea": {
+        "n_reviews": 41,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 15,
+            "negated": 2,
+            "mentioned": 17,
+            "mentioned_pct": 41.5,
+            "asserted_pct": 36.6,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 19.5,
+            "asserted_pct": 19.5,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 7.3,
+            "asserted_pct": 7.3,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 3,
+            "negated": 0,
+            "mentioned": 3,
+            "mentioned_pct": 7.3,
+            "asserted_pct": 7.3,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 2.4,
+            "asserted_pct": 2.4,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 4,
+            "negated": 0,
+            "mentioned": 4,
+            "mentioned_pct": 9.8,
+            "asserted_pct": 9.8,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 8,
+            "negated": 1,
+            "mentioned": 9,
+            "mentioned_pct": 22.0,
+            "asserted_pct": 19.5,
+            "polarity_material": false
+          }
+        }
+      }
+    },
+    "by_tone_group": {
+      "fair": {
+        "n_reviews": 705,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 11,
+            "negated": 1,
+            "mentioned": 12,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.6,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 8,
+            "negated": 0,
+            "mentioned": 8,
+            "mentioned_pct": 1.1,
+            "asserted_pct": 1.1,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.1,
+            "asserted_pct": 0.1,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 64,
+            "negated": 3,
+            "mentioned": 67,
+            "mentioned_pct": 9.5,
+            "asserted_pct": 9.1,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 47,
+            "negated": 1,
+            "mentioned": 48,
+            "mentioned_pct": 6.8,
+            "asserted_pct": 6.7,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 0.9,
+            "asserted_pct": 0.9,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 18,
+            "negated": 1,
+            "mentioned": 19,
+            "mentioned_pct": 2.7,
+            "asserted_pct": 2.6,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.1,
+            "asserted_pct": 0.1,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 13,
+            "negated": 2,
+            "mentioned": 15,
+            "mentioned_pct": 2.1,
+            "asserted_pct": 1.8,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 45,
+            "negated": 1,
+            "mentioned": 46,
+            "mentioned_pct": 6.5,
+            "asserted_pct": 6.4,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 29,
+            "negated": 0,
+            "mentioned": 29,
+            "mentioned_pct": 4.1,
+            "asserted_pct": 4.1,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 0.7,
+            "asserted_pct": 0.7,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 93,
+            "negated": 1,
+            "mentioned": 94,
+            "mentioned_pct": 13.3,
+            "asserted_pct": 13.2,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 32,
+            "negated": 2,
+            "mentioned": 34,
+            "mentioned_pct": 4.8,
+            "asserted_pct": 4.5,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 43,
+            "negated": 5,
+            "mentioned": 48,
+            "mentioned_pct": 6.8,
+            "asserted_pct": 6.1,
+            "polarity_material": false
+          }
+        }
+      },
+      "wheatish": {
+        "n_reviews": 302,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.7,
+            "asserted_pct": 0.7,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 31,
+            "negated": 1,
+            "mentioned": 32,
+            "mentioned_pct": 10.6,
+            "asserted_pct": 10.3,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 21,
+            "negated": 0,
+            "mentioned": 21,
+            "mentioned_pct": 7.0,
+            "asserted_pct": 7.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 2.3,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 6,
+            "negated": 0,
+            "mentioned": 6,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.7,
+            "asserted_pct": 0.7,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 8,
+            "negated": 2,
+            "mentioned": 10,
+            "mentioned_pct": 3.3,
+            "asserted_pct": 2.6,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 26,
+            "negated": 1,
+            "mentioned": 27,
+            "mentioned_pct": 8.9,
+            "asserted_pct": 8.6,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 15,
+            "negated": 0,
+            "mentioned": 15,
+            "mentioned_pct": 5.0,
+            "asserted_pct": 5.0,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 32,
+            "negated": 0,
+            "mentioned": 32,
+            "mentioned_pct": 10.6,
+            "asserted_pct": 10.6,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 6,
+            "negated": 1,
+            "mentioned": 7,
+            "mentioned_pct": 2.3,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 31,
+            "negated": 4,
+            "mentioned": 35,
+            "mentioned_pct": 11.6,
+            "asserted_pct": 10.3,
+            "polarity_material": false
+          }
+        }
+      },
+      "dusky": {
+        "n_reviews": 72,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 7,
+            "negated": 0,
+            "mentioned": 7,
+            "mentioned_pct": 9.7,
+            "asserted_pct": 9.7,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 3,
+            "negated": 2,
+            "mentioned": 5,
+            "mentioned_pct": 6.9,
+            "asserted_pct": 4.2,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.4,
+            "asserted_pct": 1.4,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 0,
+            "negated": 1,
+            "mentioned": 1,
+            "mentioned_pct": 1.4,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.8,
+            "asserted_pct": 2.8,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.8,
+            "asserted_pct": 2.8,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 6.9,
+            "asserted_pct": 6.9,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.8,
+            "asserted_pct": 2.8,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 11,
+            "negated": 1,
+            "mentioned": 12,
+            "mentioned_pct": 16.7,
+            "asserted_pct": 15.3,
+            "polarity_material": false
+          }
+        }
+      }
+    }
+  },
+  "negative_frame": {
+    "note": "Every retrievable 1-2 star review. Read for what fails to deliver on a driver, never pooled with the frame above.",
+    "n_reviews": 651,
+    "driver_ranking": [
+      {
+        "driver": "price_worth",
+        "mentioned": 59,
+        "mentioned_pct": 9.1,
+        "asserted": 6,
+        "negated": 53
+      },
+      {
+        "driver": "social_hype",
+        "mentioned": 58,
+        "mentioned_pct": 8.9,
+        "asserted": 38,
+        "negated": 20
+      },
+      {
+        "driver": "pigmentation_concern",
+        "mentioned": 58,
+        "mentioned_pct": 8.9,
+        "asserted": 51,
+        "negated": 7
+      },
+      {
+        "driver": "price_resistance",
+        "mentioned": 53,
+        "mentioned_pct": 8.1,
+        "asserted": 46,
+        "negated": 7
+      },
+      {
+        "driver": "ingredient_actives",
+        "mentioned": 41,
+        "mentioned_pct": 6.3,
+        "asserted": 39,
+        "negated": 2
+      },
+      {
+        "driver": "repurchase_loyalty",
+        "mentioned": 39,
+        "mentioned_pct": 6.0,
+        "asserted": 17,
+        "negated": 22
+      },
+      {
+        "driver": "climate_context",
+        "mentioned": 19,
+        "mentioned_pct": 2.9,
+        "asserted": 16,
+        "negated": 3
+      },
+      {
+        "driver": "efficacy_result",
+        "mentioned": 11,
+        "mentioned_pct": 1.7,
+        "asserted": 9,
+        "negated": 2
+      },
+      {
+        "driver": "routine_multistep",
+        "mentioned": 10,
+        "mentioned_pct": 1.5,
+        "asserted": 9,
+        "negated": 1
+      },
+      {
+        "driver": "korea_origin",
+        "mentioned": 8,
+        "mentioned_pct": 1.2,
+        "asserted": 7,
+        "negated": 1
+      },
+      {
+        "driver": "derm_authority",
+        "mentioned": 4,
+        "mentioned_pct": 0.6,
+        "asserted": 4,
+        "negated": 0
+      },
+      {
+        "driver": "word_of_mouth",
+        "mentioned": 2,
+        "mentioned_pct": 0.3,
+        "asserted": 2,
+        "negated": 0
+      },
+      {
+        "driver": "korean_aesthetic",
+        "mentioned": 1,
+        "mentioned_pct": 0.2,
+        "asserted": 1,
+        "negated": 0
+      },
+      {
+        "driver": "discount_mention",
+        "mentioned": 1,
+        "mentioned_pct": 0.2,
+        "asserted": 1,
+        "negated": 0
+      },
+      {
+        "driver": "other_origin",
+        "mentioned": 0,
+        "mentioned_pct": 0.0,
+        "asserted": 0,
+        "negated": 0
+      }
+    ],
+    "origin_contrast": {
+      "KR": {
+        "n_reviews": 494,
+        "korea_origin_mentions": 8,
+        "korea_origin_pct": 1.6,
+        "korean_aesthetic_mentions": 1,
+        "korean_aesthetic_pct": 0.2,
+        "other_origin_mentions": 0,
+        "other_origin_pct": 0.0,
+        "ingredient_actives_pct": 7.5,
+        "actives_to_origin_ratio": 4.6
+      },
+      "IN": {
+        "n_reviews": 58,
+        "korea_origin_mentions": 0,
+        "korea_origin_pct": 0.0,
+        "korean_aesthetic_mentions": 0,
+        "korean_aesthetic_pct": 0.0,
+        "other_origin_mentions": 0,
+        "other_origin_pct": 0.0,
+        "ingredient_actives_pct": 3.4,
+        "actives_to_origin_ratio": null
+      },
+      "other_foreign": {
+        "n_reviews": 99,
+        "korea_origin_mentions": 0,
+        "korea_origin_pct": 0.0,
+        "korean_aesthetic_mentions": 0,
+        "korean_aesthetic_pct": 0.0,
+        "other_origin_mentions": 0,
+        "other_origin_pct": 0.0,
+        "ingredient_actives_pct": 2.0,
+        "actives_to_origin_ratio": null
+      }
+    },
+    "by_origin": {
+      "KR": {
+        "n_reviews": 494,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 7,
+            "negated": 1,
+            "mentioned": 8,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.4,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 0.2,
+            "asserted_pct": 0.2,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 35,
+            "negated": 2,
+            "mentioned": 37,
+            "mentioned_pct": 7.5,
+            "asserted_pct": 7.1,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 6,
+            "negated": 2,
+            "mentioned": 8,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.2,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 34,
+            "negated": 15,
+            "mentioned": 49,
+            "mentioned_pct": 9.9,
+            "asserted_pct": 6.9,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 0.4,
+            "asserted_pct": 0.4,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 12,
+            "negated": 1,
+            "mentioned": 13,
+            "mentioned_pct": 2.6,
+            "asserted_pct": 2.4,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 5,
+            "negated": 34,
+            "mentioned": 39,
+            "mentioned_pct": 7.9,
+            "asserted_pct": 1.0,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 30,
+            "negated": 4,
+            "mentioned": 34,
+            "mentioned_pct": 6.9,
+            "asserted_pct": 6.1,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 10,
+            "negated": 14,
+            "mentioned": 24,
+            "mentioned_pct": 4.9,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 7,
+            "negated": 1,
+            "mentioned": 8,
+            "mentioned_pct": 1.6,
+            "asserted_pct": 1.4,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 36,
+            "negated": 5,
+            "mentioned": 41,
+            "mentioned_pct": 8.3,
+            "asserted_pct": 7.3,
+            "polarity_material": false
+          }
+        }
+      },
+      "other_foreign": {
+        "n_reviews": 99,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 2,
+            "negated": 4,
+            "mentioned": 6,
+            "mentioned_pct": 6.1,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 2,
+            "negated": 2,
+            "mentioned": 4,
+            "mentioned_pct": 4.0,
+            "asserted_pct": 2.0,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 1,
+            "negated": 12,
+            "mentioned": 13,
+            "mentioned_pct": 13.1,
+            "asserted_pct": 1.0,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 11,
+            "negated": 3,
+            "mentioned": 14,
+            "mentioned_pct": 14.1,
+            "asserted_pct": 11.1,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.0,
+            "asserted_pct": 1.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 5,
+            "negated": 5,
+            "mentioned": 10,
+            "mentioned_pct": 10.1,
+            "asserted_pct": 5.1,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 2.0,
+            "asserted_pct": 2.0,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 10,
+            "negated": 0,
+            "mentioned": 10,
+            "mentioned_pct": 10.1,
+            "asserted_pct": 10.1,
+            "polarity_material": false
+          }
+        }
+      },
+      "IN": {
+        "n_reviews": 58,
+        "drivers": {
+          "korea_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "korean_aesthetic": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "other_origin": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "ingredient_actives": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.4,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          },
+          "efficacy_result": {
+            "asserted": 1,
+            "negated": 0,
+            "mentioned": 1,
+            "mentioned_pct": 1.7,
+            "asserted_pct": 1.7,
+            "polarity_material": true
+          },
+          "derm_authority": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.4,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          },
+          "social_hype": {
+            "asserted": 2,
+            "negated": 1,
+            "mentioned": 3,
+            "mentioned_pct": 5.2,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          },
+          "word_of_mouth": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "climate_context": {
+            "asserted": 2,
+            "negated": 0,
+            "mentioned": 2,
+            "mentioned_pct": 3.4,
+            "asserted_pct": 3.4,
+            "polarity_material": true
+          },
+          "price_worth": {
+            "asserted": 0,
+            "negated": 7,
+            "mentioned": 7,
+            "mentioned_pct": 12.1,
+            "asserted_pct": 0.0,
+            "polarity_material": true
+          },
+          "price_resistance": {
+            "asserted": 5,
+            "negated": 0,
+            "mentioned": 5,
+            "mentioned_pct": 8.6,
+            "asserted_pct": 8.6,
+            "polarity_material": true
+          },
+          "discount_mention": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "repurchase_loyalty": {
+            "asserted": 2,
+            "negated": 3,
+            "mentioned": 5,
+            "mentioned_pct": 8.6,
+            "asserted_pct": 3.4,
+            "polarity_material": false
+          },
+          "routine_multistep": {
+            "asserted": 0,
+            "negated": 0,
+            "mentioned": 0,
+            "mentioned_pct": 0.0,
+            "asserted_pct": 0.0,
+            "polarity_material": false
+          },
+          "pigmentation_concern": {
+            "asserted": 5,
+            "negated": 2,
+            "mentioned": 7,
+            "mentioned_pct": 12.1,
+            "asserted_pct": 8.6,
+            "polarity_material": false
+          }
+        }
+      }
+    }
+  },
+  "korean_sunscreen_most_useful": {
+    "n_reviews": 657,
+    "drivers": {
+      "korea_origin": {
+        "asserted": 21,
+        "negated": 4,
+        "mentioned": 25,
+        "mentioned_pct": 3.8,
+        "asserted_pct": 3.2,
+        "polarity_material": false
+      },
+      "korean_aesthetic": {
+        "asserted": 10,
+        "negated": 0,
+        "mentioned": 10,
+        "mentioned_pct": 1.5,
+        "asserted_pct": 1.5,
+        "polarity_material": false
+      },
+      "other_origin": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "mentioned_pct": 0.0,
+        "asserted_pct": 0.0,
+        "polarity_material": false
+      },
+      "ingredient_actives": {
+        "asserted": 38,
+        "negated": 6,
+        "mentioned": 44,
+        "mentioned_pct": 6.7,
+        "asserted_pct": 5.8,
+        "polarity_material": false
+      },
+      "efficacy_result": {
+        "asserted": 25,
+        "negated": 1,
+        "mentioned": 26,
+        "mentioned_pct": 4.0,
+        "asserted_pct": 3.8,
+        "polarity_material": true
+      },
+      "derm_authority": {
+        "asserted": 1,
+        "negated": 0,
+        "mentioned": 1,
+        "mentioned_pct": 0.2,
+        "asserted_pct": 0.2,
+        "polarity_material": false
+      },
+      "social_hype": {
+        "asserted": 16,
+        "negated": 0,
+        "mentioned": 16,
+        "mentioned_pct": 2.4,
+        "asserted_pct": 2.4,
+        "polarity_material": false
+      },
+      "word_of_mouth": {
+        "asserted": 1,
+        "negated": 0,
+        "mentioned": 1,
+        "mentioned_pct": 0.2,
+        "asserted_pct": 0.2,
+        "polarity_material": false
+      },
+      "climate_context": {
+        "asserted": 21,
+        "negated": 10,
+        "mentioned": 31,
+        "mentioned_pct": 4.7,
+        "asserted_pct": 3.2,
+        "polarity_material": true
+      },
+      "price_worth": {
+        "asserted": 43,
+        "negated": 0,
+        "mentioned": 43,
+        "mentioned_pct": 6.5,
+        "asserted_pct": 6.5,
+        "polarity_material": true
+      },
+      "price_resistance": {
+        "asserted": 29,
+        "negated": 0,
+        "mentioned": 29,
+        "mentioned_pct": 4.4,
+        "asserted_pct": 4.4,
+        "polarity_material": true
+      },
+      "discount_mention": {
+        "asserted": 7,
+        "negated": 0,
+        "mentioned": 7,
+        "mentioned_pct": 1.1,
+        "asserted_pct": 1.1,
+        "polarity_material": false
+      },
+      "repurchase_loyalty": {
+        "asserted": 79,
+        "negated": 0,
+        "mentioned": 79,
+        "mentioned_pct": 12.0,
+        "asserted_pct": 12.0,
+        "polarity_material": false
+      },
+      "routine_multistep": {
+        "asserted": 12,
+        "negated": 4,
+        "mentioned": 16,
+        "mentioned_pct": 2.4,
+        "asserted_pct": 1.8,
+        "polarity_material": false
+      },
+      "pigmentation_concern": {
+        "asserted": 17,
+        "negated": 4,
+        "mentioned": 21,
+        "mentioned_pct": 3.2,
+        "asserted_pct": 2.6,
+        "polarity_material": false
+      }
+    }
+  },
+  "pigmentation_serum_most_useful": {
+    "n_reviews": 693,
+    "drivers": {
+      "korea_origin": {
+        "asserted": 14,
+        "negated": 0,
+        "mentioned": 14,
+        "mentioned_pct": 2.0,
+        "asserted_pct": 2.0,
+        "polarity_material": false
+      },
+      "korean_aesthetic": {
+        "asserted": 7,
+        "negated": 0,
+        "mentioned": 7,
+        "mentioned_pct": 1.0,
+        "asserted_pct": 1.0,
+        "polarity_material": false
+      },
+      "other_origin": {
+        "asserted": 0,
+        "negated": 0,
+        "mentioned": 0,
+        "mentioned_pct": 0.0,
+        "asserted_pct": 0.0,
+        "polarity_material": false
+      },
+      "ingredient_actives": {
+        "asserted": 87,
+        "negated": 2,
+        "mentioned": 89,
+        "mentioned_pct": 12.8,
+        "asserted_pct": 12.6,
+        "polarity_material": false
+      },
+      "efficacy_result": {
+        "asserted": 113,
+        "negated": 3,
+        "mentioned": 116,
+        "mentioned_pct": 16.7,
+        "asserted_pct": 16.3,
+        "polarity_material": true
+      },
+      "derm_authority": {
+        "asserted": 9,
+        "negated": 0,
+        "mentioned": 9,
+        "mentioned_pct": 1.3,
+        "asserted_pct": 1.3,
+        "polarity_material": false
+      },
+      "social_hype": {
+        "asserted": 14,
+        "negated": 0,
+        "mentioned": 14,
+        "mentioned_pct": 2.0,
+        "asserted_pct": 2.0,
+        "polarity_material": false
+      },
+      "word_of_mouth": {
+        "asserted": 1,
+        "negated": 0,
+        "mentioned": 1,
+        "mentioned_pct": 0.1,
+        "asserted_pct": 0.1,
+        "polarity_material": false
+      },
+      "climate_context": {
+        "asserted": 2,
+        "negated": 0,
+        "mentioned": 2,
+        "mentioned_pct": 0.3,
+        "asserted_pct": 0.3,
+        "polarity_material": true
+      },
+      "price_worth": {
+        "asserted": 45,
+        "negated": 1,
+        "mentioned": 46,
+        "mentioned_pct": 6.6,
+        "asserted_pct": 6.5,
+        "polarity_material": true
+      },
+      "price_resistance": {
+        "asserted": 15,
+        "negated": 0,
+        "mentioned": 15,
+        "mentioned_pct": 2.2,
+        "asserted_pct": 2.2,
+        "polarity_material": true
+      },
+      "discount_mention": {
+        "asserted": 3,
+        "negated": 0,
+        "mentioned": 3,
+        "mentioned_pct": 0.4,
+        "asserted_pct": 0.4,
+        "polarity_material": false
+      },
+      "repurchase_loyalty": {
+        "asserted": 53,
+        "negated": 0,
+        "mentioned": 53,
+        "mentioned_pct": 7.6,
+        "asserted_pct": 7.6,
+        "polarity_material": false
+      },
+      "routine_multistep": {
+        "asserted": 37,
+        "negated": 1,
+        "mentioned": 38,
+        "mentioned_pct": 5.5,
+        "asserted_pct": 5.3,
+        "polarity_material": false
+      },
+      "pigmentation_concern": {
+        "asserted": 184,
+        "negated": 8,
+        "mentioned": 192,
+        "mentioned_pct": 27.7,
+        "asserted_pct": 26.6,
+        "polarity_material": false
+      }
+    }
+  },
+  "generated_at": "20260810T022519Z",
+  "source_raw_file": "premium_skin_reviews_20260810T022519Z.json",
+  "source_price_file": "premium_skin_prices_20260809T184135Z.json",
+  "geography": "IN",
+  "question": "Phase 3 / Q3 — is 'Korean' load-bearing for the Indian premium skincare buyer, or incidental? A positioning input, not a go/no-go.",
+  "scope": "ONLINE ONLY (Nykaa written reviews on in-band SKUs). Organised retail only. Statistics describe REVIEW LANGUAGE, not buyers: Nykaa exposes no income, city, age or channel field, so the buyer-cohort half of Phase 3 is answered from disclosed platform and company data instead — see docs/premium-skincare-phase3.md and config/premium_skin_demand_findings.yaml."
+}

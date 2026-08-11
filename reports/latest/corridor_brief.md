@@ -1,5 +1,5 @@
 # K-beauty Corridor Brief — Korea → India
-*Generated 2026-08-01 · K-beauty inside India is a first-class research axis (config/corridor.yaml)*
+*Generated 2026-08-10 · K-beauty inside India is a first-class research axis (config/corridor.yaml)*
 
 ## The corridor in one line
 ~US$50m (H1 2025 basis), +44.7% YoY — small base, fast growth
@@ -28,6 +28,7 @@
 | emerging_adjacencies | 18.06 percent | 2026-2032 | NA | LOW | MarkNtel Advisors |
 | skincare | 11.1 percent | 2026-2033 | NA | LOW | Persistence Market Research |
 | total_bpc | 26.3 percent | 2026-2035 | RETAIL | LOW | Expert Market Research |
+| total_bpc | 7.4 percent | 2026-2036 | RETAIL | LOW | Future Market Insights — K-Beauty Product Market (India country table) |
 | total_bpc | 1.5 usd_bn | 2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
 | total_bpc | 1.6 usd_bn | 2030 | RETAIL | MEDIUM | TheBK / Beauty Kyungjae (Korean beauty trade press) |
 | total_bpc | 32424.0 inr_cr | 2035 | RETAIL | LOW | Expert Market Research |

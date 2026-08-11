@@ -1,7 +1,7 @@
 {
   "geography": "KR",
   "segment": "skincare",
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-08-10",
   "data_points": [
     {
       "geography": "KR",
@@ -439,6 +439,44 @@
       "confidence": "LOW",
       "methodology": null,
       "notes": "Vyansa: USD 142mn (2025) to USD 162mn (2032), CAGR ~1.9% over 2026-32. Trajectory is internally consistent (142 x 1.019^7 = 162). Skin toner only, not essences. Markedly slower than the serums cell (9.56% per MarkNtel), consistent with toner being a mature staple format in Korea — but the two come from different vendors with unstated and probably different scopes, so this is not a like-for-like comparison and the gap should not be read as a category insight."
+    },
+    {
+      "geography": "KR",
+      "segment": "skincare",
+      "sub_segment": null,
+      "metric": "retail_price",
+      "value": 8.5,
+      "unit": "usd",
+      "currency": "USD",
+      "period": "2026",
+      "period_type": "CY",
+      "value_basis": "PRODUCTION",
+      "tier": null,
+      "source_name": "OEMKorea, 'Korean OEM Pricing Explained: What Drives Per-Unit Cost'",
+      "source_url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "date_accessed": "2026-08-10",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "[PREMIUM-SKIN] EX-WORKS factory cost per unit for a Korean-manufactured facial SERUM with PREMIUM actives, quoted range USD5.00-12.00; midpoint 8.50 recorded. Commodity-actives serums are quoted USD2.50-5.50 separately. Conditions stated on the page: mid-tier manufacturer, 1,000-3,000 unit MOQ, STOCK PACKAGING INCLUDED, 2026 pricing. Cross-checked against Altameet's USD5-10 for a 30ml serum, which overlaps. This is a factory-gate cost, hence value_basis PRODUCTION — it is NOT a retail or export-FOB value and must never be compared with one. LOW confidence: sourcing-agency marketing content with a commercial interest in the figure, no published methodology, not a quote."
+    },
+    {
+      "geography": "KR",
+      "segment": "skincare",
+      "sub_segment": null,
+      "metric": "discount_depth",
+      "value": 30.0,
+      "unit": "percent",
+      "currency": "USD",
+      "period": "2026",
+      "period_type": "CY",
+      "value_basis": "NA",
+      "tier": null,
+      "source_name": "OEMKorea, 'Korean OEM Pricing Explained: What Drives Per-Unit Cost'",
+      "source_url": "https://oemkorea.com/blog/korean-oem-pricing-explained",
+      "date_accessed": "2026-08-10",
+      "confidence": "LOW",
+      "methodology": null,
+      "notes": "[PREMIUM-SKIN] VOLUME discount on ex-works unit cost, NOT a retail discount: per-unit cost falls 20-40% moving from a 1,000-unit order to a 5,000-unit order, then a further 10-20% from 5,000 to 10,000. Midpoint 30% recorded. metric discount_depth is used because it is a discount off a list cost; it is a SUPPLY-side figure and must never be read alongside the retail discount_depth points from the price sweeps, which measure platform discounting off MRP. This is the largest controllable lever on landed cost in the Phase 4 model and the reason a 4-SKU-at-MOQ launch shape fails. LOW confidence — sourcing-agency marketing content."
     }
   ]
 }

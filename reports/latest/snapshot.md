@@ -1,5 +1,5 @@
 # BPC Market Intelligence Snapshot — South Korea × India
-*Generated 2026-08-01 · every figure traces to data/sources.csv · basis and confidence shown inline*
+*Generated 2026-08-10 · every figure traces to data/sources.csv · basis and confidence shown inline*
 
 ---
 
@@ -99,6 +99,7 @@ Shares of summed revenue for 3 listed BRAND OWNERS (INR inr_cr, NET_REALISATION)
 | emerging_adjacencies | 18.06 percent | 2026-2032 | NA | LOW | MarkNtel Advisors |
 | skincare | 11.1 percent | 2026-2033 | NA | LOW | Persistence Market Research |
 | total_bpc | 26.3 percent | 2026-2035 | RETAIL | LOW | Expert Market Research |
+| total_bpc | 7.4 percent | 2026-2036 | RETAIL | LOW | Future Market Insights — K-Beauty Product Market (India country table) |
 | total_bpc | 1.5 usd_bn | 2030 | RETAIL | MEDIUM | Economic Times Retail (consulting estimate) |
 | total_bpc | 1.6 usd_bn | 2030 | RETAIL | MEDIUM | TheBK / Beauty Kyungjae (Korean beauty trade press) |
 | total_bpc | 32424.0 inr_cr | 2035 | RETAIL | LOW | Expert Market Research |

@@ -15,6 +15,7 @@ import type {
   ShareChartEntry,
   SourceRow,
 } from "@/types/bundle";
+import type { FindingsFile } from "@/types/premium-skin";
 
 const DATA_DIR = path.join(process.cwd(), "public", "data");
 
@@ -62,6 +63,14 @@ export const getAnalysisArtifact = cache(<T>(rel: string): T | null => {
   const full = path.join(DATA_DIR, "analysis", `${rel}.json`);
   if (!fs.existsSync(full)) return null;
   return JSON.parse(fs.readFileSync(full, "utf-8")) as T;
+});
+
+/** A qualitative findings file by key ("korea", "premium_skin_fit"), as exported
+ * from config/{key}_findings.yaml — null if that file isn't in the bundle. */
+export const getFindings = cache((key: string): FindingsFile | null => {
+  const full = path.join(DATA_DIR, "findings", `${key}.json`);
+  if (!fs.existsSync(full)) return null;
+  return JSON.parse(fs.readFileSync(full, "utf-8")) as FindingsFile;
 });
 
 /** All artifact ids currently in the bundle (recursive, "/"-joined). */

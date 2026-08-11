@@ -33,6 +33,29 @@ class DataPoint(BaseModel):
         "operating_margin",    # operating profit / revenue, %
         "adspend_ratio",       # advertising & promotion / revenue, %
         "trade_margin",        # distributor + retailer markup, %
+        # Price-band metrics (premium-skincare thread). Both are SKU-population
+        # statistics, NOT market statistics: they describe an assortment sample,
+        # so they must never be read as market share or as a trade margin.
+        "assortment_share",    # share of a SKU population meeting a condition, %
+        "discount_depth",      # discount off list price, %
+        # Review-corpus metric (premium-skincare thread, Phase 2). A statistic
+        # about a sample of consumer reviews, NOT about consumers, buyers or
+        # the market: it says what share of REVIEWS raise a given complaint,
+        # never what share of users experienced it.
+        "complaint_share",     # share of a review population raising a theme, %
+        # Review-corpus metric (premium-skincare thread, Phase 3). The mirror of
+        # complaint_share on the demand side: what share of REVIEWS invoke a
+        # given purchase driver (Korean provenance, actives, derm authority,
+        # repurchase). It measures the SALIENCE of a driver in review language,
+        # never the share of buyers motivated by it — reviews report experience,
+        # not the reason for the purchase.
+        "driver_share",        # share of a review population citing a driver, %
+        # Affordability metric (premium-skincare thread, Phase 3). What share of
+        # a consumer's ANNUAL category spend one purchase absorbs. Always an
+        # ESTIMATE: it divides a disclosed annual per-consumer spend by a shelf
+        # price, so the numerator and denominator come from different sources
+        # and the category scopes differ — the methodology field must say so.
+        "spend_ratio",         # one purchase as % of annual per-consumer spend
     ]
     value: float
     unit: str                           # "usd_bn", "krw_tn", "inr_cr", "percent", "usd", "inr"

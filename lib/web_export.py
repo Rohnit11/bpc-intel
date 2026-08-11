@@ -40,7 +40,7 @@ logger = logging.getLogger("bpc_intel.web_export")
 WEB_DATA_DIR = PROJECT_ROOT / "web" / "public" / "data"
 INSIGHTS_DIR = PROJECT_ROOT / "data" / "manual" / "insights"
 ANALYSIS_DIR = PROJECT_ROOT / "data" / "manual" / "analysis"
-ANALYSIS_DIR = PROJECT_ROOT / "data" / "manual" / "analysis"
+CONFIG_DIR = PROJECT_ROOT / "config"
 # Transient hand-off file: Node's json-schema-to-typescript reads this to
 # generate web/types/schema.ts (see web/scripts/gen-schema-ts.mjs). Not
 # committed — only the generated .ts is.
@@ -248,6 +248,28 @@ def build_analysis() -> dict[str, dict]:
     return out
 
 
+def build_findings() -> dict[str, dict]:
+    """Copy the qualitative config/{key}_findings.yaml files verbatim into the bundle.
+
+    Pure serialization, YAML -> JSON, of hand-written qualitative context
+    (korea/india/corridor, and the [PREMIUM-SKIN] fit + demand files). Each is
+    {topic: [{text, source, url}, ...]} and every url in them was actually
+    fetched (CLAUDE.md rule 6). Globbed rather than named — the same convention
+    lib/chat_index.py already uses — so a future phase's findings file reaches
+    the dashboard with no code change here.
+
+    Quantitative claims never live in these files; they are DataPoints in
+    sources.csv and computed statistics in the analysis artifacts. Nothing in
+    this function derives a figure.
+    """
+    out: dict[str, dict] = {}
+    for path in sorted(CONFIG_DIR.glob("*_findings.yaml")):
+        key = path.stem.removesuffix("_findings")
+        with path.open(encoding="utf-8") as fh:
+            out[key] = yaml.safe_load(fh) or {}
+    return out
+
+
 def build_json_schema() -> dict:
     """JSON Schema for DataPoint + SegmentFile, source for web/types/schema.ts.
 
@@ -305,6 +327,8 @@ def export_all() -> list[Path]:
         emit(f"insights/{seg}.json", insight)
     for rel, artifact in build_analysis().items():
         emit(f"analysis/{rel}.json", artifact)
+    for key, findings in build_findings().items():
+        emit(f"findings/{key}.json", findings)
     emit("chat_index.json", build_chat_index())
     charts_out = build_charts()
     for name, data in charts_out.items():
